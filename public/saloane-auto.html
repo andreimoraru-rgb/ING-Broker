@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ING Broker - Parteneriat Saloane Auto | Profit Suplimentar Garantat</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #05080F;
+  --bg-alt: #0A0F1C;
+  --bg-card: #111827;
+  --primary: #E84444;
+  --gold: #D4A53B;
+  --gold-light: #F5E0A0;
+  --white: #FFFFFF;
+  --text-main: #F3F4F6;
+  --text-muted: #9CA3AF;
+  --border: rgba(255, 255, 255, 0.08);
+  --font-h: 'Space Grotesk', sans-serif;
+  --font-b: 'Outfit', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { 
+  font-family: var(--font-b); 
+  background: var(--bg); 
+  color: var(--text-main); 
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Language Visibility Logic */
+[data-lang] { display: none !important; }
+body[data-current-lang="ro"] [data-lang="ro"] { display: block !important; }
+body[data-current-lang="ru"] [data-lang="ru"] { display: block !important; }
+body[data-current-lang="en"] [data-lang="en"] { display: block !important; }
+
+[data-lang-inline] { display: none !important; }
+body[data-current-lang="ro"] [data-lang-inline="ro"] { display: inline !important; }
+body[data-current-lang="ru"] [data-lang-inline="ru"] { display: inline !important; }
+body[data-current-lang="en"] [data-lang-inline="en"] { display: inline !important; }
+
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 5%;
+  background: rgba(5, 8, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-logo img { height: 36px; width: auto; transition: height 0.3s ease; filter: brightness(0) invert(1); }
+@media (min-width: 1024px) {
+  .nav-logo img { height: 80px; }
+}
+
+.lang-sw {
+  display: flex; gap: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px; border-radius: 8px;
+}
+
+.lang-sw button {
+  padding: 6px 12px;
+  font-size: 0.7rem; font-weight: 700;
+  color: var(--text-muted);
+  background: transparent; border: none;
+  border-radius: 6px; cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-sw button.active {
+  background: var(--gold);
+  color: var(--bg);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 120px 5% 80px;
+  position: relative; overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at 80% 20%, rgba(212, 165, 59, 0.08), transparent 50%);
+  z-index: -1;
+}
+
+.hero-content { max-width: 1200px; margin: 0 auto; width: 100%; }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 16px;
+  background: rgba(212, 165, 59, 0.1);
+  border: 1px solid rgba(212, 165, 59, 0.2);
+  border-radius: 100px;
+  font-size: 0.7rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-family: var(--font-h);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.1; font-weight: 700;
+  margin-bottom: 1.5rem; max-width: 900px;
+}
+
+.hero h1 span { color: var(--gold); }
+
+.hero p {
+  font-size: 1.1rem; color: var(--text-muted);
+  max-width: 600px; margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.cta-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 18px 40px;
+  border-radius: 4px;
+  font-size: 0.85rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.05em;
+  text-decoration: none; cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--bg);
+}
+
+.btn-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 165, 59, 0.3);
+}
+
+.stats-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem; margin-top: 5rem;
+  padding-top: 3rem; border-top: 1px solid var(--border);
+}
+
+.stat-item h3 {
+  font-family: var(--font-h);
+  font-size: 2.5rem; color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p { font-size: 0.8rem; color: var(--text-muted); margin: 0; }
+
+section { padding: 100px 5%; }
+.section-header { max-width: 800px; margin-bottom: 4rem; }
+.section-header h2 {
+  font-family: var(--font-h);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2; margin-bottom: 1rem;
+}
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+
+.card {
+  background: var(--bg-card);
+  padding: 3rem; border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.card:hover { border-color: rgba(212, 165, 59, 0.3); }
+
+.card-icon {
+  width: 48px; height: 48px;
+  background: rgba(212, 165, 59, 0.1);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.5rem; color: var(--gold);
+  font-family: var(--font-h); font-weight: 700;
+}
+
+.card h3 { font-family: var(--font-h); font-size: 1.25rem; margin-bottom: 1rem; }
+.card p { font-size: 0.9rem; color: var(--text-muted); }
+
+.list-check { list-style: none; margin-top: 1.5rem; }
+.list-check li {
+  position: relative; padding-left: 28px;
+  margin-bottom: 0.8rem; font-size: 0.9rem; color: var(--text-muted);
+}
+
+.list-check li::before {
+  content: '✓'; position: absolute; left: 0;
+  color: var(--gold); font-weight: 900;
+}
+
+.money-card {
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-alt));
+  text-align: center;
+}
+
+.money-card .amount {
+  font-family: var(--font-h); font-size: 3.5rem;
+  color: var(--gold); margin-bottom: 0.5rem;
+}
+
+.money-card .label {
+  font-size: 0.75rem; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--text-muted);
+}
+
+.contact-section { background: var(--bg-alt); }
+
+.contact-container {
+  display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem;
+  max-width: 1200px; margin: 0 auto;
+}
+
+.contact-info h2 {
+  font-family: var(--font-h); font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-details { margin-top: 3rem; display: grid; gap: 2rem; }
+
+.contact-method { display: flex; gap: 1.5rem; }
+.cm-icon {
+  width: 56px; height: 56px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold); flex-shrink: 0;
+}
+
+.cm-text span {
+  display: block; font-size: 0.7rem;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--text-muted); margin-bottom: 4px;
+}
+
+.cm-text a {
+  font-size: 1.1rem; font-weight: 600;
+  color: var(--text-main); text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cm-text a:hover { color: var(--gold); }
+
+.contact-form {
+  background: var(--bg-card);
+  padding: 4rem; border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.form-group { margin-bottom: 1.5rem; }
+.form-group label {
+  display: block; font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.05em;
+  color: var(--text-muted); margin-bottom: 8px;
+}
+
+.form-control {
+  width: 100%; padding: 14px 20px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 4px; color: var(--white);
+  font-family: var(--font-b); font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  outline: none; border-color: var(--gold);
+  background: rgba(255,255,255,0.06);
+}
+
+.footer {
+  padding: 4rem 5%; background: var(--bg);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.footer-logo img { height: 30px; margin-bottom: 2rem; opacity: 0.8; transition: height 0.3s ease; filter: brightness(0) invert(1); }
+@media (min-width: 1024px) {
+  .footer-logo img { height: 80px; }
+}
+
+.footer-text {
+  font-size: 0.75rem; color: var(--text-muted);
+  max-width: 800px; margin: 0 auto; line-height: 2;
+}
+
+@media (max-width: 1024px) {
+  .grid-2, .contact-container { grid-template-columns: 1fr; }
+  .contact-info h2 { font-size: 2.5rem; }
+  .contact-form { padding: 2.5rem; }
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.8rem; }
+  .nav { padding: 1rem 5%; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+}
+  .social-btn {
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    border-radius: 0;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .social-btn:hover {
+    background: var(--gold);
+    color: var(--bg);
+    border-color: var(--gold);
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body data-current-lang="ro">
+
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/ING Re-ALB.png" alt="ING Re Logo">
+  </a>
+  <div class="lang-sw">
+    <button data-lang-btn="ro" class="active" onclick="setLang('ro')">RO</button>
+    <button data-lang-btn="ru" onclick="setLang('ru')">RU</button>
+    <button data-lang-btn="en" onclick="setLang('en')">EN</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="eyebrow">
+      <span data-lang-inline="ro">Parteneriat Strategic</span>
+      <span data-lang-inline="ru">Стратегическое партнерство</span>
+      <span data-lang-inline="en">Strategic Partnership</span>
+    </div>
+    
+    <h1 data-lang="ro">Salonul dvs. pierde <span>~160.000 MDL</span> lunar fără asigurări.</h1>
+    <h1 data-lang="ru">Ваш салон теряет <span>~160.000 MDL</span> в месяц без страхования.</h1>
+    <h1 data-lang="en">Your dealership loses <span>~160,000 MDL</span> monthly without insurance.</h1>
+    
+    <p data-lang="ro">Fiecare mașină vândută fără CASCO înseamnă profit pierdut. ING Broker transformă fiecare vânzare într-o sursă de venit pasiv garantat.</p>
+    <p data-lang="ru">Каждый автомобиль, проданный без КАСКО, означает упущенную выгоду. ING Broker превращает каждую продажу в источник дохода.</p>
+    <p data-lang="en">Every car sold without CASCO means lost profit. ING Broker turns every sale into a source of guaranteed passive income.</p>
+    
+    <div class="cta-group">
+      <a href="/" class="btn" style="background: rgba(255,255,255,0.05); border: 1px solid var(--border); color: var(--text-main);">
+        &larr; <span data-lang-inline="ro">Acasă</span>
+        <span data-lang-inline="ru">Главная</span>
+        <span data-lang-inline="en">Home</span>
+      </a>
+      <a href="#contact" class="btn btn-primary">
+        <span data-lang-inline="ro">Devino Partener</span>
+        <span data-lang-inline="ru">Стать партнером</span>
+        <span data-lang-inline="en">Become a Partner</span>
+        &rarr;
+      </a>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>160K</h3>
+        <p data-lang="ro">MDL/lună venit suplimentar estimat</p>
+        <p data-lang="ru">MDL/мес. расчетный допдоход</p>
+        <p data-lang="en">MDL/month estimated extra income</p>
+      </div>
+      <div class="stat-item">
+        <h3>20%</h3>
+        <p data-lang="ro">Comision la fiecare poliță emisă</p>
+        <p data-lang="ru">Комиссия с каждого полиса</p>
+        <p data-lang="en">Commission on every policy issued</p>
+      </div>
+      <div class="stat-item">
+        <h3>3x</h3>
+        <p data-lang="ro">Mai multe reparații în service-ul propriu</p>
+        <p data-lang="ru">Больше ремонтов в собственном сервисе</p>
+        <p data-lang="en">More repairs in your own service center</p>
+      </div>
+      <div class="stat-item">
+        <h3>0</h3>
+        <p data-lang="ro">Investiții sau efort din partea dvs.</p>
+        <p data-lang="ru">Инвестиций или усилий с вашей стороны</p>
+        <p data-lang="en">Investment or effort required from you</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="problem" style="background: var(--bg-alt);">
+  <div class="section-header">
+    <div class="eyebrow">
+      <span data-lang-inline="ro">Realitatea din Moldova</span>
+      <span data-lang-inline="ru">Реальность в Молдове</span>
+      <span data-lang-inline="en">The Reality in Moldova</span>
+    </div>
+    <h2 data-lang="ro">Ce se întâmplă cu clienții dvs. după ce pleacă din salon?</h2>
+    <h2 data-lang="ru">Что происходит с вашими клиентами после покупки?</h2>
+    <h2 data-lang="en">What happens to your clients after they leave the dealership?</h2>
+  </div>
+
+  <div class="grid-2">
+    <div class="card" style="border-color: rgba(232, 68, 68, 0.2);">
+      <div class="card-icon" style="color: var(--primary);">✕</div>
+      <h3 data-lang="ro">Fără CASCO: Pierdere</h3>
+      <h3 data-lang="ru">Без КАСКО: Потери</h3>
+      <h3 data-lang="en">Without CASCO: Loss</h3>
+      <ul class="list-check">
+        <li data-lang="ro">Parbrizul se sparge. Clientul nu-l schimbă 2 ani.</li>
+        <li data-lang="ru">Стекло разбивается. Клиент не меняет его 2 года.</li>
+        <li data-lang="en">Windshield breaks. Client doesn't replace it for 2 years.</li>
+        
+        <li data-lang="ro">Zero reparații la service-ul dvs.</li>
+        <li data-lang="ru">Ноль ремонтов на вашем сервисе</li>
+        <li data-lang="en">Zero repairs at your service center</li>
+        
+        <li data-lang="ro">Pierdere comision ~5.320 MDL per auto</li>
+        <li data-lang="ru">Потеря комиссии ~5.320 MDL за авто</li>
+        <li data-lang="en">Lost commission ~5,320 MDL per car</li>
+      </ul>
+    </div>
+    
+    <div class="card" style="border-color: rgba(52, 199, 89, 0.2);">
+      <div class="card-icon" style="color: #34C759;">✓</div>
+      <h3 data-lang="ro">Cu ING Broker: Profit</h3>
+      <h3 data-lang="ru">С ING Broker: Прибыль</h3>
+      <h3 data-lang="en">With ING Broker: Profit</h3>
+      <ul class="list-check">
+        <li data-lang="ro">Reparații asigurate la dealer-ul oficial</li>
+        <li data-lang="ru">Застрахованный ремонт у дилера</li>
+        <li data-lang="en">Insured repairs at the official dealer</li>
+        
+        <li data-lang="ro">Plată rapidă și integrală de la asigurător</li>
+        <li data-lang="ru">Быстрая и полная оплата от страховщика</li>
+        <li data-lang="en">Fast and full payment from insurer</li>
+        
+        <li data-lang="ro">Venit garantat din comisioane lunare</li>
+        <li data-lang="ru">Гарантированный доход от комиссий</li>
+        <li data-lang="en">Guaranteed monthly commission income</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="money">
+  <div class="section-header">
+    <div class="eyebrow">
+      <span data-lang-inline="ro">Calculul Profitului</span>
+      <span data-lang-inline="ru">Расчёт прибыли</span>
+      <span data-lang-inline="en">Profit Calculation</span>
+    </div>
+    <h2 data-lang="ro">Cât câștigă salonul dvs. concret</h2>
+    <h2 data-lang="ru">Сколько конкретно зарабатывает ваш салон</h2>
+    <h2 data-lang="en">Exactly how much your dealership earns</h2>
+  </div>
+
+  <div class="grid-3">
+    <div class="card money-card">
+      <div class="label" data-lang="ro">Auto 30.000 EUR</div>
+      <div class="label" data-lang="ru">Авто 30.000 EUR</div>
+      <div class="label" data-lang="en">Car 30,000 EUR</div>
+      <div class="amount">5.320</div>
+      <div class="label">MDL / COMISION</div>
+    </div>
+    <div class="card money-card">
+      <div class="label" data-lang="ro">Auto 50.000 EUR</div>
+      <div class="label" data-lang="ru">Авто 50.000 EUR</div>
+      <div class="label" data-lang="en">Car 50,000 EUR</div>
+      <div class="amount">7.650</div>
+      <div class="label">MDL / COMISION</div>
+    </div>
+    <div class="card money-card" style="border-color: var(--gold);">
+      <div class="label" data-lang="ro">Venit Lunar (30 auto)</div>
+      <div class="label" data-lang="ru">Месячный доход (30 авто)</div>
+      <div class="label" data-lang="en">Monthly Income (30 cars)</div>
+      <div class="amount">160K</div>
+      <div class="label">MDL / LUNĂ</div>
+    </div>
+  </div>
+</section>
+
+<section id="process" style="background: var(--bg-alt);">
+  <div class="section-header">
+    <div class="eyebrow">
+      <span data-lang-inline="ro">Proces Simplificat</span>
+      <span data-lang-inline="ru">Упрощенный процесс</span>
+      <span data-lang-inline="en">Simplified Process</span>
+    </div>
+    <h2 data-lang="ro">Zero efort din partea dvs.</h2>
+    <h2 data-lang="ru">Ноль усилий с вашей стороны.</h2>
+    <h2 data-lang="en">Zero effort from your side.</h2>
+  </div>
+
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">01</div>
+      <h3 data-lang="ro">Vânzătorul Recomandă</h3>
+      <h3 data-lang="ru">Продавец рекомендует</h3>
+      <h3 data-lang="en">Salesperson Recommends</h3>
+      <p data-lang="ro">La vânzarea auto, angajatul menționează: "Putem aranja CASCO la cel mai bun preț". Atât.</p>
+      <p data-lang="ru">При продаже сотрудник говорит: "Мы можем оформить КАСКО по лучшей цене". Всё.</p>
+      <p data-lang="en">During the sale, the employee mentions: "We can arrange CASCO at the best price". That's it.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">02</div>
+      <h3 data-lang="ro">Ne transmiteți datele</h3>
+      <h3 data-lang="ru">Вы передаёте данные</h3>
+      <h3 data-lang="en">Send us the Data</h3>
+      <p data-lang="ro">Certificatul de înmatriculare sau numărul de telefon al clientului prin WhatsApp sau email.</p>
+      <p data-lang="ru">Свидетельство о регистрации или номер телефона клиента через WhatsApp или email.</p>
+      <p data-lang="en">Registration certificate or client's phone number via WhatsApp or email.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">03</div>
+      <h3 data-lang="ro">ING Broker face totul</h3>
+      <h3 data-lang="ru">ING Broker делает всё</h3>
+      <h3 data-lang="en">ING Broker Does Everything</h3>
+      <p data-lang="ro">Perfectăm polița, livrăm prin curier, fotografiem vehiculul. Salonul primește comisionul.</p>
+      <p data-lang="ru">Оформляем полис, доставляем курьером, фотографируем авто. Салон получает комиссию.</p>
+      <p data-lang="en">We issue the policy, deliver by courier, photograph the vehicle. The dealership receives the commission.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <div class="contact-info">
+      <div class="eyebrow">
+        <span data-lang-inline="ro">Contact</span>
+        <span data-lang-inline="ru">Контакты</span>
+        <span data-lang-inline="en">Contact</span>
+      </div>
+      <h2 data-lang="ro">Să discutăm despre profitul dvs.</h2>
+      <h2 data-lang="ru">Обсудим вашу прибыль.</h2>
+      <h2 data-lang="en">Let's discuss your profit.</h2>
+      <p data-lang="ro">O întâlnire de 30 de minute poate schimba fluxul de venituri al salonului dvs. auto.</p>
+      <p data-lang="ru">30-минутная встреча может изменить поток доходов вашего автосалона.</p>
+      <p data-lang="en">A 30-minute meeting can change your dealership's revenue stream.</p>
+      
+      <div class="contact-details">
+        <div class="contact-method">
+          <div class="cm-icon">☏</div>
+          <div class="cm-text">
+            <span data-lang-inline="ro">Telefon</span>
+            <span data-lang-inline="ru">Телефон</span>
+            <span data-lang-inline="en">Phone</span>
+            <a href="tel:+37369526003">+373 69 526 003</a>
+          </div>
+        </div>
+        <div class="contact-method">
+          <div class="cm-icon">✉</div>
+          <div class="cm-text">
+            <span>Email</span>
+            <a href="mailto:andrei.moraru@ingbroker.md">andrei.moraru@ingbroker.md</a>
+          </div>
+        </div>
+        <div class="contact-method">
+          <div class="cm-icon">⚐</div>
+          <div class="cm-text">
+            <span data-lang-inline="ro">Locație</span>
+            <span data-lang-inline="ru">Локация</span>
+            <span data-lang-inline="en">Location</span>
+            <a href="#">Chișinău, R. Moldova</a>
+          </div>
+        </div>
+        <div class="contact-method">
+          <div class="cm-icon">💬</div>
+          <div class="cm-text">
+            <span data-lang-inline="ro">Social Media</span>
+            <span data-lang-inline="ru">Социальные сети</span>
+            <span data-lang-inline="en">Social Media</span>
+            <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+              <a href="https://t.me/INGBroker" target="_blank" class="social-btn">Telegram</a>
+              <a href="https://wa.me/37369526003" target="_blank" class="social-btn">WhatsApp</a>
+              <a href="https://www.linkedin.com/company/67107674/" target="_blank" class="social-btn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="form-group">
+        <label data-lang="ro">Nume Salon Auto</label>
+        <label data-lang="ru">Название автосалона</label>
+        <label data-lang="en">Dealership Name</label>
+        <input type="text" class="form-control" id="salonName" placeholder="...">
+      </div>
+      <div class="form-group">
+        <label data-lang="ro">Persoană de Contact</label>
+        <label data-lang="ru">Контактное лицо</label>
+        <label data-lang="en">Contact Person</label>
+        <input type="text" class="form-control" id="contactPerson" placeholder="...">
+      </div>
+      <div class="form-group">
+        <label data-lang="ro">Telefon / Email</label>
+        <label data-lang="ru">Телефон / Email</label>
+        <label data-lang="en">Phone / Email</label>
+        <input type="text" class="form-control" id="contactDetail" placeholder="...">
+      </div>
+      <button class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;" onclick="sendRequest()">
+        <span data-lang-inline="ro">Solicită Parteneriat</span>
+        <span data-lang-inline="ru">Запросить партнерство</span>
+        <span data-lang-inline="en">Request Partnership</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="/ING Re-ALB.png" alt="ING Re Logo">
+  </div>
+  <div class="footer-text">
+    Insurance ING Broker SRL &bull; 
+    <span data-lang-inline="ro">Broker de asigurare licențiat CNPF</span>
+    <span data-lang-inline="ru">Лицензированный страховой брокер CNPF</span>
+    <span data-lang-inline="en">CNPF Licensed Insurance Broker</span>
+    &bull; GALLAGHER & RENOMIA Network Partner &bull; ISO Certified
+    <br>
+    &copy; 2026 ING Broker. All rights reserved.
+  </div>
+</footer>
+
+<script>
+function setLang(l){
+  document.body.setAttribute('data-current-lang', l);
+  document.querySelectorAll('.lang-sw button').forEach(b => {
+    b.classList.toggle('active', b.getAttribute('data-lang-btn') === l);
+  });
+}
+
+function sendRequest() {
+  const salon = document.getElementById('salonName').value;
+  const person = document.getElementById('contactPerson').value;
+  const detail = document.getElementById('contactDetail').value;
+  
+  const to = 'andrei.moraru@ingbroker.md';
+  const subject = encodeURIComponent('Solicitare Parteneriat Salon Auto');
+  const body = encodeURIComponent(`Bună ziua,\n\nDoresc să discutăm despre un parteneriat.\n\nSalon: ${salon}\nPersoană contact: ${person}\nDetalii contact: ${detail}\n\nCu respect.`);
+  
+  window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+}
+</script>
+</body>
+</html>

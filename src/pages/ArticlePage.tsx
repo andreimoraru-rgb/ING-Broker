@@ -1,0 +1,149 @@
+import React, { useEffect, useState } from 'react';
+import { useParams, Navigate, useNavigate } from 'react-router-dom';
+import { Language } from '../translations';
+import { SEO } from '../components/SEO';
+import { motion } from 'motion/react';
+import { ArrowLeft, Calendar, User, Tag } from 'lucide-react';
+import { articles } from '../data/articles';
+
+interface ArticlePageProps {
+  lang: Language;
+}
+
+export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
+  const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
+  const [isScrolled, setIsScrolled] = useState(false);
+  
+  const currentArticles = articles[lang] || articles['ro'];
+  const article = currentArticles.find(a => a.slug === slug);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [slug]);
+
+  if (!article) {
+    return <Navigate to="/news" replace />;
+  }
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.seo.title,
+    "description": article.seo.description,
+    "image": article.image,
+    "author": {
+      "@type": "Person",
+      "name": article.author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Insurance ING Broker SRL",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.ingbroker.md/logo.png"
+      }
+    },
+    "datePublished": article.date
+  };
+
+  return (
+    <div className="bg-white min-h-screen">
+      <SEO 
+        title={article.seo.title} 
+        description={article.seo.description} 
+        lang={lang} 
+        schema={schema}
+        keywords={article.seo.keywords}
+      />
+      
+      {/* Back Button */}
+      <div className="fixed top-32 left-6 z-50">
+        <motion.button
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          onClick={() => navigate('/news')}
+          className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
+            isScrolled 
+              ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50' 
+              : 'bg-white/10 hover:bg-white/20 border-white/20 text-white'
+          }`}
+        >
+          <div className={`p-1 group-hover:-translate-x-1 transition-transform ${
+            isScrolled ? 'text-primary' : 'text-primary'
+          }`}>
+            <ArrowLeft size={16} strokeWidth={3} />
+          </div>
+          <span>
+            {lang === 'ro' ? 'Înapoi la Noutăți' : lang === 'ru' ? 'Назад к Новостям' : 'Back to News'}
+          </span>
+        </motion.button>
+      </div>
+
+      {/* Hero Section */}
+      <section className="relative h-[60vh] min-h-[500px] flex items-end pb-24 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={article.image} 
+            alt={article.title} 
+            className="w-full h-full object-cover"
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute inset-0 bg-[#0a192f]/60 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent opacity-70" />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto px-6 w-full text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="flex flex-wrap items-center justify-center gap-6 mb-8 text-white/80 text-sm font-light">
+              <div className="flex items-center gap-2">
+                <Calendar size={16} className="text-primary" />
+                {article.date}
+              </div>
+              <div className="flex items-center gap-2">
+                <User size={16} className="text-primary" />
+                {article.author}
+              </div>
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tighter leading-tight mb-8">
+              {article.title}
+            </h1>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <section className="py-24 px-6">
+        <div className="max-w-3xl mx-auto">
+          <div 
+            className="prose prose-lg prose-gray max-w-none prose-headings:font-bold prose-headings:text-secondary prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl prose-img:shadow-lg"
+            dangerouslySetInnerHTML={{ __html: article.content }}
+          />
+          
+          <div className="mt-16 pt-8 border-t border-gray-100">
+            <div className="flex flex-wrap items-center gap-3">
+              <Tag size={18} className="text-gray-400" />
+              {article.tags.map((tag, i) => (
+                <span key={i} className="px-4 py-1.5 bg-gray-50 text-gray-600 text-xs font-medium rounded-full border border-gray-100">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
