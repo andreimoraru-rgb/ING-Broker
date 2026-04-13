@@ -426,10 +426,10 @@ export const businessProductsTranslations = {
       industries: {
         title: 'Soluții Strategice de Resurse Umane',
         items: [
-          { title: 'Asigurări Medicale de Grup', desc: 'Acces la rețele private de sănătate, diagnosticare rapidă și tratamente premium pentru întreaga echipă.', image: '/group-health-benefits.jpeg' },
+          { title: 'Asigurări Medicale de Grup', desc: 'Acces la rețele private de sănătate, diagnosticare rapidă și tratamente premium pentru întreaga echipă.', image: '/Group_Health_Insurance.png' },
           { title: 'Viață și Invaliditate', desc: 'Protecție financiară pentru angajați și familiile acestora în cazul unor evenimente neprevăzute critice.', image: '/employer.png' },
           { title: 'Programe de Wellness', desc: 'Inițiative axate pe sănătatea mentală, nutriție și echilibrul între viața profesională și cea personală.', image: '/wellness_insurance.png' },
-          { title: 'Retenție Talent IT', desc: 'Pachete customizate special pentru nevoile și așteptările profesioniștilor din sectorul tehnologic.', image: '/retentie IT.png' }
+          { title: 'Retenție Talent IT', desc: 'Pachete customizate special pentru nevoile și așteptările profesioniștilor din sectorul tehnologic.', image: '/conect-people.png' }
         ]
       },
       analysis: {
@@ -950,10 +950,10 @@ export const businessProductsTranslations = {
       industries: {
         title: 'Целевые отрасли',
         items: [
-          { title: 'Корпоративный сектор', desc: 'Крупные компании, желающие предложить конкурентоспособные пакеты льгот.', image: '/employer.jpg' },
+          { title: 'Корпоративный сектор', desc: 'Крупные компании, желающие предложить конкурентоспособные пакеты льгот.', image: '/Group_Health_Insurance.png' },
           { title: 'МСП и стартапы', desc: 'Растущие предприятия, инвестирующие в удержание талантов.', image: '/employer.jpg' },
           { title: 'Технологии / ИТ', desc: 'Компании, где дополнительные льготы являются стандартом при найме.', image: '/employer.jpg' },
-          { title: 'Услуги и консалтинг', desc: 'Фирмы, которые ценят здоровье и благополучие своих сотрудников.', image: '/employer.jpg' }
+          { title: 'Услуги и консалтинг', desc: 'Фирмы, которые ценят здоровье и благополучие своих сотрудников.', image: '/conect-people.png' }
         ]
       },
       analysis: {
@@ -1474,10 +1474,10 @@ export const businessProductsTranslations = {
       industries: {
         title: 'Target Industries',
         items: [
-          { title: 'Corporate Sector', desc: 'Large companies wishing to offer competitive benefit packages.', image: '/employer.jpg' },
+          { title: 'Corporate Sector', desc: 'Large companies wishing to offer competitive benefit packages.', image: '/Group_Health_Insurance.png' },
           { title: 'SMEs and Startups', desc: 'Growing businesses investing in talent retention.', image: '/employer.jpg' },
           { title: 'Tech / IT Industry', desc: 'Companies where extra-salary benefits are standard in recruitment.', image: '/employer.jpg' },
-          { title: 'Services and Consulting', desc: 'Firms that value the health and well-being of their employees.', image: '/employer.jpg' }
+          { title: 'Services and Consulting', desc: 'Firms that value the health and well-being of their employees.', image: '/conect-people.png' }
         ]
       },
       analysis: {

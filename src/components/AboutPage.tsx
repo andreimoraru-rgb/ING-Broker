@@ -294,11 +294,11 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
               </p>
             </div>
             <div className="flex flex-wrap gap-8">
-              <a href="/certificat_iso.pdf" download="Certificat_ISO_ING.pdf" className="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:border-primary hover:shadow-md transition-all cursor-pointer">
+              <a href="/certificat_iso.pdf" target="_blank" rel="noopener noreferrer" className="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:border-primary hover:shadow-md transition-all cursor-pointer">
                 <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">ISO 9001:2015</div>
                 <div className="text-secondary font-medium">Certified Excellence</div>
               </a>
-              <a href="/licenta_ing.pdf" download="Licenta_ING.pdf" className="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:border-primary hover:shadow-md transition-all cursor-pointer">
+              <a href="/licenta_ing.pdf" target="_blank" rel="noopener noreferrer" className="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:border-primary hover:shadow-md transition-all cursor-pointer">
                 <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">CNPF License</div>
                 <div className="text-secondary font-medium">Official Authority</div>
               </a>

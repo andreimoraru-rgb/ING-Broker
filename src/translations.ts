@@ -266,7 +266,7 @@ export const translations = {
           id: 'benefits', 
           title: 'Asigurări de Sănătate și viață pentru angajați', 
           desc: 'Beneficii Angajați și Asigurări de Sănătate de Grup | Retenția Talentelor IT Moldova | ING Broker. Programe premium concepute pentru a crește retenția și loialitatea echipei. Indispensabile în sectorul IT, corporații și IMM-uri. ING Broker negociază pachete personalizate care transformă grija pentru angajați într-un avantaj competitiv major pe piața muncii.', 
-          image: '/health-insurance-ing-broker.jpeg', 
+          image: '/health.png', 
           category: 'HUMAN RESOURCES', 
           link: '/business/benefits',
           analysis: {
@@ -1167,7 +1167,7 @@ export const translations = {
           id: 'benefits', 
           title: 'Employee Benefits & Group Health Insurance | IT Talent Retention Moldova | ING Broker', 
           desc: 'Employee Benefits & Group Health Insurance | IT Talent Retention Moldova | ING Broker. Premium programs designed to increase team retention and loyalty. Indispensable in the IT sector, corporations, and SMEs. ING Broker negotiates customized packages that turn employee care into a major competitive advantage in the labor market.', 
-          image: '/health-insurance-ing-broker.jpeg', 
+          image: '/health.png', 
           category: 'HUMAN RESOURCES', 
           link: '/business/benefits',
           analysis: {

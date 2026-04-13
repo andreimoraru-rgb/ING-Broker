@@ -38,7 +38,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'Regenerare Energie',
           desc: 'Asigurări dedicate proiectelor de energie regenerabilă: parcuri eoliene, panouri solare și infrastructură verde.',
           image: '/Wind-Turbines---Energy.jpg',
-          link: '/renewable-energy'
+          link: '/Securing_Renewable_Capital_(3).pdf'
         },
         {
           id: 'employee-benefits',
@@ -92,7 +92,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'Возобновляемая энергия',
           desc: 'Страхование проектов возобновляемая энергетики: ветропарков, солнечных панелей и зеленой инфраструктуры.',
           image: '/Wind-Turbines---Energy.jpg',
-          link: '/renewable-energy'
+          link: '/Securing_Renewable_Capital_(3).pdf'
         },
         {
           id: 'employee-benefits',
@@ -146,7 +146,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'Renewable Energy',
           desc: 'Insurance dedicated to renewable energy projects: wind farms, solar panels, and green infrastructure.',
           image: '/Wind-Turbines---Energy.jpg',
-          link: '/renewable-energy'
+          link: '/Securing_Renewable_Capital_(3).pdf'
         },
         {
           id: 'employee-benefits',
@@ -247,11 +247,11 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
                 transition={{ delay: idx * 0.1 }}
                 className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100 flex flex-col"
               >
-                {offer.link && (offer.link.startsWith('http') || offer.link.endsWith('.html')) ? (
+                {offer.link && (offer.link.startsWith('http') || offer.link.endsWith('.html') || offer.link.endsWith('.pdf')) ? (
                   <a 
                     href={offer.link}
-                    target={offer.link.endsWith('.html') ? "_blank" : undefined}
-                    rel={offer.link.endsWith('.html') ? "noopener noreferrer" : undefined}
+                    target={(offer.link.endsWith('.html') || offer.link.endsWith('.pdf')) ? "_blank" : undefined}
+                    rel={(offer.link.endsWith('.html') || offer.link.endsWith('.pdf')) ? "noopener noreferrer" : undefined}
                     className="flex flex-col flex-grow"
                   >
                     <div className="h-48 overflow-hidden relative">
