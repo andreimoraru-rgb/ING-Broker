@@ -17,6 +17,69 @@ jobs:
 
       - name: Install optimization tools
         run: |
+          sudo apt-get install -y optipng jpegoptim
+
+      - name: Optimize PNG files (lossless)
+        run: |
+          echo "=== Optimizing PNG files with optipng (lossless) ==="
+          find public/ -name "*.png" -type f | while read f; do
+            before=$(stat -c%s "$f")
+            optipng -o2 -quiet "$f" 2>/dev/null || true
+            after=$(stat -c%s "$f")
+            saved=$((before - after))
+            if [ $saved -gt 0 ]; then
+              echo "Saved $saved bytes: $f ($before -> $after)"
+            fi
+          done
+          echo "PNG optimization done."
+
+      - name: Optimize JPEG/JPG files (max 85 quality)
+        run: |
+          echo "=== Optimizing JPEG files with jpegoptim (max 85%) ==="
+          find public/ \( -name "*.jpg" -o -name "*.jpeg" \) -type f | while read f; do
+            before=$(stat -c%s "$f")
+            jpegoptim --max=85 --strip-all --quiet "$f" 2>/dev/null || true
+            after=$(stat -c%s "$f")
+            saved=$((before - after))
+            if [ $saved -gt 0 ]; then
+              echo "Saved $saved bytes: $f ($before -> $after)"
+            fi
+          done
+          echo "JPEG optimization done."
+
+      - name: Show folder size
+        run: |
+          echo "=== public/ folder size ==="
+          du -sh public/
+
+      - name: Commit optimized images
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add public/
+          git diff --staged --stat
+          git commit -m "perf: optimize images (lossless PNG + jpegoptim 85%)" || echo "No changes to commit"
+
+      - name: Push
+        run: git push origin mainname: Optimize Images (No Quality Loss)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install optimization tools
+        run: |
           sudo apt-get install -y optipng jpegoptim webp
 
       - name: Optimize PNG files (lossless)
