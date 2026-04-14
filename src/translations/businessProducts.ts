@@ -325,7 +325,7 @@ export const businessProductsTranslations = {
           { title: 'Comerț cu Ridicata', desc: 'Distribuitori care vând volume mari de marfă cu plata la termen.', image: '/comert cu ridicata.jpg' },
           { title: 'Industria Manufacturieră', desc: 'Producători care depind de încasarea facturilor pentru capitalul de lucru.', image: '/procesarea-carnii.jpg' },
           { title: 'Servicii B2B', desc: 'Companii de consultanță, publicitate sau IT care lucrează cu clienți mari.' },
-          { title: 'Exportatori', desc: 'Afaceri care vând pe piețe externe și au nevoie de protecție la riscuri de țară.', image: '/export.jpg' }
+          { title: 'Exportatori', desc: 'Afaceri care vând pe piețe externe și au nevoie de protecție la riscuri de țară.', image: '/e-commerce-2.png' }
         ]
       },
       analysis: {
@@ -849,7 +849,7 @@ export const businessProductsTranslations = {
           { title: 'Оптовая торговля', desc: 'Дистрибьюторы, продающие большие объемы товара с отсрочкой платежа.', image: '/comert cu ridicata.jpg' },
           { title: 'Производственная промышленность', desc: 'Производители, зависящие от инкассации счетов для оборотного капитала.', image: '/procesarea-carnii.jpg' },
           { title: 'B2B услуги', desc: 'Консалтинговые, рекламные или ИТ-компании, работающие с крупными клиентами.' },
-          { title: 'Экспортеры', desc: 'Бизнесы, продающие на внешних рынках и нуждающиеся в защите от страновых рисков.', image: '/export.jpg' }
+          { title: 'Экспортеры', desc: 'Бизнесы, продающие на внешних рынках и нуждающиеся в защите от страновых рисков.', image: '/e-commerce-2.png' }
         ]
       },
       analysis: {
@@ -1373,7 +1373,7 @@ export const businessProductsTranslations = {
           { title: 'Wholesale Trade', desc: 'Distributors selling large volumes of goods with deferred payment.', image: '/comert cu ridicata.jpg' },
           { title: 'Manufacturing Industry', desc: 'Manufacturers depending on invoice collection for working capital.', image: '/procesarea-carnii.jpg' },
           { title: 'B2B Services', desc: 'Consulting, advertising, or IT companies working with large clients.' },
-          { title: 'Exporters', desc: 'Businesses selling in foreign markets needing protection against country risks.', image: '/export.jpg' }
+          { title: 'Exporters', desc: 'Businesses selling in foreign markets needing protection against country risks.', image: '/e-commerce-2.png' }
         ]
       },
       analysis: {

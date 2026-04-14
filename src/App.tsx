@@ -766,7 +766,7 @@ const WhyUsSection = ({ lang }: { lang: Language }) => {
       {/* Background Architectural Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/reinsurance 3-1.jpeg" 
+          src="/reinsurance 3.jpeg" 
           className="w-full h-full object-cover opacity-20 grayscale"
           alt="Architecture"
           referrerPolicy="no-referrer"
