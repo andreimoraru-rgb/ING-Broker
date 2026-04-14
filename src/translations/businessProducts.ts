@@ -112,8 +112,8 @@ export const businessProductsTranslations = {
       industries: {
         title: 'Industrii Vizate',
         items: [
-          { title: 'Sectorul Corporativ', desc: 'Companii mari cu structuri complexe de management și consilii de administrație.', image: '/d&o corporate.jpg' },
-          { title: 'Servicii Financiare', desc: 'Bănci, fonduri de investiții și instituții financiare nebancare.', image: '/d&o financiar.png' },
+          { title: 'Sectorul Corporativ', desc: 'Companii mari cu structuri complexe de management și consilii de administrație.', image: '/dando-corporate.jpg' },
+          { title: 'Servicii Financiare', desc: 'Bănci, fonduri de investiții și instituții financiare nebancare.', image: '/dando-financiar.png' },
           { title: 'Startups și Tech', desc: 'Companii în creștere rapidă care atrag investiții externe.', image: '/Startups și Tech-2.jpg' },
           { title: 'ONG-uri și Asociații', desc: 'Organizații non-profit unde administratorii poartă răspundere legală.', image: '/ong.jpg' }
         ]
@@ -218,7 +218,7 @@ export const businessProductsTranslations = {
       industries: {
         title: 'Industrii Vizate',
         items: [
-          { title: 'Logistică și Transport', desc: 'Companii de transport rutier, aerian, maritim și feroviar.', image: '/logistica.jpg' },
+          { title: 'Logistică și Transport', desc: 'Companii de transport rutier, aerian, maritim și feroviar.', image: '/LOGISTICA.png' },
           { title: 'Import / Export', desc: 'Companii comerciale care derulează tranzacții internaționale de mărfuri.' },
           { title: 'Producție și Industrie', desc: 'Fabrici care își transportă produsele finite către distribuitori.', image: '/productie cargo.png' },
           { title: 'Distribuție și Retail', desc: 'Companii care gestionează fluxuri constante de aprovizionare.', image: '/air cargo.jpg' }
@@ -429,7 +429,7 @@ export const businessProductsTranslations = {
           { title: 'Asigurări Medicale de Grup', desc: 'Acces la rețele private de sănătate, diagnosticare rapidă și tratamente premium pentru întreaga echipă.', image: '/Group_Health_Insurance.png' },
           { title: 'Viață și Invaliditate', desc: 'Protecție financiară pentru angajați și familiile acestora în cazul unor evenimente neprevăzute critice.', image: '/employer.png' },
           { title: 'Programe de Wellness', desc: 'Inițiative axate pe sănătatea mentală, nutriție și echilibrul între viața profesională și cea personală.', image: '/wellness_insurance.png' },
-          { title: 'Retenție Talent IT', desc: 'Pachete customizate special pentru nevoile și așteptările profesioniștilor din sectorul tehnologic.', image: '/conect-people.png' }
+          { title: 'Retenție Talent IT', desc: 'Pachete customizate special pentru nevoile și așteptările profesioniștilor din sectorul tehnologic.', image: '/conect-people-2.png' }
         ]
       },
       analysis: {
@@ -742,7 +742,7 @@ export const businessProductsTranslations = {
       industries: {
         title: 'Целевые отрасли',
         items: [
-          { title: 'Логистика и транспорт', desc: 'Компании, занимающиеся автомобильными, авиационными, морскими и ж/д перевозками.', image: '/logistica.jpg' },
+          { title: 'Логистика и транспорт', desc: 'Компании, занимающиеся автомобильными, авиационными, морскими и ж/д перевозками.', image: '/LOGISTICA.png' },
           { title: 'Импорт / Экспорт', desc: 'Торговые компании, осуществляющие международные сделки с товарами.' },
           { title: 'Производство и промышленность', desc: 'Заводы, транспортирующие готовую продукцию дистрибьюторам.', image: '/productie cargo.png' },
           { title: 'Дистрибуция и ритейл', desc: 'Компании, управляющие постоянными потоками поставок.', image: '/air cargo.jpg' }
@@ -953,7 +953,7 @@ export const businessProductsTranslations = {
           { title: 'Корпоративный сектор', desc: 'Крупные компании, желающие предложить конкурентоспособные пакеты льгот.', image: '/Group_Health_Insurance.png' },
           { title: 'МСП и стартапы', desc: 'Растущие предприятия, инвестирующие в удержание талантов.', image: '/employer.jpg' },
           { title: 'Технологии / ИТ', desc: 'Компании, где дополнительные льготы являются стандартом при найме.', image: '/employer.jpg' },
-          { title: 'Услуги и консалтинг', desc: 'Фирмы, которые ценят здоровье и благополучие своих сотрудников.', image: '/conect-people.png' }
+          { title: 'Услуги и консалтинг', desc: 'Фирмы, которые ценят здоровье и благополучие своих сотрудников.', image: '/conect-people-2.png' }
         ]
       },
       analysis: {
@@ -1266,7 +1266,7 @@ export const businessProductsTranslations = {
       industries: {
         title: 'Target Industries',
         items: [
-          { title: 'Logistics and Transport', desc: 'Road, air, sea, and rail transport companies.', image: '/logistica.jpg' },
+          { title: 'Logistics and Transport', desc: 'Road, air, sea, and rail transport companies.', image: '/LOGISTICA.png' },
           { title: 'Import / Export', desc: 'Trading companies conducting international commodity transactions.' },
           { title: 'Production and Industry', desc: 'Factories transporting finished products to distributors.', image: '/productie cargo.png' },
           { title: 'Distribution and Retail', desc: 'Companies managing constant supply flows.', image: '/air cargo.jpg' }
@@ -1477,7 +1477,7 @@ export const businessProductsTranslations = {
           { title: 'Corporate Sector', desc: 'Large companies wishing to offer competitive benefit packages.', image: '/Group_Health_Insurance.png' },
           { title: 'SMEs and Startups', desc: 'Growing businesses investing in talent retention.', image: '/employer.jpg' },
           { title: 'Tech / IT Industry', desc: 'Companies where extra-salary benefits are standard in recruitment.', image: '/employer.jpg' },
-          { title: 'Services and Consulting', desc: 'Firms that value the health and well-being of their employees.', image: '/conect-people.png' }
+          { title: 'Services and Consulting', desc: 'Firms that value the health and well-being of their employees.', image: '/conect-people-2.png' }
         ]
       },
       analysis: {
