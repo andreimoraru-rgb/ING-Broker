@@ -307,7 +307,7 @@ export const GenericProductPage: React.FC<GenericProductPageProps> = ({ lang }) 
             <div className="grid lg:grid-cols-3 gap-8">
               {(['risks', 'advantages', 'disadvantages'] as const).map((type, index) => {
                 const images = [
-                  "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1000", // Risks (Legal/Contract)
+                  "/riscuri_business.jpg", // Risks
                   "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1000", // Advantages (Professional)
                   "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&q=80&w=1000"  // Disadvantages (Analysis)
                 ];
