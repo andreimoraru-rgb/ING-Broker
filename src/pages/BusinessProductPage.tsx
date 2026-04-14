@@ -304,7 +304,7 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
           <div className="grid lg:grid-cols-3 gap-8">
             {(['risks', 'advantages', 'disadvantages'] as const).map((type, index) => {
               const images = [
-                "/analiza-riscurilor-2.avif", // Risks
+                "/Riscurile Produsului.avif", // Risks
                 "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1000", // Advantages
                 "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1000"  // Disadvantages
               ];
