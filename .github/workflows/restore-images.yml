@@ -18,10 +18,10 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git checkout b2e60ed48570623f80784ab50635be2f3251240d -- public/
-          git checkout b2e60ed48570623f80784ab50635be2f3251240d -- "conect people (2).png"
-          git checkout b2e60ed48570623f80784ab50635be2f3251240d -- "cyber-insurance-2.webp"
           git add -A
-          git commit -m "fix: restore corrupted images from b2e60ed"
+          git status
+          git diff --cached --name-only | wc -l
+          git commit -m "fix: restore corrupted images from b2e60ed" || echo "Nothing to commit"
 
       - name: Push changes
         run: |
