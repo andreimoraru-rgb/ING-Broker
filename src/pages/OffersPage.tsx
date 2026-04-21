@@ -16,112 +16,112 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
 
   const content = {
     ro: {
-      title: 'Soluții Sectoriale',
-      subtitle: 'Programe de asigurare specializate, adaptate riscurilor specifice fiecărei industrii.',
+      title: 'SoluÈii Sectoriale',
+      subtitle: 'Programe de asigurare specializate, adaptate riscurilor specifice fiecÄrei industrii.',
       offers: [
         {
           id: 'saloane-auto',
           title: 'Saloane Auto',
-          desc: 'Pachete complete de asigurare pentru dealeri auto, acoperind stocul de vehicule, răspunderea civilă și riscurile operaționale.',
+          desc: 'Pachete complete de asigurare pentru dealeri auto, acoperind stocul de vehicule, rÄspunderea civilÄ Èi riscurile operaÈionale.',
           image: '/salon-auto.jpg',
           link: '/saloane-auto.html'
         },
         {
           id: 'companii-it',
           title: 'Companii IT',
-          desc: 'Protecție specializată pentru sectorul tehnologic, incluzând răspunderea profesională (E&O) și riscurile cibernetice.',
+          desc: 'ProtecÈie specializatÄ pentru sectorul tehnologic, incluzÃ¢nd rÄspunderea profesionalÄ (E&O) Èi riscurile cibernetice.',
           image: '/it-companies.jpg',
           link: '/business/professional'
         },
         {
           id: 'regenerare-energie',
           title: 'Regenerare Energie',
-          desc: 'Asigurări dedicate proiectelor de energie regenerabilă: parcuri eoliene, panouri solare și infrastructură verde.',
+          desc: 'AsigurÄri dedicate proiectelor de energie regenerabilÄ: parcuri eoliene, panouri solare Èi infrastructurÄ verde.',
           image: '/Wind-Turbines---Energy.jpg',
-          link: '/Securing_Renewable_Capital_(3).pdf'
+          link: '/oferte/energie-regenerabila'
         },
         {
           id: 'employee-benefits',
           title: 'Employee Benefits',
-          desc: 'Programe de sănătate și viață pentru angajați, esențiale pentru retenția talentelor în sectorul IT și corporate.',
+          desc: 'Programe de sÄnÄtate Èi viaÈÄ pentru angajaÈi, esenÈiale pentru retenÈia talentelor Ã®n sectorul IT Èi corporate.',
           image: '/employer.jpg',
           link: '/business/benefits'
         },
         {
           id: 'transportatori-auto',
           title: 'Transportatori Auto',
-          desc: 'Soluții pentru flote comerciale și transportatori, acoperind marfa (CMR), vehiculele (CASCO) și răspunderea.',
+          desc: 'SoluÈii pentru flote comerciale Èi transportatori, acoperind marfa (CMR), vehiculele (CASCO) Èi rÄspunderea.',
           image: '/transportatori-auto.jpg'
         },
         {
           id: 'cyber-insurance',
           title: 'Cyber Insurance',
-          desc: 'Protecție avansată împotriva atacurilor cibernetice, scurgerilor de date și întreruperii afacerii din cauze informatice.',
+          desc: 'ProtecÈie avansatÄ Ã®mpotriva atacurilor cibernetice, scurgerilor de date Èi Ã®ntreruperii afacerii din cauze informatice.',
           image: '/cyber-insurance-3.jpg'
         },
         {
           id: 'car-ear',
-          title: 'Construction Shield 360 - Asigurare CAR/EAR + Garanții',
-          desc: 'Pachet integrat All Risks pentru construcții și montaj, incluzând garanții contractuale (Bid/Performance/Advance Bonds). Soluție completă pentru proiecte finanțate de BERD, FMI și bănci comerciale.',
+          title: 'Construction Shield 360 - Asigurare CAR/EAR + GaranÈii',
+          desc: 'Pachet integrat All Risks pentru construcÈii Èi montaj, incluzÃ¢nd garanÈii contractuale (Bid/Performance/Advance Bonds). SoluÈie completÄ pentru proiecte finanÈate de BERD, FMI Èi bÄnci comerciale.',
           image: '/Constructii-montaj.jpeg',
           link: '/construction-shield'
         }
       ],
-      cta: 'Solicită Ofertă'
+      cta: 'SolicitÄ OfertÄ'
     },
     ru: {
-      title: 'Отраслевые решения',
-      subtitle: 'Специализированные программы страхования, адаптированные к специфическим рискам каждой отрасли.',
+      title: 'ÐÑÑÐ°ÑÐ»ÐµÐ²ÑÐµ ÑÐµÑÐµÐ½Ð¸Ñ',
+      subtitle: 'Ð¡Ð¿ÐµÑÐ¸Ð°Ð»Ð¸Ð·Ð¸ÑÐ¾Ð²Ð°Ð½Ð½ÑÐµ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ñ ÑÑÑÐ°ÑÐ¾Ð²Ð°Ð½Ð¸Ñ, Ð°Ð´Ð°Ð¿ÑÐ¸ÑÐ¾Ð²Ð°Ð½Ð½ÑÐµ Ðº ÑÐ¿ÐµÑÐ¸ÑÐ¸ÑÐµÑÐºÐ¸Ð¼ ÑÐ¸ÑÐºÐ°Ð¼ ÐºÐ°Ð¶Ð´Ð¾Ð¹ Ð¾ÑÑÐ°ÑÐ»Ð¸.',
       offers: [
         {
           id: 'saloane-auto',
-          title: 'Автосалоны',
-          desc: 'Комплексные пакеты страхования для автодилеров, покрывающие склад автомобилей, гражданскую ответственность и операционные риски.',
+          title: 'ÐÐ²ÑÐ¾ÑÐ°Ð»Ð¾Ð½Ñ',
+          desc: 'ÐÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½ÑÐµ Ð¿Ð°ÐºÐµÑÑ ÑÑÑÐ°ÑÐ¾Ð²Ð°Ð½Ð¸Ñ Ð´Ð»Ñ Ð°Ð²ÑÐ¾Ð´Ð¸Ð»ÐµÑÐ¾Ð², Ð¿Ð¾ÐºÑÑÐ²Ð°ÑÑÐ¸Ðµ ÑÐºÐ»Ð°Ð´ Ð°Ð²ÑÐ¾Ð¼Ð¾Ð±Ð¸Ð»ÐµÐ¹, Ð³ÑÐ°Ð¶Ð´Ð°Ð½ÑÐºÑÑ Ð¾ÑÐ²ÐµÑÑÑÐ²ÐµÐ½Ð½Ð¾ÑÑÑ Ð¸ Ð¾Ð¿ÐµÑÐ°ÑÐ¸Ð¾Ð½Ð½ÑÐµ ÑÐ¸ÑÐºÐ¸.',
           image: '/salon-auto.jpg',
           link: '/saloane-auto.html'
         },
         {
           id: 'companii-it',
-          title: 'IT-компании',
-          desc: 'Специализированная защита для технологического сектора, включая профессиональную ответственность (E&O) и киберриски.',
+          title: 'IT-ÐºÐ¾Ð¼Ð¿Ð°Ð½Ð¸Ð¸',
+          desc: 'Ð¡Ð¿ÐµÑÐ¸Ð°Ð»Ð¸Ð·Ð¸ÑÐ¾Ð²Ð°Ð½Ð½Ð°Ñ Ð·Ð°ÑÐ¸ÑÐ° Ð´Ð»Ñ ÑÐµÑÐ½Ð¾Ð»Ð¾Ð³Ð¸ÑÐµÑÐºÐ¾Ð³Ð¾ ÑÐµÐºÑÐ¾ÑÐ°, Ð²ÐºÐ»ÑÑÐ°Ñ Ð¿ÑÐ¾ÑÐµÑÑÐ¸Ð¾Ð½Ð°Ð»ÑÐ½ÑÑ Ð¾ÑÐ²ÐµÑÑÑÐ²ÐµÐ½Ð½Ð¾ÑÑÑ (E&O) Ð¸ ÐºÐ¸Ð±ÐµÑÑÐ¸ÑÐºÐ¸.',
           image: '/it-companies.jpg',
           link: '/business/professional'
         },
         {
           id: 'regenerare-energie',
-          title: 'Возобновляемая энергия',
-          desc: 'Страхование проектов возобновляемая энергетики: ветропарков, солнечных панелей и зеленой инфраструктуры.',
+          title: 'ÐÐ¾Ð·Ð¾Ð±Ð½Ð¾Ð²Ð»ÑÐµÐ¼Ð°Ñ ÑÐ½ÐµÑÐ³Ð¸Ñ',
+          desc: 'Ð¡ÑÑÐ°ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ Ð¿ÑÐ¾ÐµÐºÑÐ¾Ð² Ð²Ð¾Ð·Ð¾Ð±Ð½Ð¾Ð²Ð»ÑÐµÐ¼Ð°Ñ ÑÐ½ÐµÑÐ³ÐµÑÐ¸ÐºÐ¸: Ð²ÐµÑÑÐ¾Ð¿Ð°ÑÐºÐ¾Ð², ÑÐ¾Ð»Ð½ÐµÑÐ½ÑÑ Ð¿Ð°Ð½ÐµÐ»ÐµÐ¹ Ð¸ Ð·ÐµÐ»ÐµÐ½Ð¾Ð¹ Ð¸Ð½ÑÑÐ°ÑÑÑÑÐºÑÑÑÑ.',
           image: '/Wind-Turbines---Energy.jpg',
-          link: '/Securing_Renewable_Capital_(3).pdf'
+          link: '/ru/predlozheniya/vozobnovlyaemaya-energetika'
         },
         {
           id: 'employee-benefits',
           title: 'Employee Benefits',
-          desc: 'Программы страхования здоровья и жизни для сотрудников, необходимые для удержания талантов в ИТ и корпоративном секторе.',
+          desc: 'ÐÑÐ¾Ð³ÑÐ°Ð¼Ð¼Ñ ÑÑÑÐ°ÑÐ¾Ð²Ð°Ð½Ð¸Ñ Ð·Ð´Ð¾ÑÐ¾Ð²ÑÑ Ð¸ Ð¶Ð¸Ð·Ð½Ð¸ Ð´Ð»Ñ ÑÐ¾ÑÑÑÐ´Ð½Ð¸ÐºÐ¾Ð², Ð½ÐµÐ¾Ð±ÑÐ¾Ð´Ð¸Ð¼ÑÐµ Ð´Ð»Ñ ÑÐ´ÐµÑÐ¶Ð°Ð½Ð¸Ñ ÑÐ°Ð»Ð°Ð½ÑÐ¾Ð² Ð² ÐÐ¢ Ð¸ ÐºÐ¾ÑÐ¿Ð¾ÑÐ°ÑÐ¸Ð²Ð½Ð¾Ð¼ ÑÐµÐºÑÐ¾ÑÐµ.',
           image: '/employer.jpg',
           link: '/business/benefits'
         },
         {
           id: 'transportatori-auto',
-          title: 'Автоперевозчики',
-          desc: 'Решения для коммерческих автопарков и перевозчиков, покрывающие грузы (CMR), транспортные средства (CASCO) и ответственность.',
+          title: 'ÐÐ²ÑÐ¾Ð¿ÐµÑÐµÐ²Ð¾Ð·ÑÐ¸ÐºÐ¸',
+          desc: 'Ð ÐµÑÐµÐ½Ð¸Ñ Ð´Ð»Ñ ÐºÐ¾Ð¼Ð¼ÐµÑÑÐµÑÐºÐ¸Ñ Ð°Ð²ÑÐ¾Ð¿Ð°ÑÐºÐ¾Ð² Ð¸ Ð¿ÐµÑÐµÐ²Ð¾Ð·ÑÐ¸ÐºÐ¾Ð², Ð¿Ð¾ÐºÑÑÐ²Ð°ÑÑÐ¸Ðµ Ð³ÑÑÐ·Ñ (CMR), ÑÑÐ°Ð½ÑÐ¿Ð¾ÑÑÐ½ÑÐµ ÑÑÐµÐ´ÑÑÐ²Ð° (CASCO) Ð¸ Ð¾ÑÐ²ÐµÑÑÑÐ²ÐµÐ½Ð½Ð¾ÑÑÑ.',
           image: '/transportatori-auto.jpg'
         },
         {
           id: 'cyber-insurance',
-          title: 'Киберстрахование',
-          desc: 'Передовая защита от кибератак, утечек данных и прерывания бизнеса по ИТ-причинам.',
+          title: 'ÐÐ¸Ð±ÐµÑÑÑÑÐ°ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ',
+          desc: 'ÐÐµÑÐµÐ´Ð¾Ð²Ð°Ñ Ð·Ð°ÑÐ¸ÑÐ° Ð¾Ñ ÐºÐ¸Ð±ÐµÑÐ°ÑÐ°Ðº, ÑÑÐµÑÐµÐº Ð´Ð°Ð½Ð½ÑÑ Ð¸ Ð¿ÑÐµÑÑÐ²Ð°Ð½Ð¸Ñ Ð±Ð¸Ð·Ð½ÐµÑÐ° Ð¿Ð¾ ÐÐ¢-Ð¿ÑÐ¸ÑÐ¸Ð½Ð°Ð¼.',
           image: '/cyber-insurance-3.jpg'
         },
         {
           id: 'car-ear',
-          title: 'Construction Shield 360 - Страхование CAR/EAR + Гарантии',
-          desc: 'Интегрированный пакет All Risks для строительно-монтажных работ, включая контрактные гарантии (Bid/Performance/Advance Bonds). Решение для проектов, финансируемых ЕБРР, МВФ и банками.',
+          title: 'Construction Shield 360 - Ð¡ÑÑÐ°ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ CAR/EAR + ÐÐ°ÑÐ°Ð½ÑÐ¸Ð¸',
+          desc: 'ÐÐ½ÑÐµÐ³ÑÐ¸ÑÐ¾Ð²Ð°Ð½Ð½ÑÐ¹ Ð¿Ð°ÐºÐµÑ All Risks Ð´Ð»Ñ ÑÑÑÐ¾Ð¸ÑÐµÐ»ÑÐ½Ð¾-Ð¼Ð¾Ð½ÑÐ°Ð¶Ð½ÑÑ ÑÐ°Ð±Ð¾Ñ, Ð²ÐºÐ»ÑÑÐ°Ñ ÐºÐ¾Ð½ÑÑÐ°ÐºÑÐ½ÑÐµ Ð³Ð°ÑÐ°Ð½ÑÐ¸Ð¸ (Bid/Performance/Advance Bonds). Ð ÐµÑÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð¿ÑÐ¾ÐµÐºÑÐ¾Ð², ÑÐ¸Ð½Ð°Ð½ÑÐ¸ÑÑÐµÐ¼ÑÑ ÐÐÐ Ð , ÐÐÐ¤ Ð¸ Ð±Ð°Ð½ÐºÐ°Ð¼Ð¸.',
           image: '/Constructii-montaj.jpeg',
           link: '/construction-shield'
         }
       ],
-      cta: 'Запросить предложение'
+      cta: 'ÐÐ°Ð¿ÑÐ¾ÑÐ¸ÑÑ Ð¿ÑÐµÐ´Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ'
     },
     en: {
       title: 'Industry Solutions',
@@ -146,7 +146,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'Renewable Energy',
           desc: 'Insurance dedicated to renewable energy projects: wind farms, solar panels, and green infrastructure.',
           image: '/Wind-Turbines---Energy.jpg',
-          link: '/Securing_Renewable_Capital_(3).pdf'
+          link: '/en/offers/renewable-energy'
         },
         {
           id: 'employee-benefits',
@@ -211,7 +211,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
             >
               <div className="h-px w-12 bg-primary" />
               <span className="text-[10px] font-display font-bold uppercase tracking-[0.4em] text-white/70">
-                {lang === 'ro' ? 'Soluții Sectoriale' : lang === 'ru' ? 'Отраслевые решения' : 'Industry Solutions'}
+                {lang === 'ro' ? 'SoluÈii Sectoriale' : lang === 'ru' ? 'ÐÑÑÐ°ÑÐ»ÐµÐ²ÑÐµ ÑÐµÑÐµÐ½Ð¸Ñ' : 'Industry Solutions'}
               </span>
             </motion.div>
 
@@ -272,7 +272,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
                       {offer.id === 'car-ear' && (
                         <div className="mb-6">
                           <button className="w-full bg-primary text-white py-3 rounded-lg font-bold text-[10px] uppercase tracking-widest hover:bg-secondary transition-all shadow-lg shadow-primary/20">
-                            {lang === 'ro' ? 'Vezi Detalii Construction Shield' : lang === 'ru' ? 'Подробнее о Construction Shield' : 'View Construction Shield Details'}
+                            {lang === 'ro' ? 'Vezi Detalii Construction Shield' : lang === 'ru' ? 'ÐÐ¾Ð´ÑÐ¾Ð±Ð½ÐµÐµ Ð¾ Construction Shield' : 'View Construction Shield Details'}
                           </button>
                         </div>
                       )}
@@ -305,7 +305,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
                       {offer.id === 'car-ear' && (
                         <div className="mb-6">
                           <button className="w-full bg-primary text-white py-3 rounded-lg font-bold text-[10px] uppercase tracking-widest hover:bg-secondary transition-all shadow-lg shadow-primary/20">
-                            {lang === 'ro' ? 'Vezi Detalii Construction Shield' : lang === 'ru' ? 'Подробнее о Construction Shield' : 'View Construction Shield Details'}
+                            {lang === 'ro' ? 'Vezi Detalii Construction Shield' : lang === 'ru' ? 'ÐÐ¾Ð´ÑÐ¾Ð±Ð½ÐµÐµ Ð¾ Construction Shield' : 'View Construction Shield Details'}
                           </button>
                         </div>
                       )}
