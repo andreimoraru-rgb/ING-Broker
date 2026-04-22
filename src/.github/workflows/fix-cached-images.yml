@@ -1,0 +1,30 @@
+name: Fix Cached Images
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fix-images:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Copy images with new names
+        run: |
+          cp public/rca-red-car.jpg public/rca-red-car-v2.jpg
+          cp public/carte_verde.jpg public/carte_verde-v2.jpg
+          cp public/asigurare-medicala-travel.jpg public/asigurare-medicala-travel-v2.jpg
+      - name: Update references in translations.ts
+        run: |
+          sed -i 's|rca-red-car\.jpg|rca-red-car-v2.jpg|g' src/translations.ts
+          sed -i 's|carte_verde\.jpg|carte_verde-v2.jpg|g' src/translations.ts
+          sed -i 's|asigurare-medicala-travel\.jpg|asigurare-medicala-travel-v2.jpg|g' src/translations.ts
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/rca-red-car-v2.jpg public/carte_verde-v2.jpg public/asigurare-medicala-travel-v2.jpg src/translations.ts
+          git diff --staged --quiet || git commit -m "fix: rename images to bypass CDN cache"
+          git push origin main
