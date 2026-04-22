@@ -47,7 +47,7 @@ import { INGReLogo } from './components/INGReLogo';
 
 
 // --- Assets & Colors ---
-const LOGO_URL = "/Logo ING Broker.png";
+const LOGO_URL = "/Logo ING Broker.png"; // header logo
 const COLORS = {
   primary: '#E31E24', // Red from logo
   primaryDark: '#C4191F',
