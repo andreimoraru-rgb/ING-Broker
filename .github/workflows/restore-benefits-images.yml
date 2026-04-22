@@ -1,0 +1,26 @@
+name: Restore Benefits Images
+
+on:
+  workflow_dispatch:
+
+jobs:
+  restore-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore images from good commit
+        run: |
+          git checkout 4251bd121e96e478f1d5f20302fedb392b99e5c2 -- public/Group_Health_Insurance.png
+          git checkout 4251bd121e96e478f1d5f20302fedb392b99e5c2 -- public/conect-people.png
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/Group_Health_Insurance.png public/conect-people.png
+          git diff --staged --quiet || git commit -m "fix: restore corrupted benefits images from good commit"
+          git push origin main
