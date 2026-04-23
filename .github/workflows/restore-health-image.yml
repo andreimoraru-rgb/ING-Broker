@@ -1,0 +1,29 @@
+name: Restore Health Image
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Restore health.png from good commit
+        run: |
+          git checkout 4251bd121e96e478f1d5f20302fedb392b99e5c2 -- public/health.png
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/health.png
+          git diff --staged --quiet || git commit -m "fix: restore health.png from good commit"
+          git push origin main
