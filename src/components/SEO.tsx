@@ -40,10 +40,10 @@ export const SEO = ({ title, description, lang, schema, keywords, image = "https
       <meta name="twitter:image" content={image} />
       
       <link rel="canonical" href={currentUrl} />
-      <link rel="alternate" hrefLang="ro" href={`${siteUrl}${location.pathname}`} />
-      <link rel="alternate" hrefLang="ru" href={`${siteUrl}${location.pathname}`} />
-      <link rel="alternate" hrefLang="en" href={`${siteUrl}${location.pathname}`} />
-      <link rel="alternate" hrefLang="x-default" href={`${siteUrl}${location.pathname}`} />
+      <link rel="alternate" hrefLang="ro" href={`${siteUrl}/`} />
+      <link rel="alternate" hrefLang="ru" href={`${siteUrl}/ru/`} />
+      <link rel="alternate" hrefLang="en" href={`${siteUrl}/en/`} />
+      <link rel="alternate" hrefLang="x-default" href={`${siteUrl}/`} />
       
       {schema && (
         <script type="application/ld+json">
