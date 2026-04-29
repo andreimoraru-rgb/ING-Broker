@@ -1165,7 +1165,7 @@ const Footer = ({ lang }: { lang: Language }) => {
           <p className="text-[10px] font-bold uppercase tracking-widest text-gray-300">{t.rights}</p>
           <div className="flex items-center gap-2">
             <span className="text-[10px] font-bold uppercase tracking-widest text-gray-300">{t.designBy}</span>
-            <a href="#" className="text-[10px] font-bold uppercase tracking-widest text-primary relative group inline-block transition-all duration-500 hover:scale-110">
+            <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold uppercase tracking-widest text-primary relative group inline-block transition-all duration-500 hover:scale-110">
               <span className="relative z-10 block transition-transform duration-500 group-hover:-translate-y-1">
                 Creative Director AI
               </span>
