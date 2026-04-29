@@ -100,7 +100,7 @@ export const translations = {
         company: 'Companie',
         legal: 'Legal'
       },
-      legal: ['Oferte', 'Termeni și Condiții', 'Politica de Confidențialitate', 'GDPR', 'Cookies'],
+      legal: ['Oferte', 'Termeni și Condiții', 'Politica de Confidențialitate'],
       designBy: 'Design de',
       rights: '© 2026 Insurance ING Broker SRL. Toate drepturile rezervate.'
     },
@@ -602,7 +602,7 @@ export const translations = {
         company: 'Компания',
         legal: 'Юридическая информация'
       },
-      legal: ['Предложения', 'Условия использования', 'Политика конфиденциальности', 'GDPR', 'Cookies'],
+      legal: ['Предложения', 'Условия использования', 'Политика конфиденциальности'],
       designBy: 'Дизайн от',
       rights: '© 2026 Insurance ING Broker SRL. Все права защищены.'
     },
@@ -1001,7 +1001,7 @@ export const translations = {
         company: 'Company',
         legal: 'Legal'
       },
-      legal: ['Offers', 'Terms and Conditions', 'Privacy Policy', 'GDPR', 'Cookies'],
+      legal: ['Offers', 'Terms and Conditions', 'Privacy Policy'],
       designBy: 'Design by',
       rights: '© 2026 Insurance ING Broker SRL. All rights reserved.'
     },
