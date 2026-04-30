@@ -11,13 +11,8 @@ interface AboutPageProps {
 }
 
 const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
-  const { lang: contextLang } = useLanguage();
-  const lang = propLang || contextLang;h
-  const content = translations[lang].about;
-  const seo = translations[lang].seo.about;
   const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
-
   useEffect(() => {
     window.scrollTo(0, 0);
     const handleScroll = () => {
@@ -26,6 +21,10 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  const { lang: contextLang } = useLanguage();
+  const lang = propLang || contextLang;
+  const content = translations[lang].about;
+  const seo = translations[lang].seo.about;
 
   const schema = {
     "@context": "https://schema.org",
@@ -53,8 +52,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
         lang={lang} 
         schema={schema}
       />
-
-      {/* Back Button */}
+      {/* Back to Home Button */}
       <div className="fixed top-32 left-6 z-50">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
@@ -71,14 +69,12 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
           <div className="p-1 group-hover:-translate-x-1 transition-transform text-primary">
             <ArrowLeft size={16} strokeWidth={3} />
           </div>
-          <span>
-            {lang === 'ro' ? 'Înapoi la Acasă' : lang === 'ru' ? 'Назад на Главную' : 'Back to Home'}
-          </span>
+          <span>{lang === 'ro' ? 'Înapoi la Acasă' : lang === 'ru' ? 'Назад на Главную' : 'Back to Home'}</span>
         </motion.button>
       </div>
       
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[700px] flex items-start pt-64 overflow-hidden">
+      <section className="relative h-[70vh] min-h-[600px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="/about us-2.png" 
@@ -103,7 +99,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
                 {lang === 'ro' ? 'Despre Noi' : lang === 'ru' ? 'О нас' : 'About Us'}
               </span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-heading font-bold uppercase text-white tracking-tighter mb-8 leading-[0.9]">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase text-white tracking-tighter mb-8 leading-[0.9]">
               {content.hero.title.split(' ').slice(0, -2).join(' ')} <br />
               <span className="text-primary italic font-serif normal-case">
                 {content.hero.title.split(' ').slice(-2).join(' ')}
