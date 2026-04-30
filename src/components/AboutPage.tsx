@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { translations, Language } from '../translations';
 import { SEO } from './SEO';
-import { Shield, Target, Eye, History, Award, Globe, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Shield, Target, Eye, History, Award, Globe, CheckCircle2, ArrowRight, ArrowLeft } from 'lucide-react';
 
 interface AboutPageProps {
   lang?: Language;
@@ -11,9 +12,20 @@ interface AboutPageProps {
 
 const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
   const { lang: contextLang } = useLanguage();
-  const lang = propLang || contextLang;
+  const lang = propLang || contextLang;h
   const content = translations[lang].about;
   const seo = translations[lang].seo.about;
+  const navigate = useNavigate();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const schema = {
     "@context": "https://schema.org",
@@ -41,9 +53,32 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
         lang={lang} 
         schema={schema}
       />
+
+      {/* Back Button */}
+      <div className="fixed top-32 left-6 z-50">
+        <motion.button
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          onClick={() => navigate('/')}
+          className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
+            isScrolled
+              ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50'
+              : 'bg-white/10 hover:bg-white/20 border-white/20 text-white'
+          }`}
+        >
+          <div className="p-1 group-hover:-translate-x-1 transition-transform text-primary">
+            <ArrowLeft size={16} strokeWidth={3} />
+          </div>
+          <span>
+            {lang === 'ro' ? 'Înapoi la Acasă' : lang === 'ru' ? 'Назад на Главную' : 'Back to Home'}
+          </span>
+        </motion.button>
+      </div>
       
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[600px] flex items-center overflow-hidden">
+      <section className="relative h-screen min-h-[700px] flex items-start pt-64 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="/about us-2.png" 
@@ -68,7 +103,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
                 {lang === 'ro' ? 'Despre Noi' : lang === 'ru' ? 'О нас' : 'About Us'}
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase text-white tracking-tighter mb-8 leading-[0.9]">
+            <h1 className="text-6xl md:text-8xl font-heading font-bold uppercase text-white tracking-tighter mb-8 leading-[0.9]">
               {content.hero.title.split(' ').slice(0, -2).join(' ')} <br />
               <span className="text-primary italic font-serif normal-case">
                 {content.hero.title.split(' ').slice(-2).join(' ')}
