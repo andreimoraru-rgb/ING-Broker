@@ -74,7 +74,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
       </div>
       
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[600px] flex items-center overflow-hidden">
+            <section className="relative h-screen min-h-[700px] flex items-start pt-64 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="/about us-2.png" 
