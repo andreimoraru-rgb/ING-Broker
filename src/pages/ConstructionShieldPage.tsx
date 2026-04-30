@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'motion/react';
+import { useNavigate } from 'react-router-dom';
 import { 
   Shield, 
   CheckCircle2, 
@@ -17,7 +18,8 @@ import {
   ChevronDown,
   Phone,
   Mail,
-  MapPin
+  MapPin,
+  ArrowLeft
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { Language } from '../translations';
@@ -27,9 +29,19 @@ interface ConstructionShieldPageProps {
 }
 
 export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ lang }) => {
+  const navigate = useNavigate();
+  const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);, []);
 
   const t = {
     ro: {
@@ -157,6 +169,29 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
         description={c.heroDesc} 
         lang={lang} 
       />
+
+      {/* Back Button */}
+      <div className="fixed top-32 left-6 z-50">
+        <motion.button
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          onClick={() => navigate('/')}
+          className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
+            isScrolled
+              ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50'
+              : 'bg-white/10 hover:bg-white/20 border-white/20 text-white'
+          }`}
+        >
+          <div className="p-1 group-hover:-translate-x-1 transition-transform text-primary">
+            <ArrowLeft size={16} strokeWidth={3} />
+          </div>
+          <span>
+            {lang === 'ro' ? 'Înapoi la Acasă' : lang === 'ru' ? 'Назад на Главную' : 'Back to Home'}
+          </span>
+        </motion.button>
+      </div>
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20">
