@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { translations, Language } from '../translations';
 import { SEO } from '../components/SEO';
 import { motion, AnimatePresence } from 'motion/react';
-import { Phone, Mail, ExternalLink, ChevronDown } from 'lucide-react';
+import { Phone, Mail, ExternalLink, ChevronDown, ArrowLeft } from 'lucide-react';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -17,6 +17,16 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
   const seo = translations[lang].seo.business;
 
   const navigate = useNavigate();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const schema = {
     "@context": "https://schema.org",
@@ -52,6 +62,29 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
         lang={lang} 
         schema={schema}
       />
+
+      {/* Back Button */}
+      <div className="fixed top-32 left-6 z-50">
+        <motion.button
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          onClick={() => navigate('/')}
+          className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
+            isScrolled
+              ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50'
+              : 'bg-white/10 hover:bg-white/20 border-white/20 text-white'
+          }`}
+        >
+          <div className="p-1 group-hover:-translate-x-1 transition-transform text-primary">
+            <ArrowLeft size={16} strokeWidth={3} />
+          </div>
+          <span>
+            {lang === 'ro' ? 'Înapoi la Acasă' : lang === 'ru' ? 'Назад на Главную' : 'Back to Home'}
+          </span>
+        </motion.button>
+      </div>
       
       {/* Full-screen Hero Section */}
       <section className="relative h-screen min-h-[700px] flex items-start pt-64 overflow-hidden">
