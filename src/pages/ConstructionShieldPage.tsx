@@ -18,7 +18,7 @@ import {
   ChevronDown,
   Phone,
   Mail,
-  MapPin
+  MapPin,
   ArrowLeft
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
