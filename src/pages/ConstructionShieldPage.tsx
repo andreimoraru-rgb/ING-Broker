@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { 
@@ -18,7 +18,7 @@ import {
   ChevronDown,
   Phone,
   Mail,
-  MapPin,
+  MapPin
   ArrowLeft
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
@@ -33,15 +33,12 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
-  }
-
-  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);, []);
+  }, []);
 
   const t = {
     ro: {
@@ -169,8 +166,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
         description={c.heroDesc} 
         lang={lang} 
       />
-
-      {/* Back Button */}
+      {/* Back to Home Button */}
       <div className="fixed top-32 left-6 z-50">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
@@ -187,9 +183,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
           <div className="p-1 group-hover:-translate-x-1 transition-transform text-primary">
             <ArrowLeft size={16} strokeWidth={3} />
           </div>
-          <span>
-            {lang === 'ro' ? 'Înapoi la Acasă' : lang === 'ru' ? 'Назад на Главную' : 'Back to Home'}
-          </span>
+          <span>{lang === 'ro' ? 'Înapoi la Acasă' : lang === 'ru' ? 'Назад на Главную' : 'Back to Home'}</span>
         </motion.button>
       </div>
 
