@@ -60,7 +60,7 @@ export const RenewableEnergyPage: React.FC<RenewableEnergyPageProps> = ({ lang }
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => navigate('/business')}
+          onClick={() => navigate('/')}
           className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
             isScrolled 
               ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50' 
@@ -73,7 +73,7 @@ export const RenewableEnergyPage: React.FC<RenewableEnergyPageProps> = ({ lang }
             <ArrowLeft size={16} strokeWidth={3} />
           </div>
           <span>
-            {lang === 'ro' ? 'Înapoi la Business' : lang === 'ru' ? 'Назад к Бизнесу' : 'Back to Business'}
+            {lang === 'ro' ? 'Înapoi la Acasă' : lang === 'ru' ? 'Назад на Главную' : 'Back to Home'}
           </span>
         </motion.button>
       </div>
