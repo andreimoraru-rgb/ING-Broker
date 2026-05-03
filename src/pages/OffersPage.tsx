@@ -31,7 +31,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'Companii IT',
           desc: 'Protecție specializată pentru sectorul tehnologic, incluzând răspunderea profesională (E&O) și riscurile cibernetice.',
           image: '/it-companies.jpg',
-          link: '/business/professional'
+          link: '/oferte/pi-insurance-it/'
         },
         {
           id: 'regenerare-energie',
@@ -85,7 +85,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'IT-компании',
           desc: 'Специализированная защита для технологического сектора, включая профессиональную ответственность (E&O) и киберриски.',
           image: '/it-companies.jpg',
-          link: '/business/professional'
+          link: '/oferte/pi-insurance-it/'
         },
         {
           id: 'regenerare-energie',
@@ -139,7 +139,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'IT Companies',
           desc: 'Specialized protection for the technology sector, including professional liability (E&O) and cyber risks.',
           image: '/it-companies.jpg',
-          link: '/business/professional'
+          link: '/oferte/pi-insurance-it/'
         },
         {
           id: 'regenerare-energie',

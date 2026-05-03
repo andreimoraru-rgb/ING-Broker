@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>PI Insurance IT | Professional Indemnity pentru Companii IT — Insurance ING Broker SRL</title>
+<meta name="description" content="Protecție profesională pentru erori software, breșe GDPR, atacuri cibernetice și litigii IT. Broker autorizat CNPF. Plasament internațional. Moldova.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0B1F3A;--navy2:#132B50;--red:#E31F26;
+  --gold:#B8962E;--gold2:#D4AF37;--off:#F8F7F4;
+  --mid:#4A5568;--line:rgba(0,26,78,.08);--white:#fff;
+  --sp:cubic-bezier(.34,1.4,.64,1);--ease:cubic-bezier(.23,1,.32,1);
+}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:'Montserrat',sans-serif;background:var(--off);color:var(--navy);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+/* ── HEADER ── */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:9999;padding:0 44px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;transition:background .45s var(--ease),box-shadow .45s var(--ease)}
+.hdr.on{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 rgba(0,26,78,.08),0 4px 32px rgba(0,26,78,.07)}
+.logo{display:flex;align-items:center;flex-shrink:0}
+.logo-img{height:58px;width:auto;object-fit:contain;transition:opacity .3s}
+.logo-white{display:block}.logo-color{display:none}
+.hdr.on .logo-white{display:none}.hdr.on .logo-color{display:block}
+nav{display:flex;align-items:center;gap:2px}
+nav a{font-size:13px;font-weight:500;letter-spacing:.01em;color:rgba(255,255,255,.82);padding:8px 14px;border-radius:8px;transition:color .2s,background .2s;white-space:nowrap}
+nav a:hover{color:#fff;background:rgba(255,255,255,.12)}
+.hdr.on nav a{color:var(--navy)}.hdr.on nav a:hover{background:rgba(11,31,58,.06)}
+.hdr-r{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.hdr-tel{font-size:13px;font-weight:500;color:rgba(255,255,255,.75);display:flex;align-items:center;gap:6px;white-space:nowrap}
+.hdr-tel svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none}
+.hdr.on .hdr-tel{color:var(--mid)}
+.btn-hdr{background:var(--red);color:#fff;font-size:13px;font-weight:600;padding:10px 22px;border-radius:50px;transition:background .2s,transform .2s,box-shadow .2s;white-space:nowrap;display:inline-flex;align-items:center;gap:5px}
+.btn-hdr:hover{background:#C8181E;transform:translateY(-1px);box-shadow:0 6px 20px rgba(227,31,38,.32)}
+
+/* ── HERO ── */
+.hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+.kb-wrap{position:absolute;inset:0;z-index:0}
+.kb-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s var(--ease);will-change:opacity}
+.kb-slide.on{opacity:1;animation:kbz 18s var(--ease) both}
+@keyframes kbz{from{transform:scale(1.09)}to{transform:scale(1)}}
+.hero-ov{position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(8,20,42,.98) 0%,rgba(11,31,58,.65) 42%,rgba(11,31,58,.28) 100%),linear-gradient(105deg,rgba(11,31,58,.55) 0%,transparent 55%)}
+.hero-cnt{position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;padding:0 44px 64px}
+/* badge */
+.hero-badge{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:36px}
+.hero-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--red);flex-shrink:0;animation:hbp 2s ease-in-out infinite}
+@keyframes hbp{0%,100%{box-shadow:0 0 0 0 rgba(227,31,38,.5)}60%{box-shadow:0 0 0 9px rgba(227,31,38,0)}}
+.hero-badge-sep{color:rgba(255,255,255,.22);margin:0 2px}
+/* h1 */
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(28px,3.8vw,54px);font-weight:900;line-height:1.05;color:#fff;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:24px;max-width:900px}
+.hero h1 .outline{color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.5)}
+.hero h1 .red{color:var(--red);display:block}
+.hero-sub{font-size:clamp(15px,1.4vw,18px);font-weight:300;color:rgba(255,255,255,.68);max-width:580px;line-height:1.72;margin-bottom:44px}
+/* CTAs */
+.hero-ctas{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:60px}
+.btn-prim{background:var(--red);color:#fff;font-size:15px;font-weight:600;padding:17px 38px;border-radius:50px;display:inline-flex;align-items:center;gap:8px;transition:all .3s var(--ease)}
+.btn-prim:hover{background:#C8181E;transform:translateY(-3px);box-shadow:0 16px 40px rgba(227,31,38,.45)}
+.btn-ghost{background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.32);color:#fff;font-size:15px;font-weight:500;padding:16px 34px;border-radius:50px;display:inline-flex;align-items:center;gap:8px;transition:all .3s var(--ease);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.65);transform:translateY(-3px)}
+.btn-ghost svg{width:15px;height:15px;stroke:currentColor;stroke-width:2;fill:none}
+/* 3D Glass stat cards */
+.hero-stats{display:flex;gap:14px;flex-wrap:wrap}
+.hstat{display:flex;align-items:center;gap:14px;padding:18px 24px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);box-shadow:0 8px 32px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.13);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transform:perspective(700px) rotateX(5deg) rotateY(-4deg);transition:transform .55s var(--sp),box-shadow .45s var(--ease)}
+.hstat:hover{transform:perspective(700px) rotateX(0deg) rotateY(0deg) scale(1.05);box-shadow:0 18px 52px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.2)}
+.hstat-ico{width:44px;height:44px;border-radius:12px;flex-shrink:0;background:linear-gradient(145deg,rgba(255,255,255,.18) 0%,rgba(255,255,255,.04) 100%);border:1px solid rgba(255,255,255,.22);box-shadow:0 2px 12px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center}
+.hstat-ico svg{width:18px;height:18px;stroke:rgba(255,255,255,.88);stroke-width:2;fill:none}
+.hstat-n{font-family:'Barlow Condensed',sans-serif;font-size:27px;font-weight:900;color:#fff;line-height:1}
+.hstat-l{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.42);margin-top:4px}
+/* scroll indicator */
+.scroll-ind{position:absolute;bottom:44px;right:48px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:.45}
+.scroll-ind span{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#fff;writing-mode:vertical-lr}
+.scroll-line{width:1px;height:54px;background:linear-gradient(to bottom,rgba(255,255,255,.6),transparent);animation:sl 2.2s ease-in-out infinite}
+@keyframes sl{0%,100%{opacity:.5;transform:scaleY(1)}50%{opacity:1;transform:scaleY(.6)}}
+
+/* ── REVEAL ANIMATIONS — Framer Motion blur-slide ── */
+.reveal{opacity:0;filter:blur(7px);transform:translateY(28px);transition:opacity .85s var(--ease),filter .78s var(--ease),transform .85s var(--ease)}
+.reveal.vis{opacity:1;filter:blur(0);transform:translateY(0)}
+.d1{transition-delay:90ms}.d2{transition-delay:180ms}.d3{transition-delay:270ms}.d4{transition-delay:360ms}.d5{transition-delay:450ms}
+
+/* ── LAYOUT ── */
+.wrap{max-width:1280px;margin:0 auto;padding:0 44px}
+.s-off{padding:112px 0;background:var(--off)}
+.s-white{padding:112px 0;background:var(--white)}
+.s-navy{padding:112px 0;background:var(--navy)}
+.s-dark{padding:112px 0;background:#070e1e}
+.sh{text-align:center;margin-bottom:72px}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);background:rgba(227,31,38,.08);padding:6px 18px;border-radius:50px;margin-bottom:18px}
+.sh h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(40px,5vw,66px);font-weight:900;text-transform:uppercase;color:var(--navy);line-height:.92;margin-bottom:22px;letter-spacing:-.025em}
+.sh .lead{font-size:17px;color:var(--mid);max-width:620px;margin:0 auto;line-height:1.72;font-weight:300}
+
+/* ── PRODUCT CARDS ── */
+.cards6{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pc{position:relative;overflow:hidden;border-radius:22px;min-height:370px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid rgba(0,26,78,.06);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.pc:hover{transform:translateY(-10px);box-shadow:0 32px 72px rgba(0,26,78,.22)}
+.pc-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .85s var(--ease);will-change:transform}
+.pc:hover .pc-bg{transform:scale(1.08)}
+.pc-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(6,14,34,.97) 0%,rgba(11,31,58,.72) 52%,rgba(11,31,58,.14) 100%);transition:background .4s var(--ease)}
+.pc:hover .pc-ov{background:linear-gradient(to top,rgba(6,14,34,.99) 0%,rgba(11,31,58,.8) 55%,rgba(11,31,58,.22) 100%)}
+/* gold top line */
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;z-index:3;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .5s var(--ease)}
+.pc:hover::before{opacity:1}
+.pc-body{position:relative;z-index:2;padding:28px 30px 34px;display:flex;flex-direction:column;gap:14px}
+.pc-icon{width:48px;height:48px;border-radius:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,rgba(255,255,255,.2) 0%,rgba(255,255,255,.05) 100%);border:1px solid rgba(255,255,255,.22);box-shadow:0 4px 18px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.28);transition:transform .5s var(--sp),background .4s var(--ease)}
+.pc-icon svg{width:20px;height:20px;stroke:rgba(255,255,255,.9);stroke-width:1.8;fill:none}
+.pc:hover .pc-icon{background:linear-gradient(145deg,rgba(184,150,46,.5) 0%,rgba(184,150,46,.15) 100%);border-color:rgba(184,150,46,.4);transform:scale(1.1) rotate(-3deg)}
+.pc-body h3{font-size:20px;font-weight:700;color:#fff;line-height:1.2;letter-spacing:-.01em}
+.pc-body p{font-size:13.5px;color:rgba(255,255,255,.62);line-height:1.68;font-weight:300}
+.pc-cta{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold2);opacity:0;transform:translateY(8px);transition:opacity .35s var(--ease),transform .35s var(--ease)}
+.pc:hover .pc-cta{opacity:1;transform:translateY(0)}
+.pc-cta svg{width:12px;height:12px;stroke:var(--gold2);stroke-width:2.5;fill:none;transition:transform .25s var(--ease)}
+.pc:hover .pc-cta svg{transform:translateX(4px)}
+
+/* ── RISKS ── */
+.risks-layout{display:grid;grid-template-columns:1fr 1.8fr;gap:80px;align-items:start}
+.risks-left h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(36px,4vw,52px);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;color:var(--navy);line-height:.93;margin-bottom:20px}
+.risks-left p{font-size:15px;color:var(--mid);line-height:1.72;font-weight:300;margin-bottom:28px}
+.risks-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(227,31,38,.07);border:1px solid rgba(227,31,38,.14);padding:10px 18px;border-radius:50px;font-size:13px;font-weight:600;color:var(--red)}
+.risks-badge svg{width:15px;height:15px;stroke:var(--red);stroke-width:2;fill:none;flex-shrink:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid rgba(0,26,78,.08);padding:10px 18px;border-radius:50px;font-size:13px;font-weight:500;color:var(--navy);box-shadow:0 2px 10px rgba(0,26,78,.05);transition:all .3s var(--ease);cursor:default}
+.chip:hover{border-color:rgba(227,31,38,.25);background:rgba(227,31,38,.04);color:var(--red);transform:translateY(-2px);box-shadow:0 6px 20px rgba(227,31,38,.1)}
+.chip svg{width:14px;height:14px;stroke:var(--red);stroke-width:2;fill:none;flex-shrink:0}
+
+/* ── TARGET ── */
+.target-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tcard{background:#fff;border:1px solid rgba(0,26,78,.07);border-radius:18px;padding:28px 22px;transition:all .4s var(--ease)}
+.tcard:hover{transform:translateY(-7px);box-shadow:0 24px 56px rgba(0,26,78,.12);border-color:transparent}
+.tcard-ico{width:48px;height:48px;border-radius:14px;margin-bottom:18px;background:linear-gradient(145deg,var(--off),rgba(11,31,58,.04));border:1px solid rgba(11,31,58,.09);display:flex;align-items:center;justify-content:center;transition:all .4s var(--sp)}
+.tcard-ico svg{width:22px;height:22px;stroke:var(--navy);stroke-width:1.8;fill:none}
+.tcard:hover .tcard-ico{background:linear-gradient(145deg,var(--red),#B8181E);border-color:transparent}
+.tcard:hover .tcard-ico svg{stroke:#fff}
+.tcard h4{font-size:14.5px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3}
+.tcard p{font-size:13px;color:var(--mid);line-height:1.62;font-weight:300}
+
+/* ── ADVANTAGES ── */
+.adv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.adv-item{padding:30px 26px;border-radius:16px;background:rgba(11,31,58,.03);border:1px solid rgba(0,26,78,.07);transition:all .4s var(--ease)}
+.adv-item:hover{background:#fff;box-shadow:0 18px 52px rgba(0,26,78,.1);border-color:transparent;transform:translateY(-5px)}
+.adv-num{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(184,150,46,.6);margin-bottom:14px}
+.adv-ico{width:44px;height:44px;border-radius:12px;margin-bottom:16px;background:linear-gradient(145deg,var(--off),#e8e4de);border:1px solid rgba(11,31,58,.09);display:flex;align-items:center;justify-content:center;transition:all .4s var(--sp)}
+.adv-ico svg{width:19px;height:19px;stroke:var(--navy);stroke-width:1.8;fill:none}
+.adv-item:hover .adv-ico{background:linear-gradient(145deg,var(--navy),var(--navy2));border-color:transparent}
+.adv-item:hover .adv-ico svg{stroke:#fff}
+.adv-item h4{font-size:14.5px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3}
+.adv-item p{font-size:13px;color:var(--mid);line-height:1.65;font-weight:300}
+
+/* ── BROKER ROLE ── */
+.rol-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:start}
+.rol-left .tag{color:var(--gold);background:rgba(184,150,46,.12)}
+.rol-left h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(42px,5vw,58px);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;color:#fff;line-height:.9;margin-bottom:20px}
+.rol-left>p{font-size:15px;color:rgba(255,255,255,.6);line-height:1.72;font-weight:300;margin-bottom:40px}
+.rol-list{display:flex;flex-direction:column}
+.rol-item{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.07);align-items:start}
+.rol-item:last-child{border-bottom:none;padding-bottom:0}
+.rol-n{width:40px;height:40px;border-radius:11px;flex-shrink:0;background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:800;color:var(--gold);box-shadow:inset 0 1px 0 rgba(255,255,255,.14)}
+.rol-text h4{font-size:14.5px;font-weight:700;color:#fff;margin-bottom:5px;line-height:1.3}
+.rol-text p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.65;font-weight:300}
+.rol-right{display:flex;flex-direction:column;gap:14px}
+.rol-box{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px 26px;transition:all .35s var(--ease)}
+.rol-box:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.14);transform:translateX(5px)}
+.rol-box h3{font-size:14.5px;font-weight:700;color:var(--gold);margin-bottom:8px}
+.rol-box p{font-size:13px;color:rgba(255,255,255,.56);line-height:1.65;font-weight:300}
+.rol-box-imp{background:linear-gradient(135deg,rgba(184,150,46,.12),rgba(184,150,46,.03));border-color:rgba(184,150,46,.25)}
+.rol-box-imp h3{color:#fff}.rol-box-imp p{color:rgba(255,255,255,.72)}
+
+/* ── INTERNATIONAL MARKETS ── */
+.piete-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.piete-card{background:#fff;border:1px solid rgba(0,26,78,.07);border-radius:20px;padding:36px 32px;transition:all .4s var(--ease)}
+.piete-card:hover{transform:translateY(-9px);box-shadow:0 30px 68px rgba(0,26,78,.13);border-color:transparent}
+.piete-ico{width:56px;height:56px;border-radius:16px;margin-bottom:24px;display:flex;align-items:center;justify-content:center}
+.piete-ico svg{width:26px;height:26px;stroke:#fff;stroke-width:1.8;fill:none}
+.piete-card h3{font-size:20px;font-weight:700;color:var(--navy);margin-bottom:12px;line-height:1.2}
+.piete-card p{font-size:14px;color:var(--mid);line-height:1.7;font-weight:300}
+
+/* ── PROCESS ── */
+.proc-grid,.proc-row2{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.proc-row2{margin-top:0}
+.proc-item{text-align:center;padding:32px 18px;position:relative}
+.proc-connector{display:flex;align-items:center;justify-content:center;gap:0;margin:0 0 40px}
+.proc-n{width:50px;height:50px;border-radius:50%;margin:0 auto 20px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;letter-spacing:.04em;box-shadow:0 4px 16px rgba(11,31,58,.28);position:relative;z-index:1}
+.proc-n.gold-n{background:linear-gradient(135deg,var(--gold),#8a6a1a);box-shadow:0 4px 16px rgba(184,150,46,.35)}
+.proc-item::after{content:'';position:absolute;top:57px;left:calc(50% + 28px);right:calc(-50% + 28px);height:1px;background:rgba(0,26,78,.15);pointer-events:none}
+.proc-item:last-child::after,.proc-row2 .proc-item:last-child::after{display:none}
+.proc-item h4{font-size:14.5px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3}
+.proc-item p{font-size:13px;color:var(--mid);line-height:1.62;font-weight:300}
+
+/* ── TRUST ── */
+.trust-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.08);border-radius:22px;overflow:hidden;margin-bottom:48px;border:1px solid rgba(255,255,255,.08)}
+.stat-item{padding:44px 32px;text-align:center;background:rgba(255,255,255,.03);transition:background .3s var(--ease)}
+.stat-item:hover{background:rgba(255,255,255,.07)}
+.stat-num{font-family:'Barlow Condensed',sans-serif;font-size:60px;font-weight:900;color:#fff;line-height:1;margin-bottom:8px;display:block}
+.stat-suf{font-size:34px;color:var(--gold)}
+.stat-l{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.38)}
+.trust-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:28px 24px;display:flex;gap:18px;align-items:flex-start;transition:all .35s var(--ease)}
+.trust-card:hover{background:rgba(255,255,255,.09);transform:translateY(-5px)}
+.trust-card-ico{width:44px;height:44px;border-radius:12px;flex-shrink:0;background:linear-gradient(145deg,rgba(184,150,46,.22),rgba(184,150,46,.06));border:1px solid rgba(184,150,46,.22);display:flex;align-items:center;justify-content:center}
+.trust-card-ico svg{width:20px;height:20px;stroke:var(--gold2);stroke-width:1.8;fill:none}
+.trust-card h4{font-size:14.5px;font-weight:700;color:#fff;margin-bottom:8px}
+.trust-card p{font-size:13px;color:rgba(255,255,255,.52);line-height:1.65;font-weight:300}
+
+/* ── FAQ ── */
+.faq-list{max-width:880px;margin:0 auto}
+.faq-item{border-bottom:1px solid rgba(0,26,78,.09)}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 0;text-align:left;font-size:16px;font-weight:600;color:var(--navy);line-height:1.45;transition:color .25s var(--ease)}
+.faq-q:hover,.faq-q.open{color:var(--red)}
+.faq-ico{width:32px;height:32px;border-radius:50%;flex-shrink:0;background:rgba(11,31,58,.06);border:1px solid rgba(11,31,58,.1);display:flex;align-items:center;justify-content:center;transition:all .35s var(--ease)}
+.faq-q.open .faq-ico{background:var(--red);border-color:var(--red);transform:rotate(45deg)}
+.faq-ico svg{width:14px;height:14px;stroke:var(--navy);stroke-width:2.5;fill:none;transition:stroke .25s}
+.faq-q.open .faq-ico svg{stroke:#fff}
+.faq-body{overflow:hidden;max-height:0;transition:max-height .5s var(--ease),padding .4s var(--ease)}
+.faq-body.open{max-height:420px;padding-bottom:24px}
+.faq-body p{font-size:15px;color:var(--mid);line-height:1.75;font-weight:300}
+
+/* ── CTA FORM ── */
+.cta-wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:72px;align-items:start}
+.cta-left .tag{color:var(--gold);background:rgba(184,150,46,.12)}
+.cta-left h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(40px,5vw,56px);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;color:#fff;line-height:.9;margin-bottom:20px}
+.cta-left>p{font-size:15px;color:rgba(255,255,255,.6);line-height:1.72;font-weight:300;margin-bottom:36px}
+.cta-contact{display:flex;flex-direction:column;gap:16px}
+.cta-ci{display:flex;align-items:flex-start;gap:12px;font-size:15px;color:rgba(255,255,255,.7);line-height:1.5}
+.cta-ci svg{width:17px;height:17px;stroke:var(--gold);stroke-width:2;fill:none;flex-shrink:0;margin-top:2px}
+.cta-ci a{color:rgba(255,255,255,.8);transition:color .2s}.cta-ci a:hover{color:#fff}
+.form-box{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:40px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
+.form-group label{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.46)}
+.form-group input,.form-group select,.form-group textarea{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px 16px;font-size:15px;font-family:'Montserrat',sans-serif;color:#fff;transition:border-color .25s,background .25s;outline:none;-webkit-appearance:none}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,.28)}
+.form-group select option{background:var(--navy);color:#fff}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:rgba(255,255,255,.38);background:rgba(255,255,255,.1)}
+.form-group textarea{resize:vertical;min-height:96px;line-height:1.6}
+.btn-form{width:100%;background:var(--red);color:#fff;font-size:15px;font-weight:700;padding:18px 32px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .3s var(--ease);margin-top:4px}
+.btn-form:hover{background:#C8181E;transform:translateY(-2px);box-shadow:0 14px 40px rgba(227,31,38,.42)}
+.form-success{display:none;text-align:center;padding:60px 40px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:24px}
+.form-success svg{width:56px;height:56px;stroke:var(--gold);stroke-width:1.5;fill:none;margin:0 auto 24px}
+.form-success h3{font-size:24px;font-weight:700;color:#fff;margin-bottom:12px}
+.form-success p{font-size:16px;color:rgba(255,255,255,.62);line-height:1.65;font-weight:300}
+
+/* ── FOOTER ── */
+.ft{background:#060c1c;padding:72px 0 0}
+.ft-top{display:grid;grid-template-columns:1.7fr repeat(4,1fr);gap:48px;padding-bottom:64px;border-bottom:1px solid rgba(255,255,255,.07)}
+.ft-logo-img{height:50px;width:auto;filter:brightness(0) invert(1);opacity:.8;margin-bottom:20px}
+.ft-desc{font-size:13px;color:rgba(255,255,255,.38);line-height:1.7;font-weight:300;max-width:270px}
+.ft-col h5{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:20px}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.ft-col li{font-size:13px;color:rgba(255,255,255,.46);font-weight:300;line-height:1.5}
+.ft-col a{color:rgba(255,255,255,.46);transition:color .2s}.ft-col a:hover{color:rgba(255,255,255,.85)}
+.ft-bottom{padding:24px 0;display:flex;justify-content:space-between;align-items:center}
+.ft-bottom p{font-size:12px;color:rgba(255,255,255,.22);font-weight:300}
+
+/* ── SCENARIOS ── */
+.scen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.scen-card{border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);transition:all .45s var(--ease)}
+.scen-card:hover{transform:translateY(-8px);box-shadow:0 32px 72px rgba(0,0,0,.38);border-color:rgba(255,255,255,.14)}
+.scen-head{padding:32px 32px 24px}
+.scen-type{display:inline-flex;align-items:center;gap:7px;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:5px 14px;border-radius:50px;margin-bottom:20px}
+.scen-ico{width:52px;height:52px;border-radius:15px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.scen-ico svg{width:24px;height:24px;stroke:#fff;stroke-width:1.8;fill:none}
+.scen-head h3{font-size:18px;font-weight:700;color:#fff;line-height:1.3;margin-bottom:12px}
+.scen-head p{font-size:13.5px;color:rgba(255,255,255,.48);line-height:1.7;font-weight:300}
+.scen-body{padding:24px 32px 32px;border-top:1px solid rgba(255,255,255,.06)}
+.scen-row{display:flex;gap:10px;margin-bottom:14px;align-items:flex-start}
+.scen-row:last-of-type{margin-bottom:0}
+.scen-lbl{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border-radius:50px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.scen-lbl.r{background:rgba(227,31,38,.15);color:#F87171}
+.scen-lbl.g{background:rgba(184,150,46,.15);color:var(--gold2)}
+.scen-row-t{font-size:13px;color:rgba(255,255,255,.5);line-height:1.62;font-weight:300}
+.scen-amount{display:flex;align-items:center;gap:14px;margin-top:20px;padding:16px 20px;background:rgba(184,150,46,.07);border:1px solid rgba(184,150,46,.2);border-radius:12px}
+.scen-n{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:900;color:var(--gold2);line-height:1}
+.scen-nl{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.35);margin-top:3px}
+
+/* ── PACKAGES ── */
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start}
+.pkg-card{background:#fff;border:1px solid rgba(0,26,78,.08);border-radius:22px;padding:38px 34px;transition:all .4s var(--ease);position:relative}
+.pkg-card:hover{transform:translateY(-10px);box-shadow:0 32px 72px rgba(0,26,78,.14)}
+.pkg-card.featured{background:var(--navy);border-color:var(--navy);box-shadow:0 24px 64px rgba(11,31,58,.25)}
+.pkg-card.featured::after{content:'RECOMANDAT';position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--gold);color:#fff;font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:5px 16px;border-radius:50px;white-space:nowrap}
+.pkg-tier{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:10px}
+.pkg-card.featured .pkg-tier{color:var(--gold)}
+.pkg-name{font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:900;text-transform:uppercase;color:var(--navy);line-height:1;margin-bottom:20px}
+.pkg-card.featured .pkg-name{color:#fff}
+.pkg-limit-wrap{display:flex;align-items:baseline;gap:6px;margin-bottom:6px}
+.pkg-limit{font-family:'Barlow Condensed',sans-serif;font-size:48px;font-weight:900;color:var(--navy);line-height:1}
+.pkg-card.featured .pkg-limit{color:#fff}
+.pkg-limit-u{font-size:16px;font-weight:500;color:var(--mid)}
+.pkg-card.featured .pkg-limit-u{color:rgba(255,255,255,.45)}
+.pkg-limit-l{font-size:11px;color:var(--mid);font-weight:300;margin-bottom:24px}
+.pkg-card.featured .pkg-limit-l{color:rgba(255,255,255,.4)}
+.pkg-div{height:1px;background:rgba(0,26,78,.08);margin-bottom:24px}
+.pkg-card.featured .pkg-div{background:rgba(255,255,255,.1)}
+.pkg-feats{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:28px}
+.pkg-feats li{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:var(--mid);font-weight:400;line-height:1.4}
+.pkg-card.featured .pkg-feats li{color:rgba(255,255,255,.65)}
+.pkg-feats li::before{content:'';min-width:16px;height:16px;border-radius:50%;margin-top:2px;background:rgba(11,31,58,.06) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230B1F3A' stroke-width='2.5'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/10px no-repeat}
+.pkg-card.featured .pkg-feats li::before{background-color:rgba(255,255,255,.08);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D4AF37' stroke-width='2.5'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E")}
+.pkg-price-note{font-size:12.5px;color:var(--mid);font-weight:300;line-height:1.55;margin-bottom:22px}
+.pkg-card.featured .pkg-price-note{color:rgba(255,255,255,.42)}
+.pkg-price-note strong{color:var(--navy);font-weight:700}
+.pkg-card.featured .pkg-price-note strong{color:rgba(255,255,255,.85)}
+.btn-pkg{display:block;width:100%;padding:16px 20px;border-radius:14px;font-size:14px;font-weight:700;text-align:center;transition:all .3s var(--ease)}
+.btn-pkg-out{border:1.5px solid rgba(11,31,58,.18);color:var(--navy);background:transparent}
+.btn-pkg-out:hover{background:var(--navy);color:#fff;border-color:var(--navy);transform:translateY(-2px)}
+.btn-pkg-sol{background:var(--red);color:#fff;border:none}
+.btn-pkg-sol:hover{background:#C8181E;transform:translateY(-2px);box-shadow:0 12px 32px rgba(227,31,38,.38)}
+.pkg-disclaimer{text-align:center;margin-top:44px;font-size:13.5px;color:var(--mid);font-weight:300;padding:20px 32px;background:rgba(11,31,58,.03);border-radius:14px;border:1px solid rgba(0,26,78,.07);max-width:680px;margin-left:auto;margin-right:auto}
+.pkg-disclaimer strong{color:var(--navy)}
+
+/* ── JURISDICTIONS ── */
+.juris-wrap{margin-top:72px;padding-top:72px;border-top:1px solid rgba(0,26,78,.08)}
+.juris-sh{text-align:center;margin-bottom:44px}
+.juris-sh h3{font-family:'Barlow Condensed',sans-serif;font-size:clamp(28px,3vw,40px);font-weight:900;text-transform:uppercase;color:var(--navy);letter-spacing:-.02em;line-height:.95;margin-bottom:12px}
+.juris-sh p{font-size:15px;color:var(--mid);font-weight:300}
+.juris-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.juris-card{background:var(--off);border:1px solid rgba(0,26,78,.07);border-radius:16px;padding:24px 18px;text-align:center;transition:all .4s var(--ease)}
+.juris-card:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(0,26,78,.1);background:#fff;border-color:transparent}
+.juris-flag{display:block;width:58px;height:auto;border-radius:6px;box-shadow:0 3px 14px rgba(0,0,0,.18),0 1px 4px rgba(0,0,0,.12);margin:0 auto 16px;object-fit:cover;transition:transform .45s var(--sp),box-shadow .35s var(--ease)}
+.juris-card:hover .juris-flag{transform:scale(1.16) translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.juris-flag-globe{display:block;font-size:40px;line-height:1;margin-bottom:16px;transition:transform .45s var(--sp)}
+.juris-card:hover .juris-flag-globe{transform:scale(1.2) rotate(15deg)}
+.juris-card h4{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px;line-height:1.2}
+.juris-card p{font-size:12px;color:var(--mid);line-height:1.55;font-weight:300}
+.juris-note{margin-top:24px;text-align:center;font-size:13px;color:var(--mid);font-weight:300;padding:16px 24px;background:rgba(11,31,58,.03);border-radius:12px;border:1px solid rgba(0,26,78,.07)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1200px){
+  .adv-grid{grid-template-columns:repeat(2,1fr)}
+  .cards6{grid-template-columns:repeat(2,1fr)}
+  .scen-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:1024px){
+  .target-grid{grid-template-columns:repeat(2,1fr)}
+  .proc-grid,.proc-row2{grid-template-columns:repeat(2,1fr)}
+  .risks-layout{grid-template-columns:1fr;gap:40px}
+  .rol-grid{grid-template-columns:1fr;gap:48px}
+  .cta-wrap{grid-template-columns:1fr;gap:48px}
+  .ft-top{grid-template-columns:1fr 1fr;gap:32px}
+  .trust-stats{grid-template-columns:repeat(2,1fr)}
+  .trust-cards{grid-template-columns:1fr 1fr}
+  .piete-grid{grid-template-columns:1fr}
+  .pkg-grid{grid-template-columns:1fr}
+  .juris-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .hdr{padding:0 20px;height:64px}
+  nav{display:none}.hdr-tel{display:none}
+  .hero-cnt{padding:0 20px 60px}
+  .hero-stats{flex-direction:column;gap:10px}
+  .hstat{transform:none!important}
+  .cards6{grid-template-columns:1fr}
+  .scen-grid{grid-template-columns:1fr}
+  .target-grid{grid-template-columns:1fr 1fr}
+  .adv-grid{grid-template-columns:1fr 1fr}
+  .proc-grid,.proc-row2{grid-template-columns:1fr 1fr}
+  .cta-wrap,.form-row{grid-template-columns:1fr}
+  .ft-top{grid-template-columns:1fr}
+  .trust-stats{grid-template-columns:1fr 1fr}
+  .trust-cards{grid-template-columns:1fr}
+  .wrap{padding:0 20px}
+  .s-off,.s-white,.s-navy,.s-dark{padding:72px 0}
+  .proc-item::after{display:none}
+  .juris-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .target-grid,.adv-grid,.proc-grid,.proc-row2,.trust-stats,.juris-grid{grid-template-columns:1fr}
+  .hero-ctas{flex-direction:column;align-items:flex-start}
+  .btn-prim,.btn-ghost{width:100%;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){
+  .reveal{transition:none}
+  .kb-slide{animation:none}
+  *{transition-duration:.01ms!important;animation-duration:.01ms!important}
+}
+
+/* ══════════════════════════════════════════════
+   PREMIUM MOTION LAYER — Framer Motion / 21.st
+══════════════════════════════════════════════ */
+
+/* ── SCROLL PROGRESS BAR ── */
+#spb{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--red) 0%,var(--gold) 100%);z-index:10001;pointer-events:none;border-radius:0 2px 2px 0;box-shadow:0 0 12px rgba(227,31,38,.35),0 0 4px rgba(184,150,46,.3)}
+
+/* ── PAGE LOADER ── */
+#loader{position:fixed;inset:0;background:var(--navy);z-index:99999;display:flex;align-items:center;justify-content:center;transition:opacity .65s var(--ease),visibility .65s}
+#loader.gone{opacity:0;visibility:hidden;pointer-events:none}
+.ld-inner{display:flex;gap:10px;align-items:center}
+.ld-dot{width:10px;height:10px;border-radius:50%;background:var(--gold);animation:ldot 1.15s ease-in-out infinite}
+.ld-dot:nth-child(2){animation-delay:.17s;background:rgba(184,150,46,.65)}
+.ld-dot:nth-child(3){animation-delay:.34s;background:rgba(184,150,46,.3)}
+@keyframes ldot{0%,80%,100%{transform:scale(.3)}40%{transform:scale(1)}}
+
+/* ── TICKER MARQUEE ── */
+.ticker{background:var(--navy);padding:15px 0;overflow:hidden;position:relative;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.07)}
+.ticker::before,.ticker::after{content:'';position:absolute;top:0;bottom:0;width:100px;z-index:2;pointer-events:none}
+.ticker::before{left:0;background:linear-gradient(to right,var(--navy),transparent)}
+.ticker::after{right:0;background:linear-gradient(to left,var(--navy),transparent)}
+.tick-track{display:flex;width:max-content;animation:tick 34s linear infinite}
+.tick-track:hover{animation-play-state:paused}
+.tick-item{display:inline-flex;align-items:center;gap:11px;padding:0 44px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);white-space:nowrap;flex-shrink:0}
+.tick-item strong{color:rgba(255,255,255,.82);font-weight:700}
+.tick-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;opacity:.75}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── CARD SPOTLIGHT — cursor radial gradient ── */
+.spot{position:relative;--mx:50%;--my:50%}
+.spot::after{content:'';position:absolute;inset:0;border-radius:inherit;background:radial-gradient(340px circle at var(--mx) var(--my),rgba(184,150,46,.1) 0%,transparent 62%);opacity:0;transition:opacity .45s;pointer-events:none;z-index:0}
+.spot:hover::after{opacity:1}
+
+/* ── HERO PARTICLES ── */
+#ptc{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.p-dot{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);animation:pdrift var(--dur,9s) ease-in-out var(--del,0s) infinite alternate}
+@keyframes pdrift{from{transform:translate(0,0);opacity:.55}to{transform:translate(var(--dx,0px),var(--dy,0px));opacity:.1}}
+
+/* ── CHIP STAGGER ── */
+.chips .chip{opacity:0;transform:translateY(14px);filter:blur(3px);transition:opacity .52s var(--ease),transform .52s var(--ease),filter .48s var(--ease)}
+.chips.cvis .chip{opacity:1;transform:translateY(0);filter:blur(0)}
+
+/* ── PROC CONNECTOR ANIMATED LINE ── */
+.proc-item::after{transition:background .5s}
+
+/* ── TRUST STAT GLOW ── */
+.stat-num{text-shadow:0 0 48px rgba(184,150,46,.22)}
+.stat-item{transition:background .3s var(--ease),transform .35s var(--sp)}
+.stat-item:hover{transform:translateY(-4px)}
+
+/* ── SECTION EYEBROW DECORATION ── */
+.sh .tag{position:relative;display:inline-block}
+
+/* ── ENHANCED nav active indicator ── */
+nav a{position:relative}
+nav a.active::after{content:'';position:absolute;bottom:2px;left:50%;transform:translateX(-50%);width:4px;height:4px;border-radius:50%;background:var(--red)}
+
+/* ── FORM focus glow ── */
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{box-shadow:0 0 0 3px rgba(227,31,38,.15)}
+
+/* ── CTA PULSE ── */
+@keyframes ctaPulse{0%,100%{box-shadow:0 6px 28px rgba(227,31,38,.32)}50%{box-shadow:0 6px 40px rgba(227,31,38,.55),0 0 0 8px rgba(227,31,38,.06)}}
+.btn-prim{animation:ctaPulse 3.5s ease-in-out infinite}
+.btn-prim:hover{animation:none}
+
+/* ── BACK TO TOP ── */
+#btt{position:fixed;bottom:32px;right:32px;width:44px;height:44px;border-radius:50%;background:var(--navy);border:1px solid rgba(255,255,255,.12);color:#fff;display:flex;align-items:center;justify-content:center;z-index:9998;opacity:0;transform:translateY(14px);transition:opacity .4s var(--ease),transform .4s var(--ease),background .25s;cursor:pointer;box-shadow:0 8px 28px rgba(0,0,0,.28)}
+#btt.show{opacity:1;transform:translateY(0)}
+#btt:hover{background:var(--red)}
+#btt svg{width:16px;height:16px;stroke:#fff;stroke-width:2.5;fill:none}
+
+/* ── ROL BOX hover left-slide ── */
+.rol-box{transition:all .35s var(--ease),border-left-color .35s}
+.rol-box:hover{border-left:2px solid var(--gold);padding-left:24px}
+
+/* ── JURIS CARD flag scale — handled by .juris-flag transition above ── */
+
+/* ── BACK TO OFFERS BUTTON ── ingbroker.md style ── */
+#btn-back{position:fixed;top:88px;left:44px;z-index:9997;display:inline-flex;align-items:center;gap:14px;background:#111;color:#fff;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:18px 36px 18px 24px;border-radius:6px;cursor:pointer;transition:background .28s var(--ease),transform .28s var(--ease),box-shadow .28s var(--ease);text-decoration:none;white-space:nowrap;box-shadow:0 4px 30px rgba(0,0,0,.55)}
+#btn-back:hover{background:#1a1a1a;transform:translateX(-5px);box-shadow:0 8px 36px rgba(0,0,0,.65)}
+#btn-back svg{width:18px;height:18px;stroke:var(--red);stroke-width:2.5;fill:none;transition:transform .28s var(--ease);flex-shrink:0}
+#btn-back:hover svg{transform:translateX(-4px)}
+@media(max-width:768px){#btn-back{top:70px;left:16px;font-size:10px;padding:14px 22px 14px 16px;gap:10px}}
+
+/* ── REDUCED MOTION OVERRIDE ── */
+@media(prefers-reduced-motion:reduce){
+  #spb,#loader,#ptc,.ticker,.spot::after,.p-dot,.ld-dot{display:none!important}
+  .reveal{filter:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- Scroll progress bar -->
+<div id="spb" aria-hidden="true"></div>
+
+<!-- Page loader -->
+<div id="loader" aria-hidden="true" role="presentation">
+  <div class="ld-inner">
+    <div class="ld-dot"></div>
+    <div class="ld-dot"></div>
+    <div class="ld-dot"></div>
+  </div>
+</div>
+
+<!-- Back to Offers -->
+<a id="btn-back" href="https://ingbroker.md/oferte" aria-label="Înapoi la pagina Oferte ingbroker.md" onclick="history.back();return false;">
+  <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+  Înapoi la Oferte
+</a>
+
+<!-- Back to top -->
+<button id="btt" aria-label="Înapoi sus" title="Înapoi sus">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- ════════════════════ HEADER ════════════════════ -->
+<header class="hdr" id="hdr" role="banner">
+  <a href="#hero" class="logo" aria-label="Insurance ING Broker SRL">
+    <img src="/logo%20ing%20alb%203.png" alt="ING Reinsurance Broker" class="logo-img logo-white">
+    <img src="/logo-ingre.png" alt="ING Reinsurance Broker" class="logo-img logo-color">
+  </a>
+  <nav aria-label="Navigare principală">
+    <a href="#asiguram">Ce acoperim</a>
+    <a href="#scenarii">Cazuri reale</a>
+    <a href="#pachete">Pachete</a>
+    <a href="#jurisdictii">Jurisdicții</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hdr-r">
+    <a href="tel:+37369526003" class="hdr-tel">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 5.55 5.55l.77-.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+      +373 69 526 003
+    </a>
+    <a href="#contact" class="btn-hdr" aria-label="Solicită ofertă PI Insurance IT">Solicită ofertă →</a>
+  </div>
+</header>
+
+<!-- ════════════════════ HERO ════════════════════ -->
+<section class="hero" id="hero" aria-label="Hero PI Insurance IT">
+  <div class="kb-wrap" id="kbWrap" aria-hidden="true">
+    <div class="kb-slide on" style="background-image:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=85')"></div>
+    <div class="kb-slide" style="background-image:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&q=85')"></div>
+    <div class="kb-slide" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=85')"></div>
+    <div class="kb-slide" style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=85')"></div>
+    <div class="kb-slide" style="background-image:url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1920&q=85')"></div>
+    <div id="ptc" aria-hidden="true"></div>
+  </div>
+  <div class="hero-ov" aria-hidden="true"></div>
+
+  <div class="hero-cnt">
+    <div class="hero-badge reveal" role="note">
+      <span>Broker autorizat CNPF</span>
+      <span class="hero-badge-sep">·</span>
+      <span>Republica Moldova</span>
+      <span class="hero-badge-sep">·</span>
+      <span>E&amp;O Specialists</span>
+    </div>
+
+    <h1 class="reveal d1">
+      Professional <span class="outline">Indemnity</span><br>
+      <span class="red">IT Insurance.</span>
+    </h1>
+
+    <p class="hero-sub reveal d2">
+      Protecție completă pentru companiile IT împotriva revendicărilor din erori software, breșe GDPR, litigii contractuale și atacuri cibernetice. Plasament prin reasigurători top 20 mondial.
+    </p>
+
+    <div class="hero-ctas reveal d3">
+      <a href="#contact" class="btn-prim">Solicită ofertă gratuită →</a>
+      <a href="#asiguram" class="btn-ghost">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Descoperă produsul
+      </a>
+    </div>
+
+    <div class="hero-stats reveal d4" role="list" aria-label="Statistici cheie ING Broker">
+      <div class="hstat">
+        <div class="hstat-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <div><div class="hstat-n">30</div><div class="hstat-l">Polițe emise</div></div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div><div class="hstat-n">20+</div><div class="hstat-l">Ani experiență</div></div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div><div class="hstat-n">9</div><div class="hstat-l">Reasigurători top</div></div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <div><div class="hstat-n">CNPF</div><div class="hstat-l">Autorizat</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-ind" aria-hidden="true">
+    <span>Scroll</span><div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ════════════ TICKER MARQUEE ════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="tick-track">
+    <span class="tick-item"><span class="tick-dot"></span> <strong>Broker autorizat CNPF</strong> — Republica Moldova</span>
+    <span class="tick-item"><span class="tick-dot"></span> Erori &amp; Omisiuni software acoperite</span>
+    <span class="tick-item"><span class="tick-dot"></span> <strong>Plasament internațional</strong> reasigurare</span>
+    <span class="tick-item"><span class="tick-dot"></span> GDPR Breach — răspundere față de terți</span>
+    <span class="tick-item"><span class="tick-dot"></span> <strong>Cyber Liability</strong> — modul suplimentar</span>
+    <span class="tick-item"><span class="tick-dot"></span> Jurisdicții UE / UK / SUA / Canada</span>
+    <span class="tick-item"><span class="tick-dot"></span> <strong>D&amp;O IT</strong> — directori &amp; oficiali</span>
+    <span class="tick-item"><span class="tick-dot"></span> Ofertă gratuită în 24 ore</span>
+    <span class="tick-item"><span class="tick-dot"></span> <strong>9 piețe</strong> internaționale de reasigurare</span>
+    <span class="tick-item"><span class="tick-dot"></span> Consultanță specializată companii IT Moldova</span>
+    <!-- duplicate for seamless loop -->
+    <span class="tick-item"><span class="tick-dot"></span> <strong>Broker autorizat CNPF</strong> — Republica Moldova</span>
+    <span class="tick-item"><span class="tick-dot"></span> Erori &amp; Omisiuni software acoperite</span>
+    <span class="tick-item"><span class="tick-dot"></span> <strong>Plasament internațional</strong> reasigurare</span>
+    <span class="tick-item"><span class="tick-dot"></span> GDPR Breach — răspundere față de terți</span>
+    <span class="tick-item"><span class="tick-dot"></span> <strong>Cyber Liability</strong> — modul suplimentar</span>
+    <span class="tick-item"><span class="tick-dot"></span> Jurisdicții UE / UK / SUA / Canada</span>
+    <span class="tick-item"><span class="tick-dot"></span> <strong>D&amp;O IT</strong> — directori &amp; oficiali</span>
+    <span class="tick-item"><span class="tick-dot"></span> Ofertă gratuită în 24 ore</span>
+    <span class="tick-item"><span class="tick-dot"></span> <strong>9 piețe</strong> internaționale de reasigurare</span>
+    <span class="tick-item"><span class="tick-dot"></span> Consultanță specializată companii IT Moldova</span>
+  </div>
+</div>
+
+<!-- ════════════ CE ACOPERIM ════════════ -->
+<section id="asiguram" class="s-off">
+<div class="wrap">
+  <div class="sh reveal">
+    <span class="tag">Domenii acoperite</span>
+    <h2>Ce acoperă<br>PI Insurance IT</h2>
+    <p class="lead">Acoperim întregul spectru al riscurilor cu care se confruntă companiile IT moderne — de la erori în codul livrat până la litigii contractuale internaționale.</p>
+  </div>
+  <div class="cards6">
+
+    <!-- 1 -->
+    <article class="pc reveal">
+      <div class="pc-bg" style="background-image:url('https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=900&q=85')"></div>
+      <div class="pc-ov"></div>
+      <div class="pc-body">
+        <div class="pc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Răspundere Profesională</h3>
+        <p>Acoperire pentru revendicări din erori, omisiuni sau sfaturi tehnice incorecte care au cauzat pierderi financiare clientului.</p>
+        <span class="pc-cta">Află mai mult <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </article>
+
+    <!-- 2 -->
+    <article class="pc reveal d1">
+      <div class="pc-bg" style="background-image:url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=85')"></div>
+      <div class="pc-ov"></div>
+      <div class="pc-body">
+        <div class="pc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Erori &amp; Omisiuni Software</h3>
+        <p>Protecție pentru bug-uri, defecte de proiect, livrare întârziată sau software neconform specificațiilor contractuale.</p>
+        <span class="pc-cta">Află mai mult <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </article>
+
+    <!-- 3 -->
+    <article class="pc reveal d2">
+      <div class="pc-bg" style="background-image:url('https://images.unsplash.com/photo-1563986768609-322da13575f3?w=900&q=85')"></div>
+      <div class="pc-ov"></div>
+      <div class="pc-body">
+        <div class="pc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Breșe de Date / GDPR</h3>
+        <p>Acoperire pentru amenzi GDPR, costuri de notificare, investigații și daune din scurgeri sau pierderi de date personale.</p>
+        <span class="pc-cta">Află mai mult <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </article>
+
+    <!-- 4 -->
+    <article class="pc reveal d1">
+      <div class="pc-bg" style="background-image:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=900&q=85')"></div>
+      <div class="pc-ov"></div>
+      <div class="pc-body">
+        <div class="pc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Risc Cibernetic</h3>
+        <p>Protecție pentru atacuri ransomware, DDoS, intruziuni în sisteme și orice incident cibernetic care afectează clientul.</p>
+        <span class="pc-cta">Află mai mult <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </article>
+
+    <!-- 5 -->
+    <article class="pc reveal d2">
+      <div class="pc-bg" style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900&q=85')"></div>
+      <div class="pc-ov"></div>
+      <div class="pc-body">
+        <div class="pc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>Proprietate Intelectuală</h3>
+        <p>Acoperire pentru revendicări de plagiat, utilizare neautorizată de licențe, conflicte de drepturi de autor și mărci.</p>
+        <span class="pc-cta">Află mai mult <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </article>
+
+    <!-- 6 -->
+    <article class="pc reveal d3">
+      <div class="pc-bg" style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=85')"></div>
+      <div class="pc-ov"></div>
+      <div class="pc-body">
+        <div class="pc-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Responsabilitate Contractuală</h3>
+        <p>Protecție pentru penalități contractuale, litigii de neexecutare și daune solicitate de clienți corporativi sau parteneri internaționali.</p>
+        <span class="pc-cta">Află mai mult <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+      </div>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<!-- ════════════ SCENARII REALE ════════════ -->
+<section id="scenarii" class="s-dark">
+<div class="wrap">
+  <div class="sh reveal">
+    <span class="tag">Cazuri concrete</span>
+    <h2 style="color:#fff">Când intră în joc<br>PI Insurance IT</h2>
+    <p class="lead" style="color:rgba(255,255,255,.52)">Scenarii reale în care polița PI a protejat companii IT de pierderi financiare semnificative. Fiecare zi fără poliță este risc neacoperit.</p>
+  </div>
+  <div class="scen-grid">
+
+    <!-- Scen 1: Bug software -->
+    <div class="scen-card reveal">
+      <div class="scen-head">
+        <div class="scen-type" style="background:rgba(239,68,68,.12);color:#F87171">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          Eroare software
+        </div>
+        <div class="scen-ico" style="background:linear-gradient(145deg,rgba(239,68,68,.25),rgba(239,68,68,.05));border:1px solid rgba(239,68,68,.2)">
+          <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Bug critic în producție — client din Germania</h3>
+        <p>O firmă de software din Chișinău a livrat un modul de procesare comenzi. Un bug nedetectat în logica de calcul a generat pierderi directe pentru clientul din Germania timp de 3 săptămâni.</p>
+      </div>
+      <div class="scen-body">
+        <div class="scen-row">
+          <span class="scen-lbl r">Daună</span>
+          <span class="scen-row-t">340.000 EUR pierderi din comenzi procesate eronat + penalități SLA + costuri audit extern</span>
+        </div>
+        <div class="scen-row">
+          <span class="scen-lbl g">PI acoperă</span>
+          <span class="scen-row-t">Despăgubire client + apărare juridică + costuri remediere urgentă în producție</span>
+        </div>
+        <div class="scen-amount">
+          <div>
+            <div class="scen-n">340K EUR</div>
+            <div class="scen-nl">Total daune acoperite</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scen 2: GDPR breach -->
+    <div class="scen-card reveal d1">
+      <div class="scen-head">
+        <div class="scen-type" style="background:rgba(59,130,246,.12);color:#93C5FD">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          Breșă GDPR
+        </div>
+        <div class="scen-ico" style="background:linear-gradient(145deg,rgba(59,130,246,.25),rgba(59,130,246,.05));border:1px solid rgba(59,130,246,.2)">
+          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Scurgere date 12.000 utilizatori — platformă SaaS</h3>
+        <p>Un furnizor SaaS a suferit un atac cibernetic. Datele personale a 12.000 utilizatori au fost expuse. Autoritatea de protecție a datelor a inițiat investigație și proceduri de amendare.</p>
+      </div>
+      <div class="scen-body">
+        <div class="scen-row">
+          <span class="scen-lbl r">Daună</span>
+          <span class="scen-row-t">Amendă GDPR 180.000 EUR + costuri notificare utilizatori + audit securitate mandatoriu 30.000 EUR</span>
+        </div>
+        <div class="scen-row">
+          <span class="scen-lbl g">PI acoperă</span>
+          <span class="scen-row-t">Amendă regulatorie + costuri notificare + apărare juridică + consultanță conformitate post-incident</span>
+        </div>
+        <div class="scen-amount">
+          <div>
+            <div class="scen-n">210K EUR</div>
+            <div class="scen-nl">Total acoperit de poliță</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scen 3: Contract dispute -->
+    <div class="scen-card reveal d2">
+      <div class="scen-head">
+        <div class="scen-type" style="background:rgba(184,150,46,.12);color:#D4AF37">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:11px;height:11px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          Litigiu contractual
+        </div>
+        <div class="scen-ico" style="background:linear-gradient(145deg,rgba(184,150,46,.25),rgba(184,150,46,.05));border:1px solid rgba(184,150,46,.2)">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </div>
+        <h3>Proiect ERP livrat cu 4 luni întârziere</h3>
+        <p>O firmă de consultanță IT a întârziat livrarea unui ERP custom. Clientul a solicitat penalități contractuale și daune pentru pierderea unui sezon comercial, recurgând la arbitraj internațional.</p>
+      </div>
+      <div class="scen-body">
+        <div class="scen-row">
+          <span class="scen-lbl r">Daună</span>
+          <span class="scen-row-t">Penalități 120.000 EUR + daune pierdere venit 90.000 EUR + taxe arbitraj + onorariu avocați</span>
+        </div>
+        <div class="scen-row">
+          <span class="scen-lbl g">PI acoperă</span>
+          <span class="scen-row-t">Penalități + daune + taxe arbitraj internațional + echipă juridică specializată contracte IT</span>
+        </div>
+        <div class="scen-amount">
+          <div>
+            <div class="scen-n">280K EUR</div>
+            <div class="scen-nl">Daune + costuri juridice</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p style="text-align:center;margin-top:40px;font-size:13px;color:rgba(255,255,255,.3);font-weight:300">Scenariile sunt ilustrative și reprezintă tipuri de revendicări reale din industria IT. Cifrele sunt orientative.</p>
+</div>
+</section>
+
+<!-- ════════════ RISCURI ════════════ -->
+<section id="riscuri" class="s-white">
+<div class="wrap">
+  <div class="risks-layout">
+    <div class="reveal">
+      <span class="tag">Acoperire completă</span>
+      <h2 class="risks-left" style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(36px,4vw,52px);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;color:var(--navy);line-height:.93;margin-bottom:20px">Riscuri<br>acoperibile</h2>
+      <p style="font-size:15px;color:var(--mid);line-height:1.72;font-weight:300;margin-bottom:28px">Polița PI pentru IT acoperă riscurile tehnice, juridice și operaționale specifice industriei software, structurată conform standardelor internaționale Lloyd's și E&amp;O.</p>
+      <div class="risks-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        12+ categorii de risc acoperite
+      </div>
+    </div>
+    <div class="chips reveal d1">
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Erori în codul livrat</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Pierderi financiare client</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Violarea GDPR</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Atac cibernetic / ransomware</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Întreruperea serviciului IT</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>Plagiat software / IP</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Litigii contractuale</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Pierderea datelor clientului</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>Defecte de proiect</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"/></svg>Amenzi regulatorii</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h13l4-3.5L18 6z"/></svg>Costuri de remediere</div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>Daune reputaționale</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════════ PENTRU CINE ════════════ -->
+<section id="target" class="s-off">
+<div class="wrap">
+  <div class="sh reveal">
+    <span class="tag">Clienți țintă</span>
+    <h2>Pentru cine este<br>PI Insurance IT</h2>
+    <p class="lead">Orice companie IT care livrează software, oferă consultanță sau gestionează datele clienților are nevoie de protecție profesionistă PI.</p>
+  </div>
+  <div class="target-grid">
+    <div class="tcard reveal"><div class="tcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h4>Companii Software Dev</h4><p>Firme care dezvoltă software custom sau produse proprii pentru clienți interni sau internaționali.</p></div>
+    <div class="tcard reveal d1"><div class="tcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h4>Agenții IT &amp; Consultanță</h4><p>Firme de consultanță IT, integratori de sisteme și furnizori de servicii tech specializate.</p></div>
+    <div class="tcard reveal d2"><div class="tcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h4>Startup-uri Tech</h4><p>Companii în creștere cu produse SaaS, aplicații mobile sau platforme digitale cu utilizatori.</p></div>
+    <div class="tcard reveal d3"><div class="tcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0 1 12 0v2"/></svg></div><h4>Freelanceri &amp; PFA IT</h4><p>Persoane fizice autorizate care prestează servicii IT pentru companii sau agenții internaționale.</p></div>
+    <div class="tcard reveal"><div class="tcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 16.2A4.5 4.5 0 0 0 17.5 8h-1.8A7 7 0 1 0 4 14.9"/><polyline points="16 16 12 12 8 16"/><line x1="12" y1="12" x2="12" y2="21"/></svg></div><h4>Furnizori SaaS / Cloud</h4><p>Companii care oferă software ca serviciu și gestionează date sensibile ale clienților.</p></div>
+    <div class="tcard reveal d1"><div class="tcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="8" height="8"/><rect x="14" y="2" width="8" height="8"/><rect x="14" y="14" width="8" height="8"/><rect x="2" y="14" width="8" height="8"/></svg></div><h4>Integratori de Sisteme</h4><p>Firme care implementează și configurează ERP, CRM sau soluții enterprise complexe.</p></div>
+    <div class="tcard reveal d2"><div class="tcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h4>Companii Cybersecurity</h4><p>Firme de securitate IT care auditează, testează sau monitorizează infrastructura clienților.</p></div>
+    <div class="tcard reveal d3"><div class="tcard-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h4>Firme de Outsourcing IT</h4><p>Companii care furnizează echipe dedicate sau servicii IT externalizate pentru clienți din UE și SUA.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ════════════ AVANTAJE ════════════ -->
+<section id="avantaje" class="s-white">
+<div class="wrap">
+  <div class="sh reveal">
+    <span class="tag">De ce ING Broker</span>
+    <h2>Avantajele colaborării</h2>
+    <p class="lead">Nu suntem un simplu intermediar. Suntem partenerul strategic care înțelege specificul industriei IT și vă protejează afacerea de la ofertare până la daună.</p>
+  </div>
+  <div class="adv-grid reveal">
+    <div class="adv-item"><div class="adv-num">01</div><div class="adv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h4>Protecție revendicări contractuale</h4><p>Acoperim litigiile și penalitățile din contracte IT, inclusiv pentru proiecte internaționale.</p></div>
+    <div class="adv-item"><div class="adv-num">02</div><div class="adv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><h4>Acoperire erori software</h4><p>Bug-uri, defecte, livrabili neconformi — protecție completă pentru tot ce poate merge greșit în cod.</p></div>
+    <div class="adv-item"><div class="adv-num">03</div><div class="adv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Apărare juridică inclusă</h4><p>Costurile de apărare juridică sunt incluse în limita poliței, inclusiv pentru litigii internaționale.</p></div>
+    <div class="adv-item"><div class="adv-num">04</div><div class="adv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h4>Acoperire retroactivă</h4><p>Polița poate acoperi revendicări din proiecte anterioare datei de emitere, configurabil per caz.</p></div>
+    <div class="adv-item"><div class="adv-num">05</div><div class="adv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h4>Limită asigurată ridicată</h4><p>Limite personalizate, de la 100.000 EUR până la 2.000.000 EUR și peste, cu reasigurare internațională.</p></div>
+    <div class="adv-item"><div class="adv-num">06</div><div class="adv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h4>Plasament internațional</h4><p>Accesăm piețele internaționale de reasigurare pentru riscuri complexe sau valori mari asigurate.</p></div>
+    <div class="adv-item"><div class="adv-num">07</div><div class="adv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h4>Personalizare per risc IT</h4><p>Structurăm polița în funcție de tipul de servicii, natura contractelor și jurisdicțiile acoperite.</p></div>
+    <div class="adv-item"><div class="adv-num">08</div><div class="adv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h4>Suport dedicat la daune</h4><p>Asistăm compania în gestionarea oricărei revendicări, de la notificare până la soluționare finală.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ════════════ ROL BROKER ════════════ -->
+<section id="broker" class="s-navy">
+<div class="wrap">
+  <div class="rol-grid">
+    <div class="rol-left">
+      <span class="tag reveal">Rolul nostru</span>
+      <h2 class="reveal d1">Cum lucrează<br>Insurance ING<br>Broker SRL</h2>
+      <p class="reveal d2">Nu suntem un simplu intermediar. Suntem brokerul specializat care analizează riscul tău IT, negociază cel mai bun contract și te reprezintă la fiecare pas — de la ofertă până la plata daunei.</p>
+      <div class="rol-list">
+        <div class="rol-item reveal"><div class="rol-n">01</div><div class="rol-text"><h4>Analizăm profilul companiei și contractele</h4><p>Evaluăm tipul de servicii IT, contractele existente, jurisdicțiile acoperite și expunerea la risc.</p></div></div>
+        <div class="rol-item reveal d1"><div class="rol-n">02</div><div class="rol-text"><h4>Identificăm asigurătorul potrivit</h4><p>Selectăm din piața moldovenească și internațională asigurătorul cu cea mai bună acoperire pentru IT.</p></div></div>
+        <div class="rol-item reveal d2"><div class="rol-n">03</div><div class="rol-text"><h4>Negociem condițiile și limitele</h4><p>Obținem condițiile optime de acoperire, francize minime și excluderi minimale pentru profilul tău de risc.</p></div></div>
+        <div class="rol-item reveal d3"><div class="rol-n">04</div><div class="rol-text"><h4>Structurăm plasamentul internațional</h4><p>Pentru contracte cu valori mari, accesăm piețe de reasigurare din Lloyd's și Europa.</p></div></div>
+        <div class="rol-item reveal d4"><div class="rol-n">05</div><div class="rol-text"><h4>Asistăm la emitere și reînnoire</h4><p>Gestionăm întregul proces de emitere și asigurăm continuitatea acoperirii la reînnoire.</p></div></div>
+        <div class="rol-item reveal d5"><div class="rol-n">06</div><div class="rol-text"><h4>Suport complet la daune</h4><p>Te reprezentăm în fața asigurătorului la orice revendicare, de la notificare până la plata despăgubirii.</p></div></div>
+      </div>
+    </div>
+    <div class="rol-right reveal d2">
+      <div class="rol-box"><h3>PI Insurance IT</h3><p>Asigurarea de răspundere profesională este produsul standard internațional pentru protecția companiilor IT față de revendicările terților generate de erori sau omisiuni profesionale.</p></div>
+      <div class="rol-box"><h3>E&amp;O Coverage</h3><p>Errors &amp; Omissions — componenta esențială a poliței PI IT, acoperă direct daunele financiare ale clienților cauzate de defecte în software, consultanță sau servicii IT livrate.</p></div>
+      <div class="rol-box rol-box-imp"><h3>Contracte cu valori peste 2.000.000 EUR</h3><p>Pentru companiile IT cu contracte mari sau clienți din UE și SUA, structurăm obligatoriu soluții de plasament prin piețe internaționale de reasigurare, cu capacitate și experiență dovedite.</p></div>
+      <div class="rol-box"><h3>Autorizat CNPF</h3><p>Insurance ING Broker SRL este broker de asigurare autorizat de Comisia Națională a Pieței Financiare din Republica Moldova, conform Legii nr. 407/2006 privind asigurările.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════════ PIETE ════════════ -->
+<section id="piete" class="s-white">
+<div class="wrap">
+  <div class="sh reveal">
+    <span class="tag">Capacitate internațională</span>
+    <h2>Piețe internaționale<br>de reasigurare</h2>
+    <p class="lead">Pentru contracte IT cu valori ridicate sau clienți corporativi internaționali, structurăm soluții prin piețe specializate de reasigurare.</p>
+  </div>
+  <div class="piete-grid">
+    <div class="piete-card reveal">
+      <div class="piete-ico" style="background:linear-gradient(135deg,#1e3a8a,#3b82f6)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+      <h3>Capacitate ridicată</h3>
+      <p>Accesăm capacitate de subscriere de la reasigurători internaționali specializați în Technology E&amp;O și Cyber Liability, cu limite de până la 25M EUR per risc.</p>
+    </div>
+    <div class="piete-card reveal d1">
+      <div class="piete-ico" style="background:linear-gradient(135deg,#92400e,#d97706)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+      <h3>Experiență IT specializată</h3>
+      <p>Plasamente cu asigurători care au experiență dovedită în revendicări din industria software, SaaS și servicii digitale globale.</p>
+    </div>
+    <div class="piete-card reveal d2">
+      <div class="piete-ico" style="background:linear-gradient(135deg,#064e3b,#10b981)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+      <h3>Structuri complexe</h3>
+      <p>Structurăm programe cu straturi multiple (layers) pentru companii IT cu expunere ridicată sau portofoliu de contracte internațional.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════════ JURISDICȚII ════════════ -->
+<section id="jurisdictii" class="s-off">
+<div class="wrap">
+  <div class="sh reveal">
+    <span class="tag">Acoperire geografică</span>
+    <h2>Unde te protejăm</h2>
+    <p class="lead">PI Insurance IT structurată prin Insurance ING Broker SRL acoperă activitatea companiei tale indiferent de jurisdicția clientului — Moldova, UE, SUA sau global.</p>
+  </div>
+  <div class="juris-grid">
+    <div class="juris-card reveal">
+      <img src="https://flagcdn.com/w80/md.png" srcset="https://flagcdn.com/w160/md.png 2x" alt="Steagul Republicii Moldova" class="juris-flag" width="58" loading="lazy">
+      <h4>Republica Moldova</h4>
+      <p>Acoperire completă pentru contractele și clienții din Moldova. Conformitate cu legislația națională și reglementările CNPF.</p>
+    </div>
+    <div class="juris-card reveal d1">
+      <img src="https://flagcdn.com/w80/ro.png" srcset="https://flagcdn.com/w160/ro.png 2x" alt="Steagul României" class="juris-flag" width="58" loading="lazy">
+      <h4>România</h4>
+      <p>Acoperire directă pentru clienți din România — principala piață de export IT pentru companiile moldovenești.</p>
+    </div>
+    <div class="juris-card reveal d2">
+      <img src="https://flagcdn.com/w80/eu.png" srcset="https://flagcdn.com/w160/eu.png 2x" alt="Steagul Uniunii Europene" class="juris-flag" width="58" loading="lazy">
+      <h4>Uniunea Europeană</h4>
+      <p>Protecție pentru contracte cu clienți din orice stat UE, inclusiv conformitate GDPR și cerințe regulatorii europene.</p>
+    </div>
+    <div class="juris-card reveal d3">
+      <img src="https://flagcdn.com/w80/gb.png" srcset="https://flagcdn.com/w160/gb.png 2x" alt="Steagul Regatului Unit" class="juris-flag" width="58" loading="lazy">
+      <h4>Regatul Unit</h4>
+      <p>Acoperire pentru contracte cu clienți din UK, cu plasament prin piețe specializate care cunosc cerințele post-Brexit.</p>
+    </div>
+    <div class="juris-card reveal">
+      <img src="https://flagcdn.com/w80/us.png" srcset="https://flagcdn.com/w160/us.png 2x" alt="Steagul SUA" class="juris-flag" width="58" loading="lazy">
+      <h4>Statele Unite</h4>
+      <p>Jurisdicție cu cerințe ridicate de acoperire. Structurăm soluții specifice pentru contracte cu clienți americani, unde sumele revendicate pot fi semnificative.</p>
+    </div>
+    <div class="juris-card reveal d1">
+      <img src="https://flagcdn.com/w80/ca.png" srcset="https://flagcdn.com/w160/ca.png 2x" alt="Steagul Canadei" class="juris-flag" width="58" loading="lazy">
+      <h4>Canada</h4>
+      <p>Acoperire pentru companiile IT cu clienți canadieni, cu cerințe similare legislației americane dar cu specificități proprii.</p>
+    </div>
+    <div class="juris-card reveal d2">
+      <img src="https://flagcdn.com/w80/au.png" srcset="https://flagcdn.com/w160/au.png 2x" alt="Steagul Australiei" class="juris-flag" width="58" loading="lazy">
+      <h4>Australia &amp; Pacific</h4>
+      <p>Piață în creștere pentru outsourcing IT. Acoperire configurabilă pentru contracte cu companii australiene și din zona Pacific.</p>
+    </div>
+    <div class="juris-card reveal d3" style="background:linear-gradient(135deg,rgba(184,150,46,.07),rgba(11,31,58,.03));border-color:rgba(184,150,46,.18)">
+      <span class="juris-flag-globe">🌍</span>
+      <h4>Global — la cerere</h4>
+      <p>Pentru companii IT cu contracte globale structurăm soluții de acoperire mondială prin piețe internaționale de reasigurare.</p>
+    </div>
+  </div>
+  <p class="juris-note">Jurisdicțiile disponibile depind de asigurătorul selectat și profilul specific de risc al companiei. <strong>Contactați-ne pentru o analiză a jurisdicțiilor necesare pentru contractele dvs. actuale.</strong></p>
+</div>
+</section>
+
+<!-- ════════════ PROCES ════════════ -->
+<section id="proces" class="s-off">
+<div class="wrap">
+  <div class="sh reveal">
+    <span class="tag">Cum lucrăm</span>
+    <h2>Procesul nostru</h2>
+    <p class="lead">De la prima discuție până la emiterea poliței PI — un proces simplu, transparent, gestionat integral de echipa noastră specializată.</p>
+  </div>
+  <div class="proc-grid reveal">
+    <div class="proc-item"><div class="proc-n">01</div><h4>Analiza companiei</h4><p>Înțelegem activitatea IT, serviciile prestate și structura contractelor cu clienții.</p></div>
+    <div class="proc-item"><div class="proc-n">02</div><h4>Date tehnice</h4><p>Colectăm informații despre tipul de software, clienții principali și istoricul de revendicări.</p></div>
+    <div class="proc-item"><div class="proc-n">03</div><h4>Evaluare expunere</h4><p>Calculăm valoarea contractelor active și suma asigurată necesară conform riscului real.</p></div>
+    <div class="proc-item"><div class="proc-n">04</div><h4>Structurare soluție</h4><p>Proiectăm structura poliței PI: acoperiri, excluderi, francize și limite personalizate.</p></div>
+  </div>
+  <div class="proc-row2 reveal d2" style="margin-top:24px">
+    <div class="proc-item"><div class="proc-n gold-n">05</div><h4>Identificare piață</h4><p>Selectăm asigurătorul potrivit din piața locală sau internațională pentru profilul IT.</p></div>
+    <div class="proc-item"><div class="proc-n gold-n">06</div><h4>Ofertare</h4><p>Primești oferta completă cu condiții clare, comparații de opțiuni și recomandarea noastră.</p></div>
+    <div class="proc-item"><div class="proc-n gold-n">07</div><h4>Emitere poliță</h4><p>Emitem polița PI și livrăm documentația completă pentru dosarul de conformitate.</p></div>
+    <div class="proc-item"><div class="proc-n gold-n">08</div><h4>Suport continuu</h4><p>Monitorizăm contractele, asistăm la reînnoire și gestionăm orice revendicare.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ════════════ TRUST ════════════ -->
+<section class="s-navy">
+<div class="wrap">
+  <div class="trust-stats reveal">
+    <div class="stat-item"><span class="stat-num"><span class="stat-val" data-count="30">0</span></span><div class="stat-l">Polițe emise</div></div>
+    <div class="stat-item"><span class="stat-num"><span class="stat-val" data-count="20">0</span><span class="stat-suf">+</span></span><div class="stat-l">Ani de experiență</div></div>
+    <div class="stat-item"><span class="stat-num"><span class="stat-val" data-count="7">0</span></span><div class="stat-l">Companii partenere</div></div>
+    <div class="stat-item"><span class="stat-num"><span class="stat-val" data-count="9">0</span></span><div class="stat-l">Reasigurători top mondial</div></div>
+  </div>
+  <div class="trust-cards reveal d1">
+    <div class="trust-card"><div class="trust-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div><div><h4>Autorizat CNPF</h4><p>Broker de asigurare licențiat de Comisia Națională a Pieței Financiare, conform Legii nr. 407/2006.</p></div></div>
+    <div class="trust-card"><div class="trust-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div><h4>Plasament internațional</h4><p>Acces la piețe de reasigurare pentru riscuri complexe, cu reasigurători din top 20 mondial.</p></div></div>
+    <div class="trust-card"><div class="trust-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><h4>Echipă specializată</h4><p>Experți în asigurări IT cu experiență în gestionarea revendicărilor și structurarea soluțiilor tech.</p></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ════════════ PACHETE ════════════ -->
+<section id="pachete" class="s-off">
+<div class="wrap">
+  <div class="sh reveal">
+    <span class="tag">Niveluri de acoperire</span>
+    <h2>Pachete PI Insurance IT</h2>
+    <p class="lead">Trei niveluri de protecție, adaptate dimensiunii și expunerii companiei tale. Prima exactă se calculează după analiza profilului de risc — oferim consultanță gratuită.</p>
+  </div>
+  <div class="pkg-grid">
+
+    <!-- Starter -->
+    <div class="pkg-card reveal">
+      <span class="pkg-tier">Startup &amp; PFA IT</span>
+      <div class="pkg-name">Starter</div>
+      <div class="pkg-limit-wrap">
+        <span class="pkg-limit">100K</span>
+        <span class="pkg-limit-u">EUR</span>
+      </div>
+      <p class="pkg-limit-l">Limită de asigurare per eveniment</p>
+      <div class="pkg-div"></div>
+      <ul class="pkg-feats">
+        <li>Erori &amp; omisiuni în codul livrat</li>
+        <li>Răspundere profesională generală</li>
+        <li>Costuri de apărare juridică incluse</li>
+        <li>Violarea proprietății intelectuale</li>
+        <li>Breșe de date și acoperire GDPR</li>
+        <li>Jurisdicție Moldova + România</li>
+        <li>Suport ofertare și emitere poliță</li>
+      </ul>
+      <p class="pkg-price-note">Primă orientativă: <strong>800–1.500 EUR / an</strong><br>în funcție de cifra de afaceri și tipul de servicii IT</p>
+      <a href="#contact" class="btn-pkg btn-pkg-out">Solicită ofertă gratuită</a>
+    </div>
+
+    <!-- Professional (featured) -->
+    <div class="pkg-card featured reveal d1">
+      <span class="pkg-tier">Companii IT active</span>
+      <div class="pkg-name">Professional</div>
+      <div class="pkg-limit-wrap">
+        <span class="pkg-limit">500K</span>
+        <span class="pkg-limit-u">EUR</span>
+      </div>
+      <p class="pkg-limit-l">Limită de asigurare per eveniment</p>
+      <div class="pkg-div"></div>
+      <ul class="pkg-feats">
+        <li>Tot ce include Starter, plus:</li>
+        <li>Risc cibernetic extins (Cyber add-on)</li>
+        <li>Acoperire retroactivă configurabilă</li>
+        <li>Jurisdicție UE completă + UK</li>
+        <li>Clauze SLA și penalități contractuale</li>
+        <li>Business interruption IT</li>
+        <li>Daune reputaționale (PR costs)</li>
+        <li>Suport dedicat la daune</li>
+      </ul>
+      <p class="pkg-price-note">Primă orientativă: <strong>2.500–6.000 EUR / an</strong><br>în funcție de CA, contracte active și expunere</p>
+      <a href="#contact" class="btn-pkg btn-pkg-sol">Solicită ofertă →</a>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="pkg-card reveal d2">
+      <span class="pkg-tier">Enterprise &amp; Outsourcing</span>
+      <div class="pkg-name">Enterprise</div>
+      <div class="pkg-limit-wrap">
+        <span class="pkg-limit">2M+</span>
+        <span class="pkg-limit-u">EUR</span>
+      </div>
+      <p class="pkg-limit-l">Limită personalizată prin reasigurare</p>
+      <div class="pkg-div"></div>
+      <ul class="pkg-feats">
+        <li>Tot ce include Professional, plus:</li>
+        <li>Plasament internațional reasigurare</li>
+        <li>Acoperire SUA / Canada / Global</li>
+        <li>Structuri multi-layer personalizate</li>
+        <li>D&amp;O IT combinat la cerere</li>
+        <li>Cyber Liability avansat (standalone)</li>
+        <li>Contracte Fortune 500 / clienți enterprise</li>
+        <li>Account manager dedicat ING Broker</li>
+      </ul>
+      <p class="pkg-price-note">Primă la cerere — analiză individuală<br>pentru profile de risc complexe și internaționale</p>
+      <a href="#contact" class="btn-pkg btn-pkg-out">Solicită analiză</a>
+    </div>
+
+  </div>
+  <p class="pkg-disclaimer">Toate valorile sunt <strong>orientative</strong>. Prima exactă se stabilește după analiza individuală a profilului de risc al companiei, a cifrei de afaceri, jurisdicțiilor și istoricului de revendicări. <strong>Analiza și oferta sunt complet gratuite.</strong></p>
+</div>
+</section>
+
+<!-- ════════════ FAQ ════════════ -->
+<section id="faq" class="s-white">
+<div class="wrap">
+  <div class="sh reveal">
+    <span class="tag">Întrebări frecvente</span>
+    <h2>FAQ — PI Insurance IT</h2>
+    <p class="lead">Răspunsuri la cele mai comune întrebări despre asigurarea de răspundere profesională pentru companii IT.</p>
+  </div>
+  <div class="faq-list reveal" aria-label="Întrebări frecvente PI Insurance IT">
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span>Ce este PI Insurance și de ce are nevoie compania mea IT de această poliță?</span><div class="faq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button>
+      <div class="faq-body"><p>PI Insurance (Professional Indemnity) protejează compania IT atunci când un client pretinde că a suferit pierderi financiare din cauza erorilor, omisiunilor sau sfaturilor greșite ale companiei tale. Fiecare companie IT care livrează software, consultanță sau servicii digitale este expusă acestui risc — indiferent de mărimea sau experiența echipei.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span>Ce acoperă concret polița PI IT — ce tipuri de revendicări sunt incluse?</span><div class="faq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button>
+      <div class="faq-body"><p>Polița acoperă: (1) erori în codul livrat, (2) omisiuni în specificații sau documentație, (3) livrare cu întârziere semnificativă, (4) software neconform contractului, (5) sfaturi tehnice incorecte, (6) violarea proprietății intelectuale, (7) breșe de securitate și scurgeri de date, (8) penalități contractuale. Costurile de apărare juridică sunt incluse în limita poliței.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span>Ce valoare a sumei asigurate am nevoie — cum se calculează?</span><div class="faq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button>
+      <div class="faq-body"><p>Suma asigurată se determină în funcție de: valoarea totală a contractelor active, valoarea celui mai mare contract individual, jurisdicțiile în care activezi (UE, SUA au cerințe mai ridicate) și tipul de risc. Regula generală: suma asigurată trebuie să fie cel puțin egală cu valoarea celui mai mare contract. Recomandăm minim 100.000 EUR pentru companii mici și 500.000–2.000.000 EUR pentru contracte corporative.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span>Acoperă polița PI și atacurile cibernetice sau breșele de date?</span><div class="faq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button>
+      <div class="faq-body"><p>Polița PI standard acoperă răspunderea față de terți pentru pierderi din breșe de date gestionate de tine. Pentru acoperire completă a riscului cibernetic propriu (costuri de remediere, ransomware, business interruption), recomandăm adăugarea unui modul Cyber Liability. Structurăm soluția combinată PI + Cyber la cerere, optimizând costul total al protecției.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span>Ce documente sunt necesare pentru a obține o ofertă PI Insurance IT?</span><div class="faq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button>
+      <div class="faq-body"><p>Documentele standard: (1) Date de identificare companie (IDNO, adresă, contact), (2) Descrierea serviciilor IT prestate, (3) Cifra de afaceri din ultimul exercițiu financiar, (4) Lista principalilor clienți și valoarea contractelor, (5) Jurisdicțiile în care prestezi servicii, (6) Istoricul de revendicări (dacă există). Procesul de ofertare durează 3–5 zile lucrătoare de la primirea dosarului complet.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span>Cât costă o poliță PI Insurance pentru o companie IT din Moldova?</span><div class="faq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button>
+      <div class="faq-body"><p>Prima de asigurare variază în funcție de suma asigurată, tipul de servicii IT, cifra de afaceri, jurisdicțiile acoperite și istoricul de revendicări. Orientativ: pentru sume asigurate de 100.000 EUR, prima anuală pornește de la circa 0.5–1.5% din suma asigurată. Contactați-ne pentru o ofertă personalizată — analiza și oferta sunt gratuite, fără nicio obligație.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════════ CTA + FORM ════════════ -->
+<section id="contact" class="s-navy">
+<div class="wrap">
+  <div class="cta-wrap">
+    <div class="reveal">
+      <span class="tag">Solicită ofertă</span>
+      <h2>Obține oferta ta<br>PI Insurance IT</h2>
+      <p>Completează formularul și un consultant specializat te va contacta în maxim 24 de ore cu o analiză personalizată și o ofertă de preț.</p>
+      <div class="cta-contact">
+        <div class="cta-ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 5.55 5.55l.77-.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg><a href="tel:+37369526003">+373 69 526 003</a></div>
+        <div class="cta-ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:andrei.moraru@ingbroker.md">andrei.moraru@ingbroker.md</a></div>
+        <div class="cta-ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://maps.google.com/?q=str.+Pan+Halippa+9,+Chisinau,+Moldova" target="_blank" rel="noopener" style="color:rgba(255,255,255,.7);transition:color .2s">str. Pan Halippa 9, Chișinău<br>Republica Moldova</a><br><span style="font-size:12px;opacity:.4">CF: 1017600019386</span></div>
+      </div>
+    </div>
+    <div class="reveal d1">
+      <div class="form-box" id="formBox" role="form" aria-label="Formular solicitare ofertă PI Insurance IT">
+        <div class="form-row">
+          <div class="form-group"><label>Persoana de contact *</label><input type="text" placeholder="Nume Prenume" required autocomplete="name"></div>
+          <div class="form-group"><label>Compania IT *</label><input type="text" placeholder="Denumirea companiei" required autocomplete="organization"></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Telefon</label><input type="tel" placeholder="+373..." autocomplete="tel"></div>
+          <div class="form-group"><label>Email *</label><input type="email" placeholder="email@companie.md" required autocomplete="email"></div>
+        </div>
+        <div class="form-group">
+          <label>Tipul de servicii IT</label>
+          <select>
+            <option value="">Selectează...</option>
+            <option>Software Development</option>
+            <option>Consultanță IT</option>
+            <option>SaaS / Platformă Cloud</option>
+            <option>Integrare sisteme</option>
+            <option>Cybersecurity</option>
+            <option>Outsourcing IT</option>
+            <option>Freelancer / PFA</option>
+            <option>Altul</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Valoarea contractelor active (EUR)</label>
+          <select>
+            <option value="">Selectează intervalul...</option>
+            <option>Sub 50.000 EUR</option>
+            <option>50.000 — 200.000 EUR</option>
+            <option>200.000 — 500.000 EUR</option>
+            <option>500.000 — 2.000.000 EUR</option>
+            <option>Peste 2.000.000 EUR</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Mesaj (opțional)</label>
+          <textarea placeholder="Descrie pe scurt activitatea și ce tip de acoperire cauți..."></textarea>
+        </div>
+        <button class="btn-form" id="submitBtn" type="button">Solicită ofertă gratuită PI Insurance IT →</button>
+      </div>
+      <div class="form-success" id="formSuccess">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <h3>Cererea a fost trimisă!</h3>
+        <p>Un consultant specializat PI Insurance IT te va contacta în maxim 24 de ore cu oferta personalizată.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer class="ft">
+<div class="wrap">
+  <div class="ft-top">
+    <div>
+      <img src="/logo-ingbroker.png" alt="Insurance ING Broker SRL" class="ft-logo-img">
+      <p class="ft-desc">Broker autorizat CNPF, specializat în asigurări profesionale pentru companii IT din Republica Moldova. Plasament internațional prin reasiguratori de top.</p>
+    </div>
+    <div class="ft-col"><h5>Produse IT</h5><ul><li><a href="https://ingbroker.md/asigurari-profesionale" target="_blank" rel="noopener">PI Insurance IT</a></li><li><a href="https://ingbroker.md/cyber-insurance" target="_blank" rel="noopener">Cyber Liability</a></li><li><a href="https://ingbroker.md/asigurare-directori-oficiali" target="_blank" rel="noopener">D&amp;O IT</a></li><li><a href="https://ingbroker.md/erori-si-omisiuni" target="_blank" rel="noopener">E&amp;O Software</a></li></ul></div>
+    <div class="ft-col"><h5>Companie</h5><ul><li><a href="https://ingbroker.md/despre-noi" target="_blank" rel="noopener">Despre noi</a></li><li><a href="https://ingbroker.md/cum-lucram" target="_blank" rel="noopener">Cum lucrăm</a></li><li><a href="https://ingbroker.md/piete-internationale" target="_blank" rel="noopener">Piețe internaționale</a></li><li><a href="https://ingbroker.md/rolul-brokerului" target="_blank" rel="noopener">Rolul brokerului</a></li></ul></div>
+    <div class="ft-col"><h5>Legal</h5><ul><li><a href="https://ingbroker.md/termeni-si-conditii" target="_blank" rel="noopener">Termeni și condiții</a></li><li><a href="https://ingbroker.md/politica-de-confidentialitate" target="_blank" rel="noopener">Politica GDPR</a></li><li><a href="https://ingbroker.md/licenta-cnpf" target="_blank" rel="noopener">Licența CNPF</a></li></ul></div>
+    <div class="ft-col"><h5>Contact</h5><ul><li><a href="https://maps.google.com/?q=str.+Pan+Halippa+9,+Chisinau,+Moldova" target="_blank" rel="noopener">str. Pan Halippa 9<br>Chișinău, Moldova</a><br><span style="font-size:11px;color:rgba(255,255,255,.3)">CF: 1017600019386</span></li><li><a href="tel:+37369526003">+373 69 526 003</a></li><li><a href="mailto:andrei.moraru@ingbroker.md">andrei.moraru@ingbroker.md</a></li><li><a href="https://ingbroker.md" target="_blank" rel="noopener">ingbroker.md</a></li></ul></div>
+  </div>
+  <div class="ft-bottom">
+    <p>© 2026 Insurance ING Broker SRL · Licențiat CNPF · Republica Moldova</p>
+    <p>Toate drepturile rezervate</p>
+  </div>
+</div>
+</footer>
+
+<script>
+/* ════════════════════════════════════════════════
+   PI INSURANCE IT — Premium Motion Layer
+   Framer Motion-inspired · 21.st quality · Growmark style
+════════════════════════════════════════════════ */
+
+/* ── PAGE LOADER ── */
+(function(){
+  var l=document.getElementById('loader');
+  if(!l)return;
+  function hide(){l.classList.add('gone');}
+  if(document.readyState==='complete'){setTimeout(hide,350);}
+  else{window.addEventListener('load',function(){setTimeout(hide,350);});}
+})();
+
+/* ── SCROLL PROGRESS BAR ── */
+(function(){
+  var bar=document.getElementById('spb');
+  if(!bar)return;
+  function upd(){
+    var max=document.body.scrollHeight-window.innerHeight;
+    bar.style.width=(max>0?Math.min(window.scrollY/max*100,100):0)+'%';
+  }
+  window.addEventListener('scroll',upd,{passive:true});
+  upd();
+})();
+
+/* ── HEADER SCROLL ── */
+var hdr=document.getElementById('hdr');
+window.addEventListener('scroll',function(){hdr.classList.toggle('on',window.scrollY>60);},{passive:true});
+
+/* ── BACK TO TOP ── */
+(function(){
+  var btt=document.getElementById('btt');
+  if(!btt)return;
+  window.addEventListener('scroll',function(){btt.classList.toggle('show',window.scrollY>500);},{passive:true});
+  btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+
+/* ── KEN BURNS SLIDESHOW ── */
+var slides=document.querySelectorAll('.kb-slide'),cur=0;
+(function loop(){
+  setTimeout(function(){
+    slides[cur].classList.remove('on');
+    cur=(cur+1)%slides.length;
+    slides[cur].classList.add('on');
+    loop();
+  },6500);
+})();
+
+/* ── SCROLL REVEAL — blur-slide IntersectionObserver ── */
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!els.length)return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target);}
+    });
+  },{threshold:0.08,rootMargin:'0px 0px -44px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+
+/* ── STAGGER DELAYS — grid children animate in sequence ── */
+(function(){
+  var grids=document.querySelectorAll('.cards6,.target-grid,.adv-grid,.scen-grid,.pkg-grid,.juris-grid,.piete-grid,.trust-cards,.proc-grid,.proc-row2');
+  grids.forEach(function(grid){
+    var children=Array.from(grid.children).filter(function(c){return c.classList.contains('reveal');});
+    children.forEach(function(child,i){
+      // Progressive stagger: 75ms per item, capped at 480ms
+      child.style.transitionDelay=Math.min(i*75,480)+'ms';
+    });
+  });
+})();
+
+/* ── CHIP STAGGER ── */
+(function(){
+  var containers=document.querySelectorAll('.chips');
+  containers.forEach(function(cont){
+    var chips=Array.from(cont.querySelectorAll('.chip'));
+    chips.forEach(function(chip,i){chip.style.transitionDelay=(i*48)+'ms';});
+    var cio=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('cvis');cio.unobserve(e.target);}
+      });
+    },{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
+    cio.observe(cont);
+  });
+})();
+
+/* ── CARD SPOTLIGHT — cursor radial gradient ── */
+(function(){
+  if(!window.matchMedia('(hover:hover)').matches)return;
+  var selectors='.pc,.tcard,.piete-card,.pkg-card,.juris-card,.scen-card,.adv-item,.rol-box';
+  document.querySelectorAll(selectors).forEach(function(card){
+    card.classList.add('spot');
+    card.addEventListener('mousemove',function(e){
+      var r=card.getBoundingClientRect();
+      card.style.setProperty('--mx',(e.clientX-r.left)+'px');
+      card.style.setProperty('--my',(e.clientY-r.top)+'px');
+    });
+  });
+})();
+
+/* ── MAGNETIC BUTTONS — subtle cursor follow ── */
+(function(){
+  if(!window.matchMedia('(hover:hover)').matches)return;
+  document.querySelectorAll('.btn-prim,.btn-hdr,.btn-pkg-sol,.btn-form').forEach(function(btn){
+    btn.addEventListener('mousemove',function(e){
+      var r=btn.getBoundingClientRect();
+      var x=(e.clientX-r.left-r.width/2)*0.2;
+      var y=(e.clientY-r.top-r.height/2)*0.2;
+      btn.style.transform='translate('+x+'px,'+y+'px)';
+    });
+    btn.addEventListener('mouseleave',function(){btn.style.transform='';});
+  });
+})();
+
+/* ── HERO PARTICLES — floating dots ── */
+(function(){
+  var c=document.getElementById('ptc');
+  if(!c)return;
+  var config=[
+    {s:2,l:14,t:22,dur:9,del:0,dx:-28,dy:-38},
+    {s:1.5,l:26,t:67,dur:11.5,del:-3,dx:38,dy:-22},
+    {s:2.5,l:74,t:33,dur:8,del:-5,dx:-18,dy:32},
+    {s:1,l:55,t:78,dur:13,del:-2,dx:32,dy:-18},
+    {s:2,l:86,t:52,dur:10,del:-7,dx:-38,dy:22},
+    {s:1.5,l:42,t:14,dur:12,del:-4,dx:22,dy:38},
+    {s:3,l:91,t:77,dur:7.5,del:-1,dx:-28,dy:-32},
+    {s:1,l:9,t:58,dur:14,del:-6,dx:44,dy:18},
+    {s:2,l:62,t:24,dur:9.5,del:-3.5,dx:-22,dy:-38},
+    {s:1.5,l:32,t:88,dur:11,del:-8,dx:28,dy:-28},
+    {s:2.5,l:79,t:9,dur:8.5,del:-2.5,dx:-44,dy:32},
+    {s:1,l:48,t:44,dur:13.5,del:-9,dx:18,dy:22}
+  ];
+  var frag=document.createDocumentFragment();
+  config.forEach(function(d){
+    var el=document.createElement('div');
+    el.className='p-dot';
+    el.style.cssText='width:'+d.s+'px;height:'+d.s+'px;left:'+d.l+'%;top:'+d.t+'%;--dur:'+d.dur+'s;--del:'+d.del+'s;--dx:'+d.dx+'px;--dy:'+d.dy+'px';
+    frag.appendChild(el);
+  });
+  c.appendChild(frag);
+})();
+
+/* ── HERO PARALLAX — subtle depth on scroll ── */
+(function(){
+  var ov=document.querySelector('.hero-ov');
+  if(!ov)return;
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>window.innerHeight)return;
+    // Slightly deepen the overlay as user scrolls — adds depth
+    var ratio=window.scrollY/window.innerHeight;
+    ov.style.opacity=0.88+ratio*0.12;
+  },{passive:true});
+})();
+
+/* ── NAV ACTIVE HIGHLIGHT on scroll ── */
+(function(){
+  var sections=document.querySelectorAll('section[id]');
+  var links=document.querySelectorAll('nav a[href^="#"]');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(a){a.classList.remove('active');});
+        var match=document.querySelector('nav a[href="#'+e.target.id+'"]');
+        if(match)match.classList.add('active');
+      }
+    });
+  },{threshold:0.4});
+  sections.forEach(function(s){io.observe(s);});
+})();
+
+/* ── COUNTER ANIMATION ── */
+(function(){
+  var vals=document.querySelectorAll('.stat-val[data-count]');
+  var cio=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target,target=parseInt(el.dataset.count),dur=1900,start=performance.now();
+      function tick(now){
+        var p=Math.min((now-start)/dur,1);
+        var ease=1-Math.pow(1-p,3);
+        el.textContent=Math.round(ease*target);
+        if(p<1){requestAnimationFrame(tick);}else{el.textContent=target;}
+      }
+      requestAnimationFrame(tick);
+      cio.unobserve(el);
+    });
+  },{threshold:0.5});
+  vals.forEach(function(el){cio.observe(el);});
+})();
+
+/* ── FAQ ACCORDION ── */
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var body=this.nextElementSibling;
+    var isOpen=this.classList.contains('open');
+    document.querySelectorAll('.faq-q.open').forEach(function(b){
+      b.classList.remove('open');
+      b.setAttribute('aria-expanded','false');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if(!isOpen){
+      this.classList.add('open');
+      this.setAttribute('aria-expanded','true');
+      body.classList.add('open');
+    }
+  });
+});
+
+/* ── FORM SUBMIT ── */
+document.getElementById('submitBtn').addEventListener('click',function(){
+  var box=document.getElementById('formBox');
+  var inputs=box.querySelectorAll('input[required]');
+  var valid=true;
+  inputs.forEach(function(i){if(!i.value.trim())valid=false;});
+  if(!valid){
+    inputs.forEach(function(i){
+      if(!i.value.trim()){
+        i.style.borderColor='rgba(227,31,38,.65)';
+        i.style.boxShadow='0 0 0 3px rgba(227,31,38,.18)';
+        i.addEventListener('input',function(){this.style.borderColor='';this.style.boxShadow='';},{once:true});
+      }
+    });
+    // Shake animation
+    box.style.animation='shake .45s ease';
+    setTimeout(function(){box.style.animation='';},500);
+    return;
+  }
+  box.style.opacity='0';box.style.transform='scale(.97)';box.style.transition='all .35s';
+  setTimeout(function(){
+    box.style.display='none';
+    var s=document.getElementById('formSuccess');
+    s.style.display='block';s.style.opacity='0';s.style.transform='scale(.96)';s.style.transition='all .4s var(--ease)';
+    setTimeout(function(){s.style.opacity='1';s.style.transform='scale(1)';},20);
+  },360);
+});
+
+/* ── SMOOTH SCROLL ── */
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var t=document.querySelector(this.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+
+<style>
+/* ── FORM SHAKE ── */
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
+</style>
+</body>
+</html>
