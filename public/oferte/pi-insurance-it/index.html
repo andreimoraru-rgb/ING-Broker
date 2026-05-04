@@ -456,12 +456,14 @@ nav a.active::after{content:'';position:absolute;bottom:2px;left:50%;transform:t
 
 /* ── JURIS CARD flag scale — handled by .juris-flag transition above ── */
 
-/* ── BACK TO OFFERS BUTTON ── ingbroker.md style ── */
-#btn-back{position:fixed;top:88px;left:44px;z-index:9997;display:inline-flex;align-items:center;gap:14px;background:#111;color:#fff;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:18px 36px 18px 24px;border-radius:6px;cursor:pointer;transition:background .28s var(--ease),transform .28s var(--ease),box-shadow .28s var(--ease);text-decoration:none;white-space:nowrap;box-shadow:0 4px 30px rgba(0,0,0,.55)}
-#btn-back:hover{background:#1a1a1a;transform:translateX(-5px);box-shadow:0 8px 36px rgba(0,0,0,.65)}
-#btn-back svg{width:18px;height:18px;stroke:var(--red);stroke-width:2.5;fill:none;transition:transform .28s var(--ease);flex-shrink:0}
+/* ── BACK TO OFFERS BUTTON ── ingbroker.md Reasigurari style ── */
+#btn-back{position:fixed;top:88px;left:24px;z-index:9997;display:inline-flex;align-items:center;gap:16px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.20);color:#fff;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;letter-spacing:.20em;text-transform:uppercase;padding:12px 24px;border-radius:0;cursor:pointer;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:background .35s var(--ease),border-color .35s var(--ease),color .35s var(--ease),box-shadow .35s var(--ease);text-decoration:none;white-space:nowrap;box-shadow:0 4px 20px rgba(0,0,0,.18)}
+#btn-back:hover{background:rgba(255,255,255,.20);border-color:rgba(255,255,255,.40);box-shadow:0 8px 32px rgba(0,0,0,.28)}
+#btn-back.scrolled{background:#fff;border-color:#e2e8f0;color:#0B1F3A;box-shadow:0 4px 20px rgba(0,0,0,.12)}
+#btn-back.scrolled:hover{background:#f8f7f4}
+#btn-back svg{width:16px;height:16px;stroke:var(--red);stroke-width:2.5;fill:none;transition:transform .28s var(--ease);flex-shrink:0}
 #btn-back:hover svg{transform:translateX(-4px)}
-@media(max-width:768px){#btn-back{top:70px;left:16px;font-size:10px;padding:14px 22px 14px 16px;gap:10px}}
+@media(max-width:768px){#btn-back{top:70px;left:0;font-size:9px;padding:10px 18px;gap:12px}}
 
 /* ── REDUCED MOTION OVERRIDE ── */
 @media(prefers-reduced-motion:reduce){
@@ -485,7 +487,7 @@ nav a.active::after{content:'';position:absolute;bottom:2px;left:50%;transform:t
 </div>
 
 <!-- Back to Offers -->
-<a id="btn-back" href="https://ingbroker.md/oferte" aria-label="Înapoi la pagina Oferte ingbroker.md" onclick="history.back();return false;">
+<a id="btn-back" href="https://ingbroker.md/oferte" aria-label="Înapoi la pagina Oferte ingbroker.md" onclick="if(window.history.length>1&&document.referrer){history.back();return false;}">
   <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   Înapoi la Oferte
 </a>
@@ -1289,6 +1291,13 @@ window.addEventListener('scroll',function(){hdr.classList.toggle('on',window.scr
   if(!btt)return;
   window.addEventListener('scroll',function(){btt.classList.toggle('show',window.scrollY>500);},{passive:true});
   btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+
+/* ── BACK BUTTON scroll state ── */
+(function(){
+  var bb=document.getElementById('btn-back');
+  if(!bb)return;
+  window.addEventListener('scroll',function(){bb.classList.toggle('scrolled',window.scrollY>100);},{passive:true});
 })();
 
 /* ── KEN BURNS SLIDESHOW ── */
