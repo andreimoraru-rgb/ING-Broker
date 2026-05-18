@@ -13,7 +13,7 @@ export interface Article {
     description: string;
     keywords: string;
   };
-}
+}h
 
 const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
   const intro = {
@@ -358,6 +358,128 @@ const images = [
 
 export const articles: Record<string, Article[]> = {
   ro: [
+    {
+      id: 'energie-regenerabila-1',
+      slug: 'asigurare-energie-regenerabila-moldova',
+      title: 'Asigurarea Proiectelor de Energie Regenerabilă în Moldova: Solar, Eolian, BESS și Rețea',
+      excerpt: 'Asigurări pentru parcuri fotovoltaice, eoliene, baterii BESS, EPC și O&M în Republica Moldova. Structurare tehnică, clauze negociate și acces la reasigurare internațională.',
+      content: `<div class="prose prose-lg max-w-none">
+<h2>Ce este asigurarea pentru energie regenerabilă și de ce contează în Moldova</h2>
+<p>Dacă investești sau operezi un parc solar, eolian sau un sistem de stocare a energiei în Republica Moldova, ai nevoie de mai mult decât o poliță de bunuri. Ai nevoie de un program de asigurare structurat tehnic, care acoperă întregul ciclu de viață al proiectului: de la transport și montaj, până la exploatare comercială, obligații față de finanțatori și răspunderi față de terți.</p>
+<p>Moldova a depășit în 2025 pragul de 650 MW capacitate instalată din surse regenerabile. Ministerul Energiei a lansat licitații pentru 170 MW eolian cu obligația instalării a minimum 44 MWh capacități de stocare. ANRE a operaționalizat registrul garanțiilor de origine. Sectorul energetic are o cifră de afaceri structurală de aproximativ 56,4 miliarde de lei. Piața nu mai este mică și nici riscurile nu mai sunt simple.</p>
+<p>Tocmai de aceea, asigurarea unui proiect energetic nu se rezumă la un singur document semnat rapid. Ea trebuie să reflecte realitatea tehnică a proiectului, cerințele finanțatorilor, obligațiile contractuale față de rețea și expunerile reale la daune care pot opri producția luni întregi.</p>
+<p>ING Broker SRL este partenerul tău pentru structurarea, negocierea și plasarea asigurărilor pentru proiecte de energie regenerabilă în Republica Moldova. Contactează-ne la <a href="mailto:andrei.moraru@ingbroker.md">andrei.moraru@ingbroker.md</a> sau vizitează <a href="https://ingbroker.md">ingbroker.md</a>.</p>
+
+<h2>De ce sectorul energetic are un profil de risc complex</h2>
+<p>Energia regenerabilă combină mai multe categorii de risc simultan: riscuri de construcție, riscuri tehnice și mecanice, riscuri meteorologice, riscuri de pierdere a veniturilor, riscuri cibernetice și riscuri de răspundere civilă față de terți. Fiecare proiect are o combinație unică de expuneri, în funcție de tehnologie, locație, structură de finanțare și contracte comerciale.</p>
+<p>Spre deosebire de o clădire sau un depozit, un parc fotovoltaic sau eolian funcționează non-stop, este expus constant la intemperii, conține echipamente sofisticate cu o durată lungă de amortizare și este conectat la o rețea care impune standarde stricte de disponibilitate. O daună care oprește producția 60 de zile nu este doar un cost de reparație. Este și pierdere de venit, penalități față de cumpărători, costuri financiare suplimentare și, uneori, amenzi de rețea.</p>
+
+<h2>Riscurile principale ale unui proiect de energie regenerabilă</h2>
+<h3>1. Riscuri în faza de construcție și montaj</h3>
+<p>Transportul panourilor fotovoltaice, turbinelor eoliene sau bateriilor BESS de la producător până la șantier implică riscuri de avarie fizică, pierdere sau furt. Pe șantier, montajul structurilor metalice, cablarea, instalarea invertoarelor și conectarea la rețea generează riscuri de accidente, avarii accidentale și daune față de terți.</p>
+
+<h3>2. Riscuri meteorologice și de forță majoră</h3>
+<p>Grindina este unul dintre cele mai frecvente pericole pentru panourile fotovoltaice. O furtună puternică poate deteriora simultan sute de panouri. Vântul puternic poate afecta structurile de montaj sau turbinele eoliene. Inundațiile pot distruge echipamentele electrice de la sol. Fulgerul poate produce supratensiuni care deteriorează invertori, transformatoare și sisteme de control.</p>
+
+<h3>3. Avaria mecanică și defecțiunea echipamentelor</h3>
+<p>Invertoarele au componente electronice cu durate de viață definite. Turbinele eoliene au componente de rotație care se uzează. Bateriile BESS au cicluri de încărcare/descărcare cu degradare progresivă.</p>
+
+<h3>4. Pierderea de venit din producție</h3>
+<p>Dacă un parc solar sau eolian nu produce energie, nu generează venit. Iar dacă nu generează venit, nu poate rambursa creditul, nu poate plăti O&M și nu poate onora PPA-ul. Asigurarea de întrerupere a activității (Business Interruption / Delay in Start-Up) acoperă tocmai această pierdere de marjă.</p>
+
+<h3>5. Riscuri cibernetice</h3>
+<p>Parcurile moderne de energie regenerabilă sunt controlate prin sisteme SCADA, platforme de monitorizare remote și interfețe digitale cu operatorul de rețea. Un atac cibernetic, o breșă de securitate sau o eroare software poate bloca producția.</p>
+
+<h3>6. Răspunderea civilă față de terți</h3>
+<p>Un incident pe un parc fotovoltaic sau eolian poate afecta proprietăți sau persoane din jur: vecini, lucrători terți, vizitatori autorizați sau persoane care trec prin zonă.</p>
+
+<h2>Tipurile de asigurare recomandate</h2>
+<ul>
+<li><strong>CAR / EAR</strong> — Asigurarea standard pentru faza de construcție și montaj. Acoperă daunele materiale asupra lucrărilor, materialelor, echipamentelor și utilajelor, precum și răspunderea față de terți.</li>
+<li><strong>Property All Risks (PAR)</strong> — Pentru faza operațională, acoperă daunele fizice accidentale produse asupra activelor: panouri, invertoare, structuri, transformatoare, cabluri, clădiri tehnice.</li>
+<li><strong>Machinery Breakdown</strong> — Acoperă defecțiunile tehnice interne ale echipamentelor, care nu sunt cauzate de factori externi.</li>
+<li><strong>Business Interruption / DSU / ALOP</strong> — Acoperă pierderea de venituri din producție pe perioada în care parcul nu poate funcționa din cauza unei daune materiale asigurate.</li>
+<li><strong>Cargo / Transport</strong> — Acoperă echipamentele în tranzit de la producător până la șantier.</li>
+<li><strong>Răspundere Civilă Generală</strong> — Acoperă pretențiile terților pentru vătămări corporale sau daune materiale.</li>
+<li><strong>Cyber Insurance</strong> — Acoperă incidentele cibernetice care afectează sistemele SCADA și platformele de monitorizare.</li>
+</ul>
+
+<h2>Avantajele unui program corect structurat</h2>
+<ul>
+<li><strong>Conformitate cu cerințele finanțatorilor.</strong> Băncile și IFI-urile care finanțează proiecte de energie regenerabilă impun condiții stricte de asigurare.</li>
+<li><strong>Recuperare rapidă după daune majore.</strong> Fără asigurare adecvată, o avarie majoră poate duce la incapacitate de plată a serviciului datoriei.</li>
+<li><strong>Credibilitate față de parteneri comerciali.</strong> Cumpărătorii de energie, operatorii de rețea și partenerii de proiect vor verifica dacă proiectul este asigurat adecvat.</li>
+<li><strong>Acces la limite mari prin reasigurare.</strong> Proiectele mari depășesc uneori capacitatea pieței locale.</li>
+<li><strong>Negocierea clauzelor care contează la daună.</strong> Wording-ul contează enorm: ce este inclus, ce este exclus, cum se calculează despăgubirea.</li>
+</ul>
+
+<h2>Cazuri orientative</h2>
+<h3>Cazul 1: Grindina distruge 40% din panourile unui parc fotovoltaic</h3>
+<p>Un parc fotovoltaic de 5 MW este lovit de o grindină severă. Aproximativ 800 de panouri sunt distruse. Costul de înlocuire: 180.000 USD. Parcul nu produce energie timp de 45 de zile. Pierderea de venit: 65.000 USD. Fără asigurare adecvată, proprietarul trebuie să acopere singur costurile.</p>
+
+<h3>Cazul 2: Defecțiunea unui invertor central oprește producția</h3>
+<p>Un invertor central de 1,2 MW cedează după un scurtcircuit intern. Durata de reparație: 30 de zile. O poliță corect structurată acoperă costul pieselor, manopera și pierderea de venit.</p>
+
+<h3>Cazul 3: Atacul cibernetic blochează sistemul SCADA al unui parc eolian</h3>
+<p>Un operator de rețea raportează anomalii. Sistemul SCADA a fost compromis de un actor extern. Parcul este deconectat 10 zile, costuri de response IT: 25.000 EUR.</p>
+
+<h3>Cazul 4: Un EPC subcontractant produce o daună accidentală la proprietatea unui vecin</h3>
+<p>O macara răstoarnă o structură metalică care lovește un gard și deteriorează acoperișul unei gospodării vecine. Proprietarul solicită despăgubiri pentru 12.000 EUR.</p>
+
+<h2>Rolul ING Broker SRL în asigurarea proiectelor de energie regenerabilă</h2>
+<p>ING Broker SRL nu este un simplu distribuitor de polițe. Într-un proiect de energie regenerabilă, brokerul joacă rolul unui integrator al informației de risc și al unui negociator tehnic cu asigurătorii și reasigurătorii.</p>
+<ul>
+<li>Analizează structura proiectului și identifică toate expunerile.</li>
+<li>Construiește dosarul de underwriting complet: tehnic, financiar și de risc.</li>
+<li>Negociează clauzele care contează la daună: includerea fazei de testare, extinderea pentru cabluri subterane, acoperirea costurilor de îndepărtare a resturilor, interesul financiar al băncii.</li>
+<li>Coordonează plasarea internațională când capacitatea locală nu este suficientă.</li>
+<li>Administrează polița pe durata proiectului: reînnoire, modificări, raportare către finanțatori, gestionare daune.</li>
+</ul>
+<p>Moraru Andrei, expert în domeniul reasigurărilor și Managing Director al ING Broker SRL, coordonează personal structurarea programelor pentru proiecte energetice complexe.</p>
+
+<div class="bg-gray-900 text-white p-8 rounded-xl mt-12">
+<h3 class="text-white mt-0">Contact ING Broker SRL</h3>
+<p>📧 <a href="mailto:andrei.moraru@ingbroker.md" class="text-primary">andrei.moraru@ingbroker.md</a></p>
+<p>🌐 <a href="https://ingbroker.md" class="text-primary">ingbroker.md</a></p>
+<p>📞 +373 69 526 003</p>
+<p>📍 str. Pan Halippa 9, Chișinău, Republica Moldova</p>
+</div>
+
+<h2>Întrebări frecvente</h2>
+<div class="space-y-6">
+<div class="border-b border-gray-100 pb-4">
+<h4 class="font-bold text-secondary">Ce polițe cer băncile sau IFI-urile pentru un proiect fotovoltaic finanțat?</h4>
+<p>De regulă: CAR/EAR pe durata construcției (cu bancă ca beneficiar), property all risks pe durata operării, business interruption, răspundere civilă generală și, uneori, DSU/ALOP.</p>
+</div>
+<div class="border-b border-gray-100 pb-4">
+<h4 class="font-bold text-secondary">Cum se asigură faza de testare și punere în funcțiune?</h4>
+<p>Această fază este una dintre cele mai vulnerabile. CAR/EAR standard trebuie să includă explicit această fază. ING Broker SRL negociază includerea commissioning-ului în poliță ca etapă separată.</p>
+</div>
+<div class="border-b border-gray-100 pb-4">
+<h4 class="font-bold text-secondary">Este obligatorie asigurarea pentru un proiect de energie regenerabilă în Moldova?</h4>
+<p>Obligativitatea legală depinde de tipul proiectului. Chiar și fără obligație legală strictă, orice proiect cu finanțare bancară va impune asigurarea prin convenție.</p>
+</div>
+<div class="border-b border-gray-100 pb-4">
+<h4 class="font-bold text-secondary">Poate ING Broker SRL să acceseze piețe internaționale de reasigurare?</h4>
+<p>Da. Pentru proiecte cu sume asigurate care depășesc capacitatea locală, ING Broker SRL poate coordona plasarea cu parteneri internaționali specializați.</p>
+</div>
+<div class="border-b border-gray-100 pb-4">
+<h4 class="font-bold text-secondary">Cât durează obținerea unui program complet de asigurare pentru un parc solar?</h4>
+<p>Pentru proiecte standard, 2–4 săptămâni de la primirea documentației. Pentru proiecte complexe, 4–8 săptămâni. Recomandăm inițierea cu minimum 60 de zile înainte de start construcție.</p>
+</div>
+</div>
+</div>`,
+      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1920',
+      date: '18 Mai 2026',
+      author: 'Andrei Moraru',
+      tags: ['Energie', 'Asigurare', 'Moldova'],
+      seo: {
+        title: 'Asigurare Energie Regenerabilă Moldova | Parc Solar, Eolian, BESS | ING Broker',
+        description: 'Asigurări pentru parcuri fotovoltaice, eoliene, baterii BESS, EPC și O&M în Republica Moldova. Structurare tehnică, clauze negociate și acces la reasigurare internațională. Expert: Moraru Andrei.',
+        keywords: 'asigurare energie regenerabila moldova, asigurare parc solar, asigurare parc eolian, asigurare BESS, asigurare fotovoltaice, ING Broker, Andrei Moraru'
+      }
+    },
+
     {
       id: '1',
       slug: 'rca-pentru-soferi-tineri-riscuri-financiare-si-costuri-ascunse-in-moldova',
