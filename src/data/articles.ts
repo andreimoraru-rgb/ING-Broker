@@ -13,7 +13,7 @@ export interface Article {
     description: string;
     keywords: string;
   };
-}h
+}
 
 const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
   const intro = {
