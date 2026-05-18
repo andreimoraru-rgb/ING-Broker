@@ -469,7 +469,7 @@ export const articles: Record<string, Article[]> = {
 </div>
 </div>
 </div>`,
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1920',
+      image: '/asigurare-energie-regenerabila-moldova.jpg',
       date: '18 Mai 2026',
       author: 'Andrei Moraru',
       tags: ['Energie', 'Asigurare', 'Moldova'],
