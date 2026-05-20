@@ -523,6 +523,160 @@ export const articles: Record<string, Article[]> = {
       }
     },
     {
+      id: 'transport-logistica-1',
+      slug: 'asigurari-transport-logistica-cmr-cargo-moldova',
+      title: 'Asigurari Transport si Logistica Moldova - CMR, Cargo, Flote Auto, Depozite',
+      excerpt: 'Ghid complet de asigurari pentru companii de transport si logistica din Moldova: CMR, Cargo, RCA, Carte Verde, CASCO flota, asigurarea depozitelor si Business Interruption. Cum sa alegi protectia corecta pentru fiecare risc operational.',
+      content: `<div class="prose prose-lg max-w-none">
+
+<h2>De ce transportul si logistica din Moldova necesita asigurari specializate</h2>
+<p>Republica Moldova a transportat si procesat in 2024 marfuri comerciale in valoare de peste <strong>12 miliarde USD</strong> - exporturi de 4,1 mld USD si importuri de 8,2 mld USD (Biroul National de Statistica, 2025). Acordul DCFTA cu Uniunea Europeana, in vigoare din 2016, a transformat Moldova intr-un coridor comercial activ catre pietele europene: 67% din exporturi ajung in UE, pe rute ce traverseaza Romania, Ungaria, Polonia sau partial Ucraina.</p>
+<p>Pentru companiile de transport si logistica din Moldova, aceasta realitate inseamna riscuri concrete: accidente pe infrastructuri rutiere variabile, furturi de marfa in parcari de TIR, deteriorari din manipulare gresita, intarzieri la livrare care genereaza penalitati, avarii in depozite si raspunderi contractuale fata de clienti externi.</p>
+<div class="bg-primary/5 border-l-4 border-primary p-6 my-8">
+<strong>Risc critic ignorat frecvent:</strong> Un transportator moldovean care transporta marfa de 80.000 EUR are o raspundere legala CMR limitata la <em>~8,33 DST/kg brut</em>. La 2.000 kg de marfa, despagubirea maxima conform CMR este de <strong>~10.640 EUR</strong> - mai putin de 14% din valoarea marfii. Fara o polita Cargo separata a clientului, diferenta de ~69.360 EUR ramane neacoperita.
+</div>
+
+<h2>Harta completa a asigurarilor pentru transport si logistica</h2>
+<p>O companie de transport sau logistica din Moldova poate activa in mai multe roluri simultan: transportator, depozitar, freight forwarder, operator logistic sau distribuitor. Fiecare rol genereaza un tip specific de expunere la risc si necesita un instrument distinct de asigurare.</p>
+<table>
+<thead><tr><th>Tipul de asigurare</th><th>Ce protejeaza</th><th>Cine are nevoie</th></tr></thead>
+<tbody>
+<tr><td><strong>Asigurare CMR</strong></td><td>Raspunderea transportatorului pentru marfa conform Conventiei CMR</td><td>Transportatori rutieri internationali</td></tr>
+<tr><td><strong>Asigurare Cargo</strong></td><td>Valoarea comerciala a marfii (interesul proprietarului)</td><td>Exportatori, importatori, producatori, distribuitori</td></tr>
+<tr><td><strong>RCA + Carte Verde</strong></td><td>Raspunderea civila auto fata de terti, national si international</td><td>Orice companie cu vehicule comerciale</td></tr>
+<tr><td><strong>CASCO flota</strong></td><td>Daunele proprii ale vehiculelor (accidente, furt, avarii)</td><td>Companii cu camioane, autoutilitare, vehicule de distributie</td></tr>
+<tr><td><strong>Property depozite</strong></td><td>Cladiri, stocuri, echipamente logistice (incendiu, furt, inundatie)</td><td>Operatori logistici, depozitari, centre de distributie</td></tr>
+<tr><td><strong>Business Interruption</strong></td><td>Pierderea veniturilor dupa o dauna care blocheaza activitatea</td><td>Companii cu depozite sau centre logistice critice</td></tr>
+<tr><td><strong>Raspundere civila generala</strong></td><td>Daune produse tertilor in cursul activitatii logistice</td><td>Operatori logistici, freight forwarderi, depozitari</td></tr>
+</tbody>
+</table>
+
+<h2>Asigurarea CMR - ce protejeaza si unde sunt limitele</h2>
+<p>Conventia CMR (Geneva, 1956), ratificata de Republica Moldova, stabileste cadrul uniform pentru contractele de transport rutier international de marfuri. Asigurarea CMR converteste raspunderea legala a transportatorului intr-un mecanism financiar actionabil.</p>
+<h3>Ce acopera asigurarea CMR</h3>
+<ul>
+<li>Pierderea totala sau partiala a marfii preluate pentru transport</li>
+<li>Deteriorarea marfii produsa intre preluare si livrare</li>
+<li>Intarzierea livrarii, daca produce un prejudiciu dovedit</li>
+<li>Cheltuielile de salvare sau limitare a daunei, in anumite conditii</li>
+<li>Riscuri de furt, daca sunt acceptate explicit prin conditiile politei</li>
+</ul>
+<div class="bg-amber-50 border-l-4 border-amber-400 p-6 my-8">
+<strong>Excluderi frecvente din politele CMR - verifica inainte de a semna:</strong><br/>
+- Vicii proprii ale marfii sau ambalaj deficitar nementionat la preluare<br/>
+- Riscuri de razboi si zone de conflict (ruta prin Ucraina necesita clauza separata)<br/>
+- Marfuri excluse prin conditiile asiguratorului (obiecte de valoare, bani, documente)<br/>
+- Camioane fara dotari de securitate impuse (GPS, parcare autorizata)<br/>
+- Daune produse prin neglijenta grava sau frauda transportatorului
+</div>
+
+<h2>Asigurarea Cargo vs CMR - diferenta care costa milioane</h2>
+<p>Asigurarea Cargo si asigurarea CMR nu sunt alternative - sunt instrumente complementare care protejeaza interese diferite. CMR protejeaza transportatorul; Cargo protejeaza proprietarul marfii.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
+  <div class="border-2 border-primary rounded-lg p-5">
+    <h4 class="font-bold text-primary mt-0 mb-3">Asigurarea CMR</h4>
+    <ul class="text-sm space-y-1 list-none pl-0">
+      <li>Protejeaza: <strong>transportatorul</strong></li>
+      <li>Acopera: raspunderea legala conform Conventiei CMR</li>
+      <li>Limita: 8,33 DST/kg brut (~11 USD/kg)</li>
+      <li>Conditie: transportatorul trebuie sa fie raspunzator</li>
+      <li>Nu acopera: valoarea comerciala integrala a marfii</li>
+    </ul>
+  </div>
+  <div class="border-2 border-primary rounded-lg p-5">
+    <h4 class="font-bold text-primary mt-0 mb-3">Asigurarea Cargo</h4>
+    <ul class="text-sm space-y-1 list-none pl-0">
+      <li>Protejeaza: <strong>proprietarul marfii</strong></li>
+      <li>Acopera: valoarea comerciala reala (CIF/factura)</li>
+      <li>Clauza A (All Risks): acoperire completa</li>
+      <li>Nu depinde de raspunderea transportatorului</li>
+      <li>Open Cover pentru volume regulate de transport</li>
+    </ul>
+  </div>
+</div>
+<p>Un exportator de vinuri moldovenesti care trimite un container de 40.000 EUR spre Germania are nevoie de polita Cargo proprie. Daca marfa se deterioreaza in tranzit din cauza temperaturii, iar transportatorul demonstreaza ca a folosit echipamentul corect, polita CMR poate sa nu plateasca. Polita Cargo a exportatorului, cu clauza de refrigerare inclusa, acopera direct pierderea.</p>
+
+<h2>Asigurarea flotei auto - RCA, Carte Verde si CASCO pentru vehicule comerciale</h2>
+<p>O companie de transport activa din Moldova poate opera zeci sau sute de vehicule: TIR-uri, autoutilitare, remorci, semiremorci, vehicule frigorifice sau vehicule de distributie. Gestionarea asigurarilor pentru flote presupune mult mai mult decat simpla reinnoire anuala a politelor individuale.</p>
+<h3>RCA - obligatoriu, Carte Verde - esentiala pentru international</h3>
+<p>RCA este obligatorie pentru orice vehicul inmatriculat in Moldova. Carta Verde este esentiala pentru cursele internationale - o Carte Verde expirata inseamna interdictie de circulatie si imposibilitatea de a trece frontiera. ING Broker gestioneaza centralizat politele pentru flote, evita expirarile si negociaza conditii favorabile cu asiguratorii.</p>
+<div class="bg-primary/5 border-l-4 border-primary p-6 my-8">
+<strong>Calcul impact operational - CASCO pentru camioane:</strong> Un camion TIR imobilizat 3 saptamani din cauza unui accident genereaza pierderi de venit intre 3.000-8.000 EUR (in functie de ruta si client). CASCO cu asistenta si masina de inlocuire limiteaza semnificativ aceasta pierdere, pe langa costul reparatiei propriu-zise. Pentru vehicule in leasing, CASCO este impusa contractual de finantator.
+</div>
+
+<h2>Asigurarea depozitelor si stocurilor - riscuri ignorate pana in momentul daunei</h2>
+<p>Un centru logistic sau depozit din Moldova poate gestiona simultan stocuri proprii si marfa a zeci de clienti. O dauna - incendiu, inundatie, furt sau avarie electrica - produce pierderi cumulate enorme si poate bloca activitatea saptamani intregi.</p>
+<h3>Ce se asigura intr-un depozit logistic</h3>
+<ul>
+<li><strong>Cladiri si structuri:</strong> incendiu, explozie, inundatie, furtuna, calamitati naturale</li>
+<li><strong>Stocuri si marfa:</strong> pierdere sau deteriorare din riscuri asigurate</li>
+<li><strong>Echipamente logistice:</strong> stivuitoare, sisteme de rafturi, benzi transportoare</li>
+<li><strong>Sisteme frigorifice:</strong> deteriorarea marfii perisabile din avaria echipamentului de racire</li>
+<li><strong>Sisteme IT si securitate:</strong> calculatoare, servere, camere, sisteme de acces</li>
+</ul>
+<p>Pentru un operator logistic cu depozit propriu, un incendiu major nu inseamna doar costul reconstructiei. Inseamna si pierderea veniturilor pe durata reparatiilor, costuri de relocare temporara si penalitati fata de clienti. <strong>Asigurarea Business Interruption</strong> acopera aceasta diferenta, calculata pe o perioada de indemnizare negociata (de regula 12-24 luni).</p>
+
+<h2>Cele mai frecvente greseli ale companiilor de transport din Moldova</h2>
+<div class="bg-amber-50 border-l-4 border-amber-400 p-6 my-8">
+<strong>Greseli costisitoare identificate de ING Broker:</strong><br/><br/>
+1. <strong>Confundarea CMR cu Cargo</strong> - transportatorul are polita CMR, dar clientul nu are Cargo. La dauna, toata lumea pierde.<br/>
+2. <strong>Limite prea mici la CMR</strong> - polita cu limita 50.000 EUR pentru transporturi obisnuite de 100.000-200.000 EUR.<br/>
+3. <strong>Teritoriu insuficient</strong> - polita CMR fara acoperire pentru Ucraina sau tarile baltice, unde compania opereaza.<br/>
+4. <strong>Depozit neasigurat</strong> - marfa clientilor sta in depozit fara nicio polita property activa.<br/>
+5. <strong>CASCO expirat pe vehicule in leasing</strong> - incalcarea contractului de leasing si risc de reziliere.<br/>
+6. <strong>Cumpararea dupa pret minim</strong> - polita ieftina cu franjize mari, excluderi extinse si limite insuficiente.
+</div>
+
+<h2>Intrebari frecvente - Asigurari Transport si Logistica Moldova</h2>
+
+<details><summary class="cursor-pointer font-semibold py-3 text-primary">Ce este asigurarea CMR si cine are nevoie de ea in Moldova?</summary>
+<div class="pt-2 pb-4">Asigurarea CMR acopera raspunderea transportatorului rutier international pentru pierderea, deteriorarea sau intarzierea marfii, conform Conventiei CMR (Geneva, 1956), ratificata de Republica Moldova. Este necesara pentru orice companie moldoveneasca care transporta marfuri pe rute internationale: Moldova-Romania, Moldova-UE, Moldova-Ucraina, Moldova-Turcia. Limita legala CMR este 8,33 DST/kg brut - mult mai mica decat valoarea comerciala reala a multor marfuri.</div>
+</details>
+
+<details><summary class="cursor-pointer font-semibold py-3 text-primary">Care este diferenta dintre asigurarea CMR si asigurarea Cargo?</summary>
+<div class="pt-2 pb-4">CMR protejeaza transportatorul - acopera raspunderea sa legala fata de proprietarul marfii. Cargo protejeaza proprietarul marfii - acopera valoarea comerciala integrala a marfii, indiferent de raspunderea transportatorului. Companiile de transport din Moldova au nevoie de CMR propriu; clientii lor au nevoie de polita Cargo proprie. Cele doua asigurari sunt complementare, nu alternative.</div>
+</details>
+
+<details><summary class="cursor-pointer font-semibold py-3 text-primary">Ce asigurari sunt obligatorii pentru un transportator din Moldova?</summary>
+<div class="pt-2 pb-4">Obligatorii: RCA pentru orice vehicul inmatriculat in Moldova si Carte Verde pentru vehiculele care circula international. CMR este practic necesara pentru transport international (partenerii comerciali si expeditorii o solicita contractual). CASCO, asigurarea depozitelor si Business Interruption sunt facultative, dar recomandate in functie de activitate si valoarea activelor.</div>
+</details>
+
+<details><summary class="cursor-pointer font-semibold py-3 text-primary">Cat costa asigurarea CMR pentru o companie de transport din Moldova?</summary>
+<div class="pt-2 pb-4">Prima de asigurare CMR depinde de: volumul anual de transporturi, limitele de raspundere solicitate, tarile in care se transporta, tipurile de marfuri si istoricul daunelor. O polita CMR cu limita 250.000 EUR pentru un transportator cu 5 camioane active poate costa orientativ 800-2.500 EUR/an. ING Broker obtine comparatii de la mai multi asiguratori autorizati CNPF Moldova.</div>
+</details>
+
+<details><summary class="cursor-pointer font-semibold py-3 text-primary">Trebuie asigurat depozitul logistic al companiei?</summary>
+<div class="pt-2 pb-4">Da. Proprietarul depozitului raspunde fata de clienti pentru marfa pastrata. Fara o polita property, o dauna prin incendiu, inundatie sau furt genereaza pierderi directe si litigii cu clientii. Asigurarea depozitului acopera structura, stocurile si echipamentele. Business Interruption acopera suplimentar pierderea veniturilor pe durata reconstructiei.</div>
+</details>
+
+<details><summary class="cursor-pointer font-semibold py-3 text-primary">Poate ING Broker gestiona asigurarea pentru o flota de 20-50 camioane?</summary>
+<div class="pt-2 pb-4">Da. ING Broker structureaza programe centralizate pentru flote de orice dimensiune: RCA, Carte Verde, CASCO, CMR si asigurarea depozitelor intr-un singur program coordonat. Aceasta simplifica administratia, asigura acoperire continua si permite negocierea conditiilor cu asiguratorii autorizati CNPF.</div>
+</details>
+
+<details><summary class="cursor-pointer font-semibold py-3 text-primary">Cum functioneaza procedura de dauna la o asigurare de transport?</summary>
+<div class="pt-2 pb-4">La dauna: (1) notificati asiguratorul in 24-48 ore; (2) documentati cu fotografii si documente de transport; (3) nu efectuati reparatii majore fara acordul asiguratorului; (4) pastrati documentele originale (facturi, CMR); (5) ING Broker ofera asistenta de la notificare pana la despagubire. Interventia unui broker in procesul de dauna creste semnificativ sansele de despagubire corecta si rapida.</div>
+</details>
+
+<div class="bg-primary text-white p-8 rounded-xl text-center mt-10 not-prose">
+  <h2 class="text-white text-2xl font-bold mt-0 mb-4">Obtineti o analiza completa de asigurare pentru compania voastra de transport</h2>
+  <p class="mb-4">Insurance ING Broker SRL, Chisinau, va ofera consultanta specializata si oferte comparative pentru CMR, Cargo, flote auto, CASCO, Carte Verde, asigurarea depozitelor si Business Interruption. Autorizat CNPF. Raspuns in 24 ore lucratoare.</p>
+  <p class="mb-2"><strong>Telefon:</strong> <a href="tel:+37369526003" class="text-yellow-300 font-bold">+(373) 69 526 003</a></p>
+  <p class="mb-2"><strong>Email:</strong> <a href="mailto:andrei.moraru@ingbroker.md" class="text-yellow-300 font-bold">andrei.moraru@ingbroker.md</a></p>
+  <p class="text-sm mt-4"><em>Consultanta disponibila in romana, rusa si engleza. Asiguram companii de transport si logistica din toata Republica Moldova.</em></p>
+</div>
+
+</div>`,
+      image: '/transport-logistica-multimodal.png',
+      date: '20 Mai 2026',
+      author: 'Andrei Moraru',
+      tags: ['Transport', 'Logistica', 'CMR', 'Cargo', 'Flota', 'Depozite', 'Moldova'],
+      seo: {
+        title: 'Asigurari Transport si Logistica Moldova - CMR, Cargo, Flote Auto, Depozite | ING Broker',
+        description: 'Ghid complet asigurari pentru companii de transport si logistica din Moldova: CMR, Cargo, RCA, Carte Verde, CASCO flota, depozite. Consultanta ING Broker +(373) 69 526 003.',
+        keywords: 'asigurare CMR Moldova, asigurare cargo Moldova, asigurare transportatori Moldova, asigurare logistica Moldova, asigurare flota auto Moldova, asigurare depozite Moldova, broker asigurari Moldova, ING Broker'
+      }
+    },
+    {
       id: 'cargo-transport-1',
       slug: 'asigurare-cargo-transport-marfa-moldova',
       title: 'Asigurare Cargo si Transport Marfa Moldova - Protectie Export-Import CMR',
