@@ -1,0 +1,50 @@
+{
+    "redirects": [
+          {
+                  "source": "/product-page/asigurare-rca",
+                  "destination": "/personal/rca/",
+                  "permanent": true
+          },
+          {
+                  "source": "/en/product-page/asigurare-rca",
+                  "destination": "/en/personal/rca/",
+                  "permanent": true
+          },
+          {
+                  "source": "/en/product-page/carte-verde",
+                  "destination": "/en/personal/carte-verde/",
+                  "permanent": true
+          },
+          {
+                  "source": "/ru/product-page/adigurare-medicala-peste-hotare",
+                  "destination": "/ru/personal/medicala/",
+                  "permanent": true
+          },
+          {
+                  "source": "/ru/product-page/:slug",
+                  "destination": "/ru/personal/:slug/",
+                  "permanent": true
+          },
+          {
+                  "source": "/en/product-page/:slug",
+                  "destination": "/en/personal/:slug/",
+                  "permanent": true
+          },
+          {
+                  "source": "/product-page/:slug",
+                  "destination": "/personal/:slug/",
+                  "permanent": true
+          },
+          {
+                  "source": "/en/shop",
+                  "destination": "/en/",
+                  "permanent": true
+          }
+    ],
+    "rewrites": [
+          {
+                  "source": "/(.*)",
+                  "destination": "/index.html"
+          }
+    ]
+}
