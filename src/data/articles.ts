@@ -529,9 +529,38 @@ export const articles: Record<string, Article[]> = {
       excerpt: 'Ghid complet de asigurari pentru companii de transport si logistica din Moldova: CMR, Cargo, RCA, Carte Verde, CASCO flota, asigurarea depozitelor si Business Interruption. Cum sa alegi protectia corecta pentru fiecare risc operational.',
       content: `<div class="prose prose-lg max-w-none">
 
+<div class="bg-secondary text-white p-6 rounded-xl mb-8 not-prose">
+  <p class="text-xs text-primary font-semibold uppercase tracking-widest mb-3">Scenariu real de dauna - Moldova, 2025</p>
+  <p class="text-white text-base leading-relaxed mb-3">O companie din Chisinau expediaza 34 de paleti cu electrocasnice - valoare totala 92.000 EUR - catre un client din Polonia. In parcarea unui TIR de langa Varsovia, incarcatura este furata partial in timpul noptii. Marfa lipsa: 58.000 EUR. Despagubire CMR primita de la transportator: <strong class="text-primary">~8.400 EUR</strong> (limita 8,33 DST/kg conform Conventiei CMR, art. 23). Pierdere neta a exportatorului: <strong class="text-white">49.600 EUR</strong> - deoarece nu exista o polita Cargo proprie.</p>
+  <p class="text-gray-400 text-xs italic">Caz sintetic din practica de brokeraj. CMR protejeaza transportatorul, nu marfa ta.</p>
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-8 not-prose">
+  <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-secondary leading-tight">12 mld</p>
+    <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">USD</p>
+    <p class="text-xs text-gray-500 mt-1">Comert exterior Moldova 2024</p>
+  </div>
+  <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-secondary leading-tight">8,33</p>
+    <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">DST/kg</p>
+    <p class="text-xs text-gray-500 mt-1">Limita raspundere CMR art. 23</p>
+  </div>
+  <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-secondary leading-tight">67%</p>
+    <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">exporturi</p>
+    <p class="text-xs text-gray-500 mt-1">ajung in UE via DCFTA 2016</p>
+  </div>
+  <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-secondary leading-tight">24h</p>
+    <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">oferta</p>
+    <p class="text-xs text-gray-500 mt-1">raspuns ING Broker</p>
+  </div>
+</div>
+
 <h2>De ce transportul si logistica din Moldova necesita asigurari specializate</h2>
 <p>Republica Moldova a transportat si procesat in 2024 marfuri comerciale in valoare de peste <strong>12 miliarde USD</strong> - exporturi de 4,1 mld USD si importuri de 8,2 mld USD (Biroul National de Statistica, 2025). Acordul DCFTA cu Uniunea Europeana, in vigoare din 2016, a transformat Moldova intr-un coridor comercial activ catre pietele europene: 67% din exporturi ajung in UE, pe rute ce traverseaza Romania, Ungaria, Polonia sau partial Ucraina.</p>
-<p>Pentru companiile de transport si logistica din Moldova, aceasta realitate inseamna riscuri concrete: accidente pe infrastructuri rutiere variabile, furturi de marfa in parcari de TIR, deteriorari din manipulare gresita, intarzieri la livrare care genereaza penalitati, avarii in depozite si raspunderi contractuale fata de clienti externi.</p>
+<p>Pentru companiile de transport si logistica din Moldova, aceasta realitate inseamna riscuri concrete si costuri reale: accidente pe infrastructuri rutiere variabile, furturi de marfa in parcari de TIR (Romania si Ungaria sunt printre cele mai afectate tari din UE), deteriorari din manipulare gresita la punctele de transbordare, intarzieri la livrare care genereaza penalitati contractuale si avarii in depozite. Fiecare risc neasigurat este o pierdere directa din profitul companiei.</p>
 <div class="bg-primary/5 border-l-4 border-primary p-6 my-8">
 <strong>Risc critic ignorat frecvent:</strong> Un transportator moldovean care transporta marfa de 80.000 EUR are o raspundere legala CMR limitata la <em>~8,33 DST/kg brut</em>. La 2.000 kg de marfa, despagubirea maxima conform CMR este de <strong>~10.640 EUR</strong> - mai putin de 14% din valoarea marfii. Fara o polita Cargo separata a clientului, diferenta de ~69.360 EUR ramane neacoperita.
 </div>
@@ -596,6 +625,16 @@ export const articles: Record<string, Article[]> = {
 </div>
 <p>Un exportator de vinuri moldovenesti care trimite un container de 40.000 EUR spre Germania are nevoie de polita Cargo proprie. Daca marfa se deterioreaza in tranzit din cauza temperaturii, iar transportatorul demonstreaza ca a folosit echipamentul corect, polita CMR poate sa nu plateasca. Polita Cargo a exportatorului, cu clauza de refrigerare inclusa, acopera direct pierderea.</p>
 
+<div class="not-prose my-8 bg-secondary text-white rounded-xl p-6">
+  <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div>
+      <p class="font-bold text-white text-lg mb-1">Transportati marfa international din Moldova?</p>
+      <p class="text-gray-400 text-sm">Obtineti oferta CMR + Cargo comparativa - fara angajament, in 24 ore lucratoare</p>
+    </div>
+    <a href="tel:+37369526003" class="flex-shrink-0 bg-primary text-white font-bold px-6 py-3 rounded-lg text-sm text-center whitespace-nowrap">Suna: +(373) 69 526 003</a>
+  </div>
+</div>
+
 <h2>Asigurarea flotei auto - RCA, Carte Verde si CASCO pentru vehicule comerciale</h2>
 <p>O companie de transport activa din Moldova poate opera zeci sau sute de vehicule: TIR-uri, autoutilitare, remorci, semiremorci, vehicule frigorifice sau vehicule de distributie. Gestionarea asigurarilor pentru flote presupune mult mai mult decat simpla reinnoire anuala a politelor individuale.</p>
 <h3>RCA - obligatoriu, Carte Verde - esentiala pentru international</h3>
@@ -627,42 +666,215 @@ export const articles: Record<string, Article[]> = {
 6. <strong>Cumpararea dupa pret minim</strong> - polita ieftina cu franjize mari, excluderi extinse si limite insuficiente.
 </div>
 
+<h2>Cum obtineti protectia corecta - 3 pasi simpli cu ING Broker</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 not-prose">
+  <div class="text-center p-6 bg-white shadow-sm rounded-xl border-t-4 border-primary">
+    <div class="text-4xl font-bold text-primary mb-3">01</div>
+    <p class="font-bold text-secondary text-base mb-2">Analiza gratuita a riscurilor</p>
+    <p class="text-sm text-gray-500 leading-relaxed">Ne spuneti activitatea companiei: tipuri de marfa, rute, flota, depozite. Fara documente la prima discutie, fara angajamente.</p>
+    <p class="text-xs text-primary font-semibold mt-3">~30 minute</p>
+  </div>
+  <div class="text-center p-6 bg-white shadow-sm rounded-xl border-t-4 border-primary">
+    <div class="text-4xl font-bold text-primary mb-3">02</div>
+    <p class="font-bold text-secondary text-base mb-2">Oferta comparativa</p>
+    <p class="text-sm text-gray-500 leading-relaxed">Solicitam oferte de la mai multi asiguratori autorizati CNPF si va prezentam comparatia - pret, conditii, excluderi, limite.</p>
+    <p class="text-xs text-primary font-semibold mt-3">24 ore lucratoare</p>
+  </div>
+  <div class="text-center p-6 bg-white shadow-sm rounded-xl border-t-4 border-primary">
+    <div class="text-4xl font-bold text-primary mb-3">03</div>
+    <p class="font-bold text-secondary text-base mb-2">Polita emisa + suport continuu</p>
+    <p class="text-sm text-gray-500 leading-relaxed">Dupa aprobare, emitem polita in aceeasi zi. La orice dauna, ING Broker va asista de la notificare pana la incasarea despagubirii.</p>
+    <p class="text-xs text-primary font-semibold mt-3">suport 0-365 zile/an</p>
+  </div>
+</div>
+
+<div class="not-prose flex flex-wrap items-center gap-3 my-8 p-5 bg-white border border-gray-100 rounded-xl shadow-sm">
+  <span class="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-800 text-xs font-semibold rounded-full px-4 py-2">
+    <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+    Broker autorizat CNPF Moldova
+  </span>
+  <span class="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 text-xs font-semibold rounded-full px-4 py-2">
+    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+    Acces la toti asiguratorii din Moldova
+  </span>
+  <span class="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 text-xs font-semibold rounded-full px-4 py-2">
+    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+    Romana - Rusa - Engleza
+  </span>
+  <span class="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 text-xs font-semibold rounded-full px-4 py-2">
+    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    Comisionul platit de asigurator, nu de tine
+  </span>
+</div>
+
 <h2>Intrebari frecvente - Asigurari Transport si Logistica Moldova</h2>
 
-<details><summary class="cursor-pointer font-semibold py-3 text-primary">Ce este asigurarea CMR si cine are nevoie de ea in Moldova?</summary>
-<div class="pt-2 pb-4">Asigurarea CMR acopera raspunderea transportatorului rutier international pentru pierderea, deteriorarea sau intarzierea marfii, conform Conventiei CMR (Geneva, 1956), ratificata de Republica Moldova. Este necesara pentru orice companie moldoveneasca care transporta marfuri pe rute internationale: Moldova-Romania, Moldova-UE, Moldova-Ucraina, Moldova-Turcia. Limita legala CMR este 8,33 DST/kg brut - mult mai mica decat valoarea comerciala reala a multor marfuri.</div>
-</details>
+<div class="not-prose border-t border-gray-100 mt-4">
 
-<details><summary class="cursor-pointer font-semibold py-3 text-primary">Care este diferenta dintre asigurarea CMR si asigurarea Cargo?</summary>
-<div class="pt-2 pb-4">CMR protejeaza transportatorul - acopera raspunderea sa legala fata de proprietarul marfii. Cargo protejeaza proprietarul marfii - acopera valoarea comerciala integrala a marfii, indiferent de raspunderea transportatorului. Companiile de transport din Moldova au nevoie de CMR propriu; clientii lor au nevoie de polita Cargo proprie. Cele doua asigurari sunt complementare, nu alternative.</div>
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Ce este asigurarea CMR si cine are nevoie de ea in Moldova?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Asigurarea CMR acopera raspunderea transportatorului rutier international pentru pierderea, deteriorarea sau intarzierea marfii, conform Conventiei CMR (Geneva, 1956), ratificata de Republica Moldova. Este necesara pentru orice companie moldoveneasca care transporta marfuri pe rute internationale: Moldova-Romania, Moldova-UE, Moldova-Ucraina, Moldova-Turcia. Limita legala CMR este 8,33 DST/kg brut - mult mai mica decat valoarea comerciala reala a multor marfuri.</div>
 </details>
+</div>
 
-<details><summary class="cursor-pointer font-semibold py-3 text-primary">Ce asigurari sunt obligatorii pentru un transportator din Moldova?</summary>
-<div class="pt-2 pb-4">Obligatorii: RCA pentru orice vehicul inmatriculat in Moldova si Carte Verde pentru vehiculele care circula international. CMR este practic necesara pentru transport international (partenerii comerciali si expeditorii o solicita contractual). CASCO, asigurarea depozitelor si Business Interruption sunt facultative, dar recomandate in functie de activitate si valoarea activelor.</div>
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Care este diferenta dintre asigurarea CMR si asigurarea Cargo?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">CMR protejeaza transportatorul - acopera raspunderea sa legala fata de proprietarul marfii, in limita a 8,33 DST/kg brut. Cargo protejeaza proprietarul marfii - acopera valoarea comerciala integrala a marfii, indiferent de raspunderea transportatorului. Companiile de transport din Moldova au nevoie de CMR propriu; clientii lor (exportatorii, importatorii) au nevoie de polita Cargo proprie. Cele doua asigurari sunt complementare, nu alternative.</div>
 </details>
+</div>
 
-<details><summary class="cursor-pointer font-semibold py-3 text-primary">Cat costa asigurarea CMR pentru o companie de transport din Moldova?</summary>
-<div class="pt-2 pb-4">Prima de asigurare CMR depinde de: volumul anual de transporturi, limitele de raspundere solicitate, tarile in care se transporta, tipurile de marfuri si istoricul daunelor. O polita CMR cu limita 250.000 EUR pentru un transportator cu 5 camioane active poate costa orientativ 800-2.500 EUR/an. ING Broker obtine comparatii de la mai multi asiguratori autorizati CNPF Moldova.</div>
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Ce asigurari sunt obligatorii pentru un transportator din Moldova?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Obligatorii prin lege: RCA (Legea nr. 414/2006) pentru orice vehicul inmatriculat in Moldova si Carte Verde pentru vehiculele care circula in afara tarii. CMR este practic obligatorie pentru transport international - partenerii comerciali si expeditorii o solicita contractual. CASCO, asigurarea depozitelor si Business Interruption sunt facultative, dar recomandate in functie de activitate si valoarea activelor expuse.</div>
 </details>
+</div>
 
-<details><summary class="cursor-pointer font-semibold py-3 text-primary">Trebuie asigurat depozitul logistic al companiei?</summary>
-<div class="pt-2 pb-4">Da. Proprietarul depozitului raspunde fata de clienti pentru marfa pastrata. Fara o polita property, o dauna prin incendiu, inundatie sau furt genereaza pierderi directe si litigii cu clientii. Asigurarea depozitului acopera structura, stocurile si echipamentele. Business Interruption acopera suplimentar pierderea veniturilor pe durata reconstructiei.</div>
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Cat costa asigurarea CMR pentru o companie de transport din Moldova in 2026?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Prima de asigurare CMR depinde de: numarul de vehicule, volumul anual de transporturi, limitele de raspundere solicitate, tarile in care se opereaza si istoricul daunelor. Orientativ: o polita CMR cu limita 250.000 EUR pentru un transportator cu 5 camioane active poate costa 800-2.500 EUR/an. ING Broker obtine comparatii de la mai multi asiguratori autorizati CNPF si prezinta ofertele in 24 de ore lucratoare.</div>
 </details>
+</div>
 
-<details><summary class="cursor-pointer font-semibold py-3 text-primary">Poate ING Broker gestiona asigurarea pentru o flota de 20-50 camioane?</summary>
-<div class="pt-2 pb-4">Da. ING Broker structureaza programe centralizate pentru flote de orice dimensiune: RCA, Carte Verde, CASCO, CMR si asigurarea depozitelor intr-un singur program coordonat. Aceasta simplifica administratia, asigura acoperire continua si permite negocierea conditiilor cu asiguratorii autorizati CNPF.</div>
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Cum aleg cea mai buna polita Cargo pentru firma mea din Moldova?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Factorii cheie: tipul si valoarea medie a marfii per transport, modalitatile de transport utilizate (rutier, aerian, multimodal), rutele principale si tarile de tranzit, conditia de acoperire dorita (All Risks recomandat pentru marfuri de valoare) si istoricul de daune. Un broker autorizat CNPF analizeaza toti acesti factori si recomanda solutia optima - raport calitate-pret - din ofertele pietei moldovenesti.</div>
 </details>
+</div>
 
-<details><summary class="cursor-pointer font-semibold py-3 text-primary">Cum functioneaza procedura de dauna la o asigurare de transport?</summary>
-<div class="pt-2 pb-4">La dauna: (1) notificati asiguratorul in 24-48 ore; (2) documentati cu fotografii si documente de transport; (3) nu efectuati reparatii majore fara acordul asiguratorului; (4) pastrati documentele originale (facturi, CMR); (5) ING Broker ofera asistenta de la notificare pana la despagubire. Interventia unui broker in procesul de dauna creste semnificativ sansele de despagubire corecta si rapida.</div>
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Trebuie asigurat depozitul logistic al companiei?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Da. Operatorul unui depozit logistic raspunde fata de clienti pentru marfa pastrata. Fara o polita property, o dauna prin incendiu, inundatie sau furt genereaza pierderi directe si litigii cu clientii. Asigurarea depozitului acopera structura, stocurile si echipamentele logistice. Business Interruption acopera suplimentar pierderea veniturilor pe durata reconstructiei - de regula 12-24 luni de profit operational garantat.</div>
 </details>
+</div>
 
-<div class="bg-primary text-white p-8 rounded-xl text-center mt-10 not-prose">
-  <h2 class="text-white text-2xl font-bold mt-0 mb-4">Obtineti o analiza completa de asigurare pentru compania voastra de transport</h2>
-  <p class="mb-4">Insurance ING Broker SRL, Chisinau, va ofera consultanta specializata si oferte comparative pentru CMR, Cargo, flote auto, CASCO, Carte Verde, asigurarea depozitelor si Business Interruption. Autorizat CNPF. Raspuns in 24 ore lucratoare.</p>
-  <p class="mb-2"><strong>Telefon:</strong> <a href="tel:+37369526003" class="text-yellow-300 font-bold">+(373) 69 526 003</a></p>
-  <p class="mb-2"><strong>Email:</strong> <a href="mailto:andrei.moraru@ingbroker.md" class="text-yellow-300 font-bold">andrei.moraru@ingbroker.md</a></p>
-  <p class="text-sm mt-4"><em>Consultanta disponibila in romana, rusa si engleza. Asiguram companii de transport si logistica din toata Republica Moldova.</em></p>
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Ce este CASCO pentru flota comerciala si cum difera de RCA?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">CASCO pentru flota comerciala este o asigurare facultativa care acopera vehiculele proprii ale companiei: accidente, furt, incendiu, calamitati naturale. RCA acopera prejudiciile produse tertilor de catre soferul vinovat - nu vehiculul propriu. Pentru camioane TIR sau autoutilitare noi, CASCO este recomandat mai ales daca vehiculele sunt in leasing (impus contractual de finantator) sau au valoare ridicata.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Ce este Business Interruption pentru companii de transport si de ce conteaza?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Business Interruption acopera pierderea de profit si cheltuielile fixe (salarii, chirii, rate leasing) atunci cand activitatea este oprita sau redusa ca urmare a unui eveniment asigurat - incendiu, calamitate, accident grav. Fara aceasta polita, compania suporta luni de cheltuieli fixe fara venituri, chiar daca vehiculele sau depozitul sunt acoperite de alte asigurari. Recomandat companiilor cu cifra de afaceri anuala de peste 1 milion MDL.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Poate ING Broker gestiona asigurarea pentru o flota de 20-50 camioane?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Da. ING Broker structureaza programe centralizate pentru flote de orice dimensiune: RCA, Carte Verde, CASCO, CMR si asigurarea depozitelor intr-un singur contract coordonat. Avantaje: o singura data de reinnoire, administrare simplificata, negocierea conditiilor cu asiguratorii autorizati CNPF si eliminarea riscului de expirare neobservata a unei polite individuale.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Cum functioneaza procedura de dauna la o asigurare de transport?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">(1) Notificati asiguratorul si ING Broker in 24-48 ore de la constatarea daunei; (2) Documentati cu fotografii detaliate si documente de transport originale (CMR, facturi, avize); (3) Nu efectuati reparatii majore fara acordul scris al asiguratorului; (4) ING Broker asista la constituirea dosarului de dauna si la negocierea cu asiguratorul; (5) Despagubirea se plateste conform limitelor politei. Interventia unui broker creste semnificativ sansele de despagubire corecta si rapida.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">De ce sa aleg un broker de asigurari in loc sa cumpar direct de la asigurator?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Un broker autorizat CNPF lucreaza in interesul tau, nu al asiguratorului. Avantaje concrete: acces la ofertele tuturor asiguratorilor de pe piata moldoveneasca dintr-o singura solicitare, analiza comparativa obiectiva, negocierea primelor si conditiilor speciale pentru flote mari, asistenta dedicata la daune si consultanta gratuita. Comisionul brokerului este platit de asigurator - serviciul este practic gratuit pentru compania de transport.</div>
+</details>
+</div>
+
+<div class="py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Cum obtin o oferta de asigurare transport de la ING Broker Moldova?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Trei variante: (1) Suna direct la +(373) 69 526 003 in zilele lucratoare 09:00-18:00; (2) Trimite email la andrei.moraru@ingbroker.md cu datele flotei si tipul de activitate; (3) Foloseste formularul de contact de pe ingbroker.md. Un consultant ING Broker va contacta compania ta in maximum 24 de ore lucratoare cu o analiza comparativa si o recomandare personalizata. ING Broker este autorizat CNPF (Comisia Nationala a Pietei Financiare), Republica Moldova.</div>
+</details>
+</div>
+
+</div>
+
+<div class="bg-secondary text-white p-8 rounded-xl text-center mt-10 not-prose">
+  <h2 class="text-white text-2xl font-bold mt-0 mb-2">Obtineti o analiza completa de asigurare pentru compania voastra de transport</h2>
+  <p class="text-gray-400 text-sm mb-6">Insurance ING Broker SRL, Chisinau - consultanta specializata si oferte comparative pentru CMR, Cargo, flote auto, CASCO, Carte Verde, depozite si Business Interruption. Autorizat CNPF. Raspuns in 24 ore lucratoare.</p>
+  <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+    <a href="tel:+37369526003" class="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold px-8 py-4 rounded-lg text-base">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      +(373) 69 526 003
+    </a>
+    <a href="mailto:andrei.moraru@ingbroker.md" class="inline-flex items-center justify-center gap-2 border border-white/20 text-white font-semibold px-8 py-4 rounded-lg text-base hover:bg-white/10 transition-colors">
+      andrei.moraru@ingbroker.md
+    </a>
+  </div>
+  <div class="flex flex-wrap justify-center gap-6 text-xs text-gray-500">
+    <span>Raspuns garantat in 24h lucratoare</span>
+    <span>Fara angajamente la prima discutie</span>
+    <span>Consultanta gratuita</span>
+  </div>
 </div>
 
 </div>`,
@@ -671,9 +883,9 @@ export const articles: Record<string, Article[]> = {
       author: 'Andrei Moraru',
       tags: ['Transport', 'Logistica', 'CMR', 'Cargo', 'Flota', 'Depozite', 'Moldova'],
       seo: {
-        title: 'Asigurari Transport si Logistica Moldova - CMR, Cargo, Flote Auto, Depozite | ING Broker',
-        description: 'Ghid complet asigurari pentru companii de transport si logistica din Moldova: CMR, Cargo, RCA, Carte Verde, CASCO flota, depozite. Consultanta ING Broker +(373) 69 526 003.',
-        keywords: 'asigurare CMR Moldova, asigurare cargo Moldova, asigurare transportatori Moldova, asigurare logistica Moldova, asigurare flota auto Moldova, asigurare depozite Moldova, broker asigurari Moldova, ING Broker'
+        title: 'Asigurari Transport si Logistica Moldova | ING Broker',
+        description: 'Asigurari CMR, Cargo, CASCO flota si depozite pentru transportatori din Moldova. Oferta personalizata in 24h. Autorizat CNPF. Suna: +(373) 69 526 003 - ING Broker.',
+        keywords: 'asigurare CMR Moldova 2026, asigurare cargo Moldova, broker asigurari transport Chisinau, asigurare transportator international Moldova, CASCO flota comerciala Moldova, asigurare depozit logistic Moldova, Business Interruption transport Moldova, asigurare logistica Moldova, asigurare flota auto Moldova, asigurare transportatori Moldova, asigurare marfa in tranzit Moldova, polita CMR pentru TIR Moldova, pret asigurare CMR Moldova 2026, asigurare raspundere transportator rutier, CMR obligatoriu Moldova, asigurare cargo multimodal Moldova, ING Broker asigurari transport, asigurare flota camioane Moldova, cotatie asigurare transport Moldova'
       }
     },
     ...topics.map((t, index) => ({
