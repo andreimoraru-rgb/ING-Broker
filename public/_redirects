@@ -1,0 +1,10 @@
+# Cloudflare Pages _redirects - 301 redirects for old URLs + SPA fallback
+/product-page/asigurare-rca /personal/rca/ 301
+/en/product-page/asigurare-rca /en/personal/rca/ 301
+/en/product-page/carte-verde /en/personal/carte-verde/ 301
+/ru/product-page/adigurare-medicala-peste-hotare /ru/personal/medicala/ 301
+/en/shop /en/ 301
+/product-page/:slug /personal/:slug/ 301
+/en/product-page/:slug /en/personal/:slug/ 301
+/ru/product-page/:slug /ru/personal/:slug/ 301
+/* /index.html 200
