@@ -878,7 +878,7 @@ export const articles: Record<string, Article[]> = {
 </div>
 
 </div>`,
-      image: '/transport-logistica-multimodal.png',
+      image: '/transport-triptych-new.jpeg',
       date: '20 Mai 2026',
       author: 'Andrei Moraru',
       tags: ['Transport', 'Logistica', 'CMR', 'Cargo', 'Flota', 'Depozite', 'Moldova'],
