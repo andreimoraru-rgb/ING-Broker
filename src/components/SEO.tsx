@@ -70,6 +70,6 @@ export const SEO = ({ title, description, lang, schema, keywords, image = "https
                           </script>
                     )}
               </Helmet>
-                );
-              );
-                    
+      );
+};
+

@@ -567,18 +567,20 @@ export const articles: Record<string, Article[]> = {
 
 <h2>Harta completa a asigurarilor pentru transport si logistica</h2>
 <p>O companie de transport sau logistica din Moldova poate activa in mai multe roluri simultan: transportator, depozitar, freight forwarder, operator logistic sau distribuitor. Fiecare rol genereaza un tip specific de expunere la risc si necesita un instrument distinct de asigurare.</p>
-<table>
-<thead><tr><th>Tipul de asigurare</th><th>Ce protejeaza</th><th>Cine are nevoie</th></tr></thead>
-<tbody>
-<tr><td><strong>Asigurare CMR</strong></td><td>Raspunderea transportatorului pentru marfa conform Conventiei CMR</td><td>Transportatori rutieri internationali</td></tr>
-<tr><td><strong>Asigurare Cargo</strong></td><td>Valoarea comerciala a marfii (interesul proprietarului)</td><td>Exportatori, importatori, producatori, distribuitori</td></tr>
-<tr><td><strong>RCA + Carte Verde</strong></td><td>Raspunderea civila auto fata de terti, national si international</td><td>Orice companie cu vehicule comerciale</td></tr>
-<tr><td><strong>CASCO flota</strong></td><td>Daunele proprii ale vehiculelor (accidente, furt, avarii)</td><td>Companii cu camioane, autoutilitare, vehicule de distributie</td></tr>
-<tr><td><strong>Property depozite</strong></td><td>Cladiri, stocuri, echipamente logistice (incendiu, furt, inundatie)</td><td>Operatori logistici, depozitari, centre de distributie</td></tr>
-<tr><td><strong>Business Interruption</strong></td><td>Pierderea veniturilor dupa o dauna care blocheaza activitatea</td><td>Companii cu depozite sau centre logistice critice</td></tr>
-<tr><td><strong>Raspundere civila generala</strong></td><td>Daune produse tertilor in cursul activitatii logistice</td><td>Operatori logistici, freight forwarderi, depozitari</td></tr>
+<div class="overflow-x-auto -mx-4 sm:mx-0 my-8 not-prose">
+<table class="w-full text-sm border-collapse min-w-[540px]">
+<thead><tr class="bg-secondary text-white"><th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide">Tipul de asigurare</th><th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide">Ce protejeaza</th><th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide">Cine are nevoie</th></tr></thead>
+<tbody class="divide-y divide-gray-100">
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">Asigurare CMR</td><td class="px-4 py-3 text-gray-600 align-top">Raspunderea transportatorului pentru marfa conform Conventiei CMR</td><td class="px-4 py-3 text-gray-600 align-top">Transportatori rutieri internationali</td></tr>
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">Asigurare Cargo</td><td class="px-4 py-3 text-gray-600 align-top">Valoarea comerciala a marfii (interesul proprietarului)</td><td class="px-4 py-3 text-gray-600 align-top">Exportatori, importatori, producatori, distribuitori</td></tr>
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">RCA + Carte Verde</td><td class="px-4 py-3 text-gray-600 align-top">Raspunderea civila auto fata de terti, national si international</td><td class="px-4 py-3 text-gray-600 align-top">Orice companie cu vehicule comerciale</td></tr>
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">CASCO flota</td><td class="px-4 py-3 text-gray-600 align-top">Daunele proprii ale vehiculelor (accidente, furt, avarii)</td><td class="px-4 py-3 text-gray-600 align-top">Companii cu camioane, autoutilitare, vehicule de distributie</td></tr>
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">Property depozite</td><td class="px-4 py-3 text-gray-600 align-top">Cladiri, stocuri, echipamente logistice (incendiu, furt, inundatie)</td><td class="px-4 py-3 text-gray-600 align-top">Operatori logistici, depozitari, centre de distributie</td></tr>
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">Business Interruption</td><td class="px-4 py-3 text-gray-600 align-top">Pierderea veniturilor dupa o dauna care blocheaza activitatea</td><td class="px-4 py-3 text-gray-600 align-top">Companii cu depozite sau centre logistice critice</td></tr>
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">Raspundere civila generala</td><td class="px-4 py-3 text-gray-600 align-top">Daune produse tertilor in cursul activitatii logistice</td><td class="px-4 py-3 text-gray-600 align-top">Operatori logistici, freight forwarderi, depozitari</td></tr>
 </tbody>
 </table>
+</div>
 
 <h2>Asigurarea CMR - ce protejeaza si unde sunt limitele</h2>
 <p>Conventia CMR (Geneva, 1956), ratificata de Republica Moldova, stabileste cadrul uniform pentru contractele de transport rutier international de marfuri. Asigurarea CMR converteste raspunderea legala a transportatorului intr-un mecanism financiar actionabil.</p>
@@ -886,6 +888,398 @@ export const articles: Record<string, Article[]> = {
         title: 'Asigurari Transport si Logistica Moldova | ING Broker',
         description: 'Asigurari CMR, Cargo, CASCO flota si depozite pentru transportatori din Moldova. Oferta personalizata in 24h. Autorizat CNPF. Suna: +(373) 69 526 003 - ING Broker.',
         keywords: 'asigurare CMR Moldova 2026, asigurare cargo Moldova, broker asigurari transport Chisinau, asigurare transportator international Moldova, CASCO flota comerciala Moldova, asigurare depozit logistic Moldova, Business Interruption transport Moldova, asigurare logistica Moldova, asigurare flota auto Moldova, asigurare transportatori Moldova, asigurare marfa in tranzit Moldova, polita CMR pentru TIR Moldova, pret asigurare CMR Moldova 2026, asigurare raspundere transportator rutier, CMR obligatoriu Moldova, asigurare cargo multimodal Moldova, ING Broker asigurari transport, asigurare flota camioane Moldova, cotatie asigurare transport Moldova'
+      }
+    },
+    {
+      id: 'rca-1',
+      slug: 'asigurare-rca-moldova-2026',
+      title: 'Asigurare RCA Moldova 2026 - Ce Este, Ce Acopera si Cat Costa',
+      excerpt: 'Ghid complet despre asigurarea RCA obligatorie in Moldova: ce acopera, sistemul Bonus-Malus, Carta Verde, pretul real in 2026 si cum sa alegi polita corecta pentru vehiculul sau flota ta.',
+      content: `<div class="prose prose-lg max-w-none">
+
+<div class="bg-secondary text-white p-6 rounded-xl mb-8 not-prose">
+  <p class="text-xs text-primary font-semibold uppercase tracking-widest mb-3">Scenariu real de dauna - Chisinau, 2025</p>
+  <p class="text-white text-base leading-relaxed mb-3">Un sofer din Chisinau conduce fara polita RCA valida - polita expirase cu 12 zile inainte. La o intersectie din sectorul Rascani, tamponarea din spate produce daune de <strong class="text-primary">~38.500 MDL</strong> vehiculului din fata si vatamari usoare soferului. Rezultat: amenda <strong class="text-white">1.500 MDL</strong> pentru lipsa RCA, plus obligatia de a plati personal toate daunele. Fondul de Garantare plateste victima, apoi recupereaza suma integral de la soferul vinovat. Total platit din buzunar: <strong class="text-primary">~42.000 MDL</strong>.</p>
+  <p class="text-gray-400 text-xs italic">Caz sintetic din practica de brokeraj. O polita RCA valida pentru acel vehicul ar fi costat sub 1.500 MDL pe an.</p>
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-8 not-prose">
+  <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-secondary leading-tight">25.000+</p>
+    <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">accidente/an</p>
+    <p class="text-xs text-gray-500 mt-1">inregistrate in Moldova</p>
+  </div>
+  <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-secondary leading-tight">3.000</p>
+    <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">MDL amenda</p>
+    <p class="text-xs text-gray-500 mt-1">maxima pentru lipsa RCA</p>
+  </div>
+  <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-secondary leading-tight">B8</p>
+    <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">bonus max</p>
+    <p class="text-xs text-gray-500 mt-1">reducere pana la 50% din prima</p>
+  </div>
+  <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-secondary leading-tight">24h</p>
+    <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">oferta</p>
+    <p class="text-xs text-gray-500 mt-1">raspuns ING Broker</p>
+  </div>
+</div>
+
+<h2>Ce este RCA si de ce este obligatorie in Moldova</h2>
+<p>Asigurarea de Raspundere Civila Auto (RCA) este singura asigurare de masina obligatorie prin lege in Republica Moldova. Orice vehicul inmatriculat in Moldova trebuie sa aiba o polita RCA valida pentru a circula legal pe drumurile publice. Legea nr. 414-XVI din 22 decembrie 2006 privind asigurarea obligatorie de raspundere civila auto stabileste cadrul legal, minimele de acoperire si conditiile pe care orice asigurator autorizat CNPF trebuie sa le respecte.</p>
+<p>RCA nu protejeaza vehiculul propriu al soferului vinovat. Acopera prejudiciile produse altor persoane: daune materiale (reparatia vehiculului avariat, bunuri distruse) si vatamari corporale (cheltuieli medicale, invaliditate, compensatie pentru deces) pe care soferul vinovat le cauzeaza tertilor intr-un accident rutier. Daca esti victima unui accident produs de un sofer vinovat, asiguratorul RCA al acestuia iti plateste daunele.</p>
+
+<div class="bg-primary/5 border-l-4 border-primary p-6 my-8">
+<strong>Ce risca un sofer fara RCA valida in Moldova (2026):</strong><br/><br/>
+- <strong>Amenda contraventionala:</strong> 1.000 - 3.000 MDL la controlul politiei<br/>
+- <strong>Retinerea permisului de conducere</strong> pana la prezentarea politei valide<br/>
+- <strong>Raspundere civila integrala:</strong> la accident, platesti personal toate daunele produse tertilor<br/>
+- <strong>Actiune in regres:</strong> Fondul de Garantare plateste victima, apoi recupereaza suma integral de la tine<br/>
+- La accident grav cu victime: <strong>dosar penal</strong> pentru vatamare corporala sau deces din culpa
+</div>
+
+<h2>Ce acopera RCA Moldova - acoperiri si limite</h2>
+<p>Polita RCA acopera prejudiciile produse tertilor in urma unui accident rutier in care vina apartine detinatorului politei sau oricarui conducator auto autorizat al vehiculului. Acoperirea este valabila atat pe teritoriul Moldovei, cat si in tarile membre ale Sistemului Carte Verde daca polita include Carta Verde.</p>
+<h3>Acoperiri incluse in RCA</h3>
+<ul>
+<li><strong>Daune materiale la vehicule terte:</strong> reparatia sau inlocuirea vehiculului avariat in accident</li>
+<li><strong>Daune la bunuri:</strong> proprietati avariate - garduri, constructii, mobilier stradal, marfuri transportate</li>
+<li><strong>Cheltuieli medicale si spitalizare</strong> pentru victimele accidentului</li>
+<li><strong>Indemnizatie pentru invaliditate temporara sau permanenta</strong> a persoanelor ranite</li>
+<li><strong>Compensatie in caz de deces</strong> - familia si urmasii persoanei decedate</li>
+<li><strong>Daune morale</strong> - in limitele stabilite prin hotarare judecatoreasca</li>
+<li><strong>Cheltuieli de salvare</strong> pentru limitarea daunei, in conditiile politei</li>
+</ul>
+
+<div class="bg-amber-50 border-l-4 border-amber-400 p-6 my-8">
+<strong>Ce NU acopera RCA - confuzii frecvente:</strong><br/>
+- Daunele produse propriului vehicul (pentru asta ai nevoie de CASCO)<br/>
+- Vatamarea corporala a soferului vinovat (necesita asigurare de accidente separata)<br/>
+- Daune produse intentionat sau in stare de ebrietate dovedita<br/>
+- Daunele produse in curse de viteza sau competitii neautorizate<br/>
+- Furturi si vandalism (acestea se acopera prin CASCO sau All Risks)<br/>
+- Daune produse de sofer neautorizat (fara permis sau fara drept de conducere pentru acel vehicul)
+</div>
+
+<h2>RCA vs CASCO - diferenta pe care toti soferii trebuie sa o cunoasca</h2>
+<p>RCA si CASCO sunt doua asigurari auto complementare care acopera riscuri diferite. Confuzia dintre ele este printre cele mai frecvente greseli pe care le fac soferii din Moldova.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 not-prose">
+  <div class="border-2 border-primary rounded-lg p-5">
+    <h4 class="font-bold text-primary mt-0 mb-3">RCA - Obligatorie</h4>
+    <ul class="text-sm space-y-1 list-none pl-0">
+      <li>Protejeaza: <strong>tertele persoane</strong> (victimele)</li>
+      <li>Acopera: raspunderea ta fata de altii</li>
+      <li>Obligatorie: da, prin Legea 414/2006</li>
+      <li>Valabila pe: teritoriul Moldovei</li>
+      <li>Propria masina: NU este acoperita</li>
+    </ul>
+  </div>
+  <div class="border-2 border-primary rounded-lg p-5">
+    <h4 class="font-bold text-primary mt-0 mb-3">CASCO - Facultativa</h4>
+    <ul class="text-sm space-y-1 list-none pl-0">
+      <li>Protejeaza: <strong>propriul tau vehicul</strong></li>
+      <li>Acopera: accident, furt, incendiu, calamitate</li>
+      <li>Obligatorie: nu (dar impusa de leasing)</li>
+      <li>Valabila pe: teritoriu conform politei</li>
+      <li>Raspunderea fata de terti: NU (asta-i RCA)</li>
+    </ul>
+  </div>
+</div>
+<p>Concluzie practica: un sofer vinovat intr-un accident are nevoie de <strong>ambele</strong> - RCA plateste daunele produse celuilalt sofer, CASCO plateste reparatia propriei masini. Fara CASCO, propria masina o repari din buzunar.</p>
+
+<h2>Sistemul Bonus-Malus - cum iti afecteaza prima RCA in Moldova</h2>
+<p>Sistemul Bonus-Malus (B/M) este mecanismul reglementat de CNPF prin care prima RCA creste sau scade in functie de istoricul de daune al soferului. Soferii cu un istoric curat de daune primesc reduceri semnificative. Soferii cu accidente din vina proprie platesc mai mult.</p>
+<h3>Clasele Bonus-Malus - impactul real asupra pretului RCA</h3>
+
+<div class="overflow-x-auto -mx-4 sm:mx-0 my-8 not-prose">
+<table class="w-full text-sm border-collapse min-w-[500px]">
+<thead><tr class="bg-secondary text-white"><th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide">Clasa B/M</th><th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide">Coeficient</th><th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide">Efect asupra primei</th><th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide">Conditie de acordare</th></tr></thead>
+<tbody class="divide-y divide-gray-100">
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-primary align-top">B8</td><td class="px-4 py-3 text-gray-600 align-top">0,50</td><td class="px-4 py-3 text-gray-600 align-top">-50% din prima de baza</td><td class="px-4 py-3 text-gray-600 align-top">8+ ani consecutivi fara daune din vina proprie</td></tr>
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-green-700 align-top">B4</td><td class="px-4 py-3 text-gray-600 align-top">0,75</td><td class="px-4 py-3 text-gray-600 align-top">-25% din prima de baza</td><td class="px-4 py-3 text-gray-600 align-top">4 ani consecutivi fara daune</td></tr>
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">B0</td><td class="px-4 py-3 text-gray-600 align-top">1,00</td><td class="px-4 py-3 text-gray-600 align-top">Prima de baza (referinta)</td><td class="px-4 py-3 text-gray-600 align-top">Sofer la prima polita RCA</td></tr>
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-orange-600 align-top">M2</td><td class="px-4 py-3 text-gray-600 align-top">1,50</td><td class="px-4 py-3 text-gray-600 align-top">+50% din prima de baza</td><td class="px-4 py-3 text-gray-600 align-top">2 daune din vina proprie</td></tr>
+<tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-red-600 align-top">M4</td><td class="px-4 py-3 text-gray-600 align-top">2,45</td><td class="px-4 py-3 text-gray-600 align-top">+145% din prima de baza</td><td class="px-4 py-3 text-gray-600 align-top">Sofer cu daune repetate</td></tr>
+</tbody>
+</table>
+</div>
+<p>Clasa B/M se transfera intre asiguratori - daca schimbi compania de asigurari, iti pastrezi clasa obtinuta. Informatia este gestionata centralizat de CNPF prin baza de date nationala a asiguratorilor autorizati din Republica Moldova.</p>
+
+<h2>Carta Verde - extensia internationala a RCA-ului moldovenesc</h2>
+<p>Carta Verde (International Motor Insurance Certificate - Green Card) este documentul care confirma existenta unei asigurari de raspundere civila auto valabile in strainatate. Este obligatorie pentru orice vehicul inmatriculat in Moldova care traverseaza frontiera spre tarile membre ale Sistemului International Carte Verde.</p>
+<div class="bg-primary/5 border-l-4 border-primary p-6 my-8">
+<strong>Diferenta esentiala: RCA Moldova vs Carta Verde</strong><br/><br/>
+<strong>RCA Moldova</strong> - valabila exclusiv pe teritoriul Republicii Moldova<br/>
+<strong>Carta Verde</strong> - valabila in 47 tari membre: Romania, Ucraina, toate tarile UE, Turcia, Serbia, Maroc si altele<br/><br/>
+Un sofer moldovean care merge in Romania, Germania, Turcia sau Ucraina are nevoie de Carta Verde valida. Fara ea: amenda la frontiera si obligatia de a cumpara o asigurare de frontiera locala, la pret dezavantajos.
+</div>
+
+<h2>Factorii care influenteaza pretul RCA in Moldova</h2>
+<p>Prima de asigurare RCA in Moldova se calculeaza pe baza unui tarif reglementat de CNPF si a mai multor factori specifici fiecarui vehicul si sofer. Nu exista un pret unic fix - fiecare polita este calculata individual, iar ofertele pot diferi semnificativ intre asiguratori.</p>
+<ul>
+<li><strong>Categoria vehiculului:</strong> autoturism, microbuz, camion, motocicleta, remorca - categorii cu tarife distincte</li>
+<li><strong>Cilindreea motorului:</strong> vehiculele cu motoare mai mari platesc prime mai ridicate</li>
+<li><strong>Vechimea vehiculului:</strong> vehiculele mai vechi pot atrage prime diferite in functie de asigurator</li>
+<li><strong>Zona de inmatriculare:</strong> Chisinau are densitate mai mare de trafic si risc mai ridicat fata de zonele rurale</li>
+<li><strong>Varsta si experienta soferului principal:</strong> soferii tineri (sub 25 ani) platesc prime majorate</li>
+<li><strong>Clasa Bonus-Malus:</strong> cel mai important factor - de la -50% (B8) la +145% (M4)</li>
+<li><strong>Durata politei:</strong> 1 luna, 3 luni, 6 luni sau 12 luni - polita anuala ofera cel mai bun raport cost/acoperire</li>
+<li><strong>Asiguratorul ales:</strong> tariful de baza si conditiile speciale difera intre companiile autorizate CNPF</li>
+</ul>
+
+<div class="not-prose my-8 bg-secondary text-white rounded-xl p-6">
+  <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div>
+      <p class="font-bold text-white text-lg mb-1">Vrei sa stii exact cat costa RCA pentru vehiculul sau flota ta?</p>
+      <p class="text-gray-400 text-sm">ING Broker compara ofertele de la toti asiguratorii autorizati CNPF - calcul gratuit in 24 ore lucratoare</p>
+    </div>
+    <a href="tel:+37369526003" class="flex-shrink-0 bg-primary text-white font-bold px-6 py-3 rounded-lg text-sm text-center whitespace-nowrap">Suna: +(373) 69 526 003</a>
+  </div>
+</div>
+
+<h2>RCA pentru flote - avantajele companiilor cu mai multe vehicule</h2>
+<p>Companiile din Moldova cu flote de vehicule pot beneficia de conditii speciale la asigurarea RCA si Carta Verde prin gestionarea centralizata a unui program de flota. ING Broker negociaza direct cu asiguratorii autorizati CNPF conditii de tarif adaptate nevoilor corporative.</p>
+<h3>Avantajele unui program de flota prin ING Broker</h3>
+<ul>
+<li><strong>O singura data de reinnoire</strong> pentru toata flota - nu mai urmaresti individual fiecare vehicul</li>
+<li><strong>Conditii de pret mai bune</strong> - o flota este un client mai valoros pentru asigurator</li>
+<li><strong>Raportare centralizata</strong> - stii in orice moment care vehicule au polita activa si care expira</li>
+<li><strong>Alerte automate la expirare</strong> - elimini riscul de vehicule neasigurate in circulatie</li>
+<li><strong>Un singur contact pentru daune</strong> - simplifica gestionarea incidentelor pentru departamentul auto</li>
+<li><strong>Pachet complet:</strong> RCA + Carte Verde + CASCO + CMR (pentru transportatori) intr-un program unitar</li>
+</ul>
+
+<div class="bg-amber-50 border-l-4 border-amber-400 p-6 my-8">
+<strong>Cele mai frecvente greseli cu RCA identificate de ING Broker Moldova:</strong><br/><br/>
+1. <strong>Polita expirata neobservata</strong> - vehicule care circula zile intregi fara acoperire dupa data expirarii.<br/>
+2. <strong>Cumpararea celei mai ieftine polite fara a verifica asiguratorul</strong> - nu toti asiguratorii au aceeasi capacitate de plata la daune.<br/>
+3. <strong>Confundarea RCA cu CASCO</strong> - soferul crede ca RCA ii acopera si propria masina avariata.<br/>
+4. <strong>Plecarea in strainatate fara Carta Verde</strong> - amenzi la frontiera si polite locale la preturi dezavantajoase.<br/>
+5. <strong>Neraportarea clasei B/M corecte</strong> - poate duce la anularea politei sau refuzul despagubirii la dauna.<br/>
+6. <strong>Flota gestionata vehicul cu vehicul</strong> - costuri mai mari si risc de expirare neobservata.
+</div>
+
+<h2>Cum obtineti RCA la cel mai bun pret - 3 pasi simpli cu ING Broker</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 not-prose">
+  <div class="text-center p-6 bg-white shadow-sm rounded-xl border-t-4 border-primary">
+    <div class="text-4xl font-bold text-primary mb-3">01</div>
+    <p class="font-bold text-secondary text-base mb-2">Consultatie gratuita</p>
+    <p class="text-sm text-gray-500 leading-relaxed">Ne spuneti datele vehiculului si clasa B/M curenta. Analizam situatia fara documente la prima discutie si fara niciun angajament.</p>
+    <p class="text-xs text-primary font-semibold mt-3">~15 minute</p>
+  </div>
+  <div class="text-center p-6 bg-white shadow-sm rounded-xl border-t-4 border-primary">
+    <div class="text-4xl font-bold text-primary mb-3">02</div>
+    <p class="font-bold text-secondary text-base mb-2">Comparatie de oferte</p>
+    <p class="text-sm text-gray-500 leading-relaxed">Solicitam oferte de la mai multi asiguratori autorizati CNPF si va prezentam comparatia completa - pret, conditii, asigurator, limite.</p>
+    <p class="text-xs text-primary font-semibold mt-3">24 ore lucratoare</p>
+  </div>
+  <div class="text-center p-6 bg-white shadow-sm rounded-xl border-t-4 border-primary">
+    <div class="text-4xl font-bold text-primary mb-3">03</div>
+    <p class="font-bold text-secondary text-base mb-2">Polita emisa rapid</p>
+    <p class="text-sm text-gray-500 leading-relaxed">Dupa alegerea ofertei, emitem polita RCA in aceeasi zi. La orice dauna, ING Broker va asista in relatia cu asiguratorul pana la incasarea despagubirii.</p>
+    <p class="text-xs text-primary font-semibold mt-3">suport 0-365 zile/an</p>
+  </div>
+</div>
+
+<div class="not-prose flex flex-wrap items-center gap-3 my-8 p-5 bg-white border border-gray-100 rounded-xl shadow-sm">
+  <span class="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-800 text-xs font-semibold rounded-full px-4 py-2">
+    <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+    Broker autorizat CNPF Moldova
+  </span>
+  <span class="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 text-xs font-semibold rounded-full px-4 py-2">
+    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+    Toti asiguratorii autorizati CNPF
+  </span>
+  <span class="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 text-xs font-semibold rounded-full px-4 py-2">
+    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+    Romana - Rusa - Engleza
+  </span>
+  <span class="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 text-xs font-semibold rounded-full px-4 py-2">
+    <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    Comisionul platit de asigurator, nu de tine
+  </span>
+</div>
+
+<h2>Intrebari frecvente - Asigurare RCA Moldova 2026</h2>
+
+<div class="not-prose border-t border-gray-100 mt-4">
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Ce este RCA si este obligatorie in Moldova?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Da, RCA (Raspundere Civila Auto) este obligatorie prin Legea nr. 414-XVI din 22.12.2006. Orice vehicul inmatriculat in Moldova care circula pe drumurile publice trebuie sa aiba o polita RCA valida. RCA acopera prejudiciile produse altor persoane - vatamari corporale si daune materiale - in urma unui accident rutier in care esti vinovat. Fara RCA valida: amenda 1.000-3.000 MDL, retinerea permisului si raspundere civila integrala pentru toate daunele produse.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Cat costa asigurarea RCA in Moldova in 2026?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Pretul RCA variaza in functie de: categoria si cilindreea vehiculului, clasa Bonus-Malus, varsta soferului, zona de inmatriculare si asiguratorul ales. Orientativ, pentru un autoturism de 1.600 cmc in clasa B0, o polita anuala poate fi intre 1.200-2.500 MDL, iar in clasa B8 (8 ani fara daune) prima se poate reduce cu pana la 50%. ING Broker compara ofertele de la toti asiguratorii autorizati CNPF si identifica cel mai bun raport pret-calitate pentru profilul tau specific.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Care este diferenta dintre RCA si CASCO?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">RCA este obligatorie si acopera prejudiciile produse altor persoane (daune la vehicule terte, vatamare corporala a victimelor). Propriul vehicul NU este acoperit de propria ta polita RCA. CASCO este facultativa si acopera daunele propriului vehicul: accidente, furt, incendiu, calamitati naturale, vandalism. Daca esti vinovat intr-un accident, propria masina o repari din CASCO - daca il ai - sau din buzunar. CASCO este recomandat mai ales pentru vehicule noi, in leasing sau cu valoare ridicata.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Cum functioneaza sistemul Bonus-Malus in Moldova?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Sistemul Bonus-Malus recompenseaza soferii fara daune cu reduceri progresive la prima RCA si penalizeaza pe cei cu accidente din vina proprie cu majorari. Clasa de inceput este B0. Fiecare an fara daune din vina proprie avanseaza cu o clasa Bonus (B1-B8), cu reduceri pana la 50% in B8. Fiecare dauna din vina proprie retrage cu 2-3 clase. Clasa B/M se transfera intre asiguratori si este gestionata centralizat de CNPF.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Ce este Carta Verde si cand am nevoie de ea?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Carta Verde este extensia internationala a RCA-ului moldovenesc, obligatorie pentru orice vehicul care paraseste Moldova spre cele 47 tari membre ale Sistemului Green Card (Romania, Ucraina, toate tarile UE, Turcia si altele). RCA Moldova este valabila exclusiv pe teritoriul Republicii Moldova. Fara Carta Verde valida la frontiera: amenda si obligatia de a cumpara o asigurare de frontiera locala la pret dezavantajos. ING Broker emite Carta Verde impreuna cu RCA sau separat.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Ce se intampla la un accident daca nu am RCA valida in Moldova?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Daca esti vinovat intr-un accident fara RCA valida: (1) Victima este despagubita de Fondul de Garantare al Asiguratorilor din Moldova; (2) Fondul recupereaza integral suma platita prin actiune in regres impotriva ta; (3) Platesti amenda contraventionala 1.000-3.000 MDL; (4) Suporti integral costul reparatiei propriei masini (fara ajutor de la niciun asigurator); (5) La vatamare corporala grava: risc de dosar penal. Totalul obligatiilor financiare poate depasi cu usurinta 50.000-100.000 MDL si chiar mai mult la accidente grave.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Cum procedez dupa un accident rutier cu RCA in Moldova?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">(1) Suni la politie (902) si ambulanta (903) daca sunt victime; (2) Documentezi locul accidentului cu fotografii detaliate din toate unghiurile; (3) Colectezi datele celuilalt sofer - permis, buletin, polita RCA, numar de inmatriculare; (4) Obtii procesul verbal al politiei sau completezi Constatarea Amiabila de Accident; (5) Notifici asiguratorul vinovatului si ING Broker in maximum 24-48 ore de la accident; (6) Nu repari vehiculul inainte de evaluarea asiguratorului. ING Broker te asista la fiecare pas pana la incasarea despagubirii corecte.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Cat timp este valabila o polita RCA in Moldova?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">O polita RCA in Moldova poate fi emisa pe perioade de 1 luna, 2 luni, 3 luni, 6 luni sau 12 luni. Polita anuala (12 luni) ofera cel mai bun raport cost-acoperire. Polita pe perioade mai scurte este utila pentru vehicule de uz sezonier sau ocazional. Dupa expirare nu exista nicio perioada de gratie - vehiculul nu mai are acoperire din prima secunda dupa data expirarii. ING Broker configureaza alerte de reinnoire pentru a elimina riscul expirarii neobservate.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Pot vinde masina cu polita RCA activa - ce se intampla?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">La vanzarea vehiculului, polita RCA nu se transfera automat noului proprietar. Noul proprietar trebuie sa isi incheie propria polita RCA inainte de a circula cu vehiculul. Vechea polita poate fi reziliata la cerere, cu rambursarea primei neconsumate pentru perioada ramasa (minus taxe administrative). ING Broker gestioneaza atat rezilierea politei vechi cat si emiterea celei noi, simplificand procesul de tranzactionare.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">RCA pentru masina cu numere straine care circula in Moldova?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Vehiculele inmatriculate in tari straine care intra in Moldova sunt acoperite de polita RCA sau Carta Verde emisa in tara de inmatriculare, in cadrul Sistemului International Carte Verde. Daca vehiculul strain nu are Carta Verde valabila, la frontiera i se solicita incheierea unei Asigurari de Frontiera, emisa de asiguratori moldovenesti autorizati CNPF. ING Broker poate emite Asigurarea de Frontiera pentru vehicule straine care circula pe teritoriul Moldovei.</div>
+</details>
+</div>
+
+<div class="border-b border-gray-100 py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Pot cumpara RCA si Carta Verde pentru flota companiei mele dintr-o singura cerere?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Da. ING Broker structureaza programe centralizate pentru flote de orice dimensiune: RCA, Carte Verde, CASCO si CMR (pentru transportatori) intr-un singur program coordonat, cu o singura data de reinnoire anuala. Avantaje: tarife mai bune negociate cu asiguratorii, administrare simplificata, raportare centralizata a tuturor politelor si eliminarea riscului de vehicule neasigurate. Contactati ING Broker pentru un audit gratuit al flotei voastre.</div>
+</details>
+</div>
+
+<div class="py-1">
+<details class="group">
+  <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+    <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">De ce sa aleg ING Broker pentru RCA si nu direct o companie de asigurari?</span>
+    <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+      <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </summary>
+  <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Un broker autorizat CNPF lucreaza in interesul tau, nu al asiguratorului. Avantaje concrete: acces la ofertele tuturor asiguratorilor de pe piata moldoveneasca dintr-o singura solicitare, comparatie obiectiva pret-conditii-asigurator, asistenta dedicata la daune cu un singur punct de contact, si - pentru flote - negocierea conditiilor speciale imposibil de obtinut ca persoana individuala. Comisionul brokerului este platit de asigurator - serviciul este complet gratuit pentru tine.</div>
+</details>
+</div>
+
+</div>
+
+<div class="bg-secondary text-white p-8 rounded-xl text-center mt-10 not-prose">
+  <h2 class="text-white text-2xl font-bold mt-0 mb-2">Obtineti oferta RCA comparativa pentru vehiculul sau flota voastra</h2>
+  <p class="text-gray-400 text-sm mb-6">Insurance ING Broker SRL, Chisinau - RCA, Carta Verde, CASCO si asigurari auto pentru persoane fizice si companii din Moldova. Autorizat CNPF. Raspuns in 24 ore lucratoare.</p>
+  <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+    <a href="tel:+37369526003" class="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold px-8 py-4 rounded-lg text-base">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      +(373) 69 526 003
+    </a>
+    <a href="mailto:andrei.moraru@ingbroker.md" class="inline-flex items-center justify-center gap-2 border border-white/20 text-white font-semibold px-8 py-4 rounded-lg text-base hover:bg-white/10 transition-colors">
+      andrei.moraru@ingbroker.md
+    </a>
+  </div>
+  <div class="flex flex-wrap justify-center gap-6 text-xs text-gray-500">
+    <span>Raspuns garantat in 24h lucratoare</span>
+    <span>Fara angajamente la prima discutie</span>
+    <span>Consultanta gratuita</span>
+  </div>
+</div>
+
+</div>`,
+      image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=1920',
+      date: '21 Mai 2026',
+      author: 'Andrei Moraru',
+      tags: ['RCA', 'Auto', 'Moldova', 'Carta Verde', 'Bonus-Malus', 'Chisinau'],
+      seo: {
+        title: 'Asigurare RCA Moldova 2026 - Ghid Complet Pret si Acoperire | ING Broker',
+        description: 'Tot ce trebuie sa stii despre RCA in Moldova: ce acopera, cat costa in 2026, sistemul Bonus-Malus, Carta Verde si ce se intampla fara polita valida. Broker autorizat CNPF Chisinau.',
+        keywords: 'asigurare RCA Moldova 2026, pret RCA Moldova, RCA obligatorie Moldova, cat costa RCA Moldova 2026, RCA Chisinau, Carta Verde Moldova, sistem bonus malus Moldova, broker asigurare auto Moldova, RCA ieftina Moldova, asigurare auto obligatorie Moldova, RCA flota Moldova, RCA companie Moldova, asigurare auto Chisinau 2026, RCA online Moldova, ING Broker RCA, reinnoire RCA Moldova, RCA sofer nou Moldova, dauna RCA Moldova, CASCO vs RCA Moldova, asigurare frontiera Moldova, RCA pentru TIR Moldova, polita RCA Moldova, calculator RCA Moldova, asigurare auto obligatorie Chisinau'
       }
     },
     ...topics.map((t, index) => ({
