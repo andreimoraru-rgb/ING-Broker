@@ -51,7 +51,8 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           id: 'transportatori-auto',
           title: 'Transportatori Auto',
           desc: 'Soluții pentru flote comerciale și transportatori, acoperind marfa (CMR), vehiculele (CASCO) și răspunderea.',
-          image: '/transportatori-auto.jpg'
+          image: '/transportatori-auto.jpg',
+          link: '/oferte/transportatori-auto'
         },
         {
           id: 'cyber-insurance',
@@ -105,7 +106,8 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           id: 'transportatori-auto',
           title: 'Автоперевозчики',
           desc: 'Решения для коммерческих автопарков и перевозчиков, покрывающие грузы (CMR), транспортные средства (CASCO) и ответственность.',
-          image: '/transportatori-auto.jpg'
+          image: '/transportatori-auto.jpg',
+          link: '/oferte/transportatori-auto'
         },
         {
           id: 'cyber-insurance',
@@ -159,7 +161,8 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           id: 'transportatori-auto',
           title: 'Auto Transporters',
           desc: 'Solutions for commercial fleets and transporters, covering cargo (CMR), vehicles (CASCO), and liability.',
-          image: '/transportatori-auto.jpg'
+          image: '/transportatori-auto.jpg',
+          link: '/oferte/transportatori-auto'
         },
         {
           id: 'cyber-insurance',
