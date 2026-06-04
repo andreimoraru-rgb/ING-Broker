@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transportatori Auto | Asigurări pentru Flote Comerciale – ING Broker SRL</title>
+<meta name="description" content="Soluții de asigurare pentru transportatori auto din Moldova: RCAI, Carte Verde, CASCO, CMR, Cargo și răspundere față de pasageri. Broker autorizat CNPF.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #05080F;
+  --bg-alt: #0A0F1C;
+  --bg-card: #111827;
+  --primary: #E84444;
+  --gold: #D4A53B;
+  --white: #FFFFFF;
+  --text-main: #F3F4F6;
+  --text-muted: #9CA3AF;
+  --border: rgba(255,255,255,0.08);
+  --font-h: 'Space Grotesk', sans-serif;
+  --font-b: 'Outfit', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--font-b); background: var(--bg); color: var(--text-main); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* HEADER */
+.hdr { position: fixed; top:0; left:0; right:0; z-index:9999; padding: 0 44px; height: 80px; display:flex; align-items:center; justify-content:space-between; gap:24px; transition: background .45s, box-shadow .45s; }
+.hdr.scrolled { background: rgba(5,8,15,.97); backdrop-filter: blur(20px); box-shadow: 0 1px 0 rgba(255,255,255,.08); }
+.logo img { height:58px; width:auto; object-fit:contain; transition:opacity .3s; }
+.nav { display:flex; align-items:center; gap:32px; }
+.nav a { font-size:.875rem; font-weight:500; color:var(--text-muted); transition:color .2s; }
+.nav a:hover { color:var(--white); }
+.btn-cta { display:inline-flex; align-items:center; gap:8px; background:var(--white); color:#000; padding:10px 20px; border-radius:8px; font-weight:600; font-size:.875rem; transition:background .2s, color .2s; }
+.btn-cta:hover { background:#E5E7EB; }
+.btn-primary { display:inline-flex; align-items:center; gap:8px; background:var(--primary); color:var(--white); padding:14px 28px; border-radius:8px; font-weight:600; font-size:1rem; transition:background .2s; border:none; cursor:pointer; }
+.btn-primary:hover { background:#C73333; }
+.btn-secondary { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,.1); color:var(--white); padding:14px 28px; border-radius:8px; font-weight:600; font-size:1rem; transition:background .2s; border: 1px solid rgba(255,255,255,.2); }
+.btn-secondary:hover { background:rgba(255,255,255,.2); }
+/* BACK BUTTON */
+.back-btn { display:inline-flex; align-items:center; gap:8px; color:var(--text-muted); font-size:.875rem; font-weight:500; margin-bottom:24px; transition:color .2s; background:transparent; border:none; cursor:pointer; padding:0; text-decoration:none; }
+.back-btn:hover { color:var(--white); }
+.back-btn svg { width:16px; height:16px; }
+/* HERO */
+.hero { min-height:100vh; display:grid; grid-template-columns:1fr 420px; gap:48px; align-items:center; padding:120px 44px 80px; position:relative; overflow:hidden; background:linear-gradient(135deg,var(--bg) 60%,#0D111B); }
+.hero::before { content:''; position:absolute; inset:0; background:url('/transportatori-auto.jpg') center/cover no-repeat; opacity:.18; z-index:0; }
+.hero-content { position:relative; z-index:1; }
+.section-label { display:flex; align-items:center; gap:12px; margin-bottom:24px; }
+.section-label::before { content:''; width:32px; height:2px; background:var(--primary); }
+.section-label span { font-size:.75rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--text-muted); }
+.hero h1 { font-family:var(--font-h); font-size:clamp(2.5rem,5vw,4rem); font-weight:800; line-height:1.1; margin-bottom:24px; }
+.hero h1 .accent { color:var(--primary); }
+.hero-desc { font-size:1.125rem; color:var(--text-muted); max-width:540px; margin-bottom:16px; }
+.hero-desc2 { font-size:.9375rem; color:var(--text-muted); max-width:540px; margin-bottom:40px; }
+.hero-actions { display:flex; gap:16px; flex-wrap:wrap; margin-bottom:0; }
+
+/* STATS */
+.stats-row { display:flex; gap:40px; padding:24px 0; border-top:1px solid var(--border); margin-top:40px; }
+.stat-item { text-align:center; }
+.stat-num { font-family:var(--font-h); font-size:2rem; font-weight:800; color:var(--white); }
+.stat-label { font-size:.7rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); margin-top:4px; }
+/* SIDEBAR CARD */
+.sidebar-card { position:relative; z-index:1; background:rgba(10,15,28,.85); backdrop-filter:blur(20px); border:1px solid var(--border); border-radius:16px; padding:24px; }
+.sidebar-title { font-size:.75rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:6px; }
+.sidebar-subtitle { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
+.sidebar-subtitle span { font-size:.8rem; font-weight:600; color:var(--white); }
+.active-badge { background:#16A34A; color:#fff; font-size:.65rem; font-weight:700; padding:3px 10px; border-radius:20px; text-transform:uppercase; letter-spacing:.05em; }
+.product-list { display:flex; flex-direction:column; gap:10px; }
+.product-item { display:flex; align-items:center; gap:12px; background:rgba(255,255,255,.04); border:1px solid var(--border); border-radius:10px; padding:12px 14px; }
+.product-item img { width:44px; height:44px; border-radius:8px; object-fit:cover; flex-shrink:0; }
+.product-info { flex:1; }
+.product-name { font-size:.875rem; font-weight:600; color:var(--white); }
+.product-sub { font-size:.75rem; color:var(--text-muted); margin-top:2px; }
+.product-badge { font-size:.6rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:3px 8px; border-radius:4px; flex-shrink:0; }
+.badge-obligatoriu { background:var(--primary); color:#fff; }
+.badge-international { background:#1D4ED8; color:#fff; }
+.badge-facultativ { background:#374151; color:#D1D5DB; border:1px solid rgba(255,255,255,.15); }
+.badge-transportatori { background:#7C3AED; color:#fff; }
+.badge-marfa { background:#D97706; color:#fff; }
+.badge-pasageri { background:#0891B2; color:#fff; }
+/* SECTIONS */
+.section { padding:80px 44px; }
+.section-white { background:var(--white); color:#111827; }
+.section-alt { background:var(--bg-alt); }
+.section-dark { background:var(--bg); }
+.section-num-label { display:flex; align-items:center; gap:12px; margin-bottom:20px; }
+.section-num-label::before { content:''; width:24px; height:2px; background:var(--primary); }
+.section-num-label span { font-size:.75rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--text-muted); }
+.section-title { font-family:var(--font-h); font-size:clamp(1.75rem,3vw,2.5rem); font-weight:800; line-height:1.15; margin-bottom:20px; }
+.section-desc { font-size:1rem; color:var(--text-muted); max-width:640px; margin-bottom:40px; }
+.section-white .section-desc { color:#6B7280; }
+/* AUDIENCE GRID */
+.audience-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.audience-card { background:var(--bg-card); border:1px solid var(--border); border-radius:12px; overflow:hidden; transition:border-color .2s; }
+.audience-card:hover { border-color:rgba(255,255,255,.2); }
+.audience-card img { width:100%; height:160px; object-fit:cover; }
+.audience-card-body { padding:16px; }
+.audience-card-title { font-size:.9375rem; font-weight:700; color:var(--white); margin-bottom:6px; }
+.audience-card-desc { font-size:.8125rem; color:var(--text-muted); line-height:1.5; }
+
+/* OVERVIEW SECTION */
+.overview-grid { display:grid; grid-template-columns:1fr 420px; gap:60px; align-items:start; }
+.overview-text h2 { font-family:var(--font-h); font-size:clamp(1.75rem,3vw,2.5rem); font-weight:800; line-height:1.15; margin-bottom:20px; }
+.overview-text h2 .accent { color:var(--primary); }
+.overview-text p { font-size:1rem; color:var(--text-muted); margin-bottom:24px; line-height:1.7; }
+.risks-table { display:grid; grid-template-columns:1fr 1fr; gap:0; }
+.risk-row { display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid var(--border); font-size:.875rem; color:var(--text-muted); }
+.risk-row::before { content:''; width:8px; height:8px; background:var(--primary); border-radius:50%; flex-shrink:0; }
+.risk-sidebar { background:var(--bg-card); border:1px solid var(--border); border-radius:16px; overflow:hidden; }
+.risk-sidebar img { width:100%; height:200px; object-fit:cover; }
+.risk-sidebar-body { padding:20px; }
+.risk-sidebar-label { font-size:.7rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--primary); margin-bottom:8px; }
+.risk-sidebar-title { font-family:var(--font-h); font-size:1.25rem; font-weight:700; color:var(--white); line-height:1.3; }
+/* PRODUCTS GRID */
+.products-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+.product-card { background:var(--bg-card); border:1px solid var(--border); border-radius:16px; overflow:hidden; display:flex; flex-direction:column; }
+.product-card-img { position:relative; height:200px; overflow:hidden; }
+.product-card-img img { width:100%; height:100%; object-fit:cover; }
+.product-card-tag { position:absolute; top:16px; left:16px; font-size:.65rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; padding:5px 12px; border-radius:4px; }
+.tag-obligatoriu { background:var(--primary); color:#fff; }
+.tag-international { background:#1D4ED8; color:#fff; }
+.tag-facultativ { background:rgba(55,65,81,.9); color:#D1D5DB; border:1px solid rgba(255,255,255,.15); }
+.tag-raspundere { background:#7C3AED; color:#fff; }
+.tag-marfa { background:#D97706; color:#fff; }
+.tag-pasageri { background:#0891B2; color:#fff; }
+.product-card-body { padding:24px; flex:1; display:flex; flex-direction:column; }
+.product-card-title { font-family:var(--font-h); font-size:1.125rem; font-weight:700; color:var(--white); margin-bottom:12px; }
+.product-card-desc { font-size:.875rem; color:var(--text-muted); line-height:1.6; margin-bottom:20px; flex:1; }
+.product-section-label { font-size:.65rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px; }
+.product-mini-grid { display:grid; grid-template-columns:1fr 1fr; gap:4px 16px; }
+.product-mini-item { font-size:.8125rem; color:var(--text-muted); padding:4px 0; display:flex; align-items:center; gap:6px; }
+.product-mini-item::before { content:''; width:6px; height:6px; background:var(--primary); border-radius:50%; flex-shrink:0; }
+.benefit-box { background:rgba(232,68,68,.08); border:1px solid rgba(232,68,68,.2); border-radius:8px; padding:14px 16px; margin-top:16px; }
+.benefit-box-label { font-size:.65rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--primary); margin-bottom:6px; }
+.benefit-box-text { font-size:.8125rem; color:var(--text-muted); line-height:1.5; }
+
+/* COMPARISON TABLE */
+.comparison-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.comparison-card { background:var(--bg-card); border:1px solid var(--border); border-radius:16px; padding:28px; }
+.comparison-tag { display:inline-block; font-size:.65rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:5px 12px; border-radius:4px; margin-bottom:16px; }
+.comparison-title { font-family:var(--font-h); font-size:1.375rem; font-weight:800; color:var(--white); margin-bottom:8px; }
+.comparison-sub { font-size:.875rem; color:var(--text-muted); margin-bottom:20px; }
+.comparison-list { list-style:none; display:flex; flex-direction:column; gap:10px; }
+.comparison-list li { display:flex; align-items:flex-start; gap:10px; font-size:.875rem; color:var(--text-muted); }
+.comparison-list li::before { content:'✓'; color:var(--primary); font-weight:700; flex-shrink:0; margin-top:1px; }
+.conclusion-box { background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:20px 24px; margin-top:24px; display:flex; align-items:flex-start; gap:16px; grid-column:1/-1; }
+.conclusion-icon { width:40px; height:40px; background:var(--primary); border-radius:8px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.125rem; }
+.conclusion-title { font-weight:700; font-size:1rem; color:var(--white); margin-bottom:4px; }
+.conclusion-text { font-size:.875rem; color:var(--text-muted); }
+.conclusion-text .hl { color:var(--primary); font-weight:700; }
+/* BROKER ROLE */
+.broker-grid { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
+.broker-visual { position:relative; border-radius:16px; overflow:hidden; }
+.broker-visual img { width:100%; height:400px; object-fit:cover; }
+.broker-overlay { position:absolute; bottom:20px; left:20px; right:20px; background:rgba(5,8,15,.9); border:1px solid var(--border); border-radius:10px; padding:16px 20px; }
+.broker-overlay-label { font-size:.7rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--primary); margin-bottom:6px; font-family:monospace; }
+.broker-overlay-text { font-size:.875rem; color:var(--text-muted); }
+.broker-steps { display:flex; flex-direction:column; gap:0; }
+.broker-desc { font-size:1rem; color:var(--text-muted); margin-bottom:32px; line-height:1.7; }
+.step-item { display:flex; align-items:flex-start; gap:20px; padding:20px 0; border-bottom:1px solid var(--border); }
+.step-num { width:40px; height:40px; border:1px solid var(--primary); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:.75rem; font-weight:700; color:var(--primary); flex-shrink:0; }
+.step-title { font-weight:700; font-size:.9375rem; color:var(--white); margin-bottom:4px; }
+.step-desc { font-size:.8125rem; color:var(--text-muted); line-height:1.5; }
+/* ADVANTAGES */
+.advantages-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.advantage-card { background:var(--bg-card); border:1px solid var(--border); border-radius:12px; padding:24px; }
+.advantage-icon { font-size:2rem; margin-bottom:12px; }
+.advantage-text { font-size:.875rem; color:var(--text-muted); line-height:1.6; }
+
+/* WARNING SECTION */
+.warning-section { background:#0D0A0A; padding:80px 44px; }
+.warning-grid { display:grid; grid-template-columns:1fr 380px; gap:60px; align-items:start; }
+.warning-title { font-family:var(--font-h); font-size:clamp(1.75rem,3vw,2.5rem); font-weight:800; line-height:1.2; margin-bottom:20px; }
+.warning-title .accent { color:var(--primary); }
+.warning-desc { font-size:1rem; color:var(--text-muted); margin-bottom:32px; line-height:1.7; }
+.warning-features { display:flex; flex-direction:column; gap:16px; }
+.warning-feature { display:flex; align-items:flex-start; gap:14px; }
+.warning-feature-icon { width:40px; height:40px; background:rgba(232,68,68,.1); border:1px solid rgba(232,68,68,.2); border-radius:8px; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1rem; }
+.warning-feature-text { font-size:.875rem; color:var(--text-muted); line-height:1.5; }
+.checklist-card { background:rgba(232,68,68,.05); border:1px solid rgba(232,68,68,.2); border-radius:16px; padding:24px; }
+.checklist-title { font-size:1rem; font-weight:700; color:var(--white); margin-bottom:6px; }
+.checklist-subtitle { font-size:.75rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--primary); margin-bottom:20px; }
+.checklist-items { display:flex; flex-direction:column; gap:10px; }
+.checklist-item { display:flex; align-items:center; gap:10px; }
+.checklist-check { width:20px; height:20px; background:rgba(232,68,68,.2); border-radius:4px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.checklist-check::after { content:'✓'; color:var(--primary); font-size:.75rem; font-weight:700; }
+.checklist-text { font-size:.875rem; color:var(--text-muted); }
+/* CTA FORM SECTION */
+.cta-section { padding:80px 44px; background:var(--bg-alt); }
+.cta-grid { display:grid; grid-template-columns:1fr 520px; gap:60px; align-items:start; }
+.cta-title { font-family:var(--font-h); font-size:clamp(1.75rem,3vw,2.5rem); font-weight:800; line-height:1.15; margin-bottom:20px; }
+.cta-desc { font-size:1rem; color:var(--text-muted); margin-bottom:28px; line-height:1.7; }
+.cta-features { display:flex; flex-direction:column; gap:12px; margin-bottom:32px; }
+.cta-feature { display:flex; align-items:center; gap:12px; font-size:.875rem; color:var(--text-muted); }
+.cta-feature-icon { font-size:1rem; }
+.form-card { background:var(--bg-card); border:1px solid var(--border); border-radius:16px; padding:28px; }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
+.form-group { display:flex; flex-direction:column; gap:6px; margin-bottom:16px; }
+.form-label { font-size:.7rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); }
+.form-input { background:rgba(255,255,255,.05); border:1px solid var(--border); border-radius:8px; padding:12px 14px; color:var(--white); font-size:.9375rem; font-family:var(--font-b); transition:border-color .2s; }
+.form-input:focus { outline:none; border-color:rgba(255,255,255,.3); }
+.form-input::placeholder { color:rgba(255,255,255,.25); }
+select.form-input { cursor:pointer; }
+.checkboxes-group { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+.checkbox-item { display:flex; align-items:center; gap:8px; font-size:.8125rem; color:var(--text-muted); background:rgba(255,255,255,.04); border:1px solid var(--border); border-radius:6px; padding:6px 10px; cursor:pointer; }
+.checkbox-item input { accent-color:var(--primary); }
+.form-submit { width:100%; margin-top:8px; font-size:1rem; justify-content:center; padding:14px; border-radius:8px; }
+/* FOOTER */
+footer { background:var(--bg); border-top:1px solid var(--border); padding:48px 44px 32px; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:40px; }
+.footer-brand img { height:48px; width:auto; margin-bottom:16px; }
+.footer-brand p { font-size:.875rem; color:var(--text-muted); line-height:1.6; max-width:280px; }
+.footer-col-title { font-size:.75rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:16px; }
+.footer-links { list-style:none; display:flex; flex-direction:column; gap:10px; }
+.footer-links li a { font-size:.875rem; color:var(--text-muted); transition:color .2s; }
+.footer-links li a:hover { color:var(--white); }
+.footer-bottom { border-top:1px solid var(--border); padding-top:24px; display:flex; justify-content:space-between; align-items:center; }
+.footer-copy { font-size:.8125rem; color:var(--text-muted); }
+/* RESPONSIVE */
+@media (max-width:900px) {
+  .hero, .overview-grid, .broker-grid, .cta-grid, .warning-grid { grid-template-columns:1fr; }
+  .hero::before { opacity:.15; }
+  .section { padding:60px 24px; }
+  .hero { padding:100px 24px 60px; }
+  .products-grid, .comparison-grid { grid-template-columns:1fr; }
+  .audience-grid { grid-template-columns:1fr 1fr; }
+  .advantages-grid { grid-template-columns:1fr 1fr; }
+  .footer-grid { grid-template-columns:1fr 1fr; }
+  .nav { display:none; }
+  .hdr { padding:0 24px; }
+  .sidebar-card { display:none; }
+}
+@media (max-width:600px) {
+  .audience-grid, .advantages-grid { grid-template-columns:1fr; }
+  .form-row { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="hdr">
+  <a href="/" class="logo">
+    <img src="/LOGO-ING-ALB-3.png" alt="ING Broker Logo" class="logo-white">
+  </a>
+  <nav class="nav">
+    <a href="/oferte">Oferte</a>
+    <a href="/asigurari">Asigurări</a>
+    <a href="/rolul-nostru">Rolul nostru</a>
+    <a href="/intrebari">Întrebări</a>
+    <a href="/contact">Contact</a>
+  </nav>
+  <a href="/contact" class="btn-cta">Solicită ofertă ↗</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <a href="/oferte" class="back-btn">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 3L5 8l5 5"/></svg>
+      Înapoi la Oferte
+    </a>
+    <div class="section-label"><span>Oferte · Transportatori Auto</span></div>
+    <h1>Asigurări pentru<br>flote, marfă,<br>vehicule și <span class="accent">pasageri.</span></h1>
+    <p class="hero-desc">Soluții de asigurare pentru companii de transport, logistică, distribuție și flote comerciale din Republica Moldova: RCAI, Carte Verde, CASCO, CMR, Cargo și răspunderea transportatorului.</p>
+    <p class="hero-desc2">ING Broker ajută companiile să își protejeze vehiculele, mărfurile, contractele, pasagerii și activitatea zilnică printr-un program de asigurare construit pe riscurile reale ale businessului.</p>
+    <div class="hero-actions">
+      <a href="#cerere-oferta" class="btn-primary">Solicită ofertă pentru flotă →</a>
+      <a href="/contact" class="btn-secondary">Discută cu un consultant</a>
+    </div>
+    <div class="stats-row">
+      <div class="stat-item"><div class="stat-num">6</div><div class="stat-label">Tipuri de polițe</div></div>
+      <div class="stat-item"><div class="stat-num">40+</div><div class="stat-label">Țări Carte Verde</div></div>
+      <div class="stat-item"><div class="stat-num">1</div><div class="stat-label">Punct de contact</div></div>
+    </div>
+  </div>
+  <div class="sidebar-card">
+    <div class="sidebar-title">Program Flotă · ING Broker</div>
+    <div class="sidebar-subtitle"><span>&nbsp;</span><span class="active-badge">● Activ</span></div>
+    <div class="product-list">
+      <div class="product-item">
+        <img src="/rca-red-car.jpg" alt="RCAI">
+        <div class="product-info"><div class="product-name">RCAI</div><div class="product-sub">Răspundere civilă auto internă</div></div>
+        <span class="product-badge badge-obligatoriu">Obligatoriu</span>
+      </div>
+      <div class="product-item">
+        <img src="/carte_verde.jpg" alt="Carte Verde">
+        <div class="product-info"><div class="product-name">Carte Verde</div><div class="product-sub">Curse internaționale</div></div>
+        <span class="product-badge badge-international">EU + 40 Țări</span>
+      </div>
+      <div class="product-item">
+        <img src="/asigurare-casco.jpg" alt="CASCO">
+        <div class="product-info"><div class="product-name">CASCO</div><div class="product-sub">Vehiculele companiei</div></div>
+        <span class="product-badge badge-facultativ">Facultativ</span>
+      </div>
+      <div class="product-item">
+        <img src="/cargo.jpg" alt="CMR">
+        <div class="product-info"><div class="product-name">CMR</div><div class="product-sub">Răspundere față de marfă</div></div>
+        <span class="product-badge badge-transportatori">Transportatori</span>
+      </div>
+      <div class="product-item">
+        <img src="/cargo-truck.jpg" alt="Cargo">
+        <div class="product-info"><div class="product-name">Cargo</div><div class="product-sub">Marfa transportată</div></div>
+        <span class="product-badge badge-marfa">Proprietari Marfă</span>
+      </div>
+      <div class="product-item">
+        <img src="/bus.jpg" alt="Pasageri">
+        <div class="product-info"><div class="product-name">Răspundere pasageri</div><div class="product-sub">Transport persoane</div></div>
+        <span class="product-badge badge-pasageri">Pasageri</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 02: PENTRU CINE -->
+<section class="section section-white" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-num-label"><span>02 · Pentru cine</span></div>
+    <h2 class="section-title" style="color:var(--white);">Construită pentru companiile care<br>trăiesc din transport și logistică.</h2>
+    <p class="section-desc">Această ofertă este creată pentru companiile care activează în transport rutier intern și internațional, logistică, distribuție, curierat, import-export, transport de persoane, transport turistic și administrarea flotelor auto comerciale.</p>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <img src="/camionete.jpg" alt="Transport rutier internațional">
+        <div class="audience-card-body">
+          <div class="audience-card-title">Transport rutier internațional</div>
+          <div class="audience-card-desc">Curse externe regulate, rute UE, Balcani, Turcia, Ucraina.</div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <img src="/logistica.jpg" alt="Logistică și distribuție">
+        <div class="audience-card-body">
+          <div class="audience-card-title">Logistică și distribuție</div>
+          <div class="audience-card-desc">Depozite, hub-uri de livrare, operatori 3PL, distribuție regională.</div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <img src="/corporate-insurance.webp" alt="Curierat și livrări">
+        <div class="audience-card-body">
+          <div class="audience-card-title">Curierat și livrări comerciale</div>
+          <div class="audience-card-desc">Last-mile, e-commerce, transport zilnic urban și regional.</div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <img src="/export.jpg" alt="Importatori și exportatori">
+        <div class="audience-card-body">
+          <div class="audience-card-title">Importatori și exportatori</div>
+          <div class="audience-card-desc">Marfă valoroasă, lanțuri de aprovizionare, transport multi-țară.</div>
+        </div>
+      </div>
+      <div class="audience-card" style="border-color:rgba(255,255,255,.25);">
+        <img src="/bus.jpg" alt="Transport persoane">
+        <div class="audience-card-body">
+          <div class="audience-card-title">Transport persoane</div>
+          <div class="audience-card-desc">Microbuze, autobuze, autocare, transport regulat și ocazional.</div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <img src="/flota-2.jpg" alt="Flote auto corporate">
+        <div class="audience-card-body">
+          <div class="audience-card-title">Flote auto corporate</div>
+          <div class="audience-card-desc">Vehicule de serviciu, leasing operațional, parc auto administrat.</div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <img src="/transportatori-auto.jpg" alt="Camioane și remorci">
+        <div class="audience-card-body">
+          <div class="audience-card-title">Camioane, autoutilitare, remorci</div>
+          <div class="audience-card-desc">Vehicule grele, semiremorci, vehicule frigorifice, specializate.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 03: IMAGINEA DE ANSAMBLU -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-num-label"><span>03 · Imaginea de ansamblu</span></div>
+    <div class="overview-grid">
+      <div class="overview-text">
+        <h2 style="font-family:var(--font-h);font-size:clamp(1.75rem,3vw,2.5rem);font-weight:800;line-height:1.15;margin-bottom:20px;">Nu înseamnă<br>doar vehicule. Înseamnă<br><span class="accent" style="color:var(--primary);">marfă, șoferi, pasageri,<br>contracte și răspundere.</span></h2>
+        <p style="font-size:1rem;color:var(--text-muted);margin-bottom:24px;line-height:1.7;">O companie de transport poate avea RCAI și Carte Verde, dar să nu fie protejată corect pentru marfa transportată, răspunderea contractuală, daunele la vehicule, furtul mărfii sau pretențiile pasagerilor. De aceea, ING Broker recomandă o <strong style="color:var(--white);">analiză integrată a programului de asigurare</strong>.</p>
+        <div class="risks-table">
+          <div class="risk-row">Accident rutier</div>
+          <div class="risk-row">Avarie la vehicul</div>
+          <div class="risk-row">Furtul vehiculului</div>
+          <div class="risk-row">Furtul mărfii</div>
+          <div class="risk-row">Deteriorarea mărfii</div>
+          <div class="risk-row">Incendiu</div>
+          <div class="risk-row">Calamități naturale</div>
+          <div class="risk-row">Întârziere la livrare</div>
+          <div class="risk-row">Răspundere față de client</div>
+          <div class="risk-row">Răspundere față de pasageri</div>
+          <div class="risk-row">Daune produse terților</div>
+          <div class="risk-row">Litigii contractuale</div>
+          <div class="risk-row">Imobilizarea vehiculelor</div>
+          <div class="risk-row">Pierderea veniturilor</div>
+          <div class="risk-row">Afectarea reputației</div>
+        </div>
+      </div>
+      <div>
+        <div class="risk-sidebar">
+          <img src="/transportatori-auto-1.jpg" alt="Risc real transport">
+          <div class="risk-sidebar-body">
+            <div class="risk-sidebar-label">Risc real</div>
+            <div class="risk-sidebar-title">15+ tipuri de incidente pot afecta o operațiune de transport.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 04: PRODUSE -->
+<section class="section section-alt" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-num-label"><span>04 · Produse</span></div>
+    <h2 class="section-title" style="color:var(--white);">Șase tipuri de asigurări.<br>Un singur program.</h2>
+    <p class="section-desc">Pentru fiecare risc operațional există o poliță potrivită. ING Broker le construiește într-un program coerent pentru flota dumneavoastră.</p>
+    <div class="products-grid">
+      <!-- RCAI -->
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="/rca-red-car.jpg" alt="RCAI">
+          <span class="product-card-tag tag-obligatoriu">Obligatoriu</span>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">RCAI · răspundere civilă auto internă</div>
+          <div class="product-card-desc">Asigurarea obligatorie de răspundere civilă auto pentru prejudiciile produse terților în accidente, pe teritoriul Republicii Moldova. Pentru flote, administrarea corectă previne expirările, amenzile și riscul de blocaj în trafic sau la frontieră.</div>
+        </div>
+      </div>
+      <!-- CARTE VERDE -->
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="/carte_verde.jpg" alt="Carte Verde">
+          <span class="product-card-tag tag-international">Internațional</span>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">Carte Verde · transport internațional</div>
+          <div class="product-card-desc">Esențială pentru vehiculele care circulă în afara Republicii Moldova. Oferă protecție de răspundere civilă auto în țările incluse în sistemul internațional Carte Verde, conform condițiilor și limitelor din poliță.</div>
+        </div>
+      </div>
+      <!-- CASCO -->
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="/asigurare-casco.jpg" alt="CASCO">
+          <span class="product-card-tag tag-facultativ">Facultativ</span>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">CASCO · protecția vehiculelor companiei</div>
+          <div class="product-card-desc">Asigurare facultativă care poate proteja vehiculele companiei împotriva accidentelor, avariilor, furtului, incendiului, vandalismului, calamităților naturale sau altor daune, în funcție de condițiile poliței.</div>
+          <div class="product-section-label">Vehicule eligibile</div>
+          <div class="product-mini-grid">
+            <div class="product-mini-item">Camioane</div>
+            <div class="product-mini-item">Autoutilitare</div>
+            <div class="product-mini-item">Autoturisme de serviciu</div>
+            <div class="product-mini-item">Remorci, semiremorci</div>
+            <div class="product-mini-item">Vehicule frigorifice</div>
+            <div class="product-mini-item">Vehicule în leasing</div>
+          </div>
+        </div>
+      </div>
+      <!-- CMR -->
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="/cargo.jpg" alt="CMR">
+          <span class="product-card-tag tag-raspundere">Răspundere</span>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">CMR · răspunderea transportatorului față de marfă</div>
+          <div class="product-card-desc">Importantă pentru transportatorii rutieri care transportă marfă pentru clienți, în special în transportul internațional. Poate acoperi răspunderea transportatorului pentru pierderea, deteriorarea sau întârzierea mărfii, în limitele și condițiile poliței.</div>
+          <div class="product-section-label">De verificat înainte de semnare</div>
+          <div class="product-mini-grid">
+            <div class="product-mini-item">Limita de răspundere</div>
+            <div class="product-mini-item">Teritoriul acoperit</div>
+            <div class="product-mini-item">Tipurile de marfă</div>
+            <div class="product-mini-item">Acoperirea pentru furt</div>
+            <div class="product-mini-item">Parcări securizate</div>
+            <div class="product-mini-item">Excluderile poliței</div>
+            <div class="product-mini-item">Documente necesare</div>
+            <div class="product-mini-item">Procedura de daună</div>
+          </div>
+        </div>
+      </div>
+      <!-- CARGO -->
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="/cargo-truck.jpg" alt="Cargo">
+          <span class="product-card-tag tag-marfa">Marfă</span>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">Cargo · asigurarea mărfii transportate</div>
+          <div class="product-card-desc">Protejează interesul proprietarului mărfii în timpul transportului. Diferită de CMR: CMR protejează răspunderea transportatorului, iar Cargo protejează marfa propriu-zisă.</div>
+          <div class="product-section-label">Cine are nevoie</div>
+          <div class="product-mini-grid">
+            <div class="product-mini-item">Importatori</div>
+            <div class="product-mini-item">Exportatori</div>
+            <div class="product-mini-item">Producători</div>
+            <div class="product-mini-item">Distribuitori</div>
+            <div class="product-mini-item">Comercianți</div>
+            <div class="product-mini-item">Marfă valoroasă</div>
+          </div>
+          <div class="benefit-box">
+            <div class="benefit-box-label">Beneficiu pentru flotă</div>
+            <div class="benefit-box-text">Protecție directă pentru valoarea mărfii · complementară cu CMR pentru o acoperire cât mai completă.</div>
+          </div>
+        </div>
+      </div>
+      <!-- PASAGERI -->
+      <div class="product-card">
+        <div class="product-card-img">
+          <img src="/bus.jpg" alt="Răspundere pasageri">
+          <span class="product-card-tag tag-pasageri">Pasageri</span>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">Răspunderea transportatorului față de pasageri</div>
+          <div class="product-card-desc">Companiile care transportă persoane au riscuri diferite față de transportatorii de marfă. În cazul unui accident, pot apărea pretenții din partea pasagerilor, cheltuieli medicale, litigii și pierderi de reputație.</div>
+          <div class="product-section-label">Tipuri de transport</div>
+          <div class="product-mini-grid">
+            <div class="product-mini-item">Microbuze</div>
+            <div class="product-mini-item">Autobuze</div>
+            <div class="product-mini-item">Autocare</div>
+            <div class="product-mini-item">Transport turistic</div>
+            <div class="product-mini-item">Curse internaționale</div>
+            <div class="product-mini-item">Transport corporate</div>
+            <div class="product-mini-item">Transport regulat</div>
+            <div class="product-mini-item">Transport ocazional</div>
+          </div>
+          <div class="benefit-box">
+            <div class="benefit-box-label">Beneficiu pentru flotă</div>
+            <div class="benefit-box-text">Protecție pentru pasageri și pentru reputația companiei în cazul incidentelor din transportul de persoane.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 05: CMR vs CARGO -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-num-label"><span>05 · CMR vs Cargo</span></div>
+    <h2 class="section-title" style="color:var(--white);">CMR vs Cargo –<br>pe înțelesul antreprenorului.</h2>
+    <p class="section-desc">Două polițe care par similare, dar protejează părți diferite ale lanțului de transport.</p>
+    <div class="comparison-grid">
+      <div class="comparison-card">
+        <span class="comparison-tag tag-transportatori" style="background:#7C3AED;color:#fff;">Pentru transportatori</span>
+        <div class="comparison-title">CMR</div>
+        <div class="comparison-sub">Răspunderea transportatorului față de clientul mărfii.</div>
+        <ul class="comparison-list">
+          <li>Protejează răspunderea transportatorului</li>
+          <li>Se aplică atunci când transportatorul este răspunzător</li>
+          <li>Importantă pentru companiile de transport rutier</li>
+          <li>Depinde de documente, limite, teritoriu și condiții</li>
+        </ul>
+      </div>
+      <div class="comparison-card">
+        <span class="comparison-tag" style="background:#D97706;color:#fff;">Pentru proprietarii mărfii</span>
+        <div class="comparison-title">Cargo</div>
+        <div class="comparison-sub">Asigurarea efectivă a mărfii transportate.</div>
+        <ul class="comparison-list">
+          <li>Protejează marfa proprietarului</li>
+          <li>Importantă pentru importatori și exportatori</li>
+          <li>Poate oferi protecție mai directă pentru bunuri</li>
+          <li>Utilă pentru mărfuri valoroase sau sensibile</li>
+        </ul>
+      </div>
+      <div class="conclusion-box">
+        <div class="conclusion-icon">✓</div>
+        <div>
+          <div class="conclusion-title">Concluzie</div>
+          <div class="conclusion-text">Pentru multe companii, combinația <span class="hl">CMR + Cargo</span> poate oferi o protecție mai completă decât o singură poliță.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 06: ROLUL BROKERULUI -->
+<section class="section section-alt" style="background:var(--bg-alt);">
+  <div class="container">
+    <div class="section-num-label"><span>06 · Rolul brokerului</span></div>
+    <h2 class="section-title" style="color:var(--white);">Consultanță și administrare,<br>nu doar emisiune de polițe.</h2>
+    <div class="broker-grid">
+      <div class="broker-visual">
+        <img src="/transportatori-auto.jpg" alt="Rolul brokerului ING">
+        <div class="broker-overlay">
+          <div class="broker-overlay-label">Rolul brokerului</div>
+          <div class="broker-overlay-text">Consultanță și administrare, nu doar emisiune de polițe.</div>
+        </div>
+      </div>
+      <div>
+        <p class="broker-desc">Rolul ING Broker este să ajute compania să înțeleagă ce riscuri are, ce polițe sunt necesare, ce limite trebuie verificate și ce excluderi pot afecta despăgubirea.</p>
+        <div class="broker-steps">
+          <div class="step-item">
+            <div class="step-num">01</div>
+            <div><div class="step-title">Analiza flotei și a activității</div><div class="step-desc">Inventariem vehiculele, tipul de operațiuni, rutele, marfa transportată și expunerile reale.</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">02</div>
+            <div><div class="step-title">Verificarea necesarului</div><div class="step-desc">RCAI, Carte Verde, CASCO, CMR, Cargo și răspundere față de pasageri · ce este obligatoriu și ce este recomandat.</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">03</div>
+            <div><div class="step-title">Comparație între oferte</div><div class="step-desc">Comparăm propunerile mai multor asigurători pe criterii reale: limite, franșize, excluderi, teritoriu.</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">04</div>
+            <div><div class="step-title">Explicare clară a condițiilor</div><div class="step-desc">Limite, franșize, excluderi · totul tradus în limbaj de business, înainte de semnare.</div></div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">05</div>
+            <div><div class="step-title">Organizarea reînnoirilor</div><div class="step-desc">Calendar de valabilități, notificări pentru flotă, prevenirea expirărilor.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 07: AVANTAJE -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-num-label"><span>07 · Avantaje</span></div>
+    <h2 class="section-title" style="color:var(--white);">Ce câștigă concret compania dvs.</h2>
+    <p class="section-desc">Un program coerent de asigurare nu este doar despre acoperire. Este despre timp, control și liniște operațională.</p>
+    <div class="advantages-grid">
+      <div class="advantage-card">
+        <div class="advantage-icon">🛡️</div>
+        <div class="advantage-text">Protecție pentru vehicule, marfă și pasageri într-un program unitar.</div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-icon">📁</div>
+        <div class="advantage-text">Administrare centralizată a polițelor · un singur punct de contact.</div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-icon">⏱️</div>
+        <div class="advantage-text">Economie de timp pentru echipa de management.</div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-icon">📅</div>
+        <div class="advantage-text">Calendar reînnoire automatizat · fără riscul de a rămâne neacoperit.</div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-icon">🎧</div>
+        <div class="advantage-text">Suport profesionist și asistat în caz de daună.</div>
+      </div>
+      <div class="advantage-card">
+        <div class="advantage-icon">🏆</div>
+        <div class="advantage-text">Imagine mai serioasă în fața clienților și partenerilor contractuali.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 08: ATENȚIE -->
+<section class="warning-section">
+  <div class="container">
+    <div class="section-num-label"><span>08 · Atenție</span></div>
+    <div class="warning-grid">
+      <div>
+        <div class="warning-title">În transport, <span class="warning-title-accent" style="color:var(--primary);">cea mai ieftină poliță</span> poate deveni cea mai scumpă decizie.</div>
+        <p class="warning-desc">Diferența dintre o poliță bună și una formală apare în momentul daunei. Prețul este important, dar nu trebuie analizat separat de limitele de acoperire, franșize, excluderi și condițiile de despăgubire.</p>
+        <div class="warning-features">
+          <div class="warning-feature">
+            <div class="warning-feature-icon">📞</div>
+            <div class="warning-feature-text">Răspuns în același ciclu de business pentru gestionarea daunei.</div>
+          </div>
+          <div class="warning-feature">
+            <div class="warning-feature-icon">🔒</div>
+            <div class="warning-feature-text">Confidențialitate completă a datelor flotei și contractelor.</div>
+          </div>
+        </div>
+        <br><a href="#cerere-oferta" class="btn-primary" style="display:inline-flex;margin-top:24px;">Cere o analiză comparativă →</a>
+      </div>
+      <div class="checklist-card">
+        <div class="checklist-title">Checklist înainte de semnare</div>
+        <div class="checklist-subtitle">8 puncte de verificat în orice poliță</div>
+        <div class="checklist-items">
+          <div class="checklist-item"><div class="checklist-check"></div><span class="checklist-text">Limite de despăgubire</span></div>
+          <div class="checklist-item"><div class="checklist-check"></div><span class="checklist-text">Franșize</span></div>
+          <div class="checklist-item"><div class="checklist-check"></div><span class="checklist-text">Excluderi</span></div>
+          <div class="checklist-item"><div class="checklist-check"></div><span class="checklist-text">Teritoriu acoperit</span></div>
+          <div class="checklist-item"><div class="checklist-check"></div><span class="checklist-text">Obligațiile șoferului</span></div>
+          <div class="checklist-item"><div class="checklist-check"></div><span class="checklist-text">Condiții privind furtul</span></div>
+          <div class="checklist-item"><div class="checklist-check"></div><span class="checklist-text">Procedura de notificare a daunei</span></div>
+          <div class="checklist-item"><div class="checklist-check"></div><span class="checklist-text">Documente necesare la daună</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 09: CERERE OFERTĂ -->
+<section class="cta-section" id="cerere-oferta">
+  <div class="container">
+    <div class="section-num-label"><span>09 · Cerere ofertă</span></div>
+    <div class="cta-grid">
+      <div>
+        <h2 class="cta-title" style="color:var(--white);">Solicită ofertă pentru<br>flota companiei.</h2>
+        <p class="cta-desc">Dacă administrați o flotă auto, transportați marfă, efectuați curse internaționale sau transportați pasageri, ING Broker vă poate ajuta să construiți un program de asigurare potrivit pentru compania dumneavoastră.</p>
+        <div class="cta-features">
+          <div class="cta-feature"><span class="cta-feature-icon">📞</span>Răspuns într-un singur ciclu de business.</div>
+          <div class="cta-feature"><span class="cta-feature-icon">🔒</span>Confidențialitate completă a datelor flotei.</div>
+          <div class="cta-feature"><span class="cta-feature-icon">✓</span>Broker autorizat CNPF. Plasament internațional.</div>
+        </div>
+      </div>
+      <div class="form-card">
+        <form action="https://formsubmit.co/info@ing-broker.md" method="POST">
+          <input type="hidden" name="_subject" value="Cerere ofertă Transportatori Auto">
+          <input type="hidden" name="_next" value="https://ing-broker.vercel.app/multumim">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Nume companie</label>
+              <input class="form-input" type="text" name="companie" placeholder="SRL / SA" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Persoană de contact</label>
+              <input class="form-input" type="text" name="contact" placeholder="Nume și funcție" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Telefon</label>
+              <input class="form-input" type="tel" name="telefon" placeholder="+373 ...">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input class="form-input" type="email" name="email" placeholder="nume@companie.md" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Număr de vehicule</label>
+              <input class="form-input" type="number" name="vehicule" placeholder="ex: 12">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Tip activitate</label>
+              <select class="form-input" name="activitate">
+                <option value="">Selectează...</option>
+                <option>Transport rutier intern</option>
+                <option>Transport rutier internațional</option>
+                <option>Logistică și distribuție</option>
+                <option>Transport persoane</option>
+                <option>Curierat</option>
+                <option>Import / Export</option>
+                <option>Flotă corporate</option>
+                <option>Altele</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tipuri de asigurări dorite</label>
+            <div class="checkboxes-group">
+              <label class="checkbox-item"><input type="checkbox" name="asigurari" value="RCAI"> RCAI</label>
+              <label class="checkbox-item"><input type="checkbox" name="asigurari" value="Carte Verde"> Carte Verde</label>
+              <label class="checkbox-item"><input type="checkbox" name="asigurari" value="CASCO"> CASCO</label>
+              <label class="checkbox-item"><input type="checkbox" name="asigurari" value="CMR"> CMR</label>
+              <label class="checkbox-item"><input type="checkbox" name="asigurari" value="Cargo"> Cargo</label>
+              <label class="checkbox-item"><input type="checkbox" name="asigurari" value="Răspundere pasageri"> Pasageri</label>
+            </div>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Trimite cererea →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/LOGO-ING-ALB-3.png" alt="ING Broker">
+        <p>Broker de asigurare autorizat CNPF. Soluții specializate pentru companii și flote auto din Republica Moldova.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Oferte</div>
+        <ul class="footer-links">
+          <li><a href="/saloane-auto.html">Saloane Auto</a></li>
+          <li><a href="/oferte/transportatori-auto">Transportatori Auto</a></li>
+          <li><a href="/oferte/pi-insurance-it">Companii IT</a></li>
+          <li><a href="/oferte/energie-regenerabila">Energie Regenerabilă</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Asigurări</div>
+        <ul class="footer-links">
+          <li><a href="/asigurari">Tipuri de asigurări</a></li>
+          <li><a href="/contact">Solicită ofertă</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">ING Broker</div>
+        <ul class="footer-links">
+          <li><a href="/rolul-nostru">Rolul nostru</a></li>
+          <li><a href="/intrebari">Întrebări frecvente</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 ING Broker SRL. Autorizat CNPF.</span>
+      <span class="footer-copy">ing-broker.md</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Header scroll effect
+var hdr = document.getElementById('hdr');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 60) hdr.classList.add('scrolled');
+  else hdr.classList.remove('scrolled');
+});
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>
