@@ -21,27 +21,27 @@ const productImages = [
 const products = [
   {
     title: 'RCA Flotă',
-    desc: 'Asigurare de răspundere civilă auto obligatorie pentru companii din Moldova. La o flotă de minimum 3 vehicule, negociem tarife de la toți cei 13 asigurători autorizați CNPF și selectăm oferta optimă. Polițele RCA pentru flotă se emit centralizat, cu o singură dată de reînnoire și raportare lunară. Economii reale față de polițele individuale: 10–18% la volum mediu, 20–25% la flote mari.',
+    desc: 'Asigurare obligatorie pentru toate vehiculele companiei. La 3+ vehicule negociem tarife cu toți cei 13 asigurători CNPF — economii reale de 10–25% față de polița la ghișeu.',
   },
   {
     title: 'Carte Verde',
-    desc: 'Asigurare obligatorie pentru circulația internațională în 47 de țări membre ale sistemului. Esențială pentru orice vehicul care traversează frontiera Moldovei - fie că mergeți în România, UE sau Ucraina. Prețuri 2026: autoturism 15 zile - 703–1.343 MDL; camion C2 12 luni - 10.887–17.580 MDL. Broker ING compară toți asigurătorii din Moldova și emite polița în 30 de minute.',
+    desc: 'Circulație în 47 de țări, obligatorie la traversarea frontierei. Prețuri 2026: 703–1.343 MDL (autoturism 15 zile). Brokerul compară și emite în 30 de minute.',
   },
   {
     title: 'CASCO',
-    desc: 'Protecție completă pentru daunele proprii ale vehiculelor din flotă: coliziuni (vinovați sau nu), furt total sau parțial, vandalism, incendiu, explozie, grindină, inundații, copaci căzuți. Poate include și daune în parcare fără autor identificat. Pentru flote corporative negociem francize avantajoase și condiții de daună simplificate - raport daune deschis sau email și suntem noi în dialog cu asigurătorul.',
+    desc: 'Daune proprii: coliziuni, furt, grindină, vandalism, incendiu — indiferent de vinovăție. Francize negociate, daune gestionate direct de brokerul dvs. cu asigurătorul.',
   },
   {
     title: 'CMR',
-    desc: 'Răspunderea transportatorului rutier față de marfa clienților, conform Convenției CMR. Obligatorie pentru orice transport internațional de marfă. Acoperă pagubele, pierderile și întârzierile în livrare imputabile transportatorului. Esențială pentru companiile de logistică, expeditori și transportatori care operează pe coridoarele Moldova–România–UE–Ucraina. Suma asigurată se stabilește per transport sau per an.',
+    desc: 'Răspunderea legală față de marfa clienților pe coridorul Moldova–România–UE. Obligatorie pentru orice transport rutier internațional de marfă.',
   },
   {
     title: 'Cargo',
-    desc: 'Asigurarea mărfii în tranzit - independentă de culpa transportatorului. Acoperă pierderea sau deteriorarea mărfii pe întreaga rută: drumul auto, depozitare temporară, transport combinat (rutier + feroviar + naval + aerian). Condiții Institute Cargo Clauses A, B sau C, adaptate tipului de marfă. Vitală pentru importatori, exportatori și companii cu lanț logistic complex activ pe coridoarele comerciale ale Moldovei.',
+    desc: 'Marfa asigurată de la depozit la destinatar, independent de culpa transportatorului. Condiții ICC A, B sau C adaptate tipului de produs și riscurilor de traseu.',
   },
   {
     title: 'Răspundere Călători',
-    desc: 'Asigurare obligatorie pentru transportul comercial de persoane: microbuze rutiere, autocare, taximetrie corporativă, transport angajați. Acoperă prejudiciile fizice și materiale suferite de pasageri în caz de accident. Cerință legală pentru deținătorii de licență de transport persoane în Moldova. Negociem condiții avantajoase pentru operatori cu un număr mare de vehicule - reduceri de volum și serviciu prioritar la daune.',
+    desc: 'Cerință legală pentru microbuze, autocare și transport comercial persoane. Acoperă prejudiciile fizice și materiale ale pasagerilor în caz de accident.',
   },
 ];
 
@@ -222,7 +222,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
               <span className="text-primary italic font-serif normal-case">Protejăm afacerea.</span>
             </h1>
             <p className="text-2xl text-white/80 font-light leading-relaxed mb-12 max-w-2xl">
-              RCA, Carte Verde, CASCO, CMR, Cargo - toate polițele flotei dvs. negociate cu toți asigurătorii din Moldova, gestionate de un singur broker.
+              Trimiteți lista flotei astăzi. Primiți ofertă comparativă de la toți asigurătorii din Moldova în 24 de ore.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <motion.a
@@ -300,13 +300,13 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
             </div>
             <div className="lg:col-span-7 pt-4">
               <p className="text-2xl text-gray-700 font-light leading-relaxed mb-8">
-                O companie din Moldova cu 10 vehicule plătește în medie cu 20% mai puțin dacă asigură flota printr-un broker față de polițe individuale la ghișeu.
+                Fiecare vehicul neacoperit este un risc financiar direct. Un accident cu un camion neasigurat poate costa 500.000+ MDL - mai mult decât prima pentru întreaga flotă pe 5 ani.
               </p>
               <p className="text-lg text-gray-500 font-light leading-relaxed mb-8">
-                Insurance ING Broker SRL negociază direct cu toți cei 13 asigurători autorizați CNPF, compară ofertele și selectează combinația optimă pentru fiecare tip de vehicul din flota dvs. Un singur contract, un singur manager, o singură dată de reînnoire - indiferent dacă aveți 3 sau 300 de vehicule.
+                Brokerul ING compară simultan toate ofertele de la cei 13 asigurători autorizați CNPF. Nu alegeți la întâmplare - alegeți cel mai bun tarif disponibil în Moldova, pentru fiecare tip de vehicul în parte.
               </p>
               <p className="text-lg text-gray-500 font-light leading-relaxed">
-                Serviciul de brokeraj este gratuit pentru compania dvs. Comisionul nostru este plătit de asigurător din prima pe care o plătiți oricum - dar noi negociem un tarif mai mic decât ați obține direct.
+                Serviciul este 100% gratuit pentru compania dvs. Comisionul brokerului vine de la asigurător - dar noi negociem un preț final mai mic decât ați obține dacă ați merge direct.
               </p>
               <div className="h-px w-full bg-gray-100 mt-10" />
             </div>
@@ -609,11 +609,11 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
       <section className="py-32 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 text-left">
           <h2 className="text-5xl md:text-7xl font-bold text-secondary tracking-tighter mb-10">
-            Trimiteți lista flotei <br />
-            <span className="text-gray-300">astăzi.</span>
+            Ofertă completă <br />
+            <span className="text-gray-300">în 24 de ore.</span>
           </h2>
           <p className="text-xl text-gray-500 font-light mb-4 max-w-2xl">
-            Ofertă personalizată în 24 de ore. Comparăm toți asigurătorii din Moldova. Fără obligații.
+            Trimiteți lista flotei acum - nr. de înmatriculare, tip vehicul, an fabricație. Primiți comparativ complet de prețuri de la toți asigurătorii din Moldova.
           </p>
           <p className="text-sm text-gray-400 font-light mb-12">
             Insurance ING Broker SRL — str. Pan Halippa 9, Chișinău, Moldova — CNPF autorizat
