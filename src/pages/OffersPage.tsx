@@ -55,6 +55,13 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           link: '/oferte/transportatori-auto'
         },
         {
+          id: 'flote-auto',
+          title: 'Flotă Auto Corporativă',
+          desc: 'Program centralizat de asigurare pentru companii cu 3+ vehicule. RCA, Carte Verde, CASCO, CMR — comparăm toți cei 6 asigurători din Moldova. Ofertă în 24h.',
+          image: '/camionete.jpg',
+          link: '/oferte/flote-auto'
+        },
+        {
           id: 'cyber-insurance',
           title: 'Cyber Insurance',
           desc: 'Protecție avansată împotriva atacurilor cibernetice, scurgerilor de date și întreruperii afacerii din cauze informatice.',
@@ -110,6 +117,13 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           link: '/oferte/transportatori-auto'
         },
         {
+          id: 'flote-auto',
+          title: 'Корпоративный автопарк',
+          desc: 'Централизованная программа страхования для компаний с 3+ автомобилями. ОСАГО, Зелёная карта, КАСКО, CMR — сравниваем всех 6 страховщиков Молдовы. Предложение за 24ч.',
+          image: '/camionete.jpg',
+          link: '/oferte/flote-auto'
+        },
+        {
           id: 'cyber-insurance',
           title: 'Киберстрахование',
           desc: 'Передовая защита от кибератак, утечек данных и прерывания бизнеса по ИТ-причинам.',
@@ -163,6 +177,13 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           desc: 'Solutions for commercial fleets and transporters, covering cargo (CMR), vehicles (CASCO), and liability.',
           image: '/transportatori-auto.jpg',
           link: '/oferte/transportatori-auto'
+        },
+        {
+          id: 'flote-auto',
+          title: 'Corporate Fleet Insurance',
+          desc: 'Centralized insurance program for companies with 3+ vehicles. RCA, Green Card, CASCO, CMR — we compare all 6 insurers in Moldova. Offer within 24h.',
+          image: '/camionete.jpg',
+          link: '/oferte/flote-auto'
         },
         {
           id: 'cyber-insurance',
