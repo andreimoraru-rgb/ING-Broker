@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Language } from '../translations';
 import { SEO } from '../components/SEO';
 import { motion, AnimatePresence } from 'motion/react';
-import { Phone, Mail, ShieldCheck, ArrowRight, ArrowLeft, Truck, ChevronUp, ChevronDown } from 'lucide-react';
+import { Phone, Mail, ShieldCheck, ArrowRight, ArrowLeft, Truck, ChevronDown } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 interface FleetAutoPageProps {
@@ -563,51 +563,44 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
       </section>
 
       {/* FAQ */}
-      <section className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-12 gap-20">
-            <div className="lg:col-span-4">
-              <div className="w-16 h-1 bg-primary mb-10" />
-              <h2 className="text-5xl font-bold text-secondary tracking-tighter leading-[0.9] mb-6">
-                Întrebări Frecvente
-              </h2>
-              <p className="text-gray-500 font-light leading-relaxed">
-                Tot ce trebuie să știți despre asigurările de flotă auto pentru companii din Moldova.
-              </p>
-            </div>
-            <div className="lg:col-span-8">
-              {faqs.map((faq, i) => (
-                <div key={i} className="border-b border-gray-100 last:border-b-0">
-                  <button
-                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full text-left py-7 flex items-center justify-between gap-8 group"
-                  >
-                    <span className={`text-base font-bold tracking-tight transition-colors ${openFaq === i ? 'text-primary' : 'text-secondary group-hover:text-primary'}`}>
-                      {faq.q}
-                    </span>
-                    <div className="shrink-0 w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-md">
-                      {openFaq === i
-                        ? <ChevronUp size={16} className="text-white" strokeWidth={2.5} />
-                        : <ChevronDown size={16} className="text-white" strokeWidth={2.5} />
-                      }
-                    </div>
-                  </button>
-                  <AnimatePresence>
-                    {openFaq === i && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.25 }}
-                        className="overflow-hidden"
-                      >
-                        <p className="text-gray-500 font-light leading-relaxed pb-7 text-sm">{faq.a}</p>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              ))}
-            </div>
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-left mb-16">
+            <h2 className="text-4xl font-bold text-secondary tracking-tighter mb-4">Întrebări Frecvente</h2>
+            <p className="text-gray-500 font-light">Tot ce trebuie să știți despre asigurările de flotă auto pentru companii din Moldova.</p>
+          </div>
+
+          <div className="space-y-2">
+            {faqs.map((faq, i) => (
+              <div key={i} className={`border-b border-gray-100 transition-all duration-500 ${openFaq === i ? 'bg-gray-50/50 px-4 -mx-4 shadow-inner' : 'hover:bg-gray-50/30'}`}>
+                <button
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  className="w-full py-7 flex justify-between items-center text-left group"
+                >
+                  <span className={`text-lg font-bold tracking-tight transition-all duration-500 ${openFaq === i ? 'text-primary translate-x-4' : 'text-secondary group-hover:text-primary group-hover:translate-x-2'}`}>
+                    {faq.q}
+                  </span>
+                  <div className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all duration-500 ${openFaq === i ? 'bg-primary border-primary text-white rotate-180 shadow-lg shadow-primary/30' : 'border-gray-200 text-gray-400 group-hover:border-primary group-hover:text-primary'}`}>
+                    <ChevronDown size={16} />
+                  </div>
+                </button>
+                <AnimatePresence initial={false}>
+                  {openFaq === i && (
+                    <motion.div
+                      key="content"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1, transition: { height: { duration: 0.5, ease: [0.04, 0.62, 0.23, 0.98] }, opacity: { duration: 0.3, delay: 0.1 } } }}
+                      exit={{ height: 0, opacity: 0, transition: { height: { duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }, opacity: { duration: 0.2 } } }}
+                      className="overflow-hidden"
+                    >
+                      <div className={`pb-8 text-gray-500 leading-relaxed font-light max-w-3xl transition-all duration-700 ${openFaq === i ? 'translate-x-2' : ''}`}>
+                        {faq.a}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
           </div>
         </div>
       </section>
