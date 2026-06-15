@@ -48,16 +48,9 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           link: '/business/benefits'
         },
         {
-          id: 'transportatori-auto',
-          title: 'Transportatori Auto',
-          desc: 'Soluții pentru flote comerciale și transportatori, acoperind marfa (CMR), vehiculele (CASCO) și răspunderea.',
-          image: '/transportatori-auto.jpg',
-          link: '/oferte/flote-auto'
-        },
-        {
           id: 'flote-auto',
           title: 'Flotă Auto Corporativă',
-          desc: 'Program centralizat de asigurare pentru companii cu 3+ vehicule. RCA, Carte Verde, CASCO, CMR — comparăm toți cei 6 asigurători din Moldova. Ofertă în 24h.',
+          desc: 'Program centralizat de asigurare pentru companii cu 3+ vehicule. RCA, Carte Verde, CASCO, CMR - comparăm toți cei 6 asigurători din Moldova. Ofertă în 24h.',
           image: '/camionete.jpg',
           link: '/oferte/flote-auto'
         },
@@ -110,16 +103,9 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           link: '/business/benefits'
         },
         {
-          id: 'transportatori-auto',
-          title: 'Автоперевозчики',
-          desc: 'Решения для коммерческих автопарков и перевозчиков, покрывающие грузы (CMR), транспортные средства (CASCO) и ответственность.',
-          image: '/transportatori-auto.jpg',
-          link: '/oferte/flote-auto'
-        },
-        {
           id: 'flote-auto',
           title: 'Корпоративный автопарк',
-          desc: 'Централизованная программа страхования для компаний с 3+ автомобилями. ОСАГО, Зелёная карта, КАСКО, CMR — сравниваем всех 6 страховщиков Молдовы. Предложение за 24ч.',
+          desc: 'Централизованная программа страхования для компаний с 3+ автомобилями. ОСАГО, Зелёная карта, КАСКО, CMR - сравниваем всех 6 страховщиков Молдовы. Предложение за 24ч.',
           image: '/camionete.jpg',
           link: '/oferte/flote-auto'
         },
@@ -172,16 +158,9 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           link: '/business/benefits'
         },
         {
-          id: 'transportatori-auto',
-          title: 'Auto Transporters',
-          desc: 'Solutions for commercial fleets and transporters, covering cargo (CMR), vehicles (CASCO), and liability.',
-          image: '/transportatori-auto.jpg',
-          link: '/oferte/flote-auto'
-        },
-        {
           id: 'flote-auto',
           title: 'Corporate Fleet Insurance',
-          desc: 'Centralized insurance program for companies with 3+ vehicles. RCA, Green Card, CASCO, CMR — we compare all 6 insurers in Moldova. Offer within 24h.',
+          desc: 'Centralized insurance program for companies with 3+ vehicles. RCA, Green Card, CASCO, CMR - we compare all 6 insurers in Moldova. Offer within 24h.',
           image: '/camionete.jpg',
           link: '/oferte/flote-auto'
         },
