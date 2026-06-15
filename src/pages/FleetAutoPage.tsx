@@ -12,7 +12,7 @@ interface FleetAutoPageProps {
 const productImages = [
   "/flota_1.jpg",
   "/carte-verde-van.png",
-  "/asigurare-casco.jpg",
+  "/casco-012.jpg",
   "/transportatori-auto.jpg",
   "/cargo.jpg",
   "/bus.jpg",
@@ -197,7 +197,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
       <section className="relative h-screen min-h-[700px] flex items-start pt-64 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/flota-hero.jpg"
+            src="/camionete.jpg"
             alt="Flotă auto corporativă asigurată - Insurance ING Broker Moldova"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
