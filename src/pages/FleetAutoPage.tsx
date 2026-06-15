@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { translations, Language } from '../translations';
+import { Language } from '../translations';
 import { SEO } from '../components/SEO';
-import { motion } from 'motion/react';
-import { Phone, Mail, ShieldCheck, ArrowRight, ArrowLeft, Truck } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Phone, Mail, ShieldCheck, ArrowRight, ArrowLeft, Truck, ChevronUp, ChevronDown } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 interface FleetAutoPageProps {
@@ -10,38 +10,38 @@ interface FleetAutoPageProps {
 }
 
 const productImages = [
-  "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1586528116493-a029325540fa?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+  "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800",
+  "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800",
+  "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800",
+  "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=800",
+  "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=800",
+  "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=800",
 ];
 
 const products = [
   {
     title: 'RCA Flotă',
-    desc: 'Asigurare obligatorie de răspundere civilă pentru toată flota. Tarif negociat per lot, gestiune centralizată a polițelor.',
+    desc: 'Asigurare de răspundere civilă auto obligatorie pentru companii din Moldova. La o flotă de minimum 3 vehicule, negociem tarife de la toți cei 13 asigurători autorizați CNPF și selectăm oferta optimă. Polițele RCA pentru flotă se emit centralizat, cu o singură dată de reînnoire și raportare lunară. Economii reale față de polițele individuale: 10–18% la volum mediu, 20–25% la flote mari.',
   },
   {
     title: 'Carte Verde',
-    desc: 'Circulație internațională în 47 țări. Obligatorie pentru vehiculele care traversează frontiera. Preț 2026: 703–1.343 MDL (15 zile, autoturisme).',
+    desc: 'Asigurare obligatorie pentru circulația internațională în 47 de țări membre ale sistemului. Esențială pentru orice vehicul care traversează frontiera Moldovei - fie că mergeți în România, UE sau Ucraina. Prețuri 2026: autoturism 15 zile - 703–1.343 MDL; camion C2 12 luni - 10.887–17.580 MDL. Broker ING compară toți asigurătorii din Moldova și emite polița în 30 de minute.',
   },
   {
     title: 'CASCO',
-    desc: 'Protecție pentru daune proprii - coliziuni, furt, vandalism, calamități naturale. Esențial pentru vehiculele de valoare ridicată.',
+    desc: 'Protecție completă pentru daunele proprii ale vehiculelor din flotă: coliziuni (vinovați sau nu), furt total sau parțial, vandalism, incendiu, explozie, grindină, inundații, copaci căzuți. Poate include și daune în parcare fără autor identificat. Pentru flote corporative negociem francize avantajoase și condiții de daună simplificate - raport daune deschis sau email și suntem noi în dialog cu asigurătorul.',
   },
   {
     title: 'CMR',
-    desc: 'Răspunderea transportatorului față de marfa clientului. Obligatorie pentru transport internațional rutier de marfă.',
+    desc: 'Răspunderea transportatorului rutier față de marfa clienților, conform Convenției CMR. Obligatorie pentru orice transport internațional de marfă. Acoperă pagubele, pierderile și întârzierile în livrare imputabile transportatorului. Esențială pentru companiile de logistică, expeditori și transportatori care operează pe coridoarele Moldova–România–UE–Ucraina. Suma asigurată se stabilește per transport sau per an.',
   },
   {
     title: 'Cargo',
-    desc: 'Asigurarea mărfii în tranzit - pe drum, în depozit, pe mare sau aer. Acoperă pierderile și daunele de-a lungul lanțului logistic.',
+    desc: 'Asigurarea mărfii în tranzit - independentă de culpa transportatorului. Acoperă pierderea sau deteriorarea mărfii pe întreaga rută: drumul auto, depozitare temporară, transport combinat (rutier + feroviar + naval + aerian). Condiții Institute Cargo Clauses A, B sau C, adaptate tipului de marfă. Vitală pentru importatori, exportatori și companii cu lanț logistic complex activ pe coridoarele comerciale ale Moldovei.',
   },
   {
     title: 'Răspundere Călători',
-    desc: 'Protecție pentru pasagerii transportați. Obligatorie pentru microbuze, autocare și servicii de transport persoane.',
+    desc: 'Asigurare obligatorie pentru transportul comercial de persoane: microbuze rutiere, autocare, taximetrie corporativă, transport angajați. Acoperă prejudiciile fizice și materiale suferite de pasageri în caz de accident. Cerință legală pentru deținătorii de licență de transport persoane în Moldova. Negociem condiții avantajoase pentru operatori cu un număr mare de vehicule - reduceri de volum și serviciu prioritar la daune.',
   },
 ];
 
@@ -70,42 +70,50 @@ const targets = [
 ];
 
 const advantages = [
-  { num: '01', title: 'Tarif negociat', desc: 'Economii de 15–20% față de polițe individuale, prin volum și relații directe cu asigurătorii.' },
-  { num: '02', title: 'Contract unic', desc: 'O singură relație contractuală pentru toată flota, indiferent de tipul vehiculelor.' },
-  { num: '03', title: 'Polițe sincronizate', desc: 'Toate polițele expiră în aceeași zi - nu mai ratați nicio reînnoire.' },
-  { num: '04', title: 'Manager dedicat', desc: 'Un specialist ING Broker se ocupă exclusiv de flota dvs. - disponibil telefonic sau email.' },
-  { num: '05', title: 'Raportare lunară', desc: 'Rapoarte clare cu situația polițelor, daunele deschise și costul per vehicul.' },
-  { num: '06', title: 'Adăugare rapidă', desc: 'Vehicul nou în flotă - poliță emisă în 2 ore, fără birocrație.' },
+  { num: '01', title: 'Tarif negociat cu asigurătorii', desc: 'Economii de 15–25% față de polițe individuale prin volum și relații directe cu toți asigurătorii autorizați CNPF din Moldova.' },
+  { num: '02', title: 'Contract unic de brokeraj', desc: 'O singură relație contractuală pentru toată flota, indiferent de numărul sau tipul vehiculelor - autoturisme, camioane, utilaje.' },
+  { num: '03', title: 'Polițe sincronizate ca dată', desc: 'Toate polițele expiră în aceeași zi. Un singur calendar de reînnoire, zero riscul de a circula fără asigurare valabilă.' },
+  { num: '04', title: 'Manager dedicat flotei dvs.', desc: 'Un specialist ING Broker răspunde exclusiv de portofoliul dvs. - telefon, email, WhatsApp. Nu căutați nimănui.' },
+  { num: '05', title: 'Raportare lunară transparentă', desc: 'Situația exactă a tuturor polițelor, daunele deschise și stadiul lor, costul per vehicul și economiile obținute.' },
+  { num: '06', title: 'Vehicul nou - poliță în 2 ore', desc: 'Adăugați un vehicul nou în flotă - trimiteți datele managerului și aveți polița emisă în mai puțin de 2 ore.' },
 ];
 
 const steps = [
-  { num: '01', title: 'Trimiteți lista flotei', desc: 'Nr. înmatriculare, tip vehicul, an fabricație. Un email sau WhatsApp e suficient.' },
-  { num: '02', title: 'Analizăm și negociem', desc: 'Comparăm ofertele de la toți asigurătorii autorizați din Moldova și negociem tariful.' },
-  { num: '03', title: 'Primiți oferta în 24h', desc: 'Ofertă detaliată cu prețuri finale, condiții și comparativ pe asigurători.' },
-  { num: '04', title: 'Semnați contractul', desc: 'Contract cadru de brokeraj - o singură semnătură pentru toată flota.' },
-  { num: '05', title: 'Polițele sunt active', desc: 'Emitem polițele, le gestionăm și vă anunțăm cu 30 zile înainte de orice expirare.' },
+  { num: '01', title: 'Trimiteți lista flotei', desc: 'Nr. înmatriculare, tip vehicul, an fabricație. Un email sau WhatsApp este suficient.' },
+  { num: '02', title: 'Analizăm și negociem', desc: 'Comparăm ofertele de la toți asigurătorii autorizați din Moldova și negociem tariful optim.' },
+  { num: '03', title: 'Primiți oferta în 24h', desc: 'Ofertă detaliată cu prețuri finale, condiții și comparativ pe toți asigurătorii disponibili.' },
+  { num: '04', title: 'Semnați contractul cadru', desc: 'Un singur contract de brokeraj - o semnătură pentru întreaga flotă, indiferent de tipuri și asigurători.' },
+  { num: '05', title: 'Polițele sunt active', desc: 'Emitem polițele, le gestionăm activ și vă anunțăm cu 30 de zile înainte de orice expirare.' },
 ];
 
 const faqs = [
   {
-    q: 'Câte vehicule sunt necesare pentru o asigurare de flotă?',
-    a: 'Minimum 3 vehicule. De la 10 vehicule în sus, negociem condiții preferențiale suplimentare cu asigurătorii.',
+    q: 'Câte vehicule sunt necesare pentru asigurare de flotă în Moldova?',
+    a: 'Minimum 3 vehicule pentru a beneficia de condiții de flotă. De la 10 vehicule în sus negociem reduceri suplimentare de volum cu asigurătorii. Flote mari (50+ vehicule) beneficiază de tarife individuale negociate direct cu conducerea asigurătorului.',
   },
   {
-    q: 'Se pot asigura tipuri mixte de vehicule (autoturisme + camioane)?',
-    a: 'Da. Gestionăm flote mixte - autoturisme, camioane, microbuze, utilaje. Fiecare categorie are tariful ei, dar contractul de brokeraj e unic.',
+    q: 'Cât costă asigurarea de flotă auto în Moldova?',
+    a: 'Depinde de tipul vehiculelor, vechime, istoricul de daune și numărul de vehicule. Față de polițe individuale, economiile sunt de 15–25%. Contactați-ne pentru o ofertă personalizată - o generăm în 24 de ore fără costuri și fără obligații.',
   },
   {
-    q: 'Cum se adaugă un vehicul nou în flotă?',
-    a: 'Sunați sau scrieți managerului dedicat. Poliță emisă în 2 ore, prima calculată pro-rata pentru perioada rămasă.',
+    q: 'Se pot asigura tipuri mixte de vehicule în aceeași flotă?',
+    a: 'Da. Gestionăm flote mixte - autoturisme, camioane, microbuze, semiremorci, utilaje. Fiecare categorie are tariful specific, dar există un singur contract de brokeraj și un singur manager de cont.',
   },
   {
-    q: 'Ce se întâmplă la daună pentru mai multe vehicule simultan?',
-    a: 'Intervenim direct cu asigurătorul. Experiența noastră în daune de flotă scurtează procesul de la luni la săptămâni.',
+    q: 'Cum se adaugă un vehicul nou cumpărat în flotă?',
+    a: 'Trimiteți datele vehiculului (serie șasiu, nr. înmatriculare, tip) managerului dvs. dedicat. Polița nouă este emisă în maximum 2 ore, prima calculată pro-rata pentru perioada rămasă din contractul de flotă.',
   },
   {
-    q: 'Carte Verde - de ce diferă prețul atât de mult între asigurători?',
-    a: 'Fiecare asigurător calculează riscul diferit. Diferența poate fi 100% pentru aceleași condiții. De aceea un broker care compară piața vă salvează bani reali.',
+    q: 'Ce se întâmplă la un accident care implică mai multe vehicule din flotă?',
+    a: 'Intervenim direct ca intermediar cu asigurătorul. Experiența noastră în gestionarea daunelor de flotă reduce semnificativ durata procesului. Aveți un singur punct de contact - managerul dvs. - care coordonează tot procesul de daune.',
+  },
+  {
+    q: 'Carte Verde - de ce variază prețul atât de mult între asigurători?',
+    a: 'Fiecare asigurător calculează riscul diferit. La 15 zile autoturism, diferența ajunge la 100% - între 703 MDL și 1.343 MDL în 2026. Un broker care compară toți asigurătorii vă salvează bani reali la fiecare poliță. La o flotă de 20 camioane cu Carte Verde anuală, diferența poate fi 100.000+ MDL pe an.',
+  },
+  {
+    q: 'Poate un broker din Moldova negocia cu asigurătorii europeni?',
+    a: 'Da. Insurance ING Broker SRL are acces la piețele internaționale de reasigurare prin parteneri specializați. Relevant în special pentru riscuri mari sau complexe care depășesc capacitatea pieței locale moldovenești.',
   },
 ];
 
@@ -123,20 +131,41 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Asigurare Flotă Auto Corporativă Moldova",
-    "description": "Asigurare flotă auto pentru companii din Moldova - RCA, Carte Verde, CASCO, CMR. Tarife negociate, contract unic, manager dedicat.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Insurance ING Broker SRL"
-    }
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Asigurare Flotă Auto Corporativă Moldova",
+        "description": "Asigurare flotă auto pentru companii din Moldova - RCA, Carte Verde, CASCO, CMR, Cargo. Tarife negociate cu toți asigurătorii autorizați CNPF. Manager dedicat, contract unic, economii 15-25%.",
+        "areaServed": { "@type": "Country", "name": "Moldova" },
+        "provider": {
+          "@type": "Organization",
+          "name": "Insurance ING Broker SRL",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "str. Pan Halippa, 9",
+            "addressLocality": "Chișinău",
+            "addressCountry": "MD"
+          },
+          "telephone": "+37369526003",
+          "email": "ingbroker@ingbroker.md"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(f => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
+      }
+    ]
   };
 
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title="Asigurare Flotă Auto Corporativă - ING Broker Moldova"
-        description="Asigurare flotă auto pentru companii din Moldova. RCA, Carte Verde, CASCO, CMR - tarife negociate, contract unic, manager dedicat. Economii 15-20% față de polițe individuale."
+        title="Asigurare Flotă Auto Moldova 2026 - RCA, CASCO, Carte Verde | ING Broker"
+        description="Asigurare flotă auto pentru companii din Moldova. RCA, Carte Verde, CASCO, CMR - tarife negociate cu toți asigurătorii CNPF. Manager dedicat, contract unic, economii 15-25%. Ofertă în 24h."
         lang={lang}
         schema={schema}
       />
@@ -169,7 +198,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1920"
-            alt="Flotă Auto Corporativă"
+            alt="Flotă auto corporativă asigurată - Insurance ING Broker Moldova"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
@@ -186,14 +215,14 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
           >
             <div className="flex items-center gap-4 mb-12">
               <div className="w-12 h-[1px] bg-primary" />
-              <span className="text-white text-[10px] font-bold uppercase tracking-[0.4em]">Soluții Corporate</span>
+              <span className="text-white text-[10px] font-bold uppercase tracking-[0.4em]">Asigurări Corporate — Chișinău, Moldova</span>
             </div>
             <h1 className="text-6xl md:text-8xl font-black uppercase text-white tracking-tighter mb-8 leading-[0.9]">
               Asigurăm flota. <br />
               <span className="text-primary italic font-serif normal-case">Protejăm afacerea.</span>
             </h1>
             <p className="text-2xl text-white/80 font-light leading-relaxed mb-12 max-w-2xl">
-              RCA, Carte Verde, CASCO, CMR - toate polițele flotei dvs. negociate și gestionate de un singur broker.
+              RCA, Carte Verde, CASCO, CMR, Cargo - toate polițele flotei dvs. negociate cu toți asigurătorii din Moldova, gestionate de un singur broker.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <motion.a
@@ -225,8 +254,8 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
             {[
               '3+ vehicule - minim flotă',
-              'Ofertă în 24 ore',
-              '15-20% economii vs individual',
+              'Ofertă personalizată în 24h',
+              '15-25% economii vs individual',
               'Manager dedicat flotei',
             ].map((text, i) => (
               <div key={i} className="flex items-center gap-5 group cursor-default">
@@ -254,14 +283,32 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                 className="text-5xl md:text-6xl font-bold text-secondary tracking-tighter leading-[0.9] mb-8 cursor-default group"
               >
                 Flota ta, <br />
-                <span className="text-primary italic font-serif group-hover:text-secondary transition-colors duration-500">protejată</span>
+                <span className="text-primary italic font-serif group-hover:text-secondary transition-colors duration-500">protejată complet</span>
               </motion.h2>
+              <div className="mt-10 space-y-4">
+                {[
+                  { val: '13', label: 'asigurători comparați' },
+                  { val: '24h', label: 'ofertă personalizată' },
+                  { val: '20%', label: 'economii medii flotă' },
+                ].map((stat, i) => (
+                  <div key={i} className="flex items-center gap-6 group">
+                    <div className="text-3xl font-black text-primary tracking-tighter">{stat.val}</div>
+                    <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
             <div className="lg:col-span-7 pt-4">
-              <p className="text-2xl text-gray-700 font-light leading-relaxed mb-10">
-                O companie cu 10 vehicule poate plăti cu 20% mai puțin dacă asigură flota printr-un broker față de polițe individuale la ghișeu. Negociem direct cu asigurătorii, comparăm toate ofertele din piața moldovenească și vă livrăm un pachet complet - un contract, un manager, o dată de reînnoire.
+              <p className="text-2xl text-gray-700 font-light leading-relaxed mb-8">
+                O companie din Moldova cu 10 vehicule plătește în medie cu 20% mai puțin dacă asigură flota printr-un broker față de polițe individuale la ghișeu.
               </p>
-              <div className="h-px w-full bg-gray-100" />
+              <p className="text-lg text-gray-500 font-light leading-relaxed mb-8">
+                Insurance ING Broker SRL negociază direct cu toți cei 13 asigurători autorizați CNPF, compară ofertele și selectează combinația optimă pentru fiecare tip de vehicul din flota dvs. Un singur contract, un singur manager, o singură dată de reînnoire - indiferent dacă aveți 3 sau 300 de vehicule.
+              </p>
+              <p className="text-lg text-gray-500 font-light leading-relaxed">
+                Serviciul de brokeraj este gratuit pentru compania dvs. Comisionul nostru este plătit de asigurător din prima pe care o plătiți oricum - dar noi negociem un tarif mai mic decât ați obține direct.
+              </p>
+              <div className="h-px w-full bg-gray-100 mt-10" />
             </div>
           </div>
         </div>
@@ -270,12 +317,13 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
       {/* Products Grid */}
       <section className="py-24 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center gap-4 mb-16">
+          <div className="flex items-center gap-4 mb-4">
             <div className="w-12 h-[1px] bg-primary" />
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-secondary">
-              CE ASIGURĂM
-            </h2>
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-secondary">CE ASIGURĂM</h2>
           </div>
+          <p className="text-4xl font-bold text-secondary tracking-tighter mb-16 max-w-2xl">
+            6 tipuri de asigurare pentru orice tip de flotă
+          </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product, i) => (
               <motion.div
@@ -287,21 +335,24 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                 transition={{ duration: 0.4, ease: "easeOut" }}
                 className="group bg-white border border-gray-100 overflow-hidden flex flex-col h-full transition-all duration-500 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.08)]"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-52 overflow-hidden">
                   <img
                     src={productImages[i]}
-                    alt={product.title}
+                    alt={`${product.title} - asigurare flotă Moldova`}
                     className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110"
                     referrerPolicy="no-referrer"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute top-4 left-4 bg-primary px-3 py-1">
+                    <span className="text-white text-[9px] font-bold uppercase tracking-[0.2em]">{product.title}</span>
+                  </div>
                 </div>
                 <div className="p-8 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold text-secondary mb-4 tracking-tight group-hover:text-primary transition-colors">
                     {product.title}
                   </h3>
-                  <p className="text-gray-500 font-light leading-relaxed text-xs">
+                  <p className="text-gray-500 font-light leading-relaxed text-sm">
                     {product.desc}
                   </p>
                 </div>
@@ -316,7 +367,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
         <div className="max-w-7xl mx-auto">
           <div className="text-left max-w-3xl mb-20">
             <h2 className="text-5xl font-bold text-secondary tracking-tighter mb-6">Riscuri, Clienți și Avantaje</h2>
-            <p className="text-gray-500 font-light text-lg">O imagine completă a ce acoperă asigurarea de flotă, cine are nevoie de ea și ce câștigați lucrând cu un broker.</p>
+            <p className="text-gray-500 font-light text-lg">Tot ce acoperă asigurarea de flotă auto, cine are nevoie de ea în Moldova și ce câștigați concret lucrând cu un broker față de direct.</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -328,7 +379,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                 <div className="w-1.5 h-1.5 bg-secondary rounded-full" />
                 <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary">RISCURI ACOPERITE</h3>
               </div>
-              <ul className="space-y-6">
+              <ul className="space-y-5">
                 {risks.map((item, i) => (
                   <li key={i} className="flex items-start gap-4 text-sm text-gray-600 font-light group">
                     <div className="w-1 h-1 bg-secondary mt-2 shrink-0 group-hover:scale-150 transition-transform" />
@@ -346,7 +397,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                 <div className="w-1.5 h-1.5 bg-secondary rounded-full" />
                 <h3 className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary">PENTRU CINE</h3>
               </div>
-              <ul className="space-y-6">
+              <ul className="space-y-5">
                 {targets.map((item, i) => (
                   <li key={i} className="flex items-start gap-4 text-sm text-gray-600 font-light group">
                     <div className="w-1 h-1 bg-secondary mt-2 shrink-0 group-hover:scale-150 transition-transform" />
@@ -356,25 +407,34 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
               </ul>
 
               <div className="mt-12 pt-10 border-t border-gray-100">
-                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary mb-6">Carte Verde 2026 - Prețuri orientative</p>
-                <div className="space-y-3">
-                  <div className="flex justify-between text-xs text-gray-600">
-                    <span className="font-light">Autoturism 15 zile</span>
-                    <span className="font-bold text-secondary">703–1.343 MDL</span>
+                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary mb-6">Carte Verde 2026 - Prețuri piață Moldova</p>
+                <div className="space-y-4">
+                  <div>
+                    <div className="flex justify-between text-xs text-gray-600 mb-1">
+                      <span className="font-medium">Autoturism — 15 zile</span>
+                      <span className="font-bold text-secondary">703–1.343 MDL</span>
+                    </div>
+                    <div className="w-full bg-gray-100 h-0.5">
+                      <div className="bg-primary h-0.5" style={{ width: '52%' }} />
+                    </div>
                   </div>
-                  <div className="flex justify-between text-xs text-gray-600">
-                    <span className="font-light">Camion C2 12 luni</span>
-                    <span className="font-bold text-secondary">10.887–17.580 MDL</span>
+                  <div>
+                    <div className="flex justify-between text-xs text-gray-600 mb-1">
+                      <span className="font-medium">Camion C2 — 12 luni</span>
+                      <span className="font-bold text-secondary">10.887–17.580 MDL</span>
+                    </div>
+                    <div className="w-full bg-gray-100 h-0.5">
+                      <div className="bg-primary h-0.5" style={{ width: '62%' }} />
+                    </div>
                   </div>
-                  <div className="h-px bg-gray-100 my-3" />
-                  <p className="text-[10px] text-gray-400 font-light">
-                    Prețuri valabile 2026. Variază în funcție de asigurător, destinație și perioadă.
+                  <p className="text-[10px] text-gray-400 font-light pt-2">
+                    Prețuri valabile 2026. Variază pe asigurător, destinație și perioadă. Brokerul selectează cel mai avantajos.
                   </p>
                   <a
                     href="https://easigurari.com/ro/green-card"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-primary hover:underline mt-2"
+                    className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-primary hover:underline mt-1"
                   >
                     Calculator Carte Verde <ArrowRight size={10} />
                   </a>
@@ -392,7 +452,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
               </div>
               <ul className="space-y-6">
                 {advantages.map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 text-sm font-light group">
+                  <li key={i} className="flex items-start gap-4 font-light group">
                     <span className="text-primary font-bold text-xs shrink-0 mt-0.5">{item.num}</span>
                     <div>
                       <p className="font-bold text-secondary text-sm mb-1">{item.title}</p>
@@ -429,14 +489,21 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                   <div className="text-5xl font-light text-primary/20 font-serif italic">01</div>
                   <div>
                     <h4 className="text-xl font-bold mb-4 tracking-tight">Comisionul vine de la asigurător</h4>
-                    <p className="text-white/50 font-light leading-relaxed max-w-md">Nu plătiți extra pentru serviciile noastre de brokeraj. Comisionul nostru e inclus în prima pe care o plătiți oricum - dar noi negociem un tarif mai bun.</p>
+                    <p className="text-white/50 font-light leading-relaxed max-w-md">Nu plătiți nimic extra față de ceea ce ați plăti la ghișeul asigurătorului. Comisionul de brokeraj e inclus în prima pe care oricum o plătiți - dar noi negociem un tarif final mai mic.</p>
                   </div>
                 </div>
                 <div className="flex gap-10">
                   <div className="text-5xl font-light text-primary/20 font-serif italic">02</div>
                   <div>
-                    <h4 className="text-xl font-bold mb-4 tracking-tight">Acces la toți asigurătorii din Moldova</h4>
-                    <p className="text-white/50 font-light leading-relaxed max-w-md">Comparăm prețurile de la toți asigurătorii autorizați CNPF și alegem cea mai bună combinație raport calitate/preț pentru flota dvs.</p>
+                    <h4 className="text-xl font-bold mb-4 tracking-tight">Acces la toți cei 13 asigurători CNPF</h4>
+                    <p className="text-white/50 font-light leading-relaxed max-w-md">Comparăm prețurile și condițiile de la toți asigurătorii autorizați din Moldova și alegem combinația optimă pentru fiecare vehicul din flota dvs. - nu un singur asigurător.</p>
+                  </div>
+                </div>
+                <div className="flex gap-10">
+                  <div className="text-5xl font-light text-primary/20 font-serif italic">03</div>
+                  <div>
+                    <h4 className="text-xl font-bold mb-4 tracking-tight">Reprezentăm interesele dvs., nu ale asigurătorului</h4>
+                    <p className="text-white/50 font-light leading-relaxed max-w-md">La daune, brokerul intervine de partea clientului. Un agent al asigurătorului lucrează pentru asigurător. Diferența se simte cel mai mult când aveți nevoie de despăgubire rapidă.</p>
                   </div>
                 </div>
               </div>
@@ -449,14 +516,14 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                   <img
                     src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=1000"
                     className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
-                    alt="Transport Fleet"
+                    alt="Flotă auto asigurată Moldova"
                     referrerPolicy="no-referrer"
                     loading="lazy"
                   />
                 </div>
                 <div className="absolute bottom-4 -left-12 bg-primary p-6 shadow-2xl hidden xl:block z-20">
                   <p className="text-4xl font-bold tracking-tighter leading-none mb-2">20%</p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-80">Economii</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-80">Economii medii</p>
                 </div>
               </div>
             </div>
@@ -472,7 +539,8 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
               <div className="w-12 h-[1px] bg-primary" />
               <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-secondary">Cum funcționează</span>
             </div>
-            <h2 className="text-5xl font-bold text-secondary tracking-tighter mb-6">De la lista flotei la polițe active - 5 pași</h2>
+            <h2 className="text-5xl font-bold text-secondary tracking-tighter mb-6">De la lista flotei la polițe active - 5 pași simpli</h2>
+            <p className="text-gray-500 font-light text-lg">Fără drumuri la asigurători, fără formulare complicate. Trimiteți lista, primiți oferta, semnați o dată.</p>
           </div>
 
           <div className="grid md:grid-cols-5 gap-0">
@@ -500,33 +568,43 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
           <div className="grid lg:grid-cols-12 gap-20">
             <div className="lg:col-span-4">
               <div className="w-16 h-1 bg-primary mb-10" />
-              <h2 className="text-5xl font-bold text-secondary tracking-tighter leading-[0.9]">
-                Întrebări frecvente
+              <h2 className="text-5xl font-bold text-secondary tracking-tighter leading-[0.9] mb-6">
+                Întrebări Frecvente
               </h2>
+              <p className="text-gray-500 font-light leading-relaxed">
+                Tot ce trebuie să știți despre asigurările de flotă auto pentru companii din Moldova.
+              </p>
             </div>
             <div className="lg:col-span-8">
               {faqs.map((faq, i) => (
                 <div key={i} className="border-b border-gray-100 last:border-b-0">
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    className="w-full text-left py-8 flex items-center justify-between gap-8 group"
+                    className="w-full text-left py-7 flex items-center justify-between gap-8 group"
                   >
-                    <span className="text-base font-bold text-secondary group-hover:text-primary transition-colors tracking-tight">
+                    <span className={`text-base font-bold tracking-tight transition-colors ${openFaq === i ? 'text-primary' : 'text-secondary group-hover:text-primary'}`}>
                       {faq.q}
                     </span>
-                    <div className={`shrink-0 w-8 h-8 border border-gray-200 flex items-center justify-center transition-all duration-300 ${openFaq === i ? 'bg-primary border-primary rotate-45' : 'group-hover:border-primary'}`}>
-                      <ArrowRight size={12} className={`transition-colors ${openFaq === i ? 'text-white' : 'text-gray-400 group-hover:text-primary'}`} />
+                    <div className="shrink-0 w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-md">
+                      {openFaq === i
+                        ? <ChevronUp size={16} className="text-white" strokeWidth={2.5} />
+                        : <ChevronDown size={16} className="text-white" strokeWidth={2.5} />
+                      }
                     </div>
                   </button>
-                  {openFaq === i && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      className="pb-8"
-                    >
-                      <p className="text-gray-500 font-light leading-relaxed">{faq.a}</p>
-                    </motion.div>
-                  )}
+                  <AnimatePresence>
+                    {openFaq === i && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.25 }}
+                        className="overflow-hidden"
+                      >
+                        <p className="text-gray-500 font-light leading-relaxed pb-7 text-sm">{faq.a}</p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               ))}
             </div>
@@ -541,8 +619,11 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
             Trimiteți lista flotei <br />
             <span className="text-gray-300">astăzi.</span>
           </h2>
-          <p className="text-xl text-gray-500 font-light mb-12 max-w-2xl">
-            Ofertă personalizată în 24 de ore. Fără obligații.
+          <p className="text-xl text-gray-500 font-light mb-4 max-w-2xl">
+            Ofertă personalizată în 24 de ore. Comparăm toți asigurătorii din Moldova. Fără obligații.
+          </p>
+          <p className="text-sm text-gray-400 font-light mb-12">
+            Insurance ING Broker SRL — str. Pan Halippa 9, Chișinău, Moldova — CNPF autorizat
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-start">
             <motion.a
