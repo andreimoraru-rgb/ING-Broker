@@ -32,6 +32,7 @@ import { BusinessProductPage } from './pages/BusinessProductPage';
 import { ReinsurancePage } from './pages/ReinsurancePage';
 import { AIStudio } from './pages/AIStudio';
 import { RenewableEnergyPage } from './pages/RenewableEnergyPage';
+import { FleetAutoPage } from './pages/FleetAutoPage';
 import { PropertyAssetsPage } from './pages/PropertyAssetsPage';
 import { GenericProductPage } from './pages/GenericProductPage';
 import { ContactPage } from './pages/ContactPage';
@@ -1336,6 +1337,7 @@ export default function App() {
           <Route path="/politica-de-confidentialitate" element={<PrivacyPage />} />
           <Route path="/renewable-energy" element={<RenewableEnergyPage lang={lang} />} />
           <Route path="/property-assets" element={<PropertyAssetsPage lang={lang} />} />
+          <Route path="/oferte/flote-auto" element={<FleetAutoPage lang={lang} />} />
         </Routes>
 
         {/* Back to Top */}
