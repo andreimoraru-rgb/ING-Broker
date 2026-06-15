@@ -10,12 +10,12 @@ interface FleetAutoPageProps {
 }
 
 const productImages = [
-  "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=800",
+  "/flota_1.jpg",
+  "/carte_verde.jpg",
+  "/casco-012.jpg",
+  "/transportatori-auto.jpg",
+  "/cargo.jpg",
+  "/bus.jpg",
 ];
 
 const products = [
@@ -197,7 +197,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
       <section className="relative h-screen min-h-[700px] flex items-start pt-64 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1920"
+            src="/flota-2.jpg"
             alt="Flotă auto corporativă asigurată - Insurance ING Broker Moldova"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -514,7 +514,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
               <div className="relative z-10 border border-white/10 p-4 bg-white/5 backdrop-blur-sm group">
                 <div className="overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=1000"
+                    src="/flota_1.jpg"
                     className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
                     alt="Flotă auto asigurată Moldova"
                     referrerPolicy="no-referrer"
