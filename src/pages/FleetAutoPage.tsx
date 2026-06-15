@@ -21,7 +21,7 @@ const productImages = [
 const products = [
   {
     title: 'RCA Flotă',
-    desc: 'Asigurare obligatorie pentru toate vehiculele companiei. La 3+ vehicule negociem tarife cu toți cei 13 asigurători CNPF — economii reale de 10–25% față de polița la ghișeu.',
+    desc: 'Asigurare obligatorie pentru toate vehiculele companiei. La 3+ vehicule negociem tarife cu toți cei 6 asigurători autorizați din Moldova — economii reale de 10–25% față de polița la ghișeu.',
   },
   {
     title: 'Carte Verde',
@@ -287,7 +287,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
               </motion.h2>
               <div className="mt-10 space-y-4">
                 {[
-                  { val: '13', label: 'asigurători comparați' },
+                  { val: '6', label: 'asigurători comparați' },
                   { val: '24h', label: 'ofertă personalizată' },
                   { val: '20%', label: 'economii medii flotă' },
                 ].map((stat, i) => (
@@ -303,7 +303,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                 Fiecare vehicul neacoperit este un risc financiar direct. Un accident cu un camion neasigurat poate costa 500.000+ MDL - mai mult decât prima pentru întreaga flotă pe 5 ani.
               </p>
               <p className="text-lg text-gray-500 font-light leading-relaxed mb-8">
-                Brokerul ING compară simultan toate ofertele de la cei 13 asigurători autorizați CNPF. Nu alegeți la întâmplare - alegeți cel mai bun tarif disponibil în Moldova, pentru fiecare tip de vehicul în parte.
+                Brokerul ING compară simultan toate ofertele de la cei 6 asigurători autorizați din Moldova: Acord, Asterra, Moldasig, Moldcargo, Donaris și Grawe Carat. Nu alegeți la întâmplare - alegeți cel mai bun tarif disponibil, pentru fiecare tip de vehicul în parte.
               </p>
               <p className="text-lg text-gray-500 font-light leading-relaxed">
                 Serviciul este 100% gratuit pentru compania dvs. Comisionul brokerului vine de la asigurător - dar noi negociem un preț final mai mic decât ați obține dacă ați merge direct.
@@ -495,7 +495,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                 <div className="flex gap-10">
                   <div className="text-5xl font-light text-primary/20 font-serif italic">02</div>
                   <div>
-                    <h4 className="text-xl font-bold mb-4 tracking-tight">Acces la toți cei 13 asigurători CNPF</h4>
+                    <h4 className="text-xl font-bold mb-4 tracking-tight">Acces la toți cei 6 asigurători autorizați din Moldova</h4>
                     <p className="text-white/50 font-light leading-relaxed max-w-md">Comparăm prețurile și condițiile de la toți asigurătorii autorizați din Moldova și alegem combinația optimă pentru fiecare vehicul din flota dvs. - nu un singur asigurător.</p>
                   </div>
                 </div>
