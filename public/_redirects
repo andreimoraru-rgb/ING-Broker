@@ -1,4 +1,6 @@
 # Cloudflare Pages _redirects - 301 redirects for old URLs + SPA fallback
+/oferte/transportatori-auto /oferte/flote-auto 301
+/oferte/transportatori-auto/ /oferte/flote-auto 301
 /product-page/asigurare-rca /personal/rca/ 301
 /en/product-page/asigurare-rca /en/personal/rca/ 301
 /en/product-page/carte-verde /en/personal/carte-verde/ 301

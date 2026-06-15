@@ -1338,6 +1338,7 @@ export default function App() {
           <Route path="/renewable-energy" element={<RenewableEnergyPage lang={lang} />} />
           <Route path="/property-assets" element={<PropertyAssetsPage lang={lang} />} />
           <Route path="/oferte/flote-auto" element={<FleetAutoPage lang={lang} />} />
+          <Route path="/oferte/transportatori-auto" element={<FleetAutoPage lang={lang} />} />
         </Routes>
 
         {/* Back to Top */}
