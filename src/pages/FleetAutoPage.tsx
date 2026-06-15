@@ -177,7 +177,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/oferte')}
           className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
             isScrolled
               ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50'
@@ -188,7 +188,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
             <ArrowLeft size={16} strokeWidth={3} />
           </div>
           <span>
-            {lang === 'ru' ? 'Назад на Главную' : lang === 'en' ? 'Back to Home' : 'Înapoi la Acasă'}
+            {lang === 'ru' ? 'Назад к Предложениям' : lang === 'en' ? 'Back to Offers' : 'Înapoi la Oferte'}
           </span>
         </motion.button>
       </div>
@@ -197,7 +197,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
       <section className="relative h-screen min-h-[700px] flex items-start pt-64 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1920"
+            src="/flota-hero.jpg"
             alt="Flotă auto corporativă asigurată - Insurance ING Broker Moldova"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
