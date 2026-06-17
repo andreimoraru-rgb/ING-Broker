@@ -1203,7 +1203,7 @@ export default function App() {
     "name": "Insurance ING Broker SRL",
     "image": LOGO_URL,
     "url": "https://www.ingbroker.md",
-    "telephone": "+373 22 123 456",
+    "telephone": "+37369526003",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "str. Pan Halippa 9",
