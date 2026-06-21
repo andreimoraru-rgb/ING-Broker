@@ -46,7 +46,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
       subtitle: 'CAR/EAR + Bonds | ING Broker Moldova',
       heroTitle: 'Asigurare Construcții-Montaj + Garanții',
       heroDesc: 'Pachet integrat CAR/EAR + Bid/Performance/Advance Bonds. Acoperire All Risks. Emitere garanții în 24-48 ore. Conformitate donatori internaționali.',
-      cta: 'Solicită Ofertă',
+      cta: 'Calculez costul pentru șantierul meu - gratuit',
       details: 'Detalii Produs',
       stats: [
         { val: '24-48h', label: 'Emitere Bonds' },

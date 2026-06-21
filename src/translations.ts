@@ -9,19 +9,19 @@ export const translations = {
     clientAccount: 'Calculează Online',
     logoAlt: 'Logo ING Broker',
     hero: {
-      segment: 'Segmentul Personal',
-      title: 'Arhitectura',
-      titleItalic: 'Siguranței Tale.',
-      description: 'Expertiză globală în managementul riscului, adaptată riguros nevoilor tale personale. De la mobilitate avansată la securitatea patrimoniului, Insurance ING Broker SRL definește standardul de aur în protecție.',
-      cta1: 'Calculează Online',
-      cta2: 'Solicită consultanță',
+      segment: 'Broker Licențiat CNPF - 6 Asigurători Parteneri',
+      title: 'Asigurări corporative',
+      titleItalic: 'economisești 15-30%.',
+      description: 'Broker licențiat CNPF. 6 companii partenere. Ofertă comparativă în 15 minute. Fără obligații.',
+      cta1: 'Vreau audit gratuit',
+      cta2: 'Sună acum - L-V 9:00-18:00',
       scroll: 'Scroll pentru explorare'
     },
     trustStripBenefits: [
-      "Broker de elită în Moldova",
-      "Consultanță personalizată",
-      "Suport real 24/7",
-      "Expertiză internațională"
+      "200+ clienți B2B activi",
+      "6 asigurători parteneri CNPF",
+      "Ofertă în 15 minute",
+      "20 de ani experiență Moldova"
     ],
     intro: {
       title: 'Expertiză în',
@@ -81,10 +81,10 @@ export const translations = {
       subtitle: 'Tot ce trebuie să știi despre asigurările tale personale.'
     },
     finalCta: {
-      title: 'Pregătit pentru',
-      subtitle: 'următorul nivel de siguranță?',
-      cta1: 'Alege produsul potrivit',
-      cta2: 'Discută cu un consultant'
+      title: 'Reduci costul asigurărilor',
+      subtitle: 'cu 15-30% față de piața liberă.',
+      cta1: 'Vreau audit gratuit al asigurărilor',
+      cta2: 'Sună acum: +(373) 69 526 003'
     },
     corporateGateway: {
       label: 'B2B & Corporate',

@@ -307,7 +307,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                 className="px-12 py-6 bg-primary text-white font-bold uppercase text-[10px] tracking-[0.3em] transition-all duration-300 inline-flex items-center gap-4"
               >
                 <Phone size={14} />
-                Solicitați ofertă de flotă
+                Calculez costul pentru flota mea
               </motion.a>
               <motion.a
                 href="mailto:ingbroker@ingbroker.md"

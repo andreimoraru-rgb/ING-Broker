@@ -433,10 +433,10 @@ const Hero = ({ lang, onOpenCalculator }: { lang: Language, onOpenCalculator: ()
             >
               {t.cta1} <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </motion.button>
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => navigate('/contact')}
+              onClick={() => window.location.href = 'tel:+37369526003'}
               className="px-12 py-5 bg-white/5 border border-white/20 text-white font-display font-bold uppercase text-[10px] tracking-[0.3em] transition-all hover:bg-white/10 hover:border-white/40 flex items-center justify-center gap-4"
             >
               {t.cta2}
@@ -489,13 +489,80 @@ const TrustStrip = ({ lang }: { lang: Language }) => {
   );
 };
 
+const SocialProofStrip = ({ lang }: { lang: Language }) => {
+  if (lang !== 'ro') return null;
+  return (
+    <section className="bg-secondary py-10 border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center">
+          <div className="flex flex-col items-center">
+            <span className="text-4xl font-bold text-primary">200+</span>
+            <span className="text-xs text-white/60 uppercase tracking-widest mt-1">clienți B2B activi</span>
+          </div>
+          <div className="hidden md:block w-px h-12 bg-white/20" />
+          <div className="flex flex-col items-center">
+            <span className="text-4xl font-bold text-primary">6</span>
+            <span className="text-xs text-white/60 uppercase tracking-widest mt-1">asigurători parteneri CNPF</span>
+          </div>
+          <div className="hidden md:block w-px h-12 bg-white/20" />
+          <div className="flex flex-col items-center">
+            <span className="text-4xl font-bold text-primary">15 min</span>
+            <span className="text-xs text-white/60 uppercase tracking-widest mt-1">timp mediu pentru ofertă</span>
+          </div>
+          <div className="hidden md:block w-px h-12 bg-white/20" />
+          <div className="flex flex-col items-center">
+            <span className="text-4xl font-bold text-primary">20</span>
+            <span className="text-xs text-white/60 uppercase tracking-widest mt-1">ani experiență Moldova</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const ThreeStepsSection = ({ lang }: { lang: Language }) => {
+  if (lang !== 'ro') return null;
+  return (
+    <section className="py-20 bg-white border-b border-gray-100">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <span className="text-xs font-bold uppercase tracking-[0.3em] text-primary mb-4 block">Cum funcționează</span>
+          <h2 className="text-3xl font-bold text-secondary tracking-tighter">3 pași simpli</h2>
+          <p className="text-gray-500 mt-2 text-sm">De la cerere la poliță activă - fără birocrație inutilă</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="text-center p-8 border border-gray-100 hover:border-primary transition-colors group">
+            <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform">1</div>
+            <h3 className="font-bold text-secondary text-lg mb-2">Trimiți datele</h3>
+            <p className="text-gray-500 text-sm">Completezi formularul - durează 2 minute. Câmpuri minime, fără informații inutile.</p>
+            <span className="inline-block mt-4 text-xs text-primary font-bold uppercase tracking-widest">~ 2 minute</span>
+          </div>
+          <div className="text-center p-8 border border-gray-100 hover:border-primary transition-colors group relative">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold uppercase tracking-wider px-4 py-1">Cel mai popular</div>
+            <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform">2</div>
+            <h3 className="font-bold text-secondary text-lg mb-2">Primești oferta comparativă</h3>
+            <p className="text-gray-500 text-sm">Comparăm prețurile de la 6 asigurători și îți trimitem oferta optimă cu explicații clare.</p>
+            <span className="inline-block mt-4 text-xs text-primary font-bold uppercase tracking-widest">~ 15 minute</span>
+          </div>
+          <div className="text-center p-8 border border-gray-100 hover:border-primary transition-colors group">
+            <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition-transform">3</div>
+            <h3 className="font-bold text-secondary text-lg mb-2">Semnezi și ești protejat</h3>
+            <p className="text-gray-500 text-sm">Aprobarea ta, emiterea poliței, activarea protecției. Totul digital sau la sediul nostru.</p>
+            <span className="inline-block mt-4 text-xs text-primary font-bold uppercase tracking-widest">~ 24 ore</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const IntroSection = ({ lang }: { lang: Language }) => {
   const t = translations[lang].intro;
   return (
     <section id="personal-intro" className="py-40 bg-white relative overflow-hidden">
       {/* Decorative Element */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gray-50/50 -skew-x-12 translate-x-1/2 pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-12 gap-24 items-start">
           <div className="lg:col-span-5">
@@ -968,13 +1035,10 @@ const FinalCTA = ({ lang, onOpenCalculator }: { lang: Language, onOpenCalculator
           >
             {t.cta1}
           </motion.button>
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.05, y: -5 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => {
-              const whatsappUrl = "https://wa.me/37379030209";
-              window.open(whatsappUrl, '_blank');
-            }}
+            onClick={() => window.location.href = 'tel:+37369526003'}
             className="px-12 py-6 border border-primary/20 text-primary font-bold uppercase text-[10px] tracking-[0.3em] hover:bg-white transition-all shadow-sm hover:shadow-xl"
           >
             {t.cta2}
@@ -1254,6 +1318,8 @@ export default function App() {
             <main>
               <Hero lang={lang} onOpenCalculator={() => setIsCalculatorOpen(true)} />
               <TrustStrip lang={lang} />
+              <SocialProofStrip lang={lang} />
+              <ThreeStepsSection lang={lang} />
               <IntroSection lang={lang} />
               <MethodologySection lang={lang} />
               
