@@ -122,8 +122,8 @@ const products: Product[] = [
     forWho: 'Proprietarii de mașini noi sau rulate care vor protecție maximă.',
     covers: 'Daune proprii, furt, vandalism, incendiu, calamități naturale.',
     advantages: ['Reparații în service-uri autorizate', 'Asistență rutieră inclusă', 'Flexibilitate în alegerea riscurilor'],
-    cta: 'Vezi detalii CASCO',
-    link: '#',
+    cta: 'Solicită ofertă CASCO',
+    link: '/contact',
     image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=1000'
   },
   {
@@ -134,8 +134,8 @@ const products: Product[] = [
     forWho: 'Proprietari de apartamente și case la sol.',
     covers: 'Incendiu, inundații, cutremur, furt, răspundere civilă.',
     advantages: ['Evaluare corectă a bunurilor', 'Protecție pentru vecini inclusă', 'Despăgubire rapidă în caz de daună'],
-    cta: 'Vezi detalii Locuință',
-    link: '#',
+    cta: 'Solicită ofertă Locuință',
+    link: '/contact',
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000'
   },
   {
@@ -146,8 +146,8 @@ const products: Product[] = [
     forWho: 'Persoane active, sportivi și familii prudente.',
     covers: 'Invaliditate, fracturi, arsuri sau deces din accident.',
     advantages: ['Sume asigurate flexibile', 'Acoperire 24/7 oriunde în lume', 'Plată rapidă a indemnizației'],
-    cta: 'Vezi detalii Accidente',
-    link: '#',
+    cta: 'Solicită ofertă Accidente',
+    link: '/contact',
     image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=1000'
   }
 ];
@@ -496,7 +496,7 @@ const SocialProofStrip = ({ lang }: { lang: Language }) => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center">
           <div className="flex flex-col items-center">
-            <span className="text-4xl font-bold text-primary">200+</span>
+            <span className="text-4xl font-bold text-primary">100+</span>
             <span className="text-xs text-white/60 uppercase tracking-widest mt-1">clienți B2B activi</span>
           </div>
           <div className="hidden md:block w-px h-12 bg-white/20" />
@@ -511,7 +511,7 @@ const SocialProofStrip = ({ lang }: { lang: Language }) => {
           </div>
           <div className="hidden md:block w-px h-12 bg-white/20" />
           <div className="flex flex-col items-center">
-            <span className="text-4xl font-bold text-primary">20</span>
+            <span className="text-4xl font-bold text-primary">10+</span>
             <span className="text-xs text-white/60 uppercase tracking-widest mt-1">ani experiență Moldova</span>
           </div>
         </div>
@@ -1270,7 +1270,7 @@ export default function App() {
     "name": "Insurance ING Broker SRL",
     "image": LOGO_URL,
     "url": "https://www.ingbroker.md",
-    "telephone": "+373 22 123 456",
+    "telephone": "+37369526003",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "str. Pan Halippa 9",

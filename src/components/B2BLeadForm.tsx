@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Language } from '../translations';
 
+// Obține access_key de la https://web3forms.com cu emailul andrei.moraru@ingbroker.md
+const WEB3FORMS_ACCESS_KEY = 'YOUR_ACCESS_KEY';
+
 interface B2BLeadFormProps {
   lang: Language;
 }
@@ -22,7 +25,8 @@ export const B2BLeadForm: React.FC<B2BLeadFormProps> = ({ lang }) => {
     service: ''
   });
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const serviceOptions = [
     'Flotă Auto Corporativă',
@@ -40,11 +44,37 @@ export const B2BLeadForm: React.FC<B2BLeadFormProps> = ({ lang }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    // Simulare trimitere — integrare cu Make.com / endpoint real
-    await new Promise(res => setTimeout(res, 800));
-    setLoading(false);
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setSubmitError(false);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          from_name: 'ingbroker.md - Lead B2B',
+          subject: `Lead B2B nou - ${formData.company || 'companie necunoscută'} - ${formData.service || 'serviciu nespecificat'}`,
+          name: formData.name || 'necompletat',
+          phone: formData.phone,
+          email: formData.email || 'necompletat',
+          company: formData.company,
+          tipAsigurare: formData.service || 'nespecificat',
+        })
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        setSubmitError(true);
+      }
+    } catch {
+      setSubmitError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -55,8 +85,8 @@ export const B2BLeadForm: React.FC<B2BLeadFormProps> = ({ lang }) => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-gray-900 mb-2">Cererea a fost trimisă!</h3>
-        <p className="text-gray-500 text-sm">Te sunăm în maxim 15 minute în timpul programului de lucru.</p>
+        <h3 className="text-xl font-bold text-gray-900 mb-2">Mulțumim! Te contactăm în 15 minute.</h3>
+        <p className="text-gray-500 text-sm">Cererea ta a ajuns la echipa noastră B2B. Răspundem în timpul programului de lucru.</p>
         <p className="text-xs text-gray-400 mt-4">Luni - Vineri, 09:00 - 18:00</p>
       </div>
     );
@@ -148,12 +178,25 @@ export const B2BLeadForm: React.FC<B2BLeadFormProps> = ({ lang }) => {
             />
           </div>
 
+          {submitError && (
+            <div className="bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
+              <p className="font-semibold mb-1">Eroare la trimitere.</p>
+              <p>Sună direct: <a href="tel:+37369526003" className="font-bold underline">+(373) 69 526 003</a></p>
+            </div>
+          )}
+
           <button
             type="submit"
-            disabled={loading}
+            disabled={isSubmitting}
+            onClick={async (e) => {
+              // Dacă fetch-ul eșuează, pornim tel: ca fallback
+              if (submitError) {
+                window.location.href = 'tel:+37369526003';
+              }
+            }}
             className="w-full bg-red-700 hover:bg-red-800 active:bg-red-900 text-white font-semibold py-4 px-6 rounded-lg transition focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 text-base mt-2 disabled:opacity-60"
           >
-            {loading ? 'Se trimite...' : 'Vreau oferta gratuită'}
+            {isSubmitting ? 'Se trimite...' : 'Vreau oferta gratuită'}
           </button>
 
           <p className="text-center text-xs text-gray-400 pt-1">

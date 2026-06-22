@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { translations, Language } from '../translations';
 import { SEO } from '../components/SEO';
 import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Smartphone, Download, ShieldAlert, ArrowLeft } from 'lucide-react';
+
+// Obține access_key de la https://web3forms.com cu emailul andrei.moraru@ingbroker.md
+const WEB3FORMS_ACCESS_KEY = 'YOUR_ACCESS_KEY';
 
 interface ContactPageProps {
   lang: Language;
@@ -106,11 +109,51 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
 
   const c = content[lang];
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 5000);
+    setIsSubmitting(true);
+    setSubmitError(false);
+
+    const form = e.currentTarget;
+    const name = (form.elements.namedItem('contact-name') as HTMLInputElement)?.value || '';
+    const company = (form.elements.namedItem('contact-company') as HTMLInputElement)?.value || '';
+    const email = (form.elements.namedItem('contact-email') as HTMLInputElement)?.value || '';
+    const service = (form.elements.namedItem('contact-service') as HTMLSelectElement)?.value || '';
+    const message = (form.elements.namedItem('contact-message') as HTMLTextAreaElement)?.value || '';
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          from_name: 'ingbroker.md - Formular Contact',
+          subject: `Consultanță solicitată - ${company || name || 'client nou'}`,
+          name: name || 'necompletat',
+          email: email || 'necompletat',
+          company: company || 'necompletat',
+          service,
+          message,
+        })
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSubmitted(true);
+        formRef.current?.reset();
+      } else {
+        setSubmitError(true);
+      }
+    } catch {
+      setSubmitError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const schema = {
@@ -380,37 +423,43 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                 </div>
               )}
               <h3 className="text-3xl font-bold text-secondary mb-8">{c.formTitle}</h3>
-              <form className="space-y-6" onSubmit={handleSubmit}>
+              <form ref={formRef} className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.name}</label>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
+                      name="contact-name"
                       className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                      placeholder="John Doe"
+                      placeholder="Ion Popescu"
                     />
                   </div>
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.company}</label>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
+                      name="contact-company"
                       className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                      placeholder="Company SRL"
+                      placeholder="Compania SRL"
                     />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.email}</label>
-                    <input 
-                      type="email" 
+                    <input
+                      type="email"
+                      name="contact-email"
                       className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                      placeholder="john@example.com"
+                      placeholder="ion@companie.md"
                     />
                   </div>
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.service}</label>
-                    <select className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none">
+                    <select
+                      name="contact-service"
+                      className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none"
+                    >
                       {c.serviceOptions.map((opt, idx) => (
                         <option key={idx} value={opt}>{opt}</option>
                       ))}
@@ -419,18 +468,29 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                 </div>
                 <div>
                   <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.message}</label>
-                  <textarea 
+                  <textarea
+                    name="contact-message"
                     rows={4}
                     className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
-                    placeholder="..."
+                    placeholder="Descrieți pe scurt nevoile companiei dvs. de asigurare..."
                   />
                 </div>
-                <motion.button 
+
+                {submitError && (
+                  <div className="bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700 rounded-lg">
+                    <p className="font-semibold mb-1">Eroare la trimitere.</p>
+                    <p>Sună direct: <a href="tel:+37369526003" className="font-bold underline">+(373) 69 526 003</a> sau scrie la <a href="mailto:andrei.moraru@ingbroker.md" className="font-bold underline">andrei.moraru@ingbroker.md</a></p>
+                  </div>
+                )}
+
+                <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full py-5 bg-primary text-white font-bold uppercase text-xs tracking-widest hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/40 rounded-lg"
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full py-5 bg-primary text-white font-bold uppercase text-xs tracking-widest hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/40 rounded-lg disabled:opacity-60"
                 >
-                  {c.send}
+                  {isSubmitting ? (lang === 'ro' ? 'Se trimite...' : lang === 'ru' ? 'Отправка...' : 'Sending...') : c.send}
                 </motion.button>
               </form>
             </div>
