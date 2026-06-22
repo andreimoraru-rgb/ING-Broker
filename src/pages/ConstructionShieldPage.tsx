@@ -22,6 +22,8 @@ import {
   ArrowLeft
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { SchemaMarkup } from '../components/SchemaMarkup';
+import { serviceSchema, breadcrumbSchema, faqSchema } from '../utils/schema';
 import { Language } from '../translations';
 
 interface ConstructionShieldPageProps {
@@ -159,13 +161,84 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
 
   const c = t[lang];
 
+  const carEarServiceSchema = serviceSchema({
+    name: lang === 'ro'
+      ? 'Asigurare CAR/EAR Construcții Moldova'
+      : lang === 'ru'
+      ? 'Страхование CAR/EAR Строительства Молдова'
+      : 'CAR/EAR Construction Insurance Moldova',
+    description: c.heroDesc,
+    url: 'https://ingbroker.md/construction-shield'
+  });
+
+  const carEarBreadcrumb = breadcrumbSchema([
+    { name: lang === 'ro' ? 'Acasă' : lang === 'ru' ? 'Главная' : 'Home', url: 'https://ingbroker.md' },
+    { name: lang === 'ro' ? 'Servicii' : lang === 'ru' ? 'Услуги' : 'Services', url: 'https://ingbroker.md/business' },
+    {
+      name: lang === 'ro'
+        ? 'Asigurare Construcții CAR/EAR'
+        : lang === 'ru'
+        ? 'Страхование строительства CAR/EAR'
+        : 'Construction Insurance CAR/EAR',
+      url: 'https://ingbroker.md/construction-shield'
+    }
+  ]);
+
+  const carEarFaqSchema = faqSchema(
+    lang === 'ro'
+      ? [
+          {
+            question: 'Ce este asigurarea CAR/EAR în Moldova?',
+            answer: 'Asigurarea CAR (Contractors All Risks) acoperă lucrările de construcții civile, iar EAR (Erection All Risks) acoperă montajul de utilaje și echipamente industriale. Ambele sunt obligatorii pentru contractele finanțate de BERD, BEI sau Banca Mondială și acoperă toate riscurile fizice pe durata execuției.'
+          },
+          {
+            question: 'Cât costă asigurarea CAR/EAR în Moldova?',
+            answer: 'Tariful depinde de tipul proiectului, valoarea contractului și istoricul contractorului. Orientativ: 0,2% - 0,6% din valoarea contractului pentru contractori cu istoric solid (Tier A), 0,6% - 1,5% pentru Mid Contractor (Tier B) și 1,5% - 4,0% pentru proiecte speciale sau companii noi (Tier C). Solicitați o ofertă exactă - o emitem în 24 de ore.'
+          },
+          {
+            question: 'Ce garanții de construcții (Bonds) puteți emite și în cât timp?',
+            answer: 'ING Broker emite Bid Bond (garanție de ofertă) în 24 de ore, Performance Bond (bună execuție) și Advance Payment Bond în 24-48 de ore. Limita maximă este €500.000 per bond. Toate garanțiile sunt conforme cu cerințele MTender și cu standardele FIDIC ale donatorilor internaționali.'
+          }
+        ]
+      : lang === 'ru'
+      ? [
+          {
+            question: 'Что такое страхование CAR/EAR в Молдове?',
+            answer: 'Страхование CAR (Contractors All Risks) покрывает гражданское строительство, а EAR (Erection All Risks) - монтаж промышленного оборудования. Оба обязательны для контрактов, финансируемых ЕБРР, ЕИБ или Всемирным банком, и покрывают все физические риски в период строительства.'
+          },
+          {
+            question: 'Сколько стоит страхование CAR/EAR в Молдове?',
+            answer: 'Тариф зависит от типа проекта, стоимости контракта и истории подрядчика. Ориентировочно: 0,2%-0,6% для подрядчиков с хорошей репутацией (Уровень A), 0,6%-1,5% для среднего подрядчика (Уровень B), 1,5%-4,0% для специальных проектов (Уровень C). Запросите точное предложение - выдадим за 24 часа.'
+          },
+          {
+            question: 'Какие строительные гарантии вы выдаете и как быстро?',
+            answer: 'ING Broker выдает Bid Bond за 24 часа, Performance Bond и Advance Payment Bond за 24-48 часов. Максимальный лимит - €500 000 на гарантию. Все гарантии соответствуют требованиям MTender и стандартам FIDIC международных доноров.'
+          }
+        ]
+      : [
+          {
+            question: 'What is CAR/EAR insurance in Moldova?',
+            answer: 'CAR (Contractors All Risks) insurance covers civil construction works, while EAR (Erection All Risks) covers the installation of industrial machinery and equipment. Both are mandatory for contracts funded by EBRD, EIB, or the World Bank and cover all physical risks during the execution period.'
+          },
+          {
+            question: 'How much does CAR/EAR insurance cost in Moldova?',
+            answer: 'The rate depends on project type, contract value, and contractor history. Indicatively: 0.2%-0.6% for contractors with solid track records (Tier A), 0.6%-1.5% for mid-tier contractors (Tier B), and 1.5%-4.0% for special projects or new companies (Tier C). Request an exact quote - we issue it within 24 hours.'
+          },
+          {
+            question: 'What construction bonds do you issue and how quickly?',
+            answer: 'ING Broker issues Bid Bonds within 24 hours, Performance Bonds and Advance Payment Bonds within 24-48 hours. The maximum limit is €500,000 per bond. All bonds comply with MTender requirements and the FIDIC standards of international donors.'
+          }
+        ]
+  );
+
   return (
     <div className="bg-slate-50 min-h-screen font-sans text-slate-900">
-      <SEO 
-        title={c.title} 
-        description={c.heroDesc} 
-        lang={lang} 
+      <SEO
+        title={c.title}
+        description={c.heroDesc}
+        lang={lang}
       />
+      <SchemaMarkup schemas={[carEarServiceSchema, carEarBreadcrumb, carEarFaqSchema]} />
       {/* Back to Home Button */}
       <div className="fixed top-32 left-6 z-50">
         <motion.button
