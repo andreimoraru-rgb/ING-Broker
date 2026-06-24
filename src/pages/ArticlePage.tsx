@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { Language } from '../translations';
 import { SEO } from '../components/SEO';
+import { SchemaMarkup } from '../components/SchemaMarkup';
+import { breadcrumbSchema } from '../utils/schema';
 import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, User, Tag } from 'lucide-react';
 import { articles } from '../data/articles';
@@ -37,32 +39,46 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
     "@type": "Article",
     "headline": article.seo.title,
     "description": article.seo.description,
+    "url": `https://ingbroker.md/news/${article.slug}`,
     "image": article.image,
     "author": {
-      "@type": "Person",
-      "name": article.author
+      "@type": "Organization",
+      "name": article.author || "Insurance ING Broker SRL",
+      "url": "https://ingbroker.md"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Insurance ING Broker SRL",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.ingbroker.md/logo.png"
+        "url": "https://ingbroker.md/Logo%20ING%20Broker.png"
       }
     },
-    "datePublished": article.date
+    "datePublished": article.date,
+    "dateModified": article.date,
+    "inLanguage": lang === 'ro' ? 'ro-MD' : lang === 'ru' ? 'ru-MD' : 'en'
   };
+
+  const articleBreadcrumb = breadcrumbSchema([
+    { name: lang === 'ro' ? 'Acasă' : lang === 'ru' ? 'Главная' : 'Home', url: 'https://ingbroker.md' },
+    {
+      name: lang === 'ro' ? 'Noutăți & Insights' : lang === 'ru' ? 'Новости & Аналитика' : 'News & Insights',
+      url: 'https://ingbroker.md/news'
+    },
+    { name: article.title, url: `https://ingbroker.md/news/${article.slug}` }
+  ]);
 
   return (
     <div className="bg-white min-h-screen">
-      <SEO 
-        title={article.seo.title} 
-        description={article.seo.description} 
-        lang={lang} 
+      <SEO
+        title={article.seo.title}
+        description={article.seo.description}
+        lang={lang}
         schema={schema}
         keywords={article.seo.keywords}
       />
-      
+      <SchemaMarkup schemas={[articleBreadcrumb]} />
+
       {/* Back Button */}
       <div className="fixed top-32 left-6 z-50">
         <motion.button

@@ -27,6 +27,8 @@ import {
 } from 'lucide-react';
 import { translations, productTranslations, faqTranslations, Language } from './translations';
 import { SEO } from './components/SEO';
+import { SchemaMarkup } from './components/SchemaMarkup';
+import { localBusinessSchema, faqSchema, howToSchema } from './utils/schema';
 import { BusinessPage } from './pages/BusinessPage';
 import { BusinessProductPage } from './pages/BusinessProductPage';
 import { ReinsurancePage } from './pages/ReinsurancePage';
@@ -41,10 +43,15 @@ import { NewsInsightsPage } from './pages/NewsInsightsPage';
 import { ArticlePage } from './pages/ArticlePage';
 import { AdminAITools } from './pages/AdminAITools';
 import { ConstructionShieldPage } from './pages/ConstructionShieldPage';
+import { CarEarPage } from './pages/CarEarPage';
+import { CorporatePage } from './pages/CorporatePage';
+import { ProfessionalIndemnityPage } from './pages/ProfessionalIndemnityPage';
+import { CyberInsurancePage } from './pages/CyberInsurancePage';
 import AboutPage from './components/AboutPage';
 import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
 import { INGReLogo } from './components/INGReLogo';
+import { WhatsAppButton } from './components/WhatsAppButton';
 
 
 // --- Assets & Colors ---
@@ -1197,47 +1204,64 @@ export default function App() {
   const insightsT = translations[lang].insights;
   const seo = translations[lang].seo.home;
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "InsuranceAgency",
-    "name": "Insurance ING Broker SRL",
-    "image": LOGO_URL,
-    "url": "https://www.ingbroker.md",
-    "telephone": "+373 22 123 456",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "str. Pan Halippa 9",
-      "addressLocality": "Chișinău",
-      "addressCountry": "MD"
+  // Schema LocalBusiness completă (din utils/schema.ts)
+  const lbSchema = localBusinessSchema();
+
+  // Schema HowTo pentru homepage - "Cum obții o ofertă de asigurare B2B în 15 minute"
+  const homepageHowToSchema = howToSchema({
+    name: "Cum obții o ofertă de asigurare B2B în 15 minute",
+    description: "Procesul simplu prin care compania ta primește o ofertă comparativă de asigurare de la toți cei 6 asigurători autorizați CNPF din Moldova.",
+    totalTime: "PT15M",
+    steps: [
+      {
+        name: "Completezi formularul online",
+        text: "Completezi prenumele și telefonul în formularul de pe site. Durează 2 minute. Câmpuri minime, fără informații inutile."
+      },
+      {
+        name: "Consultantul nostru te contactează",
+        text: "Un specialist ING Broker te sună în maxim 15 minute pentru a înțelege necesitățile companiei tale. Nu lăsăm robotul să vorbească în locul nostru."
+      },
+      {
+        name: "Primești oferta comparativă",
+        text: "Comparăm ofertele de la toți cei 6 asigurători autorizați CNPF parteneri - Acord Grup, Asterra Grup, Moldasig VIG, Moldcargo, Donaris VIG și Grawe Carat - și îți trimitem varianta optimă cu explicații clare."
+      }
+    ]
+  });
+
+  // Schema FAQ pentru homepage
+  const homepageFaqSchema = faqSchema([
+    {
+      question: "Ce este un broker de asigurări în Moldova?",
+      answer: "Un broker de asigurări este un intermediar licențiat de CNPF care reprezintă interesele clientului, nu ale asigurătorului. ING Broker compară ofertele de la toți asigurătorii parteneri și îți recomandă cea mai bună soluție pentru compania ta."
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 47.0119,
-      "longitude": 28.8252
+    {
+      question: "Cât costă serviciile unui broker de asigurări?",
+      answer: "Serviciile brokerului sunt gratuite pentru client. ING Broker este remunerat de asigurătorul ales, printr-un comision inclus în prima de asigurare - fără costuri suplimentare pentru tine."
     },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "09:00",
-      "closes": "18:00"
+    {
+      question: "Ce asigurări corporative oferă ING Broker în Moldova?",
+      answer: "ING Broker oferă asigurări CAR/EAR pentru construcții, asigurare de răspundere profesională (PI), asigurare cyber, flote auto corporative și asigurare cargo CMR pentru transport internațional."
+    },
+    {
+      question: "Cât timp durează să obțin o ofertă de asigurare?",
+      answer: "Oferta comparativă se emite în maxim 15 minute de la trimiterea datelor. Pentru proiecte complexe (CAR/EAR mari, cyber corporate), analiza poate dura 24-48 ore."
+    },
+    {
+      question: "Ce asigurători sunt parteneri ai ING Broker?",
+      answer: "ING Broker colaborează cu toți asigurătorii autorizați de CNPF: Acord Grup SA, Asterra Grup SA, Moldasig VIG SA, Moldcargo SA, Donaris VIG SA și Grawe Carat SA."
     }
-  };
+  ]);
 
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 selection:bg-primary selection:text-white">
       <Router>
-        <SEO 
+        <SEO
           title={seo.title}
           description={seo.description}
           lang={lang}
-          schema={localBusinessSchema}
+          schema={lbSchema}
         />
+        <SchemaMarkup schemas={[homepageHowToSchema, homepageFaqSchema]} />
         <ScrollToTop />
         <Navbar lang={lang} setLang={setLang} scrolled={scrolled} onOpenCalculator={() => setIsCalculatorOpen(true)} />
         
@@ -1339,7 +1363,14 @@ export default function App() {
           <Route path="/property-assets" element={<PropertyAssetsPage lang={lang} />} />
           <Route path="/oferte/flote-auto" element={<FleetAutoPage lang={lang} />} />
           <Route path="/oferte/transportatori-auto" element={<FleetAutoPage lang={lang} />} />
+          <Route path="/servicii/asigurari-constructii-car-ear" element={<CarEarPage lang={lang} />} />
+          <Route path="/servicii/asigurari-corporative-moldova" element={<CorporatePage lang={lang} />} />
+          <Route path="/servicii/asigurare-raspundere-profesionala" element={<ProfessionalIndemnityPage lang={lang} />} />
+          <Route path="/servicii/asigurare-cyber-moldova" element={<CyberInsurancePage lang={lang} />} />
         </Routes>
+
+        {/* WhatsApp flotant */}
+        <WhatsAppButton />
 
         {/* Back to Top */}
         <motion.button

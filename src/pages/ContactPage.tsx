@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { translations, Language } from '../translations';
 import { SEO } from '../components/SEO';
+import { SchemaMarkup } from '../components/SchemaMarkup';
+import { breadcrumbSchema } from '../utils/schema';
 import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Smartphone, Download, ShieldAlert, ArrowLeft } from 'lucide-react';
@@ -146,14 +148,23 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
     }
   };
 
+  const contactBreadcrumb = breadcrumbSchema([
+    { name: lang === 'ro' ? 'Acasă' : lang === 'ru' ? 'Главная' : 'Home', url: 'https://ingbroker.md' },
+    {
+      name: lang === 'ro' ? 'Contact' : lang === 'ru' ? 'Контакты' : 'Contact',
+      url: 'https://ingbroker.md/contact'
+    }
+  ]);
+
   return (
     <div className="bg-white min-h-screen">
-      <SEO 
-        title={`${c.title} | Insurance ING Broker SRL`} 
-        description={c.subtitle} 
-        lang={lang} 
+      <SEO
+        title={`${c.title} | Insurance ING Broker SRL`}
+        description={c.subtitle}
+        lang={lang}
         schema={schema}
       />
+      <SchemaMarkup schemas={[contactBreadcrumb]} />
 
       {/* Back Button */}
       <div className="fixed top-32 left-6 z-50">
