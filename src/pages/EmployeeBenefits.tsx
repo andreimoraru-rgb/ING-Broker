@@ -133,7 +133,20 @@ function HeroSection({ onScrollToForm }: { onScrollToForm: () => void }) {
               ))}
             </motion.div>
           </motion.div>
-          <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3 }}>
+          <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3 }}
+            className="flex flex-col gap-6">
+            <div style={{ borderRadius: 16, overflow: 'hidden', position: 'relative', aspectRatio: '16/7' }}>
+              <img
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900&q=80"
+                alt="Asigurare medicală pentru angajați - consultație doctor"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                loading="eager"
+              />
+              <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(to top, ${C.navyDark}99 0%, transparent 50%)` }} />
+              <span style={{ position: 'absolute', bottom: 12, left: 16, color: C.cream, fontSize: 12, fontWeight: 600, opacity: 0.85 }}>
+                AMF - Asigurare Medicală Facultativă
+              </span>
+            </div>
             <FiscalCounter />
           </motion.div>
         </div>
