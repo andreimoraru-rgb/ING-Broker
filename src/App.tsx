@@ -47,6 +47,7 @@ import { CarEarPage } from './pages/CarEarPage';
 import { CorporatePage } from './pages/CorporatePage';
 import { ProfessionalIndemnityPage } from './pages/ProfessionalIndemnityPage';
 import { CyberInsurancePage } from './pages/CyberInsurancePage';
+import { EmployeeBenefits } from './pages/EmployeeBenefits';
 import AboutPage from './components/AboutPage';
 import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
@@ -1367,6 +1368,7 @@ export default function App() {
           <Route path="/servicii/asigurari-corporative-moldova" element={<CorporatePage lang={lang} />} />
           <Route path="/servicii/asigurare-raspundere-profesionala" element={<ProfessionalIndemnityPage lang={lang} />} />
           <Route path="/servicii/asigurare-cyber-moldova" element={<CyberInsurancePage lang={lang} />} />
+          <Route path="/employee-benefits" element={<EmployeeBenefits />} />
         </Routes>
 
         {/* WhatsApp flotant */}
