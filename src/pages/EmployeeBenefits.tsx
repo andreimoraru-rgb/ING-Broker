@@ -96,10 +96,15 @@ function FiscalCounter() {
 function HeroSection({ onScrollToForm }: { onScrollToForm: () => void }) {
   const c = ebContent.hero;
   return (
-    <section style={{ background: `linear-gradient(135deg, ${C.navyDark} 0%, ${C.navy} 60%, #1A3A6B 100%)`, minHeight: '100vh' }}
+    <section style={{ minHeight: '100vh' }}
       className="relative flex items-center overflow-hidden pt-24 pb-16">
-      <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: 500, height: 500, borderRadius: '50%', background: C.red + '08', pointerEvents: 'none' }} />
-      <div style={{ position: 'absolute', bottom: '-15%', left: '-8%', width: 600, height: 600, borderRadius: '50%', background: C.gold + '06', pointerEvents: 'none' }} />
+      <img
+        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+        alt=""
+        aria-hidden="true"
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', pointerEvents: 'none' }}
+      />
+      <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg, ${C.navyDark}E6 0%, ${C.navy}CC 60%, #1A3A6BCC 100%)`, pointerEvents: 'none' }} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div initial="hidden" animate="visible" variants={stagger}>
@@ -133,20 +138,7 @@ function HeroSection({ onScrollToForm }: { onScrollToForm: () => void }) {
               ))}
             </motion.div>
           </motion.div>
-          <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex flex-col gap-6">
-            <div style={{ borderRadius: 16, overflow: 'hidden', position: 'relative', aspectRatio: '16/7' }}>
-              <img
-                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900&q=80"
-                alt="Asigurare medicală pentru angajați - consultație doctor"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                loading="eager"
-              />
-              <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(to top, ${C.navyDark}99 0%, transparent 50%)` }} />
-              <span style={{ position: 'absolute', bottom: 12, left: 16, color: C.cream, fontSize: 12, fontWeight: 600, opacity: 0.85 }}>
-                AMF - Asigurare Medicală Facultativă
-              </span>
-            </div>
+          <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3 }}>
             <FiscalCounter />
           </motion.div>
         </div>
