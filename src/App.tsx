@@ -51,7 +51,6 @@ import AboutPage from './components/AboutPage';
 import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
 import { INGReLogo } from './components/INGReLogo';
-import { WhatsAppButton } from './components/WhatsAppButton';
 
 
 // --- Assets & Colors ---
@@ -1369,15 +1368,12 @@ export default function App() {
           <Route path="/servicii/asigurare-cyber-moldova" element={<CyberInsurancePage lang={lang} />} />
         </Routes>
 
-        {/* WhatsApp flotant */}
-        <WhatsAppButton />
-
         {/* Back to Top */}
         <motion.button
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: scrolled ? 1 : 0, scale: scrolled ? 1 : 0 }}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-8 right-8 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl z-50 hover:bg-secondary transition-all duration-500 group"
+          className="fixed bottom-8 right-8 w-14 h-14 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center shadow-2xl z-50 hover:bg-white/20 transition-all duration-500 group"
         >
           <ChevronDown className="rotate-180 group-hover:-translate-y-1 transition-transform" size={24} />
         </motion.button>
