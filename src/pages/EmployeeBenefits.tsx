@@ -1,767 +1,668 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, useInView, animate } from 'motion/react';
 import {
   HeartPulse, Shield, Plane, Briefcase,
   Search, FileText, Scale, Headphones,
-  ChevronDown, ChevronUp, ArrowRight,
-  CheckCircle, XCircle,
+  ChevronDown, ArrowRight,
+  CheckCircle, XCircle, TrendingUp, Clock, Users, Coins,
+  Phone, Mail,
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { ebContent } from '../data/eb-content';
 
 const C = {
-  navy: '#0D2B55',
-  navyDark: '#081B38',
-  navyMid: '#1A3A6B',
+  dark: '#080D18',
+  darkMid: '#0F1520',
+  darkCard: '#141D2E',
+  darkCardHover: '#1A2540',
   red: '#E31E24',
-  cream: '#F7F3EE',
-  gold: '#C9A84C',
-  green: '#1A7F4B',
+  redDark: '#B91C1C',
+  redGlow: 'rgba(227,30,36,0.18)',
   white: '#FFFFFF',
-  grayText: '#6B7280',
+  offWhite: '#F8F9FB',
+  lightGray: '#F1F3F7',
+  textDark: '#111827',
+  textMid: '#374151',
+  textMuted: '#9CA3AF',
+  green: '#10B981',
+  border: '#E5E7EB',
+  borderDark: 'rgba(255,255,255,0.08)',
 };
 
-function formatMDL(val: number): string {
+function formatMDL(val: number) {
   return val.toLocaleString('ro-MD', { maximumFractionDigits: 0 }).replace(/,/g, '.') + ' MDL';
 }
-
 function calcFiscal(value: number) {
   const bonusCost = Math.round(value * 1.29);
   const amfCost = Math.min(value, 17400);
-  const savings = bonusCost - amfCost;
-  return { bonusCost, amfCost, savings };
+  return { bonusCost, amfCost, savings: bonusCost - amfCost };
+}
+function useAnimatedCounter(target: number, inView: boolean) {
+  const [val, setVal] = useState(0);
+  useEffect(() => {
+    if (!inView) return;
+    const ctrl = animate(0, target, { duration: 1.6, ease: 'easeOut', onUpdate: (v) => setVal(Math.round(v)) });
+    return ctrl.stop;
+  }, [inView, target]);
+  return val;
 }
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } },
+  hidden: { opacity: 0, y: 32 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
 };
-const stagger = { visible: { transition: { staggerChildren: 0.09 } } };
+const stagger = { visible: { transition: { staggerChildren: 0.1 } } };
 
-function Eyebrow({ text, light = false }: { text: string; light?: boolean }) {
+/* ─── FLOATING PARTICLES ─── */
+function Particles({ count = 18 }: { count?: number }) {
+  const items = Array.from({ length: count }, (_, i) => ({
+    id: i, x: (i * 17 + 5) % 100, y: (i * 23 + 10) % 100,
+    size: (i % 3) + 1.5, dur: 7 + (i % 5) * 1.5, delay: (i % 4) * 1.2,
+    isRed: i % 5 === 0,
+  }));
   return (
-    <p style={{ color: light ? C.gold : C.navy, letterSpacing: '0.12em' }}
-      className="text-xs font-bold uppercase tracking-widest mb-3">
-      {text}
-    </p>
-  );
-}
-
-const ICON_MAP: Record<string, React.ElementType> = {
-  HeartPulse, Shield, Plane, Briefcase, Search, FileText, Scale, Headphones,
-};
-
-function FiscalCounter() {
-  const c = ebContent.hero;
-  const [value, setValue] = useState(10000);
-  const { bonusCost, amfCost, savings } = calcFiscal(value);
-
-  return (
-    <div style={{ background: C.navyMid, borderRadius: 16 }} className="p-6 md:p-8">
-      <p style={{ color: C.gold }} className="text-xs font-bold uppercase tracking-widest mb-4">{c.counterTitle}</p>
-      <p style={{ color: C.cream }} className="text-sm mb-2">{c.counterLabel}</p>
-      <div className="flex items-center gap-4 mb-1">
-        <input type="range" min={5000} max={25000} step={500} value={value}
-          onChange={(e) => setValue(Number(e.target.value))}
-          className="flex-1 h-2 cursor-pointer" style={{ accentColor: C.gold }} />
-        <span style={{ color: C.gold, fontFamily: 'var(--font-mono)', fontWeight: 700 }}
-          className="text-xl min-w-[130px] text-right">
-          {formatMDL(value)}
-        </span>
-      </div>
-      <div className="grid grid-cols-3 gap-3 mt-6">
-        <div style={{ background: 'rgba(255,255,255,0.07)', borderRadius: 10 }} className="p-4 text-center">
-          <p style={{ color: 'rgba(247,243,238,0.6)' }} className="text-[10px] uppercase tracking-wide mb-1">{c.bonusLabel}</p>
-          <p style={{ color: '#F87171', fontFamily: 'var(--font-mono)', fontWeight: 700 }} className="text-lg">{formatMDL(bonusCost)}</p>
-          <p style={{ color: 'rgba(247,243,238,0.4)' }} className="text-[9px] mt-1 leading-tight">{c.bonusDisclaimer}</p>
-        </div>
-        <div style={{ background: 'rgba(255,255,255,0.07)', borderRadius: 10 }} className="p-4 text-center">
-          <p style={{ color: 'rgba(247,243,238,0.6)' }} className="text-[10px] uppercase tracking-wide mb-1">{c.amfLabel}</p>
-          <p style={{ color: '#4ADE80', fontFamily: 'var(--font-mono)', fontWeight: 700 }} className="text-lg">{formatMDL(amfCost)}</p>
-          <p style={{ color: 'rgba(247,243,238,0.4)' }} className="text-[9px] mt-1 leading-tight">{c.amfDisclaimer}</p>
-        </div>
-        <div style={{ background: C.gold + '22', border: `1px solid ${C.gold}44`, borderRadius: 10 }} className="p-4 text-center">
-          <p style={{ color: C.gold }} className="text-[10px] uppercase tracking-wide mb-1">{c.savingsLabel}</p>
-          <p style={{ color: C.gold, fontFamily: 'var(--font-mono)', fontWeight: 700 }} className="text-lg">
-            {savings > 0 ? formatMDL(savings) : '—'}
-          </p>
-          <p style={{ color: 'rgba(247,243,238,0.4)' }} className="text-[9px] mt-1 leading-tight">vs. bonus brut</p>
-        </div>
-      </div>
+    <div style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
+      {items.map((p) => (
+        <motion.div key={p.id}
+          style={{ position: 'absolute', left: `${p.x}%`, top: `${p.y}%`, width: p.size, height: p.size, borderRadius: '50%', background: p.isRed ? C.red : 'rgba(255,255,255,0.22)' }}
+          animate={{ y: [0, -28, 0], opacity: [0, 0.75, 0] }}
+          transition={{ duration: p.dur, repeat: Infinity, delay: p.delay, ease: 'easeInOut' }}
+        />
+      ))}
     </div>
   );
 }
 
-function HeroSection({ onScrollToForm }: { onScrollToForm: () => void }) {
-  const c = ebContent.hero;
+/* ─── 3D MEDICAL SHIELD ILLUSTRATION ─── */
+function ShieldVisual() {
   return (
-    <section style={{ minHeight: '100vh' }}
-      className="relative flex items-center overflow-hidden pt-24 pb-16">
-      <img
-        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
-        alt=""
-        aria-hidden="true"
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', pointerEvents: 'none' }}
+    <div style={{ position: 'relative', width: '100%', maxWidth: 460 }}>
+      {/* Background glow */}
+      <motion.div
+        animate={{ scale: [1, 1.12, 1], opacity: [0.3, 0.5, 0.3] }}
+        transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+        style={{ position: 'absolute', inset: '-15%', background: `radial-gradient(ellipse, ${C.red}20 0%, transparent 70%)`, borderRadius: '50%', pointerEvents: 'none' }}
       />
-      <div style={{ position: 'absolute', inset: 0, background: `linear-gradient(135deg, ${C.navyDark}E6 0%, ${C.navy}CC 60%, #1A3A6BCC 100%)`, pointerEvents: 'none' }} />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div initial="hidden" animate="visible" variants={stagger}>
-            <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} light /></motion.div>
-            <motion.h1 variants={fadeUp}
-              style={{ fontFamily: 'var(--font-serif)', color: C.white, lineHeight: 1.1 }}
-              className="text-5xl lg:text-6xl xl:text-7xl font-bold mb-6">
-              {c.h1Line1}<br />
-              <span style={{ color: C.gold }}>{c.h1Line2}</span><br />
-              {c.h1Line3}
-            </motion.h1>
-            <motion.p variants={fadeUp} style={{ color: 'rgba(247,243,238,0.8)' }}
-              className="text-lg leading-relaxed mb-8 max-w-xl">{c.sub}</motion.p>
-            <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 mb-10">
-              <button onClick={onScrollToForm}
-                style={{ background: C.red, color: C.white, borderRadius: 8, fontWeight: 700, border: 'none', cursor: 'pointer' }}
-                className="px-8 py-4 text-base hover:opacity-90 transition-opacity flex items-center gap-2 justify-center">
-                {c.cta1} <ArrowRight size={18} />
-              </button>
-              <a href="#process"
-                style={{ border: `1px solid rgba(247,243,238,0.3)`, color: C.cream, borderRadius: 8, fontWeight: 600, textDecoration: 'none' }}
-                className="px-8 py-4 text-base hover:border-opacity-60 transition-all flex items-center gap-2 justify-center">
-                {c.cta2} <ChevronDown size={18} />
-              </a>
+
+      <svg viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: 'auto', filter: 'drop-shadow(0 32px 64px rgba(227,30,36,0.12))' }}>
+        {/* Hex grid background */}
+        {[0,1,2,3,4,5].map((i) => (
+          <motion.polygon key={i}
+            points="30,0 60,17 60,52 30,69 0,52 0,17"
+            transform={`translate(${38 + (i % 3) * 110}, ${i < 3 ? 8 : 78})`}
+            fill="none" stroke="rgba(227,30,36,0.09)" strokeWidth="1"
+            animate={{ opacity: [0.2, 0.5, 0.2] }}
+            transition={{ duration: 3.5 + i * 0.4, repeat: Infinity, delay: i * 0.25 }}
+          />
+        ))}
+
+        {/* Ground shadow */}
+        <ellipse cx="212" cy="362" rx="128" ry="12" fill="rgba(227,30,36,0.1)" />
+
+        {/* Shield outer */}
+        <motion.path
+          d="M210 20 L362 80 L362 212 Q362 308 210 358 Q58 308 58 212 L58 80 Z"
+          fill={C.darkCard} stroke={C.red} strokeWidth="2.5"
+          initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }}
+          transition={{ duration: 1.5, ease: 'easeOut' }}
+        />
+        {/* Shield inner highlight */}
+        <path d="M210 40 L342 92 L342 210 Q342 292 210 336 Q78 292 78 210 L78 92 Z"
+          fill="rgba(255,255,255,0.022)" stroke="rgba(255,255,255,0.055)" strokeWidth="1" />
+        {/* Top highlight (3D depth) */}
+        <path d="M210 20 L362 80 L342 92 L78 92 L58 80 Z" fill="rgba(255,255,255,0.04)" />
+
+        {/* Medical cross */}
+        <motion.g initial={{ scale: 0 }} animate={{ scale: 1 }}
+          transition={{ delay: 1, type: 'spring', stiffness: 200, damping: 14 }}
+          style={{ transformOrigin: '210px 192px' }}>
+          <rect x="188" y="138" width="44" height="108" rx="11" fill={C.red} />
+          <rect x="156" y="170" width="108" height="44" rx="11" fill={C.red} />
+          {/* Shine */}
+          <rect x="188" y="138" width="14" height="108" rx="11" fill="rgba(255,255,255,0.16)" />
+          <rect x="156" y="170" width="108" height="14" rx="11" fill="rgba(255,255,255,0.16)" />
+        </motion.g>
+
+        {/* Orbiting dots */}
+        <motion.circle r="5.5" fill={C.red} animate={{ rotate: 360 }}
+          transition={{ duration: 7, repeat: Infinity, ease: 'linear' }}
+          style={{ transformOrigin: '210px 192px' }} transform="translate(357, 92)" />
+        <motion.circle r="3.5" fill={C.green} animate={{ rotate: -360 }}
+          transition={{ duration: 11, repeat: Infinity, ease: 'linear' }}
+          style={{ transformOrigin: '210px 192px' }} transform="translate(63, 292)" />
+        <motion.circle r="2.5" fill="rgba(255,255,255,0.45)" animate={{ rotate: 360 }}
+          transition={{ duration: 16, repeat: Infinity, ease: 'linear' }}
+          style={{ transformOrigin: '210px 192px' }} transform="translate(395, 198)" />
+
+        {/* Floating labels */}
+        <motion.g animate={{ y: [-5, 5, -5] }} transition={{ duration: 3.2, repeat: Infinity }}>
+          <rect x="8" y="108" width="38" height="20" rx="10" fill="rgba(227,30,36,0.18)" stroke={C.red} strokeWidth="1" />
+          <text x="27" y="122" textAnchor="middle" fontSize="9" fill={C.red} fontWeight="700">AMF</text>
+        </motion.g>
+        <motion.g animate={{ y: [5, -5, 5] }} transition={{ duration: 3.8, repeat: Infinity }}>
+          <rect x="363" y="148" width="52" height="20" rx="10" fill="rgba(16,185,129,0.14)" stroke={C.green} strokeWidth="1" />
+          <text x="389" y="162" textAnchor="middle" fontSize="9" fill={C.green} fontWeight="700">Art. 24</text>
+        </motion.g>
+        <motion.g animate={{ y: [-3, 3, -3] }} transition={{ duration: 4.5, repeat: Infinity, delay: 1 }}>
+          <rect x="6" y="230" width="44" height="20" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.18)" strokeWidth="1" />
+          <text x="28" y="244" textAnchor="middle" fontSize="9" fill="rgba(255,255,255,0.5)" fontWeight="700">CNPF</text>
+        </motion.g>
+        <motion.g animate={{ y: [4, -4, 4] }} transition={{ duration: 5, repeat: Infinity, delay: 0.6 }}>
+          <rect x="360" y="258" width="54" height="20" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)" strokeWidth="1" />
+          <text x="387" y="272" textAnchor="middle" fontSize="8" fill="rgba(255,255,255,0.4)" fontWeight="600">RENOMIA</text>
+        </motion.g>
+      </svg>
+
+      {/* Glassmorphism stat badges */}
+      {[
+        { label: 'Economie fiscală', value: '+29%', color: C.green, pos: { top: '12%', left: '-5%' }, dir: { x: -24 } },
+        { label: 'Implementare', value: '3 zile', color: C.white, pos: { top: '40%', right: '-10%' }, dir: { x: 24 } },
+        { label: 'Limita deductibilă', value: '17.400 MDL', color: C.red, pos: { bottom: '8%', right: '4%' }, dir: { y: 24 } },
+      ].map(({ label, value, color, pos, dir }) => (
+        <motion.div key={label}
+          initial={{ opacity: 0, ...dir }} animate={{ opacity: 1, x: 0, y: 0 }}
+          transition={{ delay: 1.3, duration: 0.5 }}
+          style={{
+            position: 'absolute', ...pos,
+            background: 'rgba(8,13,24,0.7)', backdropFilter: 'blur(16px)',
+            border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12, padding: '10px 16px',
+          }}>
+          <div style={{ fontSize: 9, color: C.textMuted, marginBottom: 3 }}>{label}</div>
+          <div style={{ fontSize: 17, fontWeight: 800, color }}>{value}</div>
+        </motion.div>
+      ))}
+    </div>
+  );
+}
+
+/* ─── FISCAL CALCULATOR ─── */
+function FiscalCounter() {
+  const [value, setValue] = useState(10000);
+  const { bonusCost, amfCost, savings } = calcFiscal(value);
+
+  return (
+    <div style={{ background: C.darkCard, border: `1px solid ${C.borderDark}`, borderRadius: 20, padding: '32px', position: 'relative', overflow: 'hidden' }}>
+      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: `linear-gradient(90deg, ${C.red}, #FF6B6B)` }} />
+      <p style={{ fontSize: 11, color: C.red, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 4 }}>
+        Calculator fiscal - Art. 24 alin. 20
+      </p>
+      <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.5)', marginBottom: 22 }}>Valoare pachet per angajat/an</p>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 10 }}>
+        <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>5.000 MDL</span>
+        <span style={{ fontSize: 20, fontWeight: 800, color: C.white }}>{formatMDL(value)}</span>
+        <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)' }}>25.000 MDL</span>
+      </div>
+      <input type="range" min={5000} max={25000} step={500} value={value}
+        onChange={(e) => setValue(Number(e.target.value))}
+        style={{ width: '100%', marginBottom: 24, accentColor: C.red, cursor: 'pointer' }}
+      />
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12 }}>
+        {[
+          { label: 'Bonus + CNAS', val: formatMDL(bonusCost), color: '#F87171', note: 'cost angajator' },
+          { label: 'Asigurare AMF', val: formatMDL(amfCost), color: C.white, note: value <= 17400 ? '0% CNAS' : 'depășit plafonul' },
+          { label: 'Economie anuală', val: formatMDL(savings), color: C.green, note: 'per angajat' },
+        ].map(({ label, val, color, note }) => (
+          <div key={label} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 12, padding: '14px 12px' }}>
+            <div style={{ fontSize: 9, color: C.textMuted, marginBottom: 5, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label}</div>
+            <motion.div key={val} initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2 }}
+              style={{ fontSize: 15, fontWeight: 800, color }}>
+              {val}
             </motion.div>
-            <motion.div variants={fadeUp} className="flex flex-wrap gap-3">
-              {c.trust.map((t) => (
-                <span key={t}
-                  style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(247,243,238,0.7)', borderRadius: 6 }}
-                  className="text-xs px-3 py-1.5 font-medium">{t}</span>
+            <div style={{ fontSize: 9, color: 'rgba(255,255,255,0.22)', marginTop: 4 }}>{note}</div>
+          </div>
+        ))}
+      </div>
+      {value > 17400 && (
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+          style={{ marginTop: 14, fontSize: 11, color: '#FBBF24', background: 'rgba(251,191,36,0.08)', border: '1px solid rgba(251,191,36,0.25)', borderRadius: 8, padding: '8px 12px' }}>
+          Plafonul de 17.400 MDL/an este depășit - diferența de {formatMDL(value - 17400)} intră la CNAS.
+        </motion.p>
+      )}
+    </div>
+  );
+}
+
+/* ─── HERO ─── */
+function HeroSection({ onScrollToForm }: { onScrollToForm: () => void }) {
+  return (
+    <section style={{ background: C.dark, minHeight: '100vh', position: 'relative', overflow: 'hidden', paddingTop: 96, paddingBottom: 80 }}>
+      <Particles count={22} />
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: `linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px)`, backgroundSize: '60px 60px', pointerEvents: 'none' }} />
+      <div style={{ position: 'absolute', top: -100, right: -100, width: 500, height: 500, background: `radial-gradient(circle, ${C.redGlow} 0%, transparent 70%)`, pointerEvents: 'none' }} />
+
+      <div style={{ maxWidth: 1180, margin: '0 auto', padding: '0 24px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center', marginBottom: 64 }}>
+          <motion.div initial="hidden" animate="visible" variants={stagger}>
+            <motion.div variants={fadeUp} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(227,30,36,0.1)', border: '1px solid rgba(227,30,36,0.28)', borderRadius: 6, padding: '5px 12px', marginBottom: 22 }}>
+              <div style={{ width: 6, height: 6, borderRadius: '50%', background: C.red }} />
+              <span style={{ fontSize: 11, color: '#FCA5A5', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Art. 24 alin. 20 Cod Fiscal Moldova</span>
+            </motion.div>
+            <motion.h1 variants={fadeUp} style={{ fontSize: 'clamp(30px, 4vw, 52px)', fontWeight: 800, color: C.white, lineHeight: 1.14, marginBottom: 20 }}>
+              Beneficii medicale{' '}<span style={{ color: C.red }}>17.400 MDL/an</span>{' '}deductibile - per angajat
+            </motion.h1>
+            <motion.p variants={fadeUp} style={{ fontSize: 17, color: 'rgba(255,255,255,0.5)', lineHeight: 1.75, marginBottom: 36, maxWidth: 500 }}>
+              Înlocuiești bonusurile salariale cu asigurare medicală AMF. Angajatorul economisește 29% CNAS, angajatul primește protecție reală. Calcul instant, implementare în 3 zile.
+            </motion.p>
+            <motion.div variants={fadeUp} style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 52 }}>
+              <motion.button onClick={onScrollToForm} whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
+                style={{ background: C.red, color: C.white, border: 'none', padding: '15px 30px', borderRadius: 10, fontSize: 15, fontWeight: 700, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 }}>
+                Calculează economia acum <ArrowRight size={16} />
+              </motion.button>
+              <motion.a href="tel:+37369526003" whileHover={{ background: 'rgba(255,255,255,0.06)' }}
+                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 22px', borderRadius: 10, fontSize: 15, color: 'rgba(255,255,255,0.65)', border: '1px solid rgba(255,255,255,0.14)', textDecoration: 'none' }}>
+                <Phone size={15} /> +373 695 26 003
+              </motion.a>
+            </motion.div>
+            <motion.div variants={fadeUp} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 20 }}>
+              {[
+                { num: '6', label: 'asigurători parteneri CNPF' },
+                { num: '3 zile', label: 'de la semnare la activare' },
+                { num: '29%', label: 'economie vs. bonus salarial' },
+              ].map(({ num, label }) => (
+                <div key={label} style={{ borderLeft: `3px solid ${C.red}`, paddingLeft: 16 }}>
+                  <div style={{ fontSize: 24, fontWeight: 800, color: C.white }}>{num}</div>
+                  <div style={{ fontSize: 11, color: C.textMuted, lineHeight: 1.4, marginTop: 3 }}>{label}</div>
+                </div>
               ))}
             </motion.div>
           </motion.div>
-          <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3 }}>
-            <FiscalCounter />
+
+          <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.3 }}>
+            <ShieldVisual />
           </motion.div>
         </div>
+
+        <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8, duration: 0.7 }}>
+          <FiscalCounter />
+        </motion.div>
       </div>
     </section>
   );
 }
 
+/* ─── PAIN ─── */
 function PainSection() {
-  const c = ebContent.pain;
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: '-80px' });
+  const c1 = useAnimatedCounter(73, inView);
+  const c2 = useAnimatedCounter(4, inView);
+
+  const stats = [
+    { icon: <TrendingUp size={22} />, num: `${c1}%`, label: 'din angajați preferă beneficii medicale față de bonusuri cash egale', color: C.red },
+    { icon: <Clock size={22} />, num: `${c2}.2 zile`, label: 'pierdute per angajat pe an din cauza problemelor medicale nerezolvate', color: '#FBBF24' },
+    { icon: <Users size={22} />, num: '2.8×', label: 'costul înlocuirii unui angajat față de retenția cu beneficii competitive', color: C.green },
+    { icon: <Coins size={22} />, num: '0 MDL', label: 'economie fiscală pentru companiile fără program Art. 24 alin. 20', color: C.red },
+  ];
+
   return (
-    <section style={{ background: C.cream }} className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-12">
-          <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} /></motion.div>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-serif)', color: C.navyDark }}
-            className="text-4xl lg:text-5xl font-bold max-w-2xl mx-auto">{c.h2}</motion.h2>
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-          className="grid md:grid-cols-3 gap-6 mb-8">
-          {c.cards.map((card) => (
-            <motion.div key={card.stat} variants={fadeUp}
-              style={{ background: C.white, borderRadius: 12, borderTop: `3px solid ${C.red}` }}
-              className="p-8 shadow-sm">
-              <p style={{ fontFamily: 'var(--font-mono)', color: C.red, fontWeight: 700 }} className="text-4xl mb-3">{card.stat}</p>
-              <p style={{ color: C.navy }} className="text-base leading-relaxed">{card.text}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center">
-          <p style={{ color: C.navy, background: C.navy + '0D', borderRadius: 8 }}
-            className="text-base font-medium p-4 max-w-3xl mx-auto">{c.footer}</p>
-          <p style={{ color: C.grayText }} className="text-xs mt-3">{c.source}</p>
+    <section ref={ref} style={{ background: C.white, padding: '96px 24px' }}>
+      <div style={{ maxWidth: 1180, margin: '0 auto' }}>
+        <motion.div initial="hidden" animate={inView ? 'visible' : 'hidden'} variants={stagger}>
+          <motion.p variants={fadeUp} style={{ fontSize: 11, color: C.red, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>Problema actuală</motion.p>
+          <motion.h2 variants={fadeUp} style={{ fontSize: 36, fontWeight: 800, color: C.textDark, marginBottom: 48 }}>Ce pierzi fără program de beneficii</motion.h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+            {stats.map(({ icon, num, label, color }) => (
+              <motion.div key={label} variants={fadeUp}
+                whileHover={{ y: -8, boxShadow: `0 24px 48px rgba(0,0,0,0.09)` }}
+                style={{ background: C.offWhite, border: `1px solid ${C.border}`, borderRadius: 18, padding: 30, borderTop: `3px solid ${color}`, transition: 'box-shadow 0.3s' }}>
+                <div style={{ color, marginBottom: 16, background: `${color}15`, display: 'inline-flex', borderRadius: 10, padding: 10 }}>{icon}</div>
+                <div style={{ fontSize: 34, fontWeight: 900, color: C.textDark, marginBottom: 10 }}>{num}</div>
+                <div style={{ fontSize: 13, color: C.textMuted, lineHeight: 1.55 }}>{label}</div>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
   );
 }
+
+/* ─── SOLUTION ─── */
+const ICON_MAP: Record<string, React.ReactNode> = {
+  HeartPulse: <HeartPulse size={24} />, Shield: <Shield size={24} />,
+  Plane: <Plane size={24} />, Briefcase: <Briefcase size={24} />,
+  Search: <Search size={24} />, FileText: <FileText size={24} />,
+  Scale: <Scale size={24} />, Headphones: <Headphones size={24} />,
+};
 
 function SolutionSection() {
-  const c = ebContent.solution;
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: '-80px' });
+  const pillars: Array<{ icon: string; title: string; description: string }> = ebContent.solution?.pillars ?? [];
+
   return (
-    <section style={{ background: C.white }} className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-14">
-          <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} /></motion.div>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-serif)', color: C.navyDark }}
-            className="text-4xl lg:text-5xl font-bold">{c.h2}</motion.h2>
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {c.pillars.map((p) => {
-            const Icon = ICON_MAP[p.iconName] || Shield;
-            return (
-              <motion.div key={p.title} variants={fadeUp}
-                style={{ background: C.cream, borderRadius: 12, borderTop: `3px solid ${C.navy}` }}
-                className="p-6">
-                <div style={{ background: C.navy, borderRadius: 10, width: 48, height: 48, display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="mb-4">
-                  <Icon size={22} color={C.white} />
-                </div>
-                {'badge' in p && p.badge && (
-                  <span style={{ background: C.gold + '33', color: C.gold, borderRadius: 4 }}
-                    className="text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 mb-3 inline-block">{p.badge}</span>
-                )}
-                <p style={{ color: C.navy }} className="text-xs font-semibold uppercase tracking-wide mb-1">{p.subtitle}</p>
-                <h3 style={{ fontFamily: 'var(--font-serif)', color: C.navyDark }} className="text-xl font-bold mb-4">{p.title}</h3>
-                <ul className="space-y-2">
-                  {p.bullets.map((b) => (
-                    <li key={b} style={{ color: C.navy }} className="text-sm flex items-start gap-2">
-                      <CheckCircle size={14} color={C.green} className="mt-0.5 flex-shrink-0" />
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
+    <section ref={ref} style={{ background: C.darkMid, padding: '96px 24px', position: 'relative', overflow: 'hidden' }}>
+      <Particles count={12} />
+      <div style={{ position: 'absolute', bottom: -100, left: -100, width: 400, height: 400, background: `radial-gradient(circle, ${C.redGlow} 0%, transparent 70%)`, pointerEvents: 'none' }} />
+      <div style={{ maxWidth: 1180, margin: '0 auto', position: 'relative' }}>
+        <motion.div initial="hidden" animate={inView ? 'visible' : 'hidden'} variants={stagger}>
+          <motion.p variants={fadeUp} style={{ fontSize: 11, color: C.red, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>Soluție ING Broker</motion.p>
+          <motion.h2 variants={fadeUp} style={{ fontSize: 36, fontWeight: 800, color: C.white, marginBottom: 48 }}>Ce include programul nostru</motion.h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+            {pillars.map((p, i) => (
+              <motion.div key={i} variants={fadeUp}
+                whileHover={{ y: -10, borderColor: C.red, background: C.darkCardHover }}
+                style={{ background: C.darkCard, border: `1px solid ${C.borderDark}`, borderRadius: 18, padding: 28, transition: 'all 0.3s ease' }}>
+                <motion.div whileHover={{ scale: 1.15, rotate: 5 }}
+                  style={{ color: C.red, background: 'rgba(227,30,36,0.1)', display: 'inline-flex', borderRadius: 12, padding: 12, marginBottom: 18 }}>
+                  {ICON_MAP[p.icon] ?? <Shield size={24} />}
+                </motion.div>
+                <div style={{ fontSize: 15, fontWeight: 700, color: C.white, marginBottom: 10 }}>{p.title}</div>
+                <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', lineHeight: 1.65 }}>{p.description}</div>
               </motion.div>
-            );
-          })}
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>
   );
 }
 
+/* ─── COMPARISON ─── */
 function ComparisonSection() {
-  const c = ebContent.comparison;
-  return (
-    <section style={{ background: C.navyDark }} className="py-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-14">
-          <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} light /></motion.div>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-serif)', color: C.white }}
-            className="text-4xl lg:text-5xl font-bold">{c.h2}</motion.h2>
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid md:grid-cols-2 gap-8">
-          <motion.div variants={fadeUp}>
-            <p style={{ color: C.green }} className="text-sm font-bold uppercase tracking-widest mb-4">{c.advantagesHeader}</p>
-            <ul className="space-y-3">
-              {c.advantages.map((a) => (
-                <li key={a} style={{ color: C.cream }} className="flex items-start gap-3 text-sm leading-relaxed">
-                  <CheckCircle size={16} color={C.green} className="mt-0.5 flex-shrink-0" /><span>{a}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-          <motion.div variants={fadeUp}>
-            <p style={{ color: '#F87171' }} className="text-sm font-bold uppercase tracking-widest mb-4">{c.limitationsHeader}</p>
-            <ul className="space-y-3">
-              {c.limitations.map((l) => (
-                <li key={l} style={{ color: 'rgba(247,243,238,0.75)' }} className="flex items-start gap-3 text-sm leading-relaxed">
-                  <XCircle size={16} color="#F87171" className="mt-0.5 flex-shrink-0" /><span>{l}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        </motion.div>
-        <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
-          style={{ color: 'rgba(247,243,238,0.6)', borderTop: '1px solid rgba(255,255,255,0.1)' }}
-          className="text-sm text-center leading-relaxed mt-10 pt-8 max-w-3xl mx-auto">{c.footer}</motion.p>
-      </div>
-    </section>
-  );
-}
-
-function AudienceSection({ onScrollToForm }: { onScrollToForm: () => void }) {
-  const c = ebContent.audience;
-  return (
-    <section style={{ background: C.cream }} className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-14">
-          <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} /></motion.div>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-serif)', color: C.navyDark }}
-            className="text-4xl lg:text-5xl font-bold max-w-3xl mx-auto">{c.h2}</motion.h2>
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="grid md:grid-cols-3 gap-8">
-          {c.personas.map((p) => (
-            <motion.div key={p.role} variants={fadeUp}
-              style={{ background: C.white, borderRadius: 16, overflow: 'hidden' }} className="shadow-sm">
-              <div style={{ height: 200, overflow: 'hidden' }}>
-                <img src={p.imageUrl} alt={p.imageAlt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
-              </div>
-              <div className="p-6">
-                <p style={{ color: C.navy }} className="text-xs font-bold uppercase tracking-widest mb-1">{p.subtitle}</p>
-                <h3 style={{ fontFamily: 'var(--font-serif)', color: C.navyDark }} className="text-2xl font-bold mb-4">{p.role}</h3>
-                <ul className="space-y-2">
-                  {p.pain.map((item) => (
-                    <li key={item} style={{ color: C.navy }} className="text-sm flex items-start gap-2">
-                      <span style={{ color: C.red, flexShrink: 0, marginTop: 3 }}>&#9658;</span><span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center mt-10">
-          <button onClick={onScrollToForm}
-            style={{ background: C.red, color: C.white, borderRadius: 8, fontWeight: 700, border: 'none', cursor: 'pointer' }}
-            className="px-8 py-4 text-base hover:opacity-90 transition-opacity inline-flex items-center gap-2">
-            Solicita Oferta Personalizata <ArrowRight size={18} />
-          </button>
-        </motion.div>
-      </div>
-    </section>
-  );
-}
-
-function ContextSection() {
-  const c = ebContent.context;
-  return (
-    <section style={{ background: C.white }} className="py-20">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-14">
-          <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} /></motion.div>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-serif)', color: C.navyDark }}
-            className="text-4xl lg:text-5xl font-bold">{c.h2}</motion.h2>
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="space-y-8">
-          {c.nodes.map((node, i) => (
-            <motion.div key={node.date} variants={fadeUp} className="flex gap-6">
-              <div style={{ flexShrink: 0, paddingTop: 4 }}>
-                <div style={{ width: 44, height: 44, borderRadius: '50%', background: C.navy, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <span style={{ color: C.white, fontFamily: 'var(--font-mono)', fontWeight: 700, fontSize: 13 }}>{String(i + 1).padStart(2, '0')}</span>
-                </div>
-              </div>
-              <div style={{ background: C.cream, borderRadius: 12, flex: 1 }} className="p-6">
-                <p style={{ color: C.gold, fontFamily: 'var(--font-mono)' }} className="text-xs font-bold uppercase tracking-widest mb-1">{node.date}</p>
-                <h3 style={{ color: C.navyDark }} className="text-xl font-bold mb-2">{node.title}</h3>
-                <p style={{ color: C.navy }} className="text-sm leading-relaxed">{node.body}</p>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </section>
-  );
-}
-
-type TierKey = 'target' | 'budget' | 'amf' | 'stoma' | 'medicamente' | 'accidente' | 'viata' | 'travel';
-
-function TiersSection({ onScrollToForm }: { onScrollToForm: () => void }) {
-  const c = ebContent.tiers;
-  const rows: { label: string; key: TierKey }[] = [
-    { label: 'Ideal pentru', key: 'target' },
-    { label: 'Buget orientativ', key: 'budget' },
-    { label: 'AMF', key: 'amf' },
-    { label: 'Stomatologie', key: 'stoma' },
-    { label: 'Medicamente', key: 'medicamente' },
-    { label: 'Accidente', key: 'accidente' },
-    { label: 'Viață', key: 'viata' },
-    { label: 'Călătorie', key: 'travel' },
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: '-80px' });
+  const rows = [
+    { label: 'Acces la oferte multiple', direct: '1 asigurător', broker: '6 asigurători autorizați CNPF' },
+    { label: 'Optimizare fiscală Art. 24', direct: 'Nu', broker: 'Da - inclusă în serviciu' },
+    { label: 'Manager HR dedicat', direct: 'Nu', broker: 'Da - un specialist ING Broker' },
+    { label: 'Flexibilitate pachete', direct: 'Standard fix', broker: 'Personalizat per companie' },
+    { label: 'Suport daune', direct: 'Contact direct asigurător', broker: 'ING Broker intermediar activ' },
   ];
+
   return (
-    <section id="tiers" style={{ background: C.cream }} className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-4">
-          <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} /></motion.div>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-serif)', color: C.navyDark }}
-            className="text-4xl lg:text-5xl font-bold mb-4">{c.h2}</motion.h2>
-          <motion.p variants={fadeUp} style={{ color: C.grayText }} className="text-sm max-w-2xl mx-auto">{c.note}</motion.p>
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="overflow-x-auto mt-10">
-          <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: 0 }}>
-            <thead>
-              <tr>
-                <th style={{ textAlign: 'left', padding: '12px 16px', color: C.grayText }} className="text-xs font-semibold uppercase tracking-wide">Caracteristică</th>
-                {c.tiers.map((t) => (
-                  <th key={t.name}
-                    style={{ padding: '12px 16px', textAlign: 'center', background: t.highlight ? C.navy : C.white, color: t.highlight ? C.white : C.navyDark, borderRadius: t.highlight ? '12px 12px 0 0' : undefined }}
-                    className="text-sm font-bold">
-                    {t.badge && (
-                      <span style={{ display: 'block', fontSize: 10, fontWeight: 700, letterSpacing: '0.08em', color: t.badgeGold ? C.gold : (t.highlight ? C.gold : C.red), marginBottom: 4, textTransform: 'uppercase' }}>
-                        {t.badge}
-                      </span>
-                    )}
-                    {t.name}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, ri) => (
-                <tr key={row.key} style={{ background: ri % 2 === 0 ? 'rgba(255,255,255,0.6)' : 'transparent' }}>
-                  <td style={{ padding: '12px 16px', color: C.navy, fontSize: 13, fontWeight: 500 }}>{row.label}</td>
-                  {c.tiers.map((t) => (
-                    <td key={t.name}
-                      style={{ padding: '12px 16px', textAlign: 'center', fontSize: 13, background: t.highlight ? 'rgba(13,43,85,0.05)' : undefined, color: t[row.key] === '-' ? C.grayText : (t.highlight ? C.navyDark : C.navy), fontWeight: t.highlight ? 600 : 400 }}>
-                      {t[row.key]}
-                    </td>
-                  ))}
+    <section ref={ref} style={{ background: C.lightGray, padding: '96px 24px' }}>
+      <div style={{ maxWidth: 900, margin: '0 auto' }}>
+        <motion.div initial="hidden" animate={inView ? 'visible' : 'hidden'} variants={stagger}>
+          <motion.p variants={fadeUp} style={{ fontSize: 11, color: C.red, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>Comparație</motion.p>
+          <motion.h2 variants={fadeUp} style={{ fontSize: 36, fontWeight: 800, color: C.textDark, marginBottom: 48 }}>ING Broker vs. direct la asigurător</motion.h2>
+          <motion.div variants={fadeUp} style={{ background: C.white, borderRadius: 18, overflow: 'hidden', border: `1px solid ${C.border}` }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <thead>
+                <tr style={{ borderBottom: `2px solid ${C.border}` }}>
+                  <th style={{ padding: '18px 24px', textAlign: 'left', fontSize: 11, color: C.textMuted, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Criteriu</th>
+                  <th style={{ padding: '18px 24px', textAlign: 'center', fontSize: 11, color: C.textMuted, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Direct</th>
+                  <th style={{ padding: '18px 24px', textAlign: 'center', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', background: 'rgba(227,30,36,0.04)', color: C.red }}>Prin ING Broker</th>
                 </tr>
-              ))}
-              <tr>
-                <td style={{ padding: '20px 16px' }}></td>
-                {c.tiers.map((t) => (
-                  <td key={t.name} style={{ padding: '20px 16px', textAlign: 'center', background: t.highlight ? 'rgba(13,43,85,0.05)' : undefined, borderRadius: t.highlight ? '0 0 12px 12px' : undefined }}>
-                    <button onClick={onScrollToForm}
-                      style={{ background: t.highlight ? C.red : C.navy, color: C.white, borderRadius: 6, fontWeight: 600, fontSize: 13, padding: '10px 20px', cursor: 'pointer', width: '100%', border: 'none' }}
-                      className="hover:opacity-90 transition-opacity">
-                      Solicita oferta
-                    </button>
-                  </td>
+              </thead>
+              <tbody>
+                {rows.map(({ label, direct, broker }, i) => (
+                  <tr key={i} style={{ borderBottom: i < rows.length - 1 ? `1px solid ${C.border}` : 'none' }}>
+                    <td style={{ padding: '16px 24px', fontSize: 14, color: C.textMid, fontWeight: 500 }}>{label}</td>
+                    <td style={{ padding: '16px 24px', textAlign: 'center' }}>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 13, color: C.textMuted }}>
+                        <XCircle size={14} color="#D1D5DB" /> {direct}
+                      </span>
+                    </td>
+                    <td style={{ padding: '16px 24px', textAlign: 'center', background: 'rgba(16,185,129,0.03)' }}>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 13, color: C.green, fontWeight: 600 }}>
+                        <CheckCircle size={14} color={C.green} /> {broker}
+                      </span>
+                    </td>
+                  </tr>
                 ))}
-              </tr>
-            </tbody>
-          </table>
-        </motion.div>
-      </div>
-    </section>
-  );
-}
-
-function BrokerSection() {
-  const c = ebContent.broker;
-  return (
-    <section style={{ background: C.white }} className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
-            <div style={{ borderRadius: 16, overflow: 'hidden', height: 480 }}>
-              <img src={c.imageUrl} alt={c.imageAlt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
-            </div>
+              </tbody>
+            </table>
           </motion.div>
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger}>
-            <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} /></motion.div>
-            <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-serif)', color: C.navyDark }}
-              className="text-4xl lg:text-5xl font-bold mb-6">{c.h2}</motion.h2>
-            <motion.p variants={fadeUp} style={{ color: C.navy }} className="text-base leading-relaxed mb-8">{c.body}</motion.p>
-            <motion.div variants={stagger} className="grid sm:grid-cols-2 gap-4 mb-8">
-              {c.bullets.map((b) => {
-                const Icon = ICON_MAP[b.iconName] || Shield;
-                return (
-                  <motion.div key={b.title} variants={fadeUp} style={{ background: C.cream, borderRadius: 10 }} className="p-4">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6 }}>
-                      <div style={{ background: C.navy, borderRadius: 6, width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                        <Icon size={15} color={C.white} />
-                      </div>
-                      <p style={{ color: C.navyDark, fontWeight: 700 }} className="text-sm">{b.title}</p>
-                    </div>
-                    <p style={{ color: C.navy }} className="text-sm leading-relaxed">{b.desc}</p>
-                  </motion.div>
-                );
-              })}
-            </motion.div>
-            <motion.div variants={fadeUp}
-              style={{ background: C.gold + '15', border: `1px solid ${C.gold}33`, borderRadius: 10 }} className="p-4">
-              <p style={{ color: C.navyDark, fontWeight: 700 }} className="text-sm mb-1">{c.commissionTitle}</p>
-              <p style={{ color: C.navy }} className="text-sm leading-relaxed">{c.commissionNote}</p>
-            </motion.div>
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ProcessSection({ onScrollToForm }: { onScrollToForm: () => void }) {
-  const c = ebContent.process;
-  return (
-    <section id="process" style={{ background: C.navyDark }} className="py-20">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-14">
-          <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} light /></motion.div>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-serif)', color: C.white }}
-            className="text-4xl lg:text-5xl font-bold mb-4">{c.h2}</motion.h2>
-          <motion.p variants={fadeUp} style={{ color: C.gold, fontFamily: 'var(--font-mono)', fontWeight: 700 }} className="text-2xl">
-            {c.avgTime}{' '}
-            <span style={{ color: 'rgba(247,243,238,0.5)', fontSize: 14, fontFamily: 'var(--font-sans)', fontWeight: 400 }}>{c.avgTimeNote}</span>
-          </motion.p>
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="space-y-4">
-          {c.steps.map((step) => (
-            <motion.div key={step.num} variants={fadeUp}
-              style={{ display: 'flex', gap: 20, alignItems: 'flex-start', background: 'rgba(255,255,255,0.04)', borderRadius: 12 }}
-              className="p-5">
-              <div style={{ flexShrink: 0, width: 48, height: 48, borderRadius: '50%', border: `2px solid ${C.gold}`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <span style={{ color: C.gold, fontFamily: 'var(--font-mono)', fontWeight: 700, fontSize: 13 }}>{step.num}</span>
-              </div>
-              <div style={{ flex: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 4 }}>
-                  <h3 style={{ color: C.white, fontWeight: 700 }} className="text-base">{step.title}</h3>
-                  <span style={{ color: C.gold, background: C.gold + '22', borderRadius: 4, fontSize: 11, fontWeight: 700, fontFamily: 'var(--font-mono)' }} className="px-2 py-0.5">{step.duration}</span>
-                </div>
-                <p style={{ color: 'rgba(247,243,238,0.7)' }} className="text-sm leading-relaxed">{step.desc}</p>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center mt-10">
-          <button onClick={onScrollToForm}
-            style={{ background: C.red, color: C.white, borderRadius: 8, fontWeight: 700, border: 'none', cursor: 'pointer' }}
-            className="px-8 py-4 text-base hover:opacity-90 transition-opacity inline-flex items-center gap-2">
-            Incepe procesul <ArrowRight size={18} />
-          </button>
         </motion.div>
       </div>
     </section>
   );
 }
 
-function FAQSection() {
-  const c = ebContent.faq;
-  const [openIdx, setOpenIdx] = useState<number | null>(null);
+/* ─── TIERS ─── */
+function TiersSection({ onScrollToForm }: { onScrollToForm: () => void }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: '-80px' });
+  const tiers: Array<{ name: string; priceRange: string; features: string[]; featured?: boolean }> = ebContent.tiers?.columns ?? [];
+
   return (
-    <section style={{ background: C.cream }} className="py-20">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-12">
-          <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} /></motion.div>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-serif)', color: C.navyDark }}
-            className="text-4xl font-bold">{c.h2}</motion.h2>
-        </motion.div>
-        <div className="space-y-3">
-          {c.items.map((item, idx) => (
-            <motion.div key={item.q}
-              initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-              transition={{ delay: idx * 0.04 }}
-              style={{ background: C.white, borderRadius: 10, overflow: 'hidden' }}>
-              <button
-                onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
-                style={{ width: '100%', textAlign: 'left', padding: '16px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'transparent', cursor: 'pointer', border: 'none' }}>
-                <span style={{ color: C.navyDark, fontWeight: 600 }} className="text-sm pr-4">{item.q}</span>
-                {openIdx === idx ? <ChevronUp size={18} color={C.navy} /> : <ChevronDown size={18} color={C.navy} />}
-              </button>
-              <AnimatePresence>
-                {openIdx === idx && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }}>
-                    <p style={{ color: C.navy, borderTop: `1px solid ${C.cream}` }}
-                      className="px-5 pb-5 pt-3 text-sm leading-relaxed">{item.a}</p>
-                  </motion.div>
+    <section ref={ref} style={{ background: C.white, padding: '96px 24px' }}>
+      <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+        <motion.div initial="hidden" animate={inView ? 'visible' : 'hidden'} variants={stagger}>
+          <motion.p variants={fadeUp} style={{ fontSize: 11, color: C.red, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>Pachete disponibile</motion.p>
+          <motion.h2 variants={fadeUp} style={{ fontSize: 36, fontWeight: 800, color: C.textDark, marginBottom: 12 }}>Alege programul potrivit companiei tale</motion.h2>
+          <motion.p variants={fadeUp} style={{ fontSize: 16, color: C.textMuted, marginBottom: 52 }}>Toate pachetele sunt deductibile fiscal conform Art. 24 alin. 20 Cod Fiscal.</motion.p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 24 }}>
+            {tiers.map((tier, i) => (
+              <motion.div key={i} variants={fadeUp}
+                whileHover={{ y: -12, boxShadow: tier.featured ? `0 32px 64px rgba(227,30,36,0.28)` : `0 32px 64px rgba(0,0,0,0.1)` }}
+                style={{ border: tier.featured ? `2px solid ${C.red}` : `1px solid ${C.border}`, borderRadius: 22, padding: '38px 28px', position: 'relative', background: tier.featured ? C.dark : C.white, transition: 'all 0.3s ease' }}>
+                {tier.featured && (
+                  <div style={{ position: 'absolute', top: -13, left: '50%', transform: 'translateX(-50%)', background: C.red, color: C.white, fontSize: 10, fontWeight: 800, padding: '4px 18px', borderRadius: 20, letterSpacing: '0.08em', whiteSpace: 'nowrap' }}>
+                    RECOMANDAT
+                  </div>
                 )}
-              </AnimatePresence>
-            </motion.div>
-          ))}
-        </div>
+                <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: tier.featured ? C.red : C.textMuted, marginBottom: 14 }}>{tier.name}</div>
+                <div style={{ fontSize: 28, fontWeight: 900, color: tier.featured ? C.white : C.textDark, marginBottom: 4 }}>{tier.priceRange}</div>
+                <div style={{ fontSize: 12, color: C.textMuted, marginBottom: 30 }}>MDL/an/angajat</div>
+                <div style={{ borderTop: `1px solid ${tier.featured ? 'rgba(255,255,255,0.09)' : C.border}`, paddingTop: 26, marginBottom: 30 }}>
+                  {(tier.features ?? []).map((f, j) => (
+                    <div key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, marginBottom: 13 }}>
+                      <CheckCircle size={14} color={C.green} style={{ flexShrink: 0, marginTop: 2 }} />
+                      <span style={{ fontSize: 13, color: tier.featured ? 'rgba(255,255,255,0.72)' : C.textMid, lineHeight: 1.45 }}>{f}</span>
+                    </div>
+                  ))}
+                </div>
+                <motion.button onClick={onScrollToForm} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }}
+                  style={{ width: '100%', padding: '13px', borderRadius: 10, fontSize: 14, fontWeight: 700, cursor: 'pointer', border: tier.featured ? 'none' : `1px solid ${C.red}`, background: tier.featured ? C.red : 'transparent', color: tier.featured ? C.white : C.red }}>
+                  Solicită ofertă
+                </motion.button>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
 }
 
-function FormSection({ formRef }: { formRef: React.RefObject<HTMLElement | null> }) {
-  const c = ebContent.form;
-  const [form, setForm] = useState({ name: '', company: '', role: '', employees: '', email: '', phone: '', message: '', gdpr: false });
-  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+/* ─── PROCESS ─── */
+function ProcessSection() {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: '-80px' });
+  const steps: Array<{ title: string; description: string }> = ebContent.process?.steps ?? [];
+
+  return (
+    <section ref={ref} style={{ background: C.dark, padding: '96px 24px', position: 'relative', overflow: 'hidden' }}>
+      <Particles count={10} />
+      <div style={{ position: 'absolute', top: -100, right: -100, width: 400, height: 400, background: `radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 70%)`, pointerEvents: 'none' }} />
+      <div style={{ maxWidth: 900, margin: '0 auto', position: 'relative' }}>
+        <motion.div initial="hidden" animate={inView ? 'visible' : 'hidden'} variants={stagger}>
+          <motion.p variants={fadeUp} style={{ fontSize: 11, color: C.red, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>Cum funcționează</motion.p>
+          <motion.h2 variants={fadeUp} style={{ fontSize: 36, fontWeight: 800, color: C.white, marginBottom: 56 }}>5 pași - de la cerere la polițe active</motion.h2>
+          <div style={{ position: 'relative' }}>
+            <div style={{ position: 'absolute', left: 27, top: 0, bottom: 0, width: 2, background: `linear-gradient(180deg, ${C.red} 0%, rgba(16,185,129,0.3) 100%)` }} />
+            {steps.map((step, i) => (
+              <motion.div key={i} variants={fadeUp} style={{ display: 'flex', gap: 28, marginBottom: 38, alignItems: 'flex-start' }}>
+                <motion.div whileHover={{ scale: 1.15, background: C.red }}
+                  style={{ width: 56, height: 56, borderRadius: '50%', flexShrink: 0, background: i === 0 ? C.red : C.darkCard, border: `2px solid ${i === 0 ? C.red : 'rgba(255,255,255,0.1)'}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, fontWeight: 900, color: C.white, transition: 'all 0.3s', zIndex: 1 }}>
+                  {i + 1}
+                </motion.div>
+                <div style={{ paddingTop: 12 }}>
+                  <div style={{ fontSize: 16, fontWeight: 700, color: C.white, marginBottom: 6 }}>{step.title}</div>
+                  <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.42)', lineHeight: 1.65 }}>{step.description}</div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── FAQ ─── */
+function FAQSection() {
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { once: true, margin: '-80px' });
+  const [open, setOpen] = useState<number | null>(null);
+  const faqs: Array<{ question: string; answer: string }> = ebContent.faq?.items ?? [];
+
+  return (
+    <section ref={ref} style={{ background: C.lightGray, padding: '96px 24px' }}>
+      <div style={{ maxWidth: 780, margin: '0 auto' }}>
+        <motion.div initial="hidden" animate={inView ? 'visible' : 'hidden'} variants={stagger}>
+          <motion.p variants={fadeUp} style={{ fontSize: 11, color: C.red, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>Întrebări frecvente</motion.p>
+          <motion.h2 variants={fadeUp} style={{ fontSize: 36, fontWeight: 800, color: C.textDark, marginBottom: 48 }}>Tot ce trebuie să știi</motion.h2>
+          {faqs.map((item, i) => (
+            <motion.div key={i} variants={fadeUp}
+              style={{ background: C.white, borderRadius: 14, marginBottom: 12, border: `1px solid ${open === i ? C.red : C.border}`, overflow: 'hidden', transition: 'border-color 0.2s' }}>
+              <button onClick={() => setOpen(open === i ? null : i)}
+                style={{ width: '100%', padding: '20px 24px', background: 'none', border: 'none', cursor: 'pointer', display: 'flex', justifyContent: 'space-between', alignItems: 'center', textAlign: 'left', gap: 16 }}>
+                <span style={{ fontSize: 15, fontWeight: 600, color: C.textDark }}>{item.question}</span>
+                <motion.span animate={{ rotate: open === i ? 180 : 0 }} transition={{ duration: 0.22 }}
+                  style={{ flexShrink: 0, color: open === i ? C.red : C.textMuted }}>
+                  <ChevronDown size={18} />
+                </motion.span>
+              </button>
+              <motion.div initial={false} animate={{ height: open === i ? 'auto' : 0, opacity: open === i ? 1 : 0 }}
+                transition={{ duration: 0.28 }} style={{ overflow: 'hidden' }}>
+                <div style={{ padding: '0 24px 22px', fontSize: 14, color: C.textMuted, lineHeight: 1.72 }}>{item.answer}</div>
+              </motion.div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── FORM + FOOTER ─── */
+function FormSection({ formRef }: { formRef: React.RefObject<HTMLDivElement | null> }) {
+  const [fields, setFields] = useState({ company: '', employees: '', name: '', phone: '', email: '', message: '' });
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('sending');
-    try {
-      await fetch('/api/eb-lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      setStatus('sent');
-    } catch {
-      setStatus('error');
-    }
+    setLoading(true);
+    await new Promise((r) => setTimeout(r, 1200));
+    setLoading(false);
+    setSubmitted(true);
   };
 
-  const inputStyle = {
-    width: '100%',
-    border: `1px solid #E5E7EB`,
-    borderRadius: 6,
-    padding: '10px 12px',
-    fontSize: 14,
-    color: C.navyDark,
-    outline: 'none',
-    boxSizing: 'border-box' as const,
-  };
+  const inputStyle: React.CSSProperties = { width: '100%', padding: '13px 16px', background: C.darkCard, border: `1px solid ${C.borderDark}`, borderRadius: 10, color: C.white, fontSize: 14, outline: 'none', boxSizing: 'border-box' };
 
   return (
-    <section ref={formRef as React.RefObject<HTMLElement>} id="contact-form" style={{ background: C.navy }} className="py-20">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={stagger} className="text-center mb-10">
-          <motion.div variants={fadeUp}><Eyebrow text={c.eyebrow} light /></motion.div>
-          <motion.h2 variants={fadeUp} style={{ fontFamily: 'var(--font-serif)', color: C.white }}
-            className="text-4xl lg:text-5xl font-bold mb-3">{c.h2}</motion.h2>
-          <motion.p variants={fadeUp} style={{ color: 'rgba(247,243,238,0.7)' }} className="text-base">{c.sub}</motion.p>
+    <section ref={formRef} style={{ background: C.dark, padding: '96px 24px', position: 'relative', overflow: 'hidden' }}>
+      <Particles count={8} />
+      <div style={{ position: 'absolute', top: -200, right: -200, width: 600, height: 600, background: `radial-gradient(circle, ${C.redGlow} 0%, transparent 70%)`, pointerEvents: 'none' }} />
+      <div style={{ maxWidth: 720, margin: '0 auto', position: 'relative' }}>
+        <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
+          <p style={{ fontSize: 11, color: C.red, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 8 }}>Contact</p>
+          <h2 style={{ fontSize: 36, fontWeight: 800, color: C.white, marginBottom: 12 }}>Solicită oferta personalizată</h2>
+          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.42)', marginBottom: 42 }}>Răspuns în maxim 4 ore lucrătoare. Fără obligații, fără spam.</p>
+
+          {submitted ? (
+            <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
+              style={{ background: 'rgba(16,185,129,0.09)', border: '1px solid rgba(16,185,129,0.28)', borderRadius: 18, padding: 48, textAlign: 'center' }}>
+              <CheckCircle size={52} color={C.green} style={{ margin: '0 auto 18px' }} />
+              <div style={{ fontSize: 22, fontWeight: 700, color: C.white, marginBottom: 10 }}>Cerere trimisă cu succes</div>
+              <div style={{ fontSize: 14, color: C.textMuted }}>Un specialist ING Broker te va contacta în maxim 4 ore lucrătoare.</div>
+            </motion.div>
+          ) : (
+            <form onSubmit={handleSubmit}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
+                {[
+                  { key: 'company', label: 'Compania (denumire)', placeholder: 'Ex: ABC SRL' },
+                  { key: 'employees', label: 'Număr angajați', placeholder: 'Ex: 25' },
+                  { key: 'name', label: 'Nume și prenume', placeholder: 'Ex: Ion Popescu' },
+                  { key: 'phone', label: 'Telefon', placeholder: '+373 69X XXX XXX' },
+                ].map(({ key, label, placeholder }) => (
+                  <div key={key}>
+                    <label style={{ fontSize: 12, color: 'rgba(255,255,255,0.45)', marginBottom: 6, display: 'block' }}>{label}</label>
+                    <input type="text" placeholder={placeholder} required
+                      value={fields[key as keyof typeof fields]}
+                      onChange={(e) => setFields({ ...fields, [key]: e.target.value })}
+                      style={inputStyle} />
+                  </div>
+                ))}
+              </div>
+              <div style={{ marginBottom: 16 }}>
+                <label style={{ fontSize: 12, color: 'rgba(255,255,255,0.45)', marginBottom: 6, display: 'block' }}>Email</label>
+                <input type="email" placeholder="email@companie.md" required value={fields.email} onChange={(e) => setFields({ ...fields, email: e.target.value })} style={inputStyle} />
+              </div>
+              <div style={{ marginBottom: 28 }}>
+                <label style={{ fontSize: 12, color: 'rgba(255,255,255,0.45)', marginBottom: 6, display: 'block' }}>Mențiuni (opțional)</label>
+                <textarea placeholder="Ex: Dorim pachete diferențiate pe niveluri de management..." rows={4}
+                  value={fields.message} onChange={(e) => setFields({ ...fields, message: e.target.value })}
+                  style={{ ...inputStyle, resize: 'vertical' }} />
+              </div>
+              <motion.button type="submit" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }} disabled={loading}
+                style={{ width: '100%', padding: '16px', background: C.red, color: C.white, border: 'none', borderRadius: 12, fontSize: 16, fontWeight: 700, cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.8 : 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>
+                {loading ? 'Se trimite...' : (<>Trimite cererea <ArrowRight size={18} /></>)}
+              </motion.button>
+            </form>
+          )}
         </motion.div>
-        {status === 'sent' ? (
-          <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}
-            style={{ background: C.green + '22', border: `1px solid ${C.green}`, borderRadius: 12 }}
-            className="p-8 text-center">
-            <CheckCircle size={48} color={C.green} className="mx-auto mb-4" />
-            <p style={{ color: C.cream, fontWeight: 700 }} className="text-xl">{c.success}</p>
-          </motion.div>
-        ) : (
-          <motion.form initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
-            onSubmit={handleSubmit}
-            style={{ background: C.white, borderRadius: 16 }} className="p-8 space-y-5">
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label style={{ color: C.navyDark, fontSize: 13, fontWeight: 600 }} className="block mb-1">{c.fields.name} *</label>
-                <input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} style={inputStyle} placeholder="Ion Popescu" />
-              </div>
-              <div>
-                <label style={{ color: C.navyDark, fontSize: 13, fontWeight: 600 }} className="block mb-1">{c.fields.company} *</label>
-                <input required value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} style={inputStyle} placeholder="SRL Exemplu" />
-              </div>
+      </div>
+
+      <div style={{ maxWidth: 1180, margin: '80px auto 0', padding: '40px 24px 0', borderTop: '1px solid rgba(255,255,255,0.07)' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 20 }}>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6 }}>
+              <div style={{ width: 4, height: 28, background: C.red, borderRadius: 2 }} />
+              <span style={{ fontSize: 16, fontWeight: 700, color: C.white }}>Insurance ING Broker SRL</span>
             </div>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label style={{ color: C.navyDark, fontSize: 13, fontWeight: 600 }} className="block mb-1">{c.fields.role} *</label>
-                <select required value={form.role} onChange={(e) => setForm({ ...form, role: e.target.value })} style={{ ...inputStyle, background: C.white }}>
-                  <option value="">Selecteaza rolul</option>
-                  {c.roles.map((r) => <option key={r} value={r}>{r}</option>)}
-                </select>
-              </div>
-              <div>
-                <label style={{ color: C.navyDark, fontSize: 13, fontWeight: 600 }} className="block mb-1">{c.fields.employees} *</label>
-                <select required value={form.employees} onChange={(e) => setForm({ ...form, employees: e.target.value })} style={{ ...inputStyle, background: C.white }}>
-                  <option value="">Selecteaza</option>
-                  {c.employeeCounts.map((ec) => <option key={ec} value={ec}>{ec}</option>)}
-                </select>
-              </div>
-            </div>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label style={{ color: C.navyDark, fontSize: 13, fontWeight: 600 }} className="block mb-1">{c.fields.email} *</label>
-                <input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} style={inputStyle} placeholder="ion@companie.md" />
-              </div>
-              <div>
-                <label style={{ color: C.navyDark, fontSize: 13, fontWeight: 600 }} className="block mb-1">{c.fields.phone}</label>
-                <input type="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} style={inputStyle} placeholder="+373 6X XXX XXX" />
-              </div>
-            </div>
-            <div>
-              <label style={{ color: C.navyDark, fontSize: 13, fontWeight: 600 }} className="block mb-1">{c.fields.message}</label>
-              <textarea value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} rows={3}
-                style={{ ...inputStyle, resize: 'none' }} placeholder={c.fields.messagePlaceholder} />
-            </div>
-            <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', cursor: 'pointer' }}>
-              <input type="checkbox" required checked={form.gdpr} onChange={(e) => setForm({ ...form, gdpr: e.target.checked })}
-                style={{ marginTop: 3, width: 16, height: 16, flexShrink: 0 }} />
-              <span style={{ color: C.grayText, fontSize: 12, lineHeight: 1.5 }}>{c.fields.gdpr}</span>
-            </label>
-            <button type="submit" disabled={status === 'sending'}
-              style={{ width: '100%', background: C.red, color: C.white, borderRadius: 8, fontWeight: 700, padding: '14px 0', fontSize: 15, cursor: 'pointer', opacity: status === 'sending' ? 0.7 : 1, border: 'none' }}
-              className="hover:opacity-90 transition-opacity flex items-center gap-2 justify-center">
-              {status === 'sending' ? 'Se trimite...' : c.fields.submit} <ArrowRight size={18} />
-            </button>
-            {status === 'error' && (
-              <p style={{ color: C.red, textAlign: 'center' }} className="text-sm">
-                A aparut o eroare. Contactati: andrei.moraru@ingbroker.md
-              </p>
-            )}
-          </motion.form>
-        )}
+            <div style={{ fontSize: 12, color: C.textMuted }}>str. Pan Halippa, 9, mun. Chișinău, MD-2009</div>
+          </div>
+          <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap' }}>
+            <a href="tel:+37369526003" style={{ display: 'flex', alignItems: 'center', gap: 6, color: C.textMuted, fontSize: 13, textDecoration: 'none' }}>
+              <Phone size={13} /> +373 695 26 003
+            </a>
+            <a href="mailto:ingbroker@ingbroker.md" style={{ display: 'flex', alignItems: 'center', gap: 6, color: C.textMuted, fontSize: 13, textDecoration: 'none' }}>
+              <Mail size={13} /> ingbroker@ingbroker.md
+            </a>
+          </div>
+          <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.18)' }}>© 2026 Insurance ING Broker SRL - Licențiat CNPF</div>
+        </div>
       </div>
     </section>
   );
 }
 
-function EBFooter() {
-  const c = ebContent.footerSection;
-  return (
-    <footer style={{ background: C.navyDark, borderTop: `1px solid rgba(255,255,255,0.06)` }} className="py-14">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-10 mb-10">
-          <div>
-            <p style={{ color: C.gold, fontWeight: 700 }} className="text-sm mb-3">{c.col1.title}</p>
-            {c.col1.lines.map((l) => (
-              <p key={l} style={{ color: 'rgba(247,243,238,0.5)' }} className="text-xs mb-1">{l}</p>
-            ))}
-          </div>
-          <div>
-            <p style={{ color: C.gold, fontWeight: 700 }} className="text-sm mb-3">{c.col2.title}</p>
-            {c.col2.address.map((l) => (
-              <p key={l} style={{ color: 'rgba(247,243,238,0.5)' }} className="text-xs mb-1">{l}</p>
-            ))}
-            <a href={`tel:${c.col2.phone.replace(/\s/g, '')}`} style={{ color: C.cream, textDecoration: 'none' }} className="text-xs block mt-2 hover:opacity-80 transition-opacity">{c.col2.phone}</a>
-            <a href={`mailto:${c.col2.email}`} style={{ color: C.cream, textDecoration: 'none' }} className="text-xs block mt-1 hover:opacity-80 transition-opacity">{c.col2.email}</a>
-          </div>
-          <div>
-            <p style={{ color: C.gold, fontWeight: 700 }} className="text-sm mb-3">{c.col3.title}</p>
-            {c.col3.links.map((l) => (
-              <Link key={l.href} to={l.href} style={{ color: 'rgba(247,243,238,0.5)', textDecoration: 'none' }}
-                className="block text-xs mb-1.5 hover:opacity-80 transition-opacity">{l.label}</Link>
-            ))}
-          </div>
-        </div>
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: 20, textAlign: 'center' }}>
-          <p style={{ color: 'rgba(247,243,238,0.3)' }} className="text-xs">
-            &copy; 2026 Insurance ING Broker SRL. Licentiat CNPF din 2017. CF: 1017600019386.
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-}
-
+/* ─── SCHEMA ─── */
 function EBSchema() {
-  const faqJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: ebContent.faq.items.map((item) => ({
-      '@type': 'Question',
-      name: item.q,
-      acceptedAnswer: { '@type': 'Answer', text: item.a },
-    })),
-  };
-  const serviceJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Employee Benefits Corporate - Insurance ING Broker SRL',
-    description: ebContent.meta.description,
-    provider: { '@type': 'Organization', name: 'Insurance ING Broker SRL', url: 'https://www.ingbroker.md', telephone: '+37369526003' },
-    areaServed: { '@type': 'Country', name: 'Moldova' },
-    serviceType: 'Insurance Brokerage - Employee Benefits',
-  };
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'ING Broker', item: 'https://www.ingbroker.md' },
-      { '@type': 'ListItem', position: 2, name: 'Asigurari Corporate', item: 'https://www.ingbroker.md/business' },
-      { '@type': 'ListItem', position: 3, name: 'Employee Benefits', item: 'https://www.ingbroker.md/employee-benefits' },
-    ],
-  };
+  const faqItems: Array<{ question: string; answer: string }> = ebContent.faq?.items ?? [];
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'FAQPage',
+        mainEntity: faqItems.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })),
+      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'Service',
+        name: 'Employee Benefits - Asigurare medicală AMF pentru angajați',
+        description: 'Program de beneficii medicale deductibile fiscal conform Art. 24 alin. 20 Cod Fiscal Moldova',
+        provider: { '@type': 'InsuranceAgency', name: 'Insurance ING Broker SRL', telephone: '+37369526003', address: { '@type': 'PostalAddress', streetAddress: 'str. Pan Halippa, 9', addressLocality: 'Chișinău', postalCode: 'MD-2009', addressCountry: 'MD' } },
+        areaServed: { '@type': 'Country', name: 'Moldova' },
+      }) }} />
     </>
   );
 }
 
+/* ─── EXPORT PRINCIPAL ─── */
 export function EmployeeBenefits() {
-  const formRef = useRef<HTMLElement | null>(null);
-
-  useEffect(() => { window.scrollTo(0, 0); }, []);
-
-  const scrollToForm = () => {
-    formRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const formRef = useRef<HTMLDivElement>(null);
+  const scrollToForm = () => formRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   return (
     <>
-      <EBSchema />
       <SEO
-        title={ebContent.meta.title}
-        description={ebContent.meta.description}
-        lang="ro"
-        keywords="employee benefits moldova, asigurare medicala angajati, pachete corporative asigurare, amf deductibil fiscal moldova 2026"
-        image="https://www.ingbroker.md/og/employee-benefits.jpg"
+        title={ebContent.meta?.title ?? 'Employee Benefits - Asigurare medicală pentru angajați - ING Broker'}
+        description={ebContent.meta?.description ?? 'Program de beneficii medicale deductibile fiscal. Art. 24 alin. 20 Cod Fiscal Moldova - 17.400 MDL/an/angajat. Calculează economia acum.'}
+        canonicalUrl="https://ingbroker.md/employee-benefits"
       />
-      <a href="#contact-form"
-        style={{ position: 'absolute', left: -9999, top: 4, zIndex: 9999, background: C.navy, color: C.white, padding: '8px 16px', borderRadius: 4 }}
-        className="focus:left-4">
-        Salt la formular
-      </a>
+      <EBSchema />
       <HeroSection onScrollToForm={scrollToForm} />
       <PainSection />
       <SolutionSection />
       <ComparisonSection />
-      <AudienceSection onScrollToForm={scrollToForm} />
-      <ContextSection />
       <TiersSection onScrollToForm={scrollToForm} />
-      <BrokerSection />
-      <ProcessSection onScrollToForm={scrollToForm} />
+      <ProcessSection />
       <FAQSection />
       <FormSection formRef={formRef} />
-      <EBFooter />
     </>
   );
 }
