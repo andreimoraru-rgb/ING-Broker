@@ -502,25 +502,280 @@ export const articles: Record<string, Article[]> = {
       }
     },
     {
-      id: '2',
-      slug: 'cum-se-determină-prețul-unei-asigurări-rca-ghid-pentru-un-preț-rca-accesibil',
-      title: 'Cum se determină prețul unei asigurări RCA? Ghid pentru un preț RCA accesibil',
-      excerpt: 'Descoperă factorii care influențează costul poliței tale RCA și cum poți obține cel mai bun preț.',
-      content: `
-        <h2>Factorii care influențează prețul RCA</h2>
-        <p>Prețul poliței RCA nu este fix și depinde de numeroși factori, de la istoricul șoferului până la caracteristicile tehnice ale mașinii.</p>
-        <h2>Sistemul Bonus-Malus</h2>
-        <p>Acesta este unul dintre cei mai importanți factori. Dacă nu ai provocat accidente, vei primi o reducere (Bonus). În caz contrar, prețul va crește (Malus).</p>
-      `,
-      image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800',
-      date: '10 Mar 2026',
-      author: 'Andrei Moraru',
-      tags: ['Auto', 'RCA', 'Ghid'],
-      seo: {
-        title: 'Cum se calculeaza pretul RCA in Moldova | ING Broker',
-        description: 'Află factorii care determină prețul RCA și cum poți obține o asigurare mai ieftină.',
-        keywords: 'calcul rca moldova, pret rca, bonus malus moldova'
-      }
+id: '2',
+          slug: 'cum-se-determină-prețul-unei-asigurări-rca-ghid-pentru-un-preț-rca-accesibil',
+          title: 'Cum se determină prețul RCA în Moldova în 2026? Toți factorii și 7 strategii ca să plătești mai puțin',
+          excerpt: 'Ghid complet 2026: toți factorii care influențează prima RCA, cum se calculează practic prima ta, tabel orientativ de prețuri pe categorii de vehicule și 7 strategii verificate ca să obții cea mai accesibilă poliță prin ING Broker.',
+          content: `<div class="prose prose-lg max-w-none">
+
+          <div class="bg-primary/5 border-l-4 border-primary p-6 my-8 not-prose">
+          <p class="text-xs text-primary font-semibold uppercase tracking-widest mb-2">Răspuns rapid</p>
+          <p class="text-secondary text-base leading-relaxed">Prețul unei polițe RCA în Moldova în 2026 se calculează pornind de la un tarif de bază reglementat de CNPF, înmulțit cu coeficienți individuali: clasa Bonus-Malus (de la -50% la +145%), categoria și cilindreea vehiculului, vârsta și experiența șoferului, zona de înmatriculare și durata poliței. Nu există un preț fix - doi șoferi cu același vehicul pot plăti diferențe de peste 100%, în funcție de istoricul de daune. Cel mai eficient mod de a obține prețul minim legal disponibil este compararea ofertelor de la toți asigurătorii autorizați CNPF printr-un broker, nu cumpărarea de la primul asigurător întâlnit.</p>
+          </div>
+
+          <p class="lead">Dacă te-ai întrebat vreodată de ce vecinul tău plătește jumătate din ce plătești tu pentru RCA, la un vehicul similar, răspunsul nu este întâmplător. Prețul RCA în Republica Moldova rezultă dintr-un calcul precis, bazat pe un tarif de referință stabilit de Comisia Națională a Pieței Financiare (CNPF) și pe o serie de coeficienți individuali care pot schimba prima finală cu sute de lei, uneori chiar cu mii. Acest ghid explică, pas cu pas, exact ce influențează prețul tău RCA în 2026 și, mai important, ce poți face concret ca să-l reduci legal.</p>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-8 not-prose">
+          <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+          <p class="text-2xl font-bold text-secondary leading-tight">9+</p>
+          <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">factori</p>
+          <p class="text-xs text-gray-500 mt-1">influențează prima RCA</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+          <p class="text-2xl font-bold text-secondary leading-tight">-50%</p>
+          <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">clasa B8</p>
+          <p class="text-xs text-gray-500 mt-1">reducere maximă Bonus-Malus</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+          <p class="text-2xl font-bold text-secondary leading-tight">+145%</p>
+          <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">clasa M4</p>
+          <p class="text-xs text-gray-500 mt-1">majorare pentru daune repetate</p>
+          </div>
+          <div class="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+          <p class="text-2xl font-bold text-secondary leading-tight">24h</p>
+          <p class="text-xs text-primary font-semibold uppercase tracking-wide mt-1">ofertă</p>
+          <p class="text-xs text-gray-500 mt-1">comparativă ING Broker</p>
+          </div>
+          </div>
+
+          <h2>Cei 9 factori care determină prețul RCA în Moldova</h2>
+          <p>Fiecare asigurător autorizat CNPF aplică propriul model de tarifare, dar toate modelele pornesc de la aceleași categorii de factori de risc. Înțelegerea lor te ajută să identifici exact de ce prima ta este cât este și unde ai marjă reală de optimizare.</p>
+
+          <h3>1. Clasa Bonus-Malus</h3>
+          <p>Este factorul cu impactul cel mai mare asupra prețului final. Un șofer fără daune din vină proprie urcă progresiv spre clase Bonus, cu reduceri de până la 50% din prima de bază. Un șofer cu accidente repetate coboară spre clase Malus, unde prima poate crește cu 145% sau mai mult. Clasa se transferă între asigurători, fiind gestionată centralizat prin baza de date a CNPF.</p>
+
+          <h3>2. Categoria și cilindreea vehiculului</h3>
+          <p>Autoturismele, microbuzele, camioanele și motocicletele au tarife de bază distincte. În interiorul categoriei autoturisme, cilindreea motorului rămâne un criteriu de departajare la majoritatea asigurătorilor - un motor de peste 2.000 cmc este asociat statistic cu o valoare de înlocuire mai mare a vehiculelor terțe implicate în accidente.</p>
+
+          <h3>3. Vechimea vehiculului</h3>
+          <p>Vehiculele foarte vechi sau foarte noi pot avea tratamente diferite de la un asigurător la altul - unele companii aplică ajustări pe baza vechimii, altele se bazează exclusiv pe categorie și cilindree. Acesta este unul dintre motivele pentru care ofertele pot varia semnificativ între companii pentru exact același vehicul.</p>
+
+          <h3>4. Vârsta și experiența șoferului principal</h3>
+          <p>Șoferii cu vechime mică la volan (de regulă sub 3 ani de la obținerea permisului) și cei sub 25 de ani sunt încadrați statistic într-o categorie de risc mai ridicat și plătesc prime majorate față de un șofer cu experiență de 10-15 ani și istoric curat.</p>
+
+          <h3>5. Zona de înmatriculare</h3>
+          <p>Chișinăul și marile centre urbane au densitate de trafic și frecvență de accidente mai ridicate decât zonele rurale, ceea ce se reflectă într-un coeficient teritorial mai mare la majoritatea asigurătorilor.</p>
+
+          <h3>6. Durata poliței</h3>
+          <p>O poliță anuală (12 luni) oferă, de regulă, cel mai bun raport preț-acoperire per lună de valabilitate. Polițele pe perioade scurte (1-3 luni) au un tarif proporțional mai ridicat, fiind gândite pentru utilizare ocazională, nu ca soluție economică pe termen lung.</p>
+
+          <h3>7. Numărul și tipul șoferilor autorizați</h3>
+          <p>Unele polițe permit conducerea de către orice persoană cu permis valid, altele limitează acoperirea la șoferi nominalizați. Extinderea listei de șoferi autorizați cu persoane tinere sau fără experiență poate influența prima finală la anumiți asigurători.</p>
+
+          <h3>8. Scopul de utilizare a vehiculului</h3>
+          <p>Un vehicul folosit exclusiv personal are, de regulă, un profil de risc diferit față de un vehicul utilizat pentru curierat, ride-sharing sau activități comerciale intensive, unde numărul de kilometri parcurși anual este semnificativ mai mare.</p>
+
+          <h3>9. Asigurătorul ales și politica sa comercială</h3>
+          <p>Fiecare companie autorizată CNPF își stabilește propriul tarif de bază și propriile grile de discount, în limitele reglementărilor legale. Diferența dintre cea mai scumpă și cea mai ieftină ofertă pentru exact același vehicul și șofer poate depăși frecvent 30-40%. Acesta este motivul central pentru care compararea ofertelor înainte de cumpărare este o economie reală, măsurabilă în bani.</p>
+
+          <h2>Cum se calculează, în practică, prima ta RCA</h2>
+          <p>Simplificat, formula pe care o folosesc asigurătorii poate fi descrisă astfel: <strong>Prima finală = Tarif de bază pe categorie x Coeficient Bonus-Malus x Coeficient teritorial x Coeficient vârstă/experiență șofer x Coeficient durată poliță.</strong> Tariful de bază diferă de la un asigurător la altul, pentru că fiecare companie își calculează propriul risc statistic pornind de la portofoliul propriu de daune. De aceea două oferte pentru același vehicul pot arăta radical diferit, chiar dacă toți coeficienții individuali ai șoferului rămân identici.</p>
+          <p>Practic, asta înseamnă că nu poți afla prețul real fără să ceri o ofertă personalizată - orice cifră generică găsită online este strict orientativă. Tabelul de mai jos oferă un interval orientativ pentru 2026, pe categorii de vehicule, pentru un șofer cu clasă Bonus-Malus medie (B0) și poliță anuală.</p>
+
+          <div class="overflow-x-auto -mx-4 sm:mx-0 my-8 not-prose">
+          <table class="w-full text-sm border-collapse min-w-[540px]">
+          <thead><tr class="bg-secondary text-white"><th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide">Categorie vehicul</th><th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide">Interval orientativ anual (MDL)</th><th class="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide">Factor principal de variație</th></tr></thead>
+          <tbody class="divide-y divide-gray-100">
+          <tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">Autoturism sub 1.600 cmc</td><td class="px-4 py-3 text-gray-600 align-top">~1.100 - 1.900 MDL</td><td class="px-4 py-3 text-gray-600 align-top">Bonus-Malus, zonă</td></tr>
+          <tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">Autoturism 1.600 - 2.000 cmc</td><td class="px-4 py-3 text-gray-600 align-top">~1.400 - 2.400 MDL</td><td class="px-4 py-3 text-gray-600 align-top">Bonus-Malus, vârstă șofer</td></tr>
+          <tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">Autoturism peste 2.000 cmc</td><td class="px-4 py-3 text-gray-600 align-top">~1.900 - 3.200 MDL</td><td class="px-4 py-3 text-gray-600 align-top">Cilindree, Bonus-Malus</td></tr>
+          <tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">Microbuz / autoutilitară</td><td class="px-4 py-3 text-gray-600 align-top">~2.200 - 4.000 MDL</td><td class="px-4 py-3 text-gray-600 align-top">Utilizare comercială, greutate</td></tr>
+          <tr class="hover:bg-gray-50"><td class="px-4 py-3 font-semibold text-secondary align-top">Motocicletă</td><td class="px-4 py-3 text-gray-600 align-top">~600 - 1.300 MDL</td><td class="px-4 py-3 text-gray-600 align-top">Cilindree, vârstă șofer</td></tr>
+          </tbody>
+          </table>
+          </div>
+          <p class="text-xs text-gray-500 italic">Valori orientative de piață pentru 2026, cu titlu informativ. Prețul real depinde de oferta fiecărui asigurător autorizat CNPF, clasa Bonus-Malus exactă și profilul complet al șoferului. Pentru o prezentare generală a RCA, vezi și <a href="/news/asigurari-corporative-companii-moldova-2026">ghidul complet despre asigurarea RCA în Moldova</a>.</p>
+
+          <div class="bg-amber-50 border-l-4 border-amber-400 p-6 my-8">
+          <strong>5 greșeli care umflă artificial prețul RCA - verifică înainte să semnezi:</strong><br/><br/>
+          1. <strong>Cumperi de la primul asigurător găsit</strong>, fără nicio comparație - poți plăti cu 30-40% mai mult pentru aceeași acoperire legală.<br/>
+          2. <strong>Nu îți verifici clasa Bonus-Malus reală</strong> înainte de a cere o ofertă - unii asigurători pot aplica implicit o clasă de start mai dezavantajoasă din lipsă de informație.<br/>
+          3. <strong>Cumperi polițe scurte repetate</strong> (1-2 luni) în loc de o poliță anuală, plătind un tarif proporțional mai mare pe termen lung.<br/>
+          4. <strong>Ignori impactul unei daune mici raportate</strong> - uneori o daună de valoare redusă costă mai puțin achitată direct decât diferența de primă cauzată de trecerea într-o clasă Malus pe următorii ani.<br/>
+          5. <strong>Nu actualizezi datele vehiculului</strong> (schimbare motor, radiere temporară) care pot influența corect tariful aplicat.
+          </div>
+
+          <h2>7 strategii verificate ca să plătești mai puțin pentru RCA în 2026</h2>
+          <ol>
+          <li><strong>Compară ofertele de la toți asigurătorii autorizați CNPF înainte de reînnoire.</strong> Diferențele de tarif de bază între companii sunt reale și pot depăși cu ușurință 500-800 MDL anual pentru același vehicul.</li>
+          <li><strong>Menține un istoric curat de daune cât mai mult timp posibil.</strong> Fiecare an suplimentar fără daună din vină proprie te apropie de o clasă Bonus superioară și de o reducere mai mare.</li>
+          <li><strong>Alege poliță anuală în locul reînnoirilor scurte și repetate.</strong> Reduce costul administrativ proporțional și elimină riscul unei zile fără acoperire între polițe.</li>
+          <li><strong>Verifică-ți corect clasa Bonus-Malus înainte de a cere o ofertă nouă</strong>, mai ales dacă ai schimbat recent asigurătorul sau ai avut o pauză fără vehicul înmatriculat.</li>
+          <li><strong>Evită raportarea daunelor foarte mici din bugetul propriu</strong>, atunci când costul reparației este apropiat de diferența de primă pe care ai plăti-o în anii următori din cauza trecerii în clasă Malus.</li>
+          <li><strong>Grupează polițele auto ale familiei sau ale companiei la același broker</strong>, pentru a obține o negociere unitară și, adesea, condiții comerciale mai bune pentru portofoliul agregat.</li>
+          <li><strong>Lucrează cu un broker autorizat CNPF, nu direct cu un singur asigurător.</strong> Brokerul are acces simultan la toate ofertele pieței și este plătit din comisionul asigurătorului, nu din buzunarul tău - deci compararea este gratuită pentru tine.</li>
+          </ol>
+
+          <div class="not-prose my-8 bg-secondary text-white rounded-xl p-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+          <p class="font-bold text-white text-lg mb-1">Vrei prețul RCA real pentru vehiculul tău, nu o estimare generică?</p>
+          <p class="text-gray-400 text-sm">ING Broker compară ofertele tuturor asigurătorilor autorizați CNPF și îți trimite cea mai bună opțiune în 24 ore lucrătoare</p>
+          </div>
+          <a href="tel:+37369526003" class="flex-shrink-0 bg-primary text-white font-bold px-6 py-3 rounded-lg text-sm text-center whitespace-nowrap">Sună: +(373) 69 526 003</a>
+          </div>
+          </div>
+
+          <h2>De ce un broker autorizat CNPF obține un preț mai bun decât cumpărarea directă</h2>
+          <p>Un asigurător își vinde propriile polițe și, în mod firesc, nu îți va recomanda niciodată oferta unui concurent, chiar dacă aceasta ar fi mai avantajoasă pentru tine. Un broker autorizat CNPF, precum ING Broker, funcționează diferit: are acces simultan la tarifele tuturor companiilor de pe piața moldovenească, poate compara obiectiv condițiile și îți recomandă soluția cu cel mai bun raport preț-acoperire pentru profilul tău exact. Comisionul brokerului este plătit de asigurător, nu de client, astfel încât serviciul de comparație și consultanță este, practic, gratuit pentru tine.</p>
+          <p>În plus, un broker păstrează evidența datei de expirare a poliței tale și te alertează din timp, eliminând riscul de a circula fără RCA valabilă - o situație care, așa cum este detaliat în <a href="/news/asigurari-corporative-companii-moldova-2026">ghidul complet despre RCA în Moldova</a>, poate genera amenzi și răspundere financiară integrală pentru daunele produse.</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 not-prose">
+          <div class="text-center p-6 bg-white shadow-sm rounded-xl border-t-4 border-primary">
+          <div class="text-4xl font-bold text-primary mb-3">01</div>
+          <p class="font-bold text-secondary text-base mb-2">Ne spui datele vehiculului</p>
+          <p class="text-sm text-gray-500 leading-relaxed">Categorie, cilindree, clasă Bonus-Malus dacă o cunoști. Fără angajament la prima discuție.</p>
+          <p class="text-xs text-primary font-semibold mt-3">~10 minute</p>
+          </div>
+          <div class="text-center p-6 bg-white shadow-sm rounded-xl border-t-4 border-primary">
+          <div class="text-4xl font-bold text-primary mb-3">02</div>
+          <p class="font-bold text-secondary text-base mb-2">Primești oferta comparativă</p>
+          <p class="text-sm text-gray-500 leading-relaxed">Solicităm cotații de la asigurătorii autorizați CNPF și îți arătăm prețul real, nu unul estimativ.</p>
+          <p class="text-xs text-primary font-semibold mt-3">24 ore lucrătoare</p>
+          </div>
+          <div class="text-center p-6 bg-white shadow-sm rounded-xl border-t-4 border-primary">
+          <div class="text-4xl font-bold text-primary mb-3">03</div>
+          <p class="font-bold text-secondary text-base mb-2">Polița se emite imediat</p>
+          <p class="text-sm text-gray-500 leading-relaxed">După ce alegi oferta, polița RCA se emite în aceeași zi, fără costuri suplimentare de intermediere.</p>
+          <p class="text-xs text-primary font-semibold mt-3">suport 0-365 zile/an</p>
+          </div>
+          </div>
+
+          <div class="not-prose flex flex-wrap items-center gap-3 my-8 p-5 bg-white border border-gray-100 rounded-xl shadow-sm">
+          <span class="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-800 text-xs font-semibold rounded-full px-4 py-2">Broker autorizat CNPF Moldova</span>
+          <span class="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 text-xs font-semibold rounded-full px-4 py-2">Toți asigurătorii într-o singură cerere</span>
+          <span class="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 text-xs font-semibold rounded-full px-4 py-2">Română - Rusă - Engleză</span>
+          <span class="inline-flex items-center gap-2 bg-gray-50 border border-gray-200 text-gray-700 text-xs font-semibold rounded-full px-4 py-2">Comisionul plătit de asigurător, nu de tine</span>
+          </div>
+
+          <h2>Întrebări frecvente - Prețul RCA în Moldova</h2>
+
+          <div class="not-prose border-t border-gray-100 mt-4">
+
+          <div class="border-b border-gray-100 py-1">
+          <details class="group">
+          <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+          <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Care este cel mai important factor care influențează prețul RCA?</span>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+          <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          </summary>
+          <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Clasa Bonus-Malus este, de departe, factorul cu impactul cel mai mare - poate reduce prima cu 50% pentru un șofer fără daune sau o poate majora cu 145% pentru un șofer cu accidente repetate din vină proprie. Următorii ca importanță sunt categoria și cilindreea vehiculului, urmate de vârsta și experiența șoferului principal.</div>
+          </details>
+          </div>
+
+          <div class="border-b border-gray-100 py-1">
+          <details class="group">
+          <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+          <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Cum aflu clasa mea Bonus-Malus înainte de a cere o ofertă RCA?</span>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+          <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          </summary>
+          <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Clasa Bonus-Malus este înscrisă pe polița RCA curentă sau poate fi verificată de asigurătorul tău actual la cerere. Dacă nu o cunoști, ING Broker o poate verifica pentru tine în baza de date a asigurătorilor autorizați CNPF, ca parte din procesul gratuit de ofertare.</div>
+          </details>
+          </div>
+
+          <div class="border-b border-gray-100 py-1">
+          <details class="group">
+          <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+          <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">De ce diferă atât de mult prețul RCA de la un asigurător la altul, pentru același vehicul?</span>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+          <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          </summary>
+          <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Fiecare asigurător autorizat CNPF își calculează propriul tarif de bază pornind de la portofoliul propriu de daune și propria strategie comercială. Aceste diferențe de politică internă, nu neapărat de acoperire legală, explică de ce ofertele pentru exact același vehicul și șofer pot varia cu 30-40% sau chiar mai mult.</div>
+          </details>
+          </div>
+
+          <div class="border-b border-gray-100 py-1">
+          <details class="group">
+          <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+          <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Este mai ieftin să cumpăr o poliță RCA anuală decât mai multe polițe scurte?</span>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+          <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          </summary>
+          <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Da, în majoritatea cazurilor. Polițele pe perioade scurte (1-3 luni) au un tarif proporțional mai ridicat per lună de acoperire, fiind gândite pentru utilizare ocazională. O poliță anuală oferă, de regulă, cel mai bun raport preț-acoperire și elimină riscul unei zile fără RCA validă între reînnoiri.</div>
+          </details>
+          </div>
+
+          <div class="border-b border-gray-100 py-1">
+          <details class="group">
+          <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+          <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Merită să raportez o daună mică la RCA sau e mai ieftin s-o plătesc singur?</span>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+          <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          </summary>
+          <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Depinde de valoarea daunei. O daună din vină proprie te poate trece într-o clasă Malus, majorând prima pentru mai mulți ani următori. Dacă suma majorării cumulate pe termen mediu depășește costul reparației, poate fi mai avantajos să acoperi singur costul mic și să îți păstrezi clasa Bonus. ING Broker te poate ajuta să faci acest calcul concret, caz cu caz.</div>
+          </details>
+          </div>
+
+          <div class="border-b border-gray-100 py-1">
+          <details class="group">
+          <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+          <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Vârsta șoferului chiar influențează prețul RCA la o poliță de companie?</span>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+          <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          </summary>
+          <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Da, dacă polița nominalizează șoferi autorizați. Dacă vehiculul companiei poate fi condus de orice angajat cu permis valid, fără nominalizare, impactul vârstei individuale scade, dar unii asigurători pot totuși aplica un coeficient de risc pe baza vârstei medii a angajaților care conduc frecvent vehiculul respectiv.</div>
+          </details>
+          </div>
+
+          <div class="border-b border-gray-100 py-1">
+          <details class="group">
+          <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+          <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">Pot obține un preț mai bun dacă asigur mai multe vehicule ale familiei sau firmei împreună?</span>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+          <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          </summary>
+          <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Adesea, da. Gruparea mai multor vehicule într-un singur program de asigurare, administrat printr-un broker, poate aduce condiții comerciale mai bune și o reînnoire sincronizată, simplificând gestionarea și reducând riscul unei polițe expirate neobservate.</div>
+          </details>
+          </div>
+
+          <div class="py-1">
+          <details class="group">
+          <summary class="flex justify-between items-center cursor-pointer list-none py-6 text-left gap-4">
+          <span class="font-bold tracking-tight text-secondary group-open:text-primary transition-colors pr-4">De ce să cer oferta prin ING Broker și nu direct de la un asigurător?</span>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full border border-gray-200 group-open:bg-primary group-open:border-primary flex items-center justify-center text-gray-400 group-open:text-white transition-all">
+          <svg class="w-4 h-4 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </div>
+          </summary>
+          <div class="pb-7 text-gray-500 leading-relaxed font-light max-w-3xl">Un asigurător îți vinde doar propriile polițe. Un broker autorizat CNPF, precum ING Broker, compară simultan ofertele tuturor asigurătorilor de pe piața moldovenească și îți recomandă obiectiv cea mai avantajoasă opțiune pentru profilul tău exact. Comisionul este plătit de asigurător, deci serviciul este gratuit pentru tine.</div>
+          </details>
+          </div>
+
+          </div>
+
+          <div class="bg-secondary text-white p-8 rounded-xl text-center mt-10 not-prose">
+          <h2 class="text-white text-2xl font-bold mt-0 mb-2">Află exact cât ai plăti pentru RCA la vehiculul tău</h2>
+          <p class="text-gray-400 text-sm mb-6">Insurance ING Broker SRL, Chișinău - comparăm ofertele tuturor asigurătorilor autorizați CNPF și îți recomandăm cel mai bun preț pentru profilul tău. Consultanță gratuită, răspuns în 24 ore lucrătoare.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+          <a href="tel:+37369526003" class="inline-flex items-center justify-center gap-2 bg-primary text-white font-bold px-8 py-4 rounded-lg text-base">+(373) 69 526 003</a>
+          <a href="mailto:andrei.moraru@ingbroker.md" class="inline-flex items-center justify-center gap-2 border border-white/20 text-white font-semibold px-8 py-4 rounded-lg text-base hover:bg-white/10 transition-colors">andrei.moraru@ingbroker.md</a>
+          </div>
+          <div class="flex flex-wrap justify-center gap-6 text-xs text-gray-500">
+          <span>Răspuns garantat în 24h lucrătoare</span>
+          <span>Fără angajamente la prima discuție</span>
+          <span>Consultanță gratuită</span>
+          </div>
+          </div>
+
+          </div>`,
+
+          image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200',
+          date: '3 Iul 2026',
+          author: 'Andrei Moraru',
+          tags: ['RCA', 'Auto', 'Pret', 'Moldova', 'Ghid'],
+          seo: {
+                  title: 'Cum se determină prețul RCA în Moldova 2026 - Factori și Calcul | ING Broker',
+                  description: 'Ghid complet 2026: toți factorii care determină prețul RCA, cum se calculează prima, tabel de prețuri orientative pe categorii și 7 strategii ca să obții cea mai accesibilă poliță. Broker autorizat CNPF.',
+                  keywords: 'calcul pret RCA Moldova 2026, cum se calculeaza RCA, factori pret RCA, bonus malus RCA Moldova, RCA ieftin Moldova, cat costa RCA 2026, tarif RCA Chisinau, pret RCA autoturism Moldova, ING Broker RCA'
+          }
+      
     },
     {
       id: 'transport-logistica-1',
