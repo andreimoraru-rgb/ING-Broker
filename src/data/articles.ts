@@ -1542,7 +1542,7 @@ Un sofer moldovean care merge in Romania, Germania, Turcia sau Ucraina are nevoi
       slug: 'asigurare-flote-auto-corporate-moldova',
       title: 'Asigurare flote auto corporate in Moldova: RCA, Carte Verde, CASCO, CMR, Cargo',
       excerpt: 'Gestionezi o flota de vehicule? ING Broker ofera solutii complete pentru asigurarea flotelor auto corporate in Moldova - RCA, Carte Verde, CASCO, CMR si Cargo - dintr-o singura sursa, cu oferta personalizata si suport dedicat.',
-      image: '/og-image.jpg',
+      image: '/fleet-auto-corporate-hero.jpg',
       date: '15 Iun 2026',
       author: 'ING Broker',
       tags: ['Flote Auto', 'Corporate', 'RCA', 'CASCO', 'CMR', 'Cargo'],
