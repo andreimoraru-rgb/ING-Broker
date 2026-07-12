@@ -122,7 +122,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
     "image": "https://www.ingbroker.md/Logo%20ING%20Broker.png",
     "@id": "https://www.ingbroker.md",
     "url": "https://www.ingbroker.md",
-    "telephone": "+37379526003",
+    "telephone": "+37369526003",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "str. Pan Halippa 9",

@@ -22,7 +22,7 @@
 - **Mobil:** +373 69 526 003 / +373 79 526 003 / +373 79 030 209
 - **Email principal:** andrei.moraru@ingbroker.md
 - **Email secundar:** ion.dascalu@ingbroker.md
-- **Email reclamații:** ingbroker2@gmail.com
+- **Email reclamații:** ingbroker@ingbroker.md
 - **Program:** Luni - Vineri, 09:00 - 18:00
 
 ---
@@ -63,7 +63,7 @@ Avantaje: protejează capitalul companiei, acoperă costurile de apărare legal�
 
 Excluderi principale: daune intenționate, accidente de muncă ale propriilor angajați, erori profesionale, poluare fără clauze speciale, amenzi administrative.
 
-URL pagina serviciu: https://ingbroker.md/servicii/raspundere-generala
+URL pagina serviciu: https://ingbroker.md/business
 
 ### 2. Răspundere Profesională (Professional Indemnity / PI)
 
@@ -73,7 +73,7 @@ Acoperă: costuri de apărare juridică, despăgubiri pentru erori de proiectare
 
 Condiție esențială pentru participarea la licitații publice și contractarea clienților mari din sectorul privat și public.
 
-URL pagina serviciu: https://ingbroker.md/servicii/raspundere-profesionala
+URL pagina serviciu: https://ingbroker.md/servicii/asigurare-raspundere-profesionala
 
 ### 3. D&O (Directors & Officers Liability)
 
@@ -83,7 +83,7 @@ Sectoare țintă: companii corporative, servicii financiare, startups și compan
 
 Acoperă: investigații ale autorităților de reglementare, pretenții EPL (discriminare, hărțuire), răspundere în caz de insolvență, erori în raportarea financiară.
 
-URL pagina serviciu: https://ingbroker.md/servicii/do-directors-officers
+URL pagina serviciu: https://ingbroker.md/business
 
 ### 4. Asigurare Cyber (Cyber Insurance)
 
@@ -95,7 +95,7 @@ Acoperă: atacuri ransomware, scurgeri GDPR, întreruperea activității din cau
 
 Cerință de bază: existența unor măsuri de securitate minime (backup regulat, autentificare MFA).
 
-URL pagina serviciu: https://ingbroker.md/servicii/asigurare-cyber
+URL pagina serviciu: https://ingbroker.md/servicii/asigurare-cyber-moldova
 
 ### 5. Cargo și Transport
 
@@ -105,7 +105,7 @@ Sectoare țintă: logistică și transport, import/export, producție și indust
 
 Avantaje: polițe flexibile per transport sau abonament anual deschis, despăgubire rapidă bazată pe valoarea facturată, respectarea condițiilor Incoterms.
 
-URL pagina serviciu: https://ingbroker.md/servicii/cargo-transport
+URL pagina serviciu: https://ingbroker.md/news/asigurari-transport-logistica-cmr-cargo-moldova
 
 ### 6. Auto Flotă (Fleet Insurance)
 
@@ -117,7 +117,7 @@ Avantaje: tarife preferențiale de grup, administrare centralizată, flexibilita
 
 Companiile cu 5 sau mai multe vehicule beneficiază cel mai mult de polițele de flotă.
 
-URL pagina serviciu: https://ingbroker.md/servicii/auto-flota
+URL pagina serviciu: https://ingbroker.md/oferte/flote-auto
 
 ### 7. Asigurarea Creditelor (Trade Credit Insurance)
 
@@ -127,7 +127,7 @@ Sectoare țintă: comerț cu ridicata, industria manufacturieră, servicii B2B, 
 
 Avantaje: stabilitatea fluxului de numerar, facilitează finanțări bancare, permite extinderea vânzărilor cu termene de plată, analize de bonitate pentru portofoliul de clienți.
 
-URL pagina serviciu: https://ingbroker.md/servicii/asigurarea-creditelor
+URL pagina serviciu: https://ingbroker.md/business
 
 ### 8. Construcții și Montaj — CAR/EAR
 
@@ -137,7 +137,7 @@ Sectoare țintă: dezvoltări rezidențiale, construcții comerciale, infrastruc
 
 Acoperă: calamități naturale, incendii și explozii, erori de execuție, furt de materiale și utilaje, accidente care afectează terți. Perioadă de garanție/mentenanță inclusă opțional.
 
-URL pagina serviciu: https://ingbroker.md/servicii/constructii-montaj-car-ear
+URL pagina serviciu: https://ingbroker.md/servicii/asigurari-constructii-car-ear
 
 ### 9. Asigurări de Sănătate și Viață pentru Angajați (Employee Benefits)
 
@@ -149,7 +149,7 @@ Avantaj fiscal: primele de asigurare sunt deductibile fiscal în limitele legii 
 
 Destinat: companii IT, corporații, companii în creștere care vor să atragă și să rețină talente.
 
-URL pagina serviciu: https://ingbroker.md/servicii/beneficii-angajati
+URL pagina serviciu: https://ingbroker.md/employee-benefits
 
 ### 10. Riscuri Agricole (Agricultural Insurance)
 
@@ -159,7 +159,7 @@ Sectoare: cerealicultură (grâu, porumb, floarea-soarelui, rapiță), horticult
 
 Avantaj special: subvenție de stat 70% din prima de asigurare (fermierii suportă 30%), prin AIPA. Facilitează accesul la credite bancare, subvenții și fonduri europene.
 
-URL pagina serviciu: https://ingbroker.md/servicii/riscuri-agricole
+URL pagina serviciu: https://ingbroker.md/business
 
 ---
 
@@ -265,22 +265,22 @@ Rezumat: Răspunderea transportatorilor rutieri CMR, polițe pentru operatori lo
 ## Harta site-ului ingbroker.md
 
 - https://ingbroker.md/ - Pagina principală
-- https://ingbroker.md/servicii - Toate serviciile de asigurare corporativă
-- https://ingbroker.md/servicii/raspundere-generala - Răspundere Generală
-- https://ingbroker.md/servicii/raspundere-profesionala - Răspundere Profesională (PI)
-- https://ingbroker.md/servicii/do-directors-officers - D&O
-- https://ingbroker.md/servicii/asigurare-cyber - Asigurare Cyber
-- https://ingbroker.md/servicii/cargo-transport - Cargo și Transport
-- https://ingbroker.md/servicii/auto-flota - Auto Flotă
-- https://ingbroker.md/servicii/asigurarea-creditelor - Asigurarea Creditelor
-- https://ingbroker.md/servicii/constructii-montaj-car-ear - Construcții și Montaj (CAR/EAR)
-- https://ingbroker.md/servicii/beneficii-angajati - Employee Benefits
-- https://ingbroker.md/servicii/riscuri-agricole - Riscuri Agricole
+- https://ingbroker.md/business - Toate serviciile de asigurare corporativă
+- https://ingbroker.md/business - Răspundere Generală
+- https://ingbroker.md/servicii/asigurare-raspundere-profesionala - Răspundere Profesională (PI)
+- https://ingbroker.md/business - D&O
+- https://ingbroker.md/servicii/asigurare-cyber-moldova - Asigurare Cyber
+- https://ingbroker.md/news/asigurari-transport-logistica-cmr-cargo-moldova - Cargo și Transport
+- https://ingbroker.md/oferte/flote-auto - Auto Flotă
+- https://ingbroker.md/business - Asigurarea Creditelor
+- https://ingbroker.md/servicii/asigurari-constructii-car-ear - Construcții și Montaj (CAR/EAR)
+- https://ingbroker.md/employee-benefits - Employee Benefits
+- https://ingbroker.md/business - Riscuri Agricole
 - https://ingbroker.md/news - Articole și resurse
-- https://ingbroker.md/about - Despre noi
+- https://ingbroker.md/despre-noi - Despre noi
 - https://ingbroker.md/contact - Contact
-- https://ingbroker.md/termeni - Termeni și Condiții
-- https://ingbroker.md/confidentialitate - Politica de Confidențialitate
+- https://ingbroker.md/termeni-si-conditii - Termeni și Condiții
+- https://ingbroker.md/politica-de-confidentialitate - Politica de Confidențialitate
 
 ---
 
