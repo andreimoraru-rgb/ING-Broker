@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { submitLead, pushDataLayer } from '../utils/leads';
 import { translations, Language } from '../translations';
 import { SEO } from '../components/SEO';
 import { SchemaMarkup } from '../components/SchemaMarkup';
@@ -108,11 +109,36 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
 
   const c = content[lang];
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [sendError, setSendError] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [form, setForm] = useState({ name: '', company: '', email: '', service: '', message: '' });
+  const [hp, setHp] = useState(''); // honeypot
+  const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
+    setForm((f) => ({ ...f, [k]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 5000);
+    if (!form.name || !form.email) return;
+    setSendError(false);
+    setSending(true);
+    pushDataLayer({ event: 'quote_request', tool: 'contact_form', service: form.service });
+    const res = await submitLead({
+      source: 'contact-form',
+      name: form.name,
+      company: form.company,
+      email: form.email,
+      message: form.message,
+      hp,
+      meta: { service: form.service },
+    });
+    setSending(false);
+    if (res.ok) {
+      setIsSubmitted(true);
+      setForm({ name: '', company: '', email: '', service: '', message: '' });
+      setTimeout(() => setIsSubmitted(false), 6000);
+    } else {
+      setSendError(true);
+    }
   };
 
   const schema = {
@@ -392,19 +418,35 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
               )}
               <h3 className="text-3xl font-bold text-secondary mb-8">{c.formTitle}</h3>
               <form className="space-y-6" onSubmit={handleSubmit}>
+                {/* honeypot - ascuns pentru utilizatori reali */}
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  value={hp}
+                  onChange={(e) => setHp(e.target.value)}
+                  className="hidden"
+                />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.name}</label>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
+                      required
+                      value={form.name}
+                      onChange={set('name')}
                       className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                       placeholder="John Doe"
                     />
                   </div>
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.company}</label>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
+                      value={form.company}
+                      onChange={set('company')}
                       className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                       placeholder="Company SRL"
                     />
@@ -413,15 +455,22 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.email}</label>
-                    <input 
-                      type="email" 
+                    <input
+                      type="email"
+                      required
+                      value={form.email}
+                      onChange={set('email')}
                       className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                       placeholder="john@example.com"
                     />
                   </div>
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.service}</label>
-                    <select className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none">
+                    <select
+                      value={form.service}
+                      onChange={set('service')}
+                      className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none"
+                    >
                       {c.serviceOptions.map((opt, idx) => (
                         <option key={idx} value={opt}>{opt}</option>
                       ))}
@@ -430,19 +479,32 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                 </div>
                 <div>
                   <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.message}</label>
-                  <textarea 
+                  <textarea
                     rows={4}
+                    value={form.message}
+                    onChange={set('message')}
                     className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
                     placeholder="..."
                   />
                 </div>
-                <motion.button 
+                <motion.button
+                  type="submit"
+                  disabled={sending}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full py-5 bg-primary text-white font-bold uppercase text-xs tracking-widest hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/40 rounded-lg"
+                  className="w-full py-5 bg-primary text-white font-bold uppercase text-xs tracking-widest hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/40 rounded-lg disabled:opacity-50"
                 >
-                  {c.send}
+                  {sending ? '...' : c.send}
                 </motion.button>
+                {sendError && (
+                  <p className="text-sm text-primary text-center">
+                    {lang === 'ru'
+                      ? 'Не удалось отправить. Позвоните +373 695 26 003 или напишите ingbroker@ingbroker.md.'
+                      : lang === 'en'
+                      ? 'Could not send. Please call +373 695 26 003 or write to ingbroker@ingbroker.md.'
+                      : 'Nu am putut trimite. Sună la +373 695 26 003 sau scrie la ingbroker@ingbroker.md.'}
+                  </p>
+                )}
               </form>
             </div>
 

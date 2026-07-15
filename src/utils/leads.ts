@@ -6,7 +6,7 @@ export interface LeadPayload {
   source: string; // ex: 'risk-audit' | 'contact-form'
   name: string;
   company?: string;
-  phone: string;
+  phone?: string;
   email?: string;
   message?: string;
   heardFrom?: string; // „Cum ați aflat despre noi?" - atribuire AEO
