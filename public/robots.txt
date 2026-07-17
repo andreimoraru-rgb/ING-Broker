@@ -88,4 +88,4 @@ Crawl-delay: 10
 
 # Sitemaps
 Sitemap: https://www.ingbroker.md/sitemap.xml
-Sitemap: https://www.ingbroker.md/sitemap-ro.xml
+
