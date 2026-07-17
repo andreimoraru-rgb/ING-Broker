@@ -1040,6 +1040,7 @@ const Footer = ({ lang }: { lang: Language }) => {
                 href="https://t.me/INGBroker" 
                 target="_blank" 
                 rel="noopener noreferrer" 
+                aria-label="Contactează ING Broker pe Telegram"
                 whileHover={{ 
                   y: -12,
                   scale: 1.2,
@@ -1055,6 +1056,7 @@ const Footer = ({ lang }: { lang: Language }) => {
                 href="https://wa.me/37369526003" 
                 target="_blank" 
                 rel="noopener noreferrer" 
+                aria-label="Contactează ING Broker pe WhatsApp"
                 whileHover={{ 
                   y: -12,
                   scale: 1.2,
@@ -1072,6 +1074,7 @@ const Footer = ({ lang }: { lang: Language }) => {
                 href="https://www.linkedin.com/company/67107674/admin/dashboard/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
+                aria-label="Vizionează pagina ING Broker pe LinkedIn"
                 whileHover={{ 
                   y: -12,
                   scale: 1.2,
@@ -1087,6 +1090,7 @@ const Footer = ({ lang }: { lang: Language }) => {
                 href="https://www.instagram.com/ingbroker.md/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
+                aria-label="Vizionează pagina ING Broker pe Instagram"
                 whileHover={{ 
                   y: -12,
                   scale: 1.2,
