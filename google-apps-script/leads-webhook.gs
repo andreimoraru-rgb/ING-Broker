@@ -10,6 +10,9 @@
  *     data | sursa | nume | companie | industrie | marime | telefon | email | program_recomandat | cum_a_aflat
  *  3. Extensions -> Apps Script. Șterge conținutul și lipește acest fișier.
  *  4. Sus, înlocuiește SHARED_TOKEN și NOTIFY_EMAIL cu valorile tale.
+ *     ATENȚIE: până când SHARED_TOKEN e schimbat, webhook-ul refuză orice cerere
+ *     cu `not_configured`. E intenționat - tokenul livrat în repo e public.
+ *     Același token trebuie pus în Cloudflare ca LEADS_SHARED_TOKEN.
  *  5. Deploy -> New deployment -> tip „Web app":
  *       - Execute as: Me
  *       - Who has access: Anyone
@@ -21,12 +24,20 @@
 var SHARED_TOKEN = 'schimba-ma-cu-un-token-secret';   // = LEADS_SHARED_TOKEN din Cloudflare
 var NOTIFY_EMAIL = 'ingbroker@ingbroker.md';           // unde ajunge notificarea
 
+// Valoarea livrată în repo. Cât timp SHARED_TOKEN rămâne egal cu ea, webhook-ul refuză tot:
+// endpoint-ul e public („Anyone"), iar un token publicat pe GitHub nu e o barieră.
+var _PLACEHOLDER_TOKEN = 'schimba-ma-cu-un-token-secret';
+
 function doPost(e) {
   try {
+    if (!SHARED_TOKEN || SHARED_TOKEN === _PLACEHOLDER_TOKEN) {
+      return _json({ ok: false, error: 'not_configured' });
+    }
+
     var data = JSON.parse(e.postData.contents);
 
-    // Verificare token (dacă e configurat de ambele părți).
-    if (SHARED_TOKEN && data.token && data.token !== SHARED_TOKEN) {
+    // Tokenul e singura barieră a endpoint-ului: absent, gol sau greșit = refuz.
+    if (data.token !== SHARED_TOKEN) {
       return _json({ ok: false, error: 'bad_token' });
     }
 
