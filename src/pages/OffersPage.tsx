@@ -45,7 +45,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'Employee Benefits',
           desc: 'Programe de sănătate și viață pentru angajați, esențiale pentru retenția talentelor în sectorul IT și corporate.',
           image: '/employer.jpg',
-          link: '/business/benefits'
+          link: '/asigurare-medicala-angajati/'
         },
         {
           id: 'flote-auto',
@@ -100,7 +100,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'Employee Benefits',
           desc: 'Программы страхования здоровья и жизни для сотрудников, необходимые для удержания талантов в ИТ и корпоративном секторе.',
           image: '/employer.jpg',
-          link: '/business/benefits'
+          link: '/asigurare-medicala-angajati/'
         },
         {
           id: 'flote-auto',
@@ -155,7 +155,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'Employee Benefits',
           desc: 'Health and life insurance programs for employees, essential for talent retention in the IT and corporate sectors.',
           image: '/employer.jpg',
-          link: '/business/benefits'
+          link: '/asigurare-medicala-angajati/'
         },
         {
           id: 'flote-auto',
