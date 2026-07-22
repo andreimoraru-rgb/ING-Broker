@@ -149,7 +149,7 @@ Avantaj fiscal: primele de asigurare sunt deductibile fiscal în limitele legii 
 
 Destinat: companii IT, corporații, companii în creștere care vor să atragă și să rețină talente.
 
-URL pagina serviciu: https://ingbroker.md/employee-benefits
+URL pagina serviciu: https://ingbroker.md/asigurare-medicala-angajati/
 
 ### 10. Riscuri Agricole (Agricultural Insurance)
 
@@ -274,7 +274,7 @@ Rezumat: Răspunderea transportatorilor rutieri CMR, polițe pentru operatori lo
 - https://ingbroker.md/oferte/flote-auto - Auto Flotă
 - https://ingbroker.md/business - Asigurarea Creditelor
 - https://ingbroker.md/servicii/asigurari-constructii-car-ear - Construcții și Montaj (CAR/EAR)
-- https://ingbroker.md/employee-benefits - Employee Benefits
+- https://ingbroker.md/asigurare-medicala-angajati/ - Employee Benefits
 - https://ingbroker.md/business - Riscuri Agricole
 - https://ingbroker.md/news - Articole și resurse
 - https://ingbroker.md/despre-noi - Despre noi
