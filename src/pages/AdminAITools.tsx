@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { GoogleGenAI, ThinkingLevel } from '@google/genai';
 import { motion } from 'motion/react';
 import { Image as ImageIcon, Edit3, Brain, Key, Loader2, Download, Upload } from 'lucide-react';
+import { requireRuntimeApiKey } from '../utils/aiKey';
 
 declare global {
   interface Window {
@@ -52,14 +53,12 @@ export const AdminAITools = () => {
     }
   };
 
-  const getApiKey = () => {
-    // Safely access process.env.API_KEY which is injected by AI Studio
-    try {
-      return process.env.API_KEY as string;
-    } catch (e) {
-      return '';
-    }
-  };
+  // Cheia se cere operatorului la runtime si traieste doar in sessionStorage.
+  // Varianta anterioara citea process.env.API_KEY, variabila care nu era definita
+  // nicaieri in build - deci unealta era deja nefunctionala in productie.
+  // Vezi src/utils/aiKey.ts pentru motivul pentru care cheia nu poate fi inclusa
+  // in bundle si de ce un proxy server-side ar fi nesigur pe rute neautentificate.
+  const getApiKey = () => requireRuntimeApiKey();
 
   const handleGenerate = async () => {
     if (!genPrompt) return;

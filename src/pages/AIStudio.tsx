@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GoogleGenAI, ThinkingLevel } from '@google/genai';
 import { Image, Film, Edit, Loader2, Download, Brain } from 'lucide-react';
+import { getRuntimeApiKey, requireRuntimeApiKey } from '../utils/aiKey';
 
 declare global {
   interface Window {
@@ -43,7 +44,7 @@ export const AIStudio = () => {
     if (!(await window.aistudio.hasSelectedApiKey())) {
       await window.aistudio.openSelectKey();
     }
-    return new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+    return new GoogleGenAI({ apiKey: requireRuntimeApiKey() });
   };
 
   const generateImagePro = async () => {
@@ -153,7 +154,7 @@ export const AIStudio = () => {
         const response = await fetch(downloadLink, {
           method: 'GET',
           headers: {
-            'x-goog-api-key': process.env.GEMINI_API_KEY || '',
+            'x-goog-api-key': getRuntimeApiKey(),
           },
         });
         const blob = await response.blob();
