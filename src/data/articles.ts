@@ -503,7 +503,7 @@ export const articles: Record<string, Article[]> = {
     },
     {
 id: '2',
-          slug: 'cum-se-determină-prețul-unei-asigurări-rca-ghid-pentru-un-preț-rca-accesibil',
+          slug: 'cum-se-determina-pretul-unei-asigurari-rca-ghid-pentru-un-pret-rca-accesibil',
           title: 'Cum se determină prețul RCA în Moldova în 2026? Toți factorii și 7 strategii ca să plătești mai puțin',
           excerpt: 'Ghid complet 2026: toți factorii care influențează prima RCA, cum se calculează practic prima ta, tabel orientativ de prețuri pe categorii de vehicule și 7 strategii verificate ca să obții cea mai accesibilă poliță prin ING Broker.',
           content: `<div class="prose prose-lg max-w-none">
