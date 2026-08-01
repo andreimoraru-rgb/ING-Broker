@@ -102,6 +102,7 @@ export const translations = {
       },
       legal: ['Oferte', 'Termeni și Condiții', 'Politica de Confidențialitate'],
       designBy: 'Design de',
+      licensed: 'Broker de asigurare licențiat CNPF · IDNO 1017600019386',
       rights: '© 2026 Insurance ING Broker SRL. Toate drepturile rezervate.'
     },
     insights: {
@@ -472,8 +473,8 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'ING Broker Moldova | Consultanță de Elită în Asigurări și Reasigurări',
-        description: 'Lider în managementul riscului în Moldova. Oferim soluții premium de asigurare: RCA, CASCO, asigurări de bunuri, sănătate și reasigurări complexe pentru corporații și persoane fizice.'
+        title: 'Insurance ING Broker SRL - Broker de asigurări și reasigurări, Moldova',
+        description: 'Broker de asigurare licențiat CNPF. Structurăm și plasăm programe de asigurare și reasigurare pentru companii, proiecte și riscuri complexe din Republica Moldova.'
       },
       business: {
         title: 'Asigurări Corporate și Managementul Riscului | ING Broker Moldova',
@@ -485,7 +486,7 @@ export const translations = {
       },
       about: {
         title: 'Despre Noi | Insurance ING Broker SRL | Expertiză și Încredere',
-        description: 'Insurance ING Broker SRL este un broker de asigurare și reasigurare de elită în Republica Moldova, licențiat CNPF și certificat ISO 9001:2015. Oferim de peste 18 ani consultanță strategică, managementul riscurilor complexe și soluții de asigurare personalizate pentru persoane fizice și corporații.'
+        description: 'Insurance ING Broker SRL este broker de asigurare și reasigurare din Republica Moldova, licențiat CNPF și certificat ISO 9001:2015. Din 2006 oferim consultanță strategică, managementul riscurilor complexe și programe de asigurare pentru companii și persoane fizice.'
       },
       propertyAssets: {
         title: 'Asigurarea Bunurilor și Proprietăților Corporate | ING Broker',
@@ -604,6 +605,7 @@ export const translations = {
       },
       legal: ['Предложения', 'Условия использования', 'Политика конфиденциальности'],
       designBy: 'Дизайн от',
+      licensed: 'Страховой брокер, лицензированный CNPF · IDNO 1017600019386',
       rights: '© 2026 Insurance ING Broker SRL. Все права защищены.'
     },
     insights: {
@@ -873,7 +875,7 @@ export const translations = {
     seo: {
       home: {
         title: 'ING Broker Молдова | Элитный консалтинг в страховании и перестраховании',
-        description: 'Лидер в управлении рисками в Молдове. Мы предлагаем премиальные страховые решения: ОСАГО, КАСКО, страхование имущества, здоровья и сложное перестрахование для корпораций и частных лиц.'
+        description: 'Страховой брокер, лицензированный CNPF. Структурируем и размещаем программы страхования и перестрахования для компаний, проектов и сложных рисков в Республике Молдова.'
       },
       business: {
         title: 'Корпоративное страхование и управление рисками | ING Broker Молдова',
@@ -1003,6 +1005,7 @@ export const translations = {
       },
       legal: ['Offers', 'Terms and Conditions', 'Privacy Policy'],
       designBy: 'Design by',
+      licensed: 'Insurance broker licensed by CNPF · IDNO 1017600019386',
       rights: '© 2026 Insurance ING Broker SRL. All rights reserved.'
     },
     insights: {
@@ -1356,7 +1359,7 @@ export const translations = {
     seo: {
       home: {
         title: 'ING Broker Moldova | Elite Insurance & Reinsurance Consulting',
-        description: 'Leader in risk management in Moldova. We offer premium insurance solutions: MTPL, CASCO, property, health, and complex reinsurance for corporations and individuals.'
+        description: 'Insurance broker licensed by CNPF. We structure and place insurance and reinsurance programmes for companies, projects and complex risks in the Republic of Moldova.'
       },
       business: {
         title: 'Corporate Insurance & Risk Management | ING Broker Moldova',
