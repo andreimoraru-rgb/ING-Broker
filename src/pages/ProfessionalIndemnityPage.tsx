@@ -459,7 +459,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
                   </span>
                 </div>
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  Acord Grup SA, Asterra Grup SA, Moldasig VIG SA, Moldcargo SA, Donaris VIG SA, Grawe Carat SA
+                  Acord Grup SA, Asterra Grup SA, Moldasig SA, Moldcargo SA, Donaris VIG SA, Grawe Carat SA
                 </p>
               </div>
             </div>

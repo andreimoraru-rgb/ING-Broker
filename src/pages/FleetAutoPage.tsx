@@ -21,11 +21,11 @@ const productImages = [
 const products = [
   {
     title: 'RCA Flotă',
-    desc: 'Asigurare obligatorie pentru toate vehiculele companiei. La 3+ vehicule negociem tarife cu toți cei 6 asigurători autorizați din Moldova - economii reale de 10 -25% față de polița la ghișeu.',
+    desc: 'Asigurare obligatorie pentru toate vehiculele companiei. La 3+ vehicule negociem tarife cu toți cei 6 asigurători autorizați din Moldova, pe volumul întregului contract de flotă.',
   },
   {
     title: 'Carte Verde',
-    desc: 'Circulație în 47 de țări, obligatorie la traversarea frontierei. Prețuri 2026: 703 -1.343 MDL (autoturism 15 zile). Brokerul compară și emite în 30 de minute.',
+    desc: 'Circulație în 47 de țări, obligatorie la traversarea frontierei. Prima depinde de categoria vehiculului, destinație și perioadă. Brokerul compară ofertele disponibile și emite rapid.',
   },
   {
     title: 'CASCO',
@@ -70,7 +70,7 @@ const targets = [
 ];
 
 const advantages = [
-  { num: '01', title: 'Tarif negociat cu asigurătorii', desc: 'Economii de 15 -25% față de polițe individuale prin volum și relații directe cu toți asigurătorii autorizați CNPF din Moldova.' },
+  { num: '01', title: 'Tarif negociat cu asigurătorii', desc: 'Prima se construiește pe volumul întregii flote, prin comparare simultană și negociere directă cu asigurătorii autorizați CNPF din Moldova.' },
   { num: '02', title: 'Contract unic de brokeraj', desc: 'O singură relație contractuală pentru toată flota, indiferent de numărul sau tipul vehiculelor - autoturisme, camioane, utilaje.' },
   { num: '03', title: 'Polițe sincronizate ca dată', desc: 'Toate polițele expiră în aceeași zi. Un singur calendar de reînnoire, zero riscul de a circula fără asigurare valabilă.' },
   { num: '04', title: 'Manager dedicat flotei dvs.', desc: 'Un specialist ING Broker răspunde exclusiv de portofoliul dvs. - telefon, email, WhatsApp. Nu căutați nimănui.' },
@@ -93,11 +93,11 @@ const faqs = [
   },
   {
     q: 'Cât costă asigurarea de flotă auto în Moldova în 2026?',
-    a: 'Costul depinde de tipul vehiculelor, vechime, istoricul de daune și dimensiunea flotei. Față de polițe individuale, economiile prin program de flotă sunt de 15 -25%. Exemplu orientativ: RCA pentru un autoturism 2022 - aproximativ 1.800 -2.400 MDL/an în program de flotă față de 2.200 -3.000 MDL individual. Carte Verde autoturism 15 zile: 703 -1.343 MDL în funcție de asigurător (comparăm toți cei 6 - Acord, Asterra, Moldasig, Moldcargo, Donaris, Grawe Carat). Trimiteți lista flotei și primiți oferta exactă în 24 de ore.',
+    a: 'Costul depinde de structura flotei, categoriile de vehicule, vechimea parcului, rutele parcurse și istoricul de daune. Un program de flotă negociat este, ca regulă, mai avantajos decât polițele individuale echivalente, pentru că prima se construiește pe volumul întregului contract. Comparăm ofertele asigurătorilor autorizați CNPF și vă prezentăm varianta optimă pentru fiecare tip de vehicul. Trimiteți lista flotei și primiți o ofertă personalizată.',
   },
   {
     q: 'Care sunt asigurătorii auto autorizați în Moldova în 2026?',
-    a: 'În Republica Moldova activează 6 companii de asigurare auto autorizate de CNPF (Comisia Națională a Pieței Financiare): Acord Grup SA, Asterra Grup SA, Moldasig VIG SA, Moldcargo SA, Donaris VIG SA și Grawe Carat SA. Insurance ING Broker SRL compară simultan ofertele tuturor celor 6 asigurători și selectează tariful optim pentru fiecare tip de vehicul din flota dvs.',
+    a: 'În Republica Moldova activează 6 companii de asigurare auto autorizate de CNPF (Comisia Națională a Pieței Financiare): Acord Grup SA, Asterra Grup SA, Moldasig SA, Moldcargo SA, Donaris VIG SA și Grawe Carat SA. Insurance ING Broker SRL compară simultan ofertele tuturor celor 6 asigurători și selectează tariful optim pentru fiecare tip de vehicul din flota dvs.',
   },
   {
     q: 'Se pot asigura tipuri mixte de vehicule în aceeași flotă?',
@@ -109,11 +109,11 @@ const faqs = [
   },
   {
     q: 'Ce se întâmplă la daună - cine mă ajută?',
-    a: 'La orice daună sunați managerul dvs. dedicat de la Insurance ING Broker SRL. Intervenim direct ca intermediar al clientului cu asigurătorul - nu al asigurătorului cu clientul. Experiența noastră în gestionarea daunelor de flotă din Chișinău și toată Moldova reduce durata procesului și maximizează despăgubirea. Aveți un singur punct de contact pentru toate vehiculele, indiferent de asigurător.',
+    a: 'La orice daună sunați managerul dvs. dedicat de la Insurance ING Broker SRL. Intervenim direct ca intermediar al clientului cu asigurătorul - nu al asigurătorului cu clientul. Experiența noastră în gestionarea daunelor de flotă din Chișinău și toată Moldova ajută la parcurgerea procedurii și la susținerea dosarului în fața asigurătorului, în limitele condițiilor contractuale. Aveți un singur punct de contact pentru toate vehiculele, indiferent de asigurător.',
   },
   {
     q: 'Carte Verde - de ce variază prețul între asigurători?',
-    a: 'Fiecare asigurător calculează riscul diferit. La 15 zile autoturism, diferența ajunge la 91% - între 703 MDL (Moldcargo) și 1.343 MDL (Grawe Carat) în 2026. La o flotă de 20 camioane cu Carte Verde anuală (C2, 12 luni: 10.887 -17.580 MDL), diferența poate fi 130.000+ MDL pe an între cel mai ieftin și cel mai scump asigurător. Brokerul ING alege întotdeauna tariful optim pentru ruta și tipul vehiculului dvs.',
+    a: 'Fiecare asigurător evaluează riscul după algoritmi proprii, ponderând diferit categoria vehiculului, perioada asigurată, ruta și istoricul de daune. De aceea, pentru aceeași flotă, ofertele primite pot diferi semnificativ între asigurători. Rolul brokerului este exact acesta: să compare simultan ofertele disponibile și să selecteze varianta optimă pentru fiecare tip de vehicul, nu un singur tarif impus.',
   },
   {
     q: 'Care este diferența dintre CMR și Cargo în asigurarea de transport?',
@@ -125,7 +125,7 @@ const faqs = [
   },
   {
     q: 'Cât de rapid pot obține o ofertă de asigurare flotă?',
-    a: 'Trimiteți lista flotei (nr. înmatriculare, tip vehicul, an fabricație) prin email la ingbroker@ingbroker.md sau WhatsApp la +(373) 69 526 003. În maximum 24 de ore primiți oferta comparativă completă de la toți cei 6 asigurători autorizați din Moldova, cu prețuri finale și recomandarea noastră pentru fiecare tip de vehicul. Fără costuri, fără obligații.',
+    a: 'Trimiteți lista flotei (nr. înmatriculare, tip vehicul, an fabricație) prin email la ingbroker@ingbroker.md sau WhatsApp la +373 695 26 003. În maximum 24 de ore primiți oferta comparativă completă de la toți cei 6 asigurători autorizați din Moldova, cu prețuri finale și recomandarea noastră pentru fiecare tip de vehicul. Fără costuri, fără obligații.',
   },
 ];
 
@@ -188,7 +188,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
       {
         "@type": "Service",
         "name": "Asigurare Flotă Auto Companii Moldova 2026",
-        "description": "Program de asigurare flotă auto pentru companii din Moldova. RCA, Carte Verde, CASCO, CMR, Cargo - tarife negociate cu toți cei 6 asigurători autorizați CNPF: Acord, Asterra, Moldasig, Moldcargo, Donaris, Grawe Carat. Manager dedicat, contract unic, economii 15-25%. Ofertă comparativă în 24h.",
+        "description": "Program de asigurare flotă auto pentru companii din Moldova. RCA, Carte Verde, CASCO, CMR, Cargo - tarife negociate cu toți cei 6 asigurători autorizați CNPF: Acord, Asterra, Moldasig, Moldcargo, Donaris, Grawe Carat. Manager dedicat, contract unic, ofertă comparativă. Ofertă comparativă în 24h.",
         "areaServed": [
           { "@type": "Country", "name": "Moldova" },
           { "@type": "City", "name": "Chișinău" }
@@ -235,7 +235,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
     <div className="bg-white min-h-screen">
       <SEO
         title="Asigurare Flotă Auto Companii Moldova 2026 - RCA, CASCO, CMR, Carte Verde | ING Broker"
-        description="Asigurare flotă auto pentru companii din Moldova - ofertă comparativă în 24h. RCA flotă, Carte Verde, CASCO, CMR, Cargo - comparăm toți cei 6 asigurători autorizați CNPF: Acord, Asterra, Moldasig, Moldcargo, Donaris, Grawe Carat. Economii 15-25%. Broker autorizat Chișinău."
+        description="Asigurare flotă auto pentru companii din Moldova - ofertă comparativă în 24h. RCA flotă, Carte Verde, CASCO, CMR, Cargo - comparăm toți cei 6 asigurători autorizați CNPF: Acord, Asterra, Moldasig, Moldcargo, Donaris, Grawe Carat. Ofertă comparativă. Broker autorizat Chișinău."
         keywords="asigurare flota auto moldova, asigurare flota companii moldova, rca flota moldova, carte verde flota moldova, casco flota moldova, cmr moldova, asigurare transport moldova, broker asigurari flota chisinau, asigurare auto corporativa moldova, program asigurare flota 2026, asiguratori moldova cnpf, asigurare camioane moldova, acord asterra moldasig donaris grawe carat moldcargo"
         lang={lang}
         schema={schema}
@@ -378,7 +378,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                 Fiecare vehicul neacoperit este un risc financiar direct. Un accident cu un camion neasigurat poate costa 500.000+ MDL - mai mult decât prima pentru întreaga flotă pe 5 ani.
               </p>
               <p className="text-lg text-gray-500 font-light leading-relaxed mb-8">
-                Insurance ING Broker SRL, autorizat CNPF în Republica Moldova, compară simultan ofertele tuturor celor 6 asigurători auto: <strong className="text-secondary font-medium">Acord Grup, Asterra Grup, Moldasig VIG, Moldcargo, Donaris VIG și Grawe Carat</strong>. Alegeți cel mai bun tarif pentru fiecare vehicul - nu un singur asigurător.
+                Insurance ING Broker SRL, autorizat CNPF în Republica Moldova, compară simultan ofertele tuturor celor 6 asigurători auto: <strong className="text-secondary font-medium">Acord Grup, Asterra Grup, Moldasig, Moldcargo, Donaris VIG și Grawe Carat</strong>. Alegeți cel mai bun tarif pentru fiecare vehicul - nu un singur asigurător.
               </p>
               <p className="text-lg text-gray-500 font-light leading-relaxed">
                 Serviciul de brokeraj este 100% gratuit pentru compania dvs. Comisionul vine de la asigurător - noi negociem un tarif final mai mic decât ați obține direct la ghișeu, din Chișinău sau oriunde în Moldova.
@@ -482,12 +482,12 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
               </ul>
 
               <div className="mt-12 pt-10 border-t border-gray-100">
-                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary mb-6">Carte Verde 2026 - Prețuri piață Moldova</p>
+                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary mb-6">Carte Verde - ce influențează prima</p>
                 <div className="space-y-4">
                   <div>
                     <div className="flex justify-between text-xs text-gray-600 mb-1">
-                      <span className="font-medium">Autoturism - 15 zile</span>
-                      <span className="font-bold text-secondary">703 -1.343 MDL</span>
+                      <span className="font-medium">Categoria vehiculului</span>
+                      <span className="font-bold text-secondary">Impact ridicat</span>
                     </div>
                     <div className="w-full bg-gray-100 h-0.5">
                       <div className="bg-primary h-0.5" style={{ width: '52%' }} />
@@ -495,15 +495,15 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                   </div>
                   <div>
                     <div className="flex justify-between text-xs text-gray-600 mb-1">
-                      <span className="font-medium">Camion C2 - 12 luni</span>
-                      <span className="font-bold text-secondary">10.887 -17.580 MDL</span>
+                      <span className="font-medium">Perioada asigurată</span>
+                      <span className="font-bold text-secondary">Impact ridicat</span>
                     </div>
                     <div className="w-full bg-gray-100 h-0.5">
                       <div className="bg-primary h-0.5" style={{ width: '62%' }} />
                     </div>
                   </div>
                   <p className="text-[10px] text-gray-400 font-light pt-2">
-                    Prețuri valabile 2026. Variază pe asigurător, destinație și perioadă. Brokerul selectează cel mai avantajos.
+                    Prima variază pe asigurător, destinație și perioadă. Brokerul compară ofertele disponibile și selectează varianta optimă. Material informativ; condițiile contractuale primează.
                   </p>
                   <a
                     href="https://easigurari.com/ro/green-card"
@@ -597,8 +597,8 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                   />
                 </div>
                 <div className="absolute bottom-4 -left-12 bg-primary p-6 shadow-2xl hidden xl:block z-20">
-                  <p className="text-4xl font-bold tracking-tighter leading-none mb-2">20%</p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-80">Economii medii</p>
+                  <p className="text-4xl font-bold tracking-tighter leading-none mb-2">1</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-80">Contract pentru toată flota</p>
                 </div>
               </div>
             </div>
@@ -705,7 +705,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
               className="px-12 py-6 bg-primary text-white font-bold uppercase text-[10px] tracking-[0.3em] flex items-center justify-center gap-4 group shadow-lg hover:shadow-primary/40"
             >
               <Phone size={14} />
-              +(373) 69 526 003
+              +373 695 26 003
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </motion.a>
             <motion.a

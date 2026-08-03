@@ -1226,7 +1226,7 @@ export default function App() {
       },
       {
         name: "Primești oferta comparativă",
-        text: "Comparăm ofertele de la toți cei 6 asigurători autorizați CNPF parteneri - Acord Grup, Asterra Grup, Moldasig VIG, Moldcargo, Donaris VIG și Grawe Carat - și îți trimitem varianta optimă cu explicații clare."
+        text: "Comparăm ofertele de la toți cei 6 asigurători autorizați CNPF parteneri - Acord Grup, Asterra Grup, Moldasig, Moldcargo, Donaris VIG și Grawe Carat - și îți trimitem varianta optimă cu explicații clare."
       }
     ]
   });
@@ -1251,7 +1251,7 @@ export default function App() {
     },
     {
       question: "Ce asigurători sunt parteneri ai ING Broker?",
-      answer: "ING Broker colaborează cu toți asigurătorii autorizați de CNPF: Acord Grup SA, Asterra Grup SA, Moldasig VIG SA, Moldcargo SA, Donaris VIG SA și Grawe Carat SA."
+      answer: "ING Broker colaborează cu toți asigurătorii autorizați de CNPF: Acord Grup SA, Asterra Grup SA, Moldasig SA, Moldcargo SA, Donaris VIG SA și Grawe Carat SA."
     }
   ]);
 

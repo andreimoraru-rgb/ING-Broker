@@ -207,7 +207,7 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
     {
       num: '02',
       title: 'Primești oferte comparate',
-      desc: 'Comparăm ofertele de la Acord Grup, Asterra Grup, Moldasig VIG și ceilalți asigurători autorizați CNPF. Selectăm tariful optim pentru proiectul tău.',
+      desc: 'Comparăm ofertele de la Acord Grup, Asterra Grup, Moldasig și ceilalți asigurători autorizați CNPF. Selectăm tariful optim pentru proiectul tău.',
       time: '~ 24 ore'
     },
     {
@@ -592,7 +592,7 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
               {[
                 { name: 'Acord Grup SA', specialty: 'Proiecte industriale mari' },
                 { name: 'Asterra Grup SA', specialty: 'Construcții rezidențiale și comerciale' },
-                { name: 'Moldasig VIG SA', specialty: 'Infrastructură și utilități' },
+                { name: 'Moldasig SA', specialty: 'Infrastructură și utilități' },
                 { name: 'Moldcargo SA', specialty: 'Construcții speciale' },
                 { name: 'Donaris VIG SA', specialty: 'Proiecte cu finanțare internațională' },
                 { name: 'Grawe Carat SA', specialty: 'Montaj echipamente industriale' }
