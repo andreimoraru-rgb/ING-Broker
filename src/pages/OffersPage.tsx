@@ -55,6 +55,13 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           link: '/oferte/flote-auto'
         },
         {
+          id: 'drone-liability',
+          title: 'Asigurare Răspundere Drone',
+          desc: 'Protecție pentru prejudiciile produse terților de drone și opțiuni CASCO pentru propria aeronavă.',
+          image: '/asigurare-drone-moldova/assets/asigurare-drone-moldova.webp',
+          link: '/asigurare-drone-moldova/'
+        },
+        {
           id: 'cyber-insurance',
           title: 'Cyber Insurance',
           desc: 'Protecție avansată împotriva atacurilor cibernetice, scurgerilor de date și întreruperii afacerii din cauze informatice.',
@@ -110,6 +117,13 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           link: '/oferte/flote-auto'
         },
         {
+          id: 'drone-liability',
+          title: 'Страхование ответственности дронов',
+          desc: 'Защита от ущерба, причинённого дронами третьим лицам, и опции КАСКО для собственного аппарата.',
+          image: '/asigurare-drone-moldova/assets/asigurare-drone-moldova.webp',
+          link: '/ru/asigurare-drone-moldova/'
+        },
+        {
           id: 'cyber-insurance',
           title: 'Киберстрахование',
           desc: 'Передовая защита от кибератак, утечек данных и прерывания бизнеса по ИТ-причинам.',
@@ -163,6 +177,13 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           desc: 'Centralized insurance program for companies with 3+ vehicles. RCA, Green Card, CASCO, CMR - we compare all 6 insurers in Moldova. Offer within 24h.',
           image: '/camionete.jpg',
           link: '/oferte/flote-auto'
+        },
+        {
+          id: 'drone-liability',
+          title: 'Drone Liability Insurance',
+          desc: 'Protection for third-party damage caused by drones, with CASCO options for your own aircraft.',
+          image: '/asigurare-drone-moldova/assets/asigurare-drone-moldova.webp',
+          link: '/en/asigurare-drone-moldova/'
         },
         {
           id: 'cyber-insurance',
