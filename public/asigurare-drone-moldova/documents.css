@@ -37,3 +37,16 @@ h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.015em}
 .product-docs h3,.coverage-columns h3,.request-send h3{font-family:var(--display);font-size:32px}
 .footer-bottom .legal-links a,.footer-bottom .legal-links a:hover,.footer-bottom .legal-links a:focus-visible{text-decoration:none;border-bottom:0;box-shadow:none}
 .footer-bottom .legal-links a::after{display:none}
+/* Keep the drone types panel inset and the fleet CTA grouped. */
+.types.section.wrap{padding:clamp(40px,5vw,72px) clamp(24px,4vw,56px)}
+.types>.split{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,4vw,64px)}
+.types h2{font-size:clamp(36px,4vw,60px);line-height:1.08}
+.types .split>div>p.fine{font-size:14px;line-height:1.6;color:#617184;margin-top:20px}
+.types .fleet{margin-top:40px;padding:28px;background:#f5f7f9;border:1px solid #dde3e9;border-radius:8px;gap:24px;align-items:center}
+.types .fleet>div{gap:20px;min-width:0}
+.types .fleet .icon{flex:0 0 40px;width:40px;height:40px}
+.types .fleet h3{font-size:30px}
+.types .fleet p{font-size:15px;line-height:1.6;margin-top:8px}
+.types .fleet .button{min-height:48px;padding:14px 20px;text-align:center;justify-content:center}
+@media(max-width:900px){.types>.split{grid-template-columns:1fr}.types .fleet{flex-direction:column;align-items:stretch}.types .fleet .button{align-self:flex-start}}
+@media(max-width:500px){.types.section.wrap{padding:36px 20px}.types .fleet{padding:22px 18px}.types .fleet>div{gap:14px}.types .fleet h3{font-size:28px}.types .fleet .button{align-self:stretch}}
