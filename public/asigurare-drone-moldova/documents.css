@@ -50,3 +50,20 @@ h1,h2,h3{font-family:var(--display);font-weight:600;letter-spacing:-.015em}
 .types .fleet .button{min-height:48px;padding:14px 20px;text-align:center;justify-content:center}
 @media(max-width:900px){.types>.split{grid-template-columns:1fr}.types .fleet{flex-direction:column;align-items:stretch}.types .fleet .button{align-self:flex-start}}
 @media(max-width:500px){.types.section.wrap{padding:36px 20px}.types .fleet{padding:22px 18px}.types .fleet>div{gap:14px}.types .fleet h3{font-size:28px}.types .fleet .button{align-self:stretch}}
+
+/* Manrope is limited to reading copy and controls; heading/navigation fonts stay intact. */
+p:not(.eyebrow),.fine,small:not(.brand small),td,th,caption,
+main button,main .button,main .text-link,.type-tags>span,.tags>span,.source-links a,.signal-label{
+  font-family:Manrope,Arial,sans-serif;
+}
+p:not(.eyebrow){font-weight:400;line-height:1.65}
+.hero-copy,.statement-copy p+p,.protection-card>p:not(.card-note),.risk-copy>p,.result-copy>p:not(.fine),.business-text p,.authorization p:not(.eyebrow):not(.fine),.types .split>div>p:not(.fine),.why .split>div>p:not(.eyebrow),.contact>div>p:not(.eyebrow){font-size:clamp(19px,1.25vw,24px);line-height:1.65}
+.hero-sub,.industry-grid p,.steps p,.faq details>p,.coverage-columns p,.request-send p{font-size:17px;line-height:1.65}
+.fine,.card-note,.disclaimer p{font-size:15px;line-height:1.65}
+main .button,main .text-link{font-size:15px;letter-spacing:0}
+.type-tags>span,.tags>span{font-size:14px}
+.hero-content{padding-top:190px}
+.offers-back{position:absolute;top:112px;left:max(56px,calc((100% - 1328px)/2));z-index:3;display:inline-flex;align-items:center;gap:18px;min-height:46px;padding:14px 22px;border:1px solid #dce1e7;background:#fff;color:#1a202c;box-shadow:0 4px 8px #0000000d;font-family:Manrope,Arial,sans-serif;font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;transition:color .2s,border-color .2s,background .2s}
+.offers-back svg{width:17px;height:17px;flex:none;color:var(--red)}
+.offers-back:hover,.offers-back:focus-visible{color:#c70512;border-color:#c70512;background:#fff7f7;text-decoration:none}
+@media(max-width:700px){.offers-back{top:104px;left:24px;padding:12px 17px;min-height:44px;font-size:10px}.hero-content{padding-top:188px}.hero-copy{font-size:19px}}
