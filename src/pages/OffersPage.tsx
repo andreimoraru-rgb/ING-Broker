@@ -58,7 +58,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           id: 'drone-liability',
           title: 'Asigurare Răspundere Drone',
           desc: 'Protecție pentru prejudiciile produse terților de drone și opțiuni CASCO pentru propria aeronavă.',
-          image: '/asigurare-drone-moldova/assets/asigurare-drone-moldova.webp',
+          image: '/asigurare-drone-moldova/assets/business.webp',
           link: '/asigurare-drone-moldova/'
         },
         {
@@ -120,7 +120,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           id: 'drone-liability',
           title: 'Страхование ответственности дронов',
           desc: 'Защита от ущерба, причинённого дронами третьим лицам, и опции КАСКО для собственного аппарата.',
-          image: '/asigurare-drone-moldova/assets/asigurare-drone-moldova.webp',
+          image: '/asigurare-drone-moldova/assets/business.webp',
           link: '/ru/asigurare-drone-moldova/'
         },
         {
@@ -182,7 +182,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           id: 'drone-liability',
           title: 'Drone Liability Insurance',
           desc: 'Protection for third-party damage caused by drones, with CASCO options for your own aircraft.',
-          image: '/asigurare-drone-moldova/assets/asigurare-drone-moldova.webp',
+          image: '/asigurare-drone-moldova/assets/business.webp',
           link: '/en/asigurare-drone-moldova/'
         },
         {
@@ -283,6 +283,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
                       <img 
                         src={offer.image} 
                         alt={offer.title} 
+                        style={offer.id === 'drone-liability' ? { objectPosition: 'center 25%' } : undefined}
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                       />
                     </div>
@@ -316,6 +317,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
                       <img 
                         src={offer.image} 
                         alt={offer.title} 
+                        style={offer.id === 'drone-liability' ? { objectPosition: 'center 25%' } : undefined}
                         className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                       />
                     </div>
