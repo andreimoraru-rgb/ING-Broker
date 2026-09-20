@@ -6,6 +6,9 @@
 /en/product-page/carte-verde /en/personal/carte-verde/ 301
 /ru/product-page/adigurare-medicala-peste-hotare /ru/personal/medicala/ 301
 /en/shop /en/ 301
+# Slug articol RCA normalizat la ASCII (URL-ul cu diacritice era necanonic)
+/news/cum-se-determin%C4%83-pre%C8%9Bul-unei-asigur%C4%83ri-rca-ghid-pentru-un-pre%C8%9B-rca-accesibil /news/cum-se-determina-pretul-unei-asigurari-rca-ghid-pentru-un-pret-rca-accesibil 301
+
 /product-page/:slug /personal/:slug/ 301
 /en/product-page/:slug /en/personal/:slug/ 301
 /ru/product-page/:slug /ru/personal/:slug/ 301
