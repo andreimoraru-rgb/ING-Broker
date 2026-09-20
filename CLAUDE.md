@@ -43,3 +43,15 @@ MCP servers are configured in **`.mcp.json`** (project scope) — not in this fi
 - On first use Claude Code asks you to approve running the server. In Claude Code
   on the web, set `GOOGLE_MAPS_API_KEY` in the environment's secrets so the server
   can start.
+
+## Lead generation
+
+Local B2B lead-generation workflow lives under `docs/`:
+
+- `docs/lead-generation-maps.md` — ready-to-run Google Maps queries by segment and
+  city, mapped to ING Broker products.
+- `docs/leads/START-HERE.md` — paste-in instruction for a fresh session, plus where
+  outputs are saved.
+
+Prospect lists are saved as CSV at `docs/leads/prospects-<date>.csv`. Never put the
+API key in the repo — only in the `GOOGLE_MAPS_API_KEY` environment variable.
