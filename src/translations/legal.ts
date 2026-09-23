@@ -32,7 +32,7 @@ export const legalTranslations: Record<Language, { terms: LegalContent; privacy:
         },
         {
           title: "3. Politica de confidențialitate cu privire la prelucrarea datelor cu caracter personal.",
-          content: "Prelucrarea datelor cu caracter personal se efectuează cu consimțământul solicitantului după ce a luat cunoștință cu prezentul document. BAR Insurance ING Broker SRL prelucrează date cu caracter personal în conformitate cu dispozițiile LEGII Nr. 195/2024 privind protecția datelor cu caracter personal.\n\nÎn cazul incapacității de exercițiu sau al capacității de exercițiu limitate a subiectului datelor cu caracter personal, consimțământul privind prelucrarea datelor cu caracter personal se acordă, în formă scrisă, de către reprezentantul lui legal. Iar semnarea contractului de asigurare poate fi efectuată doar cu reprezentantul legal.\n\nPrin transmiterea datelor cu caracter personal, utilizatorul este de acord cu prelucrarea acestora în scopul obținerii ofertelor, contractelor și polițelor de asigurare precum și alte informații sau acte. Dacă Utilizatorul nu dorește să furnizeze în regim online, prin canale electronice de comunicare, datele sale cu caracter personal, atunci Utilizatorul va apela la numărul de telefon +373 79526003 pentru a obține o consultație sau se va adresa direct în oficiile teritoriale pentru soluționarea solicitării. Utilizatorii care nu doresc să transmită date cu caracter personal prin canale de comunicare electronice nu pot beneficia în regim online și electronic de oferte și/sau servicii de asigurare.\n\nBAR Insurance ING Broker SRL obține informația despre adresa IP a dispozitivului Utilizatorului. Această informație nu este utilizată pentru identificarea persoanelor.\n\nÎn conformitate cu prevederile art. 12–18 ale Legii nr. 195/2024 privind protecția datelor cu caracter personal, subiectul datelor cu caracter personal dispune de dreptul de informare, dreptul de acces la datele cu caracter personal, dreptul de intervenție asupra datelor cu caracter personal, dreptul de opoziție al subiectului datelor cu caracter personal, dreptul de a nu fi supus unei decizii individuale, dreptul de acces la justiție.\n\nBAR Insurance ING Broker SRL respectă confidențialitatea și securitatea prelucrării datelor cu caracter personal și celelalte prevederi ale LEGII Nr. 195/2024 privind protecția datelor cu caracter personal.\n\nBAR Insurance ING Broker SRL este înregistrată în Registrul de evidență a operatorilor de date cu caracter personal, cu nr. 0003299.\n\nÎn scopul exercitării drepturilor prevăzute de Lege, subiectul datelor cu caracter personal este în drept să se adreseze cu o cerere scrisă către BAR Insurance ING Broker SRL la sediul său central sau la adresa de email: ingbroker2@gmail.com."
+          content: "Prelucrarea datelor cu caracter personal se efectuează cu consimțământul solicitantului după ce a luat cunoștință cu prezentul document. BAR Insurance ING Broker SRL prelucrează date cu caracter personal în conformitate cu dispozițiile LEGII Nr. 195/2024 privind protecția datelor cu caracter personal.\n\nÎn cazul incapacității de exercițiu sau al capacității de exercițiu limitate a subiectului datelor cu caracter personal, consimțământul privind prelucrarea datelor cu caracter personal se acordă, în formă scrisă, de către reprezentantul lui legal. Iar semnarea contractului de asigurare poate fi efectuată doar cu reprezentantul legal.\n\nPrin transmiterea datelor cu caracter personal, utilizatorul este de acord cu prelucrarea acestora în scopul obținerii ofertelor, contractelor și polițelor de asigurare precum și alte informații sau acte. Dacă Utilizatorul nu dorește să furnizeze în regim online, prin canale electronice de comunicare, datele sale cu caracter personal, atunci Utilizatorul va apela la numărul de telefon +373 79526003 pentru a obține o consultație sau se va adresa direct în oficiile teritoriale pentru soluționarea solicitării. Utilizatorii care nu doresc să transmită date cu caracter personal prin canale de comunicare electronice nu pot beneficia în regim online și electronic de oferte și/sau servicii de asigurare.\n\nBAR Insurance ING Broker SRL obține informația despre adresa IP a dispozitivului Utilizatorului. Această informație nu este utilizată pentru identificarea persoanelor.\n\nÎn conformitate cu prevederile art. 12–18 ale Legii nr. 195/2024 privind protecția datelor cu caracter personal, subiectul datelor cu caracter personal dispune de dreptul de informare, dreptul de acces la datele cu caracter personal, dreptul de intervenție asupra datelor cu caracter personal, dreptul de opoziție al subiectului datelor cu caracter personal, dreptul de a nu fi supus unei decizii individuale, dreptul de acces la justiție.\n\nBAR Insurance ING Broker SRL respectă confidențialitatea și securitatea prelucrării datelor cu caracter personal și celelalte prevederi ale LEGII Nr. 195/2024 privind protecția datelor cu caracter personal.\n\nBAR Insurance ING Broker SRL este înregistrată în Registrul de evidență a operatorilor de date cu caracter personal, cu nr. 0003299.\n\nÎn scopul exercitării drepturilor prevăzute de Lege, subiectul datelor cu caracter personal este în drept să se adreseze cu o cerere scrisă către BAR Insurance ING Broker SRL la sediul său central sau la adresa de email: ingbroker@ingbroker.md."
         },
         {
           title: "4. Politica de informare despre cookie-uri.",
@@ -72,7 +72,7 @@ export const legalTranslations: Record<Language, { terms: LegalContent; privacy:
         },
         {
           title: "13. Reclamații.",
-          content: "Orice reclamație poate fi înregistrată oficial prin expedierea textului reclamației argumentate la adresa de email ingbroker2@gmail.com sau să fie depusă fizic la adresa juridică a BAR Insurance ING Broker SRL. Totodată, pentru soluționarea operativă a petițiilor, urmează a se apela în orele de program 09.00 - 18.00 de luni până vineri, la numărul de telefon +373 79526003."
+          content: "Orice reclamație poate fi înregistrată oficial prin expedierea textului reclamației argumentate la adresa de email ingbroker@ingbroker.md sau să fie depusă fizic la adresa juridică a BAR Insurance ING Broker SRL. Totodată, pentru soluționarea operativă a petițiilor, urmează a se apela în orele de program 09.00 - 18.00 de luni până vineri, la numărul de telefon +373 79526003."
         },
         {
           title: "14. Modificarea informațiilor în acest document.",
@@ -192,7 +192,7 @@ export const legalTranslations: Record<Language, { terms: LegalContent; privacy:
         },
         {
           title: "13. Жалобы",
-          content: "Жалобы можно направлять на ingbroker2@gmail.com или подавать в офис BAR Insurance ING Broker SRL. Телефон поддержки: +373 79526003 (Пн-Пт, 09:00-18:00)."
+          content: "Жалобы можно направлять на ingbroker@ingbroker.md или подавать в офис BAR Insurance ING Broker SRL. Телефон поддержки: +373 79526003 (Пн-Пт, 09:00-18:00)."
         },
         {
           title: "14. Изменение информации",
@@ -245,7 +245,7 @@ export const legalTranslations: Record<Language, { terms: LegalContent; privacy:
         },
         {
           title: "10. Контактная информация",
-          content: "Запросы направляются в офис BAR Insurance ING Broker SRL - мун. Кишинэу, ул. Пан Халиппа 9, или по e-mail: ingbroker2@gmail.com"
+          content: "Запросы направляются в офис BAR Insurance ING Broker SRL - мун. Кишинэу, ул. Пан Халиппа 9, или по e-mail: ingbroker@ingbroker.md"
         }
       ]
     }
@@ -312,7 +312,7 @@ export const legalTranslations: Record<Language, { terms: LegalContent; privacy:
         },
         {
           title: "13. Complaints",
-          content: "Complaints can be sent to ingbroker2@gmail.com or submitted to the BAR Insurance ING Broker SRL office. Support phone: +373 79526003 (Mon-Fri, 09:00-18:00)."
+          content: "Complaints can be sent to ingbroker@ingbroker.md or submitted to the BAR Insurance ING Broker SRL office. Support phone: +373 79526003 (Mon-Fri, 09:00-18:00)."
         },
         {
           title: "14. Modification of Information",
@@ -365,7 +365,7 @@ export const legalTranslations: Record<Language, { terms: LegalContent; privacy:
         },
         {
           title: "10. Contact Information",
-          content: "Requests are sent to BAR Insurance ING Broker SRL office - Chisinau, 9 Pan Halippa St., or via e-mail: ingbroker2@gmail.com"
+          content: "Requests are sent to BAR Insurance ING Broker SRL office - Chisinau, 9 Pan Halippa St., or via e-mail: ingbroker@ingbroker.md"
         }
       ]
     }
