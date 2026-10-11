@@ -9,4 +9,26 @@
 /product-page/:slug /personal/:slug/ 301
 /en/product-page/:slug /en/personal/:slug/ 301
 /ru/product-page/:slug /ru/personal/:slug/ 301
-/* /index.html 200
+
+# Explicit SPA routes. Unknown paths fall through to Cloudflare's 404 handling.
+/ /index.html 200
+/product/* /index.html 200
+/business /index.html 200
+/business/* /index.html 200
+/reinsurance /index.html 200
+/construction-shield /index.html 200
+/oferte /index.html 200
+/oferte/* /index.html 200
+/news /index.html 200
+/news/* /index.html 200
+/admin/ai-tools /index.html 200
+/contact /index.html 200
+/ai-studio /index.html 200
+/despre-noi /index.html 200
+/o-nas /index.html 200
+/about-us /index.html 200
+/termeni-si-conditii /index.html 200
+/politica-de-confidentialitate /index.html 200
+/renewable-energy /index.html 200
+/property-assets /index.html 200
+/servicii/* /index.html 200
