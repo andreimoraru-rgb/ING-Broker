@@ -10,6 +10,7 @@ declare global {
 interface PostHogQueue extends Array<unknown[]> {
   _i?: unknown[][];
   __SV?: number;
+  init?: (key: string, options: Record<string, unknown>) => void;
   capture: (event: string, properties?: AnalyticsParams) => void;
 }
 
@@ -25,19 +26,39 @@ export const installPostHog = () => {
   if (!posthogKey || window.posthog) return;
 
   const queue = [] as unknown as PostHogQueue;
-  queue.capture = (event: string, properties?: AnalyticsParams) => {
-    queue.push(['capture', event, properties]);
+  const queuedMethods = [
+    'capture',
+    'register',
+    'register_once',
+    'unregister',
+    'identify',
+    'reset',
+    'set_config',
+    'opt_in_capturing',
+    'opt_out_capturing',
+  ];
+
+  for (const method of queuedMethods) {
+    (queue as unknown as Record<string, (...args: unknown[]) => void>)[method] = (...args: unknown[]) => {
+      queue.push([method, ...args]);
+    };
+  }
+
+  queue._i = [];
+  queue.init = (key: string, options: Record<string, unknown>) => {
+    queue._i?.push([key, options]);
   };
-  queue._i = [[posthogKey, {
+  queue.__SV = 1;
+  window.posthog = queue;
+
+  queue.init(posthogKey, {
     api_host: posthogHost,
     ui_host: 'https://eu.posthog.com',
     person_profiles: 'identified_only',
     capture_pageview: true,
     capture_pageleave: true,
     autocapture: true,
-  }]];
-  queue.__SV = 1;
-  window.posthog = queue;
+  });
 
   const script = document.createElement('script');
   script.async = true;
