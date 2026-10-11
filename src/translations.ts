@@ -174,7 +174,7 @@ export const translations = {
         { 
           id: 'professional', 
           title: 'Răspundere profesională', 
-          desc: 'Protecție financiară pentru anumite prejudicii rezultate din erori, omisiuni sau neglijență în prestarea serviciilor, în limitele și condițiile poliței. Este relevantă pentru IT, inginerie, arhitectură și servicii juridice. ING Broker analizează expunerile și solicită opțiuni de asigurare adaptate activității companiei.', 
+          desc: 'Protecție financiară absolută pentru erori, omisiuni sau neglijență în prestarea serviciilor de consultanță și proiectare. Indispensabilă pentru IT, inginerie, arhitectură și servicii juridice. ING Broker structurează programe de asigurare personalizate, garantând siguranța profesioniștilor și continuitatea afacerilor pe piața din R. Moldova.', 
           image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1200', 
           category: 'LIABILITY', 
           link: '/business/professional',
@@ -213,7 +213,7 @@ export const translations = {
         { 
           id: 'cargo', 
           title: 'Cargo și transport', 
-          desc: 'Asigurarea cargo poate acoperi anumite riscuri ale mărfurilor în tranzit rutier, maritim, aerian sau feroviar, inclusiv avarierea, furtul ori accidentele, conform poliței. ING Broker compară opțiunile disponibile pentru logistică, import-export și producție și asistă clientul în relația cu asigurătorul la daună.', 
+          desc: 'Garantăm siguranța mărfurilor în tranzit rutier, maritim, aerian sau feroviar, acoperind riscuri de avariere, furt sau accidente. Soluții "All Risks" esențiale pentru logistică, import-export și producție. Cu ING Broker, lanțul tău de aprovizionare beneficiază de protecție internațională și decontare rapidă a daunelor.', 
           image: '/logistica.jpg', 
           category: 'LOGISTICS', 
           link: '/business/cargo',
@@ -278,7 +278,7 @@ export const translations = {
         { 
           id: 'renewable', 
           title: 'Energia Regenerabilă', 
-          desc: 'Analizăm opțiuni pentru protejarea investițiilor în parcuri solare, eoliene și biogaz împotriva unor avarii accidentale, fenomene meteo și pierderi financiare eligibile. Acoperirea echipamentelor și perioada asigurată depind de riscurile acceptate și de condițiile poliței.', 
+          desc: 'Securizăm investițiile în parcuri solare, eoliene și biogaz împotriva avariilor accidentale, fenomenelor meteo extreme și pierderii de profit. ING Broker susține tranziția verde a R. Moldova prin soluții de asigurare specializate, garantând protecția echipamentelor de înaltă tehnologie pe toată durata de viață a proiectului.', 
           image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&q=80&w=1200', 
           category: 'ENERGY', 
           link: '/renewable-energy',
@@ -291,7 +291,7 @@ export const translations = {
         { 
           id: 'agriculture', 
           title: 'Riscuri agricole', 
-          desc: 'Soluții pentru culturi, animale și utilaje agricole expuse fenomenelor naturale, bolilor și incendiilor, în funcție de riscurile acceptate de asigurător. ING Broker analizează necesitățile fermierilor și agribusiness-urilor și solicită opțiuni conforme condițiilor aplicabile, inclusiv cerințelor programelor de subvenționare relevante.', 
+          desc: 'Protecție vitală pentru culturi, animale și utilaje agricole în fața capriciilor naturii, bolilor și incendiilor. Destinat fermierilor și agribusiness-urilor locale. Cu expertiză aprofundată în sectorul agricol moldovenesc, ING Broker structurează polițe care garantează continuitatea afacerii tale, inclusiv accesarea subvențiilor de stat.', 
           image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200', 
           category: 'AGRICULTURE', 
           link: '/business/agriculture',
