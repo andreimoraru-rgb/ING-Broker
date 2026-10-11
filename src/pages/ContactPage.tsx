@@ -6,6 +6,7 @@ import { breadcrumbSchema } from '../utils/schema';
 import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Smartphone, Download, ShieldAlert, ArrowLeft } from 'lucide-react';
+import { trackEvent } from '../utils/analytics';
 
 interface ContactPageProps {
   lang: Language;
@@ -108,9 +109,20 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
 
   const c = content[lang];
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [form, setForm] = useState({ name: '', company: '', phone: '', email: '', service: c.serviceOptions[0], message: '' });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const text = encodeURIComponent(
+      `Solicitare de pe ingbroker.md\nNume: ${form.name}\nCompanie: ${form.company}\nTelefon: ${form.phone}\nEmail: ${form.email}\nServiciu: ${form.service}\nDetalii: ${form.message}`
+    );
+    trackEvent('quote_request_submit', {
+      source: 'contact_page',
+      page_path: window.location.pathname,
+      lead_type: form.service.includes('Corporate') || form.service.includes('Корпоратив') ? 'b2b' : 'general',
+      contact_method: 'whatsapp'
+    });
+    window.open(`https://wa.me/37369526003?text=${text}`, '_blank');
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 5000);
   };
@@ -383,10 +395,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                   </div>
                   <h4 className="text-2xl font-bold text-secondary mb-2">
-                    {lang === 'ro' ? 'Solicitare trimisă!' : lang === 'ru' ? 'Запрос отправлен!' : 'Request sent!'}
+                    {lang === 'ro' ? 'Mesaj pregătit în WhatsApp' : lang === 'ru' ? 'Сообщение подготовлено в WhatsApp' : 'Message prepared in WhatsApp'}
                   </h4>
                   <p className="text-gray-600">
-                    {lang === 'ro' ? 'Vă vom contacta în cel mai scurt timp.' : lang === 'ru' ? 'Мы свяжемся с вами в ближайшее время.' : 'We will contact you shortly.'}
+                    {lang === 'ro' ? 'Verifică și trimite mesajul deschis în WhatsApp.' : lang === 'ru' ? 'Проверьте и отправьте сообщение в WhatsApp.' : 'Review and send the message opened in WhatsApp.'}
                   </p>
                 </div>
               )}
@@ -397,6 +409,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.name}</label>
                     <input 
                       type="text" 
+                      required
+                      value={form.name}
+                      onChange={e => setForm({ ...form, name: e.target.value })}
                       className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                       placeholder="John Doe"
                     />
@@ -405,6 +420,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.company}</label>
                     <input 
                       type="text" 
+                      required
+                      value={form.company}
+                      onChange={e => setForm({ ...form, company: e.target.value })}
                       className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                       placeholder="Company SRL"
                     />
@@ -415,13 +433,15 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.email}</label>
                     <input 
                       type="email" 
+                      value={form.email}
+                      onChange={e => setForm({ ...form, email: e.target.value })}
                       className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
                       placeholder="john@example.com"
                     />
                   </div>
                   <div>
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.service}</label>
-                    <select className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none">
+                    <select value={form.service} onChange={e => setForm({ ...form, service: e.target.value })} className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none">
                       {c.serviceOptions.map((opt, idx) => (
                         <option key={idx} value={opt}>{opt}</option>
                       ))}
@@ -429,9 +449,22 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                   </div>
                 </div>
                 <div>
+                  <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{lang === 'ro' ? 'Telefon' : lang === 'ru' ? 'Телефон' : 'Phone'}</label>
+                  <input
+                    type="tel"
+                    required
+                    value={form.phone}
+                    onChange={e => setForm({ ...form, phone: e.target.value })}
+                    className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
+                    placeholder="+373 69 000 000"
+                  />
+                </div>
+                <div>
                   <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.message}</label>
                   <textarea 
                     rows={4}
+                    value={form.message}
+                    onChange={e => setForm({ ...form, message: e.target.value })}
                     className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
                     placeholder="..."
                   />
@@ -441,7 +474,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
                   whileTap={{ scale: 0.98 }}
                   className="w-full py-5 bg-primary text-white font-bold uppercase text-xs tracking-widest hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/40 rounded-lg"
                 >
-                  {c.send}
+                  {lang === 'ro' ? 'Continuă în WhatsApp' : lang === 'ru' ? 'Продолжить в WhatsApp' : 'Continue in WhatsApp'}
                 </motion.button>
               </form>
             </div>

@@ -20,12 +20,13 @@ import {
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { Language } from '../translations';
+import { trackEvent } from '../utils/analytics';
 
 interface CorporatePageProps {
   lang: Language;
 }
 
-const B2BLeadForm: React.FC<{ title: string }> = ({ title }) => {
+export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ title, source = 'corporate_page' }) => {
   const [sent, setSent] = useState(false);
   const [form, setForm] = useState({
     company: '',
@@ -42,6 +43,12 @@ const B2BLeadForm: React.FC<{ title: string }> = ({ title }) => {
       `Cerere audit asigurări corporative\nCompanie: ${form.company}\nContact: ${form.name}\nTelefon: ${form.phone}\nEmail: ${form.email}\nNr. angajați: ${form.employees}\nDetalii: ${form.message}`
     );
     window.open(`https://wa.me/37369526003?text=${whatsappText}`, '_blank');
+    trackEvent('audit_submit', {
+      source,
+      page_path: window.location.pathname,
+      lead_type: 'b2b',
+      contact_method: 'whatsapp'
+    });
     setSent(true);
   };
 
@@ -49,8 +56,8 @@ const B2BLeadForm: React.FC<{ title: string }> = ({ title }) => {
     return (
       <div className="bg-green-50 border border-green-200 p-8 text-center">
         <CheckCircle2 size={48} className="text-green-500 mx-auto mb-4" />
-        <h3 className="text-xl font-bold text-green-800 mb-2">Cererea a fost trimisă!</h3>
-        <p className="text-green-700">Un consultant ING Broker te va contacta în maximum 15 minute pentru a programa auditul.</p>
+        <h3 className="text-xl font-bold text-green-800 mb-2">Mesajul este pregătit în WhatsApp</h3>
+        <p className="text-green-700">Trimite mesajul deschis în WhatsApp. Un consultant îți va confirma primirea și următorul pas în timpul programului de lucru.</p>
       </div>
     );
   }
@@ -59,7 +66,7 @@ const B2BLeadForm: React.FC<{ title: string }> = ({ title }) => {
     <div className="bg-white border border-gray-200 p-8 shadow-lg">
       <h3 className="text-2xl font-bold text-gray-900 mb-2">{title}</h3>
       <p className="text-gray-500 text-sm mb-6">
-        Completează datele companiei - te contactăm în 15 minute pentru a programa auditul gratuit.
+        Completează datele companiei. Datele vor fi pregătite într-un mesaj WhatsApp pe care îl verifici înainte de trimitere.
       </p>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -145,7 +152,7 @@ const B2BLeadForm: React.FC<{ title: string }> = ({ title }) => {
           type="submit"
           className="w-full bg-red-600 text-white font-bold py-4 uppercase text-xs tracking-widest hover:bg-red-700 transition-colors flex items-center justify-center gap-3 group"
         >
-          Vreau audit gratuit al asigurărilor companiei mele
+          Pregătește solicitarea în WhatsApp
           <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
         </button>
         <p className="text-xs text-gray-400 text-center">

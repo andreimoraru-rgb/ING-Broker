@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { translations, Language } from '../translations';
 import { SEO } from '../components/SEO';
 import { motion, AnimatePresence } from 'motion/react';
-import { Phone, Mail, ExternalLink, ChevronDown, ArrowLeft } from 'lucide-react';
+import { Phone, Mail, ExternalLink, ChevronDown, ArrowLeft, CheckCircle2 } from 'lucide-react';
+import { B2BLeadForm } from './CorporatePage';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -15,6 +16,19 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
   const t = translations[lang].business;
   const cg = translations[lang].corporateGateway;
   const seo = translations[lang].seo.business;
+  const hero = lang === 'ro' ? {
+    label: 'Managementul riscului pentru companii',
+    title: 'Asigurări corporate construite în jurul afacerii tale',
+    desc: 'Analizăm expunerile companiei, solicităm și comparăm opțiunile disponibile, apoi administrăm programul de asigurare și calendarul de reînnoire. Acoperirea, prima și emiterea depind de informațiile furnizate și de condițiile asigurătorului.',
+    primary: 'Solicită auditul de risc',
+    secondary: 'Soluții pentru transport'
+  } : {
+    label: cg.label,
+    title: cg.title,
+    desc: cg.desc,
+    primary: cg.btnBusiness,
+    secondary: cg.btnReinsurance
+  };
 
   const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -108,32 +122,32 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
             >
               <div className="h-px w-12 bg-primary" />
               <span className="text-[10px] font-display font-bold uppercase tracking-[0.4em] text-white/60">
-                {cg.label}
+                {hero.label}
               </span>
             </motion.div>
 
             <h1 className="text-6xl md:text-8xl font-heading font-bold text-white tracking-tighter mb-8 leading-[0.9]">
-              {cg.title}
+              {hero.title}
             </h1>
             <p className="text-xl md:text-2xl text-white/60 font-display font-light leading-relaxed mb-12 max-w-2xl">
-              {cg.desc}
+              {hero.desc}
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <motion.button 
-                onClick={() => window.scrollTo({ top: 800, behavior: 'smooth' })}
+                onClick={() => document.getElementById('audit-risc')?.scrollIntoView({ behavior: 'smooth' })}
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 className="px-12 py-5 bg-primary text-white font-display font-bold uppercase text-[10px] tracking-[0.3em] transition-all shadow-xl shadow-primary/20 hover:bg-primary-dark text-center"
               >
-                {cg.btnBusiness}
+                {hero.primary}
               </motion.button>
               <motion.button 
-                onClick={() => navigate('/reinsurance')}
+                onClick={() => navigate(lang === 'ro' ? '/business/transport-logistica' : '/reinsurance')}
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 className="px-12 py-5 bg-white/5 border border-white/20 text-white font-display font-bold uppercase text-[10px] tracking-[0.3em] transition-all hover:bg-white/10 hover:border-white/40 text-center"
               >
-                {cg.btnReinsurance}
+                {hero.secondary}
               </motion.button>
             </div>
           </div>
@@ -195,6 +209,63 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
           </div>
         </div>
       </section>
+
+      {lang === 'ro' && (
+        <>
+          <section className="py-24 bg-white border-y border-gray-100">
+            <div className="max-w-7xl mx-auto px-6">
+              <div className="max-w-3xl mb-14">
+                <span className="text-primary text-[10px] font-bold uppercase tracking-[0.35em]">Proces verificabil</span>
+                <h2 className="text-4xl md:text-6xl font-bold text-secondary tracking-tighter mt-5 mb-6">De la risc la program de asigurare</h2>
+                <p className="text-lg text-gray-600 leading-relaxed">ING Broker acționează ca intermediar între companie și asigurător. Nu promitem un preț sau o despăgubire înainte de analiză; construim un proces clar și documentat.</p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  ['01', 'Înțelegem compania', 'Colectăm activitatea, activele, contractele, flota, personalul și istoricul relevant.'],
+                  ['02', 'Cartografiem riscurile', 'Separăm expunerile critice, riscurile transferabile și lacunele programului actual.'],
+                  ['03', 'Cerem și comparăm opțiuni', 'Comparăm limite, franșize, excluderi, servicii și prime din ofertele disponibile.'],
+                  ['04', 'Administrăm programul', 'Urmărim documentele, reînnoirile și asistăm clientul în relația cu asigurătorul la daună.']
+                ].map(([num, title, desc]) => (
+                  <article key={num} className="border border-gray-200 p-7 bg-gray-50">
+                    <div className="text-primary font-bold text-sm mb-5">{num}</div>
+                    <h3 className="text-xl font-bold text-secondary mb-3">{title}</h3>
+                    <p className="text-gray-600 leading-relaxed text-sm">{desc}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="py-24 bg-secondary text-white">
+            <div className="max-w-7xl mx-auto px-6">
+              <div className="grid lg:grid-cols-2 gap-16 items-start">
+                <div>
+                  <span className="text-primary text-[10px] font-bold uppercase tracking-[0.35em]">Priorități B2B</span>
+                  <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mt-5 mb-8">Soluții pe industria companiei</h2>
+                  <div className="space-y-6">
+                    {[
+                      ['Transport și logistică', 'Flotă, RCA, Carte Verde, CASCO, CMR, cargo, depozite și răspunderi.'],
+                      ['Construcții și proiecte', 'CAR/EAR, utilaje, răspunderi, bunuri și cerințe contractuale.'],
+                      ['Producție, distribuție și agro', 'Bunuri, echipamente, stocuri, întreruperea activității, cargo și credit comercial.'],
+                      ['IT și servicii profesionale', 'Cyber, răspundere profesională, D&O și beneficii pentru angajați.']
+                    ].map(([title, desc]) => (
+                      <div key={title} className="flex gap-4">
+                        <CheckCircle2 className="text-primary shrink-0 mt-1" size={20} />
+                        <div><h3 className="font-bold text-xl mb-1">{title}</h3><p className="text-white/60 leading-relaxed">{desc}</p></div>
+                      </div>
+                    ))}
+                  </div>
+                  <button onClick={() => navigate('/business/transport-logistica')} className="mt-10 px-8 py-4 border border-white/30 hover:border-primary hover:text-primary transition-colors uppercase tracking-widest text-xs font-bold">Vezi soluțiile pentru transport</button>
+                </div>
+                <div id="audit-risc" className="text-secondary">
+                  <B2BLeadForm title="Solicită analiza programului de asigurare" source="business_page" />
+                  <p className="text-white/50 text-xs leading-relaxed mt-4">Analiza nu reprezintă ofertă sau confirmare de acoperire. Recomandările finale depind de datele companiei și de condițiile asigurătorilor.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
 
       <section className="py-24 bg-gray-50 border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-6">

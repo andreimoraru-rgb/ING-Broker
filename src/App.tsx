@@ -51,6 +51,7 @@ import AboutPage from './components/AboutPage';
 import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
 import { INGReLogo } from './components/INGReLogo';
+import { installContactTracking } from './utils/analytics';
 
 
 // --- Assets & Colors ---
@@ -1203,6 +1204,8 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => installContactTracking(), []);
+
   const t = translations[lang];
   const insightsT = translations[lang].insights;
   const seo = translations[lang].seo.home;
@@ -1366,6 +1369,7 @@ export default function App() {
           <Route path="/property-assets" element={<PropertyAssetsPage lang={lang} />} />
           <Route path="/oferte/flote-auto" element={<FleetAutoPage lang={lang} />} />
           <Route path="/oferte/transportatori-auto" element={<FleetAutoPage lang={lang} />} />
+          <Route path="/business/transport-logistica" element={<FleetAutoPage lang={lang} />} />
           <Route path="/servicii/asigurari-constructii-car-ear" element={<CarEarPage lang={lang} />} />
           <Route path="/servicii/asigurari-corporative-moldova" element={<CorporatePage lang={lang} />} />
           <Route path="/servicii/asigurare-raspundere-profesionala" element={<ProfessionalIndemnityPage lang={lang} />} />

@@ -25,6 +25,7 @@ const staticRoutes: SitemapUrl[] = [
   { loc: '/property-assets', lastmod: TODAY, changefreq: 'weekly', priority: '0.8' },
   { loc: '/oferte', lastmod: TODAY, changefreq: 'weekly', priority: '0.8' },
   { loc: '/oferte/flote-auto', lastmod: TODAY, changefreq: 'weekly', priority: '0.9' },
+  { loc: '/business/transport-logistica', lastmod: TODAY, changefreq: 'weekly', priority: '0.9' },
   { loc: '/despre-noi', lastmod: TODAY, changefreq: 'monthly', priority: '0.7' },
   { loc: '/o-nas', lastmod: TODAY, changefreq: 'monthly', priority: '0.6' },
   { loc: '/about-us', lastmod: TODAY, changefreq: 'monthly', priority: '0.6' },
