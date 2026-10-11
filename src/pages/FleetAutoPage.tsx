@@ -637,6 +637,40 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
         </div>
       </section>
 
+      {/* Risk audit checklist */}
+      <section className="py-24 bg-secondary text-white">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-start">
+          <div>
+            <div className="flex items-center gap-4 mb-7"><div className="w-12 h-px bg-primary" /><span className="text-[10px] font-bold uppercase tracking-[0.4em]">Audit flotă, CMR și cargo</span></div>
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-7">Verifică lacunele înainte de următoarea cursă</h2>
+            <p className="text-white/60 text-lg leading-relaxed mb-8">Checklistul stabilește informațiile necesare pentru analiză. Nu înlocuiește condițiile poliței și nu confirmă acoperirea înainte de acceptarea riscului de către asigurător.</p>
+            <a
+              href="https://wa.me/37369526003?text=Solicit%20auditul%20flotei%20%C8%99i%20al%20programului%20CMR%2FCargo.%20Voi%20trimite%20lista%20vehiculelor%2C%20rutele%20%C8%99i%20datele%20poli%C8%9Belor%20actuale."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex px-8 py-5 bg-primary text-white font-bold uppercase text-xs tracking-widest items-center gap-3 hover:bg-primary-dark transition-colors"
+            >Solicită auditul pe WhatsApp <ArrowRight size={16} /></a>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {[
+              'Lista vehiculelor și utilizarea lor',
+              'Țările, rutele și tipurile de marfă',
+              'Contractele și limitele CMR cerute',
+              'Valorile maxime transportate per cursă',
+              'Polițele și datele actuale de expirare',
+              'Daunele și incidentele relevante',
+              'Depozitele și perioadele de staționare',
+              'Cerințele clienților și partenerilor'
+            ].map(item => (
+              <div key={item} className="border border-white/10 p-5 flex gap-3 bg-white/5">
+                <ShieldCheck className="text-primary shrink-0" size={20} />
+                <span className="text-sm leading-relaxed text-white/80">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6">
