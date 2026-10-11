@@ -45,7 +45,9 @@ export async function onRequest(context: PagesContext): Promise<Response> {
   const url = new URL(context.request.url);
 
   if (isSpaRoute(url.pathname)) {
-    return context.env.ASSETS.fetch(assetRequest(context.request, '/index.html'));
+    // Fetch the root document because Cloudflare canonically redirects
+    // /index.html to /. The ASSETS binding bypasses this Function.
+    return context.env.ASSETS.fetch(assetRequest(context.request, '/'));
   }
 
   const asset = await context.env.ASSETS.fetch(context.request);
