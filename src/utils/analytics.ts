@@ -3,8 +3,14 @@ type AnalyticsParams = Record<string, string | number | boolean | undefined>;
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
-    posthog?: { capture: (event: string, properties?: AnalyticsParams) => void };
+    posthog?: PostHogQueue;
   }
+}
+
+interface PostHogQueue extends Array<unknown[]> {
+  _i?: unknown[][];
+  __SV?: number;
+  capture: (event: string, properties?: AnalyticsParams) => void;
 }
 
 export const trackEvent = (event: string, params: AnalyticsParams = {}) => {
@@ -18,27 +24,25 @@ const posthogHost = (import.meta.env.VITE_POSTHOG_HOST as string | undefined) ||
 export const installPostHog = () => {
   if (!posthogKey || window.posthog) return;
 
+  const queue = [] as unknown as PostHogQueue;
+  queue.capture = (event: string, properties?: AnalyticsParams) => {
+    queue.push(['capture', event, properties]);
+  };
+  queue._i = [[posthogKey, {
+    api_host: posthogHost,
+    ui_host: 'https://eu.posthog.com',
+    person_profiles: 'identified_only',
+    capture_pageview: true,
+    capture_pageleave: true,
+    autocapture: true,
+  }]];
+  queue.__SV = 1;
+  window.posthog = queue;
+
   const script = document.createElement('script');
   script.async = true;
-  script.src = `${posthogHost}/static/array.js`;
-  script.onload = () => {
-    const queue: unknown[][] = [];
-    const posthog = {
-      capture: (event: string, properties?: AnalyticsParams) => queue.push(['capture', event, properties]),
-      init: (...args: unknown[]) => queue.push(['init', ...args]),
-      _q: queue,
-    };
-
-    window.posthog = posthog;
-    posthog.init(posthogKey, {
-      api_host: posthogHost,
-      ui_host: 'https://eu.posthog.com',
-      person_profiles: 'identified_only',
-      capture_pageview: true,
-      capture_pageleave: true,
-      autocapture: true,
-    });
-  };
+  script.crossOrigin = 'anonymous';
+  script.src = `${posthogHost.replace('.i.posthog.com', '-assets.i.posthog.com')}/static/array.js`;
   document.head.appendChild(script);
 };
 
