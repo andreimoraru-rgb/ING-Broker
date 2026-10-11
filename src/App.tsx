@@ -43,6 +43,7 @@ import { NewsInsightsPage } from './pages/NewsInsightsPage';
 import { ArticlePage } from './pages/ArticlePage';
 import { AdminAITools } from './pages/AdminAITools';
 import { ConstructionShieldPage } from './pages/ConstructionShieldPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 import { CarEarPage } from './pages/CarEarPage';
 import { CorporatePage } from './pages/CorporatePage';
 import { ProfessionalIndemnityPage } from './pages/ProfessionalIndemnityPage';
@@ -1374,6 +1375,7 @@ export default function App() {
           <Route path="/servicii/asigurari-corporative-moldova" element={<CorporatePage lang={lang} />} />
           <Route path="/servicii/asigurare-raspundere-profesionala" element={<ProfessionalIndemnityPage lang={lang} />} />
           <Route path="/servicii/asigurare-cyber-moldova" element={<CyberInsurancePage lang={lang} />} />
+          <Route path="*" element={<NotFoundPage lang={lang} />} />
         </Routes>
 
         {/* Back to Top */}

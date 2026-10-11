@@ -1,4 +1,5 @@
-# Cloudflare Pages _redirects - 301 redirects for old URLs + SPA fallback
+# Cloudflare Pages _redirects - permanent redirects for legacy URLs.
+# SPA routing and real 404 responses are handled by functions/[[path]].ts.
 /oferte/transportatori-auto /oferte/flote-auto 301
 /oferte/transportatori-auto/ /oferte/flote-auto 301
 /product-page/asigurare-rca /personal/rca/ 301
@@ -9,4 +10,3 @@
 /product-page/:slug /personal/:slug/ 301
 /en/product-page/:slug /en/personal/:slug/ 301
 /ru/product-page/:slug /ru/personal/:slug/ 301
-/* /index.html 200
