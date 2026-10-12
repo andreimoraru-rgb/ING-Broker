@@ -10,7 +10,7 @@ declare global {
 interface PostHogQueue extends Array<unknown[]> {
   _i?: unknown[][];
   __SV?: number;
-  init?: (key: string, options: Record<string, unknown>) => void;
+  init?: (key: string, options: Record<string, unknown>, name?: string) => void;
   capture: (event: string, properties?: AnalyticsParams) => void;
 }
 
@@ -45,8 +45,8 @@ export const installPostHog = () => {
   }
 
   queue._i = [];
-  queue.init = (key: string, options: Record<string, unknown>) => {
-    queue._i?.push([key, options]);
+  queue.init = (key: string, options: Record<string, unknown>, name = 'posthog') => {
+    queue._i?.push([key, options, name]);
   };
   queue.__SV = 1;
   window.posthog = queue;
