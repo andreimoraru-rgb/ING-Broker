@@ -8,8 +8,15 @@ import { articleRevisions } from '../src/data/recoveredArticles';
 const baselineSource = execFileSync('git', ['show', 'b25ab8f:src/data/articles.ts'], { encoding: 'utf8', maxBuffer: 5_000_000 });
 const js = ts.transpileModule(baselineSource, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText;
 const { articles: baseline } = await import(`data:text/javascript;base64,${Buffer.from(js).toString('base64')}`);
-assert.deepEqual(articles.ru, baseline.ru, 'Russian content must remain untouched');
-assert.deepEqual(articles.en, baseline.en, 'English content must remain untouched');
+// Owner requested internal contact links instead of external Maps destinations.
+for (const lang of ['ro', 'ru', 'en']) {
+  baseline[lang] = baseline[lang].map((article: {content:string}) => ({...article,
+    content: article.content.replace(/href="https:\/\/maps\.google\.com\/\?q=Insurance\+ING\+Broker\+SRL\+Chisinau" target="_blank" rel="noopener noreferrer"/g,
+      `href="https://www.ingbroker.md${lang === 'ro' ? '' : '/' + lang}/contact"`)
+  }));
+}
+assert.deepEqual(articles.ru, baseline.ru, 'Russian content unchanged except approved contact destination');
+assert.deepEqual(articles.en, baseline.en, 'English content unchanged except approved contact destination');
 assert.equal(articles.ro.length, baseline.ro.length);
 assert.equal(Object.keys(articleRevisions).length, 10);
 assert.deepEqual(Object.keys(articleRevisions).filter(s => s.startsWith('asigurare-viata-')), ['asigurare-viata-moldova']);
@@ -32,7 +39,7 @@ for (const article of articles.ro) {
   assert.match(article.imageAlt || '', /generată cu AI/);
   assert.equal(article.reviewStatus, 'approved');
   assert.ok(article.tags.includes('Moldova'));
-  assert.equal(article.updatedAt, '2026-10-21');
+  assert.equal(article.updatedAt, '2026-10-25');
   assert.ok(Number.isFinite(new Date(article.date).getTime()));
   assert.ok(sitemap.includes(`/news/${article.slug}</loc>`), `Missing sitemap entry: ${article.slug}`);
   assert.doesNotMatch(article.content, /<h1\b|<h4\b|<script\b|onerror=|javascript:/i);

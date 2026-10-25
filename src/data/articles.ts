@@ -220,19 +220,19 @@ const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
            <h3 class="text-white mt-0">Consultă un Expert ING Broker</h3>
            <p>Nu lăsa siguranța ta la voia întâmplării. Contactează-ne astăzi pentru un audit de risc gratuit și o ofertă personalizată. Echipa noastră de experți este gata să îți ofere claritatea de care ai nevoie pentru a lua cele mai bune decizii financiare.</p>
            <p><strong>Autor:</strong> Andrei Moraru, Senior Insurance & Reinsurance Expert</p>
-           <p><strong>Locație:</strong> <a href="https://maps.google.com/?q=Insurance+ING+Broker+SRL+Chisinau" target="_blank" rel="noopener noreferrer" class="text-primary underline">Sediul Central Chișinău, str. Pan Halippa 9</a></p>
+           <p><strong>Locație:</strong> <a href="https://www.ingbroker.md/contact" class="text-primary underline">Sediul Central Chișinău, str. Pan Halippa 9</a></p>
          </div>`,
     ru: `<div class="bg-gray-900 text-white p-8 rounded-xl mt-12">
            <h3 class="text-white mt-0">Проконсультируйтесь с экспертом ING Broker</h3>
            <p>Не оставляйте свою безопасность на волю случая. Свяжитесь с нами сегодня для бесплатного аудита рисков и индивидуального предложения. Наша команда экспертов готова предоставить вам ясность, необходимую для принятия лучших финансовых решений.</p>
            <p><strong>Автор:</strong> Андрей Морару, Старший эксперт по страхованию и перестрахованию</p>
-           <p><strong>Локация:</strong> <a href="https://maps.google.com/?q=Insurance+ING+Broker+SRL+Chisinau" target="_blank" rel="noopener noreferrer" class="text-primary underline">Центральный офис в Кишиневе, ул. Пан Халиппа 9</a></p>
+           <p><strong>Локация:</strong> <a href="https://www.ingbroker.md/ru/contact" class="text-primary underline">Центральный офис в Кишиневе, ул. Пан Халиппа 9</a></p>
          </div>`,
     en: `<div class="bg-gray-900 text-white p-8 rounded-xl mt-12">
            <h3 class="text-white mt-0">Consult an ING Broker Expert</h3>
            <p>Don't leave your safety to chance. Contact us today for a free risk audit and a personalized offer. Our team of experts is ready to provide the clarity you need to make the best financial decisions.</p>
            <p><strong>Author:</strong> Andrei Moraru, Senior Insurance & Reinsurance Expert</p>
-           <p><strong>Location:</strong> <a href="https://maps.google.com/?q=Insurance+ING+Broker+SRL+Chisinau" target="_blank" rel="noopener noreferrer" class="text-primary underline">Chisinau Headquarters, 9 Pan Halippa St.</a></p>
+           <p><strong>Location:</strong> <a href="https://www.ingbroker.md/en/contact" class="text-primary underline">Chisinau Headquarters, 9 Pan Halippa St.</a></p>
          </div>`
   };
 
@@ -1627,7 +1627,7 @@ export const articles: Record<string, Article[]> = {
       title: revision.title,
       excerpt: revision.description,
       content: renderArticleRevision(revision),
-      updatedAt: '2026-10-21',
+      updatedAt: '2026-10-25',
       author: 'Echipa editorială ING Broker',
       image: articleMedia[article.slug].image,
       imageAlt: articleMedia[article.slug].imageAlt,
