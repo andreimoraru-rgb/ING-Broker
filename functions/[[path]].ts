@@ -1,3 +1,6 @@
+import { articleRevisions } from '../src/data/recoveredArticles';
+import { splitLocale } from '../src/utils/localizedRoutes';
+
 interface Env {
   ASSETS: {
     fetch(request: Request): Promise<Response>;
@@ -43,8 +46,25 @@ function assetRequest(request: Request, pathname: string): Request {
 
 export async function onRequest(context: PagesContext): Promise<Response> {
   const url = new URL(context.request.url);
+  const { path: routePath } = splitLocale(url.pathname);
+  const aboutAliases: Record<string, string> = { '/o-nas': '/ru/despre-noi', '/about-us': '/en/despre-noi' };
+  if (aboutAliases[url.pathname.replace(/\/$/, '')]) {
+    url.pathname = aboutAliases[url.pathname.replace(/\/$/, '')];
+    return Response.redirect(url.toString(), 301);
+  }
 
-  if (isSpaRoute(url.pathname)) {
+  // Internal build artifacts are served only at their canonical article URLs.
+  if (url.pathname.startsWith('/_editorial/')) return new Response('Not found', { status: 404 });
+  const articleSlug = url.pathname.replace(/\/$/, '').slice('/news/'.length);
+  if (url.pathname.startsWith('/news/') && Object.hasOwn(articleRevisions, articleSlug)) {
+    if (url.pathname.endsWith('/')) {
+      url.pathname = url.pathname.slice(0, -1);
+      return Response.redirect(url.toString(), 301);
+    }
+    return context.env.ASSETS.fetch(assetRequest(context.request, `/_editorial/${articleSlug}`));
+  }
+
+  if (isSpaRoute(routePath)) {
     // Fetch the root document because Cloudflare canonically redirects
     // /index.html to /. The ASSETS binding bypasses this Function.
     return context.env.ASSETS.fetch(assetRequest(context.request, '/'));

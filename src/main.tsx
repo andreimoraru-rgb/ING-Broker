@@ -8,6 +8,9 @@ import { installPostHog } from './utils/analytics';
 
 installPostHog();
 
+// Static article metadata serves non-JS readers. React owns it after boot.
+document.head.querySelectorAll('[data-editorial-ssg]').forEach(node => node.remove());
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>

@@ -7,6 +7,7 @@ import { breadcrumbSchema } from '../utils/schema';
 import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, User, Tag } from 'lucide-react';
 import { articles } from '../data/articles';
+import { EditorialArticle } from './EditorialArticle';
 
 interface ArticlePageProps {
   lang: Language;
@@ -34,38 +35,41 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
     return <Navigate to="/news" replace />;
   }
 
+  if (article.updatedAt && lang === 'ro') return <EditorialArticle article={article} />;
+
+  const articleOrigin = article.updatedAt ? 'https://www.ingbroker.md' : 'https://ingbroker.md';
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": article.seo.title,
+    "headline": article.updatedAt ? article.title : article.seo.title,
     "description": article.seo.description,
-    "url": `https://ingbroker.md/news/${article.slug}`,
+    "url": `${articleOrigin}/news/${article.slug}`,
     "image": article.image,
     "author": {
       "@type": "Organization",
       "name": article.author || "Insurance ING Broker SRL",
-      "url": "https://ingbroker.md"
+      "url": articleOrigin
     },
     "publisher": {
       "@type": "Organization",
       "name": "Insurance ING Broker SRL",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://ingbroker.md/Logo%20ING%20Broker.png"
+        "url": `${articleOrigin}/Logo%20ING%20Broker.png`
       }
     },
-    "datePublished": article.date,
-    "dateModified": article.date,
+    "datePublished": article.updatedAt ? new Date(article.date).toISOString().slice(0, 10) : article.date,
+    "dateModified": article.updatedAt || article.date,
     "inLanguage": lang === 'ro' ? 'ro-MD' : lang === 'ru' ? 'ru-MD' : 'en'
   };
 
   const articleBreadcrumb = breadcrumbSchema([
-    { name: lang === 'ro' ? 'Acasă' : lang === 'ru' ? 'Главная' : 'Home', url: 'https://ingbroker.md' },
+    { name: lang === 'ro' ? 'Acasă' : lang === 'ru' ? 'Главная' : 'Home', url: articleOrigin },
     {
       name: lang === 'ro' ? 'Noutăți & Insights' : lang === 'ru' ? 'Новости & Аналитика' : 'News & Insights',
-      url: 'https://ingbroker.md/news'
+      url: `${articleOrigin}/news`
     },
-    { name: article.title, url: `https://ingbroker.md/news/${article.slug}` }
+    { name: article.title, url: `${articleOrigin}/news/${article.slug}` }
   ]);
 
   return (
@@ -76,11 +80,13 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
         lang={lang}
         schema={schema}
         keywords={article.seo.keywords}
+        includeLanguageAlternates={!article.updatedAt}
+        image={article.updatedAt ? article.image : undefined}
       />
       <SchemaMarkup schemas={[articleBreadcrumb]} />
 
       {/* Back Button */}
-      <div className="fixed top-32 left-6 z-50">
+      <div className={article.updatedAt ? 'absolute top-20 left-6 z-30 md:fixed md:top-32 md:z-50' : 'fixed top-32 left-6 z-50'}>
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -126,7 +132,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
             <div className="flex flex-wrap items-center justify-center gap-6 mb-8 text-white/80 text-sm font-light">
               <div className="flex items-center gap-2">
                 <Calendar size={16} className="text-primary" />
-                {article.date}
+                {article.updatedAt ? `Actualizat: ${new Date(`${article.updatedAt}T00:00:00Z`).toLocaleDateString('ro-MD', { timeZone: 'UTC' })}` : article.date}
               </div>
               <div className="flex items-center gap-2">
                 <User size={16} className="text-primary" />

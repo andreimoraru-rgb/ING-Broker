@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { Language } from '../translations';
+import { splitLocale } from '../utils/localizedRoutes';
 
 interface LanguageContextType {
   lang: Language;
@@ -8,8 +9,8 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [lang, setLang] = useState<Language>('ro');
+export const LanguageProvider: React.FC<{ children: ReactNode; initialLang?: Language }> = ({ children, initialLang }) => {
+  const [lang, setLang] = useState<Language>(() => initialLang || (typeof window === 'undefined' ? 'ro' : splitLocale(window.location.pathname).lang));
   return (
     <LanguageContext.Provider value={{ lang, setLang }}>
       {children}
