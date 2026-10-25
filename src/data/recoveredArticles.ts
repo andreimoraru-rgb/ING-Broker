@@ -11,17 +11,16 @@ export interface ArticleRevision {
 const bnm = ['BNM: ce verifici într-un contract de asigurare', 'https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam'] as [string, string];
 const property = ['MOLDASIG: bunuri, utilaje și întreruperea producției - exemplu de produs din Moldova', 'https://moldasig.md/property-insurance-for-legal-persons'] as [string, string];
 const life = ['GRAWE Moldova: prezentarea categoriilor de asigurări de viață', 'https://www.grawe.md/asigurare-viata/'] as [string, string];
-const construction = ['Marsh România: riscuri în construcții - referință internațională, nu ofertă pentru Moldova', 'https://www.marsh.com/ro-ro/industries/construction.html'] as [string, string];
 
 export const articleRevisions: Record<string, ArticleRevision> = {
   'asigurare-raspundere-directori': {
     title: 'Asigurarea D&O: ce verifică directorii și administratorii',
     description: 'Ghid D&O pentru companii din Moldova: persoane asigurate, notificarea pretențiilor, costuri de apărare și documente pentru analiza riscului.',
     related: ['asigurare-raspundere-civila-angajator', 'Răspunderea angajatorului: o analiză separată'],
-    sources: [bnm, ['Allianz-Țiriac: IPID D&O, versiunea 01.10.2018 - exemplu românesc cu eligibilitate teritorială limitată', 'https://www.allianztiriac.ro/content/dam/onemarketing/cee/azro/documente/ipid/IPID_Raspundere_civila_a_managerilor_ALLIANZ_PROTECT.pdf']],
+    sources: [bnm],
     body: `<p>Asigurarea D&O privește răspunderea persoanelor care conduc o companie, în limitele contractului. Nu trebuie confundată cu asigurarea bunurilor firmei sau cu răspunderea profesională pentru serviciile prestate clienților. Pentru o companie din Moldova, prima întrebare este dacă există o soluție eligibilă pentru entitatea, conducătorii și jurisdicțiile sale.</p>
 <h2>Ce trebuie clarificat înainte de a compara prețuri</h2>
-<p>O ofertă intitulată „D&O” nu spune singură cine este protejat. Cere identificarea funcțiilor asigurate, a societăților din grup și a situațiilor în care compania însăși este inclusă. Documentul românesc citat mai jos ilustrează tocmai această delimitare; nu dovedește disponibilitatea aceluiași produs în Moldova.</p>
+<p>O ofertă intitulată „D&O” nu spune singură cine este protejat. Cere identificarea funcțiilor asigurate, a societăților din grup și a situațiilor în care compania însăși este inclusă. Pentru compania din Republica Moldova, aceste elemente se verifică în oferta și condițiile asigurătorului care analizează riscul.</p>
 <ul><li>Ce persoane și mandate sunt incluse, inclusiv foști directori sau funcții în filiale?</li><li>Ce dată și ce notificare declanșează analiza unei pretenții?</li><li>Costurile de apărare consumă limita totală? Cine aprobă avocatul și cheltuielile?</li><li>Cum sunt tratate faptele cunoscute, investigațiile și schimbarea controlului societății?</li><li>Ce teritorii și instanțe sunt acceptate?</li></ul>
 <h2>Dosarul util pentru o primă discuție</h2>
 <p>Pregătește structura grupului, domeniul de activitate, țările în care lucrează compania, situațiile financiare și descrierea funcțiilor de conducere. Existența unor litigii sau circumstanțe cunoscute trebuie discutată printr-un canal confidențial; nu transmite documente juridice sensibile într-un formular public.</p>
@@ -50,10 +49,10 @@ export const articleRevisions: Record<string, ArticleRevision> = {
     title: 'Garanția de bună execuție: verificări înainte de contract',
     description: 'Checklist pentru antreprenori din Moldova: cerințele beneficiarului, valoarea, valabilitatea și condițiile unei garanții de bună execuție.',
     related: ['asigurare-drumuri-autostrazi', 'Pregătirea asigurărilor pentru lucrări rutiere'],
-    sources: [bnm, ['Marsh România: explicații generale despre garanții - nu confirmă admisibilitatea în Moldova', 'https://www.marsh.com/ro-ro/services/surety.html']],
+    sources: [bnm],
     body: `<p>O garanție de bună execuție este analizată în raport cu obligațiile dintr-un contract și cerințele beneficiarului. Nu o confunda cu asigurarea daunelor produse pe șantier. Înainte de a cere o ofertă, verifică forma de garanție acceptată, emitentul eligibil și textul solicitat de beneficiar.</p>
 <h2>Începe cu documentația beneficiarului</h2>
-<p>Pentru o firmă de construcții sau un furnizor de servicii, o garanție ieftină, dar neacceptată contractual, nu rezolvă nevoia. În achiziții publice, admisibilitatea trebuie verificată în documentația concretă și de un specialist în cadrul juridic aplicabil. Un exemplu internațional nu poate înlocui această verificare.</p>
+<p>Pentru o firmă de construcții sau un furnizor de servicii, o garanție ieftină, dar neacceptată contractual, nu rezolvă nevoia. În achiziții publice din Republica Moldova, forma garanției și emitentul acceptat trebuie verificate în documentația procedurii, cu sprijinul unui specialist în cadrul juridic aplicabil.</p>
 <ol><li>Extrage clauza de garanție din contract și orice model obligatoriu.</li><li>Notează suma, moneda, beneficiarul și obligațiile garantate.</li><li>Separă perioada de execuție de perioada de remediere a defectelor.</li><li>Verifică prelungirea, reducerea și eliberarea garanției.</li><li>Cere explicații despre condițiile unei cereri de plată și eventualele obligații de rambursare către emitent.</li></ol>
 <h2>Ce trebuie să poată evalua emitentul</h2>
 <p>Pregătește contractul, calendarul lucrării, experiența în proiecte similare, situațiile financiare și angajamentele deja asumate. Solicită în scris lista documentelor și eventualele cerințe de contragaranție. Acestea nu trebuie presupuse inexistente doar pentru că instrumentul este emis de un asigurător.</p>
@@ -82,7 +81,7 @@ export const articleRevisions: Record<string, ArticleRevision> = {
     title: 'Riscuri de mediu și remediere: dosarul de asigurare',
     description: 'Checklist pentru companii din Moldova cu riscuri de contaminare: amplasamente, istoric, responsabilități și întrebări pentru asigurător.',
     related: ['asigurare-pierdere-profit', 'Legătura cu întreruperea activității'],
-    sources: [bnm, ['Marsh România: analiza riscurilor de mediu - context internațional', 'https://www.marsh.com/ro-ro/services/environmental-risk.html']],
+    sources: [bnm],
     body: `<p>Pentru o companie care depozitează combustibili, folosește substanțe în producție sau operează pe un teren industrial, analiza riscului de mediu începe cu amplasamentul. Întrebarea utilă nu este doar „există asigurare de poluare?”, ci ce situații, cheltuieli și responsabilități pot fi evaluate în cazul concret.</p>
 <h2>Separă patru componente ale expunerii</h2>
 <p>Construiește o fișă pentru fiecare locație: bunurile proprii, vecinătățile, posibilele lucrări de remediere și impactul asupra operațiunilor. Aceasta este o structură de analiză propusă, nu o listă de acoperiri confirmate. Existența unei polițe generale de răspundere nu demonstrează includerea tuturor acestor componente.</p>
@@ -91,14 +90,14 @@ export const articleRevisions: Record<string, ArticleRevision> = {
 <p>Cere delimitarea dintre situații preexistente și evenimente viitoare, dintre poluare bruscă și graduală, precum și dintre terenul propriu și prejudiciile către terți. Solicită explicit tratamentul costurilor de investigație, curățare și apărare. Nu considera aceste cheltuieli acceptate fără confirmarea condițiilor.</p>
 <h2>Întrebări frecvente despre remedierea mediului</h2>
 <h3>O poliță nouă plătește curățarea unei contaminări deja identificate?</h3><p>Nu presupune acest lucru. Istoricul cunoscut trebuie prezentat și analizat înainte de orice concluzie privind eligibilitatea.</p>
-<h3>Regulile europene se aplică automat unei locații din Moldova?</h3><p>Nu folosi un ghid străin pentru a stabili obligațiile locale. Cere verificarea juridică pentru amplasamentul, activitatea și contractele respective.</p>
+<h3>Ce verificări sunt necesare pentru un amplasament din Moldova?</h3><p>Pregătește documentele amplasamentului și descrierea activității. Cere verificarea obligațiilor aplicabile în Republica Moldova și, separat, a condițiilor de asigurare propuse pentru riscul respectiv.</p>
 <h3>Asigurarea înlocuiește planul de intervenție?</h3><p>Nu. Prevenția, procedurile operaționale și analiza contractului au roluri diferite. Un incident real necesită intervenția specialiștilor și a autorităților competente, după caz.</p>`
   },
   'asigurare-drumuri-autostrazi': {
     title: 'Asigurarea lucrărilor rutiere: checklist pentru antreprenori',
     description: 'Cum pregătești analiza unui șantier rutier în Moldova: tronsoane, utilaje, trafic, răspunderi și delimitarea față de garanția de bună execuție.',
     related: ['asigurare-buna-executie', 'Garanția de bună execuție nu este asigurarea lucrării'],
-    sources: [bnm, construction],
+    sources: [bnm],
     body: `<p>Un proiect rutier trebuie analizat după faza lucrărilor, amplasament și responsabilitățile părților. Asigurarea construcției, utilajele antreprenorului, pretențiile terților și garanția de bună execuție reprezintă întrebări diferite. Nu presupune că un singur titlu de poliță le rezolvă pe toate.</p>
 <h2>Descrie fiecare tronson și interfața cu traficul</h2>
 <p>Pentru ofertare, pregătește planul amplasamentului, lungimea tronsoanelor, etapele de execuție și modul de separare a lucrării de circulația publică. Un șantier nou și reabilitarea unui drum utilizat au contexte operaționale diferite. Include podurile, podețele, rețelele existente și lucrările temporare în descriere, fără a presupune că sunt automat asigurate.</p>
@@ -114,7 +113,7 @@ export const articleRevisions: Record<string, ArticleRevision> = {
     title: 'Poduri și tuneluri: informații pentru analiza asigurării',
     description: 'Checklist pentru proiecte de poduri și tuneluri: geotehnică, structuri existente, lucrări temporare, testare și responsabilități contractuale.',
     related: ['asigurare-drumuri-autostrazi', 'Integrarea lucrării într-un proiect rutier'],
-    sources: [construction, bnm],
+    sources: [bnm],
     body: `<p>Analiza asigurării unui pod sau tunel are nevoie de date despre lucrare și mediul în care este executată. Valoarea contractului nu este suficientă pentru a descrie riscul. Pentru o solicitare din Moldova, pregătește separat documentele tehnice, calendarul și obligațiile de asigurare ale participanților.</p>
 <h2>Delimitează structura nouă de bunurile existente</h2>
 <p>La o reabilitare, notează ce parte a structurii există deja, ce se demolează și ce se reconstruiește. La un tunel nou, descrie vecinătățile, investigațiile disponibile și metoda de execuție. Aceste informații formează un brief tehnic; articolul nu înlocuiește expertiza inginerului sau studiul geotehnic.</p>
@@ -169,7 +168,7 @@ export const articleRevisions: Record<string, ArticleRevision> = {
 <p>La asigurarea de viață se verifică evenimentele prevăzute în contract, inclusiv decesul și, pentru produsele care o prevăd, plata la scadență. Nu este corect să o definim numai prin fracturi, traumatisme sau invaliditate rezultată din accident.</p>
 <p>Asigurarea de accidente privește evenimente accidentale și consecințele acceptate prin condițiile sale. Faptul că un contract menționează decesul din accident nu transformă automat acel produs într-o asigurare de viață cu economisire. Componentele suplimentare se citesc separat de protecția principală.</p>
 <h2>Ce verifici într-o ofertă din Moldova</h2>
-<p>Folosește condițiile produsului local, nu descrierea unui produs din Marea Britanie, SUA sau altă piață. Pentru compararea ofertelor, cere aceeași structură de informații:</p>
+<p>Folosește condițiile produsului oferit în Republica Moldova. Pentru compararea ofertelor, cere aceeași structură de informații:</p>
 <ul><li>Denumirea asigurătorului și a produsului, durata și moneda contractului.</li><li>Persoana asigurată, contractantul și beneficiarul desemnat.</li><li>Evenimentele incluse, excluderile și condițiile de acceptare.</li><li>Prima, frecvența plății și consecințele întreruperii plăților.</li><li>Ce sume sunt prevăzute contractual și ce valori sunt doar proiecții.</li><li>Ce se întâmplă la încetarea înainte de termen și cum se determină eventuala valoare de răscumpărare.</li></ul>
 <h2>Economisirea se analizează împreună cu durata</h2>
 <p>Dacă oferta include acumulare, cere o explicație scrisă a plăților, costurilor și sumelor aferente diferitelor momente ale contractului. Nu presupune că retragerea anticipată restituie toate primele achitate. Un exemplu comercial sau un rezultat proiectat nu trebuie prezentat ca randament garantat.</p>

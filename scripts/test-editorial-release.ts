@@ -18,7 +18,7 @@ for (const a of batch) {
   const schemas = [...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m => JSON.parse(m[1]));
   const articleSchema = schemas.find(s => s['@type'] === 'Article');
   assert.equal(articleSchema.headline, a.title);
-  assert.equal(articleSchema.dateModified, '2026-10-21');
+  assert.equal(articleSchema.dateModified, a.updatedAt);
   assert.ok(schemas.some(s => s['@type'] === 'BreadcrumbList'));
   assert.ok(!schemas.some(s => s['@type'] === 'HowTo'));
   const requested: string[] = [];
@@ -34,7 +34,7 @@ for (const a of batch) {
   assert.equal(blocked.status, 404);
   const xml = readFileSync('dist/sitemap.xml','utf8');
   const entry = [...xml.matchAll(/<url>[\s\S]*?<\/url>/g)].find(m => m[0].includes(`<loc>${url}</loc>`));
-  assert.ok(entry?.[0].includes('<lastmod>2026-10-21</lastmod>'));
+  assert.ok(entry?.[0].includes(`<lastmod>${a.updatedAt}</lastmod>`));
   results.push({ slug: a.slug, fullHtml: true, schemas: schemas.map(s=>s['@type']), canonical: url });
 }
 console.log(JSON.stringify({ passed: true, count: results.length, results }, null, 2));
