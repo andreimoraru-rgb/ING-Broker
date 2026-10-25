@@ -9,16 +9,16 @@ export interface ArticleRevision {
 }
 
 const bnm = ['BNM: ce verifici într-un contract de asigurare', 'https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam'] as [string, string];
-const property = ['MOLDASIG: bunuri, utilaje și întreruperea producției — exemplu de produs din Moldova', 'https://moldasig.md/property-insurance-for-legal-persons'] as [string, string];
+const property = ['MOLDASIG: bunuri, utilaje și întreruperea producției - exemplu de produs din Moldova', 'https://moldasig.md/property-insurance-for-legal-persons'] as [string, string];
 const life = ['GRAWE Moldova: prezentarea categoriilor de asigurări de viață', 'https://www.grawe.md/asigurare-viata/'] as [string, string];
-const construction = ['Marsh România: riscuri în construcții — referință internațională, nu ofertă pentru Moldova', 'https://www.marsh.com/ro-ro/industries/construction.html'] as [string, string];
+const construction = ['Marsh România: riscuri în construcții - referință internațională, nu ofertă pentru Moldova', 'https://www.marsh.com/ro-ro/industries/construction.html'] as [string, string];
 
 export const articleRevisions: Record<string, ArticleRevision> = {
   'asigurare-raspundere-directori': {
     title: 'Asigurarea D&O: ce verifică directorii și administratorii',
     description: 'Ghid D&O pentru companii din Moldova: persoane asigurate, notificarea pretențiilor, costuri de apărare și documente pentru analiza riscului.',
     related: ['asigurare-raspundere-civila-angajator', 'Răspunderea angajatorului: o analiză separată'],
-    sources: [bnm, ['Allianz-Țiriac: IPID D&O, versiunea 01.10.2018 — exemplu românesc cu eligibilitate teritorială limitată', 'https://www.allianztiriac.ro/content/dam/onemarketing/cee/azro/documente/ipid/IPID_Raspundere_civila_a_managerilor_ALLIANZ_PROTECT.pdf']],
+    sources: [bnm, ['Allianz-Țiriac: IPID D&O, versiunea 01.10.2018 - exemplu românesc cu eligibilitate teritorială limitată', 'https://www.allianztiriac.ro/content/dam/onemarketing/cee/azro/documente/ipid/IPID_Raspundere_civila_a_managerilor_ALLIANZ_PROTECT.pdf']],
     body: `<p>Asigurarea D&O privește răspunderea persoanelor care conduc o companie, în limitele contractului. Nu trebuie confundată cu asigurarea bunurilor firmei sau cu răspunderea profesională pentru serviciile prestate clienților. Pentru o companie din Moldova, prima întrebare este dacă există o soluție eligibilă pentru entitatea, conducătorii și jurisdicțiile sale.</p>
 <h2>Ce trebuie clarificat înainte de a compara prețuri</h2>
 <p>O ofertă intitulată „D&O” nu spune singură cine este protejat. Cere identificarea funcțiilor asigurate, a societăților din grup și a situațiilor în care compania însăși este inclusă. Documentul românesc citat mai jos ilustrează tocmai această delimitare; nu dovedește disponibilitatea aceluiași produs în Moldova.</p>
@@ -50,7 +50,7 @@ export const articleRevisions: Record<string, ArticleRevision> = {
     title: 'Garanția de bună execuție: verificări înainte de contract',
     description: 'Checklist pentru antreprenori din Moldova: cerințele beneficiarului, valoarea, valabilitatea și condițiile unei garanții de bună execuție.',
     related: ['asigurare-drumuri-autostrazi', 'Pregătirea asigurărilor pentru lucrări rutiere'],
-    sources: [bnm, ['Marsh România: explicații generale despre garanții — nu confirmă admisibilitatea în Moldova', 'https://www.marsh.com/ro-ro/services/surety.html']],
+    sources: [bnm, ['Marsh România: explicații generale despre garanții - nu confirmă admisibilitatea în Moldova', 'https://www.marsh.com/ro-ro/services/surety.html']],
     body: `<p>O garanție de bună execuție este analizată în raport cu obligațiile dintr-un contract și cerințele beneficiarului. Nu o confunda cu asigurarea daunelor produse pe șantier. Înainte de a cere o ofertă, verifică forma de garanție acceptată, emitentul eligibil și textul solicitat de beneficiar.</p>
 <h2>Începe cu documentația beneficiarului</h2>
 <p>Pentru o firmă de construcții sau un furnizor de servicii, o garanție ieftină, dar neacceptată contractual, nu rezolvă nevoia. În achiziții publice, admisibilitatea trebuie verificată în documentația concretă și de un specialist în cadrul juridic aplicabil. Un exemplu internațional nu poate înlocui această verificare.</p>
@@ -65,7 +65,7 @@ export const articleRevisions: Record<string, ArticleRevision> = {
   'asigurare-raspundere-civila-angajator': {
     title: 'Răspunderea angajatorului: ce întrebări pui la asigurare',
     description: 'Pentru angajatori din Moldova: diferențe față de accidente și beneficii medicale, descrierea ocupațiilor și verificarea condițiilor propuse.',
-    related: ['asigurare-accidente-angajati', 'Asigurarea de accidente pentru angajați — categorie distinctă'],
+    related: ['asigurare-accidente-angajati', 'Asigurarea de accidente pentru angajați - categorie distinctă'],
     sources: [bnm],
     body: `<p>Analiza răspunderii angajatorului pornește de la activitatea firmei și posibilele pretenții ale angajaților. Nu presupune că o asigurare de accidente sau un beneficiu medical răspunde aceleiași nevoi. Cere o delimitare scrisă între aceste produse și obligațiile care rămân în sarcina angajatorului.</p>
 <h2>Descrie munca reală, nu doar domeniul firmei</h2>
@@ -82,7 +82,7 @@ export const articleRevisions: Record<string, ArticleRevision> = {
     title: 'Riscuri de mediu și remediere: dosarul de asigurare',
     description: 'Checklist pentru companii din Moldova cu riscuri de contaminare: amplasamente, istoric, responsabilități și întrebări pentru asigurător.',
     related: ['asigurare-pierdere-profit', 'Legătura cu întreruperea activității'],
-    sources: [bnm, ['Marsh România: analiza riscurilor de mediu — context internațional', 'https://www.marsh.com/ro-ro/services/environmental-risk.html']],
+    sources: [bnm, ['Marsh România: analiza riscurilor de mediu - context internațional', 'https://www.marsh.com/ro-ro/services/environmental-risk.html']],
     body: `<p>Pentru o companie care depozitează combustibili, folosește substanțe în producție sau operează pe un teren industrial, analiza riscului de mediu începe cu amplasamentul. Întrebarea utilă nu este doar „există asigurare de poluare?”, ci ce situații, cheltuieli și responsabilități pot fi evaluate în cazul concret.</p>
 <h2>Separă patru componente ale expunerii</h2>
 <p>Construiește o fișă pentru fiecare locație: bunurile proprii, vecinătățile, posibilele lucrări de remediere și impactul asupra operațiunilor. Aceasta este o structură de analiză propusă, nu o listă de acoperiri confirmate. Existența unei polițe generale de răspundere nu demonstrează includerea tuturor acestor componente.</p>
@@ -163,7 +163,7 @@ export const articleRevisions: Record<string, ArticleRevision> = {
     updatedAt: '2026-10-16',
     description: 'Asigurarea de viață în Moldova: diferența față de accidente, componenta de economisire și întrebările utile înainte de alegerea unei polițe.',
     related: ['asigurare-accidente-angajati', 'Asigurarea de accidente pentru angajați: un produs diferit'],
-    sources: [life, ['BNM: Ghidul asiguratului — explicații generale, nu legislație actualizată', 'https://www.bnm.md/files/Ghidul%20Asiguratului.pdf'], ['BNM: situația sectorului asigurări în 2025', 'https://bnm.md/ro/content/situatia-financiara-sectorului-asigurari-pentru-anul-2025']],
+    sources: [life, ['BNM: Ghidul asiguratului - explicații generale, nu legislație actualizată', 'https://www.bnm.md/files/Ghidul%20Asiguratului.pdf'], ['BNM: situația sectorului asigurări în 2025', 'https://bnm.md/ro/content/situatia-financiara-sectorului-asigurari-pentru-anul-2025']],
     body: `<p>Asigurarea de viață este o categorie distinctă de asigurarea de accidente. În Republica Moldova există produse de viață care combină protecția contractuală cu economisirea. GRAWE Moldova prezintă public asemenea produse, iar BNM raportează separat activitatea de asigurări de viață. Disponibilitatea unei soluții pentru o anumită persoană se verifică la asigurător; articolul nu confirmă intermedierea ei de către ING Broker.</p>
 <h2>Viață și accidente: care este diferența?</h2>
 <p>La asigurarea de viață se verifică evenimentele prevăzute în contract, inclusiv decesul și, pentru produsele care o prevăd, plata la scadență. Nu este corect să o definim numai prin fracturi, traumatisme sau invaliditate rezultată din accident.</p>
