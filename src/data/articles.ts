@@ -5,7 +5,11 @@
   excerpt: string;
   content: string;
   image: string;
+  imageAlt?: string;
+  imageCaption?: string;
+  reviewStatus?: 'pending' | 'approved';
   date: string;
+  updatedAt?: string;
   author: string;
   tags: string[];
   seo: {
@@ -14,6 +18,9 @@
     keywords: string;
   };
 }
+
+import { articleRevisions, renderArticleRevision } from './recoveredArticles';
+import { articleMedia } from './articleMedia';
 
 const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
   const intro = {
@@ -356,7 +363,7 @@ const images = [
   'https://images.unsplash.com/photo-1500835595327-8307e770df2a?auto=format&fit=crop&q=80&w=1920'
 ];
 
-export const articles: Record<string, Article[]> = {
+const baseArticles: Record<string, Article[]> = {
   ro: [
     {
       id: 'energie-regenerabila-1',
@@ -1606,4 +1613,28 @@ Un sofer moldovean care merge in Romania, Germania, Turcia sau Ucraina are nevoi
       }
     }))
   ]
+};
+
+// Preserve existing IDs, URLs and original dates. Only the recovery
+// batch changes; RU/EN are not automatic translations of the new articles.
+export const articles: Record<string, Article[]> = {
+  ...baseArticles,
+  ro: baseArticles.ro.map(article => {
+    const revision = articleRevisions[article.slug];
+    if (!revision) return article;
+    return {
+      ...article,
+      title: revision.title,
+      excerpt: revision.description,
+      content: renderArticleRevision(revision),
+      updatedAt: '2026-10-21',
+      author: 'Echipa editorială ING Broker',
+      image: articleMedia[article.slug].image,
+      imageAlt: articleMedia[article.slug].imageAlt,
+      imageCaption: articleMedia[article.slug].imageCaption,
+      reviewStatus: 'approved' as const,
+      tags: [articleMedia[article.slug].topic, 'Moldova'],
+      seo: { title: `${revision.title} | ING Broker`, description: revision.description, keywords: articleMedia[article.slug].keywords }
+    };
+  })
 };

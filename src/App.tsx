@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, MemoryRouter, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Shield, 
@@ -26,9 +26,9 @@ import {
   Languages
 } from 'lucide-react';
 import { translations, productTranslations, faqTranslations, Language } from './translations';
-import { SEO } from './components/SEO';
-import { SchemaMarkup } from './components/SchemaMarkup';
 import { localBusinessSchema, faqSchema, howToSchema } from './utils/schema';
+import { SiteMetadata } from './components/SiteMetadata';
+import { localizedPath, splitLocale } from './utils/localizedRoutes';
 import { BusinessPage } from './pages/BusinessPage';
 import { BusinessProductPage } from './pages/BusinessProductPage';
 import { ReinsurancePage } from './pages/ReinsurancePage';
@@ -41,6 +41,7 @@ import { ContactPage } from './pages/ContactPage';
 import { OffersPage } from './pages/OffersPage';
 import { NewsInsightsPage } from './pages/NewsInsightsPage';
 import { ArticlePage } from './pages/ArticlePage';
+import { articleMedia } from './data/articleMedia';
 import { AdminAITools } from './pages/AdminAITools';
 import { ConstructionShieldPage } from './pages/ConstructionShieldPage';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -186,16 +187,12 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
   const navigate = useNavigate();
   const location = useLocation();
 
-  const isDarkHero = !['/termeni-si-conditii', '/politica-de-confidentialitate', '/ai-studio', '/admin/ai-tools'].includes(location.pathname);
+  const isEditorialArticle = lang === 'ro' && location.pathname.startsWith('/news/') && Object.hasOwn(articleMedia, location.pathname.slice(6));
+  const isDarkHero = !isEditorialArticle && !['/termeni-si-conditii', '/politica-de-confidentialitate', '/ai-studio', '/admin/ai-tools'].includes(location.pathname);
 
   const changeLanguage = (l: Language) => {
-    setLang(l);
-    const path = location.pathname;
-    if (path === '/despre-noi' || path === '/o-nas' || path === '/about-us') {
-      if (l === 'ro') navigate('/despre-noi');
-      else if (l === 'ru') navigate('/o-nas');
-      else if (l === 'en') navigate('/about-us');
-    }
+    if (l === lang) return;
+    window.location.assign(localizedPath(location.pathname, l) + location.search + location.hash);
   };
 
   return (
@@ -203,7 +200,7 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
       <div className="max-w-[1600px] mx-auto px-4 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex-shrink-0">
-          <a href="/" className="flex items-center">
+          <a href={localizedPath('/', lang)} className="flex items-center">
             {location.pathname.startsWith('/reinsurance') ? (
               <INGReLogo isDark={!scrolled && isDarkHero} className="h-8 md:h-10 lg:h-16" />
             ) : (
@@ -220,9 +217,7 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
         <div className="hidden lg:flex items-center gap-4 xl:gap-6 whitespace-nowrap mx-auto">
           {t.nav.map((item, idx) => {
             const getAboutLink = (l: Language) => {
-              if (l === 'ro') return '/despre-noi';
-              if (l === 'ru') return '/o-nas';
-              return '/about-us';
+              return '/despre-noi';
             };
             const hrefs = ['/', '/business', '/reinsurance', getAboutLink(lang), '/contact'];
             const isInternal = hrefs[idx].startsWith('#');
@@ -305,9 +300,7 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
             </div>
             {t.nav.map((item, idx) => {
               const getAboutLink = (l: Language) => {
-                if (l === 'ro') return '/despre-noi';
-                if (l === 'ru') return '/o-nas';
-                return '/about-us';
+                return '/despre-noi';
               };
               const hrefs = ['/', '/business', '/reinsurance', getAboutLink(lang), '/contact'];
               const isActive = location.pathname === hrefs[idx];
@@ -1027,7 +1020,7 @@ const Footer = ({ lang }: { lang: Language }) => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16 mb-24">
           <div className="col-span-1 md:col-span-2 lg:col-span-2 flex flex-col items-start text-left">
-            <a href="/" className="flex items-center gap-2 mb-10">
+            <a href={localizedPath('/', lang)} className="flex items-center gap-2 mb-10">
               {location.pathname.startsWith('/reinsurance') ? (
                 <INGReLogo isDark={false} className="h-14 lg:h-20" />
               ) : (
@@ -1129,9 +1122,7 @@ const Footer = ({ lang }: { lang: Language }) => {
             <ul className="space-y-4">
               {translations[lang].nav.map((item, idx) => {
                 const getAboutLink = (l: Language) => {
-                  if (l === 'ro') return '/despre-noi';
-                  if (l === 'ru') return '/o-nas';
-                  return '/about-us';
+                  return '/despre-noi';
                 };
                 const hrefs = ['/', '/business', '/reinsurance', getAboutLink(lang), '/contact'];
                 return (
@@ -1193,8 +1184,10 @@ const Footer = ({ lang }: { lang: Language }) => {
 
 // --- Main App ---
 
-export default function App() {
-  const [lang, setLang] = useState<Language>('ro');
+export default function App({ initialPath }: { initialPath?: string } = {}) {
+  const Router = initialPath ? MemoryRouter : BrowserRouter;
+  const routeLocale = splitLocale(initialPath || (typeof window === 'undefined' ? '/' : window.location.pathname));
+  const [lang, setLang] = useState<Language>(routeLocale.lang);
   const [scrolled, setScrolled] = useState(false);
   const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
 
@@ -1261,14 +1254,14 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 selection:bg-primary selection:text-white">
-      <Router>
-        <SEO
+      <Router basename={routeLocale.basename} {...(initialPath ? { initialEntries: [initialPath] } : {})}>
+        <SiteMetadata
           title={seo.title}
           description={seo.description}
           lang={lang}
           schema={lbSchema}
+          schemas={[homepageHowToSchema, homepageFaqSchema]}
         />
-        <SchemaMarkup schemas={[homepageHowToSchema, homepageFaqSchema]} />
         <ScrollToTop />
         <Navbar lang={lang} setLang={setLang} scrolled={scrolled} onOpenCalculator={() => setIsCalculatorOpen(true)} />
         
@@ -1361,7 +1354,7 @@ export default function App() {
           <Route path="/admin/ai-tools" element={<AdminAITools />} />
           <Route path="/contact" element={<ContactPage lang={lang} />} />
           <Route path="/ai-studio" element={<AIStudio />} />
-          <Route path="/despre-noi" element={<AboutPage lang="ro" />} />
+          <Route path="/despre-noi" element={<AboutPage lang={lang} />} />
           <Route path="/o-nas" element={<AboutPage lang="ru" />} />
           <Route path="/about-us" element={<AboutPage lang="en" />} />
           <Route path="/termeni-si-conditii" element={<TermsPage />} />

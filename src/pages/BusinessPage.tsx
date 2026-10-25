@@ -353,9 +353,9 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
               <div className="w-16 h-16 bg-white shadow-sm flex items-center justify-center rounded-lg group-hover:bg-primary transition-colors duration-300">
                 <Mail className="text-primary group-hover:text-white transition-colors duration-300" size={28} />
               </div>
-              <div className="text-left">
+              <div className="text-left min-w-0">
                 <div className="text-[10px] text-gray-400 uppercase tracking-widest mb-1">Email</div>
-                <div className="font-bold text-2xl text-secondary group-hover:text-primary transition-colors">andrei.moraru@ingbroker.md</div>
+                <div className="font-bold text-2xl text-secondary group-hover:text-primary transition-colors [overflow-wrap:anywhere]">andrei.moraru@ingbroker.md</div>
               </div>
             </motion.a>
           </div>
