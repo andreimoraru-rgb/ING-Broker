@@ -13,6 +13,18 @@ for (const [language, list] of Object.entries(articles)) {
   const lang = language as Language;
   for (const article of list) {
     const path = localizedPath(`/news/${article.slug}`, lang);
+    assert.ok(article.imageAlt, path);
+    if (article.image.startsWith('/')) assert.ok(existsSync(`public${article.image}`), article.image);
+    images.add(article.image);
+    checked++;
+    if (lang !== 'ro' || article.reviewStatus !== 'approved') {
+      assert.ok(!existsSync(`dist/_editorial/${lang === 'ro' ? '' : lang + '/'}${article.slug}.html`), 'Unreviewed content must not be statically published');
+      let requested = '';
+      const response = await onRequest({request:new Request(`https://www.ingbroker.md${path}`),env:{ASSETS:{fetch:async req=>{requested=new URL(req.url).pathname; return new Response('existing app');}}}});
+      assert.equal(response.status,200);
+      assert.equal(requested,'/');
+      continue;
+    }
     const html = readFileSync(`dist/_editorial/${lang === 'ro' ? '' : lang + '/'}${article.slug}.html`, 'utf8');
     assert.equal((html.match(/<h1\b/g) || []).length, 1, path);
     assert.equal((html.match(/rel="canonical"/g) || []).length, 1, path);
@@ -32,8 +44,6 @@ for (const [language, list] of Object.entries(articles)) {
     const response = await onRequest({ request: new Request(`https://www.ingbroker.md${path}`), env: { ASSETS: { fetch: async req => {requested = decodeURI(new URL(req.url).pathname); return new Response(html);} } } });
     assert.equal(response.status, 200);
     assert.equal(requested, `/_editorial/${lang === 'ro' ? '' : lang + '/'}${article.slug}`);
-    images.add(article.image);
-    checked++;
   }
 }
 for (const [slug, media] of Object.entries(articleMedia)) assert.equal(articles.ro.find(a => a.slug === slug)?.image, media.image);
@@ -48,4 +58,4 @@ for (const lang of ['ro','ru','en'] as const) {
 }
 const changed = execFileSync('git',['diff','--name-only','origin/main'],{encoding:'utf8'}).trim().split('\n');
 assert.ok(changed.every(path => !/Home|Hero|Header|Navbar|index\.css|translations|analytics/.test(path)), 'Homepage/design/analytics protected');
-console.log(JSON.stringify({passed:true,existingArticleVersions:checked,selectedImages:images.size,approvedPhotosUnchanged:10,unknownArticle404Controls:3,homepageSourceUnchanged:true},null,2));
+console.log(JSON.stringify({passed:true,existingArticleMediaVersions:checked,staticApprovedArticles:10,unreviewedStaticArticles:0,selectedImages:images.size,approvedPhotosUnchanged:10,unknownArticle404Controls:3,homepageSourceUnchanged:true},null,2));

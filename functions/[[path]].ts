@@ -63,7 +63,10 @@ export async function onRequest(context: PagesContext): Promise<Response> {
       url.pathname = url.pathname.slice(0, -1);
       return Response.redirect(url.toString(), 301);
     }
-    return context.env.ASSETS.fetch(assetRequest(context.request, `/_editorial/${lang === 'ro' ? '' : lang + '/'}${articleSlug}`));
+    const article = articles[lang].find(item => item.slug === articleSlug)!;
+    // Do not expand static publication to unreviewed legacy content.
+    const destination = lang === 'ro' && article.reviewStatus === 'approved' ? `/_editorial/${articleSlug}` : '/';
+    return context.env.ASSETS.fetch(assetRequest(context.request, destination));
   }
 
   // Unknown article slugs must not return the homepage shell with HTTP 200.

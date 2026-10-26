@@ -1,4 +1,4 @@
-// Build-time HTML for existing articles; identical content for readers and crawlers.
+// Build-time HTML only for the ten specialist-approved articles.
 import { createServer } from 'vite';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import assert from 'node:assert/strict';
@@ -7,7 +7,7 @@ import { localizedPath } from '../src/utils/localizedRoutes';
 import type { Language } from '../src/translations';
 
 const approved = articles.ro.filter(a => a.reviewStatus === 'approved');
-const pages = Object.entries(articles).flatMap(([lang, list]) => list.map(article => ({ article, lang: lang as Language })));
+const pages = approved.map(article => ({ article, lang: 'ro' as Language }));
 const shell = readFileSync('dist/index.html', 'utf8');
 const server = await createServer({ server: { middlewareMode: true }, appType: 'custom' });
 try {
@@ -45,7 +45,7 @@ try {
     }
     writeFileSync(`dist/${file}`, xml);
   }
-  console.log(`Prerendered ${pages.length} existing articles, including ${approved.length} approved revisions, with complete HTML and metadata.`);
+  console.log(`Prerendered ${pages.length} approved articles. Legacy catalogue remains client rendered pending editorial review.`);
 } finally {
   await server.close();
 }
