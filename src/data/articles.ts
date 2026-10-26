@@ -1,4 +1,4 @@
-﻿export interface Article {
+export interface Article {
   id: string;
   slug: string;
   title: string;
@@ -21,6 +21,7 @@
 
 import { articleRevisions, renderArticleRevision } from './recoveredArticles';
 import { articleMedia } from './articleMedia';
+import { topicMedia, alignArticleImages } from './topicMedia';
 
 const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
   const intro = {
@@ -1565,8 +1566,8 @@ Un sofer moldovean care merge in Romania, Germania, Turcia sau Ucraina are nevoi
       slug: t.slug,
       title: t.titleRo,
       excerpt: `Ghid complet despre ${t.titleRo.toLowerCase()}. Află cum să îți protejezi viitorul și afacerea în Republica Moldova cu expertiza ING Broker.`,
-      content: generateLongContent(t.titleRo, 'ro'),
-      image: images[index % images.length],
+      content: alignArticleImages(generateLongContent(t.titleRo, 'ro'), t.slug, 'ro'),
+      ...topicMedia(t.slug, 'ro'),
       date: `${(index % 28) + 1} Apr 2026`.padStart(11, '0'),
       author: 'Andrei Moraru',
       tags: [t.tag, 'Asigurări', 'Moldova'],
@@ -1583,8 +1584,8 @@ Un sofer moldovean care merge in Romania, Germania, Turcia sau Ucraina are nevoi
       slug: t.slug,
       title: t.titleRu,
       excerpt: `Полное руководство по ${t.titleRu.toLowerCase()}. Узнайте, как защитить свое будущее и бизнес в Молдове с помощью опыта ING Broker.`,
-      content: generateLongContent(t.titleRu, 'ru'),
-      image: images[index % images.length],
+      content: alignArticleImages(generateLongContent(t.titleRu, 'ru'), t.slug, 'ru'),
+      ...topicMedia(t.slug, 'ru'),
       date: `${(index % 28) + 1} Apr 2026`.padStart(11, '0').replace('Apr', 'Апр'),
       author: 'Андрей Морару',
       tags: [t.tag, 'Страхование', 'Молдова'],
@@ -1601,8 +1602,8 @@ Un sofer moldovean care merge in Romania, Germania, Turcia sau Ucraina are nevoi
       slug: t.slug,
       title: t.titleEn,
       excerpt: `Complete guide about ${t.titleEn.toLowerCase()}. Learn how to protect your future and business in Moldova with ING Broker expertise.`,
-      content: generateLongContent(t.titleEn, 'en'),
-      image: images[index % images.length],
+      content: alignArticleImages(generateLongContent(t.titleEn, 'en'), t.slug, 'en'),
+      ...topicMedia(t.slug, 'en'),
       date: `${(index % 28) + 1} Apr 2026`.padStart(11, '0'),
       author: 'Andrei Moraru',
       tags: [t.tag, 'Insurance', 'Moldova'],
@@ -1615,11 +1616,14 @@ Un sofer moldovean care merge in Romania, Germania, Turcia sau Ucraina are nevoi
   ]
 };
 
-// Preserve existing IDs, URLs and original dates. Only the recovery
-// batch changes; RU/EN are not automatic translations of the new articles.
+// Preserve IDs, URLs, dates and text. Media corrections also cover the legacy catalogue.
+const mediaCorrectedArticles = Object.fromEntries(Object.entries(baseArticles).map(([lang, list]) => [lang,
+  list.map(article => ({ ...article, ...topicMedia(article.slug, lang as 'ro' | 'ru' | 'en'),
+    content: alignArticleImages(article.content, article.slug, lang as 'ro' | 'ru' | 'en') }))
+]));
 export const articles: Record<string, Article[]> = {
-  ...baseArticles,
-  ro: baseArticles.ro.map(article => {
+  ...mediaCorrectedArticles,
+  ro: mediaCorrectedArticles.ro.map(article => {
     const revision = articleRevisions[article.slug];
     if (!revision) return article;
     return {

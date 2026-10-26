@@ -5,6 +5,7 @@ import { motion } from 'motion/react';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { articles } from '../data/articles';
+import { localizedPath } from '../utils/localizedRoutes';
 
 interface NewsInsightsPageProps {
   lang: Language;
@@ -155,20 +156,20 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {paginatedArticles.map((article, i) => (
-              <motion.div 
+              <motion.a
                 key={article.id} 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-20px" }}
                 whileHover={{ y: -8, scale: 1.015 }}
                 transition={{ duration: 0.4, ease: "easeOut", delay: i * 0.05 }}
-                onClick={() => navigate(`/news/${article.slug}`)}
+                href={localizedPath(`/news/${article.slug}`, lang)}
                 className="group bg-white border border-gray-100 overflow-hidden flex flex-col h-full transition-all duration-500 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.08)] z-10 cursor-pointer"
               >
                 <div className="relative h-64 overflow-hidden">
                   <img 
                     src={article.image} 
-                    alt={article.title} 
+                    alt={article.imageAlt || article.title}
                     className="w-full h-full object-cover transition-all duration-1000 ease-out group-hover:scale-110 group-hover:brightness-110"
                     referrerPolicy="no-referrer"
                     loading="lazy"
@@ -197,13 +198,13 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
                     </span>
                   </div>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
 
           {/* Pagination */}
           {totalPages > 1 && (
-            <div className="mt-20 flex justify-center items-center gap-4">
+            <div className="mt-20 flex flex-wrap justify-center items-center gap-4">
               <button
                 onClick={() => handlePageChange(currentPage - 1)}
                 disabled={currentPage === 1}
@@ -212,7 +213,7 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
                 <ArrowLeft size={20} />
               </button>
               
-              <div className="flex gap-2">
+              <div className="flex flex-wrap justify-center gap-2 max-w-full">
                 {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                   <button
                     key={page}
