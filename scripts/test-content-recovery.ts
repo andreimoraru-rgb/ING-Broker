@@ -4,15 +4,17 @@ import { readFileSync } from 'node:fs';
 import ts from 'typescript';
 import { articles } from '../src/data/articles';
 import { articleRevisions } from '../src/data/recoveredArticles';
+import { topicMedia, alignArticleImages } from '../src/data/topicMedia';
 
 const baselineSource = execFileSync('git', ['show', 'b25ab8f:src/data/articles.ts'], { encoding: 'utf8', maxBuffer: 5_000_000 });
 const js = ts.transpileModule(baselineSource, { compilerOptions: { module: ts.ModuleKind.ESNext } }).outputText;
 const { articles: baseline } = await import(`data:text/javascript;base64,${Buffer.from(js).toString('base64')}`);
 // Owner requested internal contact links instead of external Maps destinations.
 for (const lang of ['ro', 'ru', 'en']) {
-  baseline[lang] = baseline[lang].map((article: {content:string}) => ({...article,
-    content: article.content.replace(/href="https:\/\/maps\.google\.com\/\?q=Insurance\+ING\+Broker\+SRL\+Chisinau" target="_blank" rel="noopener noreferrer"/g,
-      `href="https://www.ingbroker.md${lang === 'ro' ? '' : '/' + lang}/contact"`)
+  baseline[lang] = baseline[lang].map((article: {content:string;slug:string}) => ({...article,
+    ...topicMedia(article.slug, lang as 'ro' | 'ru' | 'en'),
+    content: alignArticleImages(article.content.replace(/href="https:\/\/maps\.google\.com\/\?q=Insurance\+ING\+Broker\+SRL\+Chisinau" target="_blank" rel="noopener noreferrer"/g,
+      `href="https://www.ingbroker.md${lang === 'ro' ? '' : '/' + lang}/contact"`), article.slug, lang as 'ro' | 'ru' | 'en')
   }));
 }
 assert.deepEqual(articles.ru, baseline.ru, 'Russian content unchanged except approved contact destination');

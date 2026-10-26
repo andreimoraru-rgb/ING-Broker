@@ -1,4 +1,4 @@
-import { articleRevisions } from '../src/data/recoveredArticles';
+import { articles } from '../src/data/articles';
 import { splitLocale } from '../src/utils/localizedRoutes';
 
 interface Env {
@@ -31,7 +31,7 @@ const exactSpaRoutes = new Set([
   '/property-assets',
 ]);
 
-const spaRoutePrefixes = ['/product/', '/business/', '/oferte/', '/news/', '/servicii/'];
+const spaRoutePrefixes = ['/product/', '/business/', '/oferte/', '/servicii/'];
 
 function isSpaRoute(pathname: string): boolean {
   const normalized = pathname.length > 1 ? pathname.replace(/\/$/, '') : pathname;
@@ -46,7 +46,7 @@ function assetRequest(request: Request, pathname: string): Request {
 
 export async function onRequest(context: PagesContext): Promise<Response> {
   const url = new URL(context.request.url);
-  const { path: routePath } = splitLocale(url.pathname);
+  const { path: routePath, lang } = splitLocale(url.pathname);
   const aboutAliases: Record<string, string> = { '/o-nas': '/ru/despre-noi', '/about-us': '/en/despre-noi' };
   if (aboutAliases[url.pathname.replace(/\/$/, '')]) {
     url.pathname = aboutAliases[url.pathname.replace(/\/$/, '')];
@@ -55,14 +55,21 @@ export async function onRequest(context: PagesContext): Promise<Response> {
 
   // Internal build artifacts are served only at their canonical article URLs.
   if (url.pathname.startsWith('/_editorial/')) return new Response('Not found', { status: 404 });
-  const articleSlug = url.pathname.replace(/\/$/, '').slice('/news/'.length);
-  if (url.pathname.startsWith('/news/') && Object.hasOwn(articleRevisions, articleSlug)) {
+  let articleSlug: string;
+  try { articleSlug = decodeURIComponent(routePath.replace(/\/$/, '').slice('/news/'.length)); }
+  catch { return new Response('Not found', { status: 404 }); }
+  if (routePath.startsWith('/news/') && articles[lang].some(article => article.slug === articleSlug)) {
     if (url.pathname.endsWith('/')) {
       url.pathname = url.pathname.slice(0, -1);
       return Response.redirect(url.toString(), 301);
     }
-    return context.env.ASSETS.fetch(assetRequest(context.request, `/_editorial/${articleSlug}`));
+    return context.env.ASSETS.fetch(assetRequest(context.request, `/_editorial/${lang === 'ro' ? '' : lang + '/'}${articleSlug}`));
   }
+
+  // Unknown article slugs must not return the homepage shell with HTTP 200.
+  if (routePath.startsWith('/news/')) return new Response('Articolul nu a fost găsit.', {
+    status: 404, headers: { 'Content-Type': 'text/plain; charset=utf-8', 'X-Robots-Tag': 'noindex' },
+  });
 
   if (isSpaRoute(routePath)) {
     // Fetch the root document because Cloudflare canonically redirects

@@ -8,6 +8,8 @@ import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, User, Tag } from 'lucide-react';
 import { articles } from '../data/articles';
 import { EditorialArticle } from './EditorialArticle';
+import { localizedPath } from '../utils/localizedRoutes';
+import { articleRevisions } from '../data/recoveredArticles';
 
 interface ArticlePageProps {
   lang: Language;
@@ -37,14 +39,21 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
 
   if (article.updatedAt && lang === 'ro') return <EditorialArticle article={article} />;
 
-  const articleOrigin = article.updatedAt ? 'https://www.ingbroker.md' : 'https://ingbroker.md';
+  const articleOrigin = 'https://www.ingbroker.md';
+  const articleUrl = `${articleOrigin}${localizedPath(`/news/${article.slug}`, lang)}`;
+  const articleImage = new URL(article.image, articleOrigin).href;
+  // Existing source dates use Romanian/Russian month abbreviations.
+  const sourceDate = article.date.replace('Апр', 'Apr').replace('Iun', 'Jun').replace('Mai', 'May');
+  const parsedDate = new Date(sourceDate);
+  const publicationDate = Number.isFinite(parsedDate.getTime()) ? parsedDate.toISOString().slice(0, 10) : undefined;
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": article.updatedAt ? article.title : article.seo.title,
     "description": article.seo.description,
-    "url": `${articleOrigin}/news/${article.slug}`,
-    "image": article.image,
+    "url": articleUrl,
+    "mainEntityOfPage": articleUrl,
+    "image": articleImage,
     "author": {
       "@type": "Organization",
       "name": article.author || "Insurance ING Broker SRL",
@@ -58,8 +67,8 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
         "url": `${articleOrigin}/Logo%20ING%20Broker.png`
       }
     },
-    "datePublished": article.updatedAt ? new Date(article.date).toISOString().slice(0, 10) : article.date,
-    "dateModified": article.updatedAt || article.date,
+    "datePublished": publicationDate,
+    "dateModified": article.updatedAt || publicationDate,
     "inLanguage": lang === 'ro' ? 'ro-MD' : lang === 'ru' ? 'ru-MD' : 'en'
   };
 
@@ -67,9 +76,9 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
     { name: lang === 'ro' ? 'Acasă' : lang === 'ru' ? 'Главная' : 'Home', url: articleOrigin },
     {
       name: lang === 'ro' ? 'Noutăți & Insights' : lang === 'ru' ? 'Новости & Аналитика' : 'News & Insights',
-      url: `${articleOrigin}/news`
+      url: `${articleOrigin}${localizedPath('/news', lang)}`
     },
-    { name: article.title, url: `${articleOrigin}/news/${article.slug}` }
+    { name: article.title, url: articleUrl }
   ]);
 
   return (
@@ -80,19 +89,20 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
         lang={lang}
         schema={schema}
         keywords={article.seo.keywords}
-        includeLanguageAlternates={!article.updatedAt}
-        image={article.updatedAt ? article.image : undefined}
+        includeLanguageAlternates={!articleRevisions[article.slug] && ['ro', 'ru', 'en'].every(locale => articles[locale].some(a => a.slug === article.slug))}
+        image={articleImage}
+        ogType="article"
       />
       <SchemaMarkup schemas={[articleBreadcrumb]} />
 
       {/* Back Button */}
-      <div className={article.updatedAt ? 'absolute top-20 left-6 z-30 md:fixed md:top-32 md:z-50' : 'fixed top-32 left-6 z-50'}>
+      <div className="absolute top-20 left-6 z-30 md:fixed md:top-32 md:z-50">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => navigate('/news')}
+          onClick={() => navigate(localizedPath('/news', lang))}
           className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
             isScrolled 
               ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50' 
@@ -115,7 +125,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
         <div className="absolute inset-0 z-0">
           <img 
             src={article.image} 
-            alt={article.title} 
+            alt={article.imageAlt || article.title}
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
