@@ -9,25 +9,25 @@ export const translations = {
     clientAccount: 'Calculează Online',
     logoAlt: 'Logo ING Broker',
     hero: {
-      segment: 'Segmentul Personal',
-      title: 'Arhitectura',
-      titleItalic: 'Siguranței Tale.',
-      description: 'Expertiză globală în managementul riscului, adaptată riguros nevoilor tale personale. De la mobilitate avansată la securitatea patrimoniului, Insurance ING Broker SRL definește standardul de aur în protecție.',
+      segment: 'Asigurări pentru tine',
+      title: 'Asigurări',
+      titleItalic: 'pentru tine.',
+      description: 'Te ajutăm să alegi asigurarea potrivită pentru mașină, locuință sau călătorii. Îți explicăm ce acoperă polița, ce nu acoperă și ce ai de făcut dacă apare o daună.',
       cta1: 'Calculează Online',
       cta2: 'Solicită consultanță',
-      scroll: 'Scroll pentru explorare'
+      scroll: 'Vezi mai jos'
     },
     trustStripBenefits: [
-      "Broker de elită în Moldova",
+      'Broker de asigurări în Moldova',
       "Consultanță personalizată",
-      "Suport real 24/7",
-      "Expertiză internațională"
+      'Îndrumare în caz de daună',
+      'Explicații pe înțelesul tău'
     ],
     intro: {
-      title: 'Expertiză în',
-      titleItalic: 'Managementul Riscului.',
-      p1: 'La ING Broker, segmentul Personal nu este doar o listă de produse, ci o arhitectură complexă de siguranță proiectată pentru a proteja ceea ce contează cu adevărat. Am selectat exclusiv soluții de elită, oferindu-ți acces la protecție de nivel internațional prin prisma unei consultanțe fiduciară, transparente și orientate spre rezultat.',
-      p2: 'Indiferent de complexitatea nevoilor tale - de la mobilitate urbană la securizarea activelor de familie - structura noastră de brokeraj îți garantează nu doar polița optimă, ci și un parteneriat strategic în gestionarea oricărui eveniment neprevăzut.'
+      title: 'Te ajutăm să alegi',
+      titleItalic: 'asigurarea potrivită.',
+      p1: 'La ING Broker găsești asigurări pentru mașină, locuință, călătorii și accidente. Discutăm despre ce ai nevoie și îți explicăm opțiunile disponibile.',
+      p2: 'Înainte să alegi, verificăm împreună prețul, riscurile acoperite și situațiile în care polița nu oferă despăgubiri. Te îndrumăm și dacă ai nevoie să anunți o daună.'
     },
     productLabels: {
       destined: 'Destinat',
@@ -35,44 +35,44 @@ export const translations = {
     },
     comparison: {
       title: 'Ce tip de asigurare ți se potrivește?',
-      subtitle: 'O privire rapidă asupra nevoilor tale de protecție pentru a face alegerea corectă.',
+      subtitle: 'Pornește de la ce vrei să asiguri: mașina, locuința, călătoria sau riscul de accident.',
       cards: [
-        { title: 'Mobilitate', desc: 'Alege RCA pentru obligativitate, Carte Verde pentru ieșiri externe sau CASCO pentru protecția investiției tale auto.' },
-        { title: 'Călătorii & Sănătate', desc: 'Protecție medicală completă peste hotare sau siguranță financiară în caz de accidente neprevăzute în viața de zi cu zi.' },
-        { title: 'Patrimoniu', desc: 'Securizează-ți cel mai important activ: locuința. Protecție împotriva dezastrelor și răspundere civilă față de vecini.' }
+        { title: 'Mașină', desc: 'Compară RCA, Carte Verde și CASCO. Fiecare are un rol diferit; verifică ce poliță îți trebuie.' },
+        { title: 'Călătorii & Sănătate', desc: 'Verifică asigurarea medicală pentru călătorie și asigurarea de accidente. Acoperirea depinde de polița aleasă.' },
+        { title: 'Locuință', desc: 'Verifică ce riscuri pot fi asigurate pentru casă, apartament și bunurile din locuință.' }
       ]
     },
     whyUs: {
       label: 'De ce ING Broker',
-      title: 'Autoritate în Brokeraj,',
-      titleItalic: 'Dedicată Ție.',
+      title: 'De ce să alegi',
+      titleItalic: 'ING Broker?',
       items: [
-        { title: 'Autoritate în Managementul Riscului', desc: 'Decenii de expertiză în gestionarea riscurilor complexe la nivel corporate, acum transpuse în soluții de elită pentru segmentul personal.' },
-        { title: 'Specializare Sectorială Avansată', desc: 'Adaptăm arhitectura de asigurare la specificul fiecărui profil de risc, asigurând o acoperire fără zone gri sau ambiguități contractuale.' },
-        { title: 'Integritate Fiduciară', desc: 'Transparență absolută. Îți oferim claritatea necesară pentru a înțelege exact mecanismele de protecție și valoarea reală a poliței tale.' },
-        { title: 'Suport Strategic în caz de Daună', desc: 'Nu ești singur în fața riscului. Echipa noastră de experți preia managementul daunei, garantând o soluționare corectă și rapidă.' }
+        { title: 'Începem cu nevoile tale', desc: 'Îți punem întrebări despre ce vrei să asiguri și îți explicăm ce opțiuni poți lua în calcul.' },
+        { title: 'Comparăm ofertele', desc: 'Te ajutăm să compari prețul, limitele de despăgubire și excluderile, adică situațiile neacoperite de poliță.' },
+        { title: 'Explicăm condițiile', desc: 'Discutăm despre ce plătești, ce acoperă polița și ce obligații ai, înainte să închei asigurarea.' },
+        { title: 'Te îndrumăm la daună', desc: 'Îți explicăm pașii și documentele necesare pentru cererea de despăgubire. Asigurătorul analizează cererea potrivit contractului.' }
       ],
-      years: 'Ani de Autoritate'
+      years: 'Ani de activitate'
     },
     methodology: {
-      title: 'Metodologia',
+      title: 'Cum lucrăm la',
       titleItalic: 'ING Broker.',
-      subtitle: 'Un proces riguros, extras din rigorile brokerajului corporate, aplicat pentru siguranța ta personală.',
+      subtitle: 'Trei pași pentru a alege asigurarea și a înțelege cum o folosești.',
       steps: [
         {
           number: '01',
-          title: 'Audit de Risc',
-          desc: 'Nu vindem polițe, ci analizăm expuneri. Identificăm vulnerabilitățile patrimoniului și stilului tău de viață pentru a defini o bază solidă de protecție.'
+          title: 'Discutăm despre nevoile tale',
+          desc: 'Ne spui ce vrei să asiguri și ce te preocupă. Clarificăm ce informații sunt necesare pentru ofertare.'
         },
         {
           number: '02',
-          title: 'Arhitectura Soluției',
-          desc: 'Structurăm un program de asigurare personalizat, selectând exclusiv clauzele care aduc valoare reală și eliminând costurile inutile.'
+          title: 'Comparăm opțiunile',
+          desc: 'Îți prezentăm ofertele disponibile și diferențele dintre ele, ca să poți alege în cunoștință de cauză.'
         },
         {
           number: '03',
-          title: 'Management Fiduciar',
-          desc: 'Suntem reprezentantul tău în fața asigurătorilor. Gestionăm contractele, monitorizăm riscurile și asigurăm succesul oricărei cereri de despăgubire.'
+          title: 'Te ajutăm și după încheiere',
+          desc: 'Îți răspundem la întrebări despre poliță, reînnoire și pașii de urmat în caz de daună.'
         }
       ]
     },
@@ -81,20 +81,20 @@ export const translations = {
       subtitle: 'Tot ce trebuie să știi despre asigurările tale personale.'
     },
     finalCta: {
-      title: 'Pregătit pentru',
-      subtitle: 'următorul nivel de siguranță?',
+      title: 'Ai nevoie de',
+      subtitle: 'o asigurare?',
       cta1: 'Alege produsul potrivit',
       cta2: 'Discută cu un consultant'
     },
     corporateGateway: {
-      label: 'B2B & Corporate',
-      title: 'Soluții Complexe pentru Afaceri',
-      desc: 'Sunteți proprietarul unei afaceri? Dincolo de asigurările personale, ING Broker este lider în structurarea programelor complexe de asigurare și reasigurare pentru corporații. Protejăm activele, răspunderea și continuitatea afacerii dumneavoastră la standarde internaționale.',
-      btnBusiness: 'Descoperă Soluțiile Corporate',
+      label: 'Asigurări pentru companii',
+      title: 'Ai o afacere?',
+      desc: 'Te ajutăm să alegi asigurări pentru bunurile, activitatea și angajații companiei. Începem cu riscurile afacerii tale și verificăm opțiunile disponibile.',
+      btnBusiness: 'Vezi asigurările pentru companii',
       btnReinsurance: 'Reasigurări & Fronting'
     },
     footer: {
-      desc: 'Partenerul tău strategic în asigurări și reasigurări. Oferim soluții premium adaptate nevoilor tale de business și personale.',
+      desc: 'ING Broker te ajută să alegi asigurări pentru tine și afacerea ta. Îți explicăm ofertele, condițiile poliței și pașii în caz de daună.',
       sections: {
         products: 'Produse',
         company: 'Companie',
@@ -105,7 +105,7 @@ export const translations = {
       rights: '© 2026 Insurance ING Broker SRL. Toate drepturile rezervate.'
     },
     insights: {
-      label: 'Resurse & Insights',
+      label: 'Articole și sfaturi',
       title: 'Ghidul tău în asigurări.',
       cta: 'Vezi toate articolele',
       articles: [
@@ -131,8 +131,8 @@ export const translations = {
     },
     business: {
       title: 'Soluții Corporate',
-      titleItalic: 'pentru lideri de piață.',
-      subtitle: 'Protejăm activele, răspunderea și continuitatea afacerii tale. Abordarea noastră se bazează pe managementul integrat al riscului: Identificare, Evaluare, Transfer și Retenție. Oferim programe de asigurare complexe pentru corporații, adaptate fiecărei industrii.',
+      titleItalic: 'pentru afacerea ta.',
+      subtitle: 'Te ajutăm să alegi asigurări pentru bunurile, activitatea și angajații companiei. Analizăm riscurile afacerii și comparăm condițiile ofertelor disponibile.',
       cta1: 'Solicită audit de risc',
       cta2: 'Discută cu un expert',
       faq: {
@@ -148,7 +148,7 @@ export const translations = {
         { 
           id: 'property', 
           title: 'Bunuri și proprietăți', 
-          desc: 'Protejăm activele fizice ale companiei tale împotriva incendiilor, calamităților și avariilor accidentale. Soluțiile noastre acoperă clădiri, echipamente și stocuri, incluzând protecție vitală pentru întreruperea afacerii. Destinat industriilor de producție, retail și logistică, ING Broker îți securizează investițiile pe piața din R. Moldova cu expertiză internațională.', 
+          desc: 'Asigurări pentru clădiri, echipamente și stocuri. Verificăm riscurile incluse și dacă pot fi acoperite pierderile cauzate de oprirea activității, conform contractului.',
           image: '/Construcții Comerciale.jpg', 
           category: 'ASSETS', 
           link: '/property-assets',
@@ -161,7 +161,7 @@ export const translations = {
         { 
           id: 'liability', 
           title: 'Răspunderi generale', 
-          desc: 'Securizează-ți afacerea împotriva pretențiilor financiare rezultate din daune materiale sau vătămări corporale cauzate terților. Oferim polițe complexe de răspundere civilă, esențiale pentru construcții, HoReCa și servicii. Cu o înțelegere profundă a riscurilor locale, ING Broker negociază limite optime pentru a-ți proteja reputația și capitalul.', 
+          desc: 'Asigurări pentru situațiile în care activitatea companiei provoacă pagube altor persoane. Te ajutăm să verifici ce răspunderi, sume și cheltuieli pot fi incluse în poliță.',
           image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2560', 
           category: 'LIABILITY', 
           link: '/business/liability',
@@ -174,7 +174,7 @@ export const translations = {
         { 
           id: 'professional', 
           title: 'Răspundere profesională', 
-          desc: 'Protecție financiară absolută pentru erori, omisiuni sau neglijență în prestarea serviciilor de consultanță și proiectare. Indispensabilă pentru IT, inginerie, arhitectură și servicii juridice. ING Broker structurează programe de asigurare personalizate, garantând siguranța profesioniștilor și continuitatea afacerilor pe piața din R. Moldova.', 
+          desc: 'Asigurări pentru cereri de despăgubire legate de erori sau omisiuni profesionale. Verificăm activitățile asigurate, limitele și excluderile pentru profesia ta.',
           image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1200', 
           category: 'LIABILITY', 
           link: '/business/professional',
@@ -187,7 +187,7 @@ export const translations = {
         { 
           id: 'do', 
           title: 'D&O', 
-          desc: 'Scut de protecție pentru patrimoniul personal al managerilor și administratorilor în fața acuzațiilor de management defectuos. Acoperă costuri de apărare și litigii inițiate de acționari sau autorități. Vital pentru corporații și instituții financiare, ING Broker aduce expertiză de top pentru a asigura deciziile strategice ale liderilor tăi.', 
+          desc: 'Asigurări de răspundere pentru directori și administratori. Analizăm ce cereri de despăgubire și cheltuieli de apărare pot fi acoperite, în condițiile contractului.',
           image: '/d&o.jpg', 
           category: 'EXECUTIVE', 
           link: '/business/do',
@@ -200,7 +200,7 @@ export const translations = {
         { 
           id: 'cyber', 
           title: 'Cyber', 
-          desc: 'Răspuns rapid și acoperire financiară în fața atacurilor ransomware, scurgerilor de date și întreruperilor IT. Destinat companiilor de e-commerce, sănătate și tech. ING Broker îți aliniază afacerea la standardele globale de securitate cibernetică, minimizând impactul financiar și reputațional în mediul digital din R. Moldova.', 
+          desc: 'Asigurări pentru riscuri cibernetice, precum atacuri informatice sau scurgeri de date. Verificăm cerințele de securitate și ce costuri pot fi acoperite prin poliță.',
           image: '/cyber-insurance-3.jpg', 
           category: 'TECH', 
           link: '/business/cyber',
@@ -213,7 +213,7 @@ export const translations = {
         { 
           id: 'cargo', 
           title: 'Cargo și transport', 
-          desc: 'Garantăm siguranța mărfurilor în tranzit rutier, maritim, aerian sau feroviar, acoperind riscuri de avariere, furt sau accidente. Soluții "All Risks" esențiale pentru logistică, import-export și producție. Cu ING Broker, lanțul tău de aprovizionare beneficiază de protecție internațională și decontare rapidă a daunelor.', 
+          desc: 'Asigurări pentru mărfurile transportate. Verificăm traseul, tipul mărfii, ambalarea și riscurile care pot fi incluse, potrivit condițiilor asigurătorului.',
           image: '/logistica.jpg', 
           category: 'LOGISTICS', 
           link: '/business/cargo',
@@ -226,7 +226,7 @@ export const translations = {
         { 
           id: 'fleet', 
           title: 'Auto flotă', 
-          desc: 'Management eficient al riscurilor pentru parcurile auto corporative, cu acoperiri CASCO și RCA optimizate. Protejăm flotele de distribuție, curierat și transport persoane împotriva accidentelor și furtului. ING Broker negociază tarife preferențiale și oferă administrare centralizată pentru a-ți menține afacerea în mișcare.', 
+          desc: 'Te ajutăm să gestionezi asigurările mașinilor companiei. Comparăm opțiunile RCA și CASCO și verificăm condițiile pentru fiecare vehicul din flotă.',
           image: '/camionete.jpg', 
           category: 'MOBILITY', 
           link: '/business/fleet',
@@ -239,7 +239,7 @@ export const translations = {
         { 
           id: 'credit', 
           title: 'Asigurarea creditelor', 
-          desc: 'Protejează-ți fluxul de numerar împotriva neplății facturilor și a insolvenței clienților B2B. O soluție strategică pentru comerțul cu ridicata, producție și exportatori. ING Broker îți securizează încasările și facilitează extinderea comercială în siguranță, demonstrând un control riguros al riscului financiar.', 
+          desc: 'Asigurări pentru riscul ca un client să nu își plătească facturile. Verificăm ce cumpărători, sume și situații pot fi incluse în poliță.',
           image: '/credit insurance.jpg', 
           category: 'FINANCE', 
           link: '/business/credit',
@@ -252,7 +252,7 @@ export const translations = {
         { 
           id: 'construction', 
           title: 'Construcții și montaj', 
-          desc: 'Acoperire "Toate Riscurile" pentru proiecte de infrastructură, rezidențiale și industriale. Protejăm șantierele împotriva calamităților, incendiilor și erorilor de execuție. ING Broker oferă antreprenorilor și dezvoltatorilor din R. Moldova polițe complexe, conforme cu cerințele finanțatorilor și standardele internaționale FIDIC.', 
+          desc: 'Asigurări pentru lucrări de construcții și montaj. Verificăm proiectul, riscurile de pe șantier și cerințele contractului, pentru a solicita oferte potrivite.',
           image: '/Constructii-montaj.jpeg', 
           category: 'ENGINEERING', 
           link: '/business/construction',
@@ -265,7 +265,7 @@ export const translations = {
         { 
           id: 'benefits', 
           title: 'Asigurări de Sănătate și viață pentru angajați', 
-          desc: 'Beneficii Angajați și Asigurări de Sănătate de Grup | Retenția Talentelor IT Moldova | ING Broker. Programe premium concepute pentru a crește retenția și loialitatea echipei. Indispensabile în sectorul IT, corporații și IMM-uri. ING Broker negociază pachete personalizate care transformă grija pentru angajați într-un avantaj competitiv major pe piața muncii.', 
+          desc: 'Asigurări pentru angajații companiei. Discutăm nevoile echipei și verificăm opțiunile disponibile, serviciile incluse și limitele fiecărui contract.',
           image: '/health.png', 
           category: 'HUMAN RESOURCES', 
           link: '/business/benefits',
@@ -291,7 +291,7 @@ export const translations = {
         { 
           id: 'agriculture', 
           title: 'Riscuri agricole', 
-          desc: 'Protecție vitală pentru culturi, animale și utilaje agricole în fața capriciilor naturii, bolilor și incendiilor. Destinat fermierilor și agribusiness-urilor locale. Cu expertiză aprofundată în sectorul agricol moldovenesc, ING Broker structurează polițe care garantează continuitatea afacerii tale, inclusiv accesarea subvențiilor de stat.', 
+          desc: 'Asigurări pentru culturi, animale și utilaje agricole. Verificăm ce riscuri sunt acceptate și ce condiții trebuie îndeplinite pentru activitatea ta.',
           image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200', 
           category: 'AGRICULTURE', 
           link: '/business/agriculture',
@@ -305,8 +305,8 @@ export const translations = {
     },
     reinsurance: {
       title: 'Reasigurare & Fronting',
-      titleItalic: 'capacitate și expertiză.',
-      subtitle: 'Acces direct la piețele internaționale de reasigurare și capacitate de plasament pentru riscuri complexe. Structurăm programe de reasigurare facultativă și tratate, oferind soluții de fronting pentru corporații multinaționale și proiecte de infrastructură majore.',
+      titleItalic: 'pentru riscuri mari.',
+      subtitle: 'Ajutăm la organizarea reasigurării pentru riscuri mari sau complexe. Discutăm informațiile necesare, opțiunile disponibile și condițiile fiecărui program.',
       cta1: 'Contactează departamentul',
       cta2: 'Solicită capacitate',
       faq: {
@@ -322,7 +322,7 @@ export const translations = {
         { 
           id: 'facultative', 
           title: 'Reasigurare Facultativă', 
-          desc: 'Plasamente individuale pentru riscuri atipice, expuneri majore sau industrii cu grad ridicat de complexitate (Energie, Aviație, Construcții). Negociem direct cu piețele internaționale (Lloyd\'s, Europa Continentală) pentru a obține termeni optimi și capacitate extinsă.', 
+          desc: 'Reasigurare analizată separat pentru un risc sau un proiect, de exemplu în energie, aviație ori construcții. Condițiile se stabilesc în funcție de informațiile despre risc și ofertele disponibile.',
           image: '/reinsurance-1.webp', 
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Expuneri individuale care depășesc capacitatea pieței locale', 'Riscuri industriale complexe', 'Proiecte de infrastructură majore'] },
@@ -333,7 +333,7 @@ export const translations = {
         { 
           id: 'treaty', 
           title: 'Tratate de Reasigurare', 
-          desc: 'Soluții structurate pentru protecția portofoliilor de asigurări. Oferim consultanță în designul programelor proporționale și neproporționale (Quota Share, Surplus, Excess of Loss), optimizând capitalul și protejând bilanțul împotriva evenimentelor catastrofale.', 
+          desc: 'Programe de reasigurare pentru un portofoliu de polițe. Ajutăm la compararea variantelor și la înțelegerea modului în care sunt împărțite riscurile.',
           image: '/traty reinsurance-2.jpg', 
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Acumulări de riscuri catastrofale (Cutremur, Inundații)', 'Fluctuații majore ale ratei daunei', 'Protecția capitalului și a solvabilității'] },
@@ -356,21 +356,21 @@ export const translations = {
     },
     about: {
       hero: { 
-        title: 'Lideri în Brokeraj și Managementul Riscului în Moldova', 
-        subtitle: 'Insurance ING Broker SRL – partenerul tău de încredere pentru siguranță și stabilitate. Îți protejăm afacerea și familia prin soluții de asigurare clare, sigure și adaptate la realitățile noastre, oferind acces la cele mai bune piețe locale și internaționale.' 
+        title: 'Despre ING Broker',
+        subtitle: 'Insurance ING Broker SRL este un broker de asigurări din Republica Moldova. Te ajutăm să înțelegi ofertele și să alegi o asigurare potrivită pentru tine sau afacerea ta.'
       },
-      intro: 'Insurance ING Broker SRL reprezintă punctul de referință în managementul riscului și arhitectura de reasigurare din Republica Moldova. Suntem o structură de brokeraj de elită, specializată în consultanță strategică, soluții complexe de transfer al riscului și parteneriate fiduciară pe termen lung pentru corporații și instituții financiare. Cu o abordare centrată pe client, oferim siguranță și stabilitate într-un mediu economic dinamic.',
+      intro: 'Lucrăm cu persoane fizice și companii din Moldova. Îți explicăm opțiunile de asigurare, comparăm ofertele disponibile și te ajutăm să înțelegi condițiile înainte de a lua o decizie.',
       whoWeAre: {
         title: 'Cine Suntem',
-        content: 'Suntem ingineri de risc și consultanți fiduciari care redefinesc rolul brokerului în ecosistemul financiar. Pentru noi, brokerajul nu este o simplă tranzacție, ci un proces riguros de auditare, înțelegere a expunerilor financiare și structurare a celor mai avansate soluții de protecție disponibile pe piețele locale și internaționale. Echipa noastră de experți analizează fiecare detaliu pentru a asigura o acoperire optimă, fără zone gri.'
+        content: 'Suntem o echipă de brokeri de asigurări. Începem cu întrebările tale: ce vrei să asiguri, ce riscuri te preocupă și ce buget ai. Apoi discutăm ofertele și diferențele dintre ele.'
       },
       mission: { 
         title: 'Misiunea Noastră', 
-        content: 'Misiunea ING Broker este de a lăsa o amprentă solidă în istoria asigurărilor din Moldova și din Europa de Est. Ne propunem să asigurăm reziliența financiară a clienților noștri prin transformarea complexității riscurilor corporate și personale în decizii strategice clare, oferind protecție absolută și liniște sufletească.' 
+        content: 'Vrem ca fiecare client să înțeleagă asigurarea pe care o alege: cât plătește, ce acoperă polița, ce nu acoperă și ce are de făcut în caz de daună.'
       },
       vision: { 
         title: 'Viziunea Noastră', 
-        content: 'Să dezvoltăm o multitudine de servicii de asigurări inovatoare în Moldova. Să importăm produse de asigurare care lipsesc pe piața locală și să le adaptăm la necesitățile specifice ale clienților noștri. Să educăm cetățenii în domeniul asigurărilor, devenind o componentă de bază în dezvoltarea culturii financiare a societății noastre și un lider recunoscut în inovație.' 
+        content: 'Ne dorim ca asigurările să fie mai ușor de înțeles și de accesat în Moldova. Explicăm termenii în cuvinte simple și căutăm opțiuni potrivite nevoilor clienților.'
       },
       history: {
         title: 'Istoricul Nostru',
@@ -378,7 +378,7 @@ export const translations = {
       },
       values: {
         title: 'Valorile Noastre',
-        items: ['Arhitectură de Risc Avansată', 'Excelență Operațională', 'Integritate Fiduciară Absolută', 'Transparență Radicală', 'Sinergie Strategică', 'Etică de Neclintit', 'Inovație Disruptivă în Risc']
+        items: ['Atenție la nevoile clientului', 'Lucru bine organizat', 'Corectitudine', 'Explicații clare', 'Colaborare', 'Responsabilitate', 'Servicii ușor de folosit']
       },
       differentiators: {
         title: 'Ce Ne Diferențiază',
@@ -390,13 +390,13 @@ export const translations = {
           { title: '20 de Ani de Excelență', desc: 'Un background și o expertiză validată de două decenii de activitate neîntreruptă și succes în gestionarea riscurilor complexe.' }
         ]
       },
-      corporate: { title: 'Rechizite și Date Corporate', content: 'Denumire completă: Insurance ING Broker SRL,\nIDNO: 1017600019386,\nAdresa: mun. Chișinău, str. Pan Halippa 9,\nCEO: Ion Dascălu,\nLicență: CNPF 000874 din 06.10.2016,\nCertificare: ISO 9001:2015, certificat RO-11645' },
-      cta: { title: 'Parteneriat Strategic', subtitle: 'Ești gata să ridici standardul de protecție al companiei tale? Echipa noastră de experți este pregătită să îți ofere un audit de risc complet.', btn: 'Solicită Consultanță Strategică' }
+      corporate: { title: 'Datele companiei', content: 'Denumire completă: Insurance ING Broker SRL,\nIDNO: 1017600019386,\nAdresa: mun. Chișinău, str. Pan Halippa 9,\nCEO: Ion Dascălu,\nLicență: CNPF 000874 din 06.10.2016,\nCertificare: ISO 9001:2015, certificat RO-11645' },
+      cta: { title: 'Discută cu noi', subtitle: 'Spune-ne ce vrei să asiguri. Te ajutăm să înțelegi opțiunile și informațiile necesare pentru o ofertă.', btn: 'Cere o consultație' }
     },
     propertyAssets: {
       title: 'Asigurarea Bunurilor și Proprietăților',
-      subtitle: 'Protecție completă pentru activele companiei tale, asigurând continuitatea afacerii în orice situație.',
-      intro: 'Fie că este vorba despre clădiri de birouri, spații comerciale, fabrici sau echipamente esențiale, activele companiei tale reprezintă fundamentul operațiunilor zilnice. Insurance ING Broker SRL oferă soluții personalizate pentru a proteja atât bunurile imobile, cât și cele mobile împotriva riscurilor neprevăzute.',
+      subtitle: 'Asigurări pentru clădirile, echipamentele și stocurile companiei, în condițiile poliței alese.',
+      intro: 'Clădirile, utilajele și stocurile sunt importante pentru activitatea companiei. Te ajutăm să compari asigurările disponibile și să verifici ce bunuri și riscuri pot fi incluse.',
       industries: {
         title: 'Ce acoperim',
         items: [
@@ -438,16 +438,16 @@ export const translations = {
           ]
         }
       },
-      expertiseTitle: 'Protejăm Fundamentul Afacerii Tale',
+      expertiseTitle: 'Asigurări pentru bunurile companiei',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Te ajutăm să găsești asigurătorul potrivit, negociem pentru tine cel mai bun raport preț-calitate și îți oferim consultanță juridică de specialitate la apariția unui caz asigurat.',
-      ctaTitle: 'Securizează-ți activele astăzi',
+      whyUs: 'Comparăm ofertele disponibile și îți explicăm prețul, limitele de despăgubire și excluderile. Dacă apare o daună, te îndrumăm privind documentele și pașii necesari.',
+      ctaTitle: 'Cere o ofertă pentru bunurile companiei',
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
     },
     renewableEnergy: {
       title: 'Asigurarea Energiei Regenerabile',
-      subtitle: 'Protejăm viitorul sustenabil prin soluții de asigurare de elită.',
+      subtitle: 'Asigurări pentru parcuri solare, turbine eoliene și alte proiecte de energie regenerabilă.',
       intro: 'Industria energiei regenerabile se confruntă cu riscuri unice, de la fenomene meteo extreme la defecțiuni tehnice complexe. Insurance ING Broker SRL oferă programe de asigurare specializate care acoperă întregul ciclu de viață al unui proiect: construcție, operare și mentenanță.',
       industries: {
         title: 'Industrii și Tehnologii Acoperite',
@@ -460,11 +460,11 @@ export const translations = {
       },
       analysis: {
         risks: { title: 'Riscuri Principale', items: ['Fenomene meteo extreme (grindină, uragan)', 'Defecțiuni mecanice și electrice', 'Furt, vandalism și atacuri cibernetice', 'Pierderi de profit (Business Interruption)'] },
-        advantages: { title: 'Avantaje Strategice', items: ['Stabilitate financiară pe termen lung', 'Bancabilitate ridicată pentru finanțări', 'Acces la experți în evaluarea riscurilor verzi'] },
-        disadvantages: { title: 'Provocări și Considerații', items: ['Costuri de primă în funcție de locație', 'Complexitatea procesului de despăgubire', 'Necesitatea mentenanței riguroase'] }
+        advantages: { title: 'Avantaje', items: ['Stabilitate financiară pe termen lung', 'Bancabilitate ridicată pentru finanțări', 'Acces la experți în evaluarea riscurilor verzi'] },
+        disadvantages: { title: 'Ce trebuie să verifici', items: ['Costuri de primă în funcție de locație', 'Complexitatea procesului de despăgubire', 'Necesitatea mentenanței riguroase'] }
       },
       whyUs: 'De ce este esențială această asigurare? Investițiile în energie regenerabilă sunt masive și expuse direct forțelor naturii. O singură furtună de grindină poate distruge un întreg parc fotovoltaic, iar o defecțiune la o turbină eoliană poate opri producția pentru luni de zile. Asigurarea nu este doar o cheltuială, ci fundamentul siguranței investiției tale.',
-      expertiseTitle: 'Expertiză în Managementul Riscurilor Verzi',
+      expertiseTitle: 'Înțelege riscurile proiectului tău',
       essentialTitle: 'De ce este esențială această asigurare?',
       ctaTitle: 'Protejați-vă investiția în viitor',
       ctaCall: 'Sună acum',
@@ -472,20 +472,20 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'ING Broker Moldova | Consultanță de Elită în Asigurări și Reasigurări',
-        description: 'Lider în managementul riscului în Moldova. Oferim soluții premium de asigurare: RCA, CASCO, asigurări de bunuri, sănătate și reasigurări complexe pentru corporații și persoane fizice.'
+        title: 'ING Broker Moldova | Asigurări pentru persoane și companii',
+        description: 'ING Broker te ajută să alegi asigurări pentru mașină, locuință, călătorii și afaceri în Moldova. Compară ofertele și înțelege condițiile poliței.'
       },
       business: {
         title: 'Asigurări Corporate și Managementul Riscului | ING Broker Moldova',
-        description: 'Soluții B2B avansate pentru afaceri. Programe complexe de asigurare: Property, Liability, Cyber, D&O, Cargo și Flote. Audit de risc profesionist pentru continuitatea afacerii.'
+        description: 'Asigurări pentru bunuri, răspundere, transport și flote în Moldova. ING Broker te ajută să analizezi riscurile companiei și ofertele disponibile.'
       },
       reinsurance: {
         title: 'Reasigurări și Fronting | Capacitate Internațională | ING Broker',
-        description: 'Acces strategic la piețele globale de reasigurare (Lloyd\'s). Structurăm programe facultative și treaty, oferind soluții de fronting pentru proiecte majore de infrastructură.'
+        description: 'Consultanță pentru reasigurare și programe de fronting. Discută cu ING Broker despre riscul tău și informațiile necesare pentru analiză.'
       },
       about: {
         title: 'Despre Noi | Insurance ING Broker SRL | Expertiză și Încredere',
-        description: 'Insurance ING Broker SRL este un broker de asigurare și reasigurare de elită în Republica Moldova, licențiat CNPF și certificat ISO 9001:2015. Oferim de peste 18 ani consultanță strategică, managementul riscurilor complexe și soluții de asigurare personalizate pentru persoane fizice și corporații.'
+        description: 'Află cum lucrează Insurance ING Broker SRL, broker de asigurări din Republica Moldova. Explicații despre polițe și îndrumare pentru persoane și companii.'
       },
       propertyAssets: {
         title: 'Asigurarea Bunurilor și Proprietăților Corporate | ING Broker',
@@ -1398,7 +1398,7 @@ export const productTranslations = {
       seoTitle: 'Asigurare RCA Online Moldova | Calculator și Emitere Rapidă | ING Broker',
       seoDescription: 'Încheie asigurarea RCA online în Moldova prin ING Broker. Află prețul instant cu calculatorul nostru, bucură-te de emitere rapidă și suport dedicat în caz de daună.',
       subtitle: 'RESPONSABILITATE CIVILĂ AUTO',
-      description: 'Asigurarea obligatorie care îți oferă liniștea necesară la volan în Republica Moldova. Ne asigurăm că ești protejat legal și că procesul de emitere este cel mai rapid din piață.',
+      description: 'Te ajutăm să calculezi prețul RCA și să verifici datele necesare pentru poliță. Îți explicăm condițiile și pașii de urmat în caz de accident.',
       forWho: 'Toți proprietarii de vehicule înmatriculate în Moldova.',
       covers: 'Daunele cauzate terțelor persoane în urma accidentelor rutiere.',
       advantages: ['Emitere instantanee online', 'Consultant dedicat în caz de daună', 'Prețuri reglementate, proces premium'],
@@ -1417,7 +1417,7 @@ export const productTranslations = {
       seoTitle: 'Asigurare Carte Verde Online | Călătorii Sigure în Străinătate | ING Broker',
       seoDescription: 'Cumpără asigurarea Carte Verde pentru călătorii auto internaționale. Acoperire extinsă, prețuri competitive și suport 24/7 oriunde te-ai afla. Alege ING Broker.',
       subtitle: 'SIGURANȚĂ PESTE HOTARE',
-      description: 'Partenerul tău de încredere pentru călătoriile auto internaționale. Indiferent de destinație, Cartea Verde de la ING Broker îți garantează protecția necesară în afara granițelor.',
+      description: 'Pleci cu mașina peste hotare? Verifică perioada și țările pentru care ai nevoie de Carte Verde înainte să alegi polița.',
       forWho: 'Șoferii care călătoresc cu mașina în afara țării.',
       covers: 'Răspunderea civilă auto în statele membre ale sistemului Carte Verde.',
       advantages: ['Valabilitate internațională extinsă', 'Suport 24/7 în străinătate', 'Livrare rapidă sau ridicare imediată'],
@@ -1436,7 +1436,7 @@ export const productTranslations = {
       seoTitle: 'Asigurare Medicală de Călătorie | Protecție în Străinătate | ING Broker',
       seoDescription: 'Asigurare medicală pentru călătorii peste hotare. Acoperire pentru urgențe, spitalizare și repatriere. Călătorește fără griji cu ING Broker.',
       subtitle: 'PROTECȚIE ÎN CĂLĂTORII',
-      description: 'Vacanțele și delegațiile tale merită o protecție fără compromisuri. Acoperim cheltuielile medicale neprevăzute, astfel încât tu să te concentrezi pe experiențe, nu pe griji.',
+      description: 'Pleci în vacanță sau într-o deplasare de serviciu? Te ajutăm să alegi asigurarea medicală de călătorie și să verifici serviciile incluse, limitele și excluderile.',
       forWho: 'Turiști, studenți și profesioniști care călătoresc extern.',
       covers: 'Urgențe medicale, spitalizare, tratamente și repatriere.',
       advantages: ['Acoperire globală completă', 'Fără franșiză la urgențe', 'Asistență telefonică în limba română'],
@@ -1452,10 +1452,10 @@ export const productTranslations = {
     {
       id: 'casco',
       title: 'CASCO',
-      seoTitle: 'Asigurare CASCO Moldova | Protecție Totală Auto | ING Broker',
-      seoDescription: 'Protejează-ți mașina cu o asigurare CASCO premium de la ING Broker. Acoperire completă pentru accidente, furt, vandalism și calamități. Cere o ofertă personalizată!',
-      subtitle: 'Protecție totală auto',
-      description: 'Vehiculul tău este o investiție care merită protejată împotriva oricărui risc: accident, furt, vandalism sau fenomene naturale. CASCO de la ING Broker este scutul tău premium.',
+      seoTitle: 'Asigurare CASCO Moldova | Oferte și condiții | ING Broker',
+      seoDescription: 'Compară ofertele CASCO în Moldova. Verifică riscurile incluse, excluderile și franșiza înainte să alegi polița. Cere o ofertă de la ING Broker.',
+      subtitle: 'Asigurare pentru mașina ta',
+      description: 'Vrei să asiguri propria mașină? Comparăm ofertele CASCO și îți explicăm ce daune sunt acoperite, ce nu este inclus și ce parte din daună poate rămâne în sarcina ta.',
       forWho: 'Proprietarii de mașini noi sau rulate care vor protecție maximă.',
       covers: 'Daune proprii, furt, vandalism, incendiu, calamități naturale.',
       advantages: ['Reparații în service-uri autorizate', 'Asistență rutieră inclusă', 'Flexibilitate în alegerea riscurilor'],
@@ -1493,7 +1493,7 @@ export const productTranslations = {
       seoTitle: 'Asigurare de Accidente Persoane | Siguranță Financiară | ING Broker',
       seoDescription: 'Asigurare de accidente pentru tine și familia ta. Sprijin financiar în caz de invaliditate, spitalizare sau deces din accident. Alege siguranța cu ING Broker.',
       subtitle: 'Siguranța personală',
-      description: 'Imprevizibilul face parte din viață, dar impactul financiar poate fi controlat. O asigurare de accidente oferă suportul necesar ție și familiei tale în momentele critice.',
+      description: 'Asigurarea de accidente poate oferi sprijin financiar în situațiile prevăzute de contract. Te ajutăm să verifici evenimentele acoperite, sumele și excluderile.',
       forWho: 'Persoane active, sportivi și familii prudente.',
       covers: 'Invaliditate, fracturi, arsuri sau deces din accident.',
       advantages: ['Sume asigurate flexibile', 'Acoperire 24/7 oriunde în lume', 'Plată rapidă a indemnizației'],

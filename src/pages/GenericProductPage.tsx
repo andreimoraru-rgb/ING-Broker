@@ -56,9 +56,9 @@ export const GenericProductPage: React.FC<GenericProductPageProps> = ({ lang }) 
   const getContent = () => {
     if (lang === 'ro') {
       return {
-        intro: `Asigurarea pentru ${productTitle} reprezintă un instrument financiar strategic, esențial pentru protejarea capitalului și garantarea continuității operaționale. Într-un mediu de afaceri marcat de volatilitate, transferul riscurilor majore către un asigurător solid nu este doar o măsură de prudență, ci o cerință de guvernanță corporativă. ${productDesc} Acest produs este structurat pentru a absorbi șocurile financiare generate de evenimente imprevizibile, protejând bilanțul companiei și menținând încrederea acționarilor și a partenerilor de afaceri.`,
-        roleMoldova: `Pe piața din Republica Moldova, expusă la riscuri specifice de tranziție și vulnerabilități regionale, ${productTitle} acționează ca un scut vital. Conform cerințelor prudențiale și de guvernanță, companiile trebuie să demonstreze reziliență. Această poliță facilitează accesul la finanțare bancară, participarea la licitații publice și atragerea investițiilor străine, demonstrând un management al riscului matur și aliniat la standardele europene.`,
-        roleBroker: `În calitate de broker autorizat, Insurance ING Broker SRL acționează exclusiv în interesul dumneavoastră. Efectuăm un audit de risc riguros, structurăm programul de asigurare și negociem termeni derogatorii cu asigurătorii de top. Valoarea noastră adăugată maximă se reflectă în gestionarea daunelor: instrumentăm dosarul, purtăm corespondența tehnică și ne asigurăm că despăgubirea este plătită integral și la timp, conform obligațiilor contractuale.`,
+        intro: `${productDesc} Înainte să alegi, verifică prețul, riscurile incluse și situațiile în care polița nu oferă despăgubiri. Îți explicăm aceste diferențe și informațiile necesare pentru o ofertă.`,
+        roleMoldova: `Pentru o ofertă în Republica Moldova, pornim de la ceea ce vrei să asiguri și activitatea ta. Dacă banca sau un partener îți cere o anumită asigurare, trimite-ne cerințele pentru a verifica opțiunile disponibile.`,
+        roleBroker: `Insurance ING Broker SRL este brokerul care te ajută să compari ofertele și să înțelegi polița. Îți explicăm condițiile și pașii de urmat dacă apare o daună. Asigurătorul analizează cererea și stabilește despăgubirea potrivit contractului.`,
         advantages: [
           `Protecție directă a capitalului și a fluxului de numerar în scenarii de criză.`,
           `Polițe "Tailor-Made", structurate pe baza analizei de risc specifice industriei.`,
@@ -73,7 +73,7 @@ export const GenericProductPage: React.FC<GenericProductPageProps> = ({ lang }) 
         claimsProcess: `Gestionarea daunelor este prioritatea noastră zero. La producerea riscului asigurat, echipa noastră intervine imediat pentru avizarea daunei, organizarea constatărilor cu experți independenți și asistența în întocmirea devizelor. Monitorizăm strict respectarea termenelor legale de plată de către asigurător, garantând o soluționare echitabilă și rapidă.`,
         legislation: `Produsul este avizat și structurat în strictă conformitate cu Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare și actele normative emise de Banca Națională a Moldovei (BNM). Aceasta garantează un cadru legal sigur, protecția drepturilor dumneavoastră în calitate de consumator și certitudinea solvabilității asigurătorului.`,
         ctaTitle: `Solicită o Ofertă Personalizată pentru ${productTitle}`,
-        ctaDesc: `Nu lăsați neprevăzutul să vă dicteze viitorul. Protejați-vă afacerea și activele cu o soluție de asigurare robustă, intermediată de profesioniști. Contactați-ne astăzi pentru o evaluare gratuită a riscurilor și o ofertă croită pe nevoile dumneavoastră.`,
+        ctaDesc: `Spune-ne ce vrei să asiguri și ce întrebări ai. Îți explicăm ce informații sunt necesare și ce opțiuni poți lua în calcul.`,
         company: 'Insurance ING Broker SRL',
         phone: '+37369526003',
         email: 'andrei.moraru@ingbroker.md',

@@ -25,17 +25,17 @@ import { topicMedia, alignArticleImages } from './topicMedia';
 
 const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
   const intro = {
-    ro: `În peisajul dinamic al asigurărilor din Republica Moldova, <strong>${title}</strong> reprezintă un pilon fundamental pentru stabilitatea financiară. Fie că ești o persoană fizică ce dorește să își protejeze familia, sau un antreprenor care caută să securizeze activele companiei, înțelegerea profundă a acestui produs este esențială. La ING Broker, oferim consultanță de elită pentru a naviga prin complexitatea pieței de asigurări, asigurându-ne că fiecare detaliu este analizat cu maximă rigoare profesională.`,
+    ro: `Vrei să înțelegi mai bine <strong>${title}</strong>? Începe cu ce vrei să asiguri și ce cheltuieli ai putea suporta dacă apare o problemă. ING Broker te ajută să compari ofertele disponibile și să verifici condițiile înainte să alegi.`,
     ru: `В динамичном ландшафте страхования в Республике Молдова <strong>${title}</strong> является фундаментальной основой финансовой стабильности. Будь вы частным лицом, желающим защитить свою семью, или предпринимателем, стремящимся обезопасить активы компании, глубокое понимание этого продукта имеет важное значение. В ING Broker мы предлагаем элитные консультации для навигации по сложности страхового рынка, гарантируя, что каждая деталь анализируется с максимальной профессиональной строгостью.`,
     en: `In the dynamic insurance landscape of the Republic of Moldova, <strong>${title}</strong> represents a fundamental pillar for financial stability. Whether you are an individual looking to protect your family, or an entrepreneur seeking to secure company assets, a deep understanding of this product is essential. At ING Broker, we offer elite consulting to navigate the complexity of the insurance market, ensuring that every detail is analyzed with maximum professional rigor.`
   };
 
   const summarySection = {
     ro: `<div class="bg-primary/5 border-l-4 border-primary p-8 my-12">
-           <h2 class="mt-0 text-primary">Rezumat</h2>
-           <p class="text-lg"><strong>Ce este ${title}?</strong> Este un instrument financiar de protecție care transferă riscul daunelor neprevăzute către un asigurător, garantând continuitatea afacerii sau stabilitatea familiei.</p>
-           <p class="text-lg"><strong>Cui se adresează?</strong> Tuturor persoanelor și companiilor din Moldova care dețin active valoroase sau desfășoară activități cu grad de risc.</p>
-           <p class="text-lg"><strong>De ce ING Broker?</strong> Oferim acces la toate companiile de asigurări, audit de risc gratuit și asistență juridică la daună.</p>
+           <h2 class="mt-0 text-primary">Pe scurt</h2>
+           <p class="text-lg"><strong>Ce verifici la o poliță?</strong> Riscurile incluse, suma asigurată, perioada și situațiile neacoperite.</p>
+           <p class="text-lg"><strong>Ți se potrivește?</strong> Depinde de ce vrei să asiguri, de activitatea ta și de condițiile ofertei.</p>
+           <p class="text-lg"><strong>Cum te ajută ING Broker?</strong> Îți explicăm ofertele, documentele necesare și pașii de urmat în caz de daună.</p>
          </div>`,
     ru: `<div class="bg-primary/5 border-l-4 border-primary p-8 my-12">
            <h2 class="mt-0 text-primary">Краткий обзор</h2>
@@ -52,16 +52,16 @@ const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
   };
 
   const section1 = {
-    ro: `<h2>Importanța Strategică a ${title}</h2>
-         <p>Riscurile fac parte din viața de zi cu zi, dar impactul lor financiar poate fi devastator fără o protecție adecvată. ${title} oferă un mecanism de transfer al riscului către un asigurător solid, permițându-vă să vă concentrați pe ceea ce contează cu adevărat. Statisticile arată că persoanele și companiile care investesc în prevenție și asigurări de calitate reușesc să depășească mult mai rapid perioadele de criză.</p>
-         <p>În contextul economic actual din Republica Moldova, volatilitatea pieței și riscurile emergente necesită o abordare proactivă. Nu mai este suficient să ai o poliță de asigurare standard; este vital să ai o soluție care să răspundă nevoilor tale specifice. ING Broker înțelege aceste nuanțe și lucrează îndeaproape cu clienții pentru a identifica punctele vulnerabile și a oferi soluții de atenuare a riscurilor.</p>
-         <h3>Beneficii cheie și avantaje competitive:</h3>
+    ro: `<h2>De ce să verifici condițiile înainte să alegi?</h2>
+         <p>O asigurare trebuie aleasă după riscurile pe care vrei să le acoperi, nu doar după preț. Două polițe pot avea limite și excluderi diferite, chiar dacă au denumiri asemănătoare.</p>
+         <p>Spune-ne ce vrei să asiguri și ce te preocupă. Verificăm împreună informațiile din ofertă și punctele care trebuie clarificate cu asigurătorul.</p>
+         <h3>La ce te ajută această comparație?</h3>
          <ul>
-           <li><strong>Protecție financiară imediată:</strong> Acoperirea costurilor în caz de eveniment asigurat, evitând decapitalizarea și protejând fluxul de numerar.</li>
-           <li><strong>Expertiză ING Broker:</strong> Acces la consultanță de specialitate și negocierea celor mai buni termeni contractuali cu toți asigurătorii de top.</li>
-           <li><strong>Personalizare avansată:</strong> Adaptarea poliței la profilul exact de risc al clientului, eliminând acoperirile inutile și adăugând clauze specifice.</li>
-           <li><strong>Liniște sufletească:</strong> Siguranța că viitorul tău este protejat de profesioniști cu experiență vastă în domeniu.</li>
-           <li><strong>Suport la Daună:</strong> Reprezentare profesională în fața asigurătorului pentru a asigura o despăgubire corectă și rapidă.</li>
+           <li><strong>Înțelegi prețul:</strong> Prima de asigurare este suma pe care o plătești pentru poliță.</li>
+           <li><strong>Verifici acoperirea:</strong> Vezi ce evenimente sunt incluse în contract.</li>
+           <li><strong>Cunoști limitele:</strong> Verifici suma maximă și eventualele limite pentru anumite situații.</li>
+           <li><strong>Înțelegi excluderile:</strong> Acestea sunt situațiile în care contractul nu oferă acoperire.</li>
+           <li><strong>Te pregătești pentru o daună:</strong> Afli cui te adresezi și ce documente trebuie să păstrezi.</li>
          </ul>`,
     ru: `<h2>Стратегическая важность ${title}</h2>
          <p>Риски являются частью повседневной жизни, но их финансовые последствия могут быть разрушительными без надлежащей защиты. ${title} предлагает механизм передачи риска надежному страховщику, позволяя вам сосредоточиться на том, что действительно важно. Статистика показывает, что люди и компании, которые инвестируют в профилактику и качественное страхование, гораздо быстрее преодолевают кризисные периоды.</p>
@@ -88,16 +88,16 @@ const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
   };
 
   const section2 = {
-    ro: `<h2>Analiza Pieței: Cum să alegi cea mai bună ofertă în Moldova?</h2>
-         <p>Piața de asigurări din Republica Moldova este vastă, iar ofertele pot varia semnificativ. Nu întotdeauna cel mai mic preț înseamnă cea mai bună protecție. Este crucial să analizați excluderile, limitele de despăgubire și reputația companiei de asigurări. O poliță ieftină poate deveni extrem de scumpă în momentul unei daune dacă nu are acoperirile necesare.</p>
-         <p>La ING Broker, noi facem această muncă pentru tine. Comparăm ofertele de la toți asigurătorii licențiați din Republica Moldova și îți prezentăm o analiză obiectivă, astfel încât să poți lua o decizie informată. Suntem partenerul tău strategic, nu doar un intermediar. Analizăm solvabilitatea asigurătorilor și istoricul lor de plată a daunelor, oferindu-ți o imagine clară asupra siguranței financiare pe care o cumperi.</p>
-         <p>Procesul nostru de selecție implică:</p>
+    ro: `<h2>Cum compari ofertele de asigurare?</h2>
+         <p>Compară polițele pentru aceeași perioadă, aceleași bunuri sau activități și aceleași sume. Un preț mai mic poate veni cu limite mai mici ori cu mai multe excluderi.</p>
+         <p>La ING Broker îți explicăm diferențele dintre ofertele disponibile. Dacă o condiție nu este clară, cere lămuriri înainte să accepți polița.</p>
+         <p>Iată pașii pe care îi parcurgem:</p>
          <ol>
-           <li><strong>Identificarea nevoilor:</strong> Înțelegem ce este cu adevărat important pentru tine sau afacerea ta.</li>
-           <li><strong>Scanarea pieței:</strong> Interogăm baza de date a tuturor asigurătorilor relevanți.</li>
-           <li><strong>Negocierea termenilor:</strong> Obținem clauze speciale și tarife preferențiale datorită volumului nostru de business.</li>
-           <li><strong>Prezentarea comparativă:</strong> Îți oferim un raport detaliat cu pro și contra pentru fiecare opțiune.</li>
-           <li><strong>Implementarea soluției:</strong> Ne ocupăm de toată birocrația emiterii poliței.</li>
+           <li><strong>Discutăm nevoile:</strong> Ne spui ce vrei să asiguri.</li>
+           <li><strong>Pregătim informațiile:</strong> Verificăm datele necesare pentru ofertare.</li>
+           <li><strong>Solicităm oferte:</strong> Verificăm opțiunile disponibile pentru situația ta.</li>
+           <li><strong>Comparăm condițiile:</strong> Îți explicăm prețul, limitele și excluderile.</li>
+           <li><strong>Verificăm polița:</strong> Clarificăm datele și condițiile înainte de încheiere.</li>
          </ol>`,
     ru: `<h2>Анализ рынка: Как выбрать лучшее предложение в Молдове?</h2>
          <p>Страховой рынок Республики Молдова огромен, и предложения могут существенно различаться. Самая низкая цена не всегда означает лучшую защиту. Крайне важно проанализировать исключения, лимиты возмещения и репутацию страховой компании. Дешевый полис может стать чрезвычайно дорогим в момент страхового случая, если в нем нет необходимых покрытий.</p>
@@ -124,16 +124,16 @@ const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
   };
 
   const section3 = {
-    ro: `<h2>Managementul Riscului și Prevenția</h2>
-         <p>Asigurarea este doar o parte a managementului riscului. La ING Broker, credem că cea mai bună daună este cea care nu se întâmplă niciodată. De aceea, oferim consultanță în prevenție. Pentru companii, acest lucru poate însemna implementarea unor sisteme de securitate mai bune, instruirea angajaților sau revizuirea proceselor operaționale. Pentru persoanele fizice, poate însemna sfaturi despre siguranța locuinței sau conducerea defensivă.</p>
-         <p>O strategie solidă de management al riscului include:</p>
+    ro: `<h2>Cum reduci riscul unei daune?</h2>
+         <p>Asigurarea nu înlocuiește măsurile de siguranță. Întreținerea bunurilor și respectarea condițiilor poliței rămân importante.</p>
+         <p>Poți porni de la patru întrebări:</p>
          <ul>
-           <li><strong>Evitarea riscului:</strong> Eliminarea activităților care pot genera pierderi inacceptabile.</li>
-           <li><strong>Reducerea riscului:</strong> Implementarea măsurilor de siguranță pentru a diminua probabilitatea sau impactul unui eveniment.</li>
-           <li><strong>Transferul riscului:</strong> Utilizarea asigurărilor pentru a muta povara financiară către un terț.</li>
-           <li><strong>Retenția riscului:</strong> Asumarea conștientă a riscurilor mici care pot fi acoperite din resurse proprii.</li>
+           <li><strong>Ce pot evita?</strong> Identifică activitățile care te expun inutil la pericole.</li>
+           <li><strong>Ce pot îmbunătăți?</strong> Verifică măsurile de siguranță și întreținere.</li>
+           <li><strong>Ce pot asigura?</strong> Compară riscurile tale cu cele acceptate în poliță.</li>
+           <li><strong>Ce plătesc din banii mei?</strong> Verifică franșiza, adică partea din daună suportată de tine potrivit contractului.</li>
          </ul>
-         <p>Prin colaborarea cu ING Broker, beneficiați de un audit de risc profesionist care vă ajută să echilibrați aceste patru elemente, optimizând costurile și maximizând protecția.</p>`,
+         <p>ING Broker te ajută să înțelegi ce prevede polița și ce întrebări trebuie clarificate cu asigurătorul.</p>`,
     ru: `<h2>Управление рисками и профилактика</h2>
          <p>Страхование - это лишь часть управления рисками. В ING Broker мы верим, что лучший страховой случай - это тот, который никогда не происходит. Поэтому мы предлагаем консультации по профилактике. Для компаний это может означать внедрение лучших систем безопасности, обучение сотрудников или пересмотр операционных процессов. Для частных лиц это может означать советы по безопасности дома или защитному вождению.</p>
          <p>Надежная стратегия управления рисками включает:</p>
@@ -157,23 +157,23 @@ const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
   };
 
   const faq = {
-    ro: `<h2>Întrebări frecvente (FAQ) - Tot ce trebuie să știi</h2>
+    ro: `<h2>Întrebări frecvente</h2>
          <div class="space-y-6">
            <div class="border-b border-gray-100 pb-4">
-             <h4 class="font-bold text-secondary">Cât costă o poliță de ${title}?</h4>
-             <p>Costul variază în funcție de factori precum istoricul de daune, limitele de despăgubire alese și specificul riscului. La ING Broker, negociem tarife preferențiale pentru clienții noștri, asigurându-ne că obțineți cel mai bun preț de pe piață fără a sacrifica calitatea acoperirii.</p>
+             <h4 class="font-bold text-secondary">De ce depinde prețul?</h4>
+             <p>Prețul depinde de produs și de datele cerute de asigurător. Pentru o comparație utilă, verifică aceeași perioadă, aceleași sume și aceleași riscuri în fiecare ofertă.</p>
            </div>
            <div class="border-b border-gray-100 pb-4">
-             <h4 class="font-bold text-secondary">Ce documente sunt necesare pentru emitere?</h4>
-             <p>De regulă, avem nevoie de actele de identitate (pentru persoane fizice) sau actele de constituire (pentru companii), plus documentele ce atestă proprietatea sau interesul asigurat. Procesul nostru este digitalizat, deci puteți trimite documentele prin email sau WhatsApp pentru o emitere rapidă.</p>
+             <h4 class="font-bold text-secondary">Ce documente sunt necesare?</h4>
+             <p>Lista diferă în funcție de ce vrei să asiguri. Cere lista exactă înainte să pregătești documentele și folosește canalul de transmitere stabilit cu consultantul.</p>
            </div>
            <div class="border-b border-gray-100 pb-4">
-             <h4 class="font-bold text-secondary">Cum procedez în caz de daună?</h4>
-             <p>Primul pas este securizarea locației și anunțarea autorităților, dacă este cazul. Apoi, contactează imediat echipa ING Broker. Noi te vom ghida prin tot procesul, de la completarea formularelor până la programarea constatării și urmărirea plății despăgubirii.</p>
+             <h4 class="font-bold text-secondary">Ce fac dacă apare o daună?</h4>
+             <p>Verifică instrucțiunile și termenul de notificare din poliță. Anunță asigurătorul conform contractului și contactează ING Broker pentru îndrumare privind pașii și documentele necesare.</p>
            </div>
            <div class="border-b border-gray-100 pb-4">
-             <h4 class="font-bold text-secondary">Pot modifica polița după emitere?</h4>
-             <p>Da, majoritatea polițelor permit modificări prin acte adiționale. Fie că doriți să măriți limitele de asigurare sau să adăugați noi riscuri, echipa noastră vă stă la dispoziție pentru a actualiza protecția conform noilor realități.</p>
+             <h4 class="font-bold text-secondary">Pot modifica polița?</h4>
+             <p>Cere o verificare înainte să modifici datele sau acoperirea. Posibilitatea schimbării, costul și data de aplicare trebuie confirmate de asigurător.</p>
            </div>
          </div>`,
     ru: `<h2>Часто задаваемые вопросы (FAQ) - Все, что вам нужно знать</h2>
@@ -218,10 +218,10 @@ const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
 
   const footer = {
     ro: `<div class="bg-gray-900 text-white p-8 rounded-xl mt-12">
-           <h3 class="text-white mt-0">Consultă un Expert ING Broker</h3>
-           <p>Nu lăsa siguranța ta la voia întâmplării. Contactează-ne astăzi pentru un audit de risc gratuit și o ofertă personalizată. Echipa noastră de experți este gata să îți ofere claritatea de care ai nevoie pentru a lua cele mai bune decizii financiare.</p>
+           <h3 class="text-white mt-0">Discută cu ING Broker</h3>
+           <p>Ai întrebări sau vrei o ofertă? Spune-ne ce vrei să asiguri. Îți explicăm opțiunile și informațiile necesare pentru pasul următor.</p>
            <p><strong>Autor:</strong> Andrei Moraru, Senior Insurance & Reinsurance Expert</p>
-           <p><strong>Locație:</strong> <a href="https://www.ingbroker.md/contact" class="text-primary underline">Sediul Central Chișinău, str. Pan Halippa 9</a></p>
+           <p><strong>Adresă:</strong> <a href="https://www.ingbroker.md/contact" class="text-primary underline">Chișinău, str. Pan Halippa 9</a></p>
          </div>`,
     ru: `<div class="bg-gray-900 text-white p-8 rounded-xl mt-12">
            <h3 class="text-white mt-0">Проконсультируйтесь с экспертом ING Broker</h3>
