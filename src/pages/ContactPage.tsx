@@ -29,7 +29,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
   const content = {
     ro: {
       title: 'Contact',
-      subtitle: 'Suntem aici pentru a vă oferi soluții strategice de asigurare și reasigurare.',
+      subtitle: 'Ai o întrebare despre asigurări? Sună-ne sau scrie-ne. Te ajutăm să înțelegi opțiunile și pașii următori.',
       phone: 'Telefon',
       email: 'Email',
       address: 'Adresă',
@@ -48,7 +48,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
       deptReinsurance: 'Reasigurări & Fronting',
       deptFinancial: 'Financiar',
       claimsTitle: 'Asistență Daune Corporate',
-      claimsDesc: 'Echipa noastră de experți juridici și tehnici vă reprezintă interesele în fața asigurătorilor pentru o soluționare rapidă.',
+      claimsDesc: 'Îți explicăm cum să anunți dauna și ce documente sunt necesare. Asigurătorul analizează cererea de despăgubire potrivit contractului.',
       appTitle: 'Aplicația eAsigurari',
       appDesc: 'Gestionează-ți polițele, primește notificări de expirare și raportează daune direct de pe telefonul tău mobil.',
       appBtn: 'Descarcă Acum'

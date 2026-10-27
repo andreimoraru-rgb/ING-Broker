@@ -3,7 +3,7 @@ export const businessProductsTranslations = {
     liability: {
       title: 'Răspunderi generale',
       subtitle: 'Protecție financiară împotriva daunelor cauzate terților în timpul operațiunilor de afaceri.',
-      intro: 'Orice afacere interacționează cu clienți, furnizori și publicul larg. Asigurarea de răspundere civilă generală te protejează împotriva pretențiilor financiare rezultate din vătămări corporale sau pagube materiale provocate accidental terților în timpul desfășurării activității tale comerciale.',
+      intro: 'Un client se poate răni în spațiul companiei sau activitatea ta poate provoca pagube altcuiva. Pentru astfel de situații, verificăm asigurările de răspundere civilă, limitele și excluderile lor.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -48,7 +48,7 @@ export const businessProductsTranslations = {
       },
       expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Orice companie, de la magazine de retail și restaurante, până la companii de construcții și producători, are nevoie de această asigurare. Te ajutăm să evaluezi expunerea reală la risc și negociem limite de acoperire optime pentru a-ți proteja afacerea de litigiile costisitoare.',
+      whyUs: 'Te ajutăm să descrii activitatea companiei, să identifici riscurile și să compari ofertele de răspundere civilă.',
       ctaTitle: 'Protejează-ți afacerea de neprevăzut',
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
@@ -56,7 +56,7 @@ export const businessProductsTranslations = {
     professional: {
       title: 'Răspundere profesională',
       subtitle: 'Siguranță în exercitarea profesiei și protecție împotriva erorilor sau omisiunilor.',
-      intro: 'Profesioniștii care oferă consultanță sau servicii specializate sunt expuși riscului de a fi dați în judecată pentru neglijență, erori sau omisiuni. Asigurarea de răspundere profesională (PI) acoperă costurile de apărare și despăgubirile financiare în cazul în care un client suferă pierderi din cauza serviciilor tale.',
+      intro: 'O eroare într-un serviciu poate produce pierderi unui client. Te ajutăm să verifici ce cereri de despăgubire și cheltuieli de apărare pot fi incluse în asigurarea profesiei tale.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -100,7 +100,7 @@ export const businessProductsTranslations = {
       },
       expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Arhitecții, inginerii, consultanții IT, avocații, contabilii și agențiile de marketing au nevoie vitală de această poliță. ING Broker înțelege specificul fiecărei profesii și structurează polițe care răspund exact expunerilor tale reale.',
+      whyUs: 'Discutăm despre serviciile pe care le oferi și cerințele contractelor tale. Apoi verificăm opțiunile de asigurare, limitele și excluderile.',
       ctaTitle: 'Asigură-ți viitorul profesional',
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
@@ -108,7 +108,7 @@ export const businessProductsTranslations = {
     do: {
       title: 'D&O (Directors & Officers)',
       subtitle: 'Protecție esențială pentru deciziile manageriale și conducerea companiei.',
-      intro: 'Directorii și administratorii (D&O) poartă o responsabilitate uriașă și pot fi trași la răspundere personal pentru deciziile luate în numele companiei. Asigurarea D&O protejează averea personală a liderilor împotriva pretențiilor formulate de acționari, angajați, autorități sau creditori.',
+      intro: 'Asigurarea D&O este destinată răspunderii directorilor și administratorilor pentru decizii luate în conducerea companiei. Verificăm ce situații și cheltuieli pot fi incluse în contract.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -154,7 +154,7 @@ export const businessProductsTranslations = {
       },
       expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Orice companie cu un consiliu de administrație, investitori externi sau planuri de extindere are nevoie de D&O. ING Broker negociază clauze complexe și limite adecvate pentru a asigura liniștea liderilor tăi.',
+      whyUs: 'Te ajutăm să verifici cine poate fi asigurat, pentru ce decizii și în ce limite. Îți explicăm și situațiile pe care polița nu le acoperă.',
       ctaTitle: 'Protejează liderii companiei tale',
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
@@ -162,7 +162,7 @@ export const businessProductsTranslations = {
     cyber: {
       title: 'Asigurare Cyber',
       subtitle: 'Protecție împotriva riscurilor cibernetice și a scurgerilor de date.',
-      intro: 'Într-o lume digitalizată, atacurile cibernetice nu mai sunt o chestiune de "dacă", ci de "când". Asigurarea Cyber oferă protecție financiară și asistență de urgență în cazul încălcării securității datelor, atacurilor ransomware sau întreruperii afacerii din cauze cibernetice.',
+      intro: 'Un atac informatic poate bloca activitatea sau expune datele companiei. Analizăm cerințele de securitate și ce cheltuieli pot fi acoperite printr-o asigurare cyber.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -206,7 +206,7 @@ export const businessProductsTranslations = {
       },
       expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Orice companie care stochează date ale clienților, procesează plăți online sau depinde de sisteme IT are nevoie de asigurare Cyber. ING Broker te ajută să evaluezi vulnerabilitățile și să alegi polița care răspunde cel mai bine profilului tău tehnologic.',
+      whyUs: 'Ne spui ce date folosești și cum funcționează sistemele companiei. Te ajutăm să verifici ofertele și măsurile de securitate cerute de asigurători.',
       ctaTitle: 'Securizează-ți afacerea digitală',
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
@@ -214,7 +214,7 @@ export const businessProductsTranslations = {
     cargo: {
       title: 'Cargo și transport',
       subtitle: 'Siguranță pentru mărfuri în tranzit împotriva pierderilor sau avariilor.',
-      intro: 'Lanțurile de aprovizionare sunt complexe și expuse la numeroase riscuri. Asigurarea Cargo protejează valoarea mărfurilor pe durata transportului (maritim, aerian, rutier sau feroviar), de la punctul de plecare până la destinația finală, indiferent de cine efectuează transportul.',
+      intro: 'Asigurarea Cargo se referă la mărfurile transportate. Pentru o ofertă, verificăm tipul mărfii, valoarea, traseul și condițiile de transport. Acoperirea depinde de contractul ales.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -258,15 +258,15 @@ export const businessProductsTranslations = {
       },
       expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Importatorii, exportatorii, producătorii și distribuitorii au nevoie de asigurare Cargo. ING Broker structurează programe de asigurare complexe, adaptate incoterms-urilor și rutelor logistice specifice afacerii tale.',
+      whyUs: 'Te ajutăm să compari ofertele pentru marfa transportată. Verificăm și condițiile de livrare stabilite cu partenerii, inclusiv cine răspunde de asigurare pe traseu.',
       ctaTitle: 'Asigură-ți lanțul de aprovizionare',
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
     },
     fleet: {
       title: 'Auto flotă',
-      subtitle: 'Management eficient și soluții personalizate pentru flote auto corporative.',
-      intro: 'Flota auto este esențială pentru mobilitatea și operațiunile companiei tale. Asigurarea de Flotă Auto oferă o gestionare simplificată și acoperiri complete (CASCO și RCA) pentru toate vehiculele companiei sub o singură poliță, optimizând costurile și administrarea.',
+      subtitle: 'Asigurări pentru mașinile companiei, cu administrarea polițelor într-un singur loc.',
+      intro: 'Te ajutăm să compari asigurările pentru vehiculele companiei. Verificăm separat RCA, CASCO și celelalte polițe necesare, în funcție de utilizarea mașinilor.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -310,7 +310,7 @@ export const businessProductsTranslations = {
       },
       expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Companiile de distribuție, curierat, transportatori sau orice afacere cu mai mult de 5 vehicule beneficiază enorm de o poliță de flotă. ING Broker analizează istoricul de daune și negociază cele mai bune tarife și condiții de pe piață.',
+      whyUs: 'Pregătește lista vehiculelor, modul de utilizare și istoricul daunelor. Pe baza acestor date putem solicita oferte și explica diferențele dintre ele.',
       ctaTitle: 'Optimizează asigurarea flotei tale',
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
@@ -318,7 +318,7 @@ export const businessProductsTranslations = {
     credit: {
       title: 'Asigurarea creditelor',
       subtitle: 'Protecție împotriva neplății facturilor și a riscurilor comerciale.',
-      intro: 'Facturile neîncasate pot destabiliza grav fluxul de numerar al companiei tale. Asigurarea de Credit Comercial te protejează împotriva riscului de neplată din partea clienților B2B, fie din cauza insolvenței, fie a întârzierilor prelungite la plată.',
+      intro: 'Dacă un client nu își plătește facturile, compania ta poate rămâne fără banii planificați. Asigurarea de credit comercial poate acoperi anumite situații de neplată, în limitele și condițiile contractului.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -362,15 +362,15 @@ export const businessProductsTranslations = {
       },
       expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Producătorii, distribuitorii și prestatorii de servicii B2B care vând cu plata la termen au nevoie de această asigurare. ING Broker te ajută să structurezi polița pentru a maximiza limitele de credit aprobate și a minimiza costurile.',
+      whyUs: 'Verificăm ce cumpărători pot fi incluși, sumele acceptate și obligațiile de raportare. Îți explicăm și ce situații de neplată nu sunt acoperite.',
       ctaTitle: 'Securizează-ți încasările',
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
     },
     construction: {
       title: 'Construcții și montaj (CAR/EAR)',
-      subtitle: 'Acoperire completă pentru riscurile specifice proiectelor de construcții.',
-      intro: 'Proiectele de construcții și montaj sunt complexe și expuse la riscuri majore pe toată durata execuției. Asigurarea CAR/EAR (Contractors All Risks / Erection All Risks) oferă protecție "Toate Riscurile" pentru lucrări, echipamente și răspunderea față de terți, de la deschiderea șantierului până la recepție.',
+      subtitle: 'Asigurări pentru lucrările, echipamentele și răspunderile dintr-un proiect de construcții.',
+      intro: 'Pentru un șantier, analizăm lucrările, echipamentele, durata proiectului și răspunderea față de alte persoane. Te ajutăm să compari asigurările de construcții și montaj, numite CAR/EAR.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -414,15 +414,15 @@ export const businessProductsTranslations = {
       },
       expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Dezvoltatorii imobiliari, antreprenorii generali și subantreprenorii au nevoie de CAR/EAR. ING Broker are expertiza necesară pentru a structura polițe complexe care respectă cerințele finanțatorilor și ale contractelor FIDIC.',
+      whyUs: 'Trimite-ne informațiile despre proiect și cerințele contractului. Verificăm ce opțiuni pot fi ofertate și îți explicăm limitele și excluderile.',
       ctaTitle: 'Asigură succesul proiectului tău',
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
     },
     benefits: {
       title: 'Asigurări de Sănătate și viață pentru angajați',
-      subtitle: 'Pachete de beneficii extrasalariale de elită. Asigurări de sănătate și viață pentru angajați, optimizate pentru corporații și companii IT din Moldova.',
-      intro: 'Într-o piață a muncii extrem de competitivă, pachetul de beneficii extrasalariale face diferența între succes și stagnare. Asigurarea medicală de grup pentru angajați (Employee Benefits) nu este doar o protecție, ci un instrument strategic de recrutare, motivare și retenție a talentelor, în special pentru sectorul IT și corporațiile din Republica Moldova.',
+      subtitle: 'Asigurări pentru angajați, alese în funcție de nevoile echipei și bugetul companiei.',
+      intro: 'O asigurare pentru angajați poate face parte din beneficiile oferite de companie. Discutăm despre echipă, buget și serviciile dorite, apoi verificăm opțiunile disponibile în Moldova.',
       industries: {
         title: 'Soluții Strategice de Resurse Umane',
         items: [
@@ -467,7 +467,7 @@ export const businessProductsTranslations = {
       },
       expertiseTitle: 'De ce este Employee Benefits motorul creșterii tale?',
       essentialTitle: 'Expertiza ING Broker în HR Solutions',
-      whyUs: 'Inspirându-ne din practicile liderilor globali precum AXA XL, Gallagher și Aon, ING Broker nu doar intermediază o poliță, ci construiește o strategie de beneficii. Analizăm datele demografice ale echipei tale și negociem cu asigurătorii pentru a livra valoare reală, nu doar o listă de acoperiri.',
+      whyUs: 'Te ajutăm să compari serviciile incluse, limitele, rețeaua de prestatori și excluderile. Explicăm condițiile pentru companie și pentru angajați.',
       ctaTitle: 'Transformă beneficiile în avantaj competitiv',
       ctaCall: 'Solicită audit beneficii',
       ctaEmail: 'Trimite email'
@@ -475,7 +475,7 @@ export const businessProductsTranslations = {
     agriculture: {
       title: 'Riscuri agricole',
       subtitle: 'Asigurări specializate pentru culturi, animale și echipamente agricole.',
-      intro: 'Agricultura este un business sub cerul liber, expus direct capriciilor naturii. Asigurarea agricolă este instrumentul vital care protejează investițiile fermierilor în culturi, animale și utilaje, garantând continuitatea afacerii chiar și în anii cu fenomene meteo extreme sau epidemii în ferme.',
+      intro: 'Culturile, animalele și utilajele pot fi afectate de evenimente neprevăzute. Te ajutăm să verifici ce riscuri agricole pot fi asigurate, în ce perioade și în ce condiții.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -519,7 +519,7 @@ export const businessProductsTranslations = {
       },
       expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Fermierii, cooperativele agricole și investitorii în agribusiness au nevoie de această protecție. ING Broker cunoaște specificul agricol din Moldova și te ajută să accesezi polițe adaptate, inclusiv cu sprijin pentru subvenționarea primelor.',
+      whyUs: 'Pornim de la informațiile despre fermă și bunurile pe care vrei să le asiguri. Îți explicăm ofertele și documentele cerute de asigurător.',
       ctaTitle: 'Protejează-ți recolta și ferma',
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
