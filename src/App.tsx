@@ -1167,15 +1167,6 @@ const Footer = ({ lang }: { lang: Language }) => {
         
         <div className="pt-16 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-8">
           <p className="text-[10px] font-bold uppercase tracking-widest text-gray-300">{t.rights}</p>
-          <div className="flex items-center gap-2">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-300">{t.designBy}</span>
-            <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" className="text-[10px] font-bold uppercase tracking-widest text-primary relative group inline-block transition-all duration-500 hover:scale-110">
-              <span className="relative z-10 block transition-transform duration-500 group-hover:-translate-y-1">
-                Creative Director AI
-              </span>
-              <span className="absolute bottom-[-2px] left-0 w-0 h-[1px] bg-primary transition-all duration-500 group-hover:w-full" />
-            </a>
-          </div>
         </div>
       </div>
     </footer>
