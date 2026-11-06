@@ -242,19 +242,8 @@ const generateLongContent = (title: string, lang: 'ro' | 'ru' | 'en') => {
       <p class="lead">${intro[lang]}</p>
       ${summarySection[lang]}
       ${section1[lang]}
-      <div class="my-12">
-        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200" alt="${title} Analysis" class="rounded-2xl shadow-2xl" />
-      </div>
       ${section2[lang]}
-      <div class="bg-secondary text-white p-10 rounded-2xl my-12">
-        <h2 class="text-white mt-0">De ce ING Broker este lider în Moldova?</h2>
-        <p class="text-white/80">Cu peste 18 ani de experiență, suntem primul broker certificat ISO din Moldova și dezvoltatorii primei aplicații mobile de asigurări. Expertiza noastră în reasigurări internaționale ne permite să plasăm riscuri pe care alții le consideră imposibile. Ne mândrim cu o rată de retenție a clienților de peste 95%, ceea ce demonstrează calitatea serviciilor noastre și încrederea pe care o inspirăm.</p>
-      </div>
       ${section3[lang]}
-      <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&q=80&w=800" alt="Team Consultation" class="rounded-2xl shadow-lg" />
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800" alt="Professional Support" class="rounded-2xl shadow-lg" />
-      </div>
       ${faq[lang]}
       ${footer[lang]}
     </div>
@@ -1621,7 +1610,7 @@ const mediaCorrectedArticles = Object.fromEntries(Object.entries(baseArticles).m
   list.map(article => ({ ...article, ...topicMedia(article.slug, lang as 'ro' | 'ru' | 'en'),
     content: alignArticleImages(article.content, article.slug, lang as 'ro' | 'ru' | 'en') }))
 ]));
-export const articles: Record<string, Article[]> = {
+const revisedArticles: Record<string, Article[]> = {
   ...mediaCorrectedArticles,
   ro: mediaCorrectedArticles.ro.map(article => {
     const revision = articleRevisions[article.slug];
@@ -1642,3 +1631,41 @@ export const articles: Record<string, Article[]> = {
     };
   })
 };
+
+// Mechanical title cleanup only. Product-specific editorial approval is separate.
+// Slugs, IDs, source dates, approved images and review status stay unchanged.
+function cleanGuideLabel(text: string): string {
+  return text
+    .replace(/: Ghid complet pentru Moldova/gi, '')
+    .replace(/: Полное руководство для Молдовы/gi, '')
+    .replace(/: Complete guide for Moldova/gi, '')
+    .replace(/Ghid complet despre\s*/gi, '')
+    .replace(/Ghid complet\s*/gi, '')
+    .replace(/Полное руководство по\s*/gi, '')
+    .replace(/Complete guide about\s*/gi, '')
+    .trim();
+}
+
+// Owner approved consolidation and withdrawal on 2026-11-05. Keep archived
+// source entries above for recovery; do not list them as available products.
+export const consolidatedLifeSlugs = new Set(rawTopics.filter(slug => slug.startsWith('asigurare-viata-') && slug !== 'asigurare-viata-moldova'));
+export const withdrawnArticleSlugs = new Set([
+  'asigurare-saloane-infrumusetare',
+  'asigurare-stomatologica-corporate',
+  'asigurare-sanatate-mentala',
+]);
+export const articles: Record<string, Article[]> = Object.fromEntries(
+  Object.entries(revisedArticles).map(([lang, list]) => [lang, list
+    .filter(article => !consolidatedLifeSlugs.has(article.slug) && !withdrawnArticleSlugs.has(article.slug))
+    .map(article => ({
+    ...article,
+    title: cleanGuideLabel(article.title),
+    excerpt: cleanGuideLabel(article.excerpt),
+    content: cleanGuideLabel(article.content),
+    seo: {
+      ...article.seo,
+      title: cleanGuideLabel(article.seo.title),
+      description: cleanGuideLabel(article.seo.description),
+    },
+  }))]),
+);

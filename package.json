@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build && tsx scripts/prerender-editorial.ts",
+    "build": "tsx scripts/sync-article-sitemap.ts && vite build && tsx scripts/prerender-editorial.ts",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
-          "sitemap": "tsx scripts/generate-sitemap.ts"
+    "sitemap": "tsx scripts/sync-article-sitemap.ts"
   },
   "dependencies": {
     "@google/genai": "^1.47.0",
