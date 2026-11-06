@@ -28,10 +28,14 @@ const rules: [RegExp, string, [string, string, string]][] = [
 ];
 
 export function topicMedia(slug: string, lang: Language): Media {
+  const pilot: Record<string, { file: string; labels: [string, string, string] }> = {
+    'asigurari-transport-logistica-cmr-cargo-moldova': { file: 'transportator-cmr-20261106.png', labels: ['Șofer verificând documentele lângă un camion cu semiremorcă', 'Водитель проверяет документы рядом с грузовиком и полуприцепом', 'Driver checking documents beside a truck and semi-trailer'] },
+    'asigurare-utilaje-industriale': { file: 'utilaje-industriale-20261106.png', labels: ['Utilaje și echipamente într-un atelier de prelucrare a metalelor', 'Станки и оборудование в металлообрабатывающем цехе', 'Machinery and equipment in a metalworking workshop'] },
+  };
+  if (pilot[slug]) return { image: `/images/articles/moldova/${pilot[slug].file}`, imageAlt: pilot[slug].labels[lang === 'ro' ? 0 : lang === 'ru' ? 1 : 2] };
   const approved = articleMedia[slug];
   if (approved) return { image: approved.image, imageAlt: lang === 'ro' ? approved.imageAlt :
-    lang === 'ru' ? 'Тематическая иллюстрация, созданная с помощью ИИ. Не изображает реального клиента.' :
-    'Topic illustration generated with AI. Not a photograph of an actual client.' };
+    lang === 'ru' ? 'Иллюстрация к теме статьи' : 'Illustration of the article topic' };
   const rule = rules.find(([pattern]) => pattern.test(slug));
   const labels = rule?.[2] || ['Analiza documentelor de asigurare', 'Проверка страховых документов', 'Reviewing insurance documents'];
   return { image: rule?.[1] || '/legal-asist.webp', imageAlt: labels[lang === 'ro' ? 0 : lang === 'ru' ? 1 : 2] };

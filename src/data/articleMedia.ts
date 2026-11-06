@@ -2,8 +2,8 @@
 // Owner confirmed specialist review and Moldova intermediation capability on 2026-10-21.
 const media = (file: string, alt: string, topic: string, keywords: string, context: string) => ({
   image: `/images/articles/moldova/${file}.webp`,
-  imageAlt: `${alt}. Ilustrație generată cu AI.`,
-  imageCaption: `Ilustrație generată cu AI, inspirată de ${context}. Nu prezintă un client sau un obiectiv asigurat real.`,
+  imageAlt: alt,
+  imageCaption: '',
   topic, keywords,
 });
 
@@ -19,3 +19,8 @@ export const articleMedia: Record<string, ReturnType<typeof media>> = {
   'asigurare-remediere-mediu': media('asigurare-riscuri-mediu-remediere-moldova', 'Tehnician prelevând o probă de sol lângă un amplasament industrial', 'Riscuri de mediu', 'riscuri de mediu Moldova, asigurare poluare, evaluare remediere teren industrial', 'zonele industriale din Bălți'),
   'asigurare-raspundere-civila-angajator': media('asigurare-raspundere-angajator-moldova', 'Angajați verificând o fișă de siguranță într-un atelier de mobilier', 'Angajatori', 'răspunderea angajatorului Moldova, asigurare angajatori, diferența față de accidente angajați', 'atelierele de producție din Bălți'),
 };
+
+// Owner-approved photographic pilot, original logo, checked on 2026-11-06.
+// Internal provenance stays here; no added design/AI credits in the public article.
+articleMedia['asigurare-buna-executie'].image = '/images/articles/moldova/garantie-buna-executie-20261106.png';
+articleMedia['asigurare-buna-executie'].imageAlt = 'Doi specialiști verifică execuția unei clădiri pe șantier';
