@@ -6,10 +6,11 @@ import { SchemaMarkup } from '../components/SchemaMarkup';
 import { breadcrumbSchema } from '../utils/schema';
 import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, User, Tag } from 'lucide-react';
-import { articles } from '../data/articles';
+import { articles, consolidatedLifeSlugs, withdrawnArticleSlugs } from '../data/articles';
 import { EditorialArticle } from './EditorialArticle';
 import { localizedPath } from '../utils/localizedRoutes';
 import { articleRevisions } from '../data/recoveredArticles';
+import './article-reading.css';
 
 interface ArticlePageProps {
   lang: Language;
@@ -34,6 +35,8 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
   }, [slug]);
 
   if (!article) {
+    if (slug && consolidatedLifeSlugs.has(slug)) return <Navigate to={localizedPath('/news/asigurare-viata-moldova', lang)} replace />;
+    if (slug && withdrawnArticleSlugs.has(slug)) return <div className="min-h-screen pt-32 px-6"><SEO title="ING Broker" description="" lang={lang} noIndex includeLanguageAlternates={false} /><p>{lang === 'ro' ? 'Acest articol a fost retras.' : lang === 'ru' ? 'Эта статья снята с публикации.' : 'This article has been withdrawn.'}</p><a href={localizedPath('/news', lang)}>{lang === 'ro' ? 'Vezi articolele disponibile' : lang === 'ru' ? 'Все статьи' : 'Browse articles'}</a></div>;
     return <Navigate to="/news" replace />;
   }
 
@@ -157,10 +160,23 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
       </section>
 
       {/* Content Section */}
-      <section className="py-24 px-6">
+      <section className="py-12 md:py-24 px-6">
         <div className="max-w-3xl mx-auto">
+          {article.image.endsWith('-20261106.png') && (
+            <figure className="mb-10">
+              <img
+                src={article.image}
+                alt={article.imageAlt || article.title}
+                width={1153}
+                height={769}
+                loading="lazy"
+                decoding="async"
+                className="block w-full h-auto rounded-xl"
+              />
+            </figure>
+          )}
           <div 
-            className="prose prose-lg prose-gray max-w-none prose-headings:font-bold prose-headings:text-secondary prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl prose-img:shadow-lg"
+            className="article-reading prose prose-lg prose-gray max-w-none prose-headings:font-bold prose-headings:text-secondary prose-headings:tracking-tight prose-a:text-primary prose-img:rounded-xl"
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
           

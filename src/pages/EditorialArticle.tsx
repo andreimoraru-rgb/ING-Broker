@@ -26,7 +26,7 @@ export const EditorialArticle = ({ article }: { article: Article }) => {
   const schema = {
     '@context': 'https://schema.org', '@type': 'Article', headline: article.title,
     description: article.excerpt, mainEntityOfPage: url, url, inLanguage: 'ro-MD',
-    image: { '@type': 'ImageObject', url: image, caption: article.imageCaption, width: 1536, height: 1024 },
+    image: { '@type': 'ImageObject', url: image, caption: article.imageCaption || undefined },
     author: { '@type': 'Organization', name: article.author, url: origin },
     publisher: { '@type': 'Organization', name: 'Insurance ING Broker SRL', logo: { '@type': 'ImageObject', url: `${origin}/Logo%20ING%20Broker.png` } },
     datePublished: new Date(article.date).toISOString().slice(0, 10), dateModified: article.updatedAt,
@@ -48,7 +48,7 @@ export const EditorialArticle = ({ article }: { article: Article }) => {
         </div>
         <figure className="editorial-figure">
           <img src={article.image} alt={article.imageAlt} width="1536" height="1024" fetchPriority="high" decoding="async" />
-          <figcaption>{article.imageCaption}</figcaption>
+          {article.imageCaption && <figcaption>{article.imageCaption}</figcaption>}
         </figure>
       </header>
       <div className="editorial-reading-layout">
