@@ -120,12 +120,6 @@ export const translations = {
           desc: 'Descoperă factorii care influențează costul poliței tale RCA și cum poți obține cel mai bun preț.',
           link: '/news/cum-se-determin%C4%83-pre%C8%9Bul-unei-asigur%C4%83ri-rca-ghid-pentru-un-pre%C8%9B-rca-accesibil',
           image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800'
-        },
-        {
-          title: 'Carte Verde Moldova 2026 - Prețuri, zone, digital vs tipărită',
-          desc: 'Tot ce trebuie să știi despre Cartea Verde în 2026: noutăți legislative, prețuri și formatul digital.',
-          link: '/news/carte-verde-moldova-2026-pre%C8%9Buri-zone-digital-vs-tip%C4%83rit%C4%83-tot-ce-trebuie-s%C4%83-%C8%99tii',
-          image: 'https://images.unsplash.com/photo-1503152394-c571994fd383?auto=format&fit=crop&q=80&w=800'
         }
       ]
     },
@@ -622,12 +616,6 @@ export const translations = {
           desc: 'Узнайте факторы, влияющие на стоимость вашего полиса ОСАГО и как получить лучшую цену.',
           link: '/news/cum-se-determin%C4%83-pre%C8%9Bul-unei-asigur%C4%83ri-rca-ghid-pentru-un-pre%C8%9B-rca-accesibil',
           image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800'
-        },
-        {
-          title: 'Зеленая карта Молдова 2026 - Цены, зоны, цифровая против печатной',
-          desc: 'Все, что вам нужно знать о Зеленой карте в 2026 году: законодательные новости, цены и цифровой формат.',
-          link: '/news/carte-verde-moldova-2026-pre%C8%9Buri-zone-digital-vs-tip%C4%83rit%C4%83-tot-ce-trebuie-s%C4%83-%C8%99tii',
-          image: 'https://images.unsplash.com/photo-1503152394-c571994fd383?auto=format&fit=crop&q=80&w=800'
         }
       ]
     },
@@ -1021,12 +1009,6 @@ export const translations = {
           desc: 'Discover the factors that influence the cost of your RCA policy and how you can get the best price.',
           link: '/news/cum-se-determin%C4%83-pre%C8%9Bul-unei-asigur%C4%83ri-rca-ghid-pentru-un-pre%C8%9B-rca-accesibil',
           image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800'
-        },
-        {
-          title: 'Green Card Moldova 2026 - Prices, zones, digital vs printed',
-          desc: 'Everything you need to know about the Green Card in 2026: legislative news, prices, and the digital format.',
-          link: '/news/carte-verde-moldova-2026-pre%C8%9Buri-zone-digital-vs-tip%C4%83rit%C4%83-tot-ce-trebuie-s%C4%83-%C8%99tii',
-          image: 'https://images.unsplash.com/photo-1503152394-c571994fd383?auto=format&fit=crop&q=80&w=800'
         }
       ]
     },
