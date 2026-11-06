@@ -1,5 +1,5 @@
-import { articles } from '../src/data/articles';
-import { splitLocale } from '../src/utils/localizedRoutes';
+import { articles, consolidatedLifeSlugs, withdrawnArticleSlugs } from '../src/data/articles';
+import { splitLocale, localizedPath } from '../src/utils/localizedRoutes';
 
 interface Env {
   ASSETS: {
@@ -58,6 +58,15 @@ export async function onRequest(context: PagesContext): Promise<Response> {
   let articleSlug: string;
   try { articleSlug = decodeURIComponent(routePath.replace(/\/$/, '').slice('/news/'.length)); }
   catch { return new Response('Not found', { status: 404 }); }
+  if (routePath.startsWith('/news/') && consolidatedLifeSlugs.has(articleSlug)) {
+    url.pathname = localizedPath('/news/asigurare-viata-moldova', lang);
+    return Response.redirect(url.toString(), 301);
+  }
+  if (routePath.startsWith('/news/') && withdrawnArticleSlugs.has(articleSlug)) {
+    return new Response(lang === 'ro' ? 'Acest articol a fost retras.' : lang === 'ru' ? 'Эта статья снята с публикации.' : 'This article has been withdrawn.', {
+      status: 410, headers: { 'Content-Type': 'text/plain; charset=utf-8', 'X-Robots-Tag': 'noindex' },
+    });
+  }
   if (routePath.startsWith('/news/') && articles[lang].some(article => article.slug === articleSlug)) {
     if (url.pathname.endsWith('/')) {
       url.pathname = url.pathname.slice(0, -1);
