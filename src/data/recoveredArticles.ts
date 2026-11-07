@@ -1,7 +1,11 @@
 /** Original editorial revisions. See docs/content-recovery-2026-10-15.md for mandatory approval gates. */
+import { editorialBatch20261107 } from './editorialBatch20261107';
+
 export interface ArticleRevision {
   title: string;
   updatedAt?: string;
+  sourcesCheckedAt?: string;
+  preserveLegacyLayout?: boolean;
   description: string;
   body: string;
   related: [string, string];
@@ -179,6 +183,8 @@ export const articleRevisions: Record<string, ArticleRevision> = {
   },
 };
 
+Object.assign(articleRevisions, editorialBatch20261107);
+
 export function renderArticleRevision(revision: ArticleRevision): string {
   const sources = revision.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a></li>`).join('');
   return `${revision.body}
@@ -187,5 +193,5 @@ export function renderArticleRevision(revision: ArticleRevision): string {
 <p>Citește și: <a href="/news/${revision.related[0]}">${revision.related[1]}</a>.</p>
 <h2>Surse și limitele informației</h2>
 <ul>${sources}</ul>
-<p>Surse consultate la ${revision.updatedAt === '2026-10-16' ? '16' : '15'} octombrie 2026. Listele de pregătire sunt recomandări editoriale, nu condiții ale unei polițe. Exemplele de produse aparțin furnizorilor citați; nu reprezintă o ofertă ING Broker. Pentru obligații legale sau o situație individuală este necesară verificarea de specialitate.</p>`;
+<p>Surse consultate la ${revision.sourcesCheckedAt || (revision.updatedAt === '2026-10-16' ? '16 octombrie 2026' : '15 octombrie 2026')}. Listele de pregătire sunt recomandări editoriale, nu condiții ale unei polițe. Exemplele de produse aparțin furnizorilor citați; nu reprezintă o ofertă ING Broker. Pentru obligații legale sau o situație individuală este necesară verificarea de specialitate.</p>`;
 }

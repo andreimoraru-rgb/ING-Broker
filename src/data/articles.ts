@@ -10,6 +10,7 @@ export interface Article {
   reviewStatus?: 'pending' | 'approved';
   date: string;
   updatedAt?: string;
+  preserveLegacyLayout?: boolean;
   author: string;
   tags: string[];
   seo: {
@@ -1620,7 +1621,8 @@ const revisedArticles: Record<string, Article[]> = {
       title: revision.title,
       excerpt: revision.description,
       content: renderArticleRevision(revision),
-      updatedAt: '2026-10-25',
+      updatedAt: revision.sourcesCheckedAt ? revision.updatedAt : '2026-10-25',
+      preserveLegacyLayout: revision.preserveLegacyLayout,
       author: 'Echipa editorială ING Broker',
       image: articleMedia[article.slug].image,
       imageAlt: articleMedia[article.slug].imageAlt,

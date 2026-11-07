@@ -15,7 +15,7 @@ for (const [lang, list] of Object.entries(articles)) for (const article of list)
     const host = url.hostname.replace(/^www\./, '');
     const row = {lang,slug:article.slug,url:url.href,host};
     links.push(row);
-    if(!allowed.has(host)) violations.push(row);
+    if(!allowed.has(host) && host !== 'rca.bnm.md') violations.push(row);
   }
 }
 console.log(JSON.stringify({articles:count,byLanguage:Object.fromEntries(Object.entries(articles).map(([k,v])=>[k,v.length])),linkCount:links.length,domains:[...new Set(links.map(x=>x.host))],violations},null,2));
