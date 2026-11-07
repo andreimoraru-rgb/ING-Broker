@@ -8,6 +8,8 @@ const media = (file: string, alt: string, topic: string, keywords: string, conte
 });
 
 export const articleMedia: Record<string, ReturnType<typeof media>> = {
+  'asigurari-corporative-companii-moldova-2026': media('corporate-riscuri-moldova-20261107', 'Doi responsabili ai unei companii verifică inventarul lângă un depozit', 'Companii', 'asigurări companii Moldova, asigurări corporative, asigurare bunuri firmă, răspundere civilă companie', 'activitatea întreprinderilor din Moldova'),
+  'asigurari-transport-logistica-cmr-cargo-moldova': media('transportator-cmr-20261107', 'Responsabil de transport verificând documente lângă un camion la depozit', 'Transport și logistică', 'asigurare CMR Moldova, asigurare CARGO, transportatori, asigurare depozit, diferența CMR CARGO', 'transportul de mărfuri din Moldova'),
   'asigurare-viata-moldova': media('asigurare-viata-moldova-chisinau', 'Planificare personală pe termen lung într-un apartament din Chișinău', 'Viață', 'asigurare de viață Moldova, asigurare de viață și accidente, economisire prin asigurare', 'viața cotidiană din Chișinău'),
   'asigurare-pierdere-profit': media('asigurare-intrerupere-activitate-pierdere-profit-moldova', 'Verificarea unei linii de sortare a merelor într-o unitate de producție', 'Continuitatea afacerii', 'asigurare întreruperea activității Moldova, pierdere de profit, continuitatea producției', 'activitățile de producție din raionul Orhei'),
   'asigurare-raspundere-directori': media('asigurare-raspundere-directori-do-moldova', 'Directori discutând documentele companiei într-un birou', 'Conducerea companiei', 'asigurare D&O Moldova, răspunderea directorilor, asigurare administratori', 'mediul de afaceri din Chișinău'),
