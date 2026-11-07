@@ -22,11 +22,17 @@ export const articleMedia: Record<string, ReturnType<typeof media>> = {
 
 // Owner-approved photographic pilot, original logo, checked on 2026-11-06.
 // Internal provenance stays here; no added design/AI credits in the public article.
-articleMedia['asigurare-buna-executie'].image = '/images/articles/moldova/garantie-buna-executie-20261106.png';
+articleMedia['asigurare-buna-executie'].image = '/images/articles/moldova/garantie-buna-executie-20261106.webp';
 articleMedia['asigurare-buna-executie'].imageAlt = 'Doi specialiști verifică execuția unei clădiri pe șantier';
+// Owner contrast rule: white Re on the darker floor, original logo proportions.
+articleMedia['asigurare-pierdere-profit'].image = '/images/articles/moldova/pierdere-profit-re-alb-20261107.webp';
+articleMedia['asigurare-drumuri-autostrazi'].image = '/images/articles/moldova/drumuri-re-alb-20261107.webp';
+articleMedia['asigurare-remediere-mediu'].image = '/images/articles/moldova/mediu-re-alb-20261107.webp';
+articleMedia['asigurare-serre-solarii'].image = '/images/articles/moldova/sere-re-alb-20261107.webp';
+articleMedia['asigurare-sisteme-irigatii'].image = '/images/articles/moldova/irigatii-re-alb-20261107.webp';
 
 articleMedia['asigurare-flote-auto-corporate-moldova'] = {
-  image: '/images/articles/moldova/flota-auto-companie-20261107.png',
+  image: '/images/articles/moldova/flota-auto-companie-20261107.webp',
   imageAlt: 'Trei furgonete, două autoturisme și un camion parcate la un centru de distribuție',
   imageCaption: '', topic: 'Flote auto',
   keywords: 'asigurare flotă auto Moldova, CASCO flotă, RCA companie, Carte Verde vehicule, CMR transportator, CARGO mărfuri, acte ofertă flotă',

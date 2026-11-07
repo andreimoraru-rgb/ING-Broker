@@ -1,5 +1,6 @@
 /** Original editorial revisions. See docs/content-recovery-2026-10-15.md for mandatory approval gates. */
 import { editorialBatch20261107 } from './editorialBatch20261107';
+import { editorialDepth20261107 } from './editorialDepth20261107';
 
 export interface ArticleRevision {
   title: string;
@@ -184,6 +185,16 @@ export const articleRevisions: Record<string, ArticleRevision> = {
 };
 
 Object.assign(articleRevisions, editorialBatch20261107);
+for (const [slug, depth] of Object.entries(editorialDepth20261107)) {
+  const revision = articleRevisions[slug];
+  if (!revision) throw new Error(`Missing reviewed article: ${slug}`);
+  revision.body = revision.body.replace(/<h2>Întrebări frecvente/, `${depth}<h2>Întrebări frecvente`);
+  revision.updatedAt = '2026-11-07';
+  revision.sourcesCheckedAt = '7 noiembrie 2026';
+  if (['asigurare-sisteme-irigatii', 'asigurare-serre-solarii'].includes(slug)) {
+    revision.sources.push(['MOLDASIG: echipamente și riscuri agricole', 'https://moldasig.md/agricultural-risk-insurance']);
+  }
+}
 
 export function renderArticleRevision(revision: ArticleRevision): string {
   const sources = revision.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a></li>`).join('');
