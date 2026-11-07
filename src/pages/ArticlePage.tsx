@@ -180,6 +180,28 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
             dangerouslySetInnerHTML={{ __html: article.content }}
           />
           
+          {article.slug === 'asigurare-drone-comerciale' && (lang === 'ro' || lang === 'ru') && (
+            <section className="mt-12 rounded-2xl border border-gray-200 bg-gray-50 p-6 md:p-8" aria-labelledby="uas-drone-heading">
+              <h2 id="uas-drone-heading" className="mb-4 text-2xl font-bold text-secondary">
+                {lang === 'ru' ? 'Страхование дрона онлайн' : 'Asigurarea dronei online'}
+              </h2>
+              <p className="mb-6 text-lg leading-relaxed text-gray-700">
+                {lang === 'ru' ? (
+                  <>Полис для дрона можно оформить онлайн на <strong><a className="underline underline-offset-4" href="https://uas.md/ru/asigurare">UAS.md</a></strong>. Заполните данные в форме и ознакомьтесь с доступными предложениями. Прежде чем продолжить, проверьте стоимость, срок и условия выбранного предложения.</>
+                ) : (
+                  <>Poți încheia polița pentru dronă online pe <strong><a className="underline underline-offset-4" href="https://uas.md/asigurare">UAS.md</a></strong>. Completează datele cerute în formular și consultă ofertele disponibile. Înainte de a continua, verifică prețul, perioada și condițiile ofertei alese.</>
+                )}
+              </p>
+              <a
+                className="uas-drone-cta inline-flex rounded-xl bg-[#2e7d34] px-6 py-3 text-base font-bold text-white no-underline transition-colors hover:bg-[#e31e24] hover:text-white focus-visible:bg-[#e31e24] focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e31e24]"
+                href={lang === 'ru' ? 'https://uas.md/ru/asigurare' : 'https://uas.md/asigurare'}
+                lang="ro"
+              >
+                Încheie polița pe UAS.md
+              </a>
+            </section>
+          )}
+
           <div className="mt-16 pt-8 border-t border-gray-100">
             <div className="flex flex-wrap items-center gap-3">
               <Tag size={18} className="text-gray-400" />
