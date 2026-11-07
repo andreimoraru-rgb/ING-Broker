@@ -33,7 +33,7 @@ for (const article of articles.ro) {
   for (const text of [article.title, article.excerpt, article.content, article.seo.title, article.seo.description]) assert.doesNotMatch(text, /ghid complet/i, article.slug);
   assert.doesNotMatch(article.content, /De ce ING Broker este lider în Moldova\?/);
 }
-const wordCount = (html: string) => (html.replace(/<[^>]+>/g, ' ').replace(/&[^;]+;/g, ' ').match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu) || []).length;
+const wordCount = (html: string) => (html.replace(/<[^>]+>/g, ' ').replace(/&(?:#[0-9]+|#x[0-9a-f]+|[a-z][a-z0-9]*);/gi, ' ').match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu) || []).length;
 const imageUsage = new Map<string, number>();
 for (const article of articles.ro) imageUsage.set(article.image, (imageUsage.get(article.image) || 0) + 1);
 const rows = articles.ro.map(article => ({
