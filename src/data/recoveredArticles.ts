@@ -1,6 +1,7 @@
 /** Original editorial revisions. See docs/content-recovery-2026-10-15.md for mandatory approval gates. */
 import { editorialBatch20261107 } from './editorialBatch20261107';
 import { editorialDepth20261107 } from './editorialDepth20261107';
+import { editorialSectors20261107 } from './editorialSectors20261107';
 
 export interface ArticleRevision {
   title: string;
@@ -185,6 +186,7 @@ export const articleRevisions: Record<string, ArticleRevision> = {
 };
 
 Object.assign(articleRevisions, editorialBatch20261107);
+Object.assign(articleRevisions, editorialSectors20261107);
 for (const [slug, depth] of Object.entries(editorialDepth20261107)) {
   const revision = articleRevisions[slug];
   if (!revision) throw new Error(`Missing reviewed article: ${slug}`);

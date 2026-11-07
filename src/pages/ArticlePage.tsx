@@ -162,7 +162,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
       {/* Content Section */}
       <section className="py-12 md:py-24 px-6">
         <div className="max-w-3xl mx-auto">
-          {(/-2026110[67]\.png$/.test(article.image)) && (
+          {(/-2026110[67]\.(?:png|webp)$/.test(article.image)) && (
             <figure className="mb-10">
               <img
                 src={article.image}
