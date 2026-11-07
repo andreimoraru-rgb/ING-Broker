@@ -24,3 +24,10 @@ export const articleMedia: Record<string, ReturnType<typeof media>> = {
 // Internal provenance stays here; no added design/AI credits in the public article.
 articleMedia['asigurare-buna-executie'].image = '/images/articles/moldova/garantie-buna-executie-20261106.png';
 articleMedia['asigurare-buna-executie'].imageAlt = 'Doi specialiști verifică execuția unei clădiri pe șantier';
+
+articleMedia['asigurare-flote-auto-corporate-moldova'] = {
+  image: '/images/articles/moldova/flota-auto-companie-20261107.png',
+  imageAlt: 'Trei furgonete, două autoturisme și un camion parcate la un centru de distribuție',
+  imageCaption: '', topic: 'Flote auto',
+  keywords: 'asigurare flotă auto Moldova, CASCO flotă, RCA companie, Carte Verde vehicule, CMR transportator, CARGO mărfuri, acte ofertă flotă',
+};
