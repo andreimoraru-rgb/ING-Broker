@@ -24,6 +24,12 @@ export const articleMedia: Record<string, ReturnType<typeof media>> = {
 // Internal provenance stays here; no added design/AI credits in the public article.
 articleMedia['asigurare-buna-executie'].image = '/images/articles/moldova/garantie-buna-executie-20261106.png';
 articleMedia['asigurare-buna-executie'].imageAlt = 'Doi specialiști verifică execuția unei clădiri pe șantier';
+// Owner contrast rule: white Re on the darker floor, original logo proportions.
+articleMedia['asigurare-pierdere-profit'].image = '/images/articles/moldova/pierdere-profit-re-alb-20261107.png';
+articleMedia['asigurare-drumuri-autostrazi'].image = '/images/articles/moldova/drumuri-re-alb-20261107.png';
+articleMedia['asigurare-remediere-mediu'].image = '/images/articles/moldova/mediu-re-alb-20261107.png';
+articleMedia['asigurare-serre-solarii'].image = '/images/articles/moldova/sere-re-alb-20261107.png';
+articleMedia['asigurare-sisteme-irigatii'].image = '/images/articles/moldova/irigatii-re-alb-20261107.png';
 
 articleMedia['asigurare-flote-auto-corporate-moldova'] = {
   image: '/images/articles/moldova/flota-auto-companie-20261107.png',
