@@ -26,7 +26,10 @@ const rows = Object.keys(editorialDepth20261107).map(slug => {
 });
 for (const file of ['src/pages/ArticlePage.tsx', 'src/pages/Home.tsx', 'src/index.css']) {
   if (!existsSync(file)) continue;
-  const baseline = execFileSync('git', ['show', `284852d:${file}`], { encoding: 'utf8' }).replace(/\r\n/g, '\n');
+  let baseline = execFileSync('git', ['show', `284852d:${file}`], { encoding: 'utf8' }).replace(/\r\n/g, '\n');
+  // Preserve the existing inline figure when the same asset is encoded as WebP.
+  // No markup, hero or classes are allowed to change.
+  if (file === 'src/pages/ArticlePage.tsx') baseline = baseline.replace('/-2026110[67]\\.png$/', '/-2026110[67]\\.(?:png|webp)$/');
   assert.equal(readFileSync(file, 'utf8').replace(/\r\n/g, '\n'), baseline, `${file}: design changed`);
 }
 console.log(JSON.stringify({ passed: true, individualDrafts: rows.length, designUnchanged: true, rows }, null, 2));
