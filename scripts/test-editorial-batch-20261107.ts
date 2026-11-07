@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
+import { readFileSync, existsSync } from 'node:fs';
+import { articles } from '../src/data/articles';
+import { editorialBatch20261107 } from '../src/data/editorialBatch20261107';
+
+const wordCount = (html: string) => (html.replace(/<[^>]+>/g, ' ').match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu) || []).length;
+const usage = new Map<string, number>();
+for (const a of articles.ro) usage.set(a.image, (usage.get(a.image) || 0) + 1);
+const results = Object.keys(editorialBatch20261107).map(slug => {
+  const a = articles.ro.find(a => a.slug === slug)!;
+  assert.ok(a, slug);
+  const words = wordCount(a.content);
+  assert.ok(words >= 1500, `${slug}: ${words} words`);
+  assert.equal(a.updatedAt, '2026-11-07');
+  assert.equal(usage.get(a.image), 1, `${slug}: reused image`);
+  assert.ok(existsSync(`public${a.image}`));
+  assert.doesNotMatch(a.content, /[\u2013\u2014]|ghid complet|cel mai bun preț|garantăm|200.000 EUR|703,20|CNPF.*autoriza/i);
+  assert.doesNotMatch(a.content, /<h1\b|<script\b|onerror=|javascript:/i);
+  for (const m of a.content.matchAll(/href="\/news\/([^"]+)"/g)) assert.ok(articles.ro.some(x => x.slug === m[1]), `broken internal link ${m[1]}`);
+  assert.ok(a.content.includes('Întrebări frecvente'));
+  assert.equal(a.excerpt, a.seo.description);
+  assert.ok(a.seo.description.length >= 90 && a.seo.description.length <= 180);
+  return {slug, words, image:a.image, uniqueImage:true};
+});
+const baseline = execFileSync('git', ['show', '6769fc4:src/pages/ArticlePage.tsx'], {encoding:'utf8'});
+const current = readFileSync('src/pages/ArticlePage.tsx', 'utf8');
+const hero = (s:string) => s.slice(s.indexOf('{/* Hero Section */}'), s.indexOf('{/* Content Section */}')).replace(/\r\n/g,'\n');
+assert.equal(hero(current), hero(baseline), 'Hero markup and classes must remain unchanged');
+const fleet = articles.ro.find(a => a.slug === 'asigurare-flote-auto-corporate-moldova')!;
+assert.equal(fleet.preserveLegacyLayout, true);
+assert.match(fleet.content, /minimum 5 vehicule/);
+assert.match(fleet.content, /până la 25%/);
+assert.doesNotMatch(fleet.content, /de la 3 vehicule|15-20%|emitere în 24h|CMR este obligatorie/);
+console.log(JSON.stringify({passed:true,results,catalogue:articles.ro.length,below1500:articles.ro.filter(a=>wordCount(a.content)<1500).length,sharingImages:articles.ro.filter(a=>usage.get(a.image)!>1).length,heroUnchanged:true},null,2));
