@@ -40,7 +40,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
     return <Navigate to="/news" replace />;
   }
 
-  if (article.updatedAt && lang === 'ro') return <EditorialArticle article={article} />;
+  if (article.updatedAt && lang === 'ro' && !article.preserveLegacyLayout) return <EditorialArticle article={article} />;
 
   const articleOrigin = 'https://www.ingbroker.md';
   const articleUrl = `${articleOrigin}${localizedPath(`/news/${article.slug}`, lang)}`;
@@ -162,7 +162,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
       {/* Content Section */}
       <section className="py-12 md:py-24 px-6">
         <div className="max-w-3xl mx-auto">
-          {article.image.endsWith('-20261106.png') && (
+          {(/-2026110[67]\.png$/.test(article.image)) && (
             <figure className="mb-10">
               <img
                 src={article.image}
