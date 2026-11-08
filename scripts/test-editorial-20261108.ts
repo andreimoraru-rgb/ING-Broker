@@ -4,9 +4,11 @@ import {execFileSync} from 'node:child_process';
 import {articles} from '../src/data/articles';
 import {editorialLogistics20261108} from '../src/data/editorialLogistics20261108';
 import {editorialIndustry20261108} from '../src/data/editorialIndustry20261108';
+import {editorialLiability20261108} from '../src/data/editorialLiability20261108';
+import {editorialProjects20261108} from '../src/data/editorialProjects20261108';
 import {withoutDuplicateBodyPhoto} from './article-design-guard';
 const countWords=(s:string)=>(s.replace(/<[^>]+>/g,' ').match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu)||[]).length;
-const rows=Object.keys({...editorialLogistics20261108,...editorialIndustry20261108}).map(slug=>{
+const rows=Object.keys({...editorialLogistics20261108,...editorialIndustry20261108,...editorialLiability20261108,...editorialProjects20261108}).map(slug=>{
   const a=articles.ro.find(x=>x.slug===slug)!;assert.ok(a,slug);
   assert.ok(countWords(a.content)>=1500,`${slug}: ${countWords(a.content)}`);
   assert.equal(a.updatedAt,'2026-11-08');assert.equal(a.preserveLegacyLayout,true);
