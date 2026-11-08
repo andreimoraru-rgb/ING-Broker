@@ -4,7 +4,7 @@ import { articles } from '../src/data/articles';
 import { onRequest } from '../functions/[[path]]';
 
 const batch = articles.ro.filter(a => a.reviewStatus === 'approved');
-assert.equal(batch.length, 25);
+assert.equal(batch.length, 30);
 const results = [];
 for (const a of batch) {
   const html = readFileSync(`dist/_editorial/${a.slug}.html`, 'utf8');
