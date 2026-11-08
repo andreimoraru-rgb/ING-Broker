@@ -2,6 +2,10 @@
 import { editorialBatch20261107 } from './editorialBatch20261107';
 import { editorialDepth20261107 } from './editorialDepth20261107';
 import { editorialSectors20261107 } from './editorialSectors20261107';
+import { editorialLogistics20261108 } from './editorialLogistics20261108';
+import { editorialIndustry20261108 } from './editorialIndustry20261108';
+import { editorialLiability20261108 } from './editorialLiability20261108';
+import { editorialProjects20261108 } from './editorialProjects20261108';
 
 export interface ArticleRevision {
   title: string;
@@ -197,6 +201,8 @@ for (const [slug, depth] of Object.entries(editorialDepth20261107)) {
     revision.sources.push(['MOLDASIG: echipamente și riscuri agricole', 'https://moldasig.md/agricultural-risk-insurance']);
   }
 }
+
+Object.assign(articleRevisions, editorialLogistics20261108, editorialIndustry20261108, editorialLiability20261108, editorialProjects20261108);
 
 export function renderArticleRevision(revision: ArticleRevision): string {
   const sources = revision.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a></li>`).join('');

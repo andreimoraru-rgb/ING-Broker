@@ -3,6 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { articles } from '../src/data/articles';
 import { editorialDepth20261107 } from '../src/data/editorialDepth20261107';
+import { withoutDuplicateBodyPhoto } from './article-design-guard';
 
 const countWords = (html: string) => (html.replace(/<[^>]+>/g, ' ').replace(/&(?:#[0-9]+|#x[0-9a-f]+|[a-z][a-z0-9]*);/gi, ' ').match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu) || []).length;
 const rows = Object.keys(editorialDepth20261107).map(slug => {
@@ -27,9 +28,8 @@ const rows = Object.keys(editorialDepth20261107).map(slug => {
 for (const file of ['src/pages/ArticlePage.tsx', 'src/pages/Home.tsx', 'src/index.css']) {
   if (!existsSync(file)) continue;
   let baseline = execFileSync('git', ['show', `284852d:${file}`], { encoding: 'utf8' }).replace(/\r\n/g, '\n');
-  // Preserve the existing inline figure when the same asset is encoded as WebP.
-  // No markup, hero or classes are allowed to change.
-  if (file === 'src/pages/ArticlePage.tsx') baseline = baseline.replace('/-2026110[67]\\.png$/', '/-2026110[67]\\.(?:png|webp)$/');
+  // Owner explicitly requested that the hero photograph not repeat in the body.
+  if (file === 'src/pages/ArticlePage.tsx') baseline = withoutDuplicateBodyPhoto(baseline);
   assert.equal(readFileSync(file, 'utf8').replace(/\r\n/g, '\n'), baseline, `${file}: design changed`);
 }
 console.log(JSON.stringify({ passed: true, individualDrafts: rows.length, designUnchanged: true, rows }, null, 2));

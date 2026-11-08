@@ -2,12 +2,21 @@
 // Owner confirmed specialist review and Moldova intermediation capability on 2026-10-21.
 const media = (file: string, alt: string, topic: string, keywords: string, context: string) => ({
   image: `/images/articles/moldova/${file}.webp`,
+  heroImage: undefined as string | undefined,
   imageAlt: alt,
   imageCaption: '',
   topic, keywords,
 });
 
 export const articleMedia: Record<string, ReturnType<typeof media>> = {
+  'asigurare-raspundere-profesionala': media('raspundere-profesionala-20261108', 'Doi specialiști verifică documentele unei lucrări profesionale', 'Răspundere profesională', 'asigurare răspundere profesională Moldova, erori și omisiuni profesionale, limite răspundere consultant', 'serviciile profesionale din Moldova'),
+  'asigurare-raspundere-civila-generala': media('raspundere-generala-20261108', 'Responsabilul unui magazin și un tehnician verifică accesul clienților', 'Răspundere față de terți', 'asigurare răspundere civilă generală Moldova, prejudicii terți, răspundere companie, bunuri clienți', 'companiile din Moldova'),
+  'asigurare-constructii-montaj': media('constructii-montaj-20261108', 'Echipă cu căști de protecție verifică montajul unei instalații pe șantier', 'Construcții și montaj', 'asigurare construcții montaj Moldova, asigurare șantier, lucrări materiale utilaje, răspundere constructor', 'șantierele din Moldova'),
+  'asigurare-credit-comercial': media('credit-comercial-20261108', 'Responsabilii unei firme de comerț verifică documentele livrărilor și facturilor', 'Credit comercial', 'asigurare credit comercial Moldova, risc neplată facturi, creanțe comerciale, vânzare cu plata amânată', 'companiile comerciale din Moldova'),
+  'asigurare-cargo-transport-marfa': media('cargo-marfa-20261108', 'Paleți cu mărfuri ambalate și fixate la încărcarea într-un camion', 'Mărfuri în transport', 'asigurare CARGO Moldova, asigurare marfă transportată, diferența CARGO CMR, documente transport marfă', 'transportul de mărfuri din Moldova'),
+  'asigurare-depozite-logistice': media('depozit-logistic-20261108', 'Rafturi cu mărfuri pe paleți și culoar de circulație într-un depozit logistic', 'Depozite', 'asigurare depozit Moldova, stocuri și bunuri ale clienților, riscuri depozit logistic', 'depozitele din Moldova'),
+  'asigurare-utilaje-industriale': media('utilaje-industriale-20261108', 'Utilaj de prelucrare a metalului și tehnician într-un atelier industrial', 'Utilaje industriale', 'asigurare utilaje industriale Moldova, avarii accidentale utilaje, inventar echipamente producție', 'producția din Moldova'),
+  'asigurare-echipamente-it': media('echipamente-it-20261108', 'Laptopuri și echipamente de rețea verificate pe masa unui tehnician', 'Echipamente IT', 'asigurare echipamente IT Moldova, asigurare laptop companie, servere și echipamente electronice', 'echipamentele companiilor din Moldova'),
   'asigurari-corporative-companii-moldova-2026': media('corporate-riscuri-moldova-20261107', 'Doi responsabili ai unei companii verifică inventarul lângă un depozit', 'Companii', 'asigurări companii Moldova, asigurări corporative, asigurare bunuri firmă, răspundere civilă companie', 'activitatea întreprinderilor din Moldova'),
   'asigurari-transport-logistica-cmr-cargo-moldova': media('transportator-cmr-20261107', 'Responsabil de transport verificând documente lângă un camion la depozit', 'Transport și logistică', 'asigurare CMR Moldova, asigurare CARGO, transportatori, asigurare depozit, diferența CMR CARGO', 'transportul de mărfuri din Moldova'),
   'asigurare-viata-moldova': media('asigurare-viata-moldova-chisinau', 'Planificare personală pe termen lung într-un apartament din Chișinău', 'Viață', 'asigurare de viață Moldova, asigurare de viață și accidente, economisire prin asigurare', 'viața cotidiană din Chișinău'),
@@ -34,8 +43,14 @@ articleMedia['asigurare-serre-solarii'].image = '/images/articles/moldova/sere-r
 articleMedia['asigurare-sisteme-irigatii'].image = '/images/articles/moldova/irigatii-re-alb-20261107.webp';
 
 articleMedia['asigurare-flote-auto-corporate-moldova'] = {
+  heroImage: undefined,
   image: '/images/articles/moldova/flota-auto-companie-20261107.webp',
   imageAlt: 'Trei furgonete, două autoturisme și un camion parcate la un centru de distribuție',
   imageCaption: '', topic: 'Flote auto',
   keywords: 'asigurare flotă auto Moldova, CASCO flotă, RCA companie, Carte Verde vehicule, CMR transportator, CARGO mărfuri, acte ofertă flotă',
 };
+
+// Same photograph, original logo positioned below the title in the dark hero.
+for (const slug of ['asigurare-cargo-transport-marfa','asigurare-depozite-logistice','asigurare-utilaje-industriale','asigurare-echipamente-it','asigurare-raspundere-profesionala','asigurare-raspundere-civila-generala','asigurare-constructii-montaj','asigurare-credit-comercial']) {
+  articleMedia[slug].heroImage = articleMedia[slug].image.replace('-20261108.webp','-hero-20261108.webp');
+}

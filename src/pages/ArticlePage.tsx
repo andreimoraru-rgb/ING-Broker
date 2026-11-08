@@ -44,7 +44,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
 
   const articleOrigin = 'https://www.ingbroker.md';
   const articleUrl = `${articleOrigin}${localizedPath(`/news/${article.slug}`, lang)}`;
-  const articleImage = new URL(article.image, articleOrigin).href;
+  const articleImage = new URL(article.heroImage || article.image, articleOrigin).href;
   // Existing source dates use Romanian/Russian month abbreviations.
   const sourceDate = article.date.replace('Апр', 'Apr').replace('Iun', 'Jun').replace('Mai', 'May');
   const parsedDate = new Date(sourceDate);
@@ -127,7 +127,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
       <section className="relative h-[60vh] min-h-[500px] flex items-end pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={article.image} 
+            src={article.heroImage || article.image} 
             alt={article.imageAlt || article.title}
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -162,19 +162,6 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
       {/* Content Section */}
       <section className="py-12 md:py-24 px-6">
         <div className="max-w-3xl mx-auto">
-          {(/-2026110[67]\.(?:png|webp)$/.test(article.image)) && (
-            <figure className="mb-10">
-              <img
-                src={article.image}
-                alt={article.imageAlt || article.title}
-                width={1153}
-                height={769}
-                loading="lazy"
-                decoding="async"
-                className="block w-full h-auto rounded-xl"
-              />
-            </figure>
-          )}
           <div 
             className="article-reading prose prose-lg prose-gray max-w-none prose-headings:font-bold prose-headings:text-secondary prose-headings:tracking-tight prose-a:text-primary prose-img:rounded-xl"
             dangerouslySetInnerHTML={{ __html: article.content }}
