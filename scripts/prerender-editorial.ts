@@ -27,7 +27,8 @@ try {
       .replace('<div id="root"></div>', `<div id="root">${rendered}</div>`);
     assert.equal((html.match(/<h1\b/g) || []).length, 1, article.slug);
     assert.equal((html.match(/rel="canonical"/g) || []).length, 1, article.slug);
-    assert.ok(html.includes(article.image.replace(/&/g, '&amp;')) || html.includes(article.image), `${lang}/${article.slug}: expected image absent`);
+    const displayedImage = article.heroImage || article.image;
+    assert.ok(html.includes(displayedImage.replace(/&/g, '&amp;')) || html.includes(displayedImage), `${lang}/${article.slug}: expected image absent`);
     assert.ok(!html.includes('noindex'), article.slug);
     const folder = `dist/_editorial${lang === 'ro' ? '' : '/' + lang}`;
     mkdirSync(folder, { recursive: true });
