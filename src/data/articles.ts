@@ -5,6 +5,7 @@ export interface Article {
   excerpt: string;
   content: string;
   image: string;
+  heroImage?: string;
   imageAlt?: string;
   imageCaption?: string;
   reviewStatus?: 'pending' | 'approved';
@@ -1625,6 +1626,7 @@ const revisedArticles: Record<string, Article[]> = {
       preserveLegacyLayout: revision.preserveLegacyLayout,
       author: 'Echipa editorială ING Broker',
       image: articleMedia[article.slug].image,
+      heroImage: articleMedia[article.slug].heroImage,
       imageAlt: articleMedia[article.slug].imageAlt,
       imageCaption: articleMedia[article.slug].imageCaption,
       reviewStatus: 'approved' as const,

@@ -2,6 +2,7 @@
 // Owner confirmed specialist review and Moldova intermediation capability on 2026-10-21.
 const media = (file: string, alt: string, topic: string, keywords: string, context: string) => ({
   image: `/images/articles/moldova/${file}.webp`,
+  heroImage: undefined as string | undefined,
   imageAlt: alt,
   imageCaption: '',
   topic, keywords,
@@ -38,8 +39,14 @@ articleMedia['asigurare-serre-solarii'].image = '/images/articles/moldova/sere-r
 articleMedia['asigurare-sisteme-irigatii'].image = '/images/articles/moldova/irigatii-re-alb-20261107.webp';
 
 articleMedia['asigurare-flote-auto-corporate-moldova'] = {
+  heroImage: undefined,
   image: '/images/articles/moldova/flota-auto-companie-20261107.webp',
   imageAlt: 'Trei furgonete, două autoturisme și un camion parcate la un centru de distribuție',
   imageCaption: '', topic: 'Flote auto',
   keywords: 'asigurare flotă auto Moldova, CASCO flotă, RCA companie, Carte Verde vehicule, CMR transportator, CARGO mărfuri, acte ofertă flotă',
 };
+
+// Same photograph, original logo positioned below the title in the dark hero.
+for (const slug of ['asigurare-cargo-transport-marfa','asigurare-depozite-logistice','asigurare-utilaje-industriale','asigurare-echipamente-it']) {
+  articleMedia[slug].heroImage = articleMedia[slug].image.replace('-20261108.webp','-hero-20261108.webp');
+}
