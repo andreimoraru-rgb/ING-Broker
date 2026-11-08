@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { articles } from '../src/data/articles';
 
 // Editorial destination links only. Image delivery/CDNs are not citations.
-const allowed = new Set(['ingbroker.md', 'easigurari.com', 'bnm.md', 'cnpf.md', 'legis.md', 'moldasig.md', 'moldcargo.md', 'grawe.md']);
+const allowed = new Set(['ingbroker.md', 'easigurari.com', 'bnm.md', 'cnpf.md', 'legis.md', 'moldasig.md', 'moldcargo.md', 'grawe.md', 'asc.gov.md']);
 const links: {lang:string;slug:string;url:string;host:string}[] = [];
 const violations: typeof links = [];
 let count = 0;
