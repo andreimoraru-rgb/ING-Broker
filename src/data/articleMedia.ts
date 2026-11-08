@@ -9,6 +9,10 @@ const media = (file: string, alt: string, topic: string, keywords: string, conte
 });
 
 export const articleMedia: Record<string, ReturnType<typeof media>> = {
+  'asigurare-raspundere-profesionala': media('raspundere-profesionala-20261108', 'Doi specialiști verifică documentele unei lucrări profesionale', 'Răspundere profesională', 'asigurare răspundere profesională Moldova, erori și omisiuni profesionale, limite răspundere consultant', 'serviciile profesionale din Moldova'),
+  'asigurare-raspundere-civila-generala': media('raspundere-generala-20261108', 'Responsabilul unui magazin și un tehnician verifică accesul clienților', 'Răspundere față de terți', 'asigurare răspundere civilă generală Moldova, prejudicii terți, răspundere companie, bunuri clienți', 'companiile din Moldova'),
+  'asigurare-constructii-montaj': media('constructii-montaj-20261108', 'Echipă cu căști de protecție verifică montajul unei instalații pe șantier', 'Construcții și montaj', 'asigurare construcții montaj Moldova, asigurare șantier, lucrări materiale utilaje, răspundere constructor', 'șantierele din Moldova'),
+  'asigurare-credit-comercial': media('credit-comercial-20261108', 'Responsabilii unei firme de comerț verifică documentele livrărilor și facturilor', 'Credit comercial', 'asigurare credit comercial Moldova, risc neplată facturi, creanțe comerciale, vânzare cu plata amânată', 'companiile comerciale din Moldova'),
   'asigurare-cargo-transport-marfa': media('cargo-marfa-20261108', 'Paleți cu mărfuri ambalate și fixate la încărcarea într-un camion', 'Mărfuri în transport', 'asigurare CARGO Moldova, asigurare marfă transportată, diferența CARGO CMR, documente transport marfă', 'transportul de mărfuri din Moldova'),
   'asigurare-depozite-logistice': media('depozit-logistic-20261108', 'Rafturi cu mărfuri pe paleți și culoar de circulație într-un depozit logistic', 'Depozite', 'asigurare depozit Moldova, stocuri și bunuri ale clienților, riscuri depozit logistic', 'depozitele din Moldova'),
   'asigurare-utilaje-industriale': media('utilaje-industriale-20261108', 'Utilaj de prelucrare a metalului și tehnician într-un atelier industrial', 'Utilaje industriale', 'asigurare utilaje industriale Moldova, avarii accidentale utilaje, inventar echipamente producție', 'producția din Moldova'),
@@ -47,6 +51,6 @@ articleMedia['asigurare-flote-auto-corporate-moldova'] = {
 };
 
 // Same photograph, original logo positioned below the title in the dark hero.
-for (const slug of ['asigurare-cargo-transport-marfa','asigurare-depozite-logistice','asigurare-utilaje-industriale','asigurare-echipamente-it']) {
+for (const slug of ['asigurare-cargo-transport-marfa','asigurare-depozite-logistice','asigurare-utilaje-industriale','asigurare-echipamente-it','asigurare-raspundere-profesionala','asigurare-raspundere-civila-generala','asigurare-constructii-montaj','asigurare-credit-comercial']) {
   articleMedia[slug].heroImage = articleMedia[slug].image.replace('-20261108.webp','-hero-20261108.webp');
 }
