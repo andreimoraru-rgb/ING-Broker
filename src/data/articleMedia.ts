@@ -9,6 +9,10 @@ const media = (file: string, alt: string, topic: string, keywords: string, conte
 });
 
 export const articleMedia: Record<string, ReturnType<typeof media>> = {
+  'asigurare-cyber-companii': media('cyber-companii-next-20261108', 'Responsabilii IT și operațional verifică un dosar de continuitate lângă echipamente de rețea', 'Riscuri cyber', 'asigurare cyber companii Moldova, dosar risc cibernetic, securitate date companie, copii de rezervă, incident informatic', 'analiza sistemelor companiilor din Moldova'),
+  'asigurare-accidente-angajati': media('accidente-angajati-next-20261108', 'Angajați și un responsabil verifică o listă de siguranță într-un atelier de prelucrare a lemnului', 'Accidente angajați', 'asigurare accidente angajați Moldova, asigurare colectivă accidente, indemnizație accident, lista angajați asigurați', 'colectivele companiilor din Moldova'),
+  'asigurare-panouri-fotovoltaice': media('panouri-fotovoltaice-next-20261108', 'Instalație fotovoltaică la sol lângă o hală, verificată de un tehnician', 'Sisteme fotovoltaice', 'asigurare panouri fotovoltaice Moldova, invertor, riscuri instalație solară, asigurare echipamente energie', 'instalațiile companiilor din Moldova'),
+  'asigurare-depozite-cereale': media('depozite-cereale-next-20261108', 'Personalul unui depozit agricol verifică o probă lângă un lot de grâu păstrat în hală', 'Depozite de cereale', 'asigurare depozit cereale Moldova, asigurare stoc grâu porumb, bunuri clienți depozitare, inventar depozit agricol', 'depozitarea produselor agricole în Moldova'),
   'asigurare-raspundere-profesionala': media('raspundere-profesionala-20261108', 'Doi specialiști verifică documentele unei lucrări profesionale', 'Răspundere profesională', 'asigurare răspundere profesională Moldova, erori și omisiuni profesionale, limite răspundere consultant', 'serviciile profesionale din Moldova'),
   'asigurare-raspundere-civila-generala': media('raspundere-generala-20261108', 'Responsabilul unui magazin și un tehnician verifică accesul clienților', 'Răspundere față de terți', 'asigurare răspundere civilă generală Moldova, prejudicii terți, răspundere companie, bunuri clienți', 'companiile din Moldova'),
   'asigurare-constructii-montaj': media('constructii-montaj-20261108', 'Echipă cu căști de protecție verifică montajul unei instalații pe șantier', 'Construcții și montaj', 'asigurare construcții montaj Moldova, asigurare șantier, lucrări materiale utilaje, răspundere constructor', 'șantierele din Moldova'),
@@ -30,6 +34,10 @@ export const articleMedia: Record<string, ReturnType<typeof media>> = {
   'asigurare-remediere-mediu': media('asigurare-riscuri-mediu-remediere-moldova', 'Tehnician prelevând o probă de sol lângă un amplasament industrial', 'Riscuri de mediu', 'riscuri de mediu Moldova, asigurare poluare, evaluare remediere teren industrial', 'zonele industriale din Bălți'),
   'asigurare-raspundere-civila-angajator': media('asigurare-raspundere-angajator-moldova', 'Angajați verificând o fișă de siguranță într-un atelier de mobilier', 'Angajatori', 'răspunderea angajatorului Moldova, asigurare angajatori, diferența față de accidente angajați', 'atelierele de producție din Bălți'),
 };
+
+for (const slug of ['asigurare-cyber-companii','asigurare-accidente-angajati','asigurare-panouri-fotovoltaice','asigurare-depozite-cereale']) {
+  articleMedia[slug].heroImage = articleMedia[slug].image.replace('-next-20261108.webp','-hero-next-20261108.webp');
+}
 
 // Owner-approved photographic pilot, original logo, checked on 2026-11-06.
 // Internal provenance stays here; no added design/AI credits in the public article.
