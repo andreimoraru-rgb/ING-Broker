@@ -112,7 +112,7 @@ export const editorialRisks20261108: Record<string,ArticleRevision> = {
 <h3>Asigurarea elimină responsabilitatea firmei pentru siguranța muncii?</h3><p>Nu o prezenta astfel. Prevenirea, organizarea muncii și verificarea obligațiilor legale sunt analize separate. Polița privește numai protecția contractuală acceptată. Pentru concluzii despre răspunderea într-un caz concret este necesară verificarea de specialitate.</p>`
  },
  'asigurare-panouri-fotovoltaice': {
-  title: 'Asigurarea panourilor fotovoltaice în Moldova',
+  title: 'Asigurarea panourilor fotovoltaice',
   description: 'Ce pregătești pentru analiza asigurării unui sistem fotovoltaic: panouri, invertor, amplasament, montaj, mentenanță, riscuri și documente.',
   updatedAt: '2026-11-08', sourcesCheckedAt: '8 noiembrie 2026', preserveLegacyLayout: true,
   related: ['asigurare-pierdere-profit', 'Întreruperea activității și pierderea profitului: verificare separată'],
