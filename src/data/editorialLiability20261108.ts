@@ -1,10 +1,10 @@
 import type {ArticleRevision} from './recoveredArticles';
 const bnm:[string,string]=['BNM: verificarea condițiilor contractului de asigurare','https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam'];
 
-// Product-specific drafts. Not integrated or published until image/source/browser QA.
+// Product-specific revisions; publication and live QA are tracked in the canonical ledger.
 export const editorialLiability20261108:Record<string,ArticleRevision>={
  'asigurare-raspundere-profesionala':{
-  title:'Asigurarea de răspundere profesională în Moldova',
+  title:'Asigurarea de răspundere profesională',
   description:'Ce verifici la răspunderea profesională: servicii declarate, erori, pretenții, limite și documente. Explicații pentru specialiști și companii din Moldova.',
   updatedAt:'2026-11-08',sourcesCheckedAt:'8 noiembrie 2026',preserveLegacyLayout:true,
   related:['asigurare-raspundere-civila-generala','Răspunderea civilă generală a companiei'],
@@ -54,7 +54,7 @@ export const editorialLiability20261108:Record<string,ArticleRevision>={
 <h3>Cât costă asigurarea de răspundere profesională?</h3><p>Solicită o evaluare după serviciile declarate, portofoliu, perioade și limite. Un tarif al altei profesii sau al altui asigurător nu confirmă costul propriei situații.</p>`
  },
  'asigurare-raspundere-civila-generala':{
-  title:'Asigurarea de răspundere civilă generală pentru companii',
+  title:'Asigurarea de răspundere civilă generală',
   description:'Răspunderea civilă față de terți în Moldova: activități, spații, bunuri ale clienților, limite și notificarea unei pretenții. Ce verifici înainte de ofertare.',
   updatedAt:'2026-11-08',sourcesCheckedAt:'8 noiembrie 2026',preserveLegacyLayout:true,
   related:['asigurare-raspundere-profesionala','Răspunderea profesională pentru serviciile prestate'],

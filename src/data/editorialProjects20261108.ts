@@ -1,6 +1,6 @@
 import type {ArticleRevision} from './recoveredArticles';
 const bnm:[string,string]=['BNM: ce verifici la contractul de asigurare','https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam'];
-// Individual drafts awaiting integration, photographs and release QA.
+// Individual revisions; publication and live QA are tracked in the canonical ledger.
 export const editorialProjects20261108:Record<string,ArticleRevision>={
  'asigurare-constructii-montaj':{
   title:'Asigurarea lucrărilor de construcții și montaj în Moldova',
