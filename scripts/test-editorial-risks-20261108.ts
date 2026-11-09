@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
+import {withoutCornerBranding} from './article-design-guard';
 import {articles} from '../src/data/articles';
 import {editorialRisks20261108 as revisions} from '../src/data/editorialRisks20261108';
 const words=(s:string)=>(s.replace(/<[^>]+>/g,' ').match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu)||[]).length;
@@ -19,7 +20,7 @@ const rows=Object.entries(revisions).map(([slug,r])=>{
 });
 for(const file of ['src/pages/ArticlePage.tsx','src/pages/NewsInsightsPage.tsx','src/App.tsx','src/index.css','src/pages/article-reading.css']){
  const original=execFileSync('git',['show',`547882e:${file}`],{encoding:'utf8'}).replace(/\r\n/g,'\n');
- assert.equal(readFileSync(file,'utf8').replace(/\r\n/g,'\n'),original,`Hero and design unchanged: ${file}`);
+ assert.equal(withoutCornerBranding(readFileSync(file,'utf8')),original,`Only approved corner-logo binding may differ: ${file}`);
 }
 assert.equal(articles.ro.length,107);assert.equal(rows.length,4);
 console.log(JSON.stringify({passed:true,rows,heroAndGlobalDesignUnchanged:true,retired:0},null,2));

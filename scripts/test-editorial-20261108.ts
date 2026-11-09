@@ -6,7 +6,7 @@ import {editorialLogistics20261108} from '../src/data/editorialLogistics20261108
 import {editorialIndustry20261108} from '../src/data/editorialIndustry20261108';
 import {editorialLiability20261108} from '../src/data/editorialLiability20261108';
 import {editorialProjects20261108} from '../src/data/editorialProjects20261108';
-import {withoutDuplicateBodyPhoto} from './article-design-guard';
+import {withoutDuplicateBodyPhoto,withoutCornerBranding} from './article-design-guard';
 const countWords=(s:string)=>(s.replace(/<[^>]+>/g,' ').match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu)||[]).length;
 const rows=Object.keys({...editorialLogistics20261108,...editorialIndustry20261108,...editorialLiability20261108,...editorialProjects20261108}).map(slug=>{
   const a=articles.ro.find(x=>x.slug===slug)!;assert.ok(a,slug);
@@ -26,7 +26,7 @@ const rows=Object.keys({...editorialLogistics20261108,...editorialIndustry202611
 });
 for(const file of ['src/pages/ArticlePage.tsx','src/App.tsx','src/index.css']) {
   const old=execFileSync('git',['show',`3399c8b:${file}`],{encoding:'utf8'}).replace(/\r\n/g,'\n');
-  assert.equal(readFileSync(file,'utf8').replace(/\r\n/g,'\n'),file.includes('ArticlePage')?withoutDuplicateBodyPhoto(old):old,file);
+  assert.equal(withoutCornerBranding(readFileSync(file,'utf8')),file.includes('ArticlePage')?withoutDuplicateBodyPhoto(old):old,file);
 }
 assert.equal(articles.ro.length,107,'Do not silently withdraw or add catalogue entries');
 console.log(JSON.stringify({passed:true,rows,heroAndGlobalDesignUnchanged:true,retired:0,catalogue:107},null,2));

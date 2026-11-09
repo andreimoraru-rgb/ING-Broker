@@ -1,5 +1,19 @@
 import assert from 'node:assert/strict';
 
+/** Only the owner's 09.11 corner-logo binding is allowed; every layout class remains protected. */
+export function withoutCornerBranding(source:string):string {
+ return source.replace(/\r\n/g,'\n')
+  .replace("import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';\n",'')
+  .replace("import { articlePhotoSource } from '../data/articlePhotoBranding';\n",'')
+  .replace('src={articlePhotoSource(article.heroImage || article.image)}','src={article.heroImage || article.image} ')
+  .replace('                    src={articlePhotoSource(article.image)}','                    src={article.image} ')
+  .replace('src={articlePhotoSource(article.image)}','src={article.image}')
+  .replace('          <ArticlePhotoLogo image={article.heroImage || article.image} mode="hero" />\n','')
+  .replace('                  <ArticlePhotoLogo image={article.image} />\n','')
+  .replace('          <ArticlePhotoLogo image={article.image} />\n','')
+  .replace('<figure className="editorial-figure" style={{position:\'relative\'}}>','<figure className="editorial-figure">');
+}
+
 /** Only duplicate removal and same-scene hero derivative binding may change. */
 export function withoutDuplicateBodyPhoto(source: string): string {
   const text=source.replace(/\r\n/g,'\n');

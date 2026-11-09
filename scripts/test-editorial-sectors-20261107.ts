@@ -3,7 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { articles } from '../src/data/articles';
 import { editorialSectors20261107 } from '../src/data/editorialSectors20261107';
-import { withoutDuplicateBodyPhoto } from './article-design-guard';
+import { withoutDuplicateBodyPhoto,withoutCornerBranding } from './article-design-guard';
 const rows = Object.keys(editorialSectors20261107).map(slug => {
   const a = articles.ro.find(x => x.slug === slug)!;
   assert.ok(a);
@@ -23,6 +23,6 @@ const rows = Object.keys(editorialSectors20261107).map(slug => {
 });
 const file='src/pages/ArticlePage.tsx';
 const base=execFileSync('git',['show',`73cd426:${file}`],{encoding:'utf8'}).replace(/\r\n/g,'\n');
-assert.equal(readFileSync(file,'utf8').replace(/\r\n/g,'\n'),withoutDuplicateBodyPhoto(base));
+assert.equal(withoutCornerBranding(readFileSync(file,'utf8')),withoutDuplicateBodyPhoto(base));
 for(const file of ['src/index.css','src/pages/Home.tsx']) if(existsSync(file)) assert.equal(readFileSync(file,'utf8').replace(/\r\n/g,'\n'),execFileSync('git',['show',`73cd426:${file}`],{encoding:'utf8'}).replace(/\r\n/g,'\n'));
 console.log(JSON.stringify({passed:true,rows,heroAndStylesUnchanged:true},null,2));

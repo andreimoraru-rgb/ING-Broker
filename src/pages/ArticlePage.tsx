@@ -11,6 +11,8 @@ import { EditorialArticle } from './EditorialArticle';
 import { localizedPath } from '../utils/localizedRoutes';
 import { articleRevisions } from '../data/recoveredArticles';
 import './article-reading.css';
+import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
+import { articlePhotoSource } from '../data/articlePhotoBranding';
 
 interface ArticlePageProps {
   lang: Language;
@@ -127,13 +129,14 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
       <section className="relative h-[60vh] min-h-[500px] flex items-end pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={article.heroImage || article.image} 
+            src={articlePhotoSource(article.heroImage || article.image)}
             alt={article.imageAlt || article.title}
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-[#0a192f]/60 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent opacity-70" />
+          <ArticlePhotoLogo image={article.heroImage || article.image} mode="hero" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 w-full text-center">

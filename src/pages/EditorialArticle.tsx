@@ -5,6 +5,8 @@ import { SEO } from '../components/SEO';
 import { SchemaMarkup } from '../components/SchemaMarkup';
 import { breadcrumbSchema } from '../utils/schema';
 import './editorial-article.css';
+import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
+import { articlePhotoSource } from '../data/articlePhotoBranding';
 
 export function prepareArticle(content: string) {
   const headings: { id: string; title: string }[] = [];
@@ -46,8 +48,9 @@ export const EditorialArticle = ({ article }: { article: Article }) => {
           <div className="editorial-byline"><span>{article.author}</span><span>{minutes} min de lectură</span><span>Text actualizat <time dateTime={article.updatedAt}>{new Date(`${article.updatedAt}T00:00:00Z`).toLocaleDateString('ro-MD', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time></span></div>
           <a href="#continut-articol" className="editorial-read">Citește ghidul <span aria-hidden="true">↓</span></a>
         </div>
-        <figure className="editorial-figure">
-          <img src={article.image} alt={article.imageAlt} width="1536" height="1024" fetchPriority="high" decoding="async" />
+        <figure className="editorial-figure" style={{position:'relative'}}>
+          <img src={articlePhotoSource(article.image)} alt={article.imageAlt} width="1536" height="1024" fetchPriority="high" decoding="async" />
+          <ArticlePhotoLogo image={article.image} />
           {article.imageCaption && <figcaption>{article.imageCaption}</figcaption>}
         </figure>
       </header>

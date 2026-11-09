@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
+import {withoutCornerBranding} from './article-design-guard';
 import {articles} from '../src/data/articles';
 import {editorialDemand20261108 as revisions} from '../src/data/editorialDemand20261108';
 const expected=['asigurare-viata-moldova','asigurare-cladiri-birouri','asigurare-centre-comerciale','asigurare-hoteluri-pensiuni','asigurare-restaurante-cafenele','asigurare-clinici-private'];
@@ -8,7 +9,7 @@ assert.deepEqual(Object.keys(revisions),expected);assert.equal(articles.ro.lengt
 const baseline='fc5edc6e8776c5e85b3a15dfb4788fb2b42e4c94';
 for(const file of ['src/pages/ArticlePage.tsx','src/pages/EditorialArticle.tsx','src/pages/NewsInsightsPage.tsx','src/App.tsx','src/index.css','src/pages/article-reading.css','src/pages/editorial-article.css']){
  const old=execFileSync('git',['show',`${baseline}:${file}`],{encoding:'utf8'});
- assert.equal(readFileSync(file,'utf8').replace(/\r\n/g,'\n'),old.replace(/\r\n/g,'\n'),`${file}: protected design changed`);
+ assert.equal(withoutCornerBranding(readFileSync(file,'utf8')),old.replace(/\r\n/g,'\n'),`${file}: only approved corner-logo binding may differ`);
 }
 const rows=[];
 for(const slug of expected){const rev=revisions[slug],a=articles.ro.find(a=>a.slug===slug)!;
