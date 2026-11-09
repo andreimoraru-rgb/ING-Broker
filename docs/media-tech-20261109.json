@@ -1,0 +1,242 @@
+{
+  "createdAt": "2026-11-09T20:12:13.567Z",
+  "backend": "built-in imagegen",
+  "export": "owner-approved Sharp WebP and exact original logo only; signed masters retained",
+  "localComfyUiUsed": false,
+  "rows": [
+    {
+      "slug": "asigurare-riscuri-cibernetice-imm",
+      "name": "imm-backup",
+      "relevance": "IMM: verificarea unei copii de rezervă, nu un atac sau o acoperire promisă.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/imm-backup-tech-source-20261109.png",
+        "sha256": "5d0052d0294a0029f26e6704cbe990e6a84633bd419ae6476e1665670d505125",
+        "bytes": 2384694
+      },
+      "scene": {
+        "path": "/images/articles/moldova/imm-backup-tech-scene-20261109.webp",
+        "sha256": "4694d0b95b8680ca061af4313e7643911b2007404bd2fe7a826075c8e97debaf",
+        "bytes": 242450
+      },
+      "social": {
+        "path": "/images/articles/moldova/imm-backup-tech-corner-20261109.webp",
+        "sha256": "ccee6042735cc6d1ab03a97af51ffa6d5d5dbac07e14ccf0579413c8f7d83028",
+        "bytes": 245554
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-421be543-d166-4c40-8d7f-323e69bb8f0d.png",
+      "logo": {
+        "path": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-e-commerce",
+      "name": "ecommerce-ambalare",
+      "relevance": "Ambalarea unei comenzi, legată de stoc și livrare.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/ecommerce-ambalare-tech-source-20261109.png",
+        "sha256": "fa63eca513d55b2aef0f696750d8041359cef2093bb00a5ae058b02fbfcbae87",
+        "bytes": 2457913
+      },
+      "scene": {
+        "path": "/images/articles/moldova/ecommerce-ambalare-tech-scene-20261109.webp",
+        "sha256": "2c547dc138ef89be48c2a2cb29a96d4c1a00963cfd90abc283027919d55c9283",
+        "bytes": 247760
+      },
+      "social": {
+        "path": "/images/articles/moldova/ecommerce-ambalare-tech-corner-20261109.webp",
+        "sha256": "0c4e09650f4531cb2edf349d153d4eef2f4096be5c0a4e6651ebd5a0f4cfbe1f",
+        "bytes": 251284
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-a784a2f0-9b55-40a7-9c60-c714daa7cf02.png",
+      "logo": {
+        "path": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-software-as-a-service",
+      "name": "saas-lansare",
+      "relevance": "Testarea unui serviciu software, nu holograme sau un hacker generic.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/saas-lansare-tech-source-20261109.png",
+        "sha256": "6de0b61489532bfc1a509c9e0c1977d662140d05767bdd7c4f4b783a4f81e4ff",
+        "bytes": 2190985
+      },
+      "scene": {
+        "path": "/images/articles/moldova/saas-lansare-tech-scene-20261109.webp",
+        "sha256": "97f7aaef6462d668292dc46eb95caebef4dc061d1ad6eb27b3ee94b44ab45e01",
+        "bytes": 186088
+      },
+      "social": {
+        "path": "/images/articles/moldova/saas-lansare-tech-corner-20261109.webp",
+        "sha256": "3374bb958ff72cc8cbcb75bbf25daa8e6dc1756108ab92001993022f153e9294",
+        "bytes": 189906
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-0185e649-b055-448b-ba35-7fbc2b6b68a0.png",
+      "logo": {
+        "path": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-centre-date",
+      "name": "centru-date-rack",
+      "relevance": "Echipamente fizice într-un centru de date, nu afirmație de securitate certificată.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/centru-date-rack-tech-source-20261109.png",
+        "sha256": "567038c70a79bd3f9736836ecc1ab0042e59050c5fa142cd9f8766c7623c6758",
+        "bytes": 2597906
+      },
+      "scene": {
+        "path": "/images/articles/moldova/centru-date-rack-tech-scene-20261109.webp",
+        "sha256": "b871cffc70abfce3ce9053b9a246d2f1b84d3ab8ce290b85f9bf7e33dfdb9953",
+        "bytes": 271838
+      },
+      "social": {
+        "path": "/images/articles/moldova/centru-date-rack-tech-corner-20261109.webp",
+        "sha256": "36f33cff9f1c7cb64881e39e525d1c82c3c7935e7a4535dcaca7d06a11726c5e",
+        "bytes": 273514
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-c9b4533b-efe2-40f7-af0d-80a6ba8e7f37.png",
+      "logo": {
+        "path": "/images/brand/ing-re-white-original-20261109.png",
+        "sha256": "13b36b9ae7b44c72ac197708bfa053bd27c935b26f398314f0e8e3e2bbfff433",
+        "color": "white",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-telecomunicatii",
+      "name": "telecom-fibra",
+      "relevance": "Intervenție la sol asupra fibrei optice, fără acces la o rețea reală.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/telecom-fibra-tech-source-20261109.png",
+        "sha256": "78afd825181a3a388cfd1242f0e847c055819fc73fdcd1da350243c95d000716",
+        "bytes": 2536460
+      },
+      "scene": {
+        "path": "/images/articles/moldova/telecom-fibra-tech-scene-20261109.webp",
+        "sha256": "c11fc2afede1500fa78853b426cf6ef17f76f5402fcf408d35c946516abb8a35",
+        "bytes": 288592
+      },
+      "social": {
+        "path": "/images/articles/moldova/telecom-fibra-tech-corner-20261109.webp",
+        "sha256": "ea7ab41d2e16e9e421bca3e8ce4de4bc23d0764a57041f57e3461553eb97c60b",
+        "bytes": 290832
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-abd95198-5b95-4017-81aa-904d165934da.png",
+      "logo": {
+        "path": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-raspundere-civila-it",
+      "name": "it-receptie-proiect",
+      "relevance": "Verificarea livrării unui proiect IT cu client fictiv, nu dovadă de contract real.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/it-receptie-proiect-tech-source-20261109.png",
+        "sha256": "be4a9a12695a5537367368031a9f95187861660ea6851051f38acab6302279c0",
+        "bytes": 2431515
+      },
+      "scene": {
+        "path": "/images/articles/moldova/it-receptie-proiect-tech-scene-20261109.webp",
+        "sha256": "53612eef6ae01dfa83c49d444e4e10af9aa274a90be0f6ed2d50da39dd27c6b6",
+        "bytes": 240320
+      },
+      "social": {
+        "path": "/images/articles/moldova/it-receptie-proiect-tech-corner-20261109.webp",
+        "sha256": "416af230da85a4b71fde358f95a6f7ef34131a9ed7fb66b8c7a6939e7fd80d2c",
+        "bytes": 244948
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-b9d6ef0a-c63b-4847-8b3c-b7d21581512c.png",
+      "logo": {
+        "path": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    }
+  ]
+}
