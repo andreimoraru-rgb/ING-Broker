@@ -1,0 +1,64 @@
+{
+  "checkedDate": "2026-11-09",
+  "sources": [
+    {
+      "url": "https://moldasig.md/casco",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://moldasig.md/health-insurance",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://www.grawe.md/asigurare-calatorii/",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://rca.bnm.md/faq",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://rca.bnm.md/legislatie",
+      "status": 200,
+      "success": true
+    }
+  ],
+  "supplement": [
+    {
+      "url": "https://rca.bnm.md/online",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://www.caa.md/ro/guide",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://customs.gov.md/ro/articles/animale-de-companie-1919-ro",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam",
+      "status": 200,
+      "success": true
+    }
+  ],
+  "useBoundaries": [
+    "No new tariff, discount, reimbursement amount, legal deadline or coverage eligibility published.",
+    "RCA older BNM education text on identical prices is historical, not used as current pricing rule.",
+    "RCA.BNM current portal used only for basic category, digital tools and document checks; no source-derived legal limits reproduced.",
+    "Drone page does not interpret current authorisation thresholds or compulsory cover; directs to AAC.",
+    "Pet availability not confirmed; no veterinary product offer or promise.",
+    "Travel and STORNO local example is provider-specific, not universal ING Broker terms.",
+    "Current consolidated Law 92/2022 not fully verified; no new legal interpretation certified."
+  ],
+  "originalEditorialRecommendations": true,
+  "marketSearchVolumesUnavailable": true,
+  "noForeignCompetitorLinks": true
+}
