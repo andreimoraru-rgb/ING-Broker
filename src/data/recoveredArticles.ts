@@ -9,6 +9,7 @@ import { editorialProjects20261108 } from './editorialProjects20261108';
 import { editorialRisks20261108 } from './editorialRisks20261108';
 import { editorialDemand20261108 } from './editorialDemand20261108';
 import { editorialRemaining20261109 } from './editorialRemaining20261109';
+import { editorialSearch20261109 } from './editorialSearch20261109';
 
 export interface ArticleRevision {
   title: string;
@@ -209,6 +210,7 @@ Object.assign(articleRevisions, editorialLogistics20261108, editorialIndustry202
 Object.assign(articleRevisions, editorialRisks20261108);
 Object.assign(articleRevisions, editorialDemand20261108);
 Object.assign(articleRevisions, editorialRemaining20261109);
+Object.assign(articleRevisions, editorialSearch20261109);
 
 export function renderArticleRevision(revision: ArticleRevision): string {
   const sources = revision.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a></li>`).join('');

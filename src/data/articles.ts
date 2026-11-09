@@ -1,3 +1,4 @@
+import {catalogDescriptions20261109} from './catalogDescriptions20261109';
 export interface Article {
   id: string;
   slug: string;
@@ -1669,7 +1670,7 @@ export const articles: Record<string, Article[]> = Object.fromEntries(
     seo: {
       ...article.seo,
       title: cleanGuideLabel(article.seo.title),
-      description: cleanGuideLabel(article.seo.description),
+      description: lang==='ro' && catalogDescriptions20261109[article.slug] ? catalogDescriptions20261109[article.slug] : cleanGuideLabel(article.seo.description),
     },
   }))]),
 );

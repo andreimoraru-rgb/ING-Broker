@@ -11,7 +11,9 @@ for(const file of ['src/pages/ArticlePage.tsx','src/pages/EditorialArticle.tsx',
 }
 for(const file of ['src/data/articles.ts','src/data/recoveredArticles.ts','src/data/editorialDemand20261108.ts']){
  const current=readFileSync(file,'utf8').replace(/\r\n/g,'\n').replace(/^import \{ editorialRemaining20261109 \} from '\.\/editorialRemaining20261109';\n/m,'').replace(/^Object\.assign\(articleRevisions, editorialRemaining20261109\);\n/m,'');
- assert.equal(current,execFileSync('git',['show',`${baseline}:${file}`],{encoding:'utf8'}).replace(/\r\n/g,'\n'),`${file}: existing article text unchanged apart from isolated new revision module`);
+ const historical=current.replace(/^import \{ editorialSearch20261109 \} from '\.\/editorialSearch20261109';\n/m,'').replace(/^Object\.assign\(articleRevisions, editorialSearch20261109\);\n/m,'');
+ const metadataIsolated=historical.replace(/^import \{catalogDescriptions20261109\} from '\.\/catalogDescriptions20261109';\n/m,'').replace("description: lang==='ro' && catalogDescriptions20261109[article.slug] ? catalogDescriptions20261109[article.slug] : cleanGuideLabel(article.seo.description)","description: cleanGuideLabel(article.seo.description)");
+ assert.equal(metadataIsolated,execFileSync('git',['show',`${baseline}:${file}`],{encoding:'utf8'}).replace(/\r\n/g,'\n'),`${file}: isolated new revision modules and metadata only; full catalog hashes checked separately`);
 }
 assert.equal(articles.ro.length,107);assert.ok(Object.keys(articlePhotoBranding).length>=6);
 const originalSix=new Set(['asigurare-viata-moldova','asigurare-cladiri-birouri','asigurare-centre-comerciale','asigurare-hoteluri-pensiuni','asigurare-restaurante-cafenele','asigurare-clinici-private']);

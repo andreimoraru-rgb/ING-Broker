@@ -1,0 +1,323 @@
+{
+  "createdAt": "2026-11-09T17:15:15.845Z",
+  "backend": "built-in imagegen",
+  "export": "owner-approved Sharp, exact original logo; signed masters retained",
+  "rejectedCandidate": {
+    "file": "exec-0bf2ee03-58f4-49e8-be6e-ac3f42f0f1a6.png",
+    "reason": "Blank quotation sheets looked artificial; built-in imagegen edit added anonymous defocused form lines; final selected master retained unchanged."
+  },
+  "rows": [
+    {
+      "slug": "asigurare-casco-moldova",
+      "name": "casco-inspectie",
+      "relevance": "Inspecția caroseriei, nu o promisiune despre o anumită daună.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/casco-inspectie-search-source-20261109.png",
+        "sha256": "993b58fec3e57afadeba6ff3ebaa835500a4297d0199b1df8fc2c7e3a682363a",
+        "bytes": 2786514
+      },
+      "scene": {
+        "path": "/images/articles/moldova/casco-inspectie-search-scene-20261109.webp",
+        "sha256": "9a109455e0b049ff5266025c10c844d9b85ee61c68a10a775b8a94d94483db0a",
+        "bytes": 333304
+      },
+      "social": {
+        "path": "/images/articles/moldova/casco-inspectie-search-corner-20261109.webp",
+        "sha256": "814dac07c03498e95ac12c4c8d8f1607fcfd017794275373a039f48c9b50fd7a",
+        "bytes": 332208
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-a08eb98c-f67c-49c0-8087-e10a4099face.png",
+      "logo": {
+        "path": "/images/brand/ing-re-white-original-20261109.png",
+        "sha256": "13b36b9ae7b44c72ac197708bfa053bd27c935b26f398314f0e8e3e2bbfff433",
+        "color": "white",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "cum-se-determină-prețul-unei-asigurări-rca-ghid-pentru-un-preț-rca-accesibil",
+      "name": "rca-calcul",
+      "relevance": "Comparație de documente anonime, nu un tarif real.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/rca-calcul-search-source-20261109.png",
+        "sha256": "12273ec55684c2ac97bf08b0a5acf7595a8e429ec8863195ec814096c4d1ac17",
+        "bytes": 2263029
+      },
+      "scene": {
+        "path": "/images/articles/moldova/rca-calcul-search-scene-20261109.webp",
+        "sha256": "d9d28283d547c04957e3b7bad7f6b8444596159eb0b7bbe99496797f1294f766",
+        "bytes": 198838
+      },
+      "social": {
+        "path": "/images/articles/moldova/rca-calcul-search-corner-20261109.webp",
+        "sha256": "d3dc9e46de9c96ea40d3cf77cc9336977b808f900d5bbc1ecda7b5579dc5b297",
+        "bytes": 207282
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-82e0c372-99bd-4fb5-8a5a-071e1406af66.png",
+      "logo": {
+        "path": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-medicala-calatorii",
+      "name": "calatorie-pregatire",
+      "relevance": "Pregătirea documentelor înainte de călătorie, nu tratament medical.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/calatorie-pregatire-search-source-20261109.png",
+        "sha256": "3ed9d4c235ae419d1441f334c89993f3d42e3ff56a6cd039f43de07e071eaa2a",
+        "bytes": 2160679
+      },
+      "scene": {
+        "path": "/images/articles/moldova/calatorie-pregatire-search-scene-20261109.webp",
+        "sha256": "eefa3e8aaff4cc60c5f65cd4003e3f66f3f8143c52dd244180e1d0a2a26fbc71",
+        "bytes": 176080
+      },
+      "social": {
+        "path": "/images/articles/moldova/calatorie-pregatire-search-corner-20261109.webp",
+        "sha256": "e822b2be186e0152091c91fd7a79b2848920973943ace2daccdb027bd8a11e13",
+        "bytes": 179232
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-6e90cd92-08ac-431a-9427-e0218bbe9a86.png",
+      "logo": {
+        "path": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-storno-calatorie",
+      "name": "storno-rezervare",
+      "relevance": "Rezervări și bagaj, nu o anulare confirmată sau o boală.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/storno-rezervare-search-source-20261109.png",
+        "sha256": "ca68b5d65b3415bb7561493c8fa6bf187aa8bc8be521aa43a3ca49a543da8824",
+        "bytes": 2373166
+      },
+      "scene": {
+        "path": "/images/articles/moldova/storno-rezervare-search-scene-20261109.webp",
+        "sha256": "bc53738e83be4660f1168a2fbde2092bc63d9c5de4fdbb50d8e2ecaecc3aa309",
+        "bytes": 232142
+      },
+      "social": {
+        "path": "/images/articles/moldova/storno-rezervare-search-corner-20261109.webp",
+        "sha256": "6ef00ab83d51a8185f7eb9654a726eb71aaf7c44affbf5f3b59182073c72680c",
+        "bytes": 235262
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-505d1d75-e65b-416f-9654-911fff342e44.png",
+      "logo": {
+        "path": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "rca-pentru-soferi-tineri-riscuri-financiare-si-costuri-ascunse-in-moldova",
+      "name": "rca-sofer-tanar",
+      "relevance": "Adult lângă prima mașină, verificarea documentelor, fără condus riscant.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/rca-sofer-tanar-search-source-20261109.png",
+        "sha256": "2a02f80407a7443b3097d918bf02f1586fdd06d10c2703ba5de2090f5d00ba5e",
+        "bytes": 2847899
+      },
+      "scene": {
+        "path": "/images/articles/moldova/rca-sofer-tanar-search-scene-20261109.webp",
+        "sha256": "3c7efad2a57c1f413ef7d639297a4e507ec29c805f8c9aa13fb010bccaafbc2d",
+        "bytes": 353050
+      },
+      "social": {
+        "path": "/images/articles/moldova/rca-sofer-tanar-search-corner-20261109.webp",
+        "sha256": "9ce1bc67536ca549f8590ce2f1f53baf87258217db4a155c18d6888a49f7b6bb",
+        "bytes": 352204
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-6ecd8173-a40c-4f5b-9dac-26ec51fa80b9.png",
+      "logo": {
+        "path": "/images/brand/ing-re-white-original-20261109.png",
+        "sha256": "13b36b9ae7b44c72ac197708bfa053bd27c935b26f398314f0e8e3e2bbfff433",
+        "color": "white",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-rca-moldova",
+      "name": "rca-documente",
+      "relevance": "Păstrarea documentelor vehiculului, fără afirmație despre formatul obligatoriu.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/rca-documente-search-source-20261109.png",
+        "sha256": "8f1b428dd13604ae424216e510597b1d46496fc98f4f16d830ebc963b6f2318f",
+        "bytes": 2506106
+      },
+      "scene": {
+        "path": "/images/articles/moldova/rca-documente-search-scene-20261109.webp",
+        "sha256": "4c0d17e002377309fb214b14ba71189be014f3c2ea1406ef1482f9ac3fd3dc6f",
+        "bytes": 228300
+      },
+      "social": {
+        "path": "/images/articles/moldova/rca-documente-search-corner-20261109.webp",
+        "sha256": "97aba7be6c1fdeb29ca71f5d4a270114181fcad4a907864a5ba22cb2bd2ed556",
+        "bytes": 230610
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-a4cd197b-7cee-47e8-8487-fd5fad7264a1.png",
+      "logo": {
+        "path": "/images/brand/ing-re-white-original-20261109.png",
+        "sha256": "13b36b9ae7b44c72ac197708bfa053bd27c935b26f398314f0e8e3e2bbfff433",
+        "color": "white",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-drone-comerciale",
+      "name": "drona-verificare",
+      "relevance": "Echipament verificat la sol, nu zbor autorizat sau acoperire acceptată.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/drona-verificare-search-source-20261109.png",
+        "sha256": "29900497781ca8bb4c3f0f62a6b3aa46f8f24d208da4497ecb74c6a9ef5e39eb",
+        "bytes": 2580114
+      },
+      "scene": {
+        "path": "/images/articles/moldova/drona-verificare-search-scene-20261109.webp",
+        "sha256": "354ef8b487af82facffd4f62eb6d30ec2f1b237f8962cee99150deaaa02ce458",
+        "bytes": 292984
+      },
+      "social": {
+        "path": "/images/articles/moldova/drona-verificare-search-corner-20261109.webp",
+        "sha256": "699c249f1a6c9eda3ec3f14ed4d9063ecbbac19be9103d4c1f95af640b4a83a1",
+        "bytes": 295392
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-666fd7bf-8b29-4fb1-9486-4516755161cd.png",
+      "logo": {
+        "path": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-animale-companie",
+      "name": "animale-companie",
+      "relevance": "Câine și pisică, material informativ fără produs veterinar confirmat.",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/animale-companie-search-source-20261109.png",
+        "sha256": "0a7f5d161f413d9109765c89664cfeddf9201eec9fd8470aeb725f3fe781a301",
+        "bytes": 2602629
+      },
+      "scene": {
+        "path": "/images/articles/moldova/animale-companie-search-scene-20261109.webp",
+        "sha256": "cf47b5e9747de16ed07592d7a365a7434d66977bb758c8b2e399933d1589ee47",
+        "bytes": 287598
+      },
+      "social": {
+        "path": "/images/articles/moldova/animale-companie-search-corner-20261109.webp",
+        "sha256": "69d4d44d4c58b3892dbdf2116bf550d1d240546d1636374ca5facc7fc3aa1f56",
+        "bytes": 290174
+      },
+      "masterUnchanged": true,
+      "sourceGenerationFile": "exec-82e3e6a4-c903-4307-bab4-2e3e3639523f.png",
+      "logo": {
+        "path": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "contrastRule": "exact displayed zone; white in existing dark hero, auto contrast on cards",
+      "generatedSceneReviewed": true,
+      "realClient": false,
+      "postprocessingSceneEdits": false
+    }
+  ]
+}

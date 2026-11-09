@@ -1,0 +1,2792 @@
+{
+  "sourceCommit": "9b01549d78fd80f5b7ea7c46a6ea172c6f0c98eb",
+  "rows": {
+    "ro": [
+      {
+        "id": "energie-regenerabila-1",
+        "slug": "asigurare-energie-regenerabila-moldova",
+        "title": "Asigurarea Proiectelor de Energie Regenerabilă în Moldova: Solar, Eolian, BESS și Rețea",
+        "contentHash": "5cbcd1fcde3f09b1ed09a2cef1fdeea82ca6bb7e0fb97edec25ffe7655360a1f",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "e6c38e9ec6eda1df1800c8952463da2d165cb60f8e0966137c4c3a13f0b4efea",
+        "withoutMediaHash": "67edd0f237e6aaee21301582bc84513eb36c448bd7e4ea1c0d79f3286bcd6109"
+      },
+      {
+        "id": "1",
+        "slug": "rca-pentru-soferi-tineri-riscuri-financiare-si-costuri-ascunse-in-moldova",
+        "title": "RCA pentru soferi tineri: riscuri financiare si costuri ascunse in Moldova",
+        "contentHash": "c37568dc04f6d2944b057477c8e4d8f05ad3deb47a97bb2668e92c87fc617b10",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "81607511e74ad30e3f775928583bb1f8bc968f1437a1a0ba669ba398c920338c",
+        "withoutMediaHash": "2b783c49596a9d5c09edd231732038c054e57ccabd6dcb67bdc84ac71ed31965"
+      },
+      {
+        "id": "2",
+        "slug": "cum-se-determină-prețul-unei-asigurări-rca-ghid-pentru-un-preț-rca-accesibil",
+        "title": "Cum se determină prețul RCA în Moldova în 2026? Toți factorii și 7 strategii ca să plătești mai puțin",
+        "contentHash": "6a9d1c1c40d8da6513dfb0dbd50dcb37ba019b0327f465f4c2d17bfc985b7313",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "b5f9a467461a406c6264bd86b9dd58f349ea834b49a12bb802a7da81d09f2e0a",
+        "withoutMediaHash": "05639046293ae9b372f2222c63d2f5158ac67310ea98b89e1757b9545b7a7d1a"
+      },
+      {
+        "id": "transport-logistica-1",
+        "slug": "asigurari-transport-logistica-cmr-cargo-moldova",
+        "title": "Asigurări pentru transport și logistică în Moldova",
+        "contentHash": "2ea789ad9cfae5658d6e91f52ebcb9a72784f3dbd9b8c54643c0d13c6f949078",
+        "image": "/images/articles/moldova/transportator-cmr-20261107.webp",
+        "fullHash": "2cc501733d01e8ee6474524d8b7ebb9d14c70cabe060c7dff1a527515d005656",
+        "withoutMediaHash": "b8e1f8ee11c125f09e5e84701fd050a3ed3fe9b7df19a905229db0ea1bca0616"
+      },
+      {
+        "id": "corporate-1",
+        "slug": "asigurari-corporative-companii-moldova-2026",
+        "title": "Asigurări pentru companii în Moldova",
+        "contentHash": "92a74e2e2bb1c6dcbaacfc67ce7551130210d6c739d0a31897b9bc3a889ce2b6",
+        "image": "/images/articles/moldova/corporate-riscuri-moldova-20261107.webp",
+        "fullHash": "2be8f80aa6cbc0c66e452f31362ef74ebf0bfc4e892b9dc65bbbbc52294d1c7b",
+        "withoutMediaHash": "151e25ba81b631825905b0145f4eede1a4b9eb58cee62731062e41af99d6ab07"
+      },
+      {
+        "id": "flote-auto-corporate-moldova",
+        "slug": "asigurare-flote-auto-corporate-moldova",
+        "title": "Asigurarea flotei auto în Moldova: CASCO, RCA, CMR și CARGO",
+        "contentHash": "bd1386274aeefb0fcd556b24c4bfa8ba0673420f34b5e98649e7e261a455f84b",
+        "image": "/images/articles/moldova/flota-auto-companie-20261107.webp",
+        "fullHash": "66fea663fe946cc413dca90d8a62ca0114b9e05c1de7bf20bd9a5f0ebe598c3a",
+        "withoutMediaHash": "c9dfec9fc10d8eee9f59350ab0508e5cf4b66ec9d66989cd0605af8045e3ed23"
+      },
+      {
+        "id": "10",
+        "slug": "asigurare-viata-moldova",
+        "title": "Asigurarea de viață în Moldova",
+        "contentHash": "a9d3546a2808e20dd9da173856234b089ea22e80fa978efc520b839ed47de8b8",
+        "image": "/images/articles/moldova/viata-familie-corner-20261109.webp",
+        "fullHash": "318be7d15ecdd2426c2dd2b38f3907e24d16827235f087bfc60bce7e24cfa411",
+        "withoutMediaHash": "6ee33d0f85cfaf5e54dce00d4d18c9457ad470d6971452dec3ee0c67d2b74eb4"
+      },
+      {
+        "id": "11",
+        "slug": "asigurare-agricola-seceta",
+        "title": "Asigurarea culturilor agricole împotriva secetei",
+        "contentHash": "f9001ea385d81481acafeddb109ba6c8d54dc027829781b68e95ccd49c1b915b",
+        "image": "/images/articles/moldova/seceta-culturi-corner-20261109.webp",
+        "fullHash": "d4b130ea8c3f7a4605f2517ed4419f183b94242028c1f0635a93bf9b0905a247",
+        "withoutMediaHash": "1090a0d974dcf3bda95430b55ea356f877048ce3f065d8dc6af38767955b791e"
+      },
+      {
+        "id": "12",
+        "slug": "asigurare-cyber-companii",
+        "title": "Asigurarea cyber pentru companii: dosarul de risc",
+        "contentHash": "5375d36216b24325b185d037c9aedf3c3f73aa0bf451347f87de5d752aa7e3ad",
+        "image": "/images/articles/moldova/cyber-companii-next-20261108.webp",
+        "fullHash": "ceccdccef5f2ce5e3dea063ea6bb284a78d7cd1dc28ffbc2a1694de876f6a310",
+        "withoutMediaHash": "db3a5574ab90e665e9de94794dbfd88b95e1b57bc8da3e73c230aabb587e52f2"
+      },
+      {
+        "id": "13",
+        "slug": "asigurare-raspundere-profesionala",
+        "title": "Asigurarea de răspundere profesională",
+        "contentHash": "2156b3667f1175c64eb9136da31187961d1590a390336f50cb12d109a0a87049",
+        "image": "/images/articles/moldova/raspundere-profesionala-20261108.webp",
+        "fullHash": "88f4583b868ad5ae7810ff71f7d89a798695ecee9eea9695e2b2d918d7c105bc",
+        "withoutMediaHash": "8ef9285184438f3c4826850a939184e36a96187579ac92c94055dbb75706d541"
+      },
+      {
+        "id": "14",
+        "slug": "asigurare-cargo-transport-marfa",
+        "title": "Asigurarea CARGO pentru mărfuri în Moldova",
+        "contentHash": "c8d2fdf4846796c69886bd64ec0701993b99ece53a0fe8e4edac199e97fde338",
+        "image": "/images/articles/moldova/cargo-marfa-20261108.webp",
+        "fullHash": "6758313a09fb6957f257d08443e597c089903f9c5c5d59470d743e6e0c6bcf58",
+        "withoutMediaHash": "d498bf2ab2739cad94b38b6a7a93e8d5879dfa31b4ea1f4684d7992db24e13c3"
+      },
+      {
+        "id": "15",
+        "slug": "asigurare-sanatate-privata",
+        "title": "Asigurare sanatate privata",
+        "contentHash": "20c63831a873b581a479bd6c81d373d59f37888b8ecc7b6cb782349555a0054e",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "3c80633fdf656ce55a5126994bd5a7d7f07851505628c2ea5b87ae93aeb8c7c0",
+        "withoutMediaHash": "1ae8dbe9269d3b49f662d350008980a7516f17296e43026edd0bce3cf3c3ce80"
+      },
+      {
+        "id": "16",
+        "slug": "asigurare-animale-companie",
+        "title": "Asigurare animale companie",
+        "contentHash": "1b10ae14f18038383aa5e30c84d4b0cfb122d67811b7524235a72035d3f490ec",
+        "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "a6104809521edcd53312e91f5e29a39b199c9c77b8e1d4a58c834af88c036644",
+        "withoutMediaHash": "cc506f960be5a20be0fd2dcd4786af208f216202449ed2ac2ee6df190312c09b"
+      },
+      {
+        "id": "17",
+        "slug": "asigurare-echipamente-it",
+        "title": "Asigurarea echipamentelor IT ale companiei",
+        "contentHash": "3018c1253e4864a7e8db7854ba632f56ab28cd29136e5a67282fcf149e70ef51",
+        "image": "/images/articles/moldova/echipamente-it-20261108.webp",
+        "fullHash": "f569bf50b291127401573e988786d08339e6a6d22869699eecf2fbdbf3972e9d",
+        "withoutMediaHash": "015e31170b889c1754fc86b40242d76ca4bcc32dab9a0095225198dc2be28918"
+      },
+      {
+        "id": "18",
+        "slug": "asigurare-evenimente-corporate",
+        "title": "Asigurare evenimente corporate",
+        "contentHash": "9aeed29998e39c07687c583f6da1c8192fb4ecd9503156d1fbe35b7ecd74190a",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "f359235db5e2c09705d89895f2e6f31fe905112f0f0deeddddd2421069ea89c8",
+        "withoutMediaHash": "d4515acf24ec818bb8ed395d51ed822011c36e0a652407780e60b030a17282df"
+      },
+      {
+        "id": "19",
+        "slug": "asigurare-constructii-montaj",
+        "title": "Asigurarea lucrărilor de construcții și montaj în Moldova",
+        "contentHash": "224a23915e86340aed3abb24d02a31739f600824f400c73bdf148e916f78d007",
+        "image": "/images/articles/moldova/constructii-montaj-20261108.webp",
+        "fullHash": "be8d2b68b27a94a75e3da6ab6caa4c5d53ddd8889545e5fb45435127a9405f23",
+        "withoutMediaHash": "f5381489939f2aceb467166b8ed723b305ab2feb4b5306d23aac5d9df9522fd2"
+      },
+      {
+        "id": "20",
+        "slug": "asigurare-flota-auto",
+        "title": "Asigurarea flotei auto: inventar, polițe și reînnoire",
+        "contentHash": "d1d0eb33f31299aaf9823ac1673fd78d140193a47784cdb39323279719b22c6a",
+        "image": "/images/articles/moldova/flota-inventar-corner-20261109.webp",
+        "fullHash": "5f519151ebfce045d5475b14c2a11432a231f30c854439b60778b8b105dc7082",
+        "withoutMediaHash": "0c5ebb96c81dca765db77cce1715b45e3095d84ab1feaafdff54e8c3876c5cb0"
+      },
+      {
+        "id": "21",
+        "slug": "asigurare-accidente-angajati",
+        "title": "Asigurarea de accidente pentru angajați în Moldova",
+        "contentHash": "54f672963f99597a303c747cce175925ef9420cad0f0c5ddb0a654f1f57791eb",
+        "image": "/images/articles/moldova/accidente-angajati-next-20261108.webp",
+        "fullHash": "4fcf07bb8dd1845ea87b942dd53c36535343edaae7bef45c51c3b2b384766a8b",
+        "withoutMediaHash": "a11a8551585ba9d5940ddb8925d075c8c1a6123daf33e67ec23938b011299a9a"
+      },
+      {
+        "id": "22",
+        "slug": "asigurare-drone-comerciale",
+        "title": "Asigurare drone comerciale",
+        "contentHash": "4034fa8a1d01a48cee258ba3d2bfc4c6849db92501662aa705202a9b54474182",
+        "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "8dbe9b9199cb7f7193365bab82cb8bd3150809932f4508449535ac45a9c1a7ee",
+        "withoutMediaHash": "9c67f4e66da34c9fb1eaadd57dce3e9e7db2af1943b04f581ddbed8b9516ed4b"
+      },
+      {
+        "id": "23",
+        "slug": "asigurare-pierdere-profit",
+        "title": "Asigurarea întreruperii activității și pierderii profitului",
+        "contentHash": "08697725df9f5e16bf1ae1c39d818bd96df238c06afa0a84c3c8f29e68c8d231",
+        "image": "/images/articles/moldova/pierdere-profit-re-alb-20261107.webp",
+        "fullHash": "f18605c4b28e9f3134f049088b5a795164436d2ea142498a46918e32752fa0a3",
+        "withoutMediaHash": "09fc0ebc5205b04bf5cd7a2fc19fff9af883991800c154091568fc0202b0aed7"
+      },
+      {
+        "id": "24",
+        "slug": "asigurare-raspundere-directori",
+        "title": "Asigurarea D&O: ce verifică directorii și administratorii",
+        "contentHash": "95897a21581d7e57ce4278852142943ec795d7065c43eb9357260edd57ae271f",
+        "image": "/images/articles/moldova/asigurare-raspundere-directori-do-moldova.webp",
+        "fullHash": "f83bd3665b94ac90d78463289cbe4b16e4b8a0f08f6a64a7a358e791ba8119b0",
+        "withoutMediaHash": "769918e5667c57c9e99c052fa810d329b5ef925f29596b606a03c8b8d5fb2f7e"
+      },
+      {
+        "id": "25",
+        "slug": "asigurare-panouri-fotovoltaice",
+        "title": "Asigurarea panourilor fotovoltaice",
+        "contentHash": "9250158ebac350d902a97860e4629534639eb78a28b52662eec033a6a08a1440",
+        "image": "/images/articles/moldova/panouri-fotovoltaice-next-20261108.webp",
+        "fullHash": "a0fc6c4e3b197d057691603fa04d69ee1309e1096b69da1665f225a99cd79fe1",
+        "withoutMediaHash": "e6e123ab59740d78782364d07f9517b4746afd5771999d195cc558e99b8da90a"
+      },
+      {
+        "id": "26",
+        "slug": "asigurare-storno-calatorie",
+        "title": "Asigurare storno calatorie",
+        "contentHash": "a04b8fe9c44e4526b8482c0dd9eadd1cf4ee5b9898947f269785bc83ae8c2522",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "6824bbd72bf293f752fcf461606b19830e515104476c3600b62c4b6418af284c",
+        "withoutMediaHash": "1cfa9b452b23654a014c5342f2f00c34120198668fa276dd94c1cecba669d225"
+      },
+      {
+        "id": "27",
+        "slug": "asigurare-biciclete-trotinete",
+        "title": "Asigurare biciclete trotinete",
+        "contentHash": "142b7375c21f44bae215e3d02e698fc1da3011d5c569bd28fee4d60934f2b18a",
+        "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "ecde86b30f073e1cfd1a0b31a02174887336758ebbc04e07e40a098ddafb598f",
+        "withoutMediaHash": "f0c66148dfa43c273e118cc1e5ffa334b2107f14baa1d77295c63c998f0a1cef"
+      },
+      {
+        "id": "28",
+        "slug": "asigurare-obiecte-arta",
+        "title": "Asigurare obiecte arta",
+        "contentHash": "48a251a2b4a5dd04b2f6d4ac9f6bf1571b8293305fdcd6e52ab86c5dc000d1bc",
+        "image": "https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "2b945f0bd7d9e68ec3fbee2522427ae763063af2aab25e0e3cc886a62150668b",
+        "withoutMediaHash": "718f3f180191c339d93caf68bff83006b16ba8aa9b3e4cc4357676c9645728ab"
+      },
+      {
+        "id": "29",
+        "slug": "asigurare-riscuri-cibernetice-imm",
+        "title": "Asigurare riscuri cibernetice imm",
+        "contentHash": "90dfd12d4fe2c2dece2cb500dfeab94ae1bc6032cfbd6744a200dd8cd9e6236c",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "a6801272e90945ff661d86e55aec6f2559a724d88938ef88cd50321da15731cb",
+        "withoutMediaHash": "afcbd853d8c4cc2ddd3ad17b2dcf5334c62d6f719e86bbb1e31eba96f924ea65"
+      },
+      {
+        "id": "30",
+        "slug": "asigurare-raspundere-civila-generala",
+        "title": "Asigurarea de răspundere civilă generală",
+        "contentHash": "10ef088a97fcbd71ea423abd37e34180801c0ed847058bafac66ac98f31b4331",
+        "image": "/images/articles/moldova/raspundere-generala-20261108.webp",
+        "fullHash": "714f2ee189b30803c3d7465f394ed865cea5d9ad2fd8ea93a414fc92b92cc706",
+        "withoutMediaHash": "52497bc65c6f799b2c56dce3f3ab16b5e3a77b0ca7fcc8bb09d33d432b46866c"
+      },
+      {
+        "id": "31",
+        "slug": "asigurare-rca-moldova",
+        "title": "Asigurare rca moldova",
+        "contentHash": "1da78022e2b6af3e04b4e8a8d26583c54bc19f93400d702c941a9af4b6201579",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "cb242b79b8aee795eb53f067052ac6cebcf29563b59892359a41fb59326b27e2",
+        "withoutMediaHash": "d29fea2b04d02809881b36d02718e00da5ed465f47edcf48b4769bd91f3f4000"
+      },
+      {
+        "id": "32",
+        "slug": "asigurare-casco-moldova",
+        "title": "Asigurare casco moldova",
+        "contentHash": "86f5c172bb8f39e90badf001d11a331fffcb90ea33c00440167d31b01b6461bb",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "b77ed5fe72b8105d73493440fd4c460afd420454032e6487aa6a09c20967139a",
+        "withoutMediaHash": "422d6344341fcc24b0762b894e8edaa4aced055a2738675b514effce888299bb"
+      },
+      {
+        "id": "33",
+        "slug": "asigurare-carte-verde",
+        "title": "Asigurare carte verde",
+        "contentHash": "6ef820b590c82194699998fe512bac3bea9a829fcb75aca5e304dfaded0bf9d7",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "ed24d04a49a8c9f9cbe46c7a4b1eecc9b322710b4b06d417ea622788cf5429ab",
+        "withoutMediaHash": "0fe73497c50f74698ea62076a6a1c3b2f6af0fe1e3142562933166f8ac40996e"
+      },
+      {
+        "id": "34",
+        "slug": "asigurare-locuinta-moldova",
+        "title": "Asigurare locuinta moldova",
+        "contentHash": "b0ae57fe39961afdcc37262e19e462ae01fe7fc0fc60be77b1c1bd60e5b54e00",
+        "image": "/commercial-property-insurance.jpg",
+        "fullHash": "a8d8ae002ce23673729b812b1e329049f5063b13b8f4615eb3dee11e77ca00f2",
+        "withoutMediaHash": "9b164ff3cc8af0c9a5d53cc48db38d6c4f59e66ab6471323992ea7e1e960d519"
+      },
+      {
+        "id": "35",
+        "slug": "asigurare-medicala-calatorii",
+        "title": "Asigurare medicala calatorii",
+        "contentHash": "fd35851ed4a856839f934252a310c8f37cc3e3af20addd1f862bc9150b86577c",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "15570cb84bb3256d8f8403dbce321a94239badcdc3cd92191f598a1151397cdc",
+        "withoutMediaHash": "6d8e5f5c410ffc718660e03a87fbdda72a7bb8bb33215e9e6d74483bb7138747"
+      },
+      {
+        "id": "36",
+        "slug": "asigurare-malpraxis-medical",
+        "title": "Asigurare malpraxis medical",
+        "contentHash": "0f81a8592cd7310f8083326f16c1061ea98d0c3bc742847fe3b689730b60b606",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "792a6a5c67a04cb8440c8d02768f021956c0d41d20610bc42856adb61e7f6d75",
+        "withoutMediaHash": "deb34d095d5806e827c10965545d8fc3b7bc4b7c6700868e1a661820676879da"
+      },
+      {
+        "id": "37",
+        "slug": "asigurare-raspundere-civila-auto",
+        "title": "Asigurare raspundere civila auto",
+        "contentHash": "31de04b3cc6f0c93e750c427378658f9140347ec4c8ab30b1f86e52de6c9d2b6",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "3e3602aec5d7b985c669949fbd99efb3155da6256c4447827d8309abedee5720",
+        "withoutMediaHash": "fbe2bdc6cd957afa5f13951d185d177962e8c6cf09ad31185b42effc69cdf875"
+      },
+      {
+        "id": "38",
+        "slug": "asigurare-bunuri-tranzit",
+        "title": "Asigurare bunuri tranzit",
+        "contentHash": "91b62e837d462ca01d808baa3cf36570e369fc69b963e1ecc934ef9f6bc0fc9f",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "1db2cfab35673b7f0a2822c5d3f8074b2ccb5a8ba0ed5fe1bf5d5d3f19d6cffe",
+        "withoutMediaHash": "1e41729da60fbcdf920d1cfaae6d239590d9cca1a2fd50580494b4138fda05a1"
+      },
+      {
+        "id": "39",
+        "slug": "asigurare-utilaje-industriale",
+        "title": "Asigurarea utilajelor industriale în Moldova",
+        "contentHash": "81dd036f0bb0f300facea57b1696dc4437bb888922f05b51d2f990b51b31af2e",
+        "image": "/images/articles/moldova/utilaje-industriale-20261108.webp",
+        "fullHash": "59c87b3b4b5265e610256c8444a6d36afdce22c23b9f5ae95e42e123451c36d6",
+        "withoutMediaHash": "2bcb97ccd1c185dfc6eb1012c09dbae3cb5ea99c17cfd550da4da10d8e44321b"
+      },
+      {
+        "id": "40",
+        "slug": "asigurare-depozite-logistice",
+        "title": "Asigurarea depozitelor logistice în Moldova",
+        "contentHash": "d9c4b02b9b051e8ea6c4198ffb27f4dedcde0d7dbd752d1dfa434ebc4c81b54d",
+        "image": "/images/articles/moldova/depozit-logistic-20261108.webp",
+        "fullHash": "83e8760a3c88e04eb80e462ca12eed38116276cc56f73933d5b231761409d0ef",
+        "withoutMediaHash": "9f4ab35bf0fadb336c23cb3bada3dc910823002cd60402bef8599a992de7f682"
+      },
+      {
+        "id": "41",
+        "slug": "asigurare-riscuri-politice",
+        "title": "Asigurare riscuri politice",
+        "contentHash": "9a5429668acd8f277aba102989d5b86591c3ecdaa73196f0bdb5abe78b241ccf",
+        "image": "/legal-asist.webp",
+        "fullHash": "6d4bd8859faee70a071ddc73499780d878b50329ac1b34af2d31affc891fadb4",
+        "withoutMediaHash": "77308614b58b0ed0e8f914c054b98491a1ab8df91a7b58b7ef5b370e5472459b"
+      },
+      {
+        "id": "42",
+        "slug": "asigurare-credit-comercial",
+        "title": "Creditul comercial: asigurarea riscului de neplată",
+        "contentHash": "a3ee5b352f4e545b29b6c0f8856e95b01285af5ad25a22e2e0534f63ddf6c96e",
+        "image": "/images/articles/moldova/credit-comercial-20261108.webp",
+        "fullHash": "e312a848a4c38e4328b1b985263a4e1f3ed29181e97bbb3c0114d83b323630e0",
+        "withoutMediaHash": "e3b101441a65c4ab8f81ae67b9a14dfa0580d65afc375d64fda78c656da43e33"
+      },
+      {
+        "id": "43",
+        "slug": "asigurare-garantii-licitatie",
+        "title": "Asigurare garantii licitatie",
+        "contentHash": "621512423ea381830e5ba8365afadd8ab574504a550448e93b2f954206ea1d18",
+        "image": "/constructie-inginerie.jpg",
+        "fullHash": "0ccc2868667db95b86d664e1a824bd32500751f4b3c5e49a79db99cb7b26f9bd",
+        "withoutMediaHash": "231b763765f00fa5864e5b9b43433fba9458b8a9f2c6c6d6e4c563c8fad58a3b"
+      },
+      {
+        "id": "44",
+        "slug": "asigurare-buna-executie",
+        "title": "Garanția de bună execuție: verificări înainte de contract",
+        "contentHash": "be181b031f7f1adbfbe07523d70a0421bfc2a5b7348a076137630c98e3caad0f",
+        "image": "/images/articles/moldova/garantie-buna-executie-20261106.webp",
+        "fullHash": "372fe9482a2ec65e1aab209caf52917aaaf8ba0fb34e82eb033c57c0f01ff2f8",
+        "withoutMediaHash": "e6d5d32fbe689ebcdfe59427ba100711e02250a4a4b9b976a624d99f41f48c50"
+      },
+      {
+        "id": "45",
+        "slug": "asigurare-mentenanta-proiecte",
+        "title": "Asigurare mentenanta proiecte",
+        "contentHash": "09521114de5413bb622b2fd6d80e739b5836a2d0b62eb9f1ce7904181609fa68",
+        "image": "/constructie-inginerie.jpg",
+        "fullHash": "a39e608f726a628bc0b1ef1efb55c0859c3b58110d340ba38aed18f6223fca46",
+        "withoutMediaHash": "0d2340d26d4a12cdd60598103dc91e6c34898bfdc52fc2957a75ae035e3d2bfd"
+      },
+      {
+        "id": "46",
+        "slug": "asigurare-raspundere-civila-legala",
+        "title": "Asigurare raspundere civila legala",
+        "contentHash": "80399989f2c44976e6eec48467a9500fc633e12e3e4367525073a0e96527b02e",
+        "image": "/legal-asist.webp",
+        "fullHash": "165b505ce4718faafbf6181ce7963232783dfb2fefa0314e1fbbfe3575c26f37",
+        "withoutMediaHash": "8c6473290409ae0c18bcba638fd27efac6c4a628e1e889809b900c623b1647ee"
+      },
+      {
+        "id": "47",
+        "slug": "asigurare-protectie-juridica",
+        "title": "Asigurare protectie juridica",
+        "contentHash": "06f9ea7290a9daf01d2937c98cb190956b409cac024a529243324f96e680a110",
+        "image": "/legal-asist.webp",
+        "fullHash": "7b2de91f120bd1e4d67c878b27add6eb50e6494acd453a5f926b06c616c5cd6d",
+        "withoutMediaHash": "6aa54aae817f7728330c7e2b1ca2efbcc4e86816dcbd189798edd7b157aa2c65"
+      },
+      {
+        "id": "48",
+        "slug": "asigurare-asistenta-rutiera",
+        "title": "Asigurare asistenta rutiera",
+        "contentHash": "4acfb75ce44a5dda3433977925556981e1b3c5b307fb0b0ffa83f3d65ce16234",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "cccfc82032cc9b6163e4cfc4e504a37d945dea5d34fff5a43198931f12de8d93",
+        "withoutMediaHash": "d7ba172098f4ed021bad92b8f6b0e1e281d3a3da1d7b0166913c7191959d781e"
+      },
+      {
+        "id": "49",
+        "slug": "asigurare-bagaje-calatorie",
+        "title": "Asigurare bagaje calatorie",
+        "contentHash": "0ba56e99192ffdc08ecb1c07cf370448276429333092d65b49b16607bc9467bc",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "8ae471a2058857ae1f63e9de61763e0f36c92e93ac98643e54b8e4929d85e114",
+        "withoutMediaHash": "fb2b90178e9a01d958ca004af8daeffd1765e333c0b312a6ec3cf2c573474f72"
+      },
+      {
+        "id": "50",
+        "slug": "asigurare-anulare-eveniment",
+        "title": "Asigurare anulare eveniment",
+        "contentHash": "92515ca9b9632dfb63cadff050d414cf34639c98e0179dda5c0190e54182ffdd",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "ce5ae3e67ce1358ece64bdb2af3843b96725130e3423572c88846b0ff48391f6",
+        "withoutMediaHash": "601088eade40c7de84e2ca951899d57902fbc73d7ba9b857ee6e38645be9e8c9"
+      },
+      {
+        "id": "51",
+        "slug": "asigurare-raspundere-civila-familie",
+        "title": "Asigurare raspundere civila familie",
+        "contentHash": "387476afc4f18b495cd10d8367b70c0b2909794debea0a2cbba66ff63a4be09f",
+        "image": "/legal-asist.webp",
+        "fullHash": "799cef59b8f6b8bca67da576fe94c816d89a9c6aa9e9c46d7ba1ea2b61af7c77",
+        "withoutMediaHash": "634caad47bfcbee090a861beaf54feb9798e52e0831fb2627ca5673994515849"
+      },
+      {
+        "id": "52",
+        "slug": "asigurare-cladiri-birouri",
+        "title": "Asigurarea clădirilor de birouri",
+        "contentHash": "2f1f0b561e8c8804e6b68ecbc995db33edfdfbb8c8476ae8a36b144eaea6d159",
+        "image": "/images/articles/moldova/cladiri-birouri-corner-20261109.webp",
+        "fullHash": "13f1633490ede97bf7243eb978ace408a34e11cb84241b9c86b0b3aae5b24a58",
+        "withoutMediaHash": "b7314519702d5c9115d3840c76f2f457b4724f0dc1a07b5c890e69aa8ce01946"
+      },
+      {
+        "id": "53",
+        "slug": "asigurare-centre-comerciale",
+        "title": "Asigurarea centrelor comerciale",
+        "contentHash": "87a45513ff294e56a303ad7ac21e28dd48ca869aac88cb20d999b2d5917865fd",
+        "image": "/images/articles/moldova/centre-comerciale-corner-20261109.webp",
+        "fullHash": "3eed16bcf91605fca57e20c2677ee2d7591a3544ca53532e0b29dd3baacfd8b1",
+        "withoutMediaHash": "0bc98cda9dddcc14d6888c0e8c17d1423228c95761fb244b11921474b4164c30"
+      },
+      {
+        "id": "54",
+        "slug": "asigurare-hoteluri-pensiuni",
+        "title": "Asigurarea hotelurilor și pensiunilor",
+        "contentHash": "2557f90ca13c928b3bc896f84ab43eaad06b3749638bc35fec36510c81f5fd88",
+        "image": "/images/articles/moldova/hoteluri-pensiuni-corner-20261109.webp",
+        "fullHash": "2b52dd9c7ebae238a7d4851d5275d20ee788f0005122cbdb7792e347e9d915c0",
+        "withoutMediaHash": "fd0b7ff8172cc854a67ddcb9a2aeda774921c79efd320184f2f189cafb99c77a"
+      },
+      {
+        "id": "55",
+        "slug": "asigurare-restaurante-cafenele",
+        "title": "Asigurarea restaurantelor și cafenelelor",
+        "contentHash": "392d7b385d1abecd1b7becd01d1d8d709c1095a71a65ea4099b586cad8f9c41f",
+        "image": "/images/articles/moldova/restaurante-cafenele-v2-corner-20261109.webp",
+        "fullHash": "f09b4afd38fc291547736d14c1c1f3f308257fabc8120a83c385d6123829def0",
+        "withoutMediaHash": "f9159aca3cc5326ffa11ea3eb8f69aa5478b9a73ac5df036630e7981d28ef8d1"
+      },
+      {
+        "id": "57",
+        "slug": "asigurare-clinici-private",
+        "title": "Asigurarea clinicilor private",
+        "contentHash": "55673bf3b6c0ed28314fe4021759a0b2f02279b9e1e16e8586b7dfd8099ceafa",
+        "image": "/images/articles/moldova/clinici-private-v2-corner-20261109.webp",
+        "fullHash": "4b1a1a5f9dcd8adcf7897d44b9718a4f2307820589e3f16fd78d66a678af2d69",
+        "withoutMediaHash": "d4aad838d4e8f1f439a72b9b51857079ee251b5b832870726b1af690b738dbec"
+      },
+      {
+        "id": "58",
+        "slug": "asigurare-scoli-gradinite",
+        "title": "Asigurarea bunurilor unei școli sau grădinițe",
+        "contentHash": "c253385a2bb1d15c3eff89014ad8a3f51a8a77855d46a9e2861ad0c8a7270d6e",
+        "image": "/images/articles/moldova/scoala-clasa-corner-20261109.webp",
+        "fullHash": "f9df3c4192830bba739b5e3930cf55afedd5ee72724fcf788442cb579ef12e46",
+        "withoutMediaHash": "4a576073ba04be048550f958aef45afdeb378290e9aa87f6857a8db91c1a69a4"
+      },
+      {
+        "id": "59",
+        "slug": "asigurare-sali-fitness",
+        "title": "Asigurarea sălii de fitness: echipamente, spațiu și activități",
+        "contentHash": "defcaf16aa322b7a034e94df283cb24d3384a59abc63c337cf7596814c7998c8",
+        "image": "/images/articles/moldova/sala-fitness-corner-20261109.webp",
+        "fullHash": "46de9ec81975cbcdae938156323b17ef372fc08b807ed0e3deaccb9b2caa40ae",
+        "withoutMediaHash": "9c46e628a135dd9de707e699a08337dac40609dfb775549ae46c315ceab3e581"
+      },
+      {
+        "id": "60",
+        "slug": "asigurare-depozite-cereale",
+        "title": "Asigurarea depozitelor de cereale în Moldova",
+        "contentHash": "876ea148ebb316ec73549ad1264fbe109fc286620700c5cc5ed39c9aa2ee3876",
+        "image": "/images/articles/moldova/depozite-cereale-next-20261108.webp",
+        "fullHash": "8a9f5fb83d13d2f1f71dc3fdb9180bcc027180c3e2f7f8bf191120e36ddac6e6",
+        "withoutMediaHash": "5f58e430123392785825fa13de1a292e440bab2cd7e7c44ff80115f0de5ed3c3"
+      },
+      {
+        "id": "61",
+        "slug": "asigurare-livezi-viticultura",
+        "title": "Asigurarea livezilor și a viței-de-vie în Moldova",
+        "contentHash": "fdd5d43114023a4f439b8329ac8dc6b231d7722b6025244e6e999780849f7c48",
+        "image": "/images/articles/moldova/livezi-viticultura-corner-20261109.webp",
+        "fullHash": "c405726b7730523241ec46f9ea534036a49546887ac543a8bc57d1730089b01a",
+        "withoutMediaHash": "b4e1712d55b9721719657140b6ef5b46438274e2d6c2017b40e27a28dfefdd7e"
+      },
+      {
+        "id": "62",
+        "slug": "asigurare-ferme-zootehnice",
+        "title": "Asigurarea animalelor și bunurilor unei ferme zootehnice",
+        "contentHash": "38cc69c9199c7d009a0501bed68a198fa5e1502f8ba3173a2dda21fe4a66bc4f",
+        "image": "/images/articles/moldova/ferma-zootehnica-corner-20261109.webp",
+        "fullHash": "402f7c380c92aacca7673ed8d2877712ab7a2a524b754b7671602ee4f53606d6",
+        "withoutMediaHash": "41284e64e0bb581805cc83200dd66359c2128e0bd7c79e9167407dcea35e2630"
+      },
+      {
+        "id": "63",
+        "slug": "asigurare-serre-solarii",
+        "title": "Asigurarea serelor și solariilor: separă bunurile și culturile",
+        "contentHash": "39462e4ad2937b8d4ae4d104e22045a8dfb60dc332f7130fd7e95c250a3148d2",
+        "image": "/images/articles/moldova/sere-re-alb-20261107.webp",
+        "fullHash": "671486debbff5318161420f27d372a9f7d14ccd78d7d96416bee4d16b63ae56d",
+        "withoutMediaHash": "4875f6f7b1bf307b42a15d6768cb0be2112da88eb363705ba881eefee43f2d2d"
+      },
+      {
+        "id": "64",
+        "slug": "asigurare-sisteme-irigatii",
+        "title": "Asigurarea sistemelor de irigații: ce incluzi în inventar",
+        "contentHash": "2abc3065e98cda46b6ab5816ba416da1f43e1f4ffa786506c99461c642f9d0db",
+        "image": "/images/articles/moldova/irigatii-re-alb-20261107.webp",
+        "fullHash": "b5a7c9178ce1d51792f7725e36f8855459c4d2570edf1f38420229f7fcb1742c",
+        "withoutMediaHash": "b3ff195e113111715686ebdc170d4651b58420d0a10589799d462e98e01bb8be"
+      },
+      {
+        "id": "65",
+        "slug": "asigurare-parcuri-eoliene",
+        "title": "Asigurare parcuri eoliene",
+        "contentHash": "0c6d81d37cb40cfb85038673b0b54ee228007d97accc1d934387b120f6ed4f86",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "ce9479e96dac47ddac806b86a32ead8e24b2c9f9e4e6e4be3702850adbd566a2",
+        "withoutMediaHash": "cc343f4a9a18c64f45837b2a0e115e0413f4d2d70a96d510d4184ea502cef0e9"
+      },
+      {
+        "id": "66",
+        "slug": "asigurare-biogaz-biomasa",
+        "title": "Asigurare biogaz biomasa",
+        "contentHash": "0e8b65c682b3dd682b7cdfcade4e575a49f913a9ed5e263957bd3ff29ec2de92",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "08033da63984dd3808c44abd45ebcf15ef4b2c1286a6c2fa8ffff71846e3b121",
+        "withoutMediaHash": "f6e8b76c54643d19ed9427aa1bc5184c6ca08cc8166e0c3069888fdb20edae6c"
+      },
+      {
+        "id": "67",
+        "slug": "asigurare-hidrocentrale-mici",
+        "title": "Asigurare hidrocentrale mici",
+        "contentHash": "86cbf97d8918ecb570d0c02ad71e2b360ed19fae6b31b0b6420c35b106504ab0",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "9f7207f543a174a824cb373bb2ded56b42a8a19bb78e31c1393453d78c5d8ad0",
+        "withoutMediaHash": "d3408fd5d0900278bfabfa08617dd89438d4c579528b4943f424eb478bdf4764"
+      },
+      {
+        "id": "68",
+        "slug": "asigurare-stocare-energie",
+        "title": "Asigurare stocare energie",
+        "contentHash": "ec53e7c05fbe5d071c9ce2c68a2fc12d308c9d09637c82586c331e3e6af10dca",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "4bd38af00b6ef08786170e1f0913c98d9dfcc38165b97b090303acfca0f0e7da",
+        "withoutMediaHash": "ed64c20ee92ab881c7bd5ef7399b5c91e9ff35907abb6f27ce7a5c36cba82b45"
+      },
+      {
+        "id": "69",
+        "slug": "asigurare-infrastructura-critica",
+        "title": "Asigurare infrastructura critica",
+        "contentHash": "b0a0f186099540c8ceefa5397798acd1dae382230172edf1d51ccc2ccbd121bc",
+        "image": "/constructie-inginerie.jpg",
+        "fullHash": "7c7d669bdb46e6aa2342d68da5970183c2f7f93055daf24085ff19335ba83ae4",
+        "withoutMediaHash": "d3096e80ad2b143d0331cee76c79b31bc30681dc1cadc2e5ec22ce0c466bbcac"
+      },
+      {
+        "id": "70",
+        "slug": "asigurare-poduri-tuneluri",
+        "title": "Poduri și tuneluri: informații pentru analiza asigurării",
+        "contentHash": "c3d259a8f93b5c858c4bffeb6a9495449d870a91d068bb0648bcaf0df9bc29ca",
+        "image": "/images/articles/moldova/asigurare-poduri-infrastructura-moldova.webp",
+        "fullHash": "483c69e73a42481129bac01409dcf4533aa364c091985668514487ff05f1cd5b",
+        "withoutMediaHash": "f1d7071f6455a66ef3664c12b40a01d73c780e8b18503c9d87006d9cc80b855c"
+      },
+      {
+        "id": "71",
+        "slug": "asigurare-drumuri-autostrazi",
+        "title": "Asigurarea lucrărilor rutiere: checklist pentru antreprenori",
+        "contentHash": "3fc031d31942e7bfc5698c3df18856362a3b28f22f62c79326d6c003065b0e5b",
+        "image": "/images/articles/moldova/drumuri-re-alb-20261107.webp",
+        "fullHash": "f476ccd5aedbfdfda921bf03bef0ac392b0b4e0c503f5be078aae7786d95a2b9",
+        "withoutMediaHash": "69071a1371aa6aeddb2ba412675cd314c1493b0c34059b575d902b019ca3bd0b"
+      },
+      {
+        "id": "72",
+        "slug": "asigurare-retele-electrice",
+        "title": "Asigurare retele electrice",
+        "contentHash": "58f38b8a33e8e6e592d3e8327e294afece0da3d507f65a8af8110e61a779b8e6",
+        "image": "/legal-asist.webp",
+        "fullHash": "867285ed2a98a9c13b6230691b704a9353354e8e917ac6f5ba24ad5c908132b3",
+        "withoutMediaHash": "4f73cae8d71ceec67aa37049d73467f764ef2c74ce854c639daa0bd7e2e021f1"
+      },
+      {
+        "id": "73",
+        "slug": "asigurare-conducte-gaz-apa",
+        "title": "Asigurare conducte gaz apa",
+        "contentHash": "c227d4ca458dd9577e8fcfa895e781d64ea1a0c8337387e06770989d3f31337f",
+        "image": "/legal-asist.webp",
+        "fullHash": "9ef6d0e5a415aa541ca1422dab8e276672ae341805f0274212caf3f3cb53d394",
+        "withoutMediaHash": "fed178d5332fd37d64079f98cd030f593ae6e71e0d6ba19e00025e793dc94940"
+      },
+      {
+        "id": "74",
+        "slug": "asigurare-telecomunicatii",
+        "title": "Asigurare telecomunicatii",
+        "contentHash": "f84c05716117cfb3088dc71259c9fc535d2ab4c4dc9c80df1cece0469ef42870",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "9c55d10e4551ba342bb613b2de6ac0b22904aac05cd64366c8f16a5c7299636a",
+        "withoutMediaHash": "11efb98cce01207f27002e5f097ecc979ab38475bc142f4a6d68c4e85ec51939"
+      },
+      {
+        "id": "75",
+        "slug": "asigurare-centre-date",
+        "title": "Asigurare centre date",
+        "contentHash": "05c5312b3722cfd27f91a945acf8eefdc28f9d7496fd16b5a45027e78c33362c",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "4e06ff76ab33c80e0a1d891a3a8f1c53ebd40495182bb25a224b26b1563add71",
+        "withoutMediaHash": "6b451e7c1e33a2b61d7cc563ead3270565a14b48104a3f096975b6de41b8579d"
+      },
+      {
+        "id": "76",
+        "slug": "asigurare-software-as-a-service",
+        "title": "Asigurare software as a service",
+        "contentHash": "4c5bc2d57f0e877b92cebd5d8009ec2afdf1d7d62ade58d642d7b441c54f91af",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "9712ee1a92a23d872301ab34332d0eb3180b56b06f505f99e102510073d130ae",
+        "withoutMediaHash": "2a73d21df889c51eec8b2936508455844f13c3ac8aeafef03e005406d2142790"
+      },
+      {
+        "id": "77",
+        "slug": "asigurare-e-commerce",
+        "title": "Asigurare e commerce",
+        "contentHash": "3b2c4dd3886bf7b37e39107cb5e8008f3b8ff92296afce4623497d46cf356248",
+        "image": "/legal-asist.webp",
+        "fullHash": "ef5b49431e09b34a789704556d95e6a8c00435f3c441f7905f5eab91d9716d5b",
+        "withoutMediaHash": "a77a94794add3b17bdc715467e9f3d31e8c17dba47004acab3bebf1b7faac357"
+      },
+      {
+        "id": "78",
+        "slug": "asigurare-fintech-banking",
+        "title": "Asigurare fintech banking",
+        "contentHash": "0603de296ed88aa20a9ca9762b98b001e068e08c94a5f9366b63827b507bc861",
+        "image": "/legal-asist.webp",
+        "fullHash": "b1a9a7dc977d6cb1913037087a25c8b086fb156028aeae840339ebc696e93f77",
+        "withoutMediaHash": "5b996ae7ce3d34346a4548e8dcc73c5f7792d748d2055a731714df24144a6efd"
+      },
+      {
+        "id": "79",
+        "slug": "asigurare-cripto-active",
+        "title": "Asigurare cripto active",
+        "contentHash": "d86309e8f8b0843a0f9c4612c4888f3b9dbdcb8eda4c693e8bb7f322c0a5bed9",
+        "image": "/legal-asist.webp",
+        "fullHash": "ad9eeab0076cfc6f9e9c149bd93f055ed214870d6163a522785e4a54b16c1f06",
+        "withoutMediaHash": "958bca16b6a9ff532fabeb5a9896853b6d2c441e31e52e8536a43e25a6d4f63f"
+      },
+      {
+        "id": "80",
+        "slug": "asigurare-raspundere-civila-it",
+        "title": "Asigurare raspundere civila it",
+        "contentHash": "e1032f16b3ee655a13cf7ddd7a5fe56040f8438cdad94953041b43e7e8cbfa64",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "b7defc087448b44511a7f1489dd34aa99b91c584c9084a7d43345a29d46eb387",
+        "withoutMediaHash": "ef483979bdb2a449b00ec00c6b9320a66082190ef99f8f8a3036be735826c7e4"
+      },
+      {
+        "id": "81",
+        "slug": "asigurare-eroare-omisiune",
+        "title": "Asigurare eroare omisiune",
+        "contentHash": "7f9bafd3fc6fb3bf795520cdde80283602fd8766553c57d9b7ffa5c16bd096a1",
+        "image": "/legal-asist.webp",
+        "fullHash": "fa210f630dfa4df4ca9221a4e648f7c1c3ccdc9676e76126d59d0e9fcfb102f6",
+        "withoutMediaHash": "7d2eec757370b6175c37a30be617d3bfb56b73800448f57d0bc00fb7354fedc7"
+      },
+      {
+        "id": "82",
+        "slug": "asigurare-infidelitate-angajati",
+        "title": "Asigurare infidelitate angajati",
+        "contentHash": "eabc13d4948b3e5b40464c35d58f99c8894c99e9c39a8060dfec201355506ca4",
+        "image": "/it-companies.jpg",
+        "fullHash": "bd8cf509b02962c249c2819bf3ecc9c1226653657423ece970b58c2270929869",
+        "withoutMediaHash": "515841a4722b0ed5394dda469f4de1e2af917c57e796ef63e1ca005d57c391da"
+      },
+      {
+        "id": "83",
+        "slug": "asigurare-bani-tranzit",
+        "title": "Asigurare bani tranzit",
+        "contentHash": "61b20481bbd16145ea688e125840f44b8631584bfdfdf1ae31aeff4d0d396b53",
+        "image": "/legal-asist.webp",
+        "fullHash": "3a2c108515f6aa31465d523521f1fd721729b2d63bc1a37e037333f0d511bbb1",
+        "withoutMediaHash": "bdecf06663c15a69e6ae47985835d39018da31474c800f2d69af4fbc775bcf1a"
+      },
+      {
+        "id": "84",
+        "slug": "asigurare-seifuri-valori",
+        "title": "Asigurare seifuri valori",
+        "contentHash": "03970b2c644dd59dd2ed281711e7a187ae28e07de6d3df0c5a531864313eaa2e",
+        "image": "/legal-asist.webp",
+        "fullHash": "82dda5f29f36986330deccff6f9c3cf84c24364b958f9a21a22562afdec473f3",
+        "withoutMediaHash": "f75b8519d6e65c20946e501a8375ce813a75f42633ebdeda4888bc30c422af3b"
+      },
+      {
+        "id": "85",
+        "slug": "asigurare-expozitii-targuri",
+        "title": "Asigurare expozitii targuri",
+        "contentHash": "5938933c2b5d34b7c799ee90005ceabee70eae418fbac400e49caf57554bb8d3",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "b16580bc8896b9cc0018309f87b9d1a2e8493ceb52c126d38e9f83de97eb3170",
+        "withoutMediaHash": "44bba63d78e645576619937b709262a6d8849f0c334571b85466e3426f7d362f"
+      },
+      {
+        "id": "86",
+        "slug": "asigurare-concerte-festivaluri",
+        "title": "Asigurare concerte festivaluri",
+        "contentHash": "c071963e4fa467872a1aa7a9d3a3d789b9278ea5c0121b1ceb029ed347504cab",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "f33f1c5805c8fc87e91f54d41277ea4b6e9d7b12c9938db93d0cd34bc452443e",
+        "withoutMediaHash": "d966398032abe772338031674313278960116793cd3ef6c6e8bf0a6cec758873"
+      },
+      {
+        "id": "87",
+        "slug": "asigurare-competitii-sportive",
+        "title": "Asigurare competitii sportive",
+        "contentHash": "e7137e74aca8e0d8b0a609e4c5145964628f387c4adbc809794f805cae9cd056",
+        "image": "/legal-asist.webp",
+        "fullHash": "01fde3076d85366295edc0bf88c13e346e17d0920a0b6a5d59b2e45e4a31428e",
+        "withoutMediaHash": "8cccb30f99ee539cf72230026d31ee5da21c28e8e381b75c72b68d20e2ee9d97"
+      },
+      {
+        "id": "88",
+        "slug": "asigurare-raspundere-civila-sportivi",
+        "title": "Asigurare raspundere civila sportivi",
+        "contentHash": "ed5c251066cd5a91cc7c7f76baf44836460e4e49a5e7956186f7780d46aff661",
+        "image": "/legal-asist.webp",
+        "fullHash": "ba4e128952908bd2417cb4eaf97c6bf70203c13d82c03d25de65c020b5030cb7",
+        "withoutMediaHash": "c82c2192e4f185c438d13a9bc7796754f2db7a99a2068ddaf860a67565aec18b"
+      },
+      {
+        "id": "89",
+        "slug": "asigurare-yachturi-ambarcatiuni",
+        "title": "Asigurare yachturi ambarcatiuni",
+        "contentHash": "d1b7103a92971714a8d1529a049177457b24b1ddebf86f26dead1c13473167d5",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "31d953136c546418e30cfbb936dbaa3347164750b4f81fe98217c9d75534e720",
+        "withoutMediaHash": "966aeadec4ceaddd3af6557edaaae461fa64dba807657a66a5e40626284d45fc"
+      },
+      {
+        "id": "90",
+        "slug": "asigurare-avioane-private",
+        "title": "Asigurare avioane private",
+        "contentHash": "d0ccd0b2a0a67564377644cce7e787d14e88183d79651ee4a14b47fd1783dac1",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "501df3bdabe711aea3bd26575873416e0cf3e689d0c64dc0e824181649183600",
+        "withoutMediaHash": "7f61deeeca9deecc482320919b7db5ca5d1010713f69a6028c8c52b29b9843e9"
+      },
+      {
+        "id": "91",
+        "slug": "asigurare-elicoptere-utilitare",
+        "title": "Asigurare elicoptere utilitare",
+        "contentHash": "2e702202185da146ee647299b319b4832c3e616c4aa5b27f8631a75fa1e2630c",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "d03b148bad89fef009837a521666b2beabbe140c11b0b24b1d75ce1bcfbca1eb",
+        "withoutMediaHash": "bbece7854c3859a13202b5d358fb23f37a149d7d23f824ac3e397fe2b80d12b6"
+      },
+      {
+        "id": "92",
+        "slug": "asigurare-raspundere-civila-aeroportuara",
+        "title": "Asigurare raspundere civila aeroportuara",
+        "contentHash": "a6acd2a56c1306bc256c323cc523b96794353db5b4b85103b016d228c26f14d4",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "bfebfe93bbf3f56ebb5b5a13f320f65debfebfcc3e91d1a221843f5d04d657ae",
+        "withoutMediaHash": "317881f860cd95c656b5043c6a1c8758d0165dbfb27812827ff2f7fd06c11635"
+      },
+      {
+        "id": "93",
+        "slug": "asigurare-maritima-hull",
+        "title": "Asigurare maritima hull",
+        "contentHash": "4bd8de43e5d69be06e16183981735e5203fae933e8cc49c6caa371d5d2a4e63a",
+        "image": "/legal-asist.webp",
+        "fullHash": "7785a2fffa6cf921fd2d6e6533044e4fde927b5c296e9df52876f155f1e100b9",
+        "withoutMediaHash": "bb04690aa8a57294e66ed9ee32b58eef6f9327cc1d666522568a0e23225b0247"
+      },
+      {
+        "id": "94",
+        "slug": "asigurare-protectie-indemnizatie",
+        "title": "Asigurare protectie indemnizatie",
+        "contentHash": "c8cf3f01fbea77c349bc4f620407d608de941cc1bd623b8d1d8ebfee917c67a3",
+        "image": "/legal-asist.webp",
+        "fullHash": "ea8b6566a6dcc709fa23c190b1a79ade6875a24290f35967b05ae76e0f7a3f2e",
+        "withoutMediaHash": "47cb2b19bd929e6788464fb07f92be985cd7e711ce435f82659166ca079fc8f4"
+      },
+      {
+        "id": "95",
+        "slug": "asigurare-riscuri-catastrofale",
+        "title": "Asigurare riscuri catastrofale",
+        "contentHash": "b068417e514e3e593f9fecc6e0b17b252c9ec064b174809a82689254c0d0048c",
+        "image": "/legal-asist.webp",
+        "fullHash": "11ea4a13a83858a9997d71944e80368afc179f767e4f287891e4ddcbb1bd513f",
+        "withoutMediaHash": "2e3796f9be5089219a632e68986e8874b05b2ae1954c909983bc3b4ee6348c72"
+      },
+      {
+        "id": "96",
+        "slug": "asigurare-terorism-sabotaj",
+        "title": "Asigurare terorism sabotaj",
+        "contentHash": "c16a6571422dd71b46b3f370cf0cc9ec45850d30aa6d698f1312690375eda0e2",
+        "image": "/legal-asist.webp",
+        "fullHash": "1a5ac843a3a3573c17184dbdf3e108771330cf2eca9875913b8dc633338c97da",
+        "withoutMediaHash": "28bb9483a3f0a606401a2677efe987f15dbbd99e813d7d1cdc78123c26d06931"
+      },
+      {
+        "id": "97",
+        "slug": "asigurare-raspundere-civila-poluare",
+        "title": "Asigurare raspundere civila poluare",
+        "contentHash": "09fae8fb2f7d7e5c1034fa34bd82295d0c4ba6bf080189c563d39ee12265fd7c",
+        "image": "/legal-asist.webp",
+        "fullHash": "f12729efb056ecc45ccac4d0933f2634446dc17f11bcaea221d06488b2d3c144",
+        "withoutMediaHash": "95111568f6bedd84a6ae27db930748bf9f3c8ba1ada1d9bed8d3a73aee3b6cee"
+      },
+      {
+        "id": "98",
+        "slug": "asigurare-remediere-mediu",
+        "title": "Riscuri de mediu și remediere: dosarul de asigurare",
+        "contentHash": "321160e62f881e047d6a53eda3f78bd82f90499d18c5b5c6916afa04a7c5aaca",
+        "image": "/images/articles/moldova/mediu-re-alb-20261107.webp",
+        "fullHash": "46269e5004728b9ca27d6fd2b2f8851bd38a8c92d001a3a47d3f463518fecd91",
+        "withoutMediaHash": "e22f26ccddcb85d8fb57b291204ab321a1110b4cf05d35d1fbc891c253387bb6"
+      },
+      {
+        "id": "99",
+        "slug": "asigurare-raspundere-civila-produs",
+        "title": "Asigurare raspundere civila produs",
+        "contentHash": "ae837bcdf623fa6c4a0eff2a3f730ab5b150bc90692a8f0b78004b0322f0aae2",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "9a8a91c39ebbf7bf1d39107d083c1a9ca1867f0aee0c3a6cb8054f2ce2800927",
+        "withoutMediaHash": "65b155acf1313bca8757a5c53669e49787b05bcd85617d76b9881493fda2b258"
+      },
+      {
+        "id": "100",
+        "slug": "asigurare-rechemare-produs",
+        "title": "Asigurare rechemare produs",
+        "contentHash": "ab8fa121eaf33227a52276aec74548e450bcef3cd0fdac96252d4bf776c2af5e",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "fec713659ddcc2a9db5a67989b81b6f68ec0fe0a5ee526cb57e95b9ab807e94c",
+        "withoutMediaHash": "ce21e3c24975cf13c79eb936feeb889185825f44acd01c71b13e8fd4bcc3b9bd"
+      },
+      {
+        "id": "101",
+        "slug": "asigurare-studii-clinice",
+        "title": "Asigurare studii clinice",
+        "contentHash": "92f956869656163d791f9ca0fae2363e8fe097bf26f70db47b0abaea2c3eaa07",
+        "image": "/legal-asist.webp",
+        "fullHash": "75092c743d37433cece132c68fcaf42b2e411a502b64cc89f13529cb23e2110e",
+        "withoutMediaHash": "5fd5454284da3099dcd489a314735664798041e22463986b8e207a6a6ceca5a4"
+      },
+      {
+        "id": "102",
+        "slug": "asigurare-raspundere-civila-angajator",
+        "title": "Răspunderea angajatorului: ce întrebări pui la asigurare",
+        "contentHash": "18d7d6afe38bb6b5bacadcabd0a34aed9d6232270ef62e888d2bc580855254b9",
+        "image": "/images/articles/moldova/asigurare-raspundere-angajator-moldova.webp",
+        "fullHash": "5b4446a1fc94b59085f2c96a4f34b190fa84b2f7a56506d9f52b41f585384cd0",
+        "withoutMediaHash": "eb1315ff62af7c19401059c611834188e04d8cf646d64361dcccf2776b06ee88"
+      },
+      {
+        "id": "103",
+        "slug": "asigurare-sanatate-expatriati",
+        "title": "Asigurare sanatate expatriati",
+        "contentHash": "17e71316070bc7a9763dee1e63a171861512e9275eceab7eec4e37ab6fc85f9d",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "f6b161390f23a21815de1826150a75f81c0d18f3c725e5c67bf46222e425da70",
+        "withoutMediaHash": "2f385f753255431a869e2c51656af5de1013a9f6444b9575ac21cc5c57c0667c"
+      },
+      {
+        "id": "104",
+        "slug": "asigurare-repatriere-deces",
+        "title": "Asigurare repatriere deces",
+        "contentHash": "3ba9401b92b7880530f23fd603fa5267b23e0e12216518b9e82ba4479ea4c3ff",
+        "image": "/legal-asist.webp",
+        "fullHash": "4d22102a24d246295ca1b8fde398b981b24840e5f675af42b215ecd5d4e9ce4e",
+        "withoutMediaHash": "3a540ed970d2524351f2fc59ad0fb88469ff3babf97a5e553389d2d4a9a410f7"
+      },
+      {
+        "id": "105",
+        "slug": "asigurare-asistenta-medicala-vip",
+        "title": "Asigurare asistenta medicala vip",
+        "contentHash": "47b13ccf8e3cd67fbcda1796ce2499717367f7a69afa91fcae214e2e37b78dad",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "c2dbae1c6434e43fef37ed2b3c9667b4f29bd1dd289eabce916f4f9804b9e0cd",
+        "withoutMediaHash": "bd132757ad9111740124990e50ef70b27a5b2459633f993fbf4e834379de279d"
+      },
+      {
+        "id": "106",
+        "slug": "asigurare-boli-grave",
+        "title": "Asigurare boli grave",
+        "contentHash": "de17dd4a3a278eac1c5da71127ad3f1d6f9f592801c5deb598bc8109944bb75f",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "8b123fa0610a38bb0df5755ea3169d6fb6920c68c48a71bc5438f8b03c279ebd",
+        "withoutMediaHash": "d1753ead9abc545b4ddb1fb497082ccad64d9950e4755cf307e597f9302f68c0"
+      },
+      {
+        "id": "107",
+        "slug": "asigurare-spitalizare-interventii",
+        "title": "Asigurare spitalizare interventii",
+        "contentHash": "533f6995fb3682bde204bbbdcf969064e244e76ee56fc55abf815a1121596328",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "ca9f6d1aea3cfe5a37d0cc5e5d3f11e53a954be2fd16f31b15cce58f90cdbe17",
+        "withoutMediaHash": "5ff9e8921c160d6d5035d8cded30728d5581a2dc2d8df4ee7c6738aabd80b628"
+      },
+      {
+        "id": "109",
+        "slug": "asigurare-optica-medicala",
+        "title": "Asigurare optica medicala",
+        "contentHash": "b949e980333ccfb7b0a45f74500725510fe558d40ffa50f0f0b1c71779d3a0a0",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "bd897f81c92daf5c171dfbaefed420ac2a0545e2fcddfb8f1024ec036360f9d5",
+        "withoutMediaHash": "1773395245bdecbc07d0ba9fcf401acc1df01baaa8b77d3289ec1d66fa60eb9b"
+      },
+      {
+        "id": "110",
+        "slug": "asigurare-maternitate-nastere",
+        "title": "Asigurare maternitate nastere",
+        "contentHash": "d789f05d5bf44e9de3197349bcf4c873b1fe7c9c053de623d4beb8a9a111b748",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "d02c1abf02ac1d2bb5da04ac1eda9c6f222ae16232926098660122c78f0f7203",
+        "withoutMediaHash": "77ccb99a5722a00f633b34eee6334584942e87081c236059a52f064d93afd5ca"
+      },
+      {
+        "id": "111",
+        "slug": "asigurare-kinetoterapie-recuperare",
+        "title": "Asigurare kinetoterapie recuperare",
+        "contentHash": "4b01755505681261a111e7568065ba8f27e5bcbb86fa8be723be1002754c7f30",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "e29737f911e5a965e9eb3f2b40674dc7590a728ca7e534386dd631a407961933",
+        "withoutMediaHash": "19089b4ec735d4668b34901cdf49fc7092323faa68c465b586425ab1323f5d10"
+      },
+      {
+        "id": "113",
+        "slug": "asigurare-check-up-anual",
+        "title": "Asigurare check up anual",
+        "contentHash": "6e0c5ef8f6370cf61a21ad349014cb3831d3e6109c3833c492ad359660919a4b",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "034cb8a167ac1cb82933d6a7b28bddfc877740b239621b2b9c2714eb9a9b51b0",
+        "withoutMediaHash": "b082dfbe105f633bff718d2d327a1cf306ab7361f45bc40551d60ece1e4abb55"
+      }
+    ],
+    "ru": [
+      {
+        "id": "10",
+        "slug": "asigurare-viata-moldova",
+        "title": "Asigurare viata moldova",
+        "contentHash": "42cd2018158eade5ed5af8a3f5b7fc92294ac4de8c77e20da539061e09d4ea9c",
+        "image": "/images/articles/moldova/viata-familie-corner-20261109.webp",
+        "fullHash": "cf964bd3ca95e70b1e08813a33324eabb05ea70ee8295ce1bc5b015b2b7fca00",
+        "withoutMediaHash": "45ba858cfaff7d4a9142c693a8aab0cfe18e287ceb66bca3b8350964d011a3f4"
+      },
+      {
+        "id": "11",
+        "slug": "asigurare-agricola-seceta",
+        "title": "Asigurare agricola seceta",
+        "contentHash": "9f6f25b914ecc2885141f5b45ff9f6efeeedd1f922a8c0251f034e20f556cfcb",
+        "image": "/images/articles/moldova/seceta-culturi-corner-20261109.webp",
+        "fullHash": "20e44827117321b457bb9c688b3e0017aee8318e0e83019226abaf2d482030bf",
+        "withoutMediaHash": "d760b1d6aa4600bc11abfa24691a542204adba4950ea4ffa1248314428bc2983"
+      },
+      {
+        "id": "12",
+        "slug": "asigurare-cyber-companii",
+        "title": "Asigurare cyber companii",
+        "contentHash": "ca721171c1f291f021055a85c8d57355de71cbcb3bed224de6ee561db2ee2e2c",
+        "image": "/images/articles/moldova/cyber-companii-next-20261108.webp",
+        "fullHash": "a387e79061b08eaf6300c73689544e39899e5e5c197f83ad435690714d587b8f",
+        "withoutMediaHash": "1705667e4335ed197880758a1c7fe60f4f0ad235718cad2ab1d391c4e27328bc"
+      },
+      {
+        "id": "13",
+        "slug": "asigurare-raspundere-profesionala",
+        "title": "Asigurare raspundere profesionala",
+        "contentHash": "51796b5f323d8c724417afb5c693399f9d5e9473e70ecb07785bf179c9eee3f1",
+        "image": "/images/articles/moldova/raspundere-profesionala-20261108.webp",
+        "fullHash": "542bd16cbb491960bf8cf98c4bface3102ed4a67dce96faf0b996e03ab4408c5",
+        "withoutMediaHash": "891f1b23e6ff167e13df7d0f8760f381a1b37875704880dc601c4e1c7482c167"
+      },
+      {
+        "id": "14",
+        "slug": "asigurare-cargo-transport-marfa",
+        "title": "Asigurare cargo transport marfa",
+        "contentHash": "5d492411ec9f85d9fb5f88708560e673d23581bf63e562d9befa85d30343761f",
+        "image": "/images/articles/moldova/cargo-marfa-20261108.webp",
+        "fullHash": "1ef61bf898dd82f730feb60625ebc0b5ea3d2b0e3926bcf68e4112e1c89a08ef",
+        "withoutMediaHash": "e0df5a5a1ff5b8db97ff0c7a4255061b059ab66d558d5d6112a3e81e02f7f3a3"
+      },
+      {
+        "id": "15",
+        "slug": "asigurare-sanatate-privata",
+        "title": "Asigurare sanatate privata",
+        "contentHash": "e7f370c391fa1757cd355d4d927538d993cf296e110dc6e93fa550220167d225",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "155ff65ff129896a3972b218361bd88deae8ed9d0b8805f8a129cd44314dfa32",
+        "withoutMediaHash": "f96b0eccc9367df360f4f4234ebf0d79af1b564781c63cd2bf733b5fdb754a63"
+      },
+      {
+        "id": "16",
+        "slug": "asigurare-animale-companie",
+        "title": "Asigurare animale companie",
+        "contentHash": "4cca6d8efd4a0411268e3abc6fe79c20ac1da34472cd204dc6d1d9b63475d52e",
+        "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "72195bdb64c734c3adba82a6c4be9735efc4632c2b9c49ba08e4209de1a4a7bc",
+        "withoutMediaHash": "9606162ab3938eab32c0601885b86ff61a0ac375d8edad0af7c2fe11f8e8bc53"
+      },
+      {
+        "id": "17",
+        "slug": "asigurare-echipamente-it",
+        "title": "Asigurare echipamente it",
+        "contentHash": "52136edb3f9ee9ed4e662f89626187f89197045ab33e55a50272d7db2115c955",
+        "image": "/images/articles/moldova/echipamente-it-20261108.webp",
+        "fullHash": "be8287478fa6c3f59ec18420a403a7c292c2e9454004095977735ec5827393c0",
+        "withoutMediaHash": "581cdc9daf70cab34f3acaa1412b3b5359ff561f5511ff03b0eb87780b8d9abe"
+      },
+      {
+        "id": "18",
+        "slug": "asigurare-evenimente-corporate",
+        "title": "Asigurare evenimente corporate",
+        "contentHash": "ff914c40c183d5b958fee2fbc62c0dd4a44243f911a639caf199a527db3003d8",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "8a248b40643b2d17e3fae0e2788411fcb0badf59cb89e21f22d8b7474dd1ae99",
+        "withoutMediaHash": "9c2a139693fff8c0ab7d71c2cd86ef3b8b6d113445d9bd4fa5b1bd4fa174748b"
+      },
+      {
+        "id": "19",
+        "slug": "asigurare-constructii-montaj",
+        "title": "Asigurare constructii montaj",
+        "contentHash": "00b5c1a8ec0b3ed337d77dd16ccabd18da9417528a63931c3b4bbfcb8ae190ac",
+        "image": "/images/articles/moldova/constructii-montaj-20261108.webp",
+        "fullHash": "30855d8ce0cd574968e9e33d26e5b1cab96eb8a712ca0587fee6658b6256d084",
+        "withoutMediaHash": "6faf7a33cfd3e6d896fdbf4bb89499ad60fa0920dc31bc8489d1eaa0847175a3"
+      },
+      {
+        "id": "20",
+        "slug": "asigurare-flota-auto",
+        "title": "Asigurare flota auto",
+        "contentHash": "4f57045c97489c9a7e2df436574a57c841ceeefaa8f46bc4c182c2e2f64e8ae4",
+        "image": "/images/articles/moldova/flota-inventar-corner-20261109.webp",
+        "fullHash": "6ff7c6072068c7559267062a0b5746683118d1ca5a79aad9a854e70fbcdbbfc0",
+        "withoutMediaHash": "fa1d99520a15903b5a186b7a93b6006a6d490f40e5fb89f8323353a79efa191a"
+      },
+      {
+        "id": "21",
+        "slug": "asigurare-accidente-angajati",
+        "title": "Asigurare accidente angajati",
+        "contentHash": "625c83f19cf10b2284e45461c0c858cf8f7ca00d8c367ea743d74b5316323d61",
+        "image": "/images/articles/moldova/accidente-angajati-next-20261108.webp",
+        "fullHash": "253b856b3dc2723cf1589e4a8728e5f0c4e1783fff3a0922bf1d71343b278a99",
+        "withoutMediaHash": "48e2a8a8d5af2426b027e56997186f024ce2af47dc9705b6b8325bd386492837"
+      },
+      {
+        "id": "22",
+        "slug": "asigurare-drone-comerciale",
+        "title": "Asigurare drone comerciale",
+        "contentHash": "071105bfaf406ccc01d981cd5765f04a6602a20a609fa0e8229fae1fa2a12216",
+        "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "c17e10a8b13bc22276b26a59a865e808955e691b9dc94cbd3f80726f8e7e6138",
+        "withoutMediaHash": "a67bff4d2ffeaf8a998d7d6a12deeaa0d3063e481004241333c5d7a8fd9edde0"
+      },
+      {
+        "id": "23",
+        "slug": "asigurare-pierdere-profit",
+        "title": "Asigurare pierdere profit",
+        "contentHash": "4aa7da5c8e9398d9c5a4a606ca299ba1ac4ae460c98178c8976133c5cd71daaa",
+        "image": "/images/articles/moldova/pierdere-profit-re-alb-20261107.webp",
+        "fullHash": "5c7f7694504907a898edc8f4a07fc3d76b551aa67bed64b75cd4b83bbfcdad2e",
+        "withoutMediaHash": "1773a5fc351d6aa1c60e4d90f27ae57f1573e9eb525ae03f088eef80306301a6"
+      },
+      {
+        "id": "24",
+        "slug": "asigurare-raspundere-directori",
+        "title": "Asigurare raspundere directori",
+        "contentHash": "1603c834a01eab6d82cc0f1389fcf57ee2d4ecbcaf6ecebaaaef1b1257dd842b",
+        "image": "/images/articles/moldova/asigurare-raspundere-directori-do-moldova.webp",
+        "fullHash": "6ef2e14052de8003b8780e1ab31c61a92f0f2754aa49909d340aa543989e6d7b",
+        "withoutMediaHash": "858ffbfe80711b9097561077f430dfa8619094943646922a1f7fc12d5bc486c8"
+      },
+      {
+        "id": "25",
+        "slug": "asigurare-panouri-fotovoltaice",
+        "title": "Asigurare panouri fotovoltaice",
+        "contentHash": "7826cc6e79fabf4c0ea515588907a34426375ef266c0e3efc7b9572859195d17",
+        "image": "/images/articles/moldova/panouri-fotovoltaice-next-20261108.webp",
+        "fullHash": "e95e0ca21b88eeb788f163228e8a956bf66bc8d4ef641b0ed3c8ae87d29ae816",
+        "withoutMediaHash": "e5a2dbc43a130590a0ab50cc1bc48378d48c09f0415121a245e252268f8fac37"
+      },
+      {
+        "id": "26",
+        "slug": "asigurare-storno-calatorie",
+        "title": "Asigurare storno calatorie",
+        "contentHash": "71c62709b9320ed72adf99e3ece0500e8e94ae9a452dfbe00a069fe4f014ced4",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "0a169ad7cdc8daefe9d3087af7369776b776c7f33fe5137d51bdf86d407fc8f1",
+        "withoutMediaHash": "83c89ae38eeaf84dfc4497c4e12ec8ec8fc3fdd2e640ba75e0eb6600c216b2c5"
+      },
+      {
+        "id": "27",
+        "slug": "asigurare-biciclete-trotinete",
+        "title": "Asigurare biciclete trotinete",
+        "contentHash": "4e64631ca6b73c65e5120c03818f73a550bfe58e25548acf3203a3bc3f394bf6",
+        "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "3aa9a9d83af3aef9051914a6e18930262af5370a09064d2b949ddd843cdb528b",
+        "withoutMediaHash": "70516c178fd5b4c6523b6120fa073fd3a248850e40d372fd149e3afee2a6e678"
+      },
+      {
+        "id": "28",
+        "slug": "asigurare-obiecte-arta",
+        "title": "Asigurare obiecte arta",
+        "contentHash": "f9d3e6f4179255ec2d03566843478338ecca52932ec8864ddeb3c3691ba558db",
+        "image": "https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "4fb9affdab6b2bea843d3fb8f5afb65f562486ab5a6ad737633c481f9e9958dc",
+        "withoutMediaHash": "cd04415ad961aaf611c31807dd08b962199d249f54a4cc834b7f34abae3dbdc4"
+      },
+      {
+        "id": "29",
+        "slug": "asigurare-riscuri-cibernetice-imm",
+        "title": "Asigurare riscuri cibernetice imm",
+        "contentHash": "037be9de766dbd76e3bdda071618a0a6321317654d91d336aadbec9e93d13753",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "2eb917c8306c3b87bb9910fa613c89193f150c7a90ae7528400f5fb05f998efb",
+        "withoutMediaHash": "9c84b2d6e2c1e958e01b162b0351153eefb8bcc927e6ed3859bc38b50d8459f0"
+      },
+      {
+        "id": "30",
+        "slug": "asigurare-raspundere-civila-generala",
+        "title": "Asigurare raspundere civila generala",
+        "contentHash": "842296e25070a3aadfe496b38031cf5125c4cd089e935fb37095699b9a469912",
+        "image": "/images/articles/moldova/raspundere-generala-20261108.webp",
+        "fullHash": "9cfa401e614a74a3f5afee560b536985362d2ef64a7116d404285c50f577e8c4",
+        "withoutMediaHash": "c142162b6d12508cd945a016929d71ed6439c58ccea61c2281cd1d6fc77eccf4"
+      },
+      {
+        "id": "31",
+        "slug": "asigurare-rca-moldova",
+        "title": "Asigurare rca moldova",
+        "contentHash": "6543267f489a721a384ab1176918eebee24b2391a9fb8683fd19dbd26871379b",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "0a8c80636adcf79f6eb6a2d14a2c155fd2bdf217e86fcbabcf8ebc3914834e55",
+        "withoutMediaHash": "9cff681a2c7562c45de89aab1f13504bff1f5f312f9d7b37b27d314519feffc4"
+      },
+      {
+        "id": "32",
+        "slug": "asigurare-casco-moldova",
+        "title": "Asigurare casco moldova",
+        "contentHash": "754720982c43a16ac8260d3e3372e307e0154986d574425af5f116b50644f643",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "c789b185c4448cefa24b956dbead8c11e13af50d4eba9e31a24c36f53e2c7a0d",
+        "withoutMediaHash": "97664656687b427d87409220d8980c020ca244d156e7c180156739f236ece229"
+      },
+      {
+        "id": "33",
+        "slug": "asigurare-carte-verde",
+        "title": "Asigurare carte verde",
+        "contentHash": "0158f587a823fbd00ac57a673028d41fbb09c351fbc6c1b311471264a7cf99a5",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "1e8d871b2c8be7bec7ef00e07b00706b4abb4f17ad1ad896841024ade176fcd3",
+        "withoutMediaHash": "9b50abaa3a059e2f5b13f4e0d641cdde2527a50f6d61808b2752b98c60470c1e"
+      },
+      {
+        "id": "34",
+        "slug": "asigurare-locuinta-moldova",
+        "title": "Asigurare locuinta moldova",
+        "contentHash": "14b49a386b750e4b8a0839e67bfb8432751edffb329bb29846300c5434493a79",
+        "image": "/commercial-property-insurance.jpg",
+        "fullHash": "eedda34c73ac27aa8b228b6d3e03eea9af020f5fda5ff86b5e511443e4a21ba8",
+        "withoutMediaHash": "559f220abe872ac02073fce0fb4d340592aaf92eac33514ddf3a830102d85f43"
+      },
+      {
+        "id": "35",
+        "slug": "asigurare-medicala-calatorii",
+        "title": "Asigurare medicala calatorii",
+        "contentHash": "ce42fa866734580f67e5c543708a3744151290b7f42405438838d44d4a20143a",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "34740ab6e7c5c27a4e1a19bd597563c7fa215cf26bf626bb49ffe3ad13a0d472",
+        "withoutMediaHash": "6ba816b4c368ffa535289a5275de7b4ac678caa512170d0ce809e8b73728c52c"
+      },
+      {
+        "id": "36",
+        "slug": "asigurare-malpraxis-medical",
+        "title": "Asigurare malpraxis medical",
+        "contentHash": "9a76fbdd049400899f7ce6cb9f784e9493585111b6c1db69064b8dbfbbdab242",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "2947c5b75eacbabad5e55cbc60cd2328a9a064b27267c36278a6876d0f7e86ec",
+        "withoutMediaHash": "240b41f0447f57d6bd2eb1b1dba1fd765b6faf139c76f1033c8722c62627f0f8"
+      },
+      {
+        "id": "37",
+        "slug": "asigurare-raspundere-civila-auto",
+        "title": "Asigurare raspundere civila auto",
+        "contentHash": "ff5ce535ffafc85f46ab6af003177b9b61feb659d5f07ac6c30c9f4f2f2698c3",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "459bc2262dc52a80640226d93fa50ac24447978245018501691d5a6790eaa611",
+        "withoutMediaHash": "0e97ffc4761126357b03da12ad49f6b26fd495643cd2cf4475b8ec5c8e1febe7"
+      },
+      {
+        "id": "38",
+        "slug": "asigurare-bunuri-tranzit",
+        "title": "Asigurare bunuri tranzit",
+        "contentHash": "186ce06f532be2f1e6a0e75efceb2d0b4a3b5aec340de4b0986a31c07953c3de",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "7fb697c425664720cd02169d864b1b5326c4c50178c3109b20d70156901c4d70",
+        "withoutMediaHash": "23354525af10d4e16fc02fb73da2f5a988e079517c5060a2ca8d6ec719939a8f"
+      },
+      {
+        "id": "39",
+        "slug": "asigurare-utilaje-industriale",
+        "title": "Asigurare utilaje industriale",
+        "contentHash": "0031b845c77683a17176afae8c74f5029290ac59beea8a0800679740a468b990",
+        "image": "/images/articles/moldova/utilaje-industriale-20261106.png",
+        "fullHash": "aaa6f1d350cb886191b0443f4636feb73f00fcd126e2f5a900d4c3b777cb9728",
+        "withoutMediaHash": "5508866c959547d173b461f37647f7cf14e0ba206fed55b3f9bec28b8dda8a91"
+      },
+      {
+        "id": "40",
+        "slug": "asigurare-depozite-logistice",
+        "title": "Asigurare depozite logistice",
+        "contentHash": "5d55d52fc28a8f25d95b4f075873da9d9b53de9c3ba4683eabbc41aab2205e09",
+        "image": "/images/articles/moldova/depozit-logistic-20261108.webp",
+        "fullHash": "ecee783048e94d2386a4833a73b654535d1cff61a697d1124320175fb65a1a94",
+        "withoutMediaHash": "52523dcac682fa7571acd5ab21060e3ab8211098bb5b1a0d137a274c947ce125"
+      },
+      {
+        "id": "41",
+        "slug": "asigurare-riscuri-politice",
+        "title": "Asigurare riscuri politice",
+        "contentHash": "72e698666cc88bb85c07350957002018786fcefeb452c4f10424610ffa72b0e9",
+        "image": "/legal-asist.webp",
+        "fullHash": "b6c50cf326410983dcf5bb8b2a1bf26affda7bcac52610a07aa3b8c269cdb501",
+        "withoutMediaHash": "dacbcbc8c9d4e597510421079bff6ab52476e58d50ba16c5a23f0eee8e5e13e0"
+      },
+      {
+        "id": "42",
+        "slug": "asigurare-credit-comercial",
+        "title": "Asigurare credit comercial",
+        "contentHash": "5e696a07b852ca92d28a98f5f304d109637339c7bfe9ac0b49a5e1767f00e254",
+        "image": "/images/articles/moldova/credit-comercial-20261108.webp",
+        "fullHash": "275da0b2cd7d2c02490446bb40cb67ffe06548db3fd49f6b82853489803c043e",
+        "withoutMediaHash": "57a43d3037ccb5d8dd526acdce201ccd920903cb9b9254612fcf0ef1b85b7054"
+      },
+      {
+        "id": "43",
+        "slug": "asigurare-garantii-licitatie",
+        "title": "Asigurare garantii licitatie",
+        "contentHash": "0d980b8cde7a366a76ce06c74295a049312c5b666d7da072ddf839d6cab91dec",
+        "image": "/constructie-inginerie.jpg",
+        "fullHash": "a96643f11869edeb22ea82dd330dce41dac782a6f86371a31ac5672314efa7b7",
+        "withoutMediaHash": "06ef66afdf166b78304d17fb60c031b23701a24f8e1998b943193339929ac916"
+      },
+      {
+        "id": "44",
+        "slug": "asigurare-buna-executie",
+        "title": "Asigurare buna executie",
+        "contentHash": "b0dcdfbfc989a26cc3b4b5e7d0c32f8a3295beb06f76b6f19daf00f2824d1296",
+        "image": "/images/articles/moldova/garantie-buna-executie-20261106.webp",
+        "fullHash": "811d9d8089182ac0a88461c165ed783dfa28188b5e21fdfc16ffbbc3b37d99d1",
+        "withoutMediaHash": "2151ea44129d9d80d36003df8969ddc16fa7c358ee9acf74ca100b4a61f2fbff"
+      },
+      {
+        "id": "45",
+        "slug": "asigurare-mentenanta-proiecte",
+        "title": "Asigurare mentenanta proiecte",
+        "contentHash": "c0e22bb7ed453dc9551d3c3ea0f3e4f8731627efdb1ca61afbdf63b457a52433",
+        "image": "/constructie-inginerie.jpg",
+        "fullHash": "c5dbe813ae74981335cefd617a913400d8417ccda996007c0d1695fbb4b0f965",
+        "withoutMediaHash": "5e63b397d23d12802f9f56a5ba094fc3a82407481e7d76f2f7c2d6d1c82049da"
+      },
+      {
+        "id": "46",
+        "slug": "asigurare-raspundere-civila-legala",
+        "title": "Asigurare raspundere civila legala",
+        "contentHash": "bacc17fc39d78db2349c81deb0f2631a4a02201406f8888494a7a9f3715a1184",
+        "image": "/legal-asist.webp",
+        "fullHash": "144bca251b317a980e17107924e253098da5941aa225f8aca1d34efbe017eedf",
+        "withoutMediaHash": "471f01b73730cc3001b2233b48d13c81e4b850c9a5bd6273e8b0e19062fd5a43"
+      },
+      {
+        "id": "47",
+        "slug": "asigurare-protectie-juridica",
+        "title": "Asigurare protectie juridica",
+        "contentHash": "0a202aaa8b4b7bfd1bf245fb9b53e6d3afe2e9641b22609854dd659eeae38872",
+        "image": "/legal-asist.webp",
+        "fullHash": "f1cf91b41c8d8a3278d8aa5513ae0cfc0001f81e513ba8692663511c64f7aa5a",
+        "withoutMediaHash": "53e6ad3db629eac6f8a3b644f94e5f8008e142a8e34c3b431722ae60bd43bab5"
+      },
+      {
+        "id": "48",
+        "slug": "asigurare-asistenta-rutiera",
+        "title": "Asigurare asistenta rutiera",
+        "contentHash": "5179899593d44a6ff1d48ebb752f1cfde8b6b9c2a3002c4eb104f01d119e8720",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "be406ab4fb0a4d3b02a40d99288f7ae45cf594aa4d7423eca610f6fd2b023254",
+        "withoutMediaHash": "9fbe4c5760af1e02fca6c0426d7a3ac5b149070ff3260b9adcf4e87dce11b8bf"
+      },
+      {
+        "id": "49",
+        "slug": "asigurare-bagaje-calatorie",
+        "title": "Asigurare bagaje calatorie",
+        "contentHash": "96f009d9149d8f3304081d5321596ccf514e68f462864002a5f9fce0a41b9580",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "20a8a0a68a45782d5a221e63fbc33fcda4b5f92b61f0a3a220c6039573fe51f4",
+        "withoutMediaHash": "0de3b95faf9dd7e969cb4016d248536f3b15a32551593b8d975e811f0a91f87e"
+      },
+      {
+        "id": "50",
+        "slug": "asigurare-anulare-eveniment",
+        "title": "Asigurare anulare eveniment",
+        "contentHash": "fecc66bbebf7c46234094dd58e95519692e32923ecaed4048191d12d4e75576c",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "2e64b83b63bc51eb87a3794d4e540f83adea376816f769088b825c5e983da336",
+        "withoutMediaHash": "17705b2fdc39ffd7e8f3de0c5d3765e4baa9b07fffe9aa43dfbc6caa4fb05608"
+      },
+      {
+        "id": "51",
+        "slug": "asigurare-raspundere-civila-familie",
+        "title": "Asigurare raspundere civila familie",
+        "contentHash": "be7c90714d6e9fd7c2e6f18136b6c0fb3b451afe45d5a6f69ebe482e64d985b1",
+        "image": "/legal-asist.webp",
+        "fullHash": "83085da92daf38664189eb6ee77e10242c88bafc5f036547509e20e62fd0e421",
+        "withoutMediaHash": "1400b9287abe722c52a44a233e310df7297f70123901bdc798eec7e27dddf896"
+      },
+      {
+        "id": "52",
+        "slug": "asigurare-cladiri-birouri",
+        "title": "Asigurare cladiri birouri",
+        "contentHash": "9c27b7b115c03b1204f8200a83ef29d04924546583e754cade30603c0d01ff53",
+        "image": "/images/articles/moldova/cladiri-birouri-corner-20261109.webp",
+        "fullHash": "42cf2c79c3db2a1d8e8d5a8b237a00cf060ecbc5cc37a130ead013006cc14b3c",
+        "withoutMediaHash": "bdd384059e7d0bbc1005843365b70e9523640a371749b9b3c438fefd2428b405"
+      },
+      {
+        "id": "53",
+        "slug": "asigurare-centre-comerciale",
+        "title": "Asigurare centre comerciale",
+        "contentHash": "493c2fafee90c0ac5aa177be6a6f09b021d9327cefb698a918ccb749f364e0b1",
+        "image": "/images/articles/moldova/centre-comerciale-corner-20261109.webp",
+        "fullHash": "060cf8723e68f97c47601f82efc9ea9f809e7dcef8905fbe4cfbbc0eefe59915",
+        "withoutMediaHash": "6cf1a8579bb4cf1898285a57bb3b5ac3750a2645996fe79a91ffe7f36c20c7f4"
+      },
+      {
+        "id": "54",
+        "slug": "asigurare-hoteluri-pensiuni",
+        "title": "Asigurare hoteluri pensiuni",
+        "contentHash": "a4b81d8d5ad93425eea65f87ffa968512c57e940b061c4a6166274ab3e6e3186",
+        "image": "/images/articles/moldova/hoteluri-pensiuni-corner-20261109.webp",
+        "fullHash": "619d8263968992be585d5a7f9d50fd6b507d00860c871564d3692e9896624e0f",
+        "withoutMediaHash": "64bfc119b3e45127f076f2343daba1883d4fac68855b6869df426110920ca704"
+      },
+      {
+        "id": "55",
+        "slug": "asigurare-restaurante-cafenele",
+        "title": "Asigurare restaurante cafenele",
+        "contentHash": "dcd2eb281d1b68d9c0f12cb09db8d5562ec67029916af387bb5acd13c4c0cf4f",
+        "image": "/images/articles/moldova/restaurante-cafenele-v2-corner-20261109.webp",
+        "fullHash": "a06c4a6bdefd4db59c5acb25f3aae59fc6d5f7367153a5748961de457087bee6",
+        "withoutMediaHash": "c9c52cf36de2fa6cd61129c8b3f760b1e0641332390d7b88e5198f9cd0be6658"
+      },
+      {
+        "id": "57",
+        "slug": "asigurare-clinici-private",
+        "title": "Asigurare clinici private",
+        "contentHash": "0c435bb99f6cfee76157360f158054aa30d40f2a57474ad13d26773845188949",
+        "image": "/images/articles/moldova/clinici-private-v2-corner-20261109.webp",
+        "fullHash": "503fcaa017e53a017c9c2de8292217b3ff27fed868987cfce8e5c3bf4ea48f9e",
+        "withoutMediaHash": "8f86ebd5853f6a02fe98d32ce958b545904306d6043f975265c7f2f0f1f668ff"
+      },
+      {
+        "id": "58",
+        "slug": "asigurare-scoli-gradinite",
+        "title": "Asigurare scoli gradinite",
+        "contentHash": "7bd0532be1d4413ed180fd209d2c9591351a512190b31f770680b0d4a03148ef",
+        "image": "/images/articles/moldova/scoala-clasa-corner-20261109.webp",
+        "fullHash": "18398067b9c978ccf26f9ed90e758516c47d943b3cc1e93381d72fa979b56f93",
+        "withoutMediaHash": "a657156b78e5fc5e694fe73a7f805889caa5d478fd0269166b8a0ca53500c080"
+      },
+      {
+        "id": "59",
+        "slug": "asigurare-sali-fitness",
+        "title": "Asigurare sali fitness",
+        "contentHash": "cf0c5eeade9d806d4805f5d8d76e527cfbe99cc6ca868c5012c5a65ca980e139",
+        "image": "/images/articles/moldova/sala-fitness-corner-20261109.webp",
+        "fullHash": "664571dfdf2cca6ed5eeed6c6dd19c8cccca0babb5127d593621e4cecf115a02",
+        "withoutMediaHash": "594c407b8aaa09dc7f8a6a79879913b9bd693e0953002df30a18b64b1ad9cee1"
+      },
+      {
+        "id": "60",
+        "slug": "asigurare-depozite-cereale",
+        "title": "Asigurare depozite cereale",
+        "contentHash": "35f8be9937edc62af685f130eea9292f52af537456501f807fd6b550cb4b4e6e",
+        "image": "/images/articles/moldova/depozite-cereale-next-20261108.webp",
+        "fullHash": "1925c0e42547e4eda0c16c693d485390a7992c4538d792ce1fd7dbf4c93f1867",
+        "withoutMediaHash": "01dbadf6fad3f61b472c8120dc16d8c2c25ccdb2eb8ec021eddc18322ab2e6fb"
+      },
+      {
+        "id": "61",
+        "slug": "asigurare-livezi-viticultura",
+        "title": "Asigurare livezi viticultura",
+        "contentHash": "df8c3a87cfd53e2f9049d6380eb7f0a7af9eb17c90c8e3968e1f60e287a5233d",
+        "image": "/images/articles/moldova/livezi-viticultura-corner-20261109.webp",
+        "fullHash": "a49a34036f36bf852b36ab134f173309889fb06ee08e3b58143e52f1ed2162ae",
+        "withoutMediaHash": "3675d91bbebf0924d1f4f0610de59189789f0e07f650a67d7070a6f42252461b"
+      },
+      {
+        "id": "62",
+        "slug": "asigurare-ferme-zootehnice",
+        "title": "Asigurare ferme zootehnice",
+        "contentHash": "f7d3209ffd0405cc8b04e7f4f8e31bea885fb2b15f892d4201a356cb404226fa",
+        "image": "/images/articles/moldova/ferma-zootehnica-corner-20261109.webp",
+        "fullHash": "a0270f1f5c165f8df1901b57427f8f43bc05a035ce175991242bec6784df7447",
+        "withoutMediaHash": "82aa396d7b5d2c5ba3c93cb01d13a2a8c25d14225dbc582081fd4a0c558c54c5"
+      },
+      {
+        "id": "63",
+        "slug": "asigurare-serre-solarii",
+        "title": "Asigurare serre solarii",
+        "contentHash": "d8e325d3c06d5b2dadd698b663a57b9d20b2b19863de372481f11f5965670199",
+        "image": "/images/articles/moldova/sere-re-alb-20261107.webp",
+        "fullHash": "f75bbe4bcfc074af43e9fb4a91c3d896169737968648f6ccbd3d120a0664b022",
+        "withoutMediaHash": "86fd328bea1c2c4c7ae129ce6a0033bc869dae13f9876b2ad7f8ab14681f5064"
+      },
+      {
+        "id": "64",
+        "slug": "asigurare-sisteme-irigatii",
+        "title": "Asigurare sisteme irigatii",
+        "contentHash": "d04319a257687284dcd943efa22a016d6694674c51ad88f3004e7b1720794d32",
+        "image": "/images/articles/moldova/irigatii-re-alb-20261107.webp",
+        "fullHash": "01eca543e2c08a72528d3a764c58ec6865f9966dc0e4895b4d42a86670b8171f",
+        "withoutMediaHash": "8680dcb51bbe01de0f106cef1989df4c496478c32a7052a1c77979db49f7d92c"
+      },
+      {
+        "id": "65",
+        "slug": "asigurare-parcuri-eoliene",
+        "title": "Asigurare parcuri eoliene",
+        "contentHash": "c23c52a2276c657f91a1d967512cfa6c433b7c10dadf3301373148c2462aab91",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "3aec464bddf129328fd6cdfba3f1be93b0be817ffe76030e519b085eaafc5e91",
+        "withoutMediaHash": "36fcf80ff47dd717c44bdfcf453a86f0a823cce514c0a59a6a3410cfd4254d23"
+      },
+      {
+        "id": "66",
+        "slug": "asigurare-biogaz-biomasa",
+        "title": "Asigurare biogaz biomasa",
+        "contentHash": "ae6e7c37483fbbe2cfaeb4e90a3b3c02735b40752a1fbdbc42ac9bc86d3b6172",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "268dd96c39b2e8b58adc74f323e0f57a0204b95343cf694cf566462cd1474141",
+        "withoutMediaHash": "1651bcb5a3ee2c3b837138267c0d20f2cff65a77e5c2f1c1d034999a503f5fa5"
+      },
+      {
+        "id": "67",
+        "slug": "asigurare-hidrocentrale-mici",
+        "title": "Asigurare hidrocentrale mici",
+        "contentHash": "b134deb4e31935a0439e07ab46942c1f0f3fce3805f45acc6b10d3602d8343a0",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "6a71a286e276bfafc7fdd6954bdc5b8776ac627ce1a3e03690189ab0d39a1c69",
+        "withoutMediaHash": "9d244804af6cfec17f2ce14260f544a9637be7dab4f0ff58a472a92316759a63"
+      },
+      {
+        "id": "68",
+        "slug": "asigurare-stocare-energie",
+        "title": "Asigurare stocare energie",
+        "contentHash": "ba93fee84aadec43c52850f9f7a72b37c4bf7842f54f98e35dc205f0eb024313",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "951fc607b6626c593957b007cc5f9020112fca367978c124e48e874df716da4d",
+        "withoutMediaHash": "753cd04a3a3a54d53930b8c4a8749842b6823d4098c90bcaf526c9e685a80078"
+      },
+      {
+        "id": "69",
+        "slug": "asigurare-infrastructura-critica",
+        "title": "Asigurare infrastructura critica",
+        "contentHash": "a09f946b9a026f25e6a778a18ed0fdca154b61a0361ca248f19fef8a9b893224",
+        "image": "/constructie-inginerie.jpg",
+        "fullHash": "e53c6ab29b5cdc80a62c7b9cdd31643a386146b09c9e841b5fec26f889e2c61a",
+        "withoutMediaHash": "966610ce47522007c494100bf0486933305016e9a538365d72c4dd91974827eb"
+      },
+      {
+        "id": "70",
+        "slug": "asigurare-poduri-tuneluri",
+        "title": "Asigurare poduri tuneluri",
+        "contentHash": "9d604b52ba3d268f8572aacad16135e18ff286c173e4ccae1fe3898631930096",
+        "image": "/images/articles/moldova/asigurare-poduri-infrastructura-moldova.webp",
+        "fullHash": "a42cc4fbc7699094305d3ce6453e9a5f737d05c1a2b1a1def77107f7bb713137",
+        "withoutMediaHash": "d449e4a01280a14bdd25eef9e6575a8ba0e425efddd17c5b560b2607f3fe4d89"
+      },
+      {
+        "id": "71",
+        "slug": "asigurare-drumuri-autostrazi",
+        "title": "Asigurare drumuri autostrazi",
+        "contentHash": "3db61daebfdcf34aa632ea6b74525c4f49388a8220690f7dac22182ca614d0e0",
+        "image": "/images/articles/moldova/drumuri-re-alb-20261107.webp",
+        "fullHash": "130a44d73f345aa4a343591cc9a140a343686ab67fd9a59ccd65f094a086fe31",
+        "withoutMediaHash": "85fe9340b8dbfd8bbc1afaeb2dcb3e3dc534726b709b0e1f106491d7bb37d620"
+      },
+      {
+        "id": "72",
+        "slug": "asigurare-retele-electrice",
+        "title": "Asigurare retele electrice",
+        "contentHash": "1d3b3b7a54b083d9a487e0d78cfddbf437af15471db82954983624fcc1dd3c7b",
+        "image": "/legal-asist.webp",
+        "fullHash": "4c959c0eac2c7090f2f70555791c0b31962a6818e1a6bcbdd86a05c2de2fe697",
+        "withoutMediaHash": "c4603534d078a0af424635abd6f5499f008baff07718e0887fa88a3bdbd3c8f5"
+      },
+      {
+        "id": "73",
+        "slug": "asigurare-conducte-gaz-apa",
+        "title": "Asigurare conducte gaz apa",
+        "contentHash": "f18863575a83a2ff087771d662fe407fa0506c371233a5690d5a5b0d9190d691",
+        "image": "/legal-asist.webp",
+        "fullHash": "7968378aaf3f93715612e73d0658f42f2655079cc2e5c391217e69f2e030ae17",
+        "withoutMediaHash": "acc669dd55f66564af732fdbad2591a5e0611a0634b362f93a3d40630c935002"
+      },
+      {
+        "id": "74",
+        "slug": "asigurare-telecomunicatii",
+        "title": "Asigurare telecomunicatii",
+        "contentHash": "9627131a8c607cac6f73ab7b781f29a1c0a66951d2ea4de6e3a23161c62ba235",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "83d7d3dbd43c81006c993ce1e4e4d05f34437e630accd99f62523307192ca492",
+        "withoutMediaHash": "ecab9bfa4c08d09e79b21b88d700cb9c44f14ad9ba4cf1a73ddb7592c4f87755"
+      },
+      {
+        "id": "75",
+        "slug": "asigurare-centre-date",
+        "title": "Asigurare centre date",
+        "contentHash": "d4bde7c964307e24a6f006d77e1f47d5570d2952dd871a2e1194f5d39bcc6ddd",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "0e41f18f7877cc3a5aac30d2875f47e5abfc74b89433243c5a71a1508eb106ca",
+        "withoutMediaHash": "4e8704457b2c104e2f95b5b011e3cc69ad887316dd22f67e2f432d43794ee3b4"
+      },
+      {
+        "id": "76",
+        "slug": "asigurare-software-as-a-service",
+        "title": "Asigurare software as a service",
+        "contentHash": "e0bd481ffd642a4b16829424b499d7234c39cba5e1fe8eafb02436b799dcc336",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "12727f71f4d953653f92b38025f0980354b16fa2d455987b99043cc59dedeed1",
+        "withoutMediaHash": "c8ebcb2562835114d09f010a102935c0b0c5ce51073517f909ea891deb1bd54f"
+      },
+      {
+        "id": "77",
+        "slug": "asigurare-e-commerce",
+        "title": "Asigurare e commerce",
+        "contentHash": "4d32e65fb6453166c9a724463b3401109911be67b7d94892cc7b55ed328898af",
+        "image": "/legal-asist.webp",
+        "fullHash": "cee93f3f8dbed3bc862b9cb007457eb753a3ef5f5c0a3c76a2206ba29848a5ec",
+        "withoutMediaHash": "52668b8a2db7481e3828d412254f41ed6f7d974b0bfab8742e3106f999b3f1f0"
+      },
+      {
+        "id": "78",
+        "slug": "asigurare-fintech-banking",
+        "title": "Asigurare fintech banking",
+        "contentHash": "3689e17ed6270fdcd6eb520cecfd2b74276e961f30364f5587f731f623824e19",
+        "image": "/legal-asist.webp",
+        "fullHash": "09d1029926b38e2ab79d6caa50ddef6457b5691c9fcf45218df040f8230b02a3",
+        "withoutMediaHash": "e525144ed52a00e538e51a8878d0de707c886b84bb8c34b182afb04ab1523029"
+      },
+      {
+        "id": "79",
+        "slug": "asigurare-cripto-active",
+        "title": "Asigurare cripto active",
+        "contentHash": "44eebebc1bb8f2dd85c9e8e0d06f1f96c46f98b61a3c85b5aa45ca81ffea7b15",
+        "image": "/legal-asist.webp",
+        "fullHash": "42d592b998c0709ab704812487105c37747c90099c0ad52ef909d1597e99574c",
+        "withoutMediaHash": "d7705c52bd30b571a318108141cdae793666d8aa90cf1845de81269af2d1b610"
+      },
+      {
+        "id": "80",
+        "slug": "asigurare-raspundere-civila-it",
+        "title": "Asigurare raspundere civila it",
+        "contentHash": "93ceb268be5ed194b99743e44ae96cd0d1e79c2739f3b9ca22e5652081af50fd",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "da067ede512f9f1beae692eabc06d95d0936a5b381d90b8b423507e5b496d70b",
+        "withoutMediaHash": "93916318c6129e1f1a56a641ed4927bdd8534c4c94d8d785712fd28fa977db82"
+      },
+      {
+        "id": "81",
+        "slug": "asigurare-eroare-omisiune",
+        "title": "Asigurare eroare omisiune",
+        "contentHash": "40dd730d37a7a4874e1a26c801864549065eb49864191c918124bdf52df824c0",
+        "image": "/legal-asist.webp",
+        "fullHash": "865a9040150402112984a004749bd032ac19506e1d9ad22824771b4e183cb6d5",
+        "withoutMediaHash": "0f444c173f37bf527c3405f2328f34629a55bce7eea26235c02d38f686cbcba7"
+      },
+      {
+        "id": "82",
+        "slug": "asigurare-infidelitate-angajati",
+        "title": "Asigurare infidelitate angajati",
+        "contentHash": "b1b18816923cb965a0a8ab1c766c1192faeaf5c230164c17c00eea66b8621b1a",
+        "image": "/it-companies.jpg",
+        "fullHash": "aa493ab92c4a08ca3d3fcc4df40003120f962084eb90a2394be7feb43608cb85",
+        "withoutMediaHash": "aa50511034e2910de61c1707335344f5e293587a4f99e46417ae5bd4a7671267"
+      },
+      {
+        "id": "83",
+        "slug": "asigurare-bani-tranzit",
+        "title": "Asigurare bani tranzit",
+        "contentHash": "ee7b0a32fd3d7eac28579982a5fb9c47346470a1d75768430b0b53f43f264b0d",
+        "image": "/legal-asist.webp",
+        "fullHash": "4aa8d8b14c351bdd39c94032d336418756161cf44f9baa6632957d87f66912b7",
+        "withoutMediaHash": "e9cf2794f8c6102987a58952ce9fc888c9afd93189fdd4af584a561f857a850d"
+      },
+      {
+        "id": "84",
+        "slug": "asigurare-seifuri-valori",
+        "title": "Asigurare seifuri valori",
+        "contentHash": "b444d97ca1d688172dd2257e0f740efa7c865d8135ef3d6dbf0a53179876d736",
+        "image": "/legal-asist.webp",
+        "fullHash": "2260dab1ecb66e7876cfdb89b813d15ba0eb794e0f8a37246f9a1a7ead4b1fad",
+        "withoutMediaHash": "a040066d04c94a398b655f0eb85d5a9114f8393b971ef56040b3f885724721c5"
+      },
+      {
+        "id": "85",
+        "slug": "asigurare-expozitii-targuri",
+        "title": "Asigurare expozitii targuri",
+        "contentHash": "44bb4a59c8911788b2ea7db5e3cd1d672b7ef6c9653169f988977044227eee67",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "5c70e1fcd7d555eab698747a7a7de56ec8857515edbf034ee36e6999f0012f3b",
+        "withoutMediaHash": "8a9e7f27c044219b483fb6d18ae0706749ab32f6587a47a82e9b238cf22ab0c2"
+      },
+      {
+        "id": "86",
+        "slug": "asigurare-concerte-festivaluri",
+        "title": "Asigurare concerte festivaluri",
+        "contentHash": "6e4f4cbbd9852e7603fa46d0b20b78226d5d8b8d9d2c2d63f84c5260c75d23c3",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "7ffc2b07cca63e276ffb227e2e886a49ec5de19dce18208799d2ddda1bbe699b",
+        "withoutMediaHash": "2ee38555e8eeaf5601ee1ab1ab10e979bc609ffcb03233f1f821045d56fa9729"
+      },
+      {
+        "id": "87",
+        "slug": "asigurare-competitii-sportive",
+        "title": "Asigurare competitii sportive",
+        "contentHash": "2b2cb35eb0c65b80f9f6d9cdda9f82fc7ea9316b8c3db16006e76423be58c3eb",
+        "image": "/legal-asist.webp",
+        "fullHash": "bd268e683f8f6d4e72e58cc8a8d2c98abd898252cde410eb9cfc21f5fb18b7c7",
+        "withoutMediaHash": "7d788650f89d3b3ee7950be7982d78fdd87f0807f10303992f4147f8761c8270"
+      },
+      {
+        "id": "88",
+        "slug": "asigurare-raspundere-civila-sportivi",
+        "title": "Asigurare raspundere civila sportivi",
+        "contentHash": "b4deefda4ef349c3b7a8e8963e2f6c4817327113f645af1e894bd1828902d395",
+        "image": "/legal-asist.webp",
+        "fullHash": "3eabe6d7ae8d2015314bd71b0da287856c2c145da2a83c963daa96c4c1e37d0b",
+        "withoutMediaHash": "1103d3c48b6cc582bc3fb26341642241a033d8143f736bf990d691d82d2aea3a"
+      },
+      {
+        "id": "89",
+        "slug": "asigurare-yachturi-ambarcatiuni",
+        "title": "Asigurare yachturi ambarcatiuni",
+        "contentHash": "c42e65acc1e7cb3ec10232cde03ca00871fcd6395f29b9ed6efe4c714ce42b6b",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "7ec0df0feb823de8b551e2debd9c33c776bdc23fe7cd872bc2d89b13f5fc6313",
+        "withoutMediaHash": "af7c8a70cbce53b03985bc64490c593700e181d8e1a06e7f84cf28f6e930aa83"
+      },
+      {
+        "id": "90",
+        "slug": "asigurare-avioane-private",
+        "title": "Asigurare avioane private",
+        "contentHash": "0fad290430f249b6623db8773352745c7c33c0f987487dbe488c423b9715adf9",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "6aa3b4e93d5d0b28675c959bc4da3a3220e5d86771b8b5a4562a952dd6b4b446",
+        "withoutMediaHash": "67eecbd305afba62c802b1b5ffa43d918ba9656137a6c809f3a8fedfcf8c9f89"
+      },
+      {
+        "id": "91",
+        "slug": "asigurare-elicoptere-utilitare",
+        "title": "Asigurare elicoptere utilitare",
+        "contentHash": "a62f8b7740d8e06768e876fa756827d952f0d813746a8affed5a0a61aef6668b",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "3e555c44a2ef2a54ceddda3bb96f8ec77333499de3dbd97b0f6cadf2f4156d0f",
+        "withoutMediaHash": "3d256bbbd7a67d35b5175ae82f656ba49fc1a862bafc3df807e2738425fd4456"
+      },
+      {
+        "id": "92",
+        "slug": "asigurare-raspundere-civila-aeroportuara",
+        "title": "Asigurare raspundere civila aeroportuara",
+        "contentHash": "55e159bfa22d4bc436b394068b1534ff588defbc62f622803444581ac28cd616",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "6c6b3dddd671e8558a52f2e89a05eb4e8197340bae6ddb47eff47e8d01b50e3a",
+        "withoutMediaHash": "df72c33a884c24c3d04ea91ee06fbad60be58818c86a8f2c9d7a26d66a0ae0b2"
+      },
+      {
+        "id": "93",
+        "slug": "asigurare-maritima-hull",
+        "title": "Asigurare maritima hull",
+        "contentHash": "19d5c65638beee1eafabe219e9875db8ec13fd717c24eb9b80de6a75af61cd1a",
+        "image": "/legal-asist.webp",
+        "fullHash": "8e90d496aca8a30c1d48ced2486cb258f30bc6a7b9a44b7be45b9ec021fd434a",
+        "withoutMediaHash": "e027bf4ad300ff6de2b8b9713d86a13700b74b3adddedcbc3f6ff55bcdba2062"
+      },
+      {
+        "id": "94",
+        "slug": "asigurare-protectie-indemnizatie",
+        "title": "Asigurare protectie indemnizatie",
+        "contentHash": "0b9fa439389a0f8af35bcb0781159064894bb03974c58846ba617ea6f7307854",
+        "image": "/legal-asist.webp",
+        "fullHash": "728349e3ca5db5c9f92c56f918b15aefa4d9867c755ee45fc290d069ce62472f",
+        "withoutMediaHash": "bdb26c82bff59fa6be46b0bc70528bddc3ecc50d81bcfc6a95e76199d485ac18"
+      },
+      {
+        "id": "95",
+        "slug": "asigurare-riscuri-catastrofale",
+        "title": "Asigurare riscuri catastrofale",
+        "contentHash": "70d1ed129eef590edbe6d7eecec1488e0ea982220a4a39ee7a2a99ddcfc24b83",
+        "image": "/legal-asist.webp",
+        "fullHash": "f20c0e624354f594490a6ebd4b62a0f27acff166a278fe7b25c0f8bec292498e",
+        "withoutMediaHash": "ac7af7f386ffc8f3fe6e675434e3a27ae3c881c7004040ac7816f40685396000"
+      },
+      {
+        "id": "96",
+        "slug": "asigurare-terorism-sabotaj",
+        "title": "Asigurare terorism sabotaj",
+        "contentHash": "940caed3640b4deba9cbce86645b138ee3c6ef354aae14b8ceb2a671036be701",
+        "image": "/legal-asist.webp",
+        "fullHash": "07638a3b05d92b218fc4e1e57c79522ab9d69c428e7fb4a95f8cb63e966dd3c6",
+        "withoutMediaHash": "21579f2ef0d27d1765331f4f3fd536d232792b5a896f08255d5653a6e662d2fe"
+      },
+      {
+        "id": "97",
+        "slug": "asigurare-raspundere-civila-poluare",
+        "title": "Asigurare raspundere civila poluare",
+        "contentHash": "01c4bf25751c3a9a80e2fc7888adb61a74af5007680b91f6b974a07bd749ecc7",
+        "image": "/legal-asist.webp",
+        "fullHash": "fc3d699e7b726d2dd8b4588c4a8ea745fe111d83c06113fdc47b928088612605",
+        "withoutMediaHash": "2c4b3d0dbe4e4b7a8309d6e7323a426319313f5b72b4ad5294a684db1fb3a38d"
+      },
+      {
+        "id": "98",
+        "slug": "asigurare-remediere-mediu",
+        "title": "Asigurare remediere mediu",
+        "contentHash": "5b5dd9fa408d488fc90ee6f5e03605c404ba354f38385bd6378655ad9e99abc7",
+        "image": "/images/articles/moldova/mediu-re-alb-20261107.webp",
+        "fullHash": "f2cf07763def305ab838a1dd58cfaa8002fb0a9d418fe6e2b031e0cb0852730a",
+        "withoutMediaHash": "a096cac669a629b8f0944fb406613a1edc36dc9f7c71da5cbe368a596dda66ac"
+      },
+      {
+        "id": "99",
+        "slug": "asigurare-raspundere-civila-produs",
+        "title": "Asigurare raspundere civila produs",
+        "contentHash": "686ef64584ccef4f41b361654491167835358a04edbd08de9ad5b11c782112ca",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "c4d8126344d852fbb6f37f10010ff368c88ea241d43ef1c67842ad96d881e6e9",
+        "withoutMediaHash": "0bcfc73fe730b2de65b535a51628377433332d1480c0b689d94963dd0cb46f03"
+      },
+      {
+        "id": "100",
+        "slug": "asigurare-rechemare-produs",
+        "title": "Asigurare rechemare produs",
+        "contentHash": "26e49556d4cbbb4a4b999573128dbec339b08d2f3494fb02a9f26a29ee85971d",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "8bf23aaa76bda3fa33c65dd3252cf0618c77578fac11b68d7c1c316d048c19a9",
+        "withoutMediaHash": "a804f6e0e0d19d82847d6bd7564f6b01f2e2c78925be7837c77304d8cd4b8796"
+      },
+      {
+        "id": "101",
+        "slug": "asigurare-studii-clinice",
+        "title": "Asigurare studii clinice",
+        "contentHash": "493515f29149f8b4f6293e25806e91d949ae13bbddb54033b0c37a0d9646d8eb",
+        "image": "/legal-asist.webp",
+        "fullHash": "2e96242083ee996a074951e268f47e5f7a56f1cdb48549d7a03210a43bb76176",
+        "withoutMediaHash": "9ec52dc40cfc844bd7f2e858e4434b8561f0653e3c1845a08ec5ca2875115c8a"
+      },
+      {
+        "id": "102",
+        "slug": "asigurare-raspundere-civila-angajator",
+        "title": "Asigurare raspundere civila angajator",
+        "contentHash": "857cd85d61d3c66e7327f4bc028d597906cbbc0fa3b63261eb18dc11c6db4b1f",
+        "image": "/images/articles/moldova/asigurare-raspundere-angajator-moldova.webp",
+        "fullHash": "df5d6a4878f8a8cf6e3439353a6830636955f28ebad51221c20aff172907355d",
+        "withoutMediaHash": "677112936bf7a41cf0c73b439a5a274340c8e66ebf995bb51b3e9e18d1c6766a"
+      },
+      {
+        "id": "103",
+        "slug": "asigurare-sanatate-expatriati",
+        "title": "Asigurare sanatate expatriati",
+        "contentHash": "9add240d489708b7fbbc4c0320e0c56b385e1084e73b195483d16c74cea9c75c",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "c4758793d0d801eb62ea8a82c96343f0611d1dfdb6f1916859e82f44450b5ed7",
+        "withoutMediaHash": "21603f041601d6f80613fc2687eee30681b57d74b5c88003ae8222f250781878"
+      },
+      {
+        "id": "104",
+        "slug": "asigurare-repatriere-deces",
+        "title": "Asigurare repatriere deces",
+        "contentHash": "a8e49747719d8b01a1d72e9236b5721aff892ab98a3e7bb526dbd6ce84bc935f",
+        "image": "/legal-asist.webp",
+        "fullHash": "42b5a2c1c8cf65e5101e03d8a696cd72b4bb5a97b1978c280c73962e61d29109",
+        "withoutMediaHash": "9f5ea574f1eb3371d71488b4238c0f9c332214eaa1e5c8032252272999d0e065"
+      },
+      {
+        "id": "105",
+        "slug": "asigurare-asistenta-medicala-vip",
+        "title": "Asigurare asistenta medicala vip",
+        "contentHash": "c635c694f8bcebc897f31dd3dcb80d2dc9fe0e4215fbfa5ea97b119b04962380",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "ff3994be8b88988823cdf65498e81aa1473c3a00496c2d6ec350dc6450648b17",
+        "withoutMediaHash": "9f39cd0197f636eebc66eb6e50934a87a71019586b2b6feda30e2cd7d9044c3d"
+      },
+      {
+        "id": "106",
+        "slug": "asigurare-boli-grave",
+        "title": "Asigurare boli grave",
+        "contentHash": "594bf17e3e6b023741bed4286a2381646250eedd296e10bf5503e6914b86e0f0",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "92f993bc749af3e66f0c1eabf8769fe68b48a7d5695b550907d2d1838b49b9cb",
+        "withoutMediaHash": "0c598dc88898418a809e5189ddb512338ec223121262daaec3d84899a4a3b635"
+      },
+      {
+        "id": "107",
+        "slug": "asigurare-spitalizare-interventii",
+        "title": "Asigurare spitalizare interventii",
+        "contentHash": "a37f74c4fe1621626f129aa7c5eaffcd4da4a876f339251acf1d6772cadc1fe0",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "8a0b6f13aa2ab5a87ec46c0663da8220ee691c72377986d7168a9de94aa8cc02",
+        "withoutMediaHash": "2967d41b3d107f212e53ee30bf7df296244887549777242d800f93f3560466db"
+      },
+      {
+        "id": "109",
+        "slug": "asigurare-optica-medicala",
+        "title": "Asigurare optica medicala",
+        "contentHash": "8e75cfb20681eb8dd909bbb79c60fe2a15b80bf46db65e93f01b029e54330a27",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "bb9809f5989001b057287367027357f57184480f8d76e30e94a84962461515c4",
+        "withoutMediaHash": "f8275d8643bab249ab3880235cb03b5bb4569698d98a3819eaba4556b4326cf3"
+      },
+      {
+        "id": "110",
+        "slug": "asigurare-maternitate-nastere",
+        "title": "Asigurare maternitate nastere",
+        "contentHash": "0b70f34438e5a5c654f22c2991140976b8a91eb80825b9df0db7d1dac24bd632",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "ff5b68066b19f922a773ba55a29ce02681071b2a173af22c8c244a5de58ebb92",
+        "withoutMediaHash": "9d14d41ce3de7ed57f8d501dbc457c865dd408cb82e7eb7f81929deec5ce3c63"
+      },
+      {
+        "id": "111",
+        "slug": "asigurare-kinetoterapie-recuperare",
+        "title": "Asigurare kinetoterapie recuperare",
+        "contentHash": "7572a56298e3ca6df8f226c9e973dd82b93d3b5d1ab05fd955d0edab11ae2535",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "6263f13e0cf5fa0806e172a3acf6f7930450f14872de0968352c9cb45c96748a",
+        "withoutMediaHash": "ce5434b34273079f265c262bf95954d60ad33a73a1bf6f03f09bc328ad82f0e6"
+      },
+      {
+        "id": "113",
+        "slug": "asigurare-check-up-anual",
+        "title": "Asigurare check up anual",
+        "contentHash": "c513a279bd7ba09f59364b7f747ecd24c6361f00e5c24dbcba59e55c6f1a82e4",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "c4bfa0a60870ff4b75dcc22b3ab3e9c6a918a8964c51d9d38aa2356f08769e21",
+        "withoutMediaHash": "72e987f8c242a003b7df5dc24cccd0c54075a05caf0a3fa8e55a74e4237aad0c"
+      }
+    ],
+    "en": [
+      {
+        "id": "10",
+        "slug": "asigurare-viata-moldova",
+        "title": "Asigurare viata moldova",
+        "contentHash": "515755b15b038abbe85cdff810111cfd78768b3d8ecca93f7f83574d0300fb4e",
+        "image": "/images/articles/moldova/viata-familie-corner-20261109.webp",
+        "fullHash": "c247d22216288826d65bcdd031c5e043cdb36208554a074023717b41a99e3cb0",
+        "withoutMediaHash": "844a2db684049c12727b5d7eaa2206a4ec40ce4d8794119add79b761ba59c964"
+      },
+      {
+        "id": "11",
+        "slug": "asigurare-agricola-seceta",
+        "title": "Asigurare agricola seceta",
+        "contentHash": "213ac3fd2f544462afbbb24189831a4fd900f81aa2d19e7cab09be58028f27b3",
+        "image": "/images/articles/moldova/seceta-culturi-corner-20261109.webp",
+        "fullHash": "3bda67032ae658d870a7f5671a5a40827149438ddfcaefebd4a0ffa870af4651",
+        "withoutMediaHash": "0e98647e62e477cf3985fe6318bcd101277be2783cfa32a270c3f20625b45340"
+      },
+      {
+        "id": "12",
+        "slug": "asigurare-cyber-companii",
+        "title": "Asigurare cyber companii",
+        "contentHash": "6ae8bea6387dd0edfe0427e364078062ef0b99649a1a4224ae9d17722e368231",
+        "image": "/images/articles/moldova/cyber-companii-next-20261108.webp",
+        "fullHash": "bd8ab430c7d39ccfc830c6f136f2cfffb1ff3d45706348209920fb935af03d45",
+        "withoutMediaHash": "a175fafceba6127cb46f69883a2492a0e75fa54c958bbf16ea4c0f18ce855493"
+      },
+      {
+        "id": "13",
+        "slug": "asigurare-raspundere-profesionala",
+        "title": "Asigurare raspundere profesionala",
+        "contentHash": "bf7fafdc2333c367a2b6aabc336e5b3a8a5e9402b19c77b5e17129ebcb5cacc9",
+        "image": "/images/articles/moldova/raspundere-profesionala-20261108.webp",
+        "fullHash": "6b6a25808975e901e83808168f4d2e5368467c8534bcb490933bd187347c89ba",
+        "withoutMediaHash": "6ac56ceae20c1e7f5e513bfbf6b974c073a255e1c6d96a84e52c16d19cb01d0e"
+      },
+      {
+        "id": "14",
+        "slug": "asigurare-cargo-transport-marfa",
+        "title": "Asigurare cargo transport marfa",
+        "contentHash": "144062daf278050baa1c0424a8c880b7970669ba40396e0a7c28738b4601fdd3",
+        "image": "/images/articles/moldova/cargo-marfa-20261108.webp",
+        "fullHash": "87330e38eaf6c1b507c4a85f56851534918816521d2b168287595c285e586470",
+        "withoutMediaHash": "7c509c397307aee28095acd176bc5f32288b6a6348be22c5551466b5467bd411"
+      },
+      {
+        "id": "15",
+        "slug": "asigurare-sanatate-privata",
+        "title": "Asigurare sanatate privata",
+        "contentHash": "c148bc16870d1bdce4841c0e60eaf8640f5ce7f14b7d4a0794845600784a885b",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "c903757f8e35726694bcb548595d350268067be4e5f13fbb344334be7c4e4c62",
+        "withoutMediaHash": "efde2b8b7e42a2765b611377cfe0ab129a86e86555b7b907cc12649af500eaf3"
+      },
+      {
+        "id": "16",
+        "slug": "asigurare-animale-companie",
+        "title": "Asigurare animale companie",
+        "contentHash": "03cd0f2f2c8c983ad4db48916f5b9bf0b26092829126588cc9bedfe50897fadd",
+        "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "642fb3273fc35abfd3e79465f98314902be752a687649a1d9c22f3bc3744dbc5",
+        "withoutMediaHash": "238f2892abedc6e92a1cdceb4986462f61f2fc5b9a8c702c23e043122abbd335"
+      },
+      {
+        "id": "17",
+        "slug": "asigurare-echipamente-it",
+        "title": "Asigurare echipamente it",
+        "contentHash": "39b0af75c33acc9d8b4a6e8bb42139ba760c6589218f3ca1e164de88d4bbc835",
+        "image": "/images/articles/moldova/echipamente-it-20261108.webp",
+        "fullHash": "d12af3cc28ac80fdad1779152da721b3aeef40ff6d5fcd4f93bf6dd8fb0af1cd",
+        "withoutMediaHash": "e43280ae58d3f7d6d86a1adf4cfbfcbf4da500ecb0a67ac92fc049e687e40c59"
+      },
+      {
+        "id": "18",
+        "slug": "asigurare-evenimente-corporate",
+        "title": "Asigurare evenimente corporate",
+        "contentHash": "0a8e3ed975a45a3a6cc8bc49ea0c8b6a19be3e1012235c96318518f252353e3c",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "0d59f51f9b0ace945f67d65a20f6e381389a707a3be5fa4159a2f86009c5c321",
+        "withoutMediaHash": "1afae3e0a6f017f9d7b7f7b22e13c632bb81a70ff630a8d22c6403d08b422895"
+      },
+      {
+        "id": "19",
+        "slug": "asigurare-constructii-montaj",
+        "title": "Asigurare constructii montaj",
+        "contentHash": "bdb08a14dbda84ff9480c84eb0b25338d5f7057b405b21d984ffa4879802dce0",
+        "image": "/images/articles/moldova/constructii-montaj-20261108.webp",
+        "fullHash": "d159217c3c1230d5ab236291c21f0d38c274b466d9b36b0864f790e45087e828",
+        "withoutMediaHash": "2fb917cfc8f5694f7619f05e40e6b0d575ab39fe2dd1f00764d714414c346829"
+      },
+      {
+        "id": "20",
+        "slug": "asigurare-flota-auto",
+        "title": "Asigurare flota auto",
+        "contentHash": "bca746783b8b88486f7c7c50e496723ea0c5e2037e90390fb26801804c53e43a",
+        "image": "/images/articles/moldova/flota-inventar-corner-20261109.webp",
+        "fullHash": "4001fda36ba5d57dd3386431a7755755a469b43be9942d593bdc567db4a361bf",
+        "withoutMediaHash": "c49f5d9c44a6ba5e0ca501561881e453ac2a2c950b2b8019517ed7d93be6ac30"
+      },
+      {
+        "id": "21",
+        "slug": "asigurare-accidente-angajati",
+        "title": "Asigurare accidente angajati",
+        "contentHash": "923868e0d3e017b138d45800956fb8374c36101ca1cb46d49a80afa41ef11d87",
+        "image": "/images/articles/moldova/accidente-angajati-next-20261108.webp",
+        "fullHash": "d04b36e41cf008b982bc93c72637ab39e9b47997329cf52dbb50fd1b1227029e",
+        "withoutMediaHash": "7c4d124eba44cf1fa21dce26cd1a1d87c6009a7b6ce599edad8344cc31942e43"
+      },
+      {
+        "id": "22",
+        "slug": "asigurare-drone-comerciale",
+        "title": "Asigurare drone comerciale",
+        "contentHash": "a253e1281994c4b162e3fb0ce1cdec381ba203d22d32e9d5628af190c7854b5a",
+        "image": "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "314ad512ae79f88e3ffa49eacaf405e9a49756ef5d74e999ff74df48d8dab0cd",
+        "withoutMediaHash": "fb118151b4ab40b600e45ba9c7a39001c147ae465b8b05b45e1fe50ca329c4df"
+      },
+      {
+        "id": "23",
+        "slug": "asigurare-pierdere-profit",
+        "title": "Asigurare pierdere profit",
+        "contentHash": "e50d6bc744a2f382a1228649664883d5353349885cf8c18c969c43438c3d7a15",
+        "image": "/images/articles/moldova/pierdere-profit-re-alb-20261107.webp",
+        "fullHash": "843094e58b86c2296def25e393ba00339a69b0d17979f962b9174ac145bd27af",
+        "withoutMediaHash": "4b280b9e439bc03319a8a9ffbbb026d218a8cd1d79dc366d59f896094a410481"
+      },
+      {
+        "id": "24",
+        "slug": "asigurare-raspundere-directori",
+        "title": "Asigurare raspundere directori",
+        "contentHash": "ec950c73223dcf03ee003097addd4c1d36a84c351231053e6b67e41bbab9b60e",
+        "image": "/images/articles/moldova/asigurare-raspundere-directori-do-moldova.webp",
+        "fullHash": "bb434ea633374c26cc84115d2c4a59c45e904764832d3a92e9dd8614dec90f4b",
+        "withoutMediaHash": "caa885c19f1d216b621b5b2139d458e5787a08ef7b51e2a2945061280dd5811e"
+      },
+      {
+        "id": "25",
+        "slug": "asigurare-panouri-fotovoltaice",
+        "title": "Asigurare panouri fotovoltaice",
+        "contentHash": "442f7cea82d2d837d5a8df867a24ace55cc3d481a6214f72c38809c790cc0b02",
+        "image": "/images/articles/moldova/panouri-fotovoltaice-next-20261108.webp",
+        "fullHash": "40c962f29f57108e9ba2d4ecac5f3a1d29c88c7e123b187803183737f6b1b3bd",
+        "withoutMediaHash": "c7c2c78e00fb682b4afd80dce6c55a59d8ae3315e10147d4bc187d34eb67157f"
+      },
+      {
+        "id": "26",
+        "slug": "asigurare-storno-calatorie",
+        "title": "Asigurare storno calatorie",
+        "contentHash": "af4193910be830360650e473e5ecb5c5f364a8b0b4ff481bf185b2baa17e5c4d",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "a8c212dd78f02846431b20937cb0b77aa17ca3ad97a0dc93956d34f10ce5e516",
+        "withoutMediaHash": "b63db911da5e14d51aebe7d665443f564b09dad145554fea7535fe03c0b3058b"
+      },
+      {
+        "id": "27",
+        "slug": "asigurare-biciclete-trotinete",
+        "title": "Asigurare biciclete trotinete",
+        "contentHash": "28bea3949b0bf977abf7035c28b4c4cd0a0169819145c332d5d06811cf4e7ecc",
+        "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "9855d7b074444f50541eb9d4aae7c364dee31a76695b50b13c9ecd1b5a04883a",
+        "withoutMediaHash": "daf7260e77db2b2f221ad85743e295c0d752c94d69da5faa036e29bfc552ce26"
+      },
+      {
+        "id": "28",
+        "slug": "asigurare-obiecte-arta",
+        "title": "Asigurare obiecte arta",
+        "contentHash": "2b459b5086cd1aa0aa869fb8feb9882fe1b87ddbf046429aa613bfc37ac3256b",
+        "image": "https://images.unsplash.com/photo-1544967082-d9d25d867d66?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "6a8652b261aae6335696a0784d3da55ea380082c747c46e5ae6bf9ff8316ed88",
+        "withoutMediaHash": "f3497b43a32f7ea85423dc18f14cdef402488fd484442bd80cc8c209d31f5ce7"
+      },
+      {
+        "id": "29",
+        "slug": "asigurare-riscuri-cibernetice-imm",
+        "title": "Asigurare riscuri cibernetice imm",
+        "contentHash": "5ea8ccceb02c6944f7d1442bd066b1f5ef86d2e54febf1f611f4b7639e2bf91d",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "387cb6746899c02e8bc353df23ac2880fd5e138fb66b103a4a71ba88455435da",
+        "withoutMediaHash": "b4eef926a36c6d18ea11d9ff4ad991d5229906197a0f91ef0923d3815ae6901e"
+      },
+      {
+        "id": "30",
+        "slug": "asigurare-raspundere-civila-generala",
+        "title": "Asigurare raspundere civila generala",
+        "contentHash": "d7e9eeef4696e26f28be03798b15fae0d7bcbcd346a0e879ae45daa1d2fd0a96",
+        "image": "/images/articles/moldova/raspundere-generala-20261108.webp",
+        "fullHash": "242996a08be5ae1dbb2e2649950fd1a941f5557badfae1805d0eaddcde1c000b",
+        "withoutMediaHash": "e86f03b9afacd82ba7bbef0dfd61735e439665d2132da92d465d885d44c1b284"
+      },
+      {
+        "id": "31",
+        "slug": "asigurare-rca-moldova",
+        "title": "Asigurare rca moldova",
+        "contentHash": "d18c6b0b51fc016bd7039b955a7a4c7d3a3be63a5d53a67fadf3ecc2b1e19221",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "56f50ab8cabca7170b7fc75e67134e77018ccd172c57e5fb47b10ab4f54a2e20",
+        "withoutMediaHash": "a89aca03e1c61e7a4d448782139e6bf8a85d734014aeecc126ec7f1375f4935d"
+      },
+      {
+        "id": "32",
+        "slug": "asigurare-casco-moldova",
+        "title": "Asigurare casco moldova",
+        "contentHash": "254e17034270844931dda570d416405bcf38961ef8b9457c199915bdd0aa5d62",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "d90f5da4c507742e19ca0554bf2c8e35f7dc011127e0293584c84c569c2b9f2a",
+        "withoutMediaHash": "659f49339f15051748ec05d3a6d16b16104b0efb1bdca8f4930ca85f28bff17d"
+      },
+      {
+        "id": "33",
+        "slug": "asigurare-carte-verde",
+        "title": "Asigurare carte verde",
+        "contentHash": "214b3e2d86d4e223f3c0ed3d75b8446ef4802693834e2cc326b174026285942c",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "7d3542d772b5bc731faf5e579ec0d61d0e3d92a8a91eb26d3414294eb7db6b5e",
+        "withoutMediaHash": "b4a6fec5cc40f10172b25c366cc52623d1d2a28a957bd9e847f053ab5638160a"
+      },
+      {
+        "id": "34",
+        "slug": "asigurare-locuinta-moldova",
+        "title": "Asigurare locuinta moldova",
+        "contentHash": "2901f4a5f9b114d9fd0b10e545fdd4e08edd8fef671db9848a32c992c54e8e60",
+        "image": "/commercial-property-insurance.jpg",
+        "fullHash": "987ae689c1a0dd6fc66da60fe439e36b11fe5ff408ab8abe0e0e46819ab430f7",
+        "withoutMediaHash": "ce6a0bc4c36a4e58ee7fd9fe023b12ce246f3d1de1d439f32b1337e3fee3e020"
+      },
+      {
+        "id": "35",
+        "slug": "asigurare-medicala-calatorii",
+        "title": "Asigurare medicala calatorii",
+        "contentHash": "68f0a7d58301f33d9ae379294ff0b0b371ec424172c8659e8f4a7382492ceeb1",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "7cf38e05a5d374a1dc48a1fbc6b8544b0d6f823609c467b476afd0d6dca2feb6",
+        "withoutMediaHash": "4b3f65621a82819af211df8b7c1230c5e58075ca7dc6325fee68eacff9493a8c"
+      },
+      {
+        "id": "36",
+        "slug": "asigurare-malpraxis-medical",
+        "title": "Asigurare malpraxis medical",
+        "contentHash": "60f630bf47767c543230f7abc197c37cd2c6a615195db63609b23638b70cda41",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "00a8daf4baa16aa2a7c3b0a64158b30be55e4cbd3f498e39310fc69ee630cbc3",
+        "withoutMediaHash": "f10dde149d184126990b3782759ac5e96b618ac0d6a4a196e0d437f0c03d3ea2"
+      },
+      {
+        "id": "37",
+        "slug": "asigurare-raspundere-civila-auto",
+        "title": "Asigurare raspundere civila auto",
+        "contentHash": "a700cd7439264de5cd3539149422d0d98e1d0ea63ae8f0888dbcd6ac3a0787bf",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "bb2bba38b0297deb419fa9caa393f3b11d84317f8a350eb7e695abb47d6c214d",
+        "withoutMediaHash": "6732ce1f0c9b4c1960128471da944ad643550583e5ed88281a22c937632a095f"
+      },
+      {
+        "id": "38",
+        "slug": "asigurare-bunuri-tranzit",
+        "title": "Asigurare bunuri tranzit",
+        "contentHash": "ffa3ff61c9e5109353fe2ba278a1ac1d1342db7995a1115ee7807f358bece7b9",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "3e3ce6d796bf2b23e66739132f82d7b82c808387bffdc16daa66018dbc27ed79",
+        "withoutMediaHash": "2e624cf4180d894d1c0586cb268cbeeff6280950ea3c4a0bdca53148661eb0ae"
+      },
+      {
+        "id": "39",
+        "slug": "asigurare-utilaje-industriale",
+        "title": "Asigurare utilaje industriale",
+        "contentHash": "bd5921ac0f72e8c7ff3fc83c3cd1c241fd8bf4999bce5085465fa77079573ceb",
+        "image": "/images/articles/moldova/utilaje-industriale-20261106.png",
+        "fullHash": "b3dc85559cce9ae82b918fbacbb4c3d766fbcd908a3a70766370ab24cb9b5c91",
+        "withoutMediaHash": "017f4b94037dc64ca006facfd27e22dd2232875c0914d10d9e3f7a989bd4d15f"
+      },
+      {
+        "id": "40",
+        "slug": "asigurare-depozite-logistice",
+        "title": "Asigurare depozite logistice",
+        "contentHash": "371aef74ec0b273cf5984b9c2a37dca1a2e5b1f0b8cac687c30180a9bf2733e8",
+        "image": "/images/articles/moldova/depozit-logistic-20261108.webp",
+        "fullHash": "ac09e5e6a6fc8b30df8a81db7c430ded9e4775f215467efcdd6b3744a7f275ed",
+        "withoutMediaHash": "a426e9d458bdb4e0a448c3fa9914f077217037ec299b275efcc921fa9391b96d"
+      },
+      {
+        "id": "41",
+        "slug": "asigurare-riscuri-politice",
+        "title": "Asigurare riscuri politice",
+        "contentHash": "c83499caa7b5254048ce4f61ef2f3f97a99c59d0e5c9ccb39e47a64b7239d4f9",
+        "image": "/legal-asist.webp",
+        "fullHash": "c46d84c8aabc62bb6b7aebfb1cb1193983705250d9ac22757816713009f04eab",
+        "withoutMediaHash": "c5b787c32eb8b57c18e477d3215b73a1a298778f70f364c53f16d6aa105e2e15"
+      },
+      {
+        "id": "42",
+        "slug": "asigurare-credit-comercial",
+        "title": "Asigurare credit comercial",
+        "contentHash": "e4b3e18bd75b6e48ee32f7e255f4d6a5fbfc7a15184cb138c85615f681d8675d",
+        "image": "/images/articles/moldova/credit-comercial-20261108.webp",
+        "fullHash": "4208348913ce07c025beea91334f845380963dc1034ee05ca4398d9226786035",
+        "withoutMediaHash": "0e0bfb60590e2bea714bd83b09fdeb4259d0b2e1582ad8c8db9284a7550577fa"
+      },
+      {
+        "id": "43",
+        "slug": "asigurare-garantii-licitatie",
+        "title": "Asigurare garantii licitatie",
+        "contentHash": "f5bf103b7661df9a2831337630f0cf4450ffe0241729465da805f053106e1eea",
+        "image": "/constructie-inginerie.jpg",
+        "fullHash": "bb706a201a46a01f00ac59e8e9b01a11eaf471197a615100fe07692554c4083d",
+        "withoutMediaHash": "dcef34c7ff774edfb6a6a1ec1c0eeb5ecf21c12da67d1310d5ffbef7248c587b"
+      },
+      {
+        "id": "44",
+        "slug": "asigurare-buna-executie",
+        "title": "Asigurare buna executie",
+        "contentHash": "12bbdcf0034f24fcf7f1390a7589aa391f30ffe5b3a6146ba68ae4a73eabacd5",
+        "image": "/images/articles/moldova/garantie-buna-executie-20261106.webp",
+        "fullHash": "86e863b719f9eb52a43b1a4da2e8de4850e1aeecc0bd62fad767be4995448c71",
+        "withoutMediaHash": "a1875e9107d3b2042a3d0f2546cc9a47aad5a460c3d8bcba54b0508595c78f3a"
+      },
+      {
+        "id": "45",
+        "slug": "asigurare-mentenanta-proiecte",
+        "title": "Asigurare mentenanta proiecte",
+        "contentHash": "b8e5621e78e9c6cebd540a97af0ad609b0f52c62e8a456f656de9502e94c2192",
+        "image": "/constructie-inginerie.jpg",
+        "fullHash": "e1b45e9ef342a4f9efbb7e00d02fa32ec98c5e3037cff217def87234c12291e4",
+        "withoutMediaHash": "710eb3bd27997d6d96419e2d006215a518dd44e5a41405335b725b841ab91432"
+      },
+      {
+        "id": "46",
+        "slug": "asigurare-raspundere-civila-legala",
+        "title": "Asigurare raspundere civila legala",
+        "contentHash": "1cc9562f7c6c70e720c0ba9a787e89c8f0d0dfd4a829dcf67ba453e6be91f67c",
+        "image": "/legal-asist.webp",
+        "fullHash": "dc2a2c35fe7e9a66c977f9ac0ecaa725b13f0979604d1e01e5a8b2280d4d4fc9",
+        "withoutMediaHash": "d9da763117e9e3cc1898c49a99abf49ffcb548d0b03b5abafd937d74743ff28f"
+      },
+      {
+        "id": "47",
+        "slug": "asigurare-protectie-juridica",
+        "title": "Asigurare protectie juridica",
+        "contentHash": "161d79e7fb9fbec766c6cc9fcc239d5fafad5d01b1549774237b1c1ac2210312",
+        "image": "/legal-asist.webp",
+        "fullHash": "c316571a10569f7ce321fd8907e279d0bdfee810962dbe8e134639b2baba47ae",
+        "withoutMediaHash": "ec5077adb34ed38f5cdfab39dc476356b862d09b649e4e212fb7678f279f7497"
+      },
+      {
+        "id": "48",
+        "slug": "asigurare-asistenta-rutiera",
+        "title": "Asigurare asistenta rutiera",
+        "contentHash": "50de19ab26ea4491c3402e9cbf562c499f7bacd0831432804568167ff89aba04",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "fecfe2a2e3b5cd9ddf5996829d36fdc6bd05617049e0ce1e852f70cee43e7270",
+        "withoutMediaHash": "8fe3132547850be825c05f85c7d61dc68761b9f93684e37d225d1422bedbbb00"
+      },
+      {
+        "id": "49",
+        "slug": "asigurare-bagaje-calatorie",
+        "title": "Asigurare bagaje calatorie",
+        "contentHash": "c4f58eb824cb4fb2bc5cf12eef6f81d7049129581b84611c856a88b037ec503a",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "e96be79ed36563c48231ebfda3472c62d582119db45841e4afc552ff04dbb218",
+        "withoutMediaHash": "54d1c6cd58502fda14bb14dfe73ff4de5071bd73f7206586a8f1f509befcb5ea"
+      },
+      {
+        "id": "50",
+        "slug": "asigurare-anulare-eveniment",
+        "title": "Asigurare anulare eveniment",
+        "contentHash": "d8d7d58d3194d040b895acd6d4ce48082647ebfd731175590a8d0826899076f6",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "38f3f8fec1b447bbe55288581117edf5dce45b0e74ee65bdf0cf905a0c34d383",
+        "withoutMediaHash": "a8910db908b7c3e8bd421157347bce7facb8db4c0a1c8509ce4565390d4dd655"
+      },
+      {
+        "id": "51",
+        "slug": "asigurare-raspundere-civila-familie",
+        "title": "Asigurare raspundere civila familie",
+        "contentHash": "81b9ef2940a49423276ce5fcfcc130d68fa0d2a6a43c7c5edf1bbd8b5f0e92f3",
+        "image": "/legal-asist.webp",
+        "fullHash": "97cfa8e64154abbf761bffae615c2048c1ab74b606405a807862c369de67fddb",
+        "withoutMediaHash": "4fb9e6e337bd18ad91c5aaa9012cf7d26ec9809d83bdae4099c43b1f65c98a0c"
+      },
+      {
+        "id": "52",
+        "slug": "asigurare-cladiri-birouri",
+        "title": "Asigurare cladiri birouri",
+        "contentHash": "17fc1cb21ff9ecca964e53039d91b59674c9e887a5eab194bb0e3db709b3feb1",
+        "image": "/images/articles/moldova/cladiri-birouri-corner-20261109.webp",
+        "fullHash": "b68da9904713b84ccf6ec78ef5329d8325057a0c1c04adeb2571b7902ee96858",
+        "withoutMediaHash": "5cc0bbfca76bd6bd3e1ed82e4d8a0f73c5eb75bd84a3cc39652d10139e75d1ae"
+      },
+      {
+        "id": "53",
+        "slug": "asigurare-centre-comerciale",
+        "title": "Asigurare centre comerciale",
+        "contentHash": "8386726bda422176f5b61d7e814e4f5704cd3eec62dcee7e13876810f4490be7",
+        "image": "/images/articles/moldova/centre-comerciale-corner-20261109.webp",
+        "fullHash": "59d6bb33af02a493220864db52c1dbdd6d2390b63c56b60d3803d97877cba160",
+        "withoutMediaHash": "841aab9f625aa900365cf9aa28c3549b8ef50308540a5b38a9e22105108abcf5"
+      },
+      {
+        "id": "54",
+        "slug": "asigurare-hoteluri-pensiuni",
+        "title": "Asigurare hoteluri pensiuni",
+        "contentHash": "c5540fcfd56b87ac99eb1e2ca34987794e2d3fc1f9fe47fb9f0711d5358e8802",
+        "image": "/images/articles/moldova/hoteluri-pensiuni-corner-20261109.webp",
+        "fullHash": "0f0d14fd016f2d69e1367f40dc05719fcf1d94b0bd31d6efefd8fe073e272323",
+        "withoutMediaHash": "236a3e3e41df8c37cf791504dc08fa2b08dc8094802384eb5775fb71c32076b5"
+      },
+      {
+        "id": "55",
+        "slug": "asigurare-restaurante-cafenele",
+        "title": "Asigurare restaurante cafenele",
+        "contentHash": "35bac1336cef62b8c6878c61be8ac47619ff9971b6a661fed9cc64b72ecc7995",
+        "image": "/images/articles/moldova/restaurante-cafenele-v2-corner-20261109.webp",
+        "fullHash": "0c6d5cf1fa05eb5dd1dfb7e31e2d9f2ceaf9f309f045d04e0601c57dd76810e2",
+        "withoutMediaHash": "16421a957a262e3887c3d878eb380af1355e525a3e0ad59fb8ab7de85f4fc151"
+      },
+      {
+        "id": "57",
+        "slug": "asigurare-clinici-private",
+        "title": "Asigurare clinici private",
+        "contentHash": "e4199c426a673471ad61e6e402bc76067ffa13e42e64c14c1a2519e183993b47",
+        "image": "/images/articles/moldova/clinici-private-v2-corner-20261109.webp",
+        "fullHash": "eb2e6fe4b3c8640fa3097524dce4d555f08ce8fb7bcf6814e1cadd75f82e8c35",
+        "withoutMediaHash": "e6cce21868a2e2fa0a3f07fc82cb66be6762090728eb2b21a154470da1e3cf99"
+      },
+      {
+        "id": "58",
+        "slug": "asigurare-scoli-gradinite",
+        "title": "Asigurare scoli gradinite",
+        "contentHash": "50f81c6966301d5d85047ed1b79ee9a6cb078ad7e0da1394d3b44e9c1689a1bb",
+        "image": "/images/articles/moldova/scoala-clasa-corner-20261109.webp",
+        "fullHash": "fb993c6ac9428555b6b5f1569db8e962dae4e434a08c74eaf5b31e64e0aa36e2",
+        "withoutMediaHash": "b50b080daafd27c3bad365078122705f0dafd8f4e091e2c2efb3ec7e9d869d3c"
+      },
+      {
+        "id": "59",
+        "slug": "asigurare-sali-fitness",
+        "title": "Asigurare sali fitness",
+        "contentHash": "9a2f8ba6243ef05b7429e46970a8d4fe52a3e48ce0382572d2ebbdf5e02507a3",
+        "image": "/images/articles/moldova/sala-fitness-corner-20261109.webp",
+        "fullHash": "a8a9fd5d8200aafd678d12f6c44f8554e51248f7e08ccc2c11ee1e3a66997905",
+        "withoutMediaHash": "746af3b9877eee7488bca10b408c7316e0e81fabb64ab2e6cfe5e406c49d527e"
+      },
+      {
+        "id": "60",
+        "slug": "asigurare-depozite-cereale",
+        "title": "Asigurare depozite cereale",
+        "contentHash": "893499bbfd8eab4f3d4f5058258200280d0cece58e5c94b5ece030fe5d4b2b57",
+        "image": "/images/articles/moldova/depozite-cereale-next-20261108.webp",
+        "fullHash": "8d4750b4fc1e9af248822089dba4d68aff3df28da1b9d8968fb48a8feeab6ae5",
+        "withoutMediaHash": "593ce7e9c880961c17da28ad238be2bf95106bac30bb3f2e58394489a51bffdb"
+      },
+      {
+        "id": "61",
+        "slug": "asigurare-livezi-viticultura",
+        "title": "Asigurare livezi viticultura",
+        "contentHash": "9cc8325cd14b5acba7b3adb09cbf03aaa8c8c91e7225b3beeb6e16624f1ed2c8",
+        "image": "/images/articles/moldova/livezi-viticultura-corner-20261109.webp",
+        "fullHash": "070abbf254f12b5dbb1710887c3b98bf9fefabc755280132de57d9b950f585d8",
+        "withoutMediaHash": "70f69f2986b5d95eb9e571155e64eecc2672596313f7f96688445e05b7d2d530"
+      },
+      {
+        "id": "62",
+        "slug": "asigurare-ferme-zootehnice",
+        "title": "Asigurare ferme zootehnice",
+        "contentHash": "1c2748914e2c07b07e496dde986e792c93dabc609a1d0a274d4e2cdddef510ba",
+        "image": "/images/articles/moldova/ferma-zootehnica-corner-20261109.webp",
+        "fullHash": "65a503b990a848e7374945ca1b282cb6a82effc5c187c49930db057251cc8159",
+        "withoutMediaHash": "0ce7264d8a6278173b1639c8b3bad7c6483a31c90e69ab6cc7d86cda0e4d8dd0"
+      },
+      {
+        "id": "63",
+        "slug": "asigurare-serre-solarii",
+        "title": "Asigurare serre solarii",
+        "contentHash": "af998f8613e6dbd8710ed9654fa1051508874aa26d35e5f007d718c39ea07691",
+        "image": "/images/articles/moldova/sere-re-alb-20261107.webp",
+        "fullHash": "7b1c86556042f076472d5ac5a7ad26a543b28611fe954841edf928ddaf82c744",
+        "withoutMediaHash": "96774761d468071159085aeca9394a8ceab5cfb1eded78faa3d5824c3e741a87"
+      },
+      {
+        "id": "64",
+        "slug": "asigurare-sisteme-irigatii",
+        "title": "Asigurare sisteme irigatii",
+        "contentHash": "d65a7facb6a343ecb4b261568ec59315d463fe2f524596f4e8030bfb0c5083a3",
+        "image": "/images/articles/moldova/irigatii-re-alb-20261107.webp",
+        "fullHash": "3948aba176ea549b3b7e8d04c57825113c7f931aae0b3db9d9b9872f4a43f88c",
+        "withoutMediaHash": "06c3bd27934b02c27ccb4a7322b369786384d3649c979730fd9605172c9a65de"
+      },
+      {
+        "id": "65",
+        "slug": "asigurare-parcuri-eoliene",
+        "title": "Asigurare parcuri eoliene",
+        "contentHash": "d3d1fd4a0fa0428215241011338c48ca2901c7541301cd00f6120fe8231e05e0",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "38446ecfa7ca6cff1df08cbf147cb7ad0298fe0378daaba0d82aafa39bab33d0",
+        "withoutMediaHash": "8616a10abb09efd5d321a325621e55ad6da92218add7c0ce90a466b63508a5e2"
+      },
+      {
+        "id": "66",
+        "slug": "asigurare-biogaz-biomasa",
+        "title": "Asigurare biogaz biomasa",
+        "contentHash": "5818fdc058759adef83f1a2bb246f5c8ad72c1228f5514ed1e2331c5455fbf38",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "683fa45b3fdb4bab828cc949a025ba1336982422e7913553294d0636e46fd65f",
+        "withoutMediaHash": "9438d679b8b47b8e97c25538f49ec1737f65bbcabdc3aa03850d8e331f9e4624"
+      },
+      {
+        "id": "67",
+        "slug": "asigurare-hidrocentrale-mici",
+        "title": "Asigurare hidrocentrale mici",
+        "contentHash": "5bc53f8b41007a8489cad0a9533bfc19fe491e3cb1a30393b8c0850aa2f8280c",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "e668deb14d428df86b9664084df597d4fc7d1400494befdd9c4cb28c8883630e",
+        "withoutMediaHash": "ce7c783a2eefccbee72804d1771f8d7d8951a23dc7df87ed016997f4f6770c66"
+      },
+      {
+        "id": "68",
+        "slug": "asigurare-stocare-energie",
+        "title": "Asigurare stocare energie",
+        "contentHash": "ed47826efd10eb71944b15c3a20f6db4594a87fbce20d158971ca895b8120dc2",
+        "image": "/asigurare-energie-regenerabila-moldova.jpg",
+        "fullHash": "923a6d7f40360d5ba8d0667f7851817a40091abcf2300f82c43ad06db4a2c579",
+        "withoutMediaHash": "61c106e43f867a5f4ae6352d5e19d9e397504bbb2377d41bef9d7cfc27430b9c"
+      },
+      {
+        "id": "69",
+        "slug": "asigurare-infrastructura-critica",
+        "title": "Asigurare infrastructura critica",
+        "contentHash": "64e3f66ab2c643f5d47d1e41056e7c8076ea6f0046121a6208d73a77b7c94630",
+        "image": "/constructie-inginerie.jpg",
+        "fullHash": "18b7001da4cf963f093d89134d545a06b92384b142551abac8420dc1e896f0fa",
+        "withoutMediaHash": "03c4076bbab12fc4d7ef5cba40224fbc1371bc260223b3d11b92b90321e2a261"
+      },
+      {
+        "id": "70",
+        "slug": "asigurare-poduri-tuneluri",
+        "title": "Asigurare poduri tuneluri",
+        "contentHash": "8fd839c640bda1636de93ae0686ff236a3eefa47e44e47689dc2a08fc0dc7b1a",
+        "image": "/images/articles/moldova/asigurare-poduri-infrastructura-moldova.webp",
+        "fullHash": "322c6f2830783361f3887adf1371da4e90378821ad661bd3e9ebe10ce6bbb6e0",
+        "withoutMediaHash": "8915732819232c4ed90581e17d3efc6edaec81ade001e40094d5c64773c6569e"
+      },
+      {
+        "id": "71",
+        "slug": "asigurare-drumuri-autostrazi",
+        "title": "Asigurare drumuri autostrazi",
+        "contentHash": "d84ba5ffbcd9f66422873127cdcb95a69844a47df69a14489b25a94a4aeb61d6",
+        "image": "/images/articles/moldova/drumuri-re-alb-20261107.webp",
+        "fullHash": "46dd12cf085d17defa0f3318c8df1c4310561b24b672f551c3f7e2042466c977",
+        "withoutMediaHash": "3d702a090f0b77bbec952784ae50ae6f869f1e6ff9360bc04327a4b847672c12"
+      },
+      {
+        "id": "72",
+        "slug": "asigurare-retele-electrice",
+        "title": "Asigurare retele electrice",
+        "contentHash": "5ab0566b8ade6afb48b74baa673774b8ebc06dc6a79d3e70e89a00d0380618d6",
+        "image": "/legal-asist.webp",
+        "fullHash": "053951f1987545289ebad67437ced1d41c7a50d66e6960bb6d1e5d1fbf988593",
+        "withoutMediaHash": "af676ab741cbc5a491402001e31b606ec308cf1d85a8581b1ff5c2320921912f"
+      },
+      {
+        "id": "73",
+        "slug": "asigurare-conducte-gaz-apa",
+        "title": "Asigurare conducte gaz apa",
+        "contentHash": "a63d1f0d89c7af3bfec34ed719b5f8591f4a917f76c794c06e6b8518ab4568c5",
+        "image": "/legal-asist.webp",
+        "fullHash": "9c55bdadb9a7842760d8c355d7cf65d051b8a4b3cc70498d848e2bf71a5d6f51",
+        "withoutMediaHash": "29ca8c1eb9613ee3bd456f89d2b96054295a6df7d1023f7e347b6b06355568df"
+      },
+      {
+        "id": "74",
+        "slug": "asigurare-telecomunicatii",
+        "title": "Asigurare telecomunicatii",
+        "contentHash": "cfb3152e3f8ad01abd8518f477b6f135b84f9090768d4ca5fea77983149ef95b",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "ca98a50848ae8566bbd8adf0d92e94123468ee1a8b55c063b2614cab12e0d819",
+        "withoutMediaHash": "1f30a75a830b88b48711b51731c680f1ca36ad4a107e483bdaa1cf58d13116c9"
+      },
+      {
+        "id": "75",
+        "slug": "asigurare-centre-date",
+        "title": "Asigurare centre date",
+        "contentHash": "0489ceeecfa3d095423f3f2b62c0b8015fe189eaad03514de97e4e6a40c4200d",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "39efa05de35452da20111e2f7e1d6d39aae2ed0abe7b75ba8b8ef0afb3bf47e1",
+        "withoutMediaHash": "ebde513893d780faf46edd9aa172781c136105f707f381ebc45441a0a3e4cc7c"
+      },
+      {
+        "id": "76",
+        "slug": "asigurare-software-as-a-service",
+        "title": "Asigurare software as a service",
+        "contentHash": "2533386d758ce10138b640e4c044d7cf23e39794c10dc3e82a7db2121370dd4b",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "2d82262c2de93f7bb94371dbc5ed4469ad8ca92633db7a5bd0990c789e604afa",
+        "withoutMediaHash": "8842409b5935fbb501089f8d35d4ff1435ea2e94740c34ea7526191886db02a7"
+      },
+      {
+        "id": "77",
+        "slug": "asigurare-e-commerce",
+        "title": "Asigurare e commerce",
+        "contentHash": "c94b9279f770d1bde9c28b44d7f6ac9db05797f58ae062fb5f31401273c7d34c",
+        "image": "/legal-asist.webp",
+        "fullHash": "b35bf40cb1ff21f82feb72a9e67d16284cc3e0e9bdf70005dd648b0b9bb2803e",
+        "withoutMediaHash": "b6ecc2fe99b7a3c6330b75eee8e8ed069545f907ff8e3d22adae549c13a4ff32"
+      },
+      {
+        "id": "78",
+        "slug": "asigurare-fintech-banking",
+        "title": "Asigurare fintech banking",
+        "contentHash": "2f01471a31c74d21263e8a27b5de6f32d471123b7fa29c8778c4a58a97cbd685",
+        "image": "/legal-asist.webp",
+        "fullHash": "3b6bd29d101ff94686de4024849fb40d73f5e2883a2372e92ad34b1d494a64aa",
+        "withoutMediaHash": "98480c4e97bcf1b91cbbaff206137a473c3118e494339c36c3274b67a3db949e"
+      },
+      {
+        "id": "79",
+        "slug": "asigurare-cripto-active",
+        "title": "Asigurare cripto active",
+        "contentHash": "846bbdb6cbc229481f3a2a69bc7d6eb69bd8c99567bd30c4944c1ecb525f5068",
+        "image": "/legal-asist.webp",
+        "fullHash": "bcbe236050e52a50a3f93ec793f66586ba231a9f73d65e1fae8375136d815f52",
+        "withoutMediaHash": "a5b6b1fe23f2116f9fd06fe5fea1e16c0934d62a00e9d795bc45b84075b56518"
+      },
+      {
+        "id": "80",
+        "slug": "asigurare-raspundere-civila-it",
+        "title": "Asigurare raspundere civila it",
+        "contentHash": "c2486842cfddd07189e3d6701bc965de10cfb86d4314df7f184148dca76b29e2",
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "64b4748fa083334e8c8c95bcdb4ab9e6dfeedf7da6f7819e5e22845b4c00c33e",
+        "withoutMediaHash": "aeb610f2a83db91494ed74c307aa04af8fff7c0e31f88aba5093befc8175d36d"
+      },
+      {
+        "id": "81",
+        "slug": "asigurare-eroare-omisiune",
+        "title": "Asigurare eroare omisiune",
+        "contentHash": "886f8cd3c040fe6070c5d4064e9593cef7edc554ca14a51494822f3780f7f811",
+        "image": "/legal-asist.webp",
+        "fullHash": "e02bed97e2b334be6aeb5ff39cd28f57cd224fd442a7e5674356f762a9ade1a2",
+        "withoutMediaHash": "cfb9468b741bd081a43395967ef124aa1bf8c9562db545f7088ab9462db85029"
+      },
+      {
+        "id": "82",
+        "slug": "asigurare-infidelitate-angajati",
+        "title": "Asigurare infidelitate angajati",
+        "contentHash": "8c5344cb320131c2812b2b13f1cddd4baf701a50533173bf3c2fb6c2bdd55277",
+        "image": "/it-companies.jpg",
+        "fullHash": "1506af5d8b732aa8be37247cd86437969af6ac1b7c104b08e6c35bfdaefb0df2",
+        "withoutMediaHash": "cd986c6f20f7b3ba039b8a1d3dc4f7ae9848d899642ca1427ff9a5138b711ffe"
+      },
+      {
+        "id": "83",
+        "slug": "asigurare-bani-tranzit",
+        "title": "Asigurare bani tranzit",
+        "contentHash": "98dc1c1caf4a607915b88f7cb2be332853ea55edb142c58a9b06a856f1d070be",
+        "image": "/legal-asist.webp",
+        "fullHash": "431e2633e1bcad4ca9a3720d587406efb34c9f703d87ecb7b390f948e8ae7859",
+        "withoutMediaHash": "b7cd8300932d283b5c0ee0deac3937c5cf6cef1cc24905edbf13fc541dc60d36"
+      },
+      {
+        "id": "84",
+        "slug": "asigurare-seifuri-valori",
+        "title": "Asigurare seifuri valori",
+        "contentHash": "18b0a86787531d275d1f701bfc61300fc9276d04a479ab1344a9bb6f2faa3065",
+        "image": "/legal-asist.webp",
+        "fullHash": "c41bfcaebbc0e88b4ca96f99d4c8e65aa8fbb1cbebecf5442ffc2636ca2b9629",
+        "withoutMediaHash": "b82c3c48ea3b2edf1045bc66c25bb090cbc54989fc813ef80e07cd771627a534"
+      },
+      {
+        "id": "85",
+        "slug": "asigurare-expozitii-targuri",
+        "title": "Asigurare expozitii targuri",
+        "contentHash": "3a305fad7ce1d36d2bb6e89d60120b5c182b2b7999264db38cecdea4f620eb6d",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "6ff9717cf1ba31cb053247d9756e11e05ecb78bb997c7572da7b9da15a2fc729",
+        "withoutMediaHash": "62c8c71f414147d127bbd394467b7d6776d44ce133116155587e8bd6e6bfddd7"
+      },
+      {
+        "id": "86",
+        "slug": "asigurare-concerte-festivaluri",
+        "title": "Asigurare concerte festivaluri",
+        "contentHash": "8b44b92d19dde1eb6a7f05ab95e83b4324e8d8bec8810c0086c5adb14185815a",
+        "image": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "7d48aa4bf72c56c1477b52650e182fb7094bef3bdc25daebcf0da897d6d4eaaf",
+        "withoutMediaHash": "1a6998c8a164b8edcc269a65d76cf208ba51ae0e122b9622dfea74317b25170d"
+      },
+      {
+        "id": "87",
+        "slug": "asigurare-competitii-sportive",
+        "title": "Asigurare competitii sportive",
+        "contentHash": "3409a5709e22d371a905d1819136baca644499af8db9dc6c55bc9f2363bebb43",
+        "image": "/legal-asist.webp",
+        "fullHash": "91fea9b6e01a9470f472d9bc48cf768a15498a059cd84b6dff1596f0bd7a576d",
+        "withoutMediaHash": "f019104315707d8012dfa3429c23998814479ef4535ac3e418f8378a8b75edce"
+      },
+      {
+        "id": "88",
+        "slug": "asigurare-raspundere-civila-sportivi",
+        "title": "Asigurare raspundere civila sportivi",
+        "contentHash": "0d6a67b78695a681931c315c78ff5ee8c649ae5c56dffcf7aba86948d2339b45",
+        "image": "/legal-asist.webp",
+        "fullHash": "1569d280791ab8e50765a238d65e6ad564389b76fa418f256ee6b26143f0d5fa",
+        "withoutMediaHash": "039db3e8e615cb8f72be3d1fccce6596d8af218be2e8f1a8f809cf995acc1ed1"
+      },
+      {
+        "id": "89",
+        "slug": "asigurare-yachturi-ambarcatiuni",
+        "title": "Asigurare yachturi ambarcatiuni",
+        "contentHash": "fc3d630fce8acc008a5a49d49bf3c710e6413653546004b81402200df50e3597",
+        "image": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "db2806ad836291b08ff4cf5febef177c8efbfc2991d1e25a600d347806b88ef4",
+        "withoutMediaHash": "935cbb429cff28779caf67b36cfea8002b50e4900e74a3b23eed8fdad09b5ccb"
+      },
+      {
+        "id": "90",
+        "slug": "asigurare-avioane-private",
+        "title": "Asigurare avioane private",
+        "contentHash": "4d82c792ebc33fd0d86e9e2e7d262ccc1bac80d989811c1ba957cbd76e798a82",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "00e4d8bffb97950a52abb58c57fd2e5eb820b77b8a0699a0c9fa308a81ca2f5b",
+        "withoutMediaHash": "c24bf4c5896401898f21619044167b6ea3038412ef1b38ceec397ad5165b3081"
+      },
+      {
+        "id": "91",
+        "slug": "asigurare-elicoptere-utilitare",
+        "title": "Asigurare elicoptere utilitare",
+        "contentHash": "7f80775084ad40912963841e45e0e20f2c279bcdb5a3862ff8882b2d72400a0a",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "37b413b2f9d048f159dae6bf081da386f74a162d0d889df5fc4c62e17f5fa810",
+        "withoutMediaHash": "3175b12bfc30baac9a2223d6e14092f6d8374e63d66f2803303527c5c0a556aa"
+      },
+      {
+        "id": "92",
+        "slug": "asigurare-raspundere-civila-aeroportuara",
+        "title": "Asigurare raspundere civila aeroportuara",
+        "contentHash": "7161ba5ede2a541fb722f48125117c62088e4d7ee5cebac0af7793566409acf4",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "37278ac23e53f075fd32eef28f9a1678130aca63c79d71b954dc5741f453bbb8",
+        "withoutMediaHash": "c634ac6f2de80e8cbd35ff6feb35493c0cc5997ebb857d7c00f21255d8765d64"
+      },
+      {
+        "id": "93",
+        "slug": "asigurare-maritima-hull",
+        "title": "Asigurare maritima hull",
+        "contentHash": "fa555ee48a3f89c3e696463950a7b04f3712f0fec348e9cc986fb0ea5549b731",
+        "image": "/legal-asist.webp",
+        "fullHash": "c5524bebcdfd3033fb6d7db7218a698df85fbb6021ce7f524cb2a888dd2ae3c7",
+        "withoutMediaHash": "c928ac839bea2b3e324133431e2df1b844e233e169ddbeaaf1eb04ea513fea90"
+      },
+      {
+        "id": "94",
+        "slug": "asigurare-protectie-indemnizatie",
+        "title": "Asigurare protectie indemnizatie",
+        "contentHash": "6daeb39e32d63c7d08fc2398ea88dd8c4019b2b3b5032141459f2b1d2a2a3089",
+        "image": "/legal-asist.webp",
+        "fullHash": "776ca8b48947128cda59c3a17ac1390c542e9a4f86545577d43d9bf53a69dea5",
+        "withoutMediaHash": "89facd812698331fe7a00f97363e415e3e96f4945930de6f33fe5916959a2987"
+      },
+      {
+        "id": "95",
+        "slug": "asigurare-riscuri-catastrofale",
+        "title": "Asigurare riscuri catastrofale",
+        "contentHash": "dd528dba249dfeb6e3adea15b8264158588d1eae917b13802c1dac12649ebc93",
+        "image": "/legal-asist.webp",
+        "fullHash": "a9281672a54f5269f546aa2f98f3a3ae173664aec897aaf7f01e0f0892c07a6a",
+        "withoutMediaHash": "6d05718fecc2cb7593227f4aacef9946d1d0a2c4fdf51b3431be6a2b450b20b2"
+      },
+      {
+        "id": "96",
+        "slug": "asigurare-terorism-sabotaj",
+        "title": "Asigurare terorism sabotaj",
+        "contentHash": "370a7b2703dd8c8d30d90aaad4575623ac5b9d0a6e466d67c5306c91e94ebde6",
+        "image": "/legal-asist.webp",
+        "fullHash": "7bf98d8cdebc9a97793a1e62505e971150c69912dd3d1ee9885cabbc6c206f31",
+        "withoutMediaHash": "fdedd405995d1e07bad2f8c42e11eeab82c3529742287065a0ca2574d8b3d6f2"
+      },
+      {
+        "id": "97",
+        "slug": "asigurare-raspundere-civila-poluare",
+        "title": "Asigurare raspundere civila poluare",
+        "contentHash": "74dde72568c6d4fbe01dc1d519b5d7d723702cc36b6a49ad405fe3803b24ad42",
+        "image": "/legal-asist.webp",
+        "fullHash": "b71cf77fff699d8f4b4db7f08449da35c9e07648f4a358247ec90a1915fa6c8f",
+        "withoutMediaHash": "ca27ef9832a69f7945d82a0ffbc9c536afbaef53488677a2d40592d1b6054c94"
+      },
+      {
+        "id": "98",
+        "slug": "asigurare-remediere-mediu",
+        "title": "Asigurare remediere mediu",
+        "contentHash": "cf6c5cd84a2496b2aece28a3985f8fc8bfdf83c19c10f16907e5a22211fc8281",
+        "image": "/images/articles/moldova/mediu-re-alb-20261107.webp",
+        "fullHash": "54f21baaf3ba4b1a29c635ffaefbcd35e9c1dbd8d3694ce0f8a14318997b02ba",
+        "withoutMediaHash": "5ee8a27dc107111773026e30189c4321b4bd8205e02386a8a4d0b8ec61c4c699"
+      },
+      {
+        "id": "99",
+        "slug": "asigurare-raspundere-civila-produs",
+        "title": "Asigurare raspundere civila produs",
+        "contentHash": "cadbb0c2cd883c85257fe05bc79523a6becfadd279a0eec21a3beab623d06fa2",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "7f31f8e38081ff929b820a07404cb919b29976e8b113bf1efa429ead949d177e",
+        "withoutMediaHash": "62067c335cc953130de54f54988101ded64836e88088b10bf66dfa8d38ac91c0"
+      },
+      {
+        "id": "100",
+        "slug": "asigurare-rechemare-produs",
+        "title": "Asigurare rechemare produs",
+        "contentHash": "7e1647f5964c370183d84c280e32b4cd49a014d75ba0db37d3f5732ecfa266cb",
+        "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "f337131c0c54a3c8158457ddd1834258350213301960f187d9a561fc8e17684a",
+        "withoutMediaHash": "95be52958423f48327d13cf9278d4bf11c95cfa0645393f3e0e77cde69686d48"
+      },
+      {
+        "id": "101",
+        "slug": "asigurare-studii-clinice",
+        "title": "Asigurare studii clinice",
+        "contentHash": "abb82a6b34aafa148b942441f4604979c00fee1c68757d52525029c016722e81",
+        "image": "/legal-asist.webp",
+        "fullHash": "1613cd82aa6d2a7eb998f00110d7c317e6c21a0731337ea1c4817da07fc4bb67",
+        "withoutMediaHash": "8ee41a1564ba5bc3956d5a6744cbee3cc3db28e24d1c5000aad05c656de7bfb7"
+      },
+      {
+        "id": "102",
+        "slug": "asigurare-raspundere-civila-angajator",
+        "title": "Asigurare raspundere civila angajator",
+        "contentHash": "4f3de4b2b5d8a5d8089a96368210e7f2c0dd4d9c59bf006f05f8bdd9dde0c521",
+        "image": "/images/articles/moldova/asigurare-raspundere-angajator-moldova.webp",
+        "fullHash": "5afec384a5692f28fb163492fdeedccabafc786c42901338b53b9926820d1403",
+        "withoutMediaHash": "bd43503974c4ef7d1c4bbcfbc2d9b5f3eb57701135e416b40eff13fbf594a58c"
+      },
+      {
+        "id": "103",
+        "slug": "asigurare-sanatate-expatriati",
+        "title": "Asigurare sanatate expatriati",
+        "contentHash": "b4b52521516ef9b3ef7e7071642db95195e034b4c5632047802a4a556a8a27b0",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "a30014145dabfda1ae4191aaef7317b7a2e149bd85097806997d4daf33e46c8d",
+        "withoutMediaHash": "a8fd114964f9d372f36412f515084b65b9e54d697b974828149a715aa49e8f2d"
+      },
+      {
+        "id": "104",
+        "slug": "asigurare-repatriere-deces",
+        "title": "Asigurare repatriere deces",
+        "contentHash": "dd54901afcd36b0816a673811ac38dae9d8fc24fa13ff4f115359f9ffafe52ec",
+        "image": "/legal-asist.webp",
+        "fullHash": "d477197d3e9091f60c95b1b6791d58d46958a51a87a7918a982d877dc69f59f1",
+        "withoutMediaHash": "22fd7192883a419c35ca3b33ad38dc35484feef3f285b5d5f36e6c711996a4ce"
+      },
+      {
+        "id": "105",
+        "slug": "asigurare-asistenta-medicala-vip",
+        "title": "Asigurare asistenta medicala vip",
+        "contentHash": "ee00724384f8b6021b1865549dbed013896026c2ea64eed43945ac763d3f3bf3",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "22ed25fdf5cade6ccf6f931eb53e8197eba7add8e077420fbc48a7307c9b3d31",
+        "withoutMediaHash": "c3a9023b80ecff942f4803e212275587a2e5676bed22f7bf7427e6bb729115be"
+      },
+      {
+        "id": "106",
+        "slug": "asigurare-boli-grave",
+        "title": "Asigurare boli grave",
+        "contentHash": "5e7dc686aab41530cf41701c13fe0091bb7fa685d4175539a9fdb9658e3b27d8",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "62369bf7dc81237668a9eb8858dd6405205fd79319d95ae3ca0ff6379935b8c9",
+        "withoutMediaHash": "0111a279afc1075f30d93bbc23ea8c2bcec1c185304a3318acb502fba39ae45a"
+      },
+      {
+        "id": "107",
+        "slug": "asigurare-spitalizare-interventii",
+        "title": "Asigurare spitalizare interventii",
+        "contentHash": "cf1d858889f3fe3cc222fda3e9e484ff604425f69673faae8a3af21826a75775",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "1287ab2dbf5140edaed65bc76c06303ef80d58244622b9a3b9853860c14677bd",
+        "withoutMediaHash": "d43fc8c8fc9a3bf178b49130eff0cac4982dc90193481425dcbf2b997c2e36aa"
+      },
+      {
+        "id": "109",
+        "slug": "asigurare-optica-medicala",
+        "title": "Asigurare optica medicala",
+        "contentHash": "96c497d3988354d95db9827458f8143b12f6500e0987ad4ded7d26207aacac91",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "43512d4f4a325f734333734c9f8ba78141322c737701bdfc882aee6fc42602f8",
+        "withoutMediaHash": "2286d5a469f39bf7e4999c2bed32b31f1ae6a163cf42f633dabb3573ff87dec6"
+      },
+      {
+        "id": "110",
+        "slug": "asigurare-maternitate-nastere",
+        "title": "Asigurare maternitate nastere",
+        "contentHash": "a7bfd68c3644d95fe7899ed00752f1df8e216121d72d11e38b85d60f8cdb07c0",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "66d23623ea0c49184170f8300f64f7c9bf311fd72f40656b9a84afb0154be0ab",
+        "withoutMediaHash": "49e929cea952c15df01dcfec09a5bab40f0cd0e9ed35aa801fd5e0e6847052e5"
+      },
+      {
+        "id": "111",
+        "slug": "asigurare-kinetoterapie-recuperare",
+        "title": "Asigurare kinetoterapie recuperare",
+        "contentHash": "bdbda3f3e4d3f1d2aa6b3b280d4a8d719290a446c3b5137af1b8da3a11c15cec",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "05da5ce897089a683b8aba4a7b43c7d01e9d7f7c58fe88dd6e31c2260fab4d19",
+        "withoutMediaHash": "9ef208c043c0dd39339bb496a755d9d9bf5c5a216faceaaae147306a35863a46"
+      },
+      {
+        "id": "113",
+        "slug": "asigurare-check-up-anual",
+        "title": "Asigurare check up anual",
+        "contentHash": "82b20cc2fea31113dc60600c1e4fa7ae5715eb3abbc858faf85702548abdea1a",
+        "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1920",
+        "fullHash": "4bc2bd2f9cd909b84c27c6da94cc8fbd111024debab097f7d59bdb451883ba12",
+        "withoutMediaHash": "31c19d142a676681d2be794558b695e3fc7bee644862a2915a83e21f93a2c298"
+      }
+    ]
+  }
+}

@@ -9,3 +9,6 @@ for(const [name,defaultColor] of [['flota-inventar','white'],['seceta-culturi','
  articlePhotoBranding[`/images/articles/moldova/${name}-corner-20261109.webp`]={source:`/images/articles/moldova/${name}-scene-20261109.webp`,defaultColor};
 }
 export const articlePhotoSource=(image:string)=>articlePhotoBranding[image]?.source||image;
+for(const [name,defaultColor] of [['casco-inspectie','white'],['rca-calcul','black'],['calatorie-pregatire','black'],['storno-rezervare','black'],['rca-sofer-tanar','white'],['rca-documente','white'],['drona-verificare','black'],['animale-companie','black']] as const){
+ articlePhotoBranding[`/images/articles/moldova/${name}-search-corner-20261109.webp`]={source:`/images/articles/moldova/${name}-search-scene-20261109.webp`,defaultColor};
+}
