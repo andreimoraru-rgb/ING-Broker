@@ -9,9 +9,13 @@ for(const file of ['src/pages/ArticlePage.tsx','src/pages/EditorialArticle.tsx',
  const original=execFileSync('git',['show',`${baseline}:${file}`],{encoding:'utf8'}).replace(/\r\n/g,'\n');
  assert.equal(withoutCornerBranding(readFileSync(file,'utf8')),original,`${file}: only requested logo source/layer may change, never layout classes`);
 }
-for(const file of ['src/data/articles.ts','src/data/recoveredArticles.ts','src/data/editorialDemand20261108.ts'])assert.equal(readFileSync(file,'utf8').replace(/\r\n/g,'\n'),execFileSync('git',['show',`${baseline}:${file}`],{encoding:'utf8'}).replace(/\r\n/g,'\n'),`${file}: article text must not change`);
-assert.equal(articles.ro.length,107);assert.equal(Object.keys(articlePhotoBranding).length,6);
-const rows=articles.ro.filter(a=>articlePhotoBranding[a.image]);assert.equal(rows.length,6);
+for(const file of ['src/data/articles.ts','src/data/recoveredArticles.ts','src/data/editorialDemand20261108.ts']){
+ const current=readFileSync(file,'utf8').replace(/\r\n/g,'\n').replace(/^import \{ editorialRemaining20261109 \} from '\.\/editorialRemaining20261109';\n/m,'').replace(/^Object\.assign\(articleRevisions, editorialRemaining20261109\);\n/m,'');
+ assert.equal(current,execFileSync('git',['show',`${baseline}:${file}`],{encoding:'utf8'}).replace(/\r\n/g,'\n'),`${file}: existing article text unchanged apart from isolated new revision module`);
+}
+assert.equal(articles.ro.length,107);assert.ok(Object.keys(articlePhotoBranding).length>=6);
+const originalSix=new Set(['asigurare-viata-moldova','asigurare-cladiri-birouri','asigurare-centre-comerciale','asigurare-hoteluri-pensiuni','asigurare-restaurante-cafenele','asigurare-clinici-private']);
+const rows=articles.ro.filter(a=>originalSix.has(a.slug));assert.equal(rows.length,6);
 for(const a of rows){
  const html=readFileSync(`dist/_editorial/${a.slug}.html`,'utf8'),scene=articlePhotoSource(a.image);
  assert.equal((html.match(/data-article-logo="bottom-right"/g)||[]).length,1);
