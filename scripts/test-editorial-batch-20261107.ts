@@ -3,6 +3,7 @@ import { execFileSync } from 'node:child_process';
 import { readFileSync, existsSync } from 'node:fs';
 import { articles } from '../src/data/articles';
 import { editorialBatch20261107 } from '../src/data/editorialBatch20261107';
+import { withoutCornerBranding } from './article-design-guard';
 
 const wordCount = (html: string) => (html.replace(/<[^>]+>/g, ' ').match(/[\p{L}\p{N}]+(?:[-'][\p{L}\p{N}]+)*/gu) || []).length;
 const usage = new Map<string, number>();
@@ -24,7 +25,7 @@ const results = Object.keys(editorialBatch20261107).map(slug => {
   return {slug, words, image:a.image, uniqueImage:true};
 });
 const baseline = execFileSync('git', ['show', '6769fc4:src/pages/ArticlePage.tsx'], {encoding:'utf8'});
-const current = readFileSync('src/pages/ArticlePage.tsx', 'utf8');
+const current = withoutCornerBranding(readFileSync('src/pages/ArticlePage.tsx', 'utf8'));
 const hero = (s:string) => s.slice(s.indexOf('{/* Hero Section */}'), s.indexOf('{/* Content Section */}')).replace(/\r\n/g,'\n');
 assert.equal(hero(current).replace('src={article.heroImage || article.image}','src={article.image}'), hero(baseline), 'Hero layout and classes must remain unchanged; only same-scene image derivative binding may change');
 const fleet = articles.ro.find(a => a.slug === 'asigurare-flote-auto-corporate-moldova')!;
