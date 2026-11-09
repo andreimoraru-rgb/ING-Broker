@@ -6,6 +6,8 @@ import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { articles } from '../data/articles';
 import { localizedPath } from '../utils/localizedRoutes';
+import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
+import { articlePhotoSource } from '../data/articlePhotoBranding';
 
 interface NewsInsightsPageProps {
   lang: Language;
@@ -168,13 +170,14 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
               >
                 <div className="relative h-64 overflow-hidden">
                   <img 
-                    src={article.image} 
+                    src={articlePhotoSource(article.image)}
                     alt={article.imageAlt || article.title}
                     className="w-full h-full object-cover transition-all duration-1000 ease-out group-hover:scale-110 group-hover:brightness-110"
                     referrerPolicy="no-referrer"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <ArticlePhotoLogo image={article.image} />
                   <div className="absolute top-6 left-6">
                     <span className="px-4 py-1.5 bg-white/90 backdrop-blur-md text-secondary text-[9px] font-bold uppercase tracking-[0.2em] shadow-sm">
                       {article.date}
