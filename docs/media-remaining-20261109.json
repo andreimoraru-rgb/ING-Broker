@@ -1,0 +1,223 @@
+{
+  "createdAt": "2026-11-09T15:07:34.334Z",
+  "generation": "integrated image generation, six separate assets; no paid external API, no local model",
+  "export": "owner-approved Sharp, no scene edit",
+  "rows": [
+    {
+      "slug": "asigurare-flota-auto",
+      "name": "flota-inventar",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/flota-inventar-source-20261109.png",
+        "sha256": "71e23c16a8c855e64d219125608b6d47e132b13961c183b6593c120a3b4c2340",
+        "bytes": 2426628
+      },
+      "scene": {
+        "path": "/images/articles/moldova/flota-inventar-scene-20261109.webp",
+        "sha256": "1a07e6368336283dd65a89949369d37644c34aa46169fbc6a2831aa50c13b5aa",
+        "bytes": 242518
+      },
+      "social": {
+        "path": "/images/articles/moldova/flota-inventar-corner-20261109.webp",
+        "sha256": "93941cc74fffc8373e956111e4866c4922d68942262bcf1bc151941bede73121",
+        "bytes": 239166
+      },
+      "masterUnchanged": true,
+      "logo": {
+        "source": "/images/brand/ing-re-white-original-20261109.png",
+        "sha256": "13b36b9ae7b44c72ac197708bfa053bd27c935b26f398314f0e8e3e2bbfff433",
+        "color": "white",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "displayRule": "clean scene plus original corner overlay; contrast follows exact displayed area, white in unchanged dark hero",
+      "sceneEditing": false,
+      "provenance": "unaltered signed master retained; export carries XMP source and digital source type"
+    },
+    {
+      "slug": "asigurare-agricola-seceta",
+      "name": "seceta-culturi",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/seceta-culturi-source-20261109.png",
+        "sha256": "12d140776317450111d81824dc6a337a1aad3c77ba6f8717e48faaf448750c16",
+        "bytes": 3267842
+      },
+      "scene": {
+        "path": "/images/articles/moldova/seceta-culturi-scene-20261109.webp",
+        "sha256": "974d0d965d3e1080cec85c60e64e2578a5d03ac7fcdb13878e85b76879771177",
+        "bytes": 497960
+      },
+      "social": {
+        "path": "/images/articles/moldova/seceta-culturi-corner-20261109.webp",
+        "sha256": "3a837b517ba243cba62cc89a647acd8260384c8c315e6ddd77d207a0464df97b",
+        "bytes": 496020
+      },
+      "masterUnchanged": true,
+      "logo": {
+        "source": "/images/brand/ing-re-white-original-20261109.png",
+        "sha256": "13b36b9ae7b44c72ac197708bfa053bd27c935b26f398314f0e8e3e2bbfff433",
+        "color": "white",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "displayRule": "clean scene plus original corner overlay; contrast follows exact displayed area, white in unchanged dark hero",
+      "sceneEditing": false,
+      "provenance": "unaltered signed master retained; export carries XMP source and digital source type"
+    },
+    {
+      "slug": "asigurare-livezi-viticultura",
+      "name": "livezi-viticultura",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/livezi-viticultura-source-20261109.png",
+        "sha256": "8d1359aafae4d6d3b815d1fcd28c2ebd8426eaefca69df0504f32b2428485776",
+        "bytes": 3772854
+      },
+      "scene": {
+        "path": "/images/articles/moldova/livezi-viticultura-scene-20261109.webp",
+        "sha256": "fd7ad76f06c60a05f2714419d182f01c3f75a4bd55140afd8b19255abf0e8fff",
+        "bytes": 680290
+      },
+      "social": {
+        "path": "/images/articles/moldova/livezi-viticultura-corner-20261109.webp",
+        "sha256": "eadf4978084ba2b41e71359fc31a1beaa9c9be21dfb0252e205a115bf332014a",
+        "bytes": 675322
+      },
+      "masterUnchanged": true,
+      "logo": {
+        "source": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "displayRule": "clean scene plus original corner overlay; contrast follows exact displayed area, white in unchanged dark hero",
+      "sceneEditing": false,
+      "provenance": "unaltered signed master retained; export carries XMP source and digital source type"
+    },
+    {
+      "slug": "asigurare-ferme-zootehnice",
+      "name": "ferma-zootehnica",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/ferma-zootehnica-source-20261109.png",
+        "sha256": "ddc8a753df7222c71b845f2224d0cf9d929948ae204521b87cb674692472f1f3",
+        "bytes": 2927080
+      },
+      "scene": {
+        "path": "/images/articles/moldova/ferma-zootehnica-scene-20261109.webp",
+        "sha256": "bffb1253bb9fcab4cc1bd3288c11856b25a9bc9d43929f46e91d1b6ac6140042",
+        "bytes": 407560
+      },
+      "social": {
+        "path": "/images/articles/moldova/ferma-zootehnica-corner-20261109.webp",
+        "sha256": "ad29c8bdb51e2fa6acde64d1b7233866355319acb3441812ca4da46f042c5e85",
+        "bytes": 410838
+      },
+      "masterUnchanged": true,
+      "logo": {
+        "source": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "displayRule": "clean scene plus original corner overlay; contrast follows exact displayed area, white in unchanged dark hero",
+      "sceneEditing": false,
+      "provenance": "unaltered signed master retained; export carries XMP source and digital source type"
+    },
+    {
+      "slug": "asigurare-scoli-gradinite",
+      "name": "scoala-clasa",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/scoala-clasa-source-20261109.png",
+        "sha256": "ace34370ffdbf8af61c613018968ccc927d0868d280e1feac9fcc9e7bf59ffc4",
+        "bytes": 2165195
+      },
+      "scene": {
+        "path": "/images/articles/moldova/scoala-clasa-scene-20261109.webp",
+        "sha256": "de72d2109d46831ce709273a49aee9678e73454d68ad43e5f88815ab074579ab",
+        "bytes": 211976
+      },
+      "social": {
+        "path": "/images/articles/moldova/scoala-clasa-corner-20261109.webp",
+        "sha256": "3e58b8eb8567c5c4ee87dc0748aa4adf5553f60e83f32e4c13e91704aed28478",
+        "bytes": 217700
+      },
+      "masterUnchanged": true,
+      "logo": {
+        "source": "/images/brand/ing-re-black-original-20261109.png",
+        "sha256": "8c89b9857db978421cac1b72a0283a406b3cbdce3ca0260c7318752d5168a908",
+        "color": "black",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "displayRule": "clean scene plus original corner overlay; contrast follows exact displayed area, white in unchanged dark hero",
+      "sceneEditing": false,
+      "provenance": "unaltered signed master retained; export carries XMP source and digital source type"
+    },
+    {
+      "slug": "asigurare-sali-fitness",
+      "name": "sala-fitness",
+      "width": 1536,
+      "height": 1024,
+      "master": {
+        "path": "/images/articles/moldova/sala-fitness-source-20261109.png",
+        "sha256": "4f32fb5e176613ad33391ac257bb69278d7785773509cbb043744c26390c3110",
+        "bytes": 2701516
+      },
+      "scene": {
+        "path": "/images/articles/moldova/sala-fitness-scene-20261109.webp",
+        "sha256": "91588198657a54568763db190c88b6d422589b680950676f594675fd096e2a1c",
+        "bytes": 344960
+      },
+      "social": {
+        "path": "/images/articles/moldova/sala-fitness-corner-20261109.webp",
+        "sha256": "56cf502ddfc75247a30d046cee0e41421700e79f3eb6c51afa42c3707677a03e",
+        "bytes": 344700
+      },
+      "masterUnchanged": true,
+      "logo": {
+        "source": "/images/brand/ing-re-white-original-20261109.png",
+        "sha256": "13b36b9ae7b44c72ac197708bfa053bd27c935b26f398314f0e8e3e2bbfff433",
+        "color": "white",
+        "corner": "bottom-right",
+        "margin": 38,
+        "left": 1222,
+        "top": 906,
+        "width": 276,
+        "height": 80
+      },
+      "displayRule": "clean scene plus original corner overlay; contrast follows exact displayed area, white in unchanged dark hero",
+      "sceneEditing": false,
+      "provenance": "unaltered signed master retained; export carries XMP source and digital source type"
+    }
+  ]
+}
