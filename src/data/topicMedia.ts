@@ -1,5 +1,6 @@
 // Images reviewed visually on 2026-10-26. Selection is semantic, never array-position based.
 import { articleMedia } from './articleMedia';
+import {searchMediaAlts20261109} from './searchMedia20261109';
 import type { Language } from '../translations';
 
 const stock = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&q=80&w=1920`;
@@ -34,6 +35,7 @@ export function topicMedia(slug: string, lang: Language): Media {
   };
   if (pilot[slug]) return { image: `/images/articles/moldova/${pilot[slug].file}`, imageAlt: pilot[slug].labels[lang === 'ro' ? 0 : lang === 'ru' ? 1 : 2] };
   const approved = articleMedia[slug];
+  if(approved && lang!=='ro' && searchMediaAlts20261109[slug])return {image:approved.image,imageAlt:searchMediaAlts20261109[slug][lang==='ru'?0:1]};
   if (approved) return { image: approved.image, imageAlt: lang === 'ro' ? approved.imageAlt :
     lang === 'ru' ? 'Иллюстрация к теме статьи' : 'Illustration of the article topic' };
   const rule = rules.find(([pattern]) => pattern.test(slug));
