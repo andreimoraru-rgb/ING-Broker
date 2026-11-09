@@ -4,7 +4,7 @@ import { articles } from '../src/data/articles';
 import { onRequest } from '../functions/[[path]]';
 
 const batch = articles.ro.filter(a => a.reviewStatus === 'approved');
-assert.equal(batch.length, 36);
+assert.equal(batch.length, 44);
 const results = [];
 for (const a of batch) {
   const html = readFileSync(`dist/_editorial/${a.slug}.html`, 'utf8');
@@ -26,14 +26,14 @@ for (const a of batch) {
   const url = `https://www.ingbroker.md/news/${a.slug}`;
   const response = await onRequest({ request: new Request(url), env });
   assert.equal(response.status, 200);
-  assert.deepEqual(requested, [`/_editorial/${a.slug}`]);
+  assert.deepEqual(requested.map(p=>decodeURIComponent(p)), [`/_editorial/${a.slug}`]);
   const redirect = await onRequest({ request: new Request(url + '/'), env });
   assert.equal(redirect.status, 301);
-  assert.equal(redirect.headers.get('location'), url);
+  assert.equal(redirect.headers.get('location'), new URL(url).href);
   const blocked = await onRequest({ request: new Request(`https://www.ingbroker.md/_editorial/${a.slug}`), env });
   assert.equal(blocked.status, 404);
   const xml = readFileSync('dist/sitemap.xml','utf8');
-  const entry = [...xml.matchAll(/<url>[\s\S]*?<\/url>/g)].find(m => m[0].includes(`<loc>${url}</loc>`));
+  const entry = [...xml.matchAll(/<url>[\s\S]*?<\/url>/g)].find(m => m[0].includes(`<loc>${new URL(url).href}</loc>`));
   assert.ok(entry?.[0].includes(`<lastmod>${a.updatedAt}</lastmod>`));
   results.push({ slug: a.slug, fullHtml: true, schemas: schemas.map(s=>s['@type']), canonical: url });
 }
