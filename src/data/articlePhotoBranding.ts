@@ -9,6 +9,9 @@ for(const [name,defaultColor] of [['flota-inventar','white'],['seceta-culturi','
  articlePhotoBranding[`/images/articles/moldova/${name}-corner-20261109.webp`]={source:`/images/articles/moldova/${name}-scene-20261109.webp`,defaultColor};
 }
 export const articlePhotoSource=(image:string)=>articlePhotoBranding[image]?.source||image;
+for(const name of ['cyber-operatiuni-corporate','ecommerce-fulfillment-corporate','it-livrare-responsabilitate-corporate']){
+ articlePhotoBranding[`/images/articles/moldova/${name}-corner-20261109.webp`]={source:`/images/articles/moldova/${name}-scene-20261109.webp`,defaultColor:'white'};
+}
 for(const [name,defaultColor] of [['imm-backup','black'],['ecommerce-ambalare','black'],['saas-lansare','black'],['centru-date-rack','white'],['telecom-fibra','black'],['it-receptie-proiect','black']] as const){
  articlePhotoBranding[`/images/articles/moldova/${name}-tech-corner-20261109.webp`]={source:`/images/articles/moldova/${name}-tech-scene-20261109.webp`,defaultColor};
 }
