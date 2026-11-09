@@ -1,5 +1,6 @@
 // Owner-requested Moldova illustration series. Fictional AI scenes, not client photographs.
 import {searchMedia20261109} from './searchMedia20261109';
+import {techMedia20261109} from './techMedia20261109';
 // Owner confirmed specialist review and Moldova intermediation capability on 2026-10-21.
 const media = (file: string, alt: string, topic: string, keywords: string, context: string) => ({
   image: `/images/articles/moldova/${file}.webp`,
@@ -84,3 +85,4 @@ Object.assign(articleMedia,{
  'asigurare-sali-fitness':media('sala-fitness-corner-20261109','Sală de fitness fără persoane, cu benzi de alergare, gantere și aparat de forță','Asigurare','asigurare sală fitness Moldova, asigurare aparate fitness, inventar echipamente sportive, răspundere clienți sală, spațiu închiriat','sălile de fitness din Moldova'),
 });
 Object.assign(articleMedia,searchMedia20261109);
+Object.assign(articleMedia,techMedia20261109);

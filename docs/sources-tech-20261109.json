@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-09",
+  "sources": [
+    {
+      "url": "https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam",
+      "status": 200,
+      "success": true
+    },
+    {
+      "url": "https://www.cnpf.md/ro/cnpf-explica-6506.html",
+      "status": 200,
+      "success": true
+    }
+  ],
+  "additionalSource": {
+    "url": "https://stisc.gov.md/sites/default/files/ghiduri/Ghidul_Securitatii_Cibernetice.pdf",
+    "contentReadVia": "web PDF text",
+    "httpStatus": "not exposed by web",
+    "scope": "educational MFA and account security, not a current regulatory mandate"
+  },
+  "limits": [
+    "No insurance product availability, pricing, compensation, legal deadline or global cover promised.",
+    "Current consolidated Law 92/2022 not fully verified; no new legal interpretation certified.",
+    "Technical scenarios and working checklists are original editorial advice, not insurer conditions.",
+    "No foreign competitor links or copied structures.",
+    "Existing GSC export 08.08-07.11: asigurare cyber 0 clicks/13 impressions, asigurare raspundere profesionala it 0/2; not market volumes."
+  ]
+}
