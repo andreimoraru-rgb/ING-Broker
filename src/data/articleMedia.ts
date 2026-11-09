@@ -72,3 +72,13 @@ articleMedia['asigurare-flote-auto-corporate-moldova'] = {
 for (const slug of ['asigurare-cargo-transport-marfa','asigurare-depozite-logistice','asigurare-utilaje-industriale','asigurare-echipamente-it','asigurare-raspundere-profesionala','asigurare-raspundere-civila-generala','asigurare-constructii-montaj','asigurare-credit-comercial']) {
   articleMedia[slug].heroImage = articleMedia[slug].image.replace('-20261108.webp','-hero-20261108.webp');
 }
+
+// Owner-approved individual corrections, original corner logo, no global layout change.
+Object.assign(articleMedia,{
+ 'asigurare-flota-auto':media('flota-inventar-corner-20261109','Responsabil verificând un inventar pe tabletă lângă cinci furgonete de distribuție','Auto','asigurare flotă auto Moldova, inventar mașini companie, reînnoire RCA CASCO, polițe flotă, acte asigurare auto','flotele companiilor din Moldova'),
+ 'asigurare-agricola-seceta':media('seceta-culturi-corner-20261109','Agronom examinând solul uscat la marginea unei parcele de porumb','Agricultură','asigurare agricolă secetă Moldova, asigurare culturi, parcele agricole, constatare daună recoltă, franșiză agricolă','agricultura din Moldova'),
+ 'asigurare-livezi-viticultura':media('livezi-viticultura-corner-20261109','Rânduri de meri cu fructe și un administrator verificând un pom în livadă','Agricultură','asigurare livezi Moldova, asigurare viță-de-vie, plantații multianuale, grindină îngheț recoltă, inventar livadă','livezile și plantațiile din Moldova'),
+ 'asigurare-ferme-zootehnice':media('ferma-zootehnica-corner-20261109','Bovine într-un adăpost de fermă și un lucrător verificând evidența efectivului','Agricultură','asigurare animale fermă Moldova, asigurare bovine, ferme zootehnice, inventar efectiv animale, bunuri fermă','fermele zootehnice din Moldova'),
+ 'asigurare-scoli-gradinite':media('scoala-clasa-corner-20261109','Sală de clasă fără persoane, cu bănci, scaune, tablă și mobilier','Asigurare','asigurare bunuri școală Moldova, asigurare grădiniță, inventar dotări instituție, răspundere instituție educație, amenajări chiriaș','instituțiile de învățământ din Moldova'),
+ 'asigurare-sali-fitness':media('sala-fitness-corner-20261109','Sală de fitness fără persoane, cu benzi de alergare, gantere și aparat de forță','Asigurare','asigurare sală fitness Moldova, asigurare aparate fitness, inventar echipamente sportive, răspundere clienți sală, spațiu închiriat','sălile de fitness din Moldova'),
+});

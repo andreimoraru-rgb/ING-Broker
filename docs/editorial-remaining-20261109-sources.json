@@ -1,0 +1,15 @@
+{
+ "checkedOn":"2026-11-09",
+ "method":"Crawl4AI, public pages, robots-aware. No account or private client data.",
+ "sources":[
+  {"url":"https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam","status":200,"type":"official educational guidance","published":"2024-07-30","supports":["identify parties and insured object","read covered risks, exclusions, limits and duration","franchise and claim procedure explained separately"],"notEvidenceFor":"current consolidated legislation or individual policy acceptance"},
+  {"url":"https://moldasig.md/agricultural-risk-insurance","status":200,"type":"local insurer product presentation","supports":["agricultural crops and perennial plantations are presented separately","drought is named among agricultural risks","agricultural equipment is a separate category"],"notEvidenceFor":"universal acceptance, entitlement to subsidies or payout for any drought"},
+  {"url":"https://moldasig.md/subsidized-pet-insurance","status":200,"type":"local insurer product presentation","supports":["actual page concerns agricultural animals, not household pets","several livestock categories and identification/value documentation are described"],"notEvidenceFor":"a universal disease guarantee, an animal health instruction or current subsidy percentage"},
+  {"url":"https://moldasig.md/property-insurance-for-legal-persons","status":200,"type":"local insurer product presentation","supports":["property categories include buildings, equipment and stock"],"notEvidenceFor":"a dedicated school/fitness package, accident cover for participants or ING issuance of every scenario"},
+  {"url":"https://moldasig.md/casco","status":200,"type":"local insurer quote/product page","supports":["vehicle category, value and usage data are relevant fields for an individual calculation"],"notEvidenceFor":"a universal fleet discount, all repairs or all drivers being accepted"}
+ ],
+ "editorialRule":"Only narrow facts above are attributed to sources. Operational worksheets and questions are original editorial recommendations, not policy obligations.",
+ "legalReview":"No new legislative interpretation, deadlines, subsidy rate, price or coverage guarantee. Current consolidated Law 92/2022 not certified in this run; do not claim full legal audit.",
+ "demand":"No new GSC query data or search volumes available in the authenticated property yet. Do not label these the most searched topics.",
+ "retirement":"None. Conditions for withdrawal have not been proved individually."
+}
