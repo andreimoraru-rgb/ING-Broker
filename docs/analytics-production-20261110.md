@@ -8,6 +8,7 @@ Issue: GA4-NONPROD-CONTAMINATION-20261110. Owner explicitly requested remediatio
 - Existing vendor IDs, event names and payloads stay unchanged. The repeated Google initialization command is issued once. This does not certify that the remotely managed GTM container has no overlapping tags; inspect that container separately if duplicates are observed.
 - No GA4 property, stream, key-event setting, historical record or permanent data filter is edited. Historical reports need the same production-hostname reporting filter in both comparison periods. This guard does not retroactively remove QA visits.
 - For every automated browser QA context, block Google Analytics, Google Tag Manager, DoubleClick, Google Ads measurement, PostHog ingestion and Cloudflare Insights before navigation as a second safety layer. Never send a test form or contact a third party to validate a click.
+- Reusable helper: `await require('./scripts/qa-measurement-guard.cjs').installMeasurementGuard(context)` before navigation. Local test validates the blocked endpoints and keeps site assets/fonts available.
 - Public production reception still needs independent verification. Loading scripts or unit-test spies is not proof of server-side event receipt.
 
 Scope: analytics bootstrap and analytics helper only. All articles, pictures, hero components, CSS, routing, dependencies, consent and forms are unchanged. Rollback: revert this PR; never delete Analytics history.
