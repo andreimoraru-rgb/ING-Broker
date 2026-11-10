@@ -2,6 +2,8 @@ type AnalyticsParams = Record<string, string | number | boolean | undefined>;
 
 declare global {
   interface Window {
+    __ING_ANALYTICS_ENABLED__?: boolean;
+    __ING_ANALYTICS_QA__?: boolean;
     gtag?: (...args: unknown[]) => void;
     posthog?: PostHogQueue;
   }
@@ -15,6 +17,7 @@ interface PostHogQueue extends Array<unknown[]> {
 }
 
 export const trackEvent = (event: string, params: AnalyticsParams = {}) => {
+  if (window.__ING_ANALYTICS_ENABLED__ !== true || window.__ING_ANALYTICS_QA__ === true) return;
   window.gtag?.('event', event, { ...params, transport_type: 'beacon' });
   window.posthog?.capture(event, params);
 };
@@ -23,7 +26,7 @@ const posthogKey = import.meta.env.VITE_POSTHOG_KEY as string | undefined;
 const posthogHost = (import.meta.env.VITE_POSTHOG_HOST as string | undefined) || 'https://eu.i.posthog.com';
 
 export const installPostHog = () => {
-  if (!posthogKey || window.posthog) return;
+  if (window.__ING_ANALYTICS_ENABLED__ !== true || window.__ING_ANALYTICS_QA__ === true || !posthogKey || window.posthog) return;
 
   const queue = [] as unknown as PostHogQueue;
   const queuedMethods = [
