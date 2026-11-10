@@ -1,0 +1,120 @@
+{
+  "createdAt": "2026-11-10T09:04:06.195Z",
+  "backend": "built-in imagegen",
+  "localComfyUiUsed": false,
+  "reason": "Owner rejected earlier three scenes as insufficiently corporate",
+  "newArticleCompletions": 0,
+  "rows": [
+    {
+      "slug": "asigurare-riscuri-cibernetice-imm",
+      "name": "cyber-operatiuni-modern",
+      "relevance": "Operațiuni de securitate într-un spațiu contemporan alb-grafit, echipamente actuale, fără mobilier bej dominant.",
+      "master": {
+        "path": "/images/articles/moldova/cyber-operatiuni-modern-source-20261109.png",
+        "sha256": "1fbf0070f7bc2532346bdced15c6016d5d7c770867282b23319c351f764ded36",
+        "bytes": 2027902
+      },
+      "scene": {
+        "path": "/images/articles/moldova/cyber-operatiuni-modern-scene-20261109.webp",
+        "sha256": "b37c95145513b794b83ed44b38060fe0736802102f10301824253e3c59264213",
+        "bytes": 173820
+      },
+      "social": {
+        "path": "/images/articles/moldova/cyber-operatiuni-modern-corner-20261109.webp",
+        "sha256": "e089ef7cedfd6efa364a21b96146025a286940a45a356cc94f6d29d9a768de0b",
+        "bytes": 178432
+      },
+      "sourceGenerationFile": "exec-45dc3e50-e153-400c-a19b-40d8359ef82b.png",
+      "width": 1942,
+      "height": 809,
+      "masterUnchanged": true,
+      "logo": {
+        "path": "/images/brand/ing-re-white-original-20261109.png",
+        "sha256": "13b36b9ae7b44c72ac197708bfa053bd27c935b26f398314f0e8e3e2bbfff433",
+        "color": "white",
+        "corner": "bottom-right",
+        "margin": 49,
+        "width": 350,
+        "height": 101
+      },
+      "ownerRejectedPreviousScene": true,
+      "generatedSceneReviewed": true,
+      "notRealClients": true,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-e-commerce",
+      "name": "ecommerce-fulfillment-modern",
+      "relevance": "Scanarea coletului pe conveior într-un centru modern de pregătire a comenzilor online.",
+      "master": {
+        "path": "/images/articles/moldova/ecommerce-fulfillment-modern-source-20261109.png",
+        "sha256": "3dccd6ba40a4092bd5d9bcdb4b490f5f7d43f74ebbde5ab0243f38af88f5e092",
+        "bytes": 2082722
+      },
+      "scene": {
+        "path": "/images/articles/moldova/ecommerce-fulfillment-modern-scene-20261109.webp",
+        "sha256": "ad6c70a759667dc715d0c8f225383e1e5a7c0dd384331f32ac959034684cfc0c",
+        "bytes": 168806
+      },
+      "social": {
+        "path": "/images/articles/moldova/ecommerce-fulfillment-modern-corner-20261109.webp",
+        "sha256": "8d4ad8ea42185f496496886e3f3737317546bdad7d7412e05a5388adb06f0cf9",
+        "bytes": 185846
+      },
+      "sourceGenerationFile": "exec-15c40158-4999-4df7-b728-0b2d9d981c91.png",
+      "width": 1942,
+      "height": 809,
+      "masterUnchanged": true,
+      "logo": {
+        "path": "/images/brand/ing-re-white-original-20261109.png",
+        "sha256": "13b36b9ae7b44c72ac197708bfa053bd27c935b26f398314f0e8e3e2bbfff433",
+        "color": "white",
+        "corner": "bottom-right",
+        "margin": 49,
+        "width": 350,
+        "height": 101
+      },
+      "ownerRejectedPreviousScene": true,
+      "generatedSceneReviewed": true,
+      "notRealClients": true,
+      "postprocessingSceneEdits": false
+    },
+    {
+      "slug": "asigurare-raspundere-civila-it",
+      "name": "it-livrare-responsabilitate-modern",
+      "relevance": "Verificarea recepției unui proiect IT în spațiu contemporan cu sticlă și grafit, fără birou din lemn.",
+      "master": {
+        "path": "/images/articles/moldova/it-livrare-responsabilitate-modern-source-20261109.png",
+        "sha256": "b9c43f70a7ce6d50bfb6f8a32191e069edf24e55410313a485f6a2d809293df2",
+        "bytes": 1944842
+      },
+      "scene": {
+        "path": "/images/articles/moldova/it-livrare-responsabilitate-modern-scene-20261109.webp",
+        "sha256": "234d406fabab7afeef5525e5f0207ff467cfac8f9edacd66ce81df875717c772",
+        "bytes": 129210
+      },
+      "social": {
+        "path": "/images/articles/moldova/it-livrare-responsabilitate-modern-corner-20261109.webp",
+        "sha256": "b667fdec15d5059df21a06c8553a7242312f276622902a7c2b73d3592f2d720c",
+        "bytes": 130976
+      },
+      "sourceGenerationFile": "exec-e1c65150-cb47-427f-ae6a-b6bb796f18aa.png",
+      "width": 1942,
+      "height": 809,
+      "masterUnchanged": true,
+      "logo": {
+        "path": "/images/brand/ing-re-white-original-20261109.png",
+        "sha256": "13b36b9ae7b44c72ac197708bfa053bd27c935b26f398314f0e8e3e2bbfff433",
+        "color": "white",
+        "corner": "bottom-right",
+        "margin": 49,
+        "width": 350,
+        "height": 101
+      },
+      "ownerRejectedPreviousScene": true,
+      "generatedSceneReviewed": true,
+      "notRealClients": true,
+      "postprocessingSceneEdits": false
+    }
+  ]
+}
