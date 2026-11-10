@@ -1,12 +1,30 @@
 <!doctype html>
 <html lang="ro">
       <head>
-            <!-- Google Tag Manager -->
-            <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-3VNPQW5R"></script>
-            <script>
+            <!-- Production measurement only. QA must opt out before any vendor loads. -->
+            <script id="ing-analytics-bootstrap">
+                  (function () {
+                    window.__ING_ANALYTICS_ENABLED__ =
+                      location.protocol === 'https:' && location.port === '' &&
+                      ['ingbroker.md', 'www.ingbroker.md'].includes(location.hostname.toLowerCase()) &&
+                      new URLSearchParams(location.search).get('ing_qa') !== '1' &&
+                      window.__ING_ANALYTICS_QA__ !== true;
+                    if (!window.__ING_ANALYTICS_ENABLED__) return;
                   window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
+                    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+                    window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+                    window.gtag('js', new Date());
+                    window.gtag('config', 'GT-PHG57WF');
+                    for (var source of [
+                      'https://www.googletagmanager.com/gtm.js?id=GTM-3VNPQW5R',
+                      'https://www.googletagmanager.com/gtag/js?id=GT-PHG57WF'
+                    ]) {
+                      var script = document.createElement('script');
+                      script.async = true;
+                      script.src = source;
+                      document.head.appendChild(script);
+                    }
+                  })();
             </script>
               <meta charset="UTF-8" />
               <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,14 +34,6 @@
           <meta data-rh="true" name="keywords" content="asigurari moldova, reasigurari, ing broker, broker asigurari chisinau, asigurare auto, asigurare medicala, asigurare viata, RCA moldova, carte verde" />
           <meta data-rh="true" name="author" content="ING Broker" />
           <meta data-rh="true" name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-          <!-- Google tag (gtag.js) -->
-                  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-PHG57WF"></script>
-                  <script>
-                                window.dataLayer = window.dataLayer || [];
-                                function gtag(){dataLayer.push(arguments);}
-                                gtag('js', new Date());
-                                gtag('config', 'GT-PHG57WF');
-                  </script>
 
           <!-- Preconnect for performance -->
           <link rel="preconnect" href="https://fonts.googleapis.com" />
