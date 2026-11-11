@@ -1,7 +1,7 @@
 import type {ArticleRevision} from './recoveredArticles';
 export const editorialOperations20261111:Record<string,ArticleRevision>={
   "asigurare-garantii-licitatie": {
-    "title": "Garanția pentru participarea la licitație: ce verifică o companie din Moldova",
+    "title": "Garanții pentru licitații: documente și asigurare",
     "description": "Garanția de participare la licitație în Moldova: forma solicitată, documentele, suma și valabilitatea. Ce verifici înainte de depunerea ofertei.",
     "updatedAt": "2026-11-11",
     "sourcesCheckedAt": "11 noiembrie 2026",
