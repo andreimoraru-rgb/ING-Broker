@@ -1,5 +1,6 @@
 // Metadata-only removal of unsupported price/availability claims. Not full rewrites.
 import {editorialEnergy20261110} from './editorialEnergy20261110';
+import {editorialOperations20261111} from './editorialOperations20261111';
 const topics:Record<string,string>={
   "asigurare-energie-regenerabila-moldova": "riscurile energiei regenerabile în Moldova",
   "asigurare-sanatate-privata": "asigurarea de sănătate privată",
@@ -61,3 +62,4 @@ const topics:Record<string,string>={
 };
 export const catalogDescriptions20261109=Object.fromEntries(Object.entries(topics).map(([slug,topic])=>[slug,`Informații despre ${topic}. Disponibilitatea și condițiile se verifică individual, în documentele aplicabile.`]));
 for(const [slug,revision] of Object.entries(editorialEnergy20261110))catalogDescriptions20261109[slug]=revision.description;
+for(const [slug,revision] of Object.entries(editorialOperations20261111))catalogDescriptions20261109[slug]=revision.description;

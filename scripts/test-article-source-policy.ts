@@ -3,7 +3,10 @@ import { articles } from '../src/data/articles';
 
 // Editorial destination links only. Image delivery/CDNs are not citations.
 // Moldova's Ministry of Energy is a verified local primary source, not a foreign insurer/broker.
-const allowed = new Set(['ingbroker.md', 'easigurari.com', 'bnm.md', 'cnpf.md', 'legis.md', 'moldasig.md', 'moldcargo.md', 'grawe.md', 'asc.gov.md', 'caa.md', 'customs.gov.md', 'stisc.gov.md', 'energie.gov.md']);
+// INTACT is a local insurer listed by CNPF using BNM data (list dated 31.03.2026,
+// checked 11.11.2026). This citation permission is not a claim of a current licence
+// or proof that ING Broker can place a particular product.
+const allowed = new Set(['ingbroker.md', 'easigurari.com', 'bnm.md', 'cnpf.md', 'legis.md', 'moldasig.md', 'moldcargo.md', 'grawe.md', 'asc.gov.md', 'caa.md', 'customs.gov.md', 'stisc.gov.md', 'energie.gov.md', 'intact.md']);
 for(const denied of ['marsh.com','allianztiriac.ro','energie.gov.md.evil.example','other-broker.md'])assert.equal(allowed.has(denied),false);
 const links: {lang:string;slug:string;url:string;host:string}[] = [];
 const violations: typeof links = [];

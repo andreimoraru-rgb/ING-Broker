@@ -80,21 +80,21 @@ export const businessProductsTranslations = {
         advantages: {
           title: 'Avantaje',
           items: [
-            'Acoperă costurile de apărare juridică, care pot depăși valoarea despăgubirii.',
-            'Protejează reputația profesională și asigură continuitatea activității.',
-            'Condiție esențială pentru participarea la licitații și contractarea clienților mari.',
-            'Oferă liniște psihologică și siguranță financiară în exercitarea profesiei.',
-            'Soluții de asigurare customizate pentru fiecare domeniu de activitate specific.'
+            'Compararea propunerilor pe serviciile profesionale declarate de companie.',
+            'Clarificarea costurilor de apărare și a limitelor prevăzute în propunere.',
+            'Verificarea cerințelor de asigurare din contractul cu clientul, fără a le prezenta ca obligație generală.',
+            'Identificarea diferențelor dintre activitatea reală și cea descrisă în documente.',
+            'Explicarea condițiilor și a punctelor care trebuie confirmate individual de asigurător.'
           ]
         },
         disadvantages: {
           title: 'Excepții și Limitări',
           items: [
-            'Nu acoperă actele frauduloase, intenționate sau de corupție.',
-            'Exclude vătămările corporale și daunele materiale (necesită Răspundere Generală).',
-            'Nu acoperă garanțiile de preț, estimările de costuri sau depășirile de buget.',
-            'Exclude amenzile, penalitățile și daunele punitive impuse prin lege.',
-            'Nu acoperă riscurile cibernetice fără o extensie sau poliță Cyber dedicată.'
+            'Citește excluderile privind faptele intenționate și declarațiile făcute în cerere.',
+            'Cere delimitarea pretențiilor financiare de vătămările corporale și daunele materiale.',
+            'Verifică separat garanțiile de rezultat, estimările și obligațiile asumate prin contractul cu clientul.',
+            'Nu considera amenzile sau penalitățile incluse fără verificarea juridică și contractuală necesară.',
+            'Clarifică distinct riscurile cibernetice; denumirea de răspundere profesională nu confirmă includerea lor.'
           ]
         }
       },

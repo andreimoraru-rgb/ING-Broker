@@ -40,13 +40,24 @@ const qa=context('https://www.ingbroker.md/news/test',true);assert.equal(qa.allo
 // A subsequent normal navigation is unaffected; no persistent opt-out or data mutation.
 assert.equal(context('https://www.ingbroker.md/').allowed,true);cases++;
 assert.doesNotMatch(source,/localStorage|sessionStorage|document\.cookie|fetch\(|XMLHttpRequest/);
-// Everything outside this exact patch must retain the reviewed main version.
-const changed=cp.execFileSync('git',['diff','--name-only','origin/main'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
-const allowedPaths=['index.html','src/utils/analytics.ts','docs/analytics-production-20261110.md','scripts/test-analytics-production.cjs','scripts/qa-measurement-guard.cjs'];
-assert.ok(changed.every(p=>allowedPaths.includes(p)), 'No unrelated changes');
+// The original measurement-only patch keeps its strict five-file boundary.
+// A content release can instead prove that both measurement files are byte-for-byte unchanged.
+const unchangedBaseline=process.argv.find(arg=>arg.startsWith('--unchanged-baseline='))?.split('=')[1];
+if(unchangedBaseline){
+  assert.match(unchangedBaseline,/^[0-9a-f]{40}$/);
+  const normalize=s=>s.replace(/\r\n/g,'\n');
+  for(const [file,current] of [['index.html',html],['src/utils/analytics.ts',source]]){
+    const original=cp.execFileSync('git',['show',unchangedBaseline+':'+file],{encoding:'utf8'});
+    assert.equal(normalize(current),normalize(original),'Measurement unchanged: '+file);
+  }
+}else{
+  const changed=cp.execFileSync('git',['diff','--name-only','origin/main'],{encoding:'utf8'}).trim().split('\n').filter(Boolean);
+  const allowedPaths=['index.html','src/utils/analytics.ts','docs/analytics-production-20261110.md','scripts/test-analytics-production.cjs','scripts/qa-measurement-guard.cjs'];
+  assert.ok(changed.every(p=>allowedPaths.includes(p)), 'No unrelated changes');
+}
 for(const url of ['https://region1.google-analytics.com/g/collect','https://eu.i.posthog.com/e/','https://www.googletagmanager.com/gtm.js','https://www.ingbroker.md/cdn-cgi/rum','https://static.cloudflareinsights.com/beacon.min.js']) assert.equal(isMeasurementRequest(url),true,url);
 for(const url of ['https://www.ingbroker.md/news/article','https://www.ingbroker.md/images/test.webp','https://fonts.googleapis.com/css2','https://notposthog.com/']) assert.equal(isMeasurementRequest(url),false,url);
-const oldHtml=cp.execFileSync('git',['show','origin/main:index.html'],{encoding:'utf8'});
+const oldHtml=cp.execFileSync('git',['show',(unchangedBaseline||'origin/main')+':index.html'],{encoding:'utf8'});
 const stripAnalytics=s=>s.replace(/<!-- Google Tag Manager -->[\s\S]*?<\/script>\s*<script>[\s\S]*?<\/script>/,'').replace(/<!-- Google tag \(gtag\.js\) -->[\s\S]*?<\/script>\s*<script>[\s\S]*?<\/script>/,'').replace(/<!-- Production measurement only[\s\S]*?<\/script>/,'').replace(/\s/g,'');
 assert.equal(stripAnalytics(html),stripAnalytics(oldHtml),'Only analytics bootstrap may change in HTML');
-console.log(JSON.stringify({passed:true,cases,productionVendorsRetained:true,nonProductionRequests:0,qaRequests:0,contactEventsUnchanged:true,historyDeleted:false,visualAndEditorialFilesUnchanged:true},null,2));
+console.log(JSON.stringify({passed:true,cases,productionVendorsRetained:true,nonProductionRequests:0,qaRequests:0,contactEventsUnchanged:true,historyDeleted:false,scope:unchangedBaseline?'measurement-files-unchanged-in-content-release':'measurement-only-patch',visualAndEditorialFilesUnchanged:unchangedBaseline?null:true},null,2));
