@@ -1066,7 +1066,7 @@ const Footer = ({ lang }: { lang: Language }) => {
                 </svg>
               </motion.a>
               <motion.a 
-                href="https://www.linkedin.com/company/67107674/" 
+                href="https://www.linkedin.com/company/67107674/"
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="Vizionează pagina ING Broker pe LinkedIn"

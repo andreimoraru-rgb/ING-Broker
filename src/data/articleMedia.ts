@@ -4,6 +4,7 @@ import {techMedia20261109} from './techMedia20261109';
 import {corporateMedia20261109} from './corporateMedia20261109';
 import {energyMedia20261110} from './energyMedia20261110';
 import {auditMedia20261111} from './auditMedia20261111';
+import {operationsMedia20261111} from './operationsMedia20261111';
 // Owner confirmed specialist review and Moldova intermediation capability on 2026-10-21.
 const media = (file: string, alt: string, topic: string, keywords: string, context: string) => ({
   image: `/images/articles/moldova/${file}.webp`,
@@ -97,4 +98,7 @@ for(const [slug,asset] of Object.entries(energyMedia20261110)){
 }
 for(const [slug,name] of Object.entries(auditMedia20261111)){
  articleMedia[slug]={...articleMedia[slug],image:`/images/articles/moldova/${name}-audit-corner-20261111.webp`,heroImage:undefined};
+}
+for(const [slug,asset] of Object.entries(operationsMedia20261111)){
+ articleMedia[slug]={image:`/images/articles/moldova/${asset.name}-operations-corner-20261111.webp`,heroImage:undefined,imageAlt:asset.alt[0],imageCaption:'',topic:asset.topic,keywords:asset.keywords};
 }

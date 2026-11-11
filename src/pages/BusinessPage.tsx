@@ -159,7 +159,7 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {t.lines.map((line, i) => (
-              <motion.a 
+              <motion.a
                 key={i} 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}

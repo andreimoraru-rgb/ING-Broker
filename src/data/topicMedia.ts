@@ -4,6 +4,7 @@ import {searchMediaAlts20261109} from './searchMedia20261109';
 import {techMediaAlts20261109} from './techMedia20261109';
 import {corporateMedia20261109} from './corporateMedia20261109';
 import {energyMedia20261110} from './energyMedia20261110';
+import {operationsMedia20261111} from './operationsMedia20261111';
 import type { Language } from '../translations';
 
 const stock = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&q=80&w=1920`;
@@ -38,6 +39,7 @@ export function topicMedia(slug: string, lang: Language): Media {
   };
   if (pilot[slug]) return { image: `/images/articles/moldova/${pilot[slug].file}`, imageAlt: pilot[slug].labels[lang === 'ro' ? 0 : lang === 'ru' ? 1 : 2] };
   const approved = articleMedia[slug];
+  if(approved && operationsMedia20261111[slug])return {image:approved.image,imageAlt:operationsMedia20261111[slug].alt[lang==='ro'?0:lang==='ru'?1:2]};
   if(approved && energyMedia20261110[slug])return {image:approved.image,imageAlt:energyMedia20261110[slug].alt[lang==='ro'?0:lang==='ru'?1:2]};
   if(approved && corporateMedia20261109[slug])return {image:approved.image,imageAlt:corporateMedia20261109[slug].alt[lang==='ro'?0:lang==='ru'?1:2]};
   if(approved && lang!=='ro' && techMediaAlts20261109[slug])return {image:approved.image,imageAlt:techMediaAlts20261109[slug][lang==='ru'?0:1]};

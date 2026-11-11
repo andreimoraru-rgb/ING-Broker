@@ -272,7 +272,7 @@ export const translations = {
         { 
           id: 'renewable', 
           title: 'Energia Regenerabilă', 
-          desc: 'Pregătim analiza riscurilor pentru proiecte fotovoltaice, eoliene și biogaz. Verificăm echipamentele, etapele proiectului și documentele necesare. Disponibilitatea, riscurile acceptate și condițiile se confirmă individual, cu asigurătorul.', 
+          desc: 'Pregătim analiza riscurilor pentru proiecte fotovoltaice, eoliene și biogaz. Verificăm echipamentele, etapele proiectului și documentele necesare. Disponibilitatea, riscurile acceptate și condițiile se confirmă individual, cu asigurătorul.',
           image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&q=80&w=1200', 
           category: 'ENERGY', 
           link: '/renewable-energy',

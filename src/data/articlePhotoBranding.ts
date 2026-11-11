@@ -3,6 +3,7 @@
 const names=['viata-familie','cladiri-birouri','centre-comerciale','hoteluri-pensiuni','restaurante-cafenele-v2','clinici-private-v2'];
 import {energyMedia20261110} from './energyMedia20261110';
 import {auditMedia20261111} from './auditMedia20261111';
+import {operationsMedia20261111} from './operationsMedia20261111';
 export const articlePhotoBranding:Record<string,{source:string;defaultColor:'black'|'white'}>=Object.fromEntries(names.map(name=>[
  `/images/articles/moldova/${name}-corner-20261109.webp`,
  {source:`/images/articles/moldova/${name}-scene-20261109.webp`,defaultColor:name==='viata-familie'?'white':'black'},
@@ -11,6 +12,9 @@ for(const [name,defaultColor] of [['flota-inventar','white'],['seceta-culturi','
  articlePhotoBranding[`/images/articles/moldova/${name}-corner-20261109.webp`]={source:`/images/articles/moldova/${name}-scene-20261109.webp`,defaultColor};
 }
 export const articlePhotoSource=(image:string)=>articlePhotoBranding[image]?.source||image;
+for(const asset of Object.values(operationsMedia20261111)){
+ articlePhotoBranding[`/images/articles/moldova/${asset.name}-operations-corner-20261111.webp`]={source:`/images/articles/moldova/${asset.name}-operations-scene-20261111.webp`,defaultColor:'white'};
+}
 for(const name of Object.values(auditMedia20261111)){
  articlePhotoBranding[`/images/articles/moldova/${name}-audit-corner-20261111.webp`]={source:`/images/articles/moldova/${name}-audit-scene-20261111.webp`,defaultColor:'black'};
 }
