@@ -1,6 +1,7 @@
 // Approved scenes: clean render export plus corner-branded social export.
 // Existing six scenes remain unchanged; new individually reviewed articles add unique scenes.
 const names=['viata-familie','cladiri-birouri','centre-comerciale','hoteluri-pensiuni','restaurante-cafenele-v2','clinici-private-v2'];
+import {energyMedia20261110} from './energyMedia20261110';
 export const articlePhotoBranding:Record<string,{source:string;defaultColor:'black'|'white'}>=Object.fromEntries(names.map(name=>[
  `/images/articles/moldova/${name}-corner-20261109.webp`,
  {source:`/images/articles/moldova/${name}-scene-20261109.webp`,defaultColor:name==='viata-familie'?'white':'black'},
@@ -9,6 +10,9 @@ for(const [name,defaultColor] of [['flota-inventar','white'],['seceta-culturi','
  articlePhotoBranding[`/images/articles/moldova/${name}-corner-20261109.webp`]={source:`/images/articles/moldova/${name}-scene-20261109.webp`,defaultColor};
 }
 export const articlePhotoSource=(image:string)=>articlePhotoBranding[image]?.source||image;
+for(const asset of Object.values(energyMedia20261110)){
+ articlePhotoBranding[`/images/articles/moldova/${asset.name}-corner-20261110.webp`]={source:`/images/articles/moldova/${asset.name}-scene-20261110.webp`,defaultColor:'white'};
+}
 for(const name of ['cyber-operatiuni-modern','ecommerce-fulfillment-modern','it-livrare-responsabilitate-modern']){
  articlePhotoBranding[`/images/articles/moldova/${name}-corner-20261109.webp`]={source:`/images/articles/moldova/${name}-scene-20261109.webp`,defaultColor:'white'};
 }

@@ -2,7 +2,9 @@ import assert from 'node:assert/strict';
 import { articles } from '../src/data/articles';
 
 // Editorial destination links only. Image delivery/CDNs are not citations.
-const allowed = new Set(['ingbroker.md', 'easigurari.com', 'bnm.md', 'cnpf.md', 'legis.md', 'moldasig.md', 'moldcargo.md', 'grawe.md', 'asc.gov.md', 'caa.md', 'customs.gov.md', 'stisc.gov.md']);
+// Moldova's Ministry of Energy is a verified local primary source, not a foreign insurer/broker.
+const allowed = new Set(['ingbroker.md', 'easigurari.com', 'bnm.md', 'cnpf.md', 'legis.md', 'moldasig.md', 'moldcargo.md', 'grawe.md', 'asc.gov.md', 'caa.md', 'customs.gov.md', 'stisc.gov.md', 'energie.gov.md']);
+for(const denied of ['marsh.com','allianztiriac.ro','energie.gov.md.evil.example','other-broker.md'])assert.equal(allowed.has(denied),false);
 const links: {lang:string;slug:string;url:string;host:string}[] = [];
 const violations: typeof links = [];
 let count = 0;
