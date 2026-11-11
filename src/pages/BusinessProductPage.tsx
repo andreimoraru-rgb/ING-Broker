@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { translations, Language } from '../translations';
 import { SEO } from '../components/SEO';
+import { businessProductSeo } from '../data/businessProductSeo';
 import { motion } from 'motion/react';
 import { ShieldCheck, ArrowRight, ArrowLeft } from 'lucide-react';
 
@@ -23,7 +24,7 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
   
   // Get SEO data if it exists, otherwise fallback to generic business SEO
   // @ts-ignore
-  const seo = translations[lang].seo[productId] || translations[lang].seo.business;
+  const seo = businessProductSeo(lang, productId || '', productLine?.title || t?.title || 'ING Broker');
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -400,8 +401,8 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
                   />
                 </div>
                 <div className={`absolute bottom-4 ${productId === 'liability' ? '-left-6' : '-left-12'} bg-primary p-6 shadow-2xl hidden xl:block z-20`}>
-                  <p className="text-4xl font-bold tracking-tighter leading-none mb-2">100%</p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-80">{lang === 'ro' ? 'Protecție' : lang === 'ru' ? 'Защита' : 'Protection'}</p>
+                  <p className="text-4xl font-bold tracking-tighter leading-none mb-2">ING</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-80">{lang === 'ro' ? 'Consultanță' : lang === 'ru' ? 'Консультация' : 'Guidance'}</p>
                 </div>
               </div>
             </div>

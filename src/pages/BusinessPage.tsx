@@ -6,6 +6,7 @@ import { Phone, Mail, ExternalLink, ChevronDown, ArrowLeft, CheckCircle2 } from 
 import { B2BLeadForm } from './CorporatePage';
 
 import { useNavigate } from 'react-router-dom';
+import { localizedPath } from '../utils/localizedRoutes';
 
 interface BusinessPageProps {
   lang: Language;
@@ -158,24 +159,16 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {t.lines.map((line, i) => (
-              <motion.div 
+              <motion.a 
                 key={i} 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-20px" }}
                 whileHover={{ y: -8, scale: 1.015 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                onClick={() => {
-                  if (line.link && line.link !== '#') {
-                    if (line.link.startsWith('http')) {
-                      window.open(line.link, '_blank');
-                    } else {
-                      navigate(line.link);
-                    }
-                  } else {
-                    navigate(`/business/${line.id}`);
-                  }
-                }}
+                href={line.link && line.link !== '#' ? (line.link.startsWith('http') ? line.link : localizedPath(line.link, lang)) : localizedPath(`/business/${line.id}`, lang)}
+                target={line.link?.startsWith('http') ? '_blank' : undefined}
+                rel={line.link?.startsWith('http') ? 'noopener noreferrer' : undefined}
                 className="group bg-white border border-gray-100 overflow-hidden flex flex-col h-full transition-all duration-500 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.08)] z-10 cursor-pointer"
               >
                 <div className="relative h-80 overflow-hidden">
@@ -204,7 +197,7 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
                     </span>
                   </div>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </div>
