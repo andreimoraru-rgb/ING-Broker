@@ -1,3 +1,4 @@
+import {catalogMedia20261112} from './catalogMedia20261112';
 // Owner-requested Moldova illustration series. Fictional AI scenes, not client photographs.
 import {searchMedia20261109} from './searchMedia20261109';
 import {techMedia20261109} from './techMedia20261109';
@@ -102,3 +103,5 @@ for(const [slug,name] of Object.entries(auditMedia20261111)){
 for(const [slug,asset] of Object.entries(operationsMedia20261111)){
  articleMedia[slug]={image:`/images/articles/moldova/${asset.name}-operations-corner-20261111.webp`,heroImage:undefined,imageAlt:asset.alt[0],imageCaption:'',topic:asset.topic,keywords:asset.keywords};
 }
+
+for(const [slug,asset] of Object.entries(catalogMedia20261112)){articleMedia[slug]={image:asset.image,heroImage:undefined,imageAlt:asset.alt[0],imageCaption:'',topic:asset.topic,keywords:asset.keywords};}

@@ -6,7 +6,14 @@ import { articles } from '../src/data/articles';
 // INTACT is a local insurer listed by CNPF using BNM data (list dated 31.03.2026,
 // checked 11.11.2026). This citation permission is not a claim of a current licence
 // or proof that ING Broker can place a particular product.
-const allowed = new Set(['ingbroker.md', 'easigurari.com', 'bnm.md', 'cnpf.md', 'legis.md', 'moldasig.md', 'moldcargo.md', 'grawe.md', 'asc.gov.md', 'caa.md', 'customs.gov.md', 'stisc.gov.md', 'energie.gov.md', 'intact.md']);
+// MDED and ANSA public pages were checked 12.11.2026 as Moldova official
+// sources on product safety and public recall notices, not product availability.
+// BNAA FAQ and Moldova Naval Agency services were checked 12.11.2026.
+// A permitted destination does not certify every statement on that site or product eligibility.
+const allowed = new Set(['ingbroker.md', 'easigurari.com', 'bnm.md', 'cnpf.md', 'legis.md', 'moldasig.md', 'moldcargo.md', 'grawe.md', 'asc.gov.md', 'caa.md', 'customs.gov.md', 'stisc.gov.md', 'energie.gov.md', 'intact.md', 'mded.gov.md', 'ansa.gov.md', 'bnaa.md', 'anrm.gov.md']);
+// Exact Moldova public-source destinations reviewed 15.11.2026 in the
+// informational article batch. No wildcard permission or product-eligibility claim.
+for (const host of ['cnam.md','donaris.md','rdp.moldelectrica.md','igsu.gov.md','gov.md','ipm.gov.md','amdm.gov.md']) allowed.add(host);
 for(const denied of ['marsh.com','allianztiriac.ro','energie.gov.md.evil.example','other-broker.md'])assert.equal(allowed.has(denied),false);
 const links: {lang:string;slug:string;url:string;host:string}[] = [];
 const violations: typeof links = [];

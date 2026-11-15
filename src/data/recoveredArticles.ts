@@ -1,3 +1,4 @@
+import {editorialCatalog20261112} from './editorialCatalog20261112';
 /** Original editorial revisions. See docs/content-recovery-2026-10-15.md for mandatory approval gates. */
 import { editorialBatch20261107 } from './editorialBatch20261107';
 import { editorialDepth20261107 } from './editorialDepth20261107';
@@ -217,6 +218,7 @@ Object.assign(articleRevisions, editorialSearch20261109);
 Object.assign(articleRevisions, editorialTech20261109);
 Object.assign(articleRevisions, editorialEnergy20261110);
 Object.assign(articleRevisions, editorialOperations20261111);
+Object.assign(articleRevisions, editorialCatalog20261112);
 
 export function renderArticleRevision(revision: ArticleRevision): string {
   const sources = revision.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a></li>`).join('');
