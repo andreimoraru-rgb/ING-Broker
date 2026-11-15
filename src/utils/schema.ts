@@ -10,8 +10,9 @@ export function localBusinessSchema() {
     "@type": "InsuranceAgency",
     "name": "Insurance ING Broker SRL",
     "alternateName": "ING Broker",
-    "url": "https://ingbroker.md",
-    "logo": "https://ingbroker.md/Logo%20ING%20Broker.png",
+    "@id": "https://www.ingbroker.md/#organization",
+    "url": "https://www.ingbroker.md",
+    "logo": "https://www.ingbroker.md/Logo%20ING%20Broker.png",
     "telephone": "+37369526003",
     "email": "andrei.moraru@ingbroker.md",
     "address": {
@@ -21,24 +22,17 @@ export function localBusinessSchema() {
       "postalCode": "MD-2009",
       "addressCountry": "MD"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "47.0228",
-      "longitude": "28.8353"
-    },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       "opens": "09:00",
       "closes": "18:00"
     },
-    "priceRange": "$$",
     "areaServed": {
       "@type": "Country",
       "name": "Moldova"
     },
-    "hasCredential": "Licență CNPF",
-    "description": "Broker de asigurări licențiat CNPF în Moldova. Oferim asigurări corporative B2B: CAR/EAR, răspundere profesională, cyber, flote auto. Ofertă comparativă în 15 minute.",
+    "description": "Insurance ING Broker SRL, broker de asigurare din Republica Moldova. Informații pentru companii și analiza solicitărilor de asigurare.",
     "sameAs": [
       "https://www.linkedin.com/company/67107674/",
       "https://www.instagram.com/ingbroker.md/",
