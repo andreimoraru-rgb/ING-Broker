@@ -25,6 +25,6 @@ export function SiteMetadata({ title, description, lang, schema, schemas }: {
       });
     };
   }, []);
-  if (pathname !== '/' && !['/ai-studio', '/admin/ai-tools'].includes(pathname)) return null;
+  if (pathname !== '/') return null;
   return <><SEO title={title} description={description} lang={lang} schema={schema} /><SchemaMarkup schemas={schemas} /></>;
 }

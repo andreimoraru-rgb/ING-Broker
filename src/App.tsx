@@ -32,7 +32,6 @@ import { localizedPath, splitLocale } from './utils/localizedRoutes';
 import { BusinessPage } from './pages/BusinessPage';
 import { BusinessProductPage } from './pages/BusinessProductPage';
 import { ReinsurancePage } from './pages/ReinsurancePage';
-import { AIStudio } from './pages/AIStudio';
 import { RenewableEnergyPage } from './pages/RenewableEnergyPage';
 import { FleetAutoPage } from './pages/FleetAutoPage';
 import { PropertyAssetsPage } from './pages/PropertyAssetsPage';
@@ -42,7 +41,6 @@ import { OffersPage } from './pages/OffersPage';
 import { NewsInsightsPage } from './pages/NewsInsightsPage';
 import { ArticlePage } from './pages/ArticlePage';
 import { articleMedia } from './data/articleMedia';
-import { AdminAITools } from './pages/AdminAITools';
 import { ConstructionShieldPage } from './pages/ConstructionShieldPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { CarEarPage } from './pages/CarEarPage';
@@ -188,7 +186,7 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
   const location = useLocation();
 
   const isEditorialArticle = lang === 'ro' && location.pathname.startsWith('/news/') && Object.hasOwn(articleMedia, location.pathname.slice(6));
-  const isDarkHero = !isEditorialArticle && !['/termeni-si-conditii', '/politica-de-confidentialitate', '/ai-studio', '/admin/ai-tools'].includes(location.pathname);
+  const isDarkHero = !isEditorialArticle && !['/termeni-si-conditii', '/politica-de-confidentialitate'].includes(location.pathname);
 
   const changeLanguage = (l: Language) => {
     if (l === lang) return;
@@ -1342,9 +1340,7 @@ export default function App({ initialPath }: { initialPath?: string } = {}) {
           <Route path="/oferte" element={<OffersPage lang={lang} />} />
           <Route path="/news" element={<NewsInsightsPage lang={lang} />} />
           <Route path="/news/:slug" element={<ArticlePage lang={lang} />} />
-          <Route path="/admin/ai-tools" element={<AdminAITools />} />
           <Route path="/contact" element={<ContactPage lang={lang} />} />
-          <Route path="/ai-studio" element={<AIStudio />} />
           <Route path="/despre-noi" element={<AboutPage lang={lang} />} />
           <Route path="/o-nas" element={<AboutPage lang="ru" />} />
           <Route path="/about-us" element={<AboutPage lang="en" />} />

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "tsx scripts/sync-article-sitemap.ts && vite build && tsx scripts/prerender-editorial.ts",
+    "postbuild": "node scripts/check-no-secrets.mjs",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
