@@ -43,7 +43,18 @@ assert.doesNotMatch(source,/localStorage|sessionStorage|document\.cookie|fetch\(
 // The original measurement-only patch keeps its strict five-file boundary.
 // A content release can instead prove that both measurement files are byte-for-byte unchanged.
 const unchangedBaseline=process.argv.find(arg=>arg.startsWith('--unchanged-baseline='))?.split('=')[1];
-if(unchangedBaseline){
+// SEO-only shell changes may remove duplicate JSON-LD. This explicit mode still
+// compares every byte of the measurement bootstrap and analytics implementation;
+// neither the original strict mode nor its five-file boundary is relaxed.
+const trackingBaseline=process.argv.find(arg=>arg.startsWith('--unchanged-tracking='))?.split('=')[1];
+if(trackingBaseline){
+  assert.match(trackingBaseline,/^[0-9a-f]{40}$/);
+  const normalize=s=>s.replace(/\r\n/g,'\n');
+  const original=cp.execFileSync('git',['show',trackingBaseline+':index.html'],{encoding:'utf8'});
+  const oldBootstrap=original.match(/<script id="ing-analytics-bootstrap">([\s\S]*?)<\/script>/)[1];
+  assert.equal(normalize(bootstrap),normalize(oldBootstrap),'Measurement bootstrap unchanged');
+  assert.equal(normalize(source),normalize(cp.execFileSync('git',['show',trackingBaseline+':src/utils/analytics.ts'],{encoding:'utf8'})),'Analytics implementation unchanged');
+}else if(unchangedBaseline){
   assert.match(unchangedBaseline,/^[0-9a-f]{40}$/);
   const normalize=s=>s.replace(/\r\n/g,'\n');
   for(const [file,current] of [['index.html',html],['src/utils/analytics.ts',source]]){
@@ -57,7 +68,7 @@ if(unchangedBaseline){
 }
 for(const url of ['https://region1.google-analytics.com/g/collect','https://eu.i.posthog.com/e/','https://www.googletagmanager.com/gtm.js','https://www.ingbroker.md/cdn-cgi/rum','https://static.cloudflareinsights.com/beacon.min.js']) assert.equal(isMeasurementRequest(url),true,url);
 for(const url of ['https://www.ingbroker.md/news/article','https://www.ingbroker.md/images/test.webp','https://fonts.googleapis.com/css2','https://notposthog.com/']) assert.equal(isMeasurementRequest(url),false,url);
-const oldHtml=cp.execFileSync('git',['show',(unchangedBaseline||'origin/main')+':index.html'],{encoding:'utf8'});
+const oldHtml=cp.execFileSync('git',['show',(trackingBaseline||unchangedBaseline||'origin/main')+':index.html'],{encoding:'utf8'});
 const stripAnalytics=s=>s.replace(/<!-- Google Tag Manager -->[\s\S]*?<\/script>\s*<script>[\s\S]*?<\/script>/,'').replace(/<!-- Google tag \(gtag\.js\) -->[\s\S]*?<\/script>\s*<script>[\s\S]*?<\/script>/,'').replace(/<!-- Production measurement only[\s\S]*?<\/script>/,'').replace(/\s/g,'');
-assert.equal(stripAnalytics(html),stripAnalytics(oldHtml),'Only analytics bootstrap may change in HTML');
-console.log(JSON.stringify({passed:true,cases,productionVendorsRetained:true,nonProductionRequests:0,qaRequests:0,contactEventsUnchanged:true,historyDeleted:false,scope:unchangedBaseline?'measurement-files-unchanged-in-content-release':'measurement-only-patch',visualAndEditorialFilesUnchanged:unchangedBaseline?null:true},null,2));
+if(!trackingBaseline) assert.equal(stripAnalytics(html),stripAnalytics(oldHtml),'Only analytics bootstrap may change in HTML');
+console.log(JSON.stringify({passed:true,cases,productionVendorsRetained:true,nonProductionRequests:0,qaRequests:0,contactEventsUnchanged:true,historyDeleted:false,scope:trackingBaseline?'tracking-byte-identical-during-seo-shell-correction':unchangedBaseline?'measurement-files-unchanged-in-content-release':'measurement-only-patch',visualAndEditorialFilesUnchanged:unchangedBaseline||trackingBaseline?null:true},null,2));

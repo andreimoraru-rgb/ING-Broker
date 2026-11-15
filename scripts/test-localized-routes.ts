@@ -7,7 +7,7 @@ for (const lang of ['ro', 'ru', 'en'] as const) {
     const urlPath = localizedPath(path, lang);
     assert.equal(splitLocale(urlPath).lang, lang);
     assert.equal(splitLocale(urlPath).path, path);
-    const response = await onRequest({ request: new Request(`https://www.ingbroker.md${urlPath}`), env: { ASSETS: { fetch: async req => new Response(new URL(req.url).pathname === '/' ? 'SPA' : 'missing', {status: new URL(req.url).pathname === '/' ? 200 : 404}) } } });
+    const response = await onRequest({ request: new Request(`https://www.ingbroker.md${urlPath}`), env: { ASSETS: { fetch: async req => { const asset = new URL(req.url).pathname; return new Response(asset === '/' || asset.startsWith('/_pages/') ? 'verified route asset' : 'missing', {status: asset === '/' || asset.startsWith('/_pages/') ? 200 : 404}); } } } });
     assert.equal(response.status, 200, urlPath);
   }
   const response = await onRequest({ request: new Request(`https://www.ingbroker.md${localizedPath('/definitely-not-a-real-route', lang)}`), env: {ASSETS: {fetch: async () => new Response('missing', {status:404})}} });
