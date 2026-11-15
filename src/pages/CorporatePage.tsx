@@ -71,10 +71,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+            <label htmlFor="audit-company" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
               Compania *
             </label>
-            <input
+            <input id="audit-company" name="company"
               type="text"
               required
               value={form.company}
@@ -84,10 +84,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
             />
           </div>
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+            <label htmlFor="audit-name" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
               Persoana de contact *
             </label>
-            <input
+            <input id="audit-name" name="name"
               type="text"
               required
               value={form.name}
@@ -99,10 +99,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+            <label htmlFor="audit-phone" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
               Telefon *
             </label>
-            <input
+            <input id="audit-phone" name="phone"
               type="tel"
               required
               value={form.phone}
@@ -112,10 +112,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
             />
           </div>
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+            <label htmlFor="audit-email" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
               Email
             </label>
-            <input
+            <input id="audit-email" name="email"
               type="email"
               value={form.email}
               onChange={e => setForm({ ...form, email: e.target.value })}
@@ -125,10 +125,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
           </div>
         </div>
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+          <label htmlFor="audit-employees" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
             Număr de angajați / vehicule în flotă
           </label>
-          <input
+          <input id="audit-employees" name="employees"
             type="text"
             value={form.employees}
             onChange={e => setForm({ ...form, employees: e.target.value })}
@@ -137,10 +137,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
           />
         </div>
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+          <label htmlFor="audit-message" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
             Ce asigurări aveți deja sau ce vă interesează?
           </label>
-          <textarea
+          <textarea id="audit-message" name="message"
             rows={3}
             value={form.message}
             onChange={e => setForm({ ...form, message: e.target.value })}
@@ -296,7 +296,7 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
       />
 
       {/* Buton înapoi */}
-      <div className="fixed top-32 left-6 z-50">
+      <div className="absolute top-20 left-6 z-30">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
