@@ -1,3 +1,4 @@
+import {catalogMedia20261112} from './catalogMedia20261112';
 // Images reviewed visually on 2026-10-26. Selection is semantic, never array-position based.
 import { articleMedia } from './articleMedia';
 import {searchMediaAlts20261109} from './searchMedia20261109';
@@ -38,6 +39,8 @@ export function topicMedia(slug: string, lang: Language): Media {
     'asigurare-utilaje-industriale': { file: 'utilaje-industriale-20261106.png', labels: ['Utilaje și echipamente într-un atelier de prelucrare a metalelor', 'Станки и оборудование в металлообрабатывающем цехе', 'Machinery and equipment in a metalworking workshop'] },
   };
   if (pilot[slug]) return { image: `/images/articles/moldova/${pilot[slug].file}`, imageAlt: pilot[slug].labels[lang === 'ro' ? 0 : lang === 'ru' ? 1 : 2] };
+  const fresh=catalogMedia20261112[slug as keyof typeof catalogMedia20261112];
+  if(fresh)return {image:fresh.image,imageAlt:fresh.alt[lang==='ro'?0:lang==='ru'?1:2]};
   const approved = articleMedia[slug];
   if(approved && operationsMedia20261111[slug])return {image:approved.image,imageAlt:operationsMedia20261111[slug].alt[lang==='ro'?0:lang==='ru'?1:2]};
   if(approved && energyMedia20261110[slug])return {image:approved.image,imageAlt:energyMedia20261110[slug].alt[lang==='ro'?0:lang==='ru'?1:2]};
