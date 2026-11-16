@@ -33,3 +33,20 @@ for(const [name,defaultColor] of [['casco-inspectie','white'],['rca-calcul','bla
 }
 
 for(const asset of Object.values(catalogMedia20261112)){articlePhotoBranding[asset.image]={source:asset.source,defaultColor:asset.defaultColor};}
+
+// Recovered clean versions keep the existing scene. The logo belongs to the
+// displayed photo box so object-cover cannot cut it off on narrow screens.
+for(const [name,hero] of [
+ ['pierdere-profit-re-alb-20261107'],['sere-re-alb-20261107'],['irigatii-re-alb-20261107'],
+ ['drumuri-re-alb-20261107'],['mediu-re-alb-20261107'],['garantie-buna-executie-20261106'],
+ ['asigurare-raspundere-directori-do-moldova'],['asigurare-poduri-infrastructura-moldova'],['asigurare-raspundere-angajator-moldova'],
+ ['cyber-companii-next-20261108','cyber-companii-hero-next-20261108'],
+ ['accidente-angajati-next-20261108','accidente-angajati-hero-next-20261108'],
+ ['panouri-fotovoltaice-next-20261108','panouri-fotovoltaice-hero-next-20261108'],
+ ['depozite-cereale-next-20261108','depozite-cereale-hero-next-20261108'],
+ ['corporate-riscuri-moldova-20261107'],['flota-auto-companie-20261107'],['transportator-cmr-20261107'],
+] as const){
+ const item={source:`/images/articles/moldova/${name}-clean-20261116.webp`,defaultColor:'black' as const};
+ articlePhotoBranding[`/images/articles/moldova/${name}.webp`]=item;
+ if(hero)articlePhotoBranding[`/images/articles/moldova/${hero}.webp`]=item;
+}

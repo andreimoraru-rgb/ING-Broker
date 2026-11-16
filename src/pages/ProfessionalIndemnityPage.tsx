@@ -46,6 +46,11 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
 
   const c = content[lang];
   const seo = seoData[lang];
+  const brokerReviewSteps = {
+    ro: ['Pornim de la serviciile efectiv prestate și de la cerința scrisă a clientului, nu de la o listă generică de profesii.', 'Pregătim întrebările de clarificat cu asigurătorul și comparăm răspunsurile din documentele propuse.', 'Separăm ce este confirmat în ofertă de ce rămâne condiționat sau exclus, înainte de luarea unei decizii.', 'Acceptarea riscului și soluționarea unei daune aparțin asigurătorului. Rolul brokerului nu înseamnă garantarea despăgubirii.'],
+    ru: ['Начинаем с фактически оказываемых услуг и письменного требования клиента, а не с общего перечня профессий.', 'Готовим вопросы для уточнения у страховщика и сопоставляем ответы в предложенных документах.', 'До принятия решения отделяем подтверждённые условия предложения от ограничений, исключений и вопросов, требующих уточнения.', 'Риск принимает и требование о возмещении рассматривает страховщик. Участие брокера не означает гарантии выплаты.'],
+    en: ['Start with the services actually delivered and the client’s written requirement, not a generic list of professions.', 'Prepare questions for the insurer and compare the answers in the proposed documents.', 'Before a decision, distinguish confirmed proposal terms from limitations, exclusions and points that still need clarification.', 'The insurer accepts the risk and assesses any claim. The broker’s involvement does not guarantee compensation.'],
+  }[lang];
 
   const iconMap: Record<string, React.ReactNode> = {
     code: <Code2 size={24} className="text-primary" />,
@@ -277,9 +282,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
                 {lang === 'ro' ? 'De ce prin ING Broker?' : lang === 'ru' ? 'Почему через ING Broker?' : 'Why through ING Broker?'}
               </h3>
               <div className="space-y-6">
-                {[
-                  ...c.covers.slice(0, 4).map(item => item.desc)
-                ].map((item, i) => (
+                {brokerReviewSteps.map((item, i) => (
                   <div key={i} className="flex gap-4 items-start">
                     <CheckCircle2 size={18} className="text-primary mt-0.5 flex-shrink-0" />
                     <p className="text-white/80 text-sm leading-relaxed">{item}</p>
