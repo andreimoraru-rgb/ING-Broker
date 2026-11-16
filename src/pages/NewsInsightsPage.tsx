@@ -8,6 +8,7 @@ import { articles } from '../data/articleMetadata';
 import { localizedPath } from '../utils/localizedRoutes';
 import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
 import { articlePhotoSource } from '../data/articlePhotoBranding';
+import { articleResponsiveImages } from '../data/articleResponsiveImages';
 
 interface NewsInsightsPageProps {
   lang: Language;
@@ -188,6 +189,10 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
                 <div className="relative h-64 overflow-hidden">
                   <img 
                     src={articlePhotoSource(article.image)}
+                    srcSet={articleResponsiveImages[articlePhotoSource(article.image)]?.srcSet}
+                    sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1023px) 46vw, 400px"
+                    width={articleResponsiveImages[articlePhotoSource(article.image)]?.width || 1536}
+                    height={articleResponsiveImages[articlePhotoSource(article.image)]?.height || 1024}
                     alt={article.imageAlt || article.title}
                     className="w-full h-full object-cover transition-all duration-1000 ease-out group-hover:scale-110 group-hover:brightness-110"
                     referrerPolicy="no-referrer"

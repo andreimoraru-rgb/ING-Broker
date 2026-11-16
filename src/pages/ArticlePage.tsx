@@ -13,6 +13,7 @@ import { localizedPath } from '../utils/localizedRoutes';
 import './article-reading.css';
 import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
 import { articlePhotoSource } from '../data/articlePhotoBranding';
+import { articleResponsiveImages } from '../data/articleResponsiveImages';
 
 interface ArticlePageProps {
   lang: Language;
@@ -55,6 +56,8 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
   const articleOrigin = 'https://www.ingbroker.md';
   const articleUrl = `${articleOrigin}${localizedPath(`/news/${article.slug}`, lang)}`;
   const articleImage = new URL(article.heroImage || article.image, articleOrigin).href;
+  const photo = articlePhotoSource(article.heroImage || article.image);
+  const responsive = articleResponsiveImages[photo];
   // Existing source dates use Romanian/Russian month abbreviations.
   const sourceDate = article.date.replace('Апр', 'Apr').replace('Iun', 'Jun').replace('Mai', 'May');
   const parsedDate = new Date(sourceDate);
@@ -137,10 +140,12 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
       <section className="relative h-[60vh] min-h-[500px] flex items-end pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={articlePhotoSource(article.heroImage || article.image)}
+            src={photo}
+            srcSet={responsive?.srcSet}
+            sizes="100vw"
             alt={article.imageAlt || article.title}
             className="w-full h-full object-cover"
-            width="1536" height="1024" fetchPriority="high" decoding="async"
+            width={responsive?.width || 1536} height={responsive?.height || 1024} fetchPriority="high" decoding="async"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-[#0a192f]/60 mix-blend-multiply" />

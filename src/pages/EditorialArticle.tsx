@@ -8,6 +8,7 @@ import './editorial-article.css';
 import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
 import { articlePhotoSource } from '../data/articlePhotoBranding';
 import { articles } from '../data/articleMetadata';
+import { articleResponsiveImages } from '../data/articleResponsiveImages';
 
 export function prepareArticle(content: string) {
   const headings: { id: string; title: string }[] = [];
@@ -23,6 +24,8 @@ export const EditorialArticle = ({ article }: { article: Article }) => {
   const origin = 'https://www.ingbroker.md';
   const url = `${origin}/news/${article.slug}`;
   const image = `${origin}${article.image}`;
+  const photo = articlePhotoSource(article.image);
+  const responsive = articleResponsiveImages[photo];
   const { html, headings } = prepareArticle(article.content);
   const minutes = Math.max(1, Math.ceil(article.content.replace(/<[^>]+>/g, ' ').split(/\s+/).length / 200));
   const pending = article.reviewStatus === 'pending';
@@ -50,7 +53,7 @@ export const EditorialArticle = ({ article }: { article: Article }) => {
           <a href="#continut-articol" className="editorial-read">Citește ghidul <span aria-hidden="true">↓</span></a>
         </div>
         <figure className="editorial-figure" style={{position:'relative'}}>
-          <img src={articlePhotoSource(article.image)} alt={article.imageAlt} width="1536" height="1024" fetchPriority="high" decoding="async" />
+          <img src={photo} srcSet={responsive?.srcSet} sizes="(max-width: 760px) calc(100vw - 36px), (max-width: 1600px) 45vw, 720px" alt={article.imageAlt} width={responsive?.width || 1536} height={responsive?.height || 1024} fetchPriority="high" decoding="async" />
           <ArticlePhotoLogo image={article.image} />
           {article.imageCaption && <figcaption>{article.imageCaption}</figcaption>}
         </figure>
