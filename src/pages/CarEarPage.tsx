@@ -18,139 +18,28 @@ import {
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { Language } from '../translations';
+import { B2BQuoteForm } from '../components/B2BQuoteForm';
 
 interface CarEarPageProps {
   lang: Language;
 }
 
-const B2BLeadForm: React.FC<{ title: string }> = ({ title }) => {
-  const [sent, setSent] = useState(false);
-  const [form, setForm] = useState({
-    company: '',
-    name: '',
-    phone: '',
-    email: '',
-    projectValue: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const whatsappText = encodeURIComponent(
-      `Cerere asigurare CAR/EAR\nCompanie: ${form.company}\nContact: ${form.name}\nTelefon: ${form.phone}\nEmail: ${form.email}\nValoare proiect: ${form.projectValue} MDL\nDetalii: ${form.message}`
-    );
-    window.open(`https://wa.me/37369526003?text=${whatsappText}`, '_blank');
-    setSent(true);
-  };
-
-  if (sent) {
-    return (
-      <div className="bg-green-50 border border-green-200 p-8 text-center">
-        <CheckCircle2 size={48} className="text-green-500 mx-auto mb-4" />
-        <h3 className="text-xl font-bold text-green-800 mb-2">Cererea a fost trimisă!</h3>
-        <p className="text-green-700">Un consultant ING Broker te va contacta în maximum 15 minute.</p>
-      </div>
-    );
-  }
-
-  return (
-    <div className="bg-white border border-gray-200 p-8 shadow-lg">
-      <h3 className="text-2xl font-bold text-gray-900 mb-2">{title}</h3>
-      <p className="text-gray-500 text-sm mb-6">Completează datele de mai jos - durează 2 minute. Răspuns în 15 minute.</p>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
-              Compania *
-            </label>
-            <input
-              type="text"
-              required
-              value={form.company}
-              onChange={e => setForm({ ...form, company: e.target.value })}
-              placeholder="Numele companiei tale"
-              className="w-full border border-gray-200 px-4 py-3 text-sm focus:border-red-500 focus:outline-none transition-colors"
-            />
-          </div>
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
-              Persoana de contact *
-            </label>
-            <input
-              type="text"
-              required
-              value={form.name}
-              onChange={e => setForm({ ...form, name: e.target.value })}
-              placeholder="Nume și prenume"
-              className="w-full border border-gray-200 px-4 py-3 text-sm focus:border-red-500 focus:outline-none transition-colors"
-            />
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
-              Telefon *
-            </label>
-            <input
-              type="tel"
-              required
-              value={form.phone}
-              onChange={e => setForm({ ...form, phone: e.target.value })}
-              placeholder="+373 69 000 000"
-              className="w-full border border-gray-200 px-4 py-3 text-sm focus:border-red-500 focus:outline-none transition-colors"
-            />
-          </div>
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
-              Email
-            </label>
-            <input
-              type="email"
-              value={form.email}
-              onChange={e => setForm({ ...form, email: e.target.value })}
-              placeholder="email@compania.md"
-              className="w-full border border-gray-200 px-4 py-3 text-sm focus:border-red-500 focus:outline-none transition-colors"
-            />
-          </div>
-        </div>
-        <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
-            Valoarea contractului de construcție (MDL)
-          </label>
-          <input
-            type="text"
-            value={form.projectValue}
-            onChange={e => setForm({ ...form, projectValue: e.target.value })}
-            placeholder="ex: 5.000.000"
-            className="w-full border border-gray-200 px-4 py-3 text-sm focus:border-red-500 focus:outline-none transition-colors"
-          />
-        </div>
-        <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
-            Detalii proiect
-          </label>
-          <textarea
-            rows={3}
-            value={form.message}
-            onChange={e => setForm({ ...form, message: e.target.value })}
-            placeholder="Tipul lucrărilor, durata, locația șantierului..."
-            className="w-full border border-gray-200 px-4 py-3 text-sm focus:border-red-500 focus:outline-none transition-colors resize-none"
-          />
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-red-600 text-white font-bold py-4 uppercase text-xs tracking-widest hover:bg-red-700 transition-colors flex items-center justify-center gap-3 group"
-        >
-          Calculez costul pentru șantierul meu
-          <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-        </button>
-        <p className="text-xs text-gray-400 text-center">
-          Sau sună direct: <a href="tel:+37369526003" className="text-red-600 font-bold">+373 69 526 003</a>
-        </p>
-      </form>
-    </div>
-  );
-};
+const B2BLeadForm: React.FC<{ title: string }> = ({ title }) => (
+  <div className="bg-white border border-gray-200 p-8 shadow-lg">
+    <h3 className="text-2xl font-bold text-gray-900 mb-2">{title}</h3>
+    <p className="text-gray-500 text-sm mb-6">Completează datele de mai jos - durează 2 minute. Răspuns în 15 minute.</p>
+    <B2BQuoteForm
+      lang="ro"
+      source="car_ear_page"
+      products={[{ key: 'car-ear', label: 'Construcții CAR/EAR' }]}
+      defaultProduct="car-ear"
+      showProjectValue
+      submitLabel="Calculez costul pentru șantierul meu"
+      messagePlaceholder="Tipul lucrărilor, durata, locația șantierului..."
+      successMessage="Un consultant ING Broker te va contacta în maximum 15 minute."
+    />
+  </div>
+);
 
 export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
   const navigate = useNavigate();

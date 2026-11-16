@@ -6,7 +6,8 @@ import { breadcrumbSchema } from '../utils/schema';
 import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Smartphone, Download, ShieldAlert, ArrowLeft } from 'lucide-react';
-import { trackEvent } from '../utils/analytics';
+import { B2BQuoteForm } from '../components/B2BQuoteForm';
+import type { LeadProduct } from '../utils/leadCore';
 
 interface ContactPageProps {
   lang: Language;
@@ -108,24 +109,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
   };
 
   const c = content[lang];
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [form, setForm] = useState({ name: '', company: '', phone: '', email: '', service: c.serviceOptions[0], message: '' });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const text = encodeURIComponent(
-      `Solicitare de pe ingbroker.md\nNume: ${form.name}\nCompanie: ${form.company}\nTelefon: ${form.phone}\nEmail: ${form.email}\nServiciu: ${form.service}\nDetalii: ${form.message}`
-    );
-    trackEvent('quote_request_submit', {
-      source: 'contact_page',
-      page_path: window.location.pathname,
-      lead_type: form.service.includes('Corporate') || form.service.includes('Корпоратив') ? 'b2b' : 'general',
-      contact_method: 'whatsapp'
-    });
-    window.open(`https://wa.me/37369526003?text=${text}`, '_blank');
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 5000);
-  };
+  // Ordinea opțiunilor din textele fiecărei limbi: corporate, reasigurări, personale, daune.
+  const contactProductKeys: LeadProduct[] = ['corporate', 'reinsurance', 'personal', 'claims'];
+  const contactProducts = contactProductKeys.map((key, i) => ({ key, label: c.serviceOptions[i] }));
 
   const schema = {
     "@context": "https://schema.org",
@@ -239,7 +225,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
       </section>
 
       <div className="max-w-7xl mx-auto px-6 py-32">
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Info */}
           <div className="space-y-8">
             
@@ -388,95 +374,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
           {/* Right Column */}
           <div className="space-y-8 flex flex-col h-full">
             {/* Contact Form Placeholder */}
-            <div className="bg-white border border-gray-100 p-10 rounded-xl hover:border-primary/30 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
-              {isSubmitted && (
-                <div className="absolute inset-0 bg-white/95 z-10 flex flex-col items-center justify-center text-center p-8">
-                  <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                  </div>
-                  <h4 className="text-2xl font-bold text-secondary mb-2">
-                    {lang === 'ro' ? 'Mesaj pregătit în WhatsApp' : lang === 'ru' ? 'Сообщение подготовлено в WhatsApp' : 'Message prepared in WhatsApp'}
-                  </h4>
-                  <p className="text-gray-600">
-                    {lang === 'ro' ? 'Verifică și trimite mesajul deschis în WhatsApp.' : lang === 'ru' ? 'Проверьте и отправьте сообщение в WhatsApp.' : 'Review and send the message opened in WhatsApp.'}
-                  </p>
-                </div>
-              )}
+            <div className="bg-white border border-gray-100 p-10 rounded-xl hover:border-primary/30 hover:shadow-xl transition-all duration-300">
               <h3 className="text-3xl font-bold text-secondary mb-8">{c.formTitle}</h3>
-              <form className="space-y-6" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.name}</label>
-                    <input 
-                      type="text" 
-                      required
-                      value={form.name}
-                      onChange={e => setForm({ ...form, name: e.target.value })}
-                      className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                      placeholder="John Doe"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.company}</label>
-                    <input 
-                      type="text" 
-                      required
-                      value={form.company}
-                      onChange={e => setForm({ ...form, company: e.target.value })}
-                      className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                      placeholder="Company SRL"
-                    />
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.email}</label>
-                    <input 
-                      type="email" 
-                      value={form.email}
-                      onChange={e => setForm({ ...form, email: e.target.value })}
-                      className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.service}</label>
-                    <select value={form.service} onChange={e => setForm({ ...form, service: e.target.value })} className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none">
-                      {c.serviceOptions.map((opt, idx) => (
-                        <option key={idx} value={opt}>{opt}</option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{lang === 'ro' ? 'Telefon' : lang === 'ru' ? 'Телефон' : 'Phone'}</label>
-                  <input
-                    type="tel"
-                    required
-                    value={form.phone}
-                    onChange={e => setForm({ ...form, phone: e.target.value })}
-                    className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                    placeholder="+373 69 000 000"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2">{c.message}</label>
-                  <textarea 
-                    rows={4}
-                    value={form.message}
-                    onChange={e => setForm({ ...form, message: e.target.value })}
-                    className="w-full bg-gray-50 border border-gray-200 px-6 py-4 rounded-lg focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
-                    placeholder="..."
-                  />
-                </div>
-                <motion.button 
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full py-5 bg-primary text-white font-bold uppercase text-xs tracking-widest hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/40 rounded-lg"
-                >
-                  {lang === 'ro' ? 'Continuă în WhatsApp' : lang === 'ru' ? 'Продолжить в WhatsApp' : 'Continue in WhatsApp'}
-                </motion.button>
-              </form>
+              <B2BQuoteForm lang={lang} source="contact_page" products={contactProducts} />
             </div>
 
             {/* Claims Support */}
