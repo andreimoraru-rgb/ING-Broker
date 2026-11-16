@@ -4,6 +4,7 @@ import { SEO } from '../components/SEO';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { localizedPath } from '../utils/localizedRoutes';
 
 interface OffersPageProps {
   lang: Language;
@@ -22,55 +23,56 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
         {
           id: 'saloane-auto',
           title: 'Saloane Auto',
-          desc: 'Pachete complete de asigurare pentru dealeri auto, acoperind stocul de vehicule, răspunderea civilă și riscurile operaționale.',
+          desc: 'Analiza stocului de vehicule, a răspunderii civile și a activităților dealerului. Bunurile, riscurile și condițiile acceptate se confirmă în ofertă.',
           image: '/salon-auto.jpg',
           link: '/saloane-auto.html'
         },
         {
           id: 'companii-it',
           title: 'Companii IT',
-          desc: 'Protecție specializată pentru sectorul tehnologic, incluzând răspunderea profesională (E&O) și riscurile cibernetice.',
+          desc: 'Evaluarea distinctă a erorilor profesionale (E&O) și a incidentelor cibernetice. Activitatea, limitele și excluderile se verifică în documente.',
           image: '/it-companies.jpg',
-          link: '/oferte/pi-insurance-it/'
+          link: '/servicii/asigurare-raspundere-profesionala'
         },
         {
           id: 'regenerare-energie',
-          title: 'Regenerare Energie',
-          desc: 'Asigurări dedicate proiectelor de energie regenerabilă: parcuri eoliene, panouri solare și infrastructură verde.',
+          title: 'Energie regenerabilă',
+          desc: 'Analiza proiectelor de energie regenerabilă: echipamente, lucrări, exploatare și venituri. Fiecare componentă necesită confirmarea condițiilor.',
           image: '/Wind-Turbines---Energy.jpg',
-          link: '/oferte/energie-regenerabila/'
+          link: '/renewable-energy'
         },
         {
           id: 'employee-benefits',
           title: 'Employee Benefits',
-          desc: 'Programe de sănătate și viață pentru angajați, esențiale pentru retenția talentelor în sectorul IT și corporate.',
+          desc: 'Opțiuni de beneficii pentru angajați. Disponibilitatea produselor, persoanele eligibile, serviciile și limitele se verifică înainte de alegere.',
           image: '/employer.jpg',
-          link: '/asigurare-medicala-angajati/'
+          link: '/business/benefits'
         },
         {
           id: 'flote-auto',
           title: 'Flotă Auto Corporativă',
-          desc: 'Program centralizat de asigurare pentru companii cu 3+ vehicule. RCA, Carte Verde, CASCO, CMR - comparăm toți cei 6 asigurători din Moldova. Ofertă în 24h.',
+          desc: 'Analiza flotei de minimum 5vehicule: RCA, Carte Verde, CASCO, CMR și CARGO, după activitate. Termenul, ofertele disponibile și condițiile se confirmă separat.',
           image: '/camionete.jpg',
-          link: '/oferte/flote-auto'
+          link: '/business/transport-logistica'
         },
         {
           id: 'drone-liability',
           title: 'Asigurare Răspundere Drone',
-          desc: 'Protecție pentru prejudiciile produse terților de drone și opțiuni CASCO pentru propria aeronavă.',
+          desc: 'Verificarea răspunderii față de terți și a eventualelor opțiuni pentru dronă. Tipul operațiunilor, teritoriul și condițiile trebuie confirmate.',
           image: '/asigurare-drone-moldova/assets/business.webp',
           link: '/asigurare-drone-moldova/'
         },
         {
           id: 'cyber-insurance',
           title: 'Cyber Insurance',
-          desc: 'Protecție avansată împotriva atacurilor cibernetice, scurgerilor de date și întreruperii afacerii din cauze informatice.',
-          image: '/cyber-insurance-3.jpg'
+          desc: 'Evaluarea incidentelor cibernetice, a datelor și a întreruperii serviciilor. Nu orice incident sau cost este acceptat automat în asigurare.',
+          image: '/cyber-insurance-3.jpg',
+          link: '/servicii/asigurare-cyber-moldova'
         },
         {
           id: 'car-ear',
           title: 'Construction Shield 360 - Asigurare CAR/EAR + Garanții',
-          desc: 'Pachet integrat All Risks pentru construcții și montaj, incluzând garanții contractuale (Bid/Performance/Advance Bonds). Soluție completă pentru proiecte finanțate de BERD, FMI și bănci comerciale.',
+          desc: 'Analiza separată a lucrărilor CAR/EAR și a garanțiilor contractuale. Acceptarea riscului și cerințele finanțatorului se verifică pentru proiectul concret.',
           image: '/Constructii-montaj.jpeg',
           link: '/construction-shield'
         }
@@ -84,55 +86,56 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
         {
           id: 'saloane-auto',
           title: 'Автосалоны',
-          desc: 'Комплексные пакеты страхования для автодилеров, покрывающие склад автомобилей, гражданскую ответственность и операционные риски.',
+          desc: 'Оценка автомобилей на складе, гражданской ответственности и деятельности дилера. Имущество, риски и принимаемые условия подтверждаются в предложении.',
           image: '/salon-auto.jpg',
           link: '/saloane-auto.html'
         },
         {
           id: 'companii-it',
           title: 'IT-компании',
-          desc: 'Специализированная защита для технологического сектора, включая профессиональную ответственность (E&O) и киберриски.',
+          desc: 'Раздельная оценка профессиональных ошибок (E&O) и киберинцидентов. Деятельность, лимиты и исключения проверяются по документам.',
           image: '/it-companies.jpg',
-          link: '/oferte/pi-insurance-it/'
+          link: '/servicii/asigurare-raspundere-profesionala'
         },
         {
           id: 'regenerare-energie',
           title: 'Возобновляемая энергия',
-          desc: 'Страхование проектов возобновляемая энергетики: ветропарков, солнечных панелей и зеленой инфраструктуры.',
+          desc: 'Оценка проектов возобновляемой энергетики: оборудование, работы, эксплуатация и доходы. Условия по каждой части необходимо подтвердить отдельно.',
           image: '/Wind-Turbines---Energy.jpg',
-          link: '/oferte/energie-regenerabila/'
+          link: '/renewable-energy'
         },
         {
           id: 'employee-benefits',
           title: 'Employee Benefits',
-          desc: 'Программы страхования здоровья и жизни для сотрудников, необходимые для удержания талантов в ИТ и корпоративном секторе.',
+          desc: 'Варианты льгот для сотрудников. Доступность продуктов, круг участников, услуги и лимиты проверяются до выбора.',
           image: '/employer.jpg',
-          link: '/asigurare-medicala-angajati/'
+          link: '/business/benefits'
         },
         {
           id: 'flote-auto',
           title: 'Корпоративный автопарк',
-          desc: 'Централизованная программа страхования для компаний с 3+ автомобилями. ОСАГО, Зелёная карта, КАСКО, CMR - сравниваем всех 6 страховщиков Молдовы. Предложение за 24ч.',
+          desc: 'Оценка автопарка минимум из 5 автомобилей: ОСАГО, Зелёная карта, КАСКО, CMR и CARGO с учётом деятельности. Срок, доступные предложения и условия подтверждаются отдельно.',
           image: '/camionete.jpg',
-          link: '/oferte/flote-auto'
+          link: '/business/transport-logistica'
         },
         {
           id: 'drone-liability',
           title: 'Страхование ответственности дронов',
-          desc: 'Защита от ущерба, причинённого дронами третьим лицам, и опции КАСКО для собственного аппарата.',
+          desc: 'Проверка ответственности перед третьими лицами и возможных вариантов для самого дрона. Операции, территория и условия требуют подтверждения.',
           image: '/asigurare-drone-moldova/assets/business.webp',
           link: '/ru/asigurare-drone-moldova/'
         },
         {
           id: 'cyber-insurance',
           title: 'Киберстрахование',
-          desc: 'Передовая защита от кибератак, утечек данных и прерывания бизнеса по ИТ-причинам.',
-          image: '/cyber-insurance-3.jpg'
+          desc: 'Оценка киберинцидентов, данных и перерывов в работе сервисов. Не любой инцидент или расход автоматически принимается на страхование.',
+          image: '/cyber-insurance-3.jpg',
+          link: '/servicii/asigurare-cyber-moldova'
         },
         {
           id: 'car-ear',
           title: 'Construction Shield 360 - Страхование CAR/EAR + Гарантии',
-          desc: 'Интегрированный пакет All Risks для строительно-монтажных работ, включая контрактные гарантии (Bid/Performance/Advance Bonds). Решение для проектов, финансируемых ЕБРР, МВФ и банками.',
+          desc: 'Раздельная оценка строительно-монтажных работ CAR/EAR и договорных гарантий. Принятие риска и требования финансирующей стороны проверяются для конкретного проекта.',
           image: '/Constructii-montaj.jpeg',
           link: '/construction-shield'
         }
@@ -146,55 +149,56 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
         {
           id: 'saloane-auto',
           title: 'Auto Showrooms',
-          desc: 'Comprehensive insurance packages for auto dealers, covering vehicle inventory, liability, and operational risks.',
+          desc: 'Assessment of vehicle stock, liability and dealership activities. The property, risks and accepted conditions must be confirmed in the proposal.',
           image: '/salon-auto.jpg',
           link: '/saloane-auto.html'
         },
         {
           id: 'companii-it',
           title: 'IT Companies',
-          desc: 'Specialized protection for the technology sector, including professional liability (E&O) and cyber risks.',
+          desc: 'Separate assessment of professional errors (E&O) and cyber incidents. Check the activities, limits and exclusions in the actual documents.',
           image: '/it-companies.jpg',
-          link: '/oferte/pi-insurance-it/'
+          link: '/servicii/asigurare-raspundere-profesionala'
         },
         {
           id: 'regenerare-energie',
           title: 'Renewable Energy',
-          desc: 'Insurance dedicated to renewable energy projects: wind farms, solar panels, and green infrastructure.',
+          desc: 'Assessment of renewable energy projects: equipment, construction, operation and revenue. Conditions for each component need separate confirmation.',
           image: '/Wind-Turbines---Energy.jpg',
-          link: '/oferte/energie-regenerabila/'
+          link: '/renewable-energy'
         },
         {
           id: 'employee-benefits',
           title: 'Employee Benefits',
-          desc: 'Health and life insurance programs for employees, essential for talent retention in the IT and corporate sectors.',
+          desc: 'Employee benefit options. Check product availability, eligible participants, services and limits before selecting an arrangement.',
           image: '/employer.jpg',
-          link: '/asigurare-medicala-angajati/'
+          link: '/business/benefits'
         },
         {
           id: 'flote-auto',
           title: 'Corporate Fleet Insurance',
-          desc: 'Centralized insurance program for companies with 3+ vehicles. RCA, Green Card, CASCO, CMR - we compare all 6 insurers in Moldova. Offer within 24h.',
+          desc: 'Assessment of fleets with at least 5 vehicles: RCA, Green Card, CASCO, CMR and CARGO according to the activities. Timing, available proposals and conditions require separate confirmation.',
           image: '/camionete.jpg',
-          link: '/oferte/flote-auto'
+          link: '/business/transport-logistica'
         },
         {
           id: 'drone-liability',
           title: 'Drone Liability Insurance',
-          desc: 'Protection for third-party damage caused by drones, with CASCO options for your own aircraft.',
+          desc: 'Review of third-party liability and possible options for the drone itself. Operations, territory and conditions need to be confirmed.',
           image: '/asigurare-drone-moldova/assets/business.webp',
           link: '/en/asigurare-drone-moldova/'
         },
         {
           id: 'cyber-insurance',
           title: 'Cyber Insurance',
-          desc: 'Advanced protection against cyber attacks, data breaches, and IT-related business interruption.',
-          image: '/cyber-insurance-3.jpg'
+          desc: 'Assessment of cyber incidents, data and service interruption. Not every incident or expense is automatically accepted for insurance.',
+          image: '/cyber-insurance-3.jpg',
+          link: '/servicii/asigurare-cyber-moldova'
         },
         {
           id: 'car-ear',
           title: 'Construction Shield 360 - CAR/EAR Insurance + Bonds',
-          desc: 'Integrated All Risks package for construction and erection works, including contractual guarantees (Bid/Performance/Advance Bonds). Complete solution for projects funded by EBRD, IMF, and banks.',
+          desc: 'Separate assessment of CAR/EAR works and contractual guarantees. Risk acceptance and financing requirements must be checked for the actual project.',
           image: '/Constructii-montaj.jpeg',
           link: '/construction-shield'
         }
@@ -206,7 +210,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
   const c = content[lang];
 
   return (
-    <div className="bg-white min-h-screen">
+    <main className="bg-white min-h-screen">
       <SEO 
         title={`${c.title} | Insurance ING Broker SRL`} 
         description={c.subtitle} 
@@ -273,7 +277,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
               >
                 {offer.link && (offer.link.startsWith('http') || offer.link.endsWith('.html') || offer.link.endsWith('.pdf') || offer.link.startsWith('/')) ? (
                   <a 
-                    href={offer.link}
+                    href={offer.link.endsWith('.html') ? offer.link : localizedPath(offer.link, lang)}
                     target={(offer.link.endsWith('.html') || offer.link.endsWith('.pdf')) ? "_blank" : undefined}
                     rel={(offer.link.endsWith('.html') || offer.link.endsWith('.pdf')) ? "noopener noreferrer" : undefined}
                     className="flex flex-col flex-grow"
@@ -347,6 +351,6 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           })}
         </div>
       </div>
-    </div>
+    </main>
   );
 };

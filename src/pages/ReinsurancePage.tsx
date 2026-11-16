@@ -53,7 +53,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <main className="bg-gray-50 min-h-screen">
       <SEO 
         title={seo.title} 
         description={seo.description} 
@@ -121,6 +121,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <motion.button 
+                onClick={() => navigate('/contact')}
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 className="px-12 py-5 bg-primary text-white font-display font-bold uppercase text-[10px] tracking-[0.3em] transition-all shadow-xl shadow-primary/20 hover:bg-primary-dark"
@@ -247,7 +248,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
       <section className="py-24 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-secondary tracking-tighter mb-16">
-            {lang === 'ro' ? 'Partenerii Noștri' : lang === 'ru' ? 'Наши Партнеры' : 'Our Partners'}
+            {lang === 'ro' ? 'Organizații și resurse publice' : lang === 'ru' ? 'Организации и открытые ресурсы' : 'Organisations and public resources'}
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
             {[
@@ -275,7 +276,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
                 <img 
                   src={partner.img} 
                   alt={partner.name} 
-                  className={`max-w-full h-full object-contain mix-blend-multiply ${partner.scale || ''}`}
+                  className={`max-w-full h-full object-contain mix-blend-multiply ${partner.scale || ''} max-sm:scale-100`}
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
@@ -291,7 +292,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
       <section className="py-24 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-secondary tracking-tighter mb-12">
-            {lang === 'ro' ? 'Contactează-ne pentru o ofertă' : lang === 'ru' ? 'Свяжитесь с нами для предложения' : 'Contact us for a quote'}
+            {lang === 'ro' ? 'Discută cerințele programului de reasigurare' : lang === 'ru' ? 'Обсудить требования программы перестрахования' : 'Discuss reinsurance programme requirements'}
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8">
             <motion.a 
@@ -318,9 +319,9 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
               <div className="w-16 h-16 bg-white shadow-sm flex items-center justify-center rounded-lg group-hover:bg-primary transition-colors duration-300">
                 <Mail className="text-primary group-hover:text-white transition-colors duration-300" size={28} />
               </div>
-              <div className="text-left">
+              <div className="text-left min-w-0">
                 <div className="text-[10px] text-gray-400 uppercase tracking-widest mb-1">Email</div>
-                <div className="font-bold text-2xl text-secondary group-hover:text-primary transition-colors">andrei.moraru@ingbroker.md</div>
+                <div className="font-bold text-2xl text-secondary group-hover:text-primary transition-colors break-all">andrei.moraru@ingbroker.md</div>
               </div>
             </motion.a>
           </div>
@@ -328,7 +329,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
       </section>
 
 
-    </div>
+    </main>
   );
 };
 

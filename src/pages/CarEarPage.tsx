@@ -242,11 +242,12 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
   ];
 
   return (
-    <div className="bg-white min-h-screen font-sans text-gray-900">
+    <main className="bg-white min-h-screen font-sans text-gray-900">
       <SEO
         title="Asigurare CAR/EAR pentru construcții în Moldova | ING Broker"
         description="Analiza asigurării CAR/EAR pentru construcții și montaj în Moldova. Vezi documentele, riscurile, limitele și excluderile de verificat înainte de ofertare."
         lang={lang}
+        includeLanguageAlternates={false}
       />
 
       {/* Buton înapoi */}
@@ -697,6 +698,6 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 };

@@ -218,12 +218,13 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <main className="bg-white min-h-screen">
       <SEO
         title="Asigurare Flotă Auto Companii Moldova 2026 - RCA, CASCO, CMR, Carte Verde | ING Broker"
         description="Asigurare flotă auto pentru companii din Moldova: RCA, Carte Verde, CASCO, CMR și Cargo. Vezi informațiile, limitele și condițiile de verificat înainte de ofertare."
         keywords="asigurare flota auto moldova, asigurare flota companii moldova, rca flota moldova, carte verde flota moldova, casco flota moldova, cmr moldova, asigurare transport moldova, broker asigurari flota chisinau, asigurare auto corporativa moldova, program asigurare flota 2026, asigurare camioane moldova, analiza riscuri transport, asigurare vehicule companie"
         lang={lang}
+        includeLanguageAlternates={false}
         schema={schema}
         image="https://www.ingbroker.md/camionete.jpg"
       />
@@ -740,6 +741,6 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
