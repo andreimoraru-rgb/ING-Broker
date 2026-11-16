@@ -6,3 +6,8 @@ coverage/
 *.log
 .env*
 !.env.example
+# Generated mechanically by the build preflight from the canonical source.
+src/data/articleMetadata.ts
+src/data/article-content/ro/
+src/data/article-content-legacy/
+src/data/article-content-published/

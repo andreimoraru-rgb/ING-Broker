@@ -71,10 +71,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+            <label htmlFor="audit-company" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
               Compania *
             </label>
-            <input
+            <input id="audit-company" name="company"
               type="text"
               required
               value={form.company}
@@ -84,10 +84,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
             />
           </div>
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+            <label htmlFor="audit-name" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
               Persoana de contact *
             </label>
-            <input
+            <input id="audit-name" name="name"
               type="text"
               required
               value={form.name}
@@ -99,10 +99,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+            <label htmlFor="audit-phone" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
               Telefon *
             </label>
-            <input
+            <input id="audit-phone" name="phone"
               type="tel"
               required
               value={form.phone}
@@ -112,10 +112,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
             />
           </div>
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+            <label htmlFor="audit-email" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
               Email
             </label>
-            <input
+            <input id="audit-email" name="email"
               type="email"
               value={form.email}
               onChange={e => setForm({ ...form, email: e.target.value })}
@@ -125,10 +125,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
           </div>
         </div>
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+          <label htmlFor="audit-employees" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
             Număr de angajați / vehicule în flotă
           </label>
-          <input
+          <input id="audit-employees" name="employees"
             type="text"
             value={form.employees}
             onChange={e => setForm({ ...form, employees: e.target.value })}
@@ -137,10 +137,10 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
           />
         </div>
         <div>
-          <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+          <label htmlFor="audit-message" className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
             Ce asigurări aveți deja sau ce vă interesează?
           </label>
-          <textarea
+          <textarea id="audit-message" name="message"
             rows={3}
             value={form.message}
             onChange={e => setForm({ ...form, message: e.target.value })}
@@ -180,58 +180,58 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
       icon: <Car size={28} className="text-red-600" />,
       tag: 'Flotă auto',
       title: 'RCA, CASCO, Carte Verde',
-      desc: 'Program centralizat pentru flote de la 3 vehicule în sus. Toate tipurile de vehicule - autoturisme, camioane, utilaje. Un singur manager dedicat, polițe sincronizate ca dată de expirare, economii de 15-25% față de polițe individuale.'
+      desc: 'Program pentru flote de minimum 5 vehicule. Analizăm tipurile de vehicule, utilizarea și expirarea polițelor. În funcție de evaluarea asigurătorului și de condițiile comparate, pot exista economii de până la 25%, fără un rezultat garantat.'
     },
     {
       icon: <Building2 size={28} className="text-red-600" />,
       tag: 'Bunuri și proprietate',
       title: 'Incendiu, calamități, furt',
-      desc: 'Asigurarea clădirilor, stocurilor, utilajelor și echipamentelor companiei împotriva incendiului, inundațiilor, cutremurului, furtului și altor riscuri. Evaluare corectă a valorilor asigurate, despăgubire rapidă.'
+      desc: 'Analizăm clădirile, stocurile, utilajele și echipamentele companiei. Verificăm ce riscuri pot fi incluse, valorile declarate, franșizele și excluderile. Asigurătorul decide acceptarea riscului și soluționează daunele conform contractului.'
     },
     {
       icon: <Shield size={28} className="text-red-600" />,
       tag: 'Răspundere civilă',
       title: 'Față de terți și angajați',
-      desc: 'Răspunderea civilă generală față de terți - accidente de muncă, daune produse clienților sau partenerilor. Obligatorie pentru companiile din construcții, producție, servicii cu risc ridicat.'
+      desc: 'Verificăm separat răspunderea față de clienți, parteneri și angajați. Un singur contract nu include automat toate aceste situații. Cerințele aplicabile activității și condițiile fiecărei polițe se analizează individual.'
     },
     {
       icon: <HeartPulse size={28} className="text-red-600" />,
       tag: 'Sănătate angajați',
       title: 'Beneficiu atractiv pentru echipă',
-      desc: 'Asigurarea medicală colectivă pentru angajați - spitalizare, consultații, stomatologie. Beneficiu apreciat care îmbunătățește retenția și atragerea talentelor. Deductibil fiscal pentru companie.'
+      desc: 'Pentru un program medical colectiv, verificăm serviciile solicitate de angajați, furnizorii acceptați, limitele și excluderile. Consultațiile, spitalizarea sau stomatologia nu se presupun incluse. Tratamentul fiscal se confirmă separat pentru companie.'
     }
   ];
 
   const advantages = [
     {
       num: '01',
-      title: 'Economii reale de 15-30%',
-      desc: 'Volumul de polițe administrate ne permite să negociem tarife preferențiale cu toți cei 6 asigurători autorizați CNPF. Economiile sunt concrete, nu estimate.'
+      title: 'Compararea ofertelor și condițiilor',
+      desc: 'Comparăm ofertele disponibile pentru riscul descris. Prețul nu se analizează separat de limite, franșize și excluderi; o primă mai mică poate însemna condiții diferite.'
     },
     {
       num: '02',
       title: 'Un singur punct de contact',
-      desc: 'Un manager dedicat pentru toate polițele companiei - flotă, bunuri, răspundere, sănătate. Nu vânezi niciun asigurător când ai o problemă.'
+      desc: 'Stabilim persoana de contact și modul de administrare a polițelor companiei. Poți centraliza întrebările despre flotă, bunuri, răspundere și programele pentru angajați.'
     },
     {
       num: '03',
       title: 'Reprezentare la daune',
-      desc: 'La un incident, brokerul reprezintă interesele companiei tale față de asigurător - de la notificare până la plata despăgubirii. Nu ești singur în negocierea cu asigurătorul.'
+      desc: 'Brokerul te poate ajuta la comunicarea cu asigurătorul și la pregătirea documentelor de daună, în limitele mandatului convenit. Decizia și plata despăgubirii aparțin asigurătorului, potrivit contractului.'
     },
     {
       num: '04',
-      title: 'Analiză anuală de risc gratuită',
-      desc: 'Identificăm anual lacunele de acoperire, polițele cu prețuri nejustificate și riscurile neacoperite. Raport scris cu recomandări concrete.'
+      title: 'Revizuirea portofoliului',
+      desc: 'Verificăm polițele existente, posibilele suprapuneri și riscurile pentru care nu ai confirmarea acoperirii. Conținutul analizei, eventualul cost și frecvența se stabilesc înainte de începere.'
     },
     {
       num: '05',
-      title: 'Raportare transparentă lunară',
-      desc: 'Situația exactă a tuturor polițelor active, daunele în curs, costul per poliță și economiile obținute față de piață. Date clare, nu vorbe.'
+      title: 'Evidența polițelor',
+      desc: 'Stabilim ce informații se centralizează: polițe, valori, prime, expirări și stadiul dosarelor de daună. Formatul și frecvența raportării se convin cu compania.'
     },
     {
       num: '06',
       title: 'Flexibilitate și scalabilitate',
-      desc: 'Adaugi un vehicul, deschizi un depozit nou, angajezi oameni noi - extinderea acoperirii se face în ore, nu în zile. Brokerul se adaptează la ritmul tău de creștere.'
+      desc: 'Dacă adaugi un vehicul, un depozit sau angajați, anunță schimbarea înainte să te bazezi pe acoperire. Extinderea depinde de analiza și confirmarea asigurătorului; nu este automată.'
     }
   ];
 
@@ -271,32 +271,33 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
   const faqs = [
     {
       q: 'Ce înseamnă audit de asigurări pentru o companie?',
-      a: 'Auditorul nostru analizează toate polițele existente ale companiei, identifică dubluri de acoperire, lacune de protecție și oportunități de economisire. La final primești un raport scris cu situația actuală, riscurile neacoperite și recomandările concrete. Serviciul este 100% gratuit și fără obligații de a schimba sau cumpăra ceva.'
+      a: 'În acest context, audit înseamnă o analiză a polițelor și a informațiilor despre riscuri, nu un audit legal sau financiar certificat. Verificăm posibilele suprapuneri, limitele și întrebările rămase deschise. Conținutul analizei, documentele necesare și eventualul cost se confirmă înainte de începere. Discuția inițială nu încheie o poliță.'
     },
     {
       q: 'Lucrați cu firme mici sau doar cu corporații mari?',
-      a: 'Lucrăm cu companii de la 5 angajați în sus. Chiar și o flotă de 3-5 mașini poate beneficia de tarife de broker față de tarifele individuale de ghișeu. Un depozit de 500 mp și 8 angajați merită același nivel de protecție ca o corporație - noi facem soluția potrivită bugetului real.'
+      a: 'Poți solicita o analiză pentru o companie mică sau mare. Pentru programul de flotă discutat aici, punctul de pornire este minimum 5 vehicule. Pentru celelalte riscuri contează activitatea, valorile, numărul de angajați și condițiile asigurătorului, nu un prag general de personal.'
     },
     {
       q: 'Cât timp durează restructurarea portofoliului de asigurări al companiei?',
-      a: 'Auditul inițial durează 2-3 zile lucrătoare. Negocierea ofertelor cu asigurătorii: 3-5 zile. Emiterea noilor polițe se programează să coincidă cu expirarea polițelor existente, deci nu plătești niciodată dublu. De la prima discuție până la portofoliu complet restructurat: 7-14 zile lucrătoare.'
+      a: 'Termenul depinde de numărul polițelor, documentele disponibile, complexitatea riscurilor și răspunsul asigurătorilor. Stabilim pașii după primirea informațiilor. Datele de expirare se verifică înainte de schimbări; nu anula o poliță existentă înainte de confirmarea celei noi și a condițiilor de încetare.'
     },
     {
       q: 'Oferiți asistență în caz de daună?',
-      a: 'Da, asistența la daune este inclusă gratuit în relația de brokeraj. Reprezentăm compania ta în față asigurătorului de la notificarea daunei până la plata despăgubirii. Știm cum să formulăm dosarul de daună corect și complet pentru a evita întârzierile sau refuzurile nejustificate.'
+      a: 'Poți solicita ajutor pentru notificare și documentele cerute de asigurător. Întinderea asistenței și eventualele costuri se confirmă în relația de brokeraj. Respectă termenele poliței și păstrează dovezile. Brokerul nu poate garanta acceptarea dosarului, termenul de soluționare sau suma despăgubirii.'
     }
   ];
 
   return (
-    <div className="bg-white min-h-screen font-sans text-gray-900">
+    <main className="bg-white min-h-screen font-sans text-gray-900">
       <SEO
-        title="Asigurări Corporative Moldova | Pachete Complete pentru Companii | ING Broker"
-        description="Asigurări corporative în Moldova - flotă auto, bunuri, răspundere civilă, sănătate angajați. Broker CNPF cu 6 asigurători parteneri. Audit gratuit al portofoliului tău."
+        title="Asigurări corporative în Moldova | Analiza riscurilor B2B | ING Broker"
+        description="Analiza asigurărilor corporative în Moldova: flotă, bunuri, răspundere și programe pentru angajați. Vezi ce informații și condiții trebuie verificate."
         lang={lang}
+        includeLanguageAlternates={false}
       />
 
       {/* Buton înapoi */}
-      <div className="fixed top-32 left-6 z-50">
+      <div className="absolute top-20 left-6 z-30">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -337,7 +338,7 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
           >
             <div className="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 text-white px-4 py-1.5 text-xs font-bold mb-8">
               <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-              Broker licențiat CNPF - Soluții complete B2B
+              Insurance ING Broker SRL - Analiză B2B
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tighter leading-[0.95] mb-6">
@@ -346,21 +347,21 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
             </h1>
             <p className="text-xl text-white/70 font-light leading-relaxed mb-8 max-w-2xl">
               De la flotă auto la bunuri și răspundere civilă - un singur broker
-              gestionează toate asigurările companiei tale. Audit gratuit al portofoliului existent.
+              te ajută să verifici polițele companiei. Solicită analiza portofoliului existent.
             </p>
 
             <div className="grid grid-cols-3 gap-8 border-t border-white/10 pt-8 mb-10">
               <div>
-                <div className="text-3xl font-bold text-white mb-1">6</div>
-                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">Asigurători CNPF</div>
+                <div className="text-3xl font-bold text-white mb-1">Riscuri</div>
+                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">De analizat</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white mb-1">15-30%</div>
-                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">Economii medii</div>
+                <div className="text-3xl font-bold text-white mb-1">Condiții</div>
+                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">De comparat</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white mb-1">100+</div>
-                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">Clienți B2B activi</div>
+                <div className="text-3xl font-bold text-white mb-1">Polițe</div>
+                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">De revizuit</div>
               </div>
             </div>
 
@@ -368,7 +369,7 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
               onClick={() => document.getElementById('formular')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-10 py-4 bg-red-600 text-white font-bold uppercase text-xs tracking-widest hover:bg-red-700 transition-all shadow-xl flex items-center gap-3 group"
             >
-              Vreau audit gratuit al asigurărilor companiei mele
+              Solicit analiza asigurărilor companiei mele
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
@@ -380,14 +381,14 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-xs font-bold uppercase tracking-[0.3em] text-red-600 mb-4 block">
-              Portofoliu complet
+              Portofoliu de asigurări
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tighter mb-4">
-              Soluții complete de asigurare corporativă
+              Riscurile companiei și polițele relevante
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
-              Un singur broker gestionează toate tipurile de asigurări ale companiei.
-              Tu te concentrezi pe business, noi pe protecție.
+              Analiza pornește de la activitatea și documentele companiei.
+              Acoperirea, limitele și excluderile se confirmă în fiecare poliță.
             </p>
           </div>
 
@@ -428,12 +429,12 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
                 Avantajul brokerului
               </span>
               <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-6">
-                De ce 87% din companiile mari lucrează cu broker?
+                Cum te poate ajuta un broker de asigurare?
               </h2>
               <p className="text-gray-300 leading-relaxed mb-10">
-                Companiile care gestionează singure relația cu asigurătorii pierd timp,
-                plătesc mai mult și sunt singure când apare o daună. Brokerul rezolvă
-                toate cele trei probleme simultan.
+                Brokerul te ajută să organizezi informațiile despre riscuri și să compari
+                ofertele disponibile. Serviciile convenite și condițiile polițelor se verifică
+                înainte de alegere, fără promisiunea unui preț sau rezultat garantat.
               </p>
 
               <div className="space-y-8">
@@ -463,11 +464,11 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
                 <h3 className="text-2xl font-bold text-white mb-6">Comparativ rapid</h3>
                 <div className="space-y-4">
                   {[
-                    { label: 'Prețul poliței', direct: 'Tarif de ghișeu', broker: 'Tarif negociat (-15-30%)' },
-                    { label: 'Timp alocat', direct: '10+ ore/an cu asigurătorii', broker: '0 ore - gestionăm noi' },
-                    { label: 'La daună', direct: 'Singur față de asigurător', broker: 'Broker te reprezintă' },
-                    { label: 'Analiza riscurilor', direct: 'Nu există', broker: 'Audit anual gratuit' },
-                    { label: 'Nr. interlocutori', direct: '1 per asigurător (mai mulți)', broker: '1 manager dedicat' }
+                    { label: 'Prețul poliței', direct: 'Oferta asigurătorului', broker: 'Compararea ofertelor disponibile' },
+                    { label: 'Documente', direct: 'Cerințele asigurătorului', broker: 'Sprijin pentru centralizare' },
+                    { label: 'La daună', direct: 'Asigurătorul soluționează', broker: 'Sprijin potrivit mandatului' },
+                    { label: 'Analiza riscurilor', direct: 'Evaluarea asigurătorului', broker: 'Revizuirea nevoilor declarate' },
+                    { label: 'Contact', direct: 'Contactul asigurătorului', broker: 'Contactul de brokeraj convenit' }
                   ].map((row, i) => (
                     <div key={i} className="grid grid-cols-3 gap-4 text-sm border-b border-white/10 pb-4">
                       <div className="text-white/60 font-medium">{row.label}</div>
@@ -486,15 +487,15 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
                 <ul className="space-y-3 text-sm text-gray-300">
                   <li className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-red-600/20 flex items-center justify-center flex-shrink-0 text-xs font-bold text-red-400">1</div>
-                    Prima discuție și colectare documente - 1 zi
+                    Discuție inițială și stabilirea documentelor necesare
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-red-600/20 flex items-center justify-center flex-shrink-0 text-xs font-bold text-red-400">2</div>
-                    Analiză portofoliu și identificare lacune - 2-3 zile
+                    Analiza polițelor și întrebărilor privind acoperirea
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-red-600/20 flex items-center justify-center flex-shrink-0 text-xs font-bold text-red-400">3</div>
-                    Raport scris cu recomandări concrete - livrat
+                    Concluzii și următori pași, în formatul convenit
                   </li>
                 </ul>
               </div>
@@ -508,14 +509,14 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-xs font-bold uppercase tracking-[0.3em] text-red-600 mb-4 block">
-              Sectoare deservite
+              Sectoare de analizat
             </span>
             <h2 className="text-4xl font-bold text-gray-900 tracking-tighter mb-4">
-              Companiile care ne contactează cel mai des
+              Ce riscuri pot avea companiile din aceste sectoare?
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
-              Fiecare sector are nevoi specifice de asigurare. Cunoaștem particularitățile
-              fiecărui domeniu și construim soluțiile potrivite.
+              Fiecare sector are nevoi specifice. Verificăm activitatea declarată,
+              cerințele contractuale și disponibilitatea condițiilor relevante.
             </p>
           </div>
 
@@ -536,7 +537,7 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
                   <h3 className="font-bold text-gray-900">{client.title}</h3>
                 </div>
                 <p className="text-xs text-gray-500 leading-relaxed">
-                  <span className="font-semibold text-gray-700">Asigurări tipice:</span> {client.needs}
+                  <span className="font-semibold text-gray-700">Teme de verificat:</span> {client.needs}
                 </p>
               </motion.div>
             ))}
@@ -596,17 +597,17 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-[0.3em] text-red-600 mb-4 block">
-              Solicită audit gratuit
+              Solicită analiza portofoliului
             </span>
             <h2 className="text-4xl font-bold text-gray-900 tracking-tighter mb-4">
-              Primul pas - fără nicio obligație
+              Primul pas - descrie activitatea companiei
             </h2>
             <p className="text-gray-500">
-              Auditul este complet gratuit. Nu ești obligat să cumperi sau să schimbi nimic.
-              Primești un raport onest cu situația reală a asigurărilor companiei tale.
+              Trimite informațiile de bază despre activitate și polițele existente.
+              Confirmăm conținutul analizei, documentele necesare și eventualele costuri înainte de începere.
             </p>
           </div>
-          <B2BLeadForm title="Vreau audit gratuit al asigurărilor companiei mele" />
+          <B2BLeadForm title="Solicit analiza asigurărilor companiei mele" />
         </div>
       </section>
 
@@ -629,6 +630,6 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 };

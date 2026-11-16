@@ -45,116 +45,116 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
   const t = {
     ro: {
       title: 'Construction Shield 360',
-      subtitle: 'CAR/EAR + Bonds | ING Broker Moldova',
-      heroTitle: 'Asigurare Construcții-Montaj + Garanții',
-      heroDesc: 'Pachet integrat CAR/EAR + Bid/Performance/Advance Bonds. Acoperire All Risks. Emitere garanții în 24-48 ore. Conformitate donatori internaționali.',
-      cta: 'Solicită Ofertă',
-      details: 'Detalii Produs',
+      subtitle: 'Analiza CAR/EAR și garanțiilor | ING Broker Moldova',
+      heroTitle: 'Riscuri Construcții-Montaj + Cerințe de Garanții',
+      heroDesc: 'Analizăm separat riscurile CAR/EAR și cerințele de garanții contractuale. Disponibilitatea, limitele, termenele și acceptarea documentelor se confirmă pentru proiectul concret.',
+      cta: 'Solicită o discuție',
+      details: 'Aspecte de verificat',
       stats: [
-        { val: '24-48h', label: 'Emitere Bonds' },
-        { val: '€500K+', label: 'Limită maximă' },
-        { val: '8+', label: 'Ani experiență' }
+        { val: 'Riscuri', label: 'De evaluat' },
+        { val: 'Limite', label: 'De confirmat' },
+        { val: 'Termene', label: 'De stabilit' }
       ],
-      ebrdTitle: 'Companiile finanțate de BERD, FMI și bănci sunt obligate să dețină asigurare CAR/EAR',
-      ebrdDesc: 'Toate contractele de construcții finanțate prin credite internaționale sau bancare conțin clauze obligatorii. Fără polița CAR/EAR, finanțarea nu se debursează.',
-      productsTitle: 'O platformă - 6 instrumente',
-      productsSubtitle: 'Construction Shield 360 combină asigurarea All Risks cu garanții contractuale într-un singur pachet modular.',
+      ebrdTitle: 'Ce cerințe de asigurare are contractul proiectului?',
+      ebrdDesc: 'Verifică documentele beneficiarului și finanțatorului: ce polițe sau garanții solicită, pentru ce perioadă și în ce formă. Nu presupune aceeași obligație pentru toate proiectele.',
+      productsTitle: '6 direcții de verificare',
+      productsSubtitle: 'Construction Shield 360 prezintă teme pentru analiza proiectului, nu confirmă un pachet emis. Fiecare poliță, garanție sau extensie necesită verificare separată.',
       products: [
-        { title: 'All Risks - Secțiunea I', desc: 'Acoperire pentru lucrări, materiale pe șantier, structuri temporare. Protejează investiția.', tag: 'CAR/EAR' },
-        { title: 'Răspundere Terți - Sect. II', desc: 'Vătămări corporale și daune materiale terți. Reduce risc litigii.', tag: 'TPL' },
-        { title: 'Bid + Performance + Advance', desc: 'Garanție ofertă (24h) + bună execuție până la 15%. Acces rapid licitații MTender.', tag: 'BONDS' },
-        { title: 'Retention + Customs', desc: 'Eliberarea retențiilor și garanție vamală globală. Optimizează cash-flow.', tag: 'BONDS' },
-        { title: 'DSU / ALoP', desc: 'Pierderi din întârzierea punerii în funcțiune. Protejează cash-flow-ul investitorilor.', tag: 'OPTIONAL' },
-        { title: 'Donor Compliance Pack', desc: 'BO, screening sancțiuni, FIDIC - EBRD, EIB, World Bank.', tag: 'OPTIONAL' }
+        { title: 'All Risks - Secțiunea I', desc: 'Verifică lucrările, materialele și structurile declarate, perioada, limitele și excluderile. All Risks nu înseamnă orice situație.', tag: 'CAR/EAR' },
+        { title: 'Răspundere Terți - Sect. II', desc: 'Verifică persoanele asigurate, răspunderea față de terți, limita și excluderile acestei secțiuni.', tag: 'TPL' },
+        { title: 'Bid + Performance + Advance', desc: 'Garanția de ofertă, de bună execuție și de avans au scopuri diferite. Verifică emitentul acceptat, forma și cerințele contractului.', tag: 'BONDS' },
+        { title: 'Retention + Customs', desc: 'Verifică separat cerințele privind retențiile și garanțiile vamale. Disponibilitatea și acceptarea emitentului nu sunt confirmate de această pagină.', tag: 'BONDS' },
+        { title: 'DSU / ALoP', desc: 'DSU/ALoP privește analiza pierderilor din întârziere. O eventuală extensie, evenimentul declanșator și limitele trebuie confirmate separat.', tag: 'SEPARAT' },
+        { title: 'Cerințe ale finanțatorului', desc: 'Verifică documentele și cerințele beneficiarului sau finanțatorului. Brokerul nu certifică prin această pagină conformitatea juridică a proiectului.', tag: 'SEPARAT' }
       ],
-      risksTitle: 'Riscuri acoperite',
+      risksTitle: 'Riscuri de verificat',
       risks: [
         { title: 'Incendiu, explozie, fulger', desc: 'Distrugeri la lucrări și materiale' },
         { title: 'Furtuni, inundații, seisme', desc: 'Fenomene atmosferice, alunecări teren' },
         { title: 'Avarii accidentale', desc: 'Daune structuri în timpul execuției' },
         { title: 'Furt, vandalism', desc: 'Pierderi materiale și echipamente' }
       ],
-      pricingTitle: 'Preț transparent - pe niveluri',
+      pricingTitle: 'Ce informații trebuie pregătite?',
       pricing: [
-        { tier: 'Tier A', name: 'Top Contractor', range: '0,2% - 0,6%', items: ['Istoric impecabil', 'Capitalizare solidă', 'Contracte FIDIC'] },
-        { tier: 'Tier B', name: 'Mid Contractor', range: '0,6% - 1,5%', items: ['CAR/EAR inclus', 'TPL până la €500K', 'Emitere prioritară 24h'], popular: true },
-        { tier: 'Tier C', name: 'Entry / Special', range: '1,5% - 4,0%', items: ['CAR + TPL + DSU', 'Conformitate donor', 'Companie nouă'] }
+        { tier: 'Pasul 1', name: 'Descrierea proiectului', range: 'De documentat', items: ['Activitatea și lucrările', 'Valorile și amplasamentul', 'Contractele relevante'] },
+        { tier: 'Pasul 2', name: 'Condițiile propuse', range: 'De verificat', items: ['Riscurile și excluderile', 'Limitele și franșizele', 'Perioada și prima'], popular: true },
+        { tier: 'Pasul 3', name: 'Confirmările necesare', range: 'De obținut', items: ['Acceptarea asigurătorului', 'Cerințele beneficiarului', 'Documentele și valabilitatea'] }
       ]
     },
     ru: {
       title: 'Construction Shield 360',
-      subtitle: 'CAR/EAR + Bonds | ING Broker Moldova',
-      heroTitle: 'Страхование Строительства + Гарантии',
-      heroDesc: 'Интегрированный пакет CAR/EAR + Bid/Performance/Advance Bonds. Покрытие All Risks. Выдача гарантий за 24-48 часов. Соответствие международным донорам.',
-      cta: 'Запросить предложение',
-      details: 'Детали',
+      subtitle: 'Анализ CAR/EAR и гарантий | ING Broker Moldova',
+      heroTitle: 'Риски строительства + Требования к гарантиям',
+      heroDesc: 'Отдельно рассматриваем риски CAR/EAR и требования к договорным гарантиям. Доступность, лимиты, сроки и приемлемость документов подтверждаются для конкретного проекта.',
+      cta: 'Обсудить проект',
+      details: 'Что проверить',
       stats: [
-        { val: '24-48ч', label: 'Выдача гарантий' },
-        { val: '€500K+', label: 'Макс. лимит' },
-        { val: '8+', label: 'Лет опыта' }
+        { val: 'Риски', label: 'Для оценки' },
+        { val: 'Лимиты', label: 'Для проверки' },
+        { val: 'Сроки', label: 'Для согласования' }
       ],
-      ebrdTitle: 'Компании, финансируемые ЕБРР, МВФ и банками, обязаны иметь страхование CAR/EAR',
-      ebrdDesc: 'Все строительные контракты с международным финансированием содержат обязательные страховые условия. Без полиса CAR/EAR финансирование не выделяется.',
-      productsTitle: 'Одна платформа - 6 инструментов',
-      productsSubtitle: 'Construction Shield 360 объединяет страхование All Risks с контрактными гарантиями в единый модульный пакет.',
+      ebrdTitle: 'Какие страховые требования предусмотрены договором проекта?',
+      ebrdDesc: 'Проверьте документы заказчика и финансирующей стороны: какие полисы или гарантии требуются, на какой срок и в какой форме. Нельзя считать требования одинаковыми для всех проектов.',
+      productsTitle: '6 направлений проверки',
+      productsSubtitle: 'Construction Shield 360 описывает вопросы для анализа проекта, а не подтверждает выданный пакет. Каждый полис, гарантия или расширение требуют отдельной проверки.',
       products: [
-        { title: 'All Risks - Секция I', desc: 'Покрытие для работ, материалов, временных конструкций. Защищает инвестиции.', tag: 'CAR/EAR' },
-        { title: 'Ответственность - Секц. II', desc: 'Телесные повреждения и ущерб третьих лиц. Снижает риск споров.', tag: 'TPL' },
-        { title: 'Bid + Performance + Advance', desc: 'Тендерная гарантия (24ч) + исполнение до 15%. Быстрый доступ к тендерам.', tag: 'BONDS' },
-        { title: 'Retention + Customs', desc: 'Освобождение удержаний и таможенная гарантия. Оптимизирует кэш-флоу.', tag: 'BONDS' },
-        { title: 'DSU / ALoP', desc: 'Убытки от задержки ввода в эксплуатацию. Защищает инвесторов.', tag: 'ОПЦИЯ' },
-        { title: 'Donor Compliance Pack', desc: 'BO, санкции, FIDIC - EBRD, EIB, World Bank.', tag: 'ОПЦИЯ' }
+        { title: 'All Risks - Секция I', desc: 'Проверьте заявленные работы, материалы и конструкции, период, лимиты и исключения. All Risks не означает покрытие любой ситуации.', tag: 'CAR/EAR' },
+        { title: 'Ответственность - Секц. II', desc: 'Проверьте застрахованных лиц, ответственность перед третьими лицами, лимит и исключения этого раздела.', tag: 'TPL' },
+        { title: 'Bid + Performance + Advance', desc: 'Тендерная гарантия, гарантия исполнения и возврата аванса имеют разные цели. Проверьте допустимого эмитента, форму и требования договора.', tag: 'BONDS' },
+        { title: 'Retention + Customs', desc: 'Отдельно проверьте требования к удержаниям и таможенным гарантиям. Эта страница не подтверждает доступность или приемлемость эмитента.', tag: 'BONDS' },
+        { title: 'DSU / ALoP', desc: 'DSU/ALoP относится к анализу потерь из-за задержки. Возможное расширение, событие, запускающее покрытие, и лимиты подтверждаются отдельно.', tag: 'ОТДЕЛЬНО' },
+        { title: 'Требования финансирующей стороны', desc: 'Проверьте документы и требования заказчика или финансирующей стороны. Эта страница не является заключением о юридическом соответствии проекта.', tag: 'ОТДЕЛЬНО' }
       ],
-      risksTitle: 'Покрываемые риски',
+      risksTitle: 'Риски для проверки',
       risks: [
         { title: 'Пожар, взрыв, молния', desc: 'Разрушения на объекте и материалов' },
         { title: 'Штормы, наводнения, землетрясения', desc: 'Атмосферные явления, оползни' },
         { title: 'Случайные аварии', desc: 'Повреждения конструкций при выполнении' },
         { title: 'Кража, вандализм', desc: 'Потери материалов и оборудования' }
       ],
-      pricingTitle: 'Прозрачные цены - по уровням',
+      pricingTitle: 'Какие сведения подготовить?',
       pricing: [
-        { tier: 'Уровень A', name: 'Top Contractor', range: '0,2% - 0,6%', items: ['Безупречная история', 'Надежная капитализация', 'Контракты FIDIC'] },
-        { tier: 'Уровень B', name: 'Mid Contractor', range: '0,6% - 1,5%', items: ['CAR/EAR включено', 'TPL до €500K', 'Приоритет 24ч'], popular: true },
-        { tier: 'Уровень C', name: 'Entry / Special', range: '1,5% - 4,0%', items: ['CAR + TPL + DSU', 'Комплаенс донора', 'Новая компания'] }
+        { tier: 'Шаг 1', name: 'Описание проекта', range: 'Подготовить', items: ['Деятельность и работы', 'Стоимость и место работ', 'Условия договоров'] },
+        { tier: 'Шаг 2', name: 'Предлагаемые условия', range: 'Проверить', items: ['Риски и исключения', 'Лимиты и франшизы', 'Период и премия'], popular: true },
+        { tier: 'Шаг 3', name: 'Нужные подтверждения', range: 'Получить', items: ['Согласие страховщика', 'Требования заказчика', 'Документы и сроки действия'] }
       ]
     },
     en: {
       title: 'Construction Shield 360',
-      subtitle: 'CAR/EAR + Bonds | ING Broker Moldova',
-      heroTitle: 'Construction Insurance + Guarantees',
-      heroDesc: 'Integrated CAR/EAR + Bid/Performance/Advance Bonds package. All Risks coverage. Bond issuance in 24-48 hours. International donor compliance.',
-      cta: 'Request Quote',
-      details: 'Product Details',
+      subtitle: 'CAR/EAR and bond assessment | ING Broker Moldova',
+      heroTitle: 'Construction Risks + Bond Requirements',
+      heroDesc: 'Review CAR/EAR risks and contractual bond requirements separately. Availability, limits, timing and document acceptance must be confirmed for the individual project.',
+      cta: 'Discuss your project',
+      details: 'Points to check',
       stats: [
-        { val: '24-48h', label: 'Bond Issuance' },
-        { val: '€500K+', label: 'Max Limit' },
-        { val: '8+', label: 'Years Experience' }
+        { val: 'Risks', label: 'To assess' },
+        { val: 'Limits', label: 'To confirm' },
+        { val: 'Timing', label: 'To agree' }
       ],
-      ebrdTitle: 'Companies funded by EBRD, IMF, and banks are required to have CAR/EAR insurance',
-      ebrdDesc: 'All construction contracts funded by international or bank loans contain mandatory insurance clauses. Without a CAR/EAR policy, funding is not disbursed.',
-      productsTitle: 'One Platform - 6 Tools',
-      productsSubtitle: 'Construction Shield 360 combines All Risks insurance with contractual guarantees in a single modular package.',
+      ebrdTitle: 'What insurance requirements does the project contract contain?',
+      ebrdDesc: 'Check the client and funder documents: which policies or bonds are required, for what period and in which form. Do not assume that every project has the same obligations.',
+      productsTitle: '6 areas to review',
+      productsSubtitle: 'Construction Shield 360 outlines project review topics; it does not confirm an issued package. Each policy, bond or extension requires separate assessment.',
       products: [
-        { title: 'All Risks - Section I', desc: 'Coverage for works, site materials, temporary structures. Protects investment.', tag: 'CAR/EAR' },
-        { title: 'Third Party Liability - Sect. II', desc: 'Bodily injury and property damage to third parties. Reduces litigation risk.', tag: 'TPL' },
-        { title: 'Bid + Performance + Advance', desc: 'Bid bond (24h) + performance bond up to 15%. Fast access to MTender auctions.', tag: 'BONDS' },
-        { title: 'Retention + Customs', desc: 'Release of retentions and global customs guarantee. Optimizes cash flow.', tag: 'BONDS' },
-        { title: 'DSU / ALoP', desc: 'Loss of profits from delayed commissioning. Protects investor cash flow.', tag: 'OPTIONAL' },
-        { title: 'Donor Compliance Pack', desc: 'BO, sanctions screening, FIDIC - EBRD, EIB, World Bank.', tag: 'OPTIONAL' }
+        { title: 'All Risks - Section I', desc: 'Check declared works, materials and structures, the period, limits and exclusions. All Risks does not mean cover for every situation.', tag: 'CAR/EAR' },
+        { title: 'Third Party Liability - Sect. II', desc: 'Check insured parties, third-party liability, the limit and exclusions of this section.', tag: 'TPL' },
+        { title: 'Bid + Performance + Advance', desc: 'Bid, performance and advance payment bonds serve different purposes. Check the accepted issuer, wording and contract requirements.', tag: 'BONDS' },
+        { title: 'Retention + Customs', desc: 'Review retention and customs guarantee requirements separately. This page does not confirm availability or acceptance of an issuer.', tag: 'BONDS' },
+        { title: 'DSU / ALoP', desc: 'DSU/ALoP concerns assessment of delay-related losses. Any extension, triggering event and limits must be confirmed separately.', tag: 'SEPARATE' },
+        { title: 'Funder requirements', desc: 'Check client or funder documents and requirements. This page does not certify the legal compliance of a project.', tag: 'SEPARATE' }
       ],
-      risksTitle: 'Covered Risks',
+      risksTitle: 'Risks to check',
       risks: [
         { title: 'Fire, Explosion, Lightning', desc: 'Damage to works and materials' },
         { title: 'Storms, Floods, Earthquakes', desc: 'Atmospheric phenomena, landslides' },
         { title: 'Accidental Damage', desc: 'Structural damage during execution' },
         { title: 'Theft, Vandalism', desc: 'Loss of materials and equipment' }
       ],
-      pricingTitle: 'Transparent Pricing - Tiers',
+      pricingTitle: 'What information should you prepare?',
       pricing: [
-        { tier: 'Tier A', name: 'Top Contractor', range: '0.2% - 0.6%', items: ['Impeccable history', 'Solid capitalization', 'FIDIC contracts'] },
-        { tier: 'Tier B', name: 'Mid Contractor', range: '0.6% - 1.5%', items: ['CAR/EAR included', 'TPL up to €500K', '24h priority issuance'], popular: true },
-        { tier: 'Tier C', name: 'Entry / Special', range: '1.5% - 4.0%', items: ['CAR + TPL + DSU', 'Donor compliance', 'New company'] }
+        { tier: 'Step 1', name: 'Project description', range: 'Document', items: ['Activity and works', 'Values and location', 'Relevant contracts'] },
+        { tier: 'Step 2', name: 'Proposed terms', range: 'Review', items: ['Risks and exclusions', 'Limits and deductibles', 'Period and premium'], popular: true },
+        { tier: 'Step 3', name: 'Required confirmations', range: 'Obtain', items: ['Insurer acceptance', 'Client requirements', 'Documents and validity'] }
       ]
     }
   };
@@ -189,56 +189,56 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
       ? [
           {
             question: 'Ce este asigurarea CAR/EAR în Moldova?',
-            answer: 'Asigurarea CAR (Contractors All Risks) acoperă lucrările de construcții civile, iar EAR (Erection All Risks) acoperă montajul de utilaje și echipamente industriale. Ambele sunt obligatorii pentru contractele finanțate de BERD, BEI sau Banca Mondială și acoperă toate riscurile fizice pe durata execuției.'
+            answer: 'CAR (Contractors All Risks) privește riscurile lucrărilor de construcții, iar EAR (Erection All Risks) riscurile de montaj. Obiectul, perioada, limitele, franșizele și excluderile se confirmă în poliță. Cerințele beneficiarului și finanțatorului se verifică în contractul concret; nu există acoperire automată pentru orice eveniment.'
           },
           {
             question: 'Cât costă asigurarea CAR/EAR în Moldova?',
-            answer: 'Tariful depinde de tipul proiectului, valoarea contractului și istoricul contractorului. Orientativ: 0,2% - 0,6% din valoarea contractului pentru contractori cu istoric solid (Tier A), 0,6% - 1,5% pentru Mid Contractor (Tier B) și 1,5% - 4,0% pentru proiecte speciale sau companii noi (Tier C). Solicitați o ofertă exactă - o emitem în 24 de ore.'
+            answer: 'Prima este suma plătită pentru asigurare. Asigurătorul o stabilește după analiza proiectului și a condițiilor solicitate. Pagina nu prezintă tarife sau un termen garantat. Compară prima împreună cu limitele, franșiza și excluderile.'
           },
           {
-            question: 'Ce garanții de construcții (Bonds) puteți emite și în cât timp?',
-            answer: 'ING Broker emite Bid Bond (garanție de ofertă) în 24 de ore, Performance Bond (bună execuție) și Advance Payment Bond în 24-48 de ore. Limita maximă este €500.000 per bond. Toate garanțiile sunt conforme cu cerințele MTender și cu standardele FIDIC ale donatorilor internaționali.'
+            question: 'Ce trebuie verificat pentru o garanție contractuală?',
+            answer: 'Verifică tipul garanției, emitentul acceptat, suma, perioada, formularea și cerințele beneficiarului. Disponibilitatea, aprobarea și termenul se confirmă separat. Insurance ING Broker SRL este broker; această pagină nu confirmă emiterea unei garanții sau acceptarea ei la o licitație.'
           }
         ]
       : lang === 'ru'
       ? [
           {
             question: 'Что такое страхование CAR/EAR в Молдове?',
-            answer: 'Страхование CAR (Contractors All Risks) покрывает гражданское строительство, а EAR (Erection All Risks) - монтаж промышленного оборудования. Оба обязательны для контрактов, финансируемых ЕБРР, ЕИБ или Всемирным банком, и покрывают все физические риски в период строительства.'
+            answer: 'CAR (Contractors All Risks) относится к рискам строительных работ, а EAR (Erection All Risks) - к рискам монтажа. Объект, период, лимиты, франшизы и исключения подтверждаются в полисе. Требования заказчика и финансирующей стороны проверяются по конкретному договору; автоматического покрытия любого события нет.'
           },
           {
             question: 'Сколько стоит страхование CAR/EAR в Молдове?',
-            answer: 'Тариф зависит от типа проекта, стоимости контракта и истории подрядчика. Ориентировочно: 0,2%-0,6% для подрядчиков с хорошей репутацией (Уровень A), 0,6%-1,5% для среднего подрядчика (Уровень B), 1,5%-4,0% для специальных проектов (Уровень C). Запросите точное предложение - выдадим за 24 часа.'
+            answer: 'Премия - сумма, уплачиваемая за страхование. Страховщик определяет ее после анализа проекта и запрошенных условий. Страница не содержит тарифов или гарантированного срока. Сравнивайте премию вместе с лимитами, франшизой и исключениями.'
           },
           {
-            question: 'Какие строительные гарантии вы выдаете и как быстро?',
-            answer: 'ING Broker выдает Bid Bond за 24 часа, Performance Bond и Advance Payment Bond за 24-48 часов. Максимальный лимит - €500 000 на гарантию. Все гарантии соответствуют требованиям MTender и стандартам FIDIC международных доноров.'
+            question: 'Что проверить для договорной гарантии?',
+            answer: 'Проверьте вид гарантии, допустимого эмитента, сумму, период, формулировки и требования заказчика. Доступность, одобрение и срок подтверждаются отдельно. Insurance ING Broker SRL является брокером; страница не подтверждает выдачу гарантии или ее принятие на тендере.'
           }
         ]
       : [
           {
             question: 'What is CAR/EAR insurance in Moldova?',
-            answer: 'CAR (Contractors All Risks) insurance covers civil construction works, while EAR (Erection All Risks) covers the installation of industrial machinery and equipment. Both are mandatory for contracts funded by EBRD, EIB, or the World Bank and cover all physical risks during the execution period.'
+            answer: 'CAR (Contractors All Risks) concerns construction risks, while EAR (Erection All Risks) concerns installation risks. The insured subject, period, limits, deductibles and exclusions must be confirmed in the policy. Check client and funder requirements against the actual contract; cover for every event is not automatic.'
           },
           {
             question: 'How much does CAR/EAR insurance cost in Moldova?',
-            answer: 'The rate depends on project type, contract value, and contractor history. Indicatively: 0.2%-0.6% for contractors with solid track records (Tier A), 0.6%-1.5% for mid-tier contractors (Tier B), and 1.5%-4.0% for special projects or new companies (Tier C). Request an exact quote - we issue it within 24 hours.'
+            answer: 'The premium is the amount paid for insurance. The insurer determines it after assessing the project and requested terms. This page provides neither rates nor a guaranteed turnaround. Compare the premium alongside limits, deductibles and exclusions.'
           },
           {
-            question: 'What construction bonds do you issue and how quickly?',
-            answer: 'ING Broker issues Bid Bonds within 24 hours, Performance Bonds and Advance Payment Bonds within 24-48 hours. The maximum limit is €500,000 per bond. All bonds comply with MTender requirements and the FIDIC standards of international donors.'
+            question: 'What should be checked for a contractual bond?',
+            answer: 'Check the bond type, accepted issuer, amount, period, wording and client requirements. Availability, approval and timing need separate confirmation. Insurance ING Broker SRL is a broker; this page confirms neither bond issuance nor acceptance at a tender.'
           }
         ]
   );
 
   return (
-    <div className="bg-slate-50 min-h-screen font-sans text-slate-900">
+    <main className="bg-slate-50 min-h-screen font-sans text-slate-900">
       <SEO
         title={c.title}
         description={c.heroDesc}
         lang={lang}
       />
-      <SchemaMarkup schemas={[carEarServiceSchema, carEarBreadcrumb, carEarFaqSchema]} />
+      <SchemaMarkup schemas={[carEarServiceSchema, carEarBreadcrumb]} />
       {/* Back to Home Button */}
       <div className="fixed top-32 left-6 z-50">
         <motion.button
@@ -291,10 +291,10 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
               {c.heroDesc}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
-              <button className="px-10 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 group">
+              <button onClick={() => navigate('/contact')} className="px-10 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 group">
                 {c.cta} <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="px-10 py-4 bg-white/10 border border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-all backdrop-blur-md">
+              <button onClick={() => document.getElementById('detalii-program')?.scrollIntoView({behavior:'smooth'})} className="px-10 py-4 bg-white/10 border border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-all backdrop-blur-md">
                 {c.details}
               </button>
             </div>
@@ -321,7 +321,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
             </div>
             <div className="flex-grow">
               <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 text-primary-light px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6">
-                {lang === 'ro' ? 'Cerință Obligatorie' : lang === 'ru' ? 'Обязательное требование' : 'Mandatory Requirement'}
+                {lang === 'ro' ? 'Cerințe de verificat' : lang === 'ru' ? 'Требования для проверки' : 'Requirements to check'}
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight mb-6 leading-tight">
                 {c.ebrdTitle}
@@ -335,7 +335,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
       </section>
 
       {/* Products Grid */}
-      <section className="py-32 max-w-7xl mx-auto px-6">
+      <section id="detalii-program" className="py-32 max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-6">{c.productsTitle}</h2>
           <p className="text-lg text-slate-500 font-light">{c.productsSubtitle}</p>
@@ -388,8 +388,8 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
                 className="rounded-3xl shadow-2xl"
               />
               <div className="absolute -bottom-10 -left-10 bg-primary p-8 rounded-2xl text-white shadow-xl hidden md:block">
-                <div className="text-4xl font-bold mb-1">All Risks</div>
-                <div className="text-xs uppercase tracking-widest font-bold opacity-70">Coverage Standard</div>
+                <div className="text-4xl font-bold mb-1">{lang === 'ro' ? 'Condiții' : lang === 'ru' ? 'Условия' : 'Terms'}</div>
+                <div className="text-xs uppercase tracking-widest font-bold opacity-70">{lang === 'ro' ? 'De verificat' : lang === 'ru' ? 'Для проверки' : 'To review'}</div>
               </div>
             </div>
           </div>
@@ -411,7 +411,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full">
-                    Popular
+                    {lang === 'ro' ? 'De analizat' : lang === 'ru' ? 'Для анализа' : 'For review'}
                   </div>
                 )}
                 <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">{plan.tier}</div>
@@ -426,7 +426,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
                     </li>
                   ))}
                 </ul>
-                <button className={`w-full py-4 rounded-xl font-bold transition-all ${plan.popular ? 'bg-primary text-white hover:bg-primary-dark shadow-lg shadow-primary/20' : 'bg-slate-100 text-slate-900 hover:bg-slate-200'}`}>
+                <button onClick={() => navigate('/contact')} className={`w-full py-4 rounded-xl font-bold transition-all ${plan.popular ? 'bg-primary text-white hover:bg-primary-dark shadow-lg shadow-primary/20' : 'bg-slate-100 text-slate-900 hover:bg-slate-200'}`}>
                   {c.cta}
                 </button>
               </div>
@@ -445,16 +445,16 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
             {lang === 'ro' ? 'Pregătit pentru următorul proiect?' : lang === 'ru' ? 'Готовы к следующему проекту?' : 'Ready for your next project?'}
           </h2>
           <p className="text-xl text-white/80 font-light mb-12">
-            {lang === 'ro' ? 'Solicită o consultație gratuită. Analizăm documentația și emitem garanțiile înainte de deadline.' : lang === 'ru' ? 'Запросите бесплатную консультацию. Мы проанализируем документацию и выдадим гарантии до дедлайна.' : 'Request a free consultation. We analyze documentation and issue guarantees before the deadline.'}
+            {lang === 'ro' ? 'Trimite descrierea proiectului și cerințele contractuale. Confirmăm ce poate fi analizat, documentele și eventualele costuri, fără promisiunea emiterii unei garanții.' : lang === 'ru' ? 'Отправьте описание проекта и договорные требования. Уточним возможности анализа, документы и возможные расходы, без обещания выдачи гарантии.' : 'Send the project description and contractual requirements. We will clarify the scope of assessment, documents and any costs, without promising bond issuance.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-12 py-5 bg-white text-primary font-bold rounded-xl hover:bg-slate-100 transition-all shadow-2xl">
+            <button onClick={() => navigate('/contact')} className="px-12 py-5 bg-white text-primary font-bold rounded-xl hover:bg-slate-100 transition-all shadow-2xl">
               {c.cta}
             </button>
-            <button className="px-12 py-5 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3">
+            <a href="tel:+37379030209" className="px-12 py-5 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3">
               <Phone size={20} />
               {lang === 'ro' ? 'Sună acum' : lang === 'ru' ? 'Позвонить' : 'Call now'}
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -465,7 +465,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
           <div className="grid md:grid-cols-3 gap-12 text-white/40 text-xs">
             <div className="flex items-center gap-3">
               <MapPin size={18} className="text-primary" />
-              9, str. Pan Halippa, Chisinau, R. Moldova
+              municipiul Chișinău, strada Pan Halippa 9, Republica Moldova
             </div>
             <div className="flex items-center gap-3">
               <Mail size={18} className="text-primary" />
@@ -478,6 +478,6 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 };

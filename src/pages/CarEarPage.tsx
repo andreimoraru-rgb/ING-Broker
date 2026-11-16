@@ -27,16 +27,15 @@ interface CarEarPageProps {
 const B2BLeadForm: React.FC<{ title: string }> = ({ title }) => (
   <div className="bg-white border border-gray-200 p-8 shadow-lg">
     <h3 className="text-2xl font-bold text-gray-900 mb-2">{title}</h3>
-    <p className="text-gray-500 text-sm mb-6">Completează datele de mai jos - durează 2 minute. Răspuns în 15 minute.</p>
+    <p className="text-gray-500 text-sm mb-6">Completează datele de bază despre proiect.</p>
     <B2BQuoteForm
       lang="ro"
       source="car_ear_page"
       products={[{ key: 'car-ear', label: 'Construcții CAR/EAR' }]}
       defaultProduct="car-ear"
       showProjectValue
-      submitLabel="Calculez costul pentru șantierul meu"
+      submitLabel="Solicit analiza șantierului meu"
       messagePlaceholder="Tipul lucrărilor, durata, locația șantierului..."
-      successMessage="Un consultant ING Broker te va contacta în maximum 15 minute."
     />
   </div>
 );
@@ -82,7 +81,7 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
     {
       icon: <Shield size={20} className="text-red-600" />,
       title: 'Daune la echipamente de montaj',
-      desc: 'Acoperire pentru utilaje de construcție și echipamente de ridicare (opțional)'
+      desc: 'Includerea utilajelor și echipamentelor de ridicare se confirmă separat'
     }
   ];
 
@@ -90,52 +89,53 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
     {
       num: '01',
       title: 'Trimiți datele proiectului',
-      desc: 'Valoarea contractului, durata execuției, locația șantierului, tipul lucrărilor - un email sau mesaj WhatsApp. Durează 5 minute.',
-      time: '~ 5 minute'
+      desc: 'Prezintă valoarea și durata proiectului, locația și tipul lucrărilor. Confirmăm documentele suplimentare necesare pentru analiza riscului.',
+      time: 'Datele de bază'
     },
     {
       num: '02',
       title: 'Primești oferte comparate',
-      desc: 'Comparăm ofertele de la Acord Grup, Asterra Grup, Moldasig VIG și ceilalți asigurători autorizați CNPF. Selectăm tariful optim pentru proiectul tău.',
-      time: '~ 24 ore'
+      desc: 'Solicităm ofertele disponibile pentru proiect și comparăm prima, riscurile incluse, limitele, franșizele și excluderile.',
+      time: 'După evaluarea riscului'
     },
     {
       num: '03',
-      title: 'Semnezi polița și lucrezi liniștit',
-      desc: 'Emiterea se face digital sau la sediul nostru. Polița CAR/EAR este activă și conformă cerințelor băncilor finanțatoare.',
-      time: '~ 1-2 zile'
+      title: 'Verifici și accepți condițiile',
+      desc: 'Înainte de începerea acoperirii, verifică emiterea, perioada și condițiile de plată. Cerințele finanțatorului se compară separat cu polița propusă.',
+      time: 'După confirmarea asigurătorului'
     }
   ];
 
   const faqs = [
     {
       q: 'Este obligatorie asigurarea CAR/EAR în Moldova?',
-      a: 'Nu este obligatorie prin lege pentru toate proiectele, dar este cerută obligatoriu de băncile finanțatoare și de donatorii internaționali (BEI, BERD). Pentru proiectele publice mari, caietul de sarcini impune adesea această asigurare. Practic, orice proiect cu finanțare externă sau bancară nu poate fi demarat fără polița CAR/EAR.'
+      a: 'Nu deduce obligația de asigurare doar din faptul că proiectul primește finanțare bancară sau externă. Verifică cerințele aplicabile proiectului, contractul, caietul de sarcini și condițiile finanțatorului. Tipul de poliță, riscurile, limitele și persoanele asigurate trebuie confirmate pentru proiectul concret.'
     },
     {
       q: 'Cât timp durează să emiți o poliță CAR/EAR?',
-      a: 'Pentru proiecte standard (până la 5 mil. MDL), polița se poate emite în 24-48 ore lucrătoare. Pentru proiecte mari sau complexe, procesul de underwriting poate dura 3-5 zile lucrătoare. ING Broker gestionează întregul proces cu asigurătorii, tu primești polița gata emisă.'
+      a: 'Termenul depinde de complexitatea proiectului, documentele complete și evaluarea asigurătorului. Pot fi necesare întrebări suplimentare sau o inspecție. Brokerul sprijină pregătirea informațiilor, dar nu garantează emiterea ori începerea acoperirii la un termen fix.'
     },
     {
       q: 'Ce documente sunt necesare pentru asigurarea CAR/EAR?',
-      a: 'Documentele de bază sunt: contractul de antrepriză sau devizul de lucrări, planul general al șantierului și localizarea geografică, CV-ul antreprenorului și lista utilajelor principale. ING Broker îți trimite lista completă și te ghidează prin întregul proces de documentare.'
+      a: 'Pentru început, pregătește contractul sau devizul, descrierea și amplasarea lucrărilor, durata și valorile declarate. Asigurătorul poate solicita planuri, informații despre antreprenor, măsuri de protecție și lista utilajelor. Lista exactă se confirmă după analiza proiectului.'
     },
     {
       q: 'Putem asigura și subantreprenorii în aceeași poliță?',
-      a: 'Da, polița CAR/EAR poate acoperi toți subantreprenorii implicați în proiect, printr-o clauză de extindere a acoperirii. Aceasta simplifică administrarea și reduce costurile față de polițe separate pentru fiecare subcontractant.'
+      a: 'Participarea subantreprenorilor trebuie declarată și verificată în oferta asigurătorului. Cere confirmarea persoanelor asigurate, a activităților și a eventualelor clauze privind răspunderea între participanți. Nu presupune că toți sunt incluși automat sau că o poliță comună este întotdeauna mai ieftină.'
     },
     {
       q: 'Ce se întâmplă dacă durata proiectului se extinde?',
-      a: 'Polița CAR/EAR poate fi prelungită cu o primă suplimentară proporțională cu perioada adăugată. Este important să notifici asigurătorul - prin ING Broker - înainte de expirarea perioadei asigurate inițiale. Gestionăm noi această comunicare pentru tine.'
+      a: 'Anunță modificarea calendarului înainte de expirarea poliței și solicită analiza prelungirii. Asigurătorul confirmă dacă acceptă schimbarea, perioada, condițiile și eventuala primă suplimentară. Prelungirea nu este automată, iar costul nu se presupune strict proporțional.'
     }
   ];
 
   return (
-    <div className="bg-white min-h-screen font-sans text-gray-900">
+    <main className="bg-white min-h-screen font-sans text-gray-900">
       <SEO
-        title="Asigurare CAR/EAR Construcții Moldova | ING Broker - Broker Licențiat CNPF"
-        description="Asigurare CAR/EAR pentru șantiere și proiecte de construcții în Moldova. Broker licențiat CNPF. Ofertă comparativă de la 6 asigurători autorizați. Răspuns în 15 minute."
+        title="Asigurare CAR/EAR pentru construcții în Moldova | ING Broker"
+        description="Analiza asigurării CAR/EAR pentru construcții și montaj în Moldova. Vezi documentele, riscurile, limitele și excluderile de verificat înainte de ofertare."
         lang={lang}
+        includeLanguageAlternates={false}
       />
 
       {/* Buton înapoi */}
@@ -180,7 +180,7 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
           >
             <div className="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 text-white px-4 py-1.5 text-xs font-bold mb-8">
               <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-              Broker licențiat CNPF - 6 asigurători parteneri
+              Insurance ING Broker SRL - Construcții și montaj
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tighter leading-[0.95] mb-6">
@@ -188,22 +188,22 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
               <span className="text-red-500">Construcții în Moldova</span>
             </h1>
             <p className="text-xl text-white/70 font-light leading-relaxed mb-8 max-w-2xl">
-              Protecție completă pentru șantierul tău - de la materiale și lucrări în execuție
-              la răspunderea față de terți. Ofertă comparativă în 15 minute.
+              Analizăm riscurile șantierului - materiale, lucrări în execuție și răspundere
+              față de terți. Acoperirea depinde de condițiile acceptate de asigurător.
             </p>
 
             <div className="grid grid-cols-3 gap-8 border-t border-white/10 pt-8 mb-10">
               <div>
-                <div className="text-3xl font-bold text-white mb-1">15 min</div>
-                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">Răspuns ofertă</div>
+                <div className="text-3xl font-bold text-white mb-1">Lucrări</div>
+                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">De descris</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white mb-1">6</div>
-                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">Asigurători CNPF</div>
+                <div className="text-3xl font-bold text-white mb-1">Riscuri</div>
+                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">De evaluat</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-white mb-1">24h</div>
-                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">Emitere poliță</div>
+                <div className="text-3xl font-bold text-white mb-1">Limite</div>
+                <div className="text-[10px] text-white/40 uppercase tracking-widest font-bold">De verificat</div>
               </div>
             </div>
 
@@ -211,7 +211,7 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
               onClick={() => document.getElementById('formular')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-10 py-4 bg-red-600 text-white font-bold uppercase text-xs tracking-widest hover:bg-red-700 transition-all shadow-xl flex items-center gap-3 group"
             >
-              Calculez costul pentru șantierul meu
+              Solicit analiza șantierului meu
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
@@ -227,14 +227,14 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
                 Informații esențiale
               </span>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tighter mb-6">
-                Ce este asigurarea CAR/EAR și de ce o ai nevoie?
+                Ce este asigurarea CAR/EAR și când o analizezi?
               </h2>
               <div className="prose prose-lg text-gray-600 space-y-4">
                 <p>
-                  <strong>CAR</strong> (Contractor's All Risk - Toate Riscurile Antreprenorului) și
-                  <strong> EAR</strong> (Erection All Risk - Toate Riscurile de Montaj) sunt două
-                  tipuri de asigurare specifice industriei construcțiilor. Acoperă în mod cuprinzător
-                  daunele care pot apărea pe durata execuției unui proiect de construcție sau montaj.
+                  <strong>CAR</strong> (Contractors All Risks - riscuri de construcții) și
+                  <strong> EAR</strong> (Erection All Risks - riscuri de montaj) sunt două
+                  tipuri de asigurare pentru proiecte de construcție sau montaj. Riscurile incluse,
+                  perioada, limitele și excluderile se verifică în condițiile poliței.
                 </p>
                 <p>
                   CAR se aplică proiectelor de construcție civilă și industrială - clădiri rezidențiale,
@@ -243,9 +243,9 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
                   conducte, rețele electrice.
                 </p>
                 <p>
-                  Dacă proiectul tău este finanțat de BEI, BERD, fonduri europene sau printr-un credit
-                  bancar, polița CAR/EAR nu este opțională - este o condiție obligatorie pentru debursarea
-                  finanțării. Contractele de tip FIDIC impun explicit această asigurare.
+                  Pentru proiecte finanțate de bănci sau donatori, verifică cerințele de asigurare
+                  din contractele concrete, inclusiv documentele de tip FIDIC utilizate.
+                  Finanțarea nu dovedește singură că orice poliță CAR/EAR îndeplinește aceste cerințe.
                 </p>
               </div>
             </div>
@@ -286,23 +286,23 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
                     <FileText size={24} className="text-red-600" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 mb-2">Ce acoperă polița?</h3>
+                    <h3 className="font-bold text-gray-900 mb-2">Ce verifici în poliță?</h3>
                     <ul className="space-y-2 text-sm text-gray-600">
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 bg-red-500 mt-2 flex-shrink-0" />
-                        Lucrările în execuție și materialele pe șantier
+                        Lucrările și materialele incluse în obiectul asigurării
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 bg-red-500 mt-2 flex-shrink-0" />
-                        Echipamentele și utilajele de construcție
+                        Includerea separată a echipamentelor și utilajelor
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 bg-red-500 mt-2 flex-shrink-0" />
-                        Răspunderea față de terți în perimetrul șantierului
+                        Secțiunea și limita pentru răspunderea față de terți
                       </li>
                       <li className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 bg-red-500 mt-2 flex-shrink-0" />
-                        Valori asigurate: 500.000 MDL - zeci de milioane EUR
+                        Valorile declarate și limitele acceptate de asigurător
                       </li>
                     </ul>
                   </div>
@@ -315,10 +315,10 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
                     <Clock size={24} className="text-white" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white mb-2">Cerință obligatorie BEI / BERD</h3>
+                    <h3 className="font-bold text-white mb-2">Cerințele finanțatorului</h3>
                     <p className="text-white/80 text-sm">
-                      Toate proiectele finanțate prin credite internaționale sau bancare conțin
-                      clauze obligatorii de asigurare CAR/EAR. Fără poliță, finanțarea nu se debursează.
+                      Compară cerințele contractului de finanțare cu oferta de asigurare.
+                      Confirmă separat limitele, perioadele și persoanele care trebuie incluse.
                     </p>
                   </div>
                 </div>
@@ -333,14 +333,14 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-xs font-bold uppercase tracking-[0.3em] text-red-600 mb-4 block">
-              Acoperire completă
+              Riscuri de analizat
             </span>
             <h2 className="text-4xl font-bold text-gray-900 tracking-tighter mb-4">
-              Ce riscuri acoperă asigurarea CAR/EAR?
+              Ce riscuri verifici pentru asigurarea CAR/EAR?
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
-              Polița CAR/EAR este o asigurare "All Risks" - acoperă toate riscurile,
-              cu excepția celor explicit excluse în condițiile de asigurare.
+              Denumirea "All Risks" nu înseamnă acoperire pentru orice situație.
+              Evenimentele de mai jos se verifică în ofertă, împreună cu obiectul, perioada, limitele și excluderile.
             </p>
           </div>
 
@@ -364,12 +364,12 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
           </div>
 
           <div className="bg-gray-100 border border-gray-200 p-6">
-            <h3 className="font-bold text-gray-700 mb-3">Excluderi principale (ce NU acoperă)</h3>
+            <h3 className="font-bold text-gray-700 mb-3">Excluderi și limitări de verificat</h3>
             <div className="grid md:grid-cols-2 gap-2 text-sm text-gray-500">
-              <div>- Uzura normală și deteriorarea treptată</div>
-              <div>- Defecte de fabricație ascunse (fără opțiunea EAR)</div>
-              <div>- Pierderi financiare din întârzierea lucrărilor (se acoperă cu extensia DSU)</div>
-              <div>- Daune cauzate intenționat de beneficiar</div>
+              <div>- Tratamentul uzurii normale și al deteriorării treptate</div>
+              <div>- Defectele de proiectare, materiale sau fabricație și daunele rezultate</div>
+              <div>- Pierderile din întârziere: o eventuală extensie DSU se verifică separat</div>
+              <div>- Excluderile privind faptele intenționate și persoanele vizate</div>
             </div>
           </div>
         </div>
@@ -386,7 +386,7 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
               Cum obții asigurarea CAR/EAR prin ING Broker?
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
-              Fără birocrație inutilă. Tu te ocupi de proiect, noi gestionăm asigurarea.
+              Brokerul ajută la pregătirea informațiilor și compararea ofertelor. Asigurătorul confirmă acceptarea riscului și condițiile.
             </p>
           </div>
 
@@ -423,31 +423,31 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-xs font-bold uppercase tracking-[0.3em] text-red-400 mb-4 block">
-                Tarife orientative
+                Cum se stabilește prima
               </span>
               <h2 className="text-4xl font-bold text-white tracking-tighter mb-6">
                 Cât costă asigurarea CAR/EAR în Moldova?
               </h2>
               <p className="text-gray-300 leading-relaxed mb-8">
-                Prima de asigurare CAR/EAR se calculează ca procent din valoarea contractului
-                de construcție. Procentul variază între <strong className="text-white">0,1% - 0,8%</strong> în
-                funcție de mai mulți factori.
+                Prima de asigurare este suma plătită pentru poliță. Asigurătorul o stabilește
+                după <strong className="text-white">evaluarea proiectului</strong> și
+                condițiile solicitate. Nu există un tarif confirmat pentru proiectul tău pe această pagină.
               </p>
 
               <div className="bg-red-600 p-6 mb-8">
-                <h3 className="font-bold text-white mb-4">Exemplu orientativ</h3>
+                <h3 className="font-bold text-white mb-4">Date pentru calculul ofertei</h3>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-white/70">Valoare contract construcție:</span>
-                    <span className="font-bold">2.000.000 MDL</span>
+                    <span className="text-white/70">Valoarea proiectului:</span>
+                    <span className="font-bold">Conform documentelor</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-white/70">Prima estimată (0,1% - 0,8%):</span>
-                    <span className="font-bold">2.000 - 16.000 MDL/an</span>
+                    <span className="text-white/70">Prima de asigurare:</span>
+                    <span className="font-bold">Confirmată în ofertă</span>
                   </div>
                 </div>
                 <p className="text-white/60 text-xs mt-3">
-                  * Prețuri ORIENTATIVE. Oferta exactă se calculează după analiza proiectului.
+                  Franșiza este partea din daună suportată de asigurat, potrivit contractului. Verific-o împreună cu prima, limitele și excluderile.
                 </p>
               </div>
 
@@ -476,15 +476,15 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
 
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white mb-6">
-                Asigurători parteneri autorizați CNPF
+                Elemente de comparat în ofertă
               </h3>
               {[
-                { name: 'Acord Grup SA', specialty: 'Proiecte industriale mari' },
-                { name: 'Asterra Grup SA', specialty: 'Construcții rezidențiale și comerciale' },
-                { name: 'Moldasig VIG SA', specialty: 'Infrastructură și utilități' },
-                { name: 'Moldcargo SA', specialty: 'Construcții speciale' },
-                { name: 'Donaris VIG SA', specialty: 'Proiecte cu finanțare internațională' },
-                { name: 'Grawe Carat SA', specialty: 'Montaj echipamente industriale' }
+                { name: 'Obiectul asigurării', specialty: 'Lucrări, materiale și valori declarate' },
+                { name: 'Perioada de asigurare', specialty: 'Execuție, testare și alte etape acceptate' },
+                { name: 'Limite și franșize', specialty: 'Sume și participarea proprie la daună' },
+                { name: 'Excluderi', specialty: 'Situații și costuri neacoperite' },
+                { name: 'Cerințe contractuale', specialty: 'Condițiile beneficiarului și finanțatorului' },
+                { name: 'Procedura de daună', specialty: 'Notificare, documente și obligațiile părților' }
               ].map((ins, i) => (
                 <div key={i} className="flex items-center justify-between py-3 border-b border-white/10">
                   <div>
@@ -495,7 +495,7 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
                 </div>
               ))}
               <p className="text-xs text-gray-500 pt-2">
-                ING Broker compară simultan ofertele tuturor celor 6 asigurători autorizați CNPF.
+                ING Broker este intermediarul. Acceptarea riscului și despăgubirea aparțin asigurătorului, potrivit contractului.
               </p>
             </div>
           </div>
@@ -557,13 +557,13 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
               Solicită ofertă
             </span>
             <h2 className="text-4xl font-bold text-gray-900 tracking-tighter mb-4">
-              Obții oferta pentru proiectul tău
+              Începe analiza proiectului tău
             </h2>
             <p className="text-gray-500">
-              Completează formularul - te contactăm în 15 minute cu ofertele comparative.
+              Completează datele proiectului. Verificăm informațiile și confirmăm pașii necesari; trimiterea formularului nu confirmă emiterea sau acoperirea.
             </p>
           </div>
-          <B2BLeadForm title="Calculez costul asigurării pentru proiectul meu" />
+          <B2BLeadForm title="Solicit analiza asigurării pentru proiectul meu" />
         </div>
       </section>
 
@@ -586,6 +586,6 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 };

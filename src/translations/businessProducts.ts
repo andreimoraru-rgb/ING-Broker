@@ -2,8 +2,8 @@ export const businessProductsTranslations = {
   ro: {
     liability: {
       title: 'Răspunderi generale',
-      subtitle: 'Protecție financiară împotriva daunelor cauzate terților în timpul operațiunilor de afaceri.',
-      intro: 'Un client se poate răni în spațiul companiei sau activitatea ta poate provoca pagube altcuiva. Pentru astfel de situații, verificăm asigurările de răspundere civilă, limitele și excluderile lor.',
+      subtitle: 'Răspunderea civilă față de terți: activități, prejudicii și limite de verificat.',
+      intro: 'Un client se poate răni în spațiul companiei sau activitatea firmei poate afecta bunurile altcuiva. Aceste situații se discută separat de asigurarea propriilor bunuri. Analiza nu confirmă că orice prejudiciu sau activitate poate fi asigurată.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -15,48 +15,48 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Riscurile Produsului',
+          title: 'Riscuri de discutat',
           image: '/analiza-riscurilor.webp',
           items: [
-            'Accidente în incinta companiei (ex: alunecări, căderi) care atrag răspunderea civilă.',
-            'Daune provocate de produsele defecte livrate către consumatori.',
-            'Erori operaționale care afectează proprietatea sau integritatea fizică a terților.',
-            'Pretenții legale costisitoare rezultate din procese de despăgubire.',
-            'Afectarea reputației brandului în urma unor incidente de siguranță.'
+            'Incidente cu vizitatori în incinta companiei, precum alunecări sau căderi.',
+            'Pretenții legate de produse defecte livrate clienților.',
+            'Erori operaționale care pot afecta bunurile sau sănătatea altor persoane.',
+            'Cheltuieli pentru analizarea și apărarea în fața unor pretenții de despăgubire.',
+            'Afectarea reputației companiei după un incident de siguranță.'
           ]
         },
         advantages: {
-          title: 'Avantaje',
+          title: 'Ce poți clarifica',
           items: [
-            'Protejează capitalul și activele companiei de procese de despăgubire ruinătoare.',
-            'Acoperă integral costurile de apărare legală și onorariile avocaților.',
-            'Crește credibilitatea în fața clienților, demonstrând responsabilitate corporativă.',
-            'Facilitează semnarea contractelor comerciale unde asigurarea este obligatorie.',
-            'Flexibilitate totală în adaptarea limitelor de despăgubire la nevoile afacerii.'
+            'Descrierea activităților și amplasamentelor pentru care se solicită analiza.',
+            'Compararea limitelor și a franșizei, adică a părții din daună suportate potrivit contractului.',
+            'Clarificarea cheltuielilor de apărare care pot fi acceptate și a aprobării lor.',
+            'Verificarea cerințelor din contractele comerciale, fără a presupune o obligație generală.',
+            'Identificarea diferențelor dintre răspunderea generală, cea pentru produse și cea profesională.'
           ]
         },
         disadvantages: {
-          title: 'Excepții și Limitări',
+          title: 'Întrebări despre condiții',
           items: [
-            'Nu acoperă daunele cauzate cu intenție sau prin acte ilegale dovedite.',
-            'Exclude accidentele de muncă ale propriilor angajați (necesită polițe specifice).',
-            'Nu acoperă erorile profesionale (necesită asigurare de Răspundere Profesională).',
-            'Exclude daunele provocate de poluare, cu excepția clauzelor speciale negociate.',
-            'Nu acoperă amenzile administrative și penalitățile impuse de autorități.'
+            'Cum sunt tratate faptele intenționate și declarațiile inexacte în documentele propunerii?',
+            'Ce condiții se aplică prejudiciilor suferite de angajați și ce analiză separată este necesară?',
+            'Ce pretenții legate de servicii profesionale sunt acceptate sau excluse?',
+            'Cum sunt tratate poluarea și eventualele clauze suplimentare?',
+            'Ce limite și excluderi privesc cheltuielile de apărare, amenzile sau penalitățile?'
           ]
         }
       },
-      expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
-      essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Te ajutăm să descrii activitatea companiei, să identifici riscurile și să compari ofertele de răspundere civilă.',
-      ctaTitle: 'Protejează-ți afacerea de neprevăzut',
-      ctaCall: 'Solicită ofertă',
+      expertiseTitle: 'Cui îi este utilă analiza?',
+      essentialTitle: 'Cum te ajută brokerul?',
+      whyUs: 'Te ajutăm să descrii activitatea și să pregătești întrebările pentru asigurător. Brokerul explică propunerile disponibile; acceptarea riscului și eventuala despăgubire aparțin asigurătorului, potrivit contractului.',
+      ctaTitle: 'Discută răspunderea civilă a companiei',
+      ctaCall: 'Solicită o analiză',
       ctaEmail: 'Trimite email'
     },
     professional: {
       title: 'Răspundere profesională',
-      subtitle: 'Siguranță în exercitarea profesiei și protecție împotriva erorilor sau omisiunilor.',
-      intro: 'O eroare într-un serviciu poate produce pierderi unui client. Te ajutăm să verifici ce cereri de despăgubire și cheltuieli de apărare pot fi incluse în asigurarea profesiei tale.',
+      subtitle: 'Erori și omisiuni profesionale: pretenții și cheltuieli de apărare de analizat.',
+      intro: 'O eroare într-un serviciu poate produce pierderi unui client. Analiza începe cu serviciile efectiv prestate și cerințele contractelor tale. Disponibilitatea unei soluții pentru profesia, activitatea și teritoriul solicitate trebuie confirmată înainte de ofertare.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -68,7 +68,7 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Riscurile Produsului',
+          title: 'Riscuri de discutat',
           items: [
             'Sfaturi sau consultanță incorectă care duc la pierderi financiare majore pentru clienți.',
             'Erori de proiectare, calcul sau omisiuni în documentația tehnică.',
@@ -78,7 +78,7 @@ export const businessProductsTranslations = {
           ]
         },
         advantages: {
-          title: 'Avantaje',
+          title: 'Ce poți clarifica',
           items: [
             'Compararea propunerilor pe serviciile profesionale declarate de companie.',
             'Clarificarea costurilor de apărare și a limitelor prevăzute în propunere.',
@@ -88,81 +88,81 @@ export const businessProductsTranslations = {
           ]
         },
         disadvantages: {
-          title: 'Excepții și Limitări',
+          title: 'Întrebări despre condiții',
           items: [
-            'Citește excluderile privind faptele intenționate și declarațiile făcute în cerere.',
-            'Cere delimitarea pretențiilor financiare de vătămările corporale și daunele materiale.',
-            'Verifică separat garanțiile de rezultat, estimările și obligațiile asumate prin contractul cu clientul.',
-            'Nu considera amenzile sau penalitățile incluse fără verificarea juridică și contractuală necesară.',
-            'Clarifică distinct riscurile cibernetice; denumirea de răspundere profesională nu confirmă includerea lor.'
+            'Cum sunt tratate faptele intenționate și declarațiile din cerere?',
+            'Cum sunt delimitate pretențiile financiare de vătămările corporale și daunele materiale?',
+            'Ce condiții se aplică garanțiilor de rezultat, estimărilor și obligațiilor asumate față de client?',
+            'Ce prevederi privesc amenzile și penalitățile și ce verificare de specialitate este necesară?',
+            'Ce riscuri cibernetice sunt acceptate ori excluse, fără a presupune că denumirea poliței confirmă includerea lor?'
           ]
         }
       },
-      expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
-      essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Discutăm despre serviciile pe care le oferi și cerințele contractelor tale. Apoi verificăm opțiunile de asigurare, limitele și excluderile.',
-      ctaTitle: 'Asigură-ți viitorul profesional',
-      ctaCall: 'Solicită ofertă',
+      expertiseTitle: 'Cui îi este utilă analiza?',
+      essentialTitle: 'Cum te ajută brokerul?',
+      whyUs: 'Te ajutăm să pregătești descrierea serviciilor și să compari condițiile unor propuneri disponibile. Brokerul nu stabilește răspunderea și nu promite despăgubirea; asigurătorul analizează riscul și pretenția potrivit contractului.',
+      ctaTitle: 'Clarifică riscurile serviciilor profesionale',
+      ctaCall: 'Solicită o analiză',
       ctaEmail: 'Trimite email'
     },
     do: {
       title: 'D&O (Directors & Officers)',
-      subtitle: 'Protecție esențială pentru deciziile manageriale și conducerea companiei.',
-      intro: 'Asigurarea D&O este destinată răspunderii directorilor și administratorilor pentru decizii luate în conducerea companiei. Verificăm ce situații și cheltuieli pot fi incluse în contract.',
+      subtitle: 'Răspunderea directorilor și administratorilor: persoane, decizii și condiții de analizat.',
+      intro: 'D&O privește pretențiile legate de conducerea unei companii, în limitele unui eventual contract. Primul pas este verificarea eligibilității entității, persoanelor și jurisdicțiilor solicitate. Prezentarea nu confirmă disponibilitatea produsului pentru orice companie.',
       industries: {
         title: 'Industrii Vizate',
         items: [
           { title: 'Sectorul Corporativ', desc: 'Companii mari cu structuri complexe de management și consilii de administrație.', image: '/d&o corporate.jpg' },
           { title: 'Servicii Financiare', desc: 'Bănci, fonduri de investiții și instituții financiare nebancare.', image: '/d&o financiar.png' },
           { title: 'Startups și Tech', desc: 'Companii în creștere rapidă care atrag investiții externe.', image: '/Startups și Tech-2.jpg' },
-          { title: 'ONG-uri și Asociații', desc: 'Organizații non-profit unde administratorii poartă răspundere legală.', image: '/ong.jpg' }
+          { title: 'ONG-uri și Asociații', desc: 'Organizații non-profit cu funcții de conducere care trebuie descrise în analiză.', image: '/ong.jpg' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Riscurile Produsului',
+          title: 'Riscuri de discutat',
           image: '/riscuri_business.jpg',
           items: [
-            'Acuzații de management defectuos sau nerespectarea obligațiilor fiduciare.',
-            'Investigații costisitoare ale autorităților de reglementare sau fiscale.',
-            'Pretenții din partea angajaților privind discriminarea sau hărțuirea (EPL).',
-            'Răspunderea personală în caz de insolvență a companiei față de creditori.',
-            'Erori sau omisiuni în raportarea financiară și comunicarea cu investitorii.'
+            'Pretenții legate de decizii de administrare sau de comunicarea cu investitorii.',
+            'Cheltuieli de apărare asociate unor investigații care privesc conducerea.',
+            'Pretenții ale angajaților, care necesită verificarea separată a condițiilor.',
+            'Pretenții față de conducere legate de insolvența companiei.',
+            'Erori sau omisiuni invocate în raportarea financiară.'
           ]
         },
         advantages: {
-          title: 'Avantaje',
+          title: 'Ce poți clarifica',
           items: [
-            'Atrage și reține manageri de top prin oferirea unei plase de siguranță personală.',
-            'Protejează patrimoniul personal al administratorilor împotriva executării silite.',
-            'Acoperă onorariile avocaților și costurile de expertiză în litigii complexe.',
-            'Oferă încredere în luarea deciziilor strategice și asumarea riscurilor de business.',
-            'Protejează imaginea publică a companiei și a echipei de conducere.'
+            'Identificarea persoanelor și funcțiilor pentru care se solicită analiza.',
+            'Delimitarea pretențiilor față de conducători de pierderile proprii ale companiei.',
+            'Compararea limitei cu cheltuielile de apărare și cu partea suportată de asigurat.',
+            'Clarificarea perioadelor și a împrejurărilor care trebuie declarate.',
+            'Verificarea procedurii de notificare și a documentelor unei eventuale pretenții.'
           ]
         },
         disadvantages: {
-          title: 'Excepții și Limitări',
+          title: 'Întrebări despre condiții',
           image: '/excluderi.png',
           items: [
-            'Nu acoperă frauda dovedită, actele intenționate sau folosul necuvenit.',
-            'Exclude vătămările corporale și daunele materiale (acoperite de alte polițe).',
-            'Nu acoperă litigiile sau circumstanțele cunoscute înainte de încheierea poliței.',
-            'Exclude amenzile penale și penalitățile administrative de natură punitivă.',
-            'Nu acoperă daunele ecologice sau de poluare fără clauze specifice.'
+            'Cum sunt tratate frauda, faptele intenționate și avantajele personale necuvenite?',
+            'Ce pretenții pentru vătămări corporale sau daune materiale sunt acceptate ori excluse?',
+            'Ce efect au litigiile și împrejurările cunoscute înainte de încheiere?',
+            'Cum sunt tratate amenzile, penalitățile și cheltuielile aferente investigațiilor?',
+            'Ce prevederi se aplică pretențiilor legate de poluare și activităților din alte jurisdicții?'
           ]
         }
       },
-      expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
-      essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Te ajutăm să verifici cine poate fi asigurat, pentru ce decizii și în ce limite. Îți explicăm și situațiile pe care polița nu le acoperă.',
-      ctaTitle: 'Protejează liderii companiei tale',
-      ctaCall: 'Solicită ofertă',
+      expertiseTitle: 'Cui îi este utilă analiza?',
+      essentialTitle: 'Cum te ajută brokerul?',
+      whyUs: 'Te ajutăm să pregătești structura conducerii și întrebările despre persoane, perioade și limite. Brokerul explică documentele disponibile; asigurătorul decide acceptarea riscului și soluționarea unei pretenții potrivit contractului.',
+      ctaTitle: 'Pregătește analiza răspunderii conducerii',
+      ctaCall: 'Solicită o analiză',
       ctaEmail: 'Trimite email'
     },
     cyber: {
       title: 'Asigurare Cyber',
-      subtitle: 'Protecție împotriva riscurilor cibernetice și a scurgerilor de date.',
-      intro: 'Un atac informatic poate bloca activitatea sau expune datele companiei. Analizăm cerințele de securitate și ce cheltuieli pot fi acoperite printr-o asigurare cyber.',
+      subtitle: 'Riscuri cibernetice: sisteme, date și condiții de asigurare de verificat.',
+      intro: 'Un incident informatic poate bloca activitatea sau expune datele companiei. Analiza începe cu sistemele, copiile de rezervă și dependențele de furnizori. Acest material nu confirmă existența unei oferte cyber sau a unor servicii de intervenție pentru firma ta.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -174,47 +174,47 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Riscurile Produsului',
+          title: 'Riscuri de discutat',
           items: [
-            'Atacuri de tip Ransomware care blochează accesul la datele critice ale firmei.',
-            'Scurgeri de date cu caracter personal care atrag sancțiuni GDPR masive.',
-            'Erori umane sau neglijență internă care compromit securitatea sistemelor.',
-            'Întreruperea totală sau parțială a operațiunilor comerciale din cauze IT.',
-            'Compromiterea iremediabilă a încrederii clienților și a imaginii de brand.'
+            'Atacuri de tip ransomware, care pot bloca accesul la datele firmei.',
+            'Expunerea datelor personale și costuri pentru analizarea incidentului.',
+            'Erori umane sau acces neautorizat care pot compromite sistemele.',
+            'Întreruperea operațiunilor comerciale din cauze informatice.',
+            'Pierderea încrederii clienților după un incident de securitate.'
           ]
         },
         advantages: {
-          title: 'Avantaje',
+          title: 'Ce poți clarifica',
           items: [
-            'Acces instant la echipe de intervenție rapidă (forensics, IT, legal) 24/7.',
-            'Compensarea pierderilor de profit cauzate de indisponibilitatea sistemelor.',
-            'Acoperirea amenzilor regulatorii și a costurilor de notificare a persoanelor vizate.',
-            'Suport specializat în negocierea și gestionarea incidentelor de extorcare.',
-            'Servicii de consultanță PR pentru limitarea daunelor reputaționale.'
+            'Pregătirea inventarului sistemelor și a scenariilor de întrerupere.',
+            'Separarea pierderilor proprii de pretențiile formulate de alte persoane.',
+            'Clarificarea serviciilor de intervenție, a programului și a aprobărilor, dacă sunt propuse.',
+            'Compararea limitelor, a excluderilor și a costurilor care rămân în sarcina companiei.',
+            'Stabilirea întrebărilor despre notificare, documente și comunicarea în timpul incidentului.'
           ]
         },
         disadvantages: {
-          title: 'Excepții și Limitări',
+          title: 'Întrebări despre condiții',
           items: [
-            'Condiționată de existența unor măsuri de securitate de bază (backup, MFA).',
-            'Nu acoperă costurile de îmbunătățire a sistemelor IT după un atac.',
-            'Exclude daunele fizice ale hardware-ului (necesită asigurare de bunuri).',
-            'Nu acoperă actele de război cibernetic sau terorism fără clauze speciale.',
-            'Exclude pierderile financiare cauzate de căderi de tensiune în rețeaua publică.'
+            'Ce măsuri de securitate și ce informații despre copii de rezervă sunt cerute?',
+            'Cum sunt delimitate restaurarea sistemelor și îmbunătățirile tehnice ulterioare?',
+            'Ce condiții se aplică echipamentelor fizice și întreruperilor la furnizori?',
+            'Cum sunt tratate războiul, terorismul și alte evenimente excluse în documente?',
+            'Ce prevederi privesc întreruperile de energie, costurile de notificare și amenzile, fără a presupune includerea lor?'
           ]
         }
       },
-      expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
-      essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Ne spui ce date folosești și cum funcționează sistemele companiei. Te ajutăm să verifici ofertele și măsurile de securitate cerute de asigurători.',
-      ctaTitle: 'Securizează-ți afacerea digitală',
-      ctaCall: 'Solicită ofertă',
+      expertiseTitle: 'Cui îi este utilă analiza?',
+      essentialTitle: 'Cum te ajută brokerul?',
+      whyUs: 'Te ajutăm să pregătești informațiile de risc, fără parole sau baze de clienți, și să formulezi întrebările despre eventualele propuneri. Brokerul nu înlocuiește echipa IT; asigurătorul confirmă eligibilitatea și condițiile contractuale.',
+      ctaTitle: 'Pregătește dosarul de risc cyber',
+      ctaCall: 'Solicită o analiză',
       ctaEmail: 'Trimite email'
     },
     cargo: {
       title: 'Cargo și transport',
-      subtitle: 'Siguranță pentru mărfuri în tranzit împotriva pierderilor sau avariilor.',
-      intro: 'Asigurarea Cargo se referă la mărfurile transportate. Pentru o ofertă, verificăm tipul mărfii, valoarea, traseul și condițiile de transport. Acoperirea depinde de contractul ales.',
+      subtitle: 'Mărfuri în tranzit: valoare, traseu și etape acceptate în contract.',
+      intro: 'Asigurarea CARGO privește mărfurile transportate, potrivit etapelor și riscurilor acceptate în poliță. Analiza pornește de la bunuri, valoare, traseu și cine are interes asupra mărfii. Polița transportatorului nu confirmă singură protecția integrală a încărcăturii.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -226,7 +226,7 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Riscurile Produsului',
+          title: 'Riscuri de discutat',
           items: [
             'Accidente rutiere, feroviare sau maritime care duc la distrugerea mărfii.',
             'Furtul total sau parțial al bunurilor în timpul tranzitului sau depozitării temporare.',
@@ -236,37 +236,37 @@ export const businessProductsTranslations = {
           ]
         },
         advantages: {
-          title: 'Avantaje',
+          title: 'Ce poți clarifica',
           items: [
-            'Protejează investiția financiară în stocuri și materii prime pe tot traseul.',
-            'Posibilitatea încheierii polițelor de tip "All Risks" pentru acoperire maximă.',
-            'Facilitează tranzacțiile internaționale și respectarea condițiilor Incoterms.',
-            'Despăgubire rapidă bazată pe valoarea facturată, fără procese lungi de vinovăție.',
-            'Polițe flexibile adaptate volumului: per transport sau abonament anual deschis.'
+            'Descrierea mărfii, valorii și etapelor de transport care trebuie analizate.',
+            'Compararea riscurilor și excluderilor, fără a interpreta denumirea All Risks ca protecție fără limite.',
+            'Clarificarea persoanei care solicită asigurarea potrivit condițiilor de livrare convenite.',
+            'Verificarea bazei de evaluare și a documentelor necesare unei eventuale daune.',
+            'Discutarea formei de contract potrivite transporturilor declarate, dacă există o propunere disponibilă.'
           ]
         },
         disadvantages: {
-          title: 'Excepții și Limitări',
+          title: 'Întrebări despre condiții',
           items: [
-            'Nu acoperă daunele cauzate de ambalarea insuficientă sau necorespunzătoare.',
-            'Exclude pierderile cauzate de viciul propriu al mărfii (ex: evaporare naturală).',
-            'Nu acoperă întârzierile comerciale, cu excepția clauzelor speciale negociate.',
-            'Exclude actele de război, grevele sau terorismul fără extensii dedicate.',
-            'Necesită documentație riguroasă și declararea exactă a naturii bunurilor.'
+            'Ce cerințe se aplică ambalării, încărcării și manipulării?',
+            'Cum sunt tratate viciul propriu al mărfii și pierderile naturale de greutate sau volum?',
+            'Ce condiții privesc întârzierile și alterarea produselor perisabile?',
+            'Cum sunt tratate războiul, grevele și terorismul în documentele propunerii?',
+            'Ce documente și confirmări sunt necesare dacă se schimbă valoarea, ruta ori transportatorul?'
           ]
         }
       },
-      expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
-      essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Te ajutăm să compari ofertele pentru marfa transportată. Verificăm și condițiile de livrare stabilite cu partenerii, inclusiv cine răspunde de asigurare pe traseu.',
-      ctaTitle: 'Asigură-ți lanțul de aprovizionare',
-      ctaCall: 'Solicită ofertă',
+      expertiseTitle: 'Cui îi este utilă analiza?',
+      essentialTitle: 'Cum te ajută brokerul?',
+      whyUs: 'Te ajutăm să descrii transportul și să compari propunerile disponibile pe aceleași informații. Brokerul explică diferențele; asigurătorul decide acceptarea și eventuala despăgubire, fără termen de plată promis de broker.',
+      ctaTitle: 'Discută riscurile mărfii transportate',
+      ctaCall: 'Solicită o analiză',
       ctaEmail: 'Trimite email'
     },
     fleet: {
       title: 'Auto flotă',
-      subtitle: 'Asigurări pentru mașinile companiei, cu administrarea polițelor într-un singur loc.',
-      intro: 'Te ajutăm să compari asigurările pentru vehiculele companiei. Verificăm separat RCA, CASCO și celelalte polițe necesare, în funcție de utilizarea mașinilor.',
+      subtitle: 'Asigurări pentru vehiculele companiei, analizate separat după utilizare și contract.',
+      intro: 'Asigurarea flotei începe cu lista vehiculelor, utilizarea și datele de expirare. RCA și CASCO au scopuri diferite și nu trebuie prezentate ca o singură protecție completă. Forma contractelor, condițiile și eligibilitatea se verifică pentru vehiculele concrete.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -278,7 +278,7 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Riscurile Produsului',
+          title: 'Riscuri de discutat',
           items: [
             'Accidente rutiere majore care duc la imobilizarea sau distrugerea vehiculelor.',
             'Furtul total al autoturismelor sau sustragerea componentelor scumpe.',
@@ -288,49 +288,49 @@ export const businessProductsTranslations = {
           ]
         },
         advantages: {
-          title: 'Avantaje',
+          title: 'Ce poți clarifica',
           items: [
-            'Optimizarea costurilor prin negocierea unor tarife preferențiale de grup.',
-            'Administrare centralizată: o singură poliță și o singură scadență pentru toată flota.',
-            'Flexibilitate operațională în adăugarea sau eliminarea rapidă a vehiculelor.',
-            'Acoperiri CASCO și RCA personalizate în funcție de profilul de utilizare.',
-            'Suport tehnic și asistență rutieră 24/7 pentru minimizarea timpilor de staționare.'
+            'Compararea primelor de asigurare pe aceleași vehicule și condiții, fără reducere promisă.',
+            'Organizarea evidenței polițelor și scadențelor, fără a presupune un singur contract.',
+            'Clarificarea procedurii pentru vehicule adăugate, vândute sau cu utilizare schimbată.',
+            'Separarea condițiilor RCA de riscurile și franșizele CASCO.',
+            'Verificarea asistenței rutiere, a teritoriului și a programului numai dacă sunt propuse.'
           ]
         },
         disadvantages: {
-          title: 'Excepții și Limitări',
+          title: 'Întrebări despre condiții',
           items: [
-            'Nu acoperă daunele produse sub influența alcoolului sau a substanțelor interzise.',
-            'Exclude uzura normală, defectele de fabricație sau întreținerea precară.',
-            'Nu acoperă daunele provocate intenționat de către utilizatorii vehiculelor.',
-            'Condiționată de valabilitatea inspecțiilor tehnice și a permiselor de conducere.',
-            'Franșizele pot crește semnificativ în cazul unui istoric de daunalitate ridicat.'
+            'Cum diferă condițiile RCA și CASCO în cazul conducerii sub influența alcoolului sau a altor substanțe?',
+            'Cum sunt tratate uzura, defectele și întreținerea vehiculului în contractul analizat?',
+            'Ce prevederi privesc faptele intenționate și utilizatorii declarați?',
+            'Ce documente despre inspecții, conducători și utilizare sunt necesare?',
+            'Ce franșiză se aplică și cum sunt luate în calcul informațiile despre daune?'
           ]
         }
       },
-      expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
-      essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Pregătește lista vehiculelor, modul de utilizare și istoricul daunelor. Pe baza acestor date putem solicita oferte și explica diferențele dintre ele.',
-      ctaTitle: 'Optimizează asigurarea flotei tale',
-      ctaCall: 'Solicită ofertă',
+      expertiseTitle: 'Cui îi este utilă analiza?',
+      essentialTitle: 'Cum te ajută brokerul?',
+      whyUs: 'Te ajutăm să pregătești inventarul și istoricul daunelor pentru analiza ofertelor disponibile. Brokerul explică polițele; asigurătorul stabilește condițiile și analizează eventualele daune potrivit fiecărui contract.',
+      ctaTitle: 'Pregătește reînnoirea asigurărilor flotei',
+      ctaCall: 'Solicită o analiză',
       ctaEmail: 'Trimite email'
     },
     credit: {
-      title: 'Asigurarea creditelor',
-      subtitle: 'Protecție împotriva neplății facturilor și a riscurilor comerciale.',
-      intro: 'Dacă un client nu își plătește facturile, compania ta poate rămâne fără banii planificați. Asigurarea de credit comercial poate acoperi anumite situații de neplată, în limitele și condițiile contractului.',
+      title: 'Asigurarea creditului comercial',
+      subtitle: 'Riscul de neplată al facturilor B2B: cumpărători, limite și condiții de analizat.',
+      intro: 'Creditul comercial apare când livrezi mărfuri sau servicii cu plata ulterioară. Analiza riscului de neplată începe cu facturile, termenele și expunerea pe cumpărători. Disponibilitatea produsului trebuie verificată; nu există aici o promisiune de încasare a facturilor.',
       industries: {
         title: 'Industrii Vizate',
         items: [
           { title: 'Comerț cu Ridicata', desc: 'Distribuitori care vând volume mari de marfă cu plata la termen.', image: '/comert cu ridicata.jpg' },
           { title: 'Industria Manufacturieră', desc: 'Producători care depind de încasarea facturilor pentru capitalul de lucru.', image: '/procesarea-carnii.jpg' },
           { title: 'Servicii B2B', desc: 'Companii de consultanță, publicitate sau IT care lucrează cu clienți mari.' },
-          { title: 'Exportatori', desc: 'Afaceri care vând pe piețe externe și au nevoie de protecție la riscuri de țară.', image: '/export.jpg' }
+          { title: 'Exportatori', desc: 'Companii care exportă cu plata la termen și au expuneri pe piețe diferite.', image: '/export.jpg' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Riscurile Produsului',
+          title: 'Riscuri de discutat',
           items: [
             'Insolvența sau falimentul neașteptat al unor clienți strategici.',
             'Blocaje financiare majore cauzate de neîncasarea facturilor la scadență.',
@@ -340,37 +340,37 @@ export const businessProductsTranslations = {
           ]
         },
         advantages: {
-          title: 'Avantaje',
+          title: 'Ce poți clarifica',
           items: [
-            'Garantează stabilitatea fluxului de numerar și a profitabilității firmei.',
-            'Facilitează obținerea finanțărilor bancare prin cesionarea poliței de asigurare.',
-            'Permite extinderea vânzărilor către clienți noi prin oferirea de termene de plată.',
-            'Include acces la servicii profesionale de colectare și monitorizare a creanțelor.',
-            'Oferă analize de bonitate actualizate pentru întreg portofoliul de clienți.'
+            'Pregătirea listei cumpărătorilor și a soldurilor pentru care se solicită analiza.',
+            'Clarificarea situațiilor de neplată acceptate într-o eventuală propunere.',
+            'Compararea limitei pe cumpărător cu soldul și livrările planificate.',
+            'Verificarea serviciilor de monitorizare sau recuperare numai dacă sunt prevăzute.',
+            'Discutarea cerințelor finanțatorului, fără a promite credit sau acceptarea poliței.'
           ]
         },
         disadvantages: {
-          title: 'Excepții și Limitări',
+          title: 'Întrebări despre condiții',
           items: [
-            'Nu acoperă disputele comerciale privind calitatea sau livrarea mărfurilor.',
-            'Exclude vânzările către persoane fizice sau entități din același grup.',
-            'Necesită aprobarea prealabilă a limitelor de credit pentru fiecare partener.',
-            'Nu acoperă integral valoarea facturii (există o cotă de participare a asiguratului).',
-            'Implică o disciplină riguroasă în raportarea vânzărilor și a incidentelor de plată.'
+            'Cum sunt tratate disputele despre calitatea, livrarea sau acceptarea mărfurilor?',
+            'Ce categorii de cumpărători și ce relații între companii sunt eligibile?',
+            'Cum se aprobă, se modifică și se urmăresc limitele pe cumpărător?',
+            'Ce parte din pierdere rămâne în sarcina companiei și ce cheltuieli sunt acceptate?',
+            'Ce termene și documente de raportare sunt prevăzute pentru vânzări și întârzieri?'
           ]
         }
       },
-      expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
-      essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Verificăm ce cumpărători pot fi incluși, sumele acceptate și obligațiile de raportare. Îți explicăm și ce situații de neplată nu sunt acoperite.',
-      ctaTitle: 'Securizează-ți încasările',
-      ctaCall: 'Solicită ofertă',
+      expertiseTitle: 'Cui îi este utilă analiza?',
+      essentialTitle: 'Cum te ajută brokerul?',
+      whyUs: 'Te ajutăm să pregătești expunerile comerciale și întrebările pentru o posibilă analiză. Brokerul nu garantează încasarea creanțelor; asigurătorul confirmă disponibilitatea, cumpărătorii și condițiile acceptate.',
+      ctaTitle: 'Analizează expunerea la neplata facturilor',
+      ctaCall: 'Solicită o analiză',
       ctaEmail: 'Trimite email'
     },
     construction: {
       title: 'Construcții și montaj (CAR/EAR)',
-      subtitle: 'Asigurări pentru lucrările, echipamentele și răspunderile dintr-un proiect de construcții.',
-      intro: 'Pentru un șantier, analizăm lucrările, echipamentele, durata proiectului și răspunderea față de alte persoane. Te ajutăm să compari asigurările de construcții și montaj, numite CAR/EAR.',
+      subtitle: 'Lucrări de construcții și montaj: proiect, etape și răspunderi de analizat.',
+      intro: 'Pentru un șantier, pregătește lucrările, valoarea, amplasamentul și calendarul. Asigurările CAR/EAR se verifică după riscurile și etapele acceptate. Denumirea All Risks nu înseamnă că orice daună sau problemă a proiectului va fi despăgubită.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -382,7 +382,7 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Riscurile Produsului',
+          title: 'Riscuri de discutat',
           items: [
             'Calamități naturale (cutremur, inundații, furtuni) care pot distruge șantierul.',
             'Incendii, explozii sau prăbușiri accidentale ale structurilor în execuție.',
@@ -392,49 +392,49 @@ export const businessProductsTranslations = {
           ]
         },
         advantages: {
-          title: 'Avantaje',
+          title: 'Ce poți clarifica',
           items: [
-            'Acoperire cuprinzătoare de tip "All Risks" adaptată fiecărui proiect.',
-            'Protejează investiția comună a beneficiarului, antreprenorului și subantreprenorilor.',
-            'Cerință standard pentru obținerea finanțărilor bancare și respectarea contractelor.',
-            'Acoperă costurile de curățare și degajare a resturilor după un eveniment asigurat.',
-            'Posibilitatea extinderii acoperirii pentru perioada de mentenanță/garanție.'
+            'Descrierea lucrărilor și etapelor pentru compararea unor propuneri disponibile.',
+            'Clarificarea intereselor beneficiarului, antreprenorului și subantreprenorilor.',
+            'Compararea cerințelor de asigurare din contractul proiectului și din documentele finanțatorului.',
+            'Verificarea cheltuielilor de degajare a resturilor, dacă sunt menționate în propunere.',
+            'Discutarea condițiilor pentru testare, recepție și mentenanță, fără a presupune extinderea automată.'
           ]
         },
         disadvantages: {
-          title: 'Excepții și Limitări',
+          title: 'Întrebări despre condiții',
           items: [
-            'Nu acoperă costul direct de remediere a erorilor de proiectare (doar daunele cauzate).',
-            'Exclude uzura normală, coroziunea sau oxidarea naturală a materialelor.',
-            'Nu acoperă penalitățile contractuale pentru întârzieri în finalizarea lucrărilor.',
-            'Necesită respectarea strictă a planurilor de securitate și sănătate în muncă.',
-            'Franșizele pot fi semnificative pentru riscurile catastrofale (ex: cutremur).'
+            'Cum sunt tratate erorile de proiectare, execuție și daunele care rezultă din ele?',
+            'Ce prevederi se aplică uzurii, coroziunii și deteriorării treptate?',
+            'Cum sunt tratate întârzierile și penalitățile din contractul de lucrări?',
+            'Ce condiții de securitate și notificare sunt prevăzute în propunere?',
+            'Ce limite și franșize se aplică riscurilor, etapelor și bunurilor declarate?'
           ]
         }
       },
-      expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
-      essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Trimite-ne informațiile despre proiect și cerințele contractului. Verificăm ce opțiuni pot fi ofertate și îți explicăm limitele și excluderile.',
-      ctaTitle: 'Asigură succesul proiectului tău',
-      ctaCall: 'Solicită ofertă',
+      expertiseTitle: 'Cui îi este utilă analiza?',
+      essentialTitle: 'Cum te ajută brokerul?',
+      whyUs: 'Te ajutăm să pregătești dosarul proiectului și întrebările despre lucrări, utilaje și răspunderi. Brokerul explică propunerile disponibile; asigurătorul acceptă riscul și analizează eventuala despăgubire potrivit contractului.',
+      ctaTitle: 'Pregătește analiza asigurării proiectului',
+      ctaCall: 'Solicită o analiză',
       ctaEmail: 'Trimite email'
     },
     benefits: {
-      title: 'Asigurări de Sănătate și viață pentru angajați',
-      subtitle: 'Asigurări pentru angajați, alese în funcție de nevoile echipei și bugetul companiei.',
-      intro: 'O asigurare pentru angajați poate face parte din beneficiile oferite de companie. Discutăm despre echipă, buget și serviciile dorite, apoi verificăm opțiunile disponibile în Moldova.',
+      title: 'Beneficii de asigurare pentru angajați',
+      subtitle: 'Sănătate și viață: servicii dorite, persoane eligibile și condiții de verificat.',
+      intro: 'Asigurarea poate fi analizată ca parte a beneficiilor pentru angajați. Pornește de la echipă, buget și serviciile dorite. Disponibilitatea programului medical sau de viață și eligibilitatea persoanelor se confirmă separat; retenția și accesul rapid la tratament nu sunt rezultate garantate.',
       industries: {
         title: 'Soluții Strategice de Resurse Umane',
         items: [
-          { title: 'Asigurări Medicale de Grup', desc: 'Acces la rețele private de sănătate, diagnosticare rapidă și tratamente premium pentru întreaga echipă.', image: '/Group_Health_Insurance.png' },
-          { title: 'Viață și Invaliditate', desc: 'Protecție financiară pentru angajați și familiile acestora în cazul unor evenimente neprevăzute critice.', image: '/employer.png' },
-          { title: 'Programe de Wellness', desc: 'Inițiative axate pe sănătatea mentală, nutriție și echilibrul între viața profesională și cea personală.', image: '/wellness_insurance.png' },
-          { title: 'Retenție Talent IT', desc: 'Pachete customizate special pentru nevoile și așteptările profesioniștilor din sectorul tehnologic.', image: '/conect-people.png' }
+          { title: 'Asigurări Medicale de Grup', desc: 'Servicii medicale, rețele de prestatori și proceduri de acces de verificat în program.', image: '/Group_Health_Insurance.png' },
+          { title: 'Viață și Invaliditate', desc: 'Persoane, evenimente și sume de analizat pentru un eventual program de viață sau invaliditate.', image: '/employer.png' },
+          { title: 'Informarea angajaților', desc: 'Explicarea serviciilor, limitelor și documentelor înainte de înscriere.', image: '/wellness_insurance.png' },
+          { title: 'Echipe IT', desc: 'Companii care analizează beneficiile în funcție de nevoile echipei și buget.', image: '/conect-people.png' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Riscuri Gestionate',
+          title: 'Riscuri de discutat',
           image: '/analiza-riscurilor.webp',
           items: [
             'Fluctuația mare de personal și pierderea know-how-ului critic.',
@@ -445,37 +445,37 @@ export const businessProductsTranslations = {
           ]
         },
         advantages: {
-          title: 'Avantaje Competitive',
+          title: 'Ce poți clarifica',
           items: [
-            'Poziționarea ca angajator de top (Employer Branding).',
-            'Optimizare fiscală prin deductibilitatea primelor de asigurare.',
-            'Reducerea timpului de recuperare a angajaților prin acces rapid la clinici.',
-            'Flexibilitate în structurarea pachetelor pe niveluri ierarhice.',
-            'Suport administrativ complet oferit de echipa ING Broker.'
+            'Compararea serviciilor solicitate, a rețelei de prestatori și a modului de acces.',
+            'Pregătirea întrebărilor fiscale pentru contabil, fără a presupune deductibilitatea primelor.',
+            'Clarificarea limitelor și a sumelor care rămân de achitat de angajat.',
+            'Compararea categoriilor de persoane și a regulilor de înscriere, dacă programul le permite.',
+            'Organizarea întrebărilor despre documente, comunicare și reînnoirea programului.'
           ]
         },
         disadvantages: {
-          title: 'Considerații Tehnice',
+          title: 'Întrebări despre condiții',
           items: [
-            'Necesitatea unui număr minim de persoane pentru tarife de grup.',
-            'Gestionarea așteptărilor angajaților privind limitele de acoperire.',
-            'Analiza anuală a ratei de utilizare pentru controlul costurilor.',
-            'Excluderi standard pentru afecțiuni preexistente nedeclarate.',
-            'Importanța comunicării interne a beneficiilor către angajați.'
+            'Care este numărul minim de participanți și cine este eligibil în programul propus?',
+            'Ce servicii, limite și autorizări se aplică consultațiilor și tratamentelor?',
+            'Cum sunt tratate afecțiunile preexistente, confidențial și prin canalul indicat?',
+            'Ce tratamente sau împrejurări sunt excluse în documentele programului?',
+            'Ce reguli și informații sunt folosite la înscriere, ieșire și reînnoire?'
           ]
         }
       },
-      expertiseTitle: 'De ce este Employee Benefits motorul creșterii tale?',
-      essentialTitle: 'Expertiza ING Broker în HR Solutions',
-      whyUs: 'Te ajutăm să compari serviciile incluse, limitele, rețeaua de prestatori și excluderile. Explicăm condițiile pentru companie și pentru angajați.',
-      ctaTitle: 'Transformă beneficiile în avantaj competitiv',
-      ctaCall: 'Solicită audit beneficii',
+      expertiseTitle: 'Cui îi este utilă analiza?',
+      essentialTitle: 'Cum te ajută brokerul?',
+      whyUs: 'Te ajutăm să compari documentele unui program disponibil și să pregătești explicațiile pentru echipă. Brokerul nu înlocuiește medicul; asigurătorul confirmă eligibilitatea și soluționarea cheltuielilor potrivit contractului.',
+      ctaTitle: 'Discută nevoile de asigurare ale echipei',
+      ctaCall: 'Solicită o analiză',
       ctaEmail: 'Trimite email'
     },
     agriculture: {
       title: 'Riscuri agricole',
-      subtitle: 'Asigurări specializate pentru culturi, animale și echipamente agricole.',
-      intro: 'Culturile, animalele și utilajele pot fi afectate de evenimente neprevăzute. Te ajutăm să verifici ce riscuri agricole pot fi asigurate, în ce perioade și în ce condiții.',
+      subtitle: 'Culturi, animale și utilaje: riscuri și perioade de analizat separat.',
+      intro: 'Culturile, animalele și utilajele agricole au expuneri diferite. Analiza începe cu parcelele, efectivele, bunurile și sezonul declarat. Disponibilitatea și acceptarea riscului se confirmă individual, fără promisiunea recuperării investiției sau a unei subvenții.',
       industries: {
         title: 'Industrii Vizate',
         items: [
@@ -487,7 +487,7 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Riscurile Produsului',
+          title: 'Riscuri de discutat',
           items: [
             'Fenomene meteo extreme (grindină, îngheț, inundații) care distrug culturile.',
             'Mortalitatea animalelor din cauza epidemiilor, bolilor sau accidentelor fortuite.',
@@ -497,39 +497,39 @@ export const businessProductsTranslations = {
           ]
         },
         advantages: {
-          title: 'Avantaje',
+          title: 'Ce poți clarifica',
           items: [
-            'Garantează recuperarea capitalului investit în înființarea și întreținerea culturilor.',
-            'Facilitează accesul la credite bancare, subvenții și fonduri europene.',
-            'Posibilitatea subvenționării primelor de asigurare de către stat (până la 70%).',
-            'Protejează stabilitatea financiară a fermei și permite reluarea ciclului agricol.',
-            'Evaluare tehnică și constatare rapidă a daunelor realizată de experți agronomi.'
+            'Descrierea culturilor, parcelelor, animalelor sau utilajelor pentru analiza riscului.',
+            'Compararea definițiilor evenimentelor, a limitelor și a franșizelor din propuneri.',
+            'Pregătirea întrebărilor despre sprijinul public pentru verificare în regulile oficiale actuale.',
+            'Clarificarea valorii analizate și a modului de evaluare a unei eventuale pierderi.',
+            'Verificarea procedurii de notificare, constatare și prezentare a documentelor.'
           ]
         },
         disadvantages: {
-          title: 'Excepții și Limitări',
+          title: 'Întrebări despre condiții',
           items: [
-            'Nu acoperă pierderile cauzate de nerespectarea tehnologiilor agricole corecte.',
-            'Seceta este acoperită doar prin clauze speciale și cu franșize de obicei ridicate.',
-            'Nu acoperă bolile animalelor nedeclarate sau care nu au vaccinările la zi.',
-            'Perioade de carență (așteptare) obligatorii de la semnarea poliței până la intrarea în vigoare.',
-            'Necesită inspecții de risc detaliate și monitorizarea constantă a stării culturilor.'
+            'Ce condiții privesc tehnologia agricolă și evidența lucrărilor?',
+            'Cum este definită seceta și ce culturi, parcele și perioade pot fi acceptate?',
+            'Ce boli, evenimente și documente veterinare sunt relevante pentru animalele declarate?',
+            'Există perioade de așteptare și care este momentul de început al acoperirii?',
+            'Ce inspecții, evidențe și notificări sunt cerute în propunerea concretă?'
           ]
         }
       },
-      expertiseTitle: 'Cine și de ce are nevoie de acest produs?',
-      essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Pornim de la informațiile despre fermă și bunurile pe care vrei să le asiguri. Îți explicăm ofertele și documentele cerute de asigurător.',
-      ctaTitle: 'Protejează-ți recolta și ferma',
-      ctaCall: 'Solicită ofertă',
+      expertiseTitle: 'Cui îi este utilă analiza?',
+      essentialTitle: 'Cum te ajută brokerul?',
+      whyUs: 'Te ajutăm să pregătești informațiile fermei și să înțelegi propunerile disponibile. Asigurătorul confirmă condițiile și eventuala despăgubire; eligibilitatea pentru sprijin public se verifică separat la autoritatea competentă.',
+      ctaTitle: 'Pregătește analiza riscurilor fermei',
+      ctaCall: 'Solicită o analiză',
       ctaEmail: 'Trimite email'
     }
   },
   ru: {
     liability: {
       title: 'Общая ответственность',
-      subtitle: 'Финансовая защита от ущерба, причиненного третьим лицам в ходе деловых операций.',
-      intro: 'Любой бизнес взаимодействует с клиентами, поставщиками и широкой общественностью. Страхование общей гражданской ответственности защищает вас от финансовых претензий, возникающих в результате телесных повреждений или материального ущерба, случайно причиненного третьим лицам в ходе вашей коммерческой деятельности.',
+      subtitle: 'Гражданская ответственность перед третьими лицами: деятельность, ущерб и лимиты для проверки.',
+      intro: 'Посетитель может получить травму на территории компании, а деятельность фирмы может повредить чужое имущество. Эти ситуации рассматривают отдельно от страхования собственных объектов. Разбор не подтверждает, что любой ущерб или вид деятельности можно застраховать.',
       industries: {
         title: 'Целевые отрасли',
         items: [
@@ -541,48 +541,48 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Риски продукта',
+          title: 'Риски для обсуждения',
           image: '/analiza-riscurilor.webp',
           items: [
-            'Несчастные случаи на территории компании (например, падения клиентов), влекущие гражданскую ответственность.',
-            'Ущерб, причиненный дефектной продукцией, поставленной потребителям.',
-            'Операционные ошибки персонала, затрагивающие имущество или физическую целостность третьих лиц.',
-            'Дорогостоящие судебные иски и претензии, возникающие в результате процессов о возмещении ущерба.',
-            'Ущерб репутации бренда в результате инцидентов, связанных с безопасностью.'
+            'Происшествия с посетителями на территории компании, например падения.',
+            'Претензии, связанные с дефектной продукцией, поставленной клиентам.',
+            'Ошибки в работе, которые могут затронуть чужое имущество или здоровье людей.',
+            'Расходы на рассмотрение требований о возмещении ущерба и защиту от них.',
+            'Ущерб репутации компании после происшествия, связанного с безопасностью.'
           ]
         },
         advantages: {
-          title: 'Преимущества',
+          title: 'Что стоит уточнить',
           items: [
-            'Защищает капитал и активы компании от разорительных судебных процессов о возмещении ущерба.',
-            'Полностью покрывает расходы на юридическую защиту и гонорары адвокатов.',
-            'Повышает доверие со стороны клиентов, демонстрируя корпоративную ответственность.',
-            'Облегчает подписание коммерческих контрактов, где наличие страховки является обязательным.',
-            'Полная гибкость в адаптации лимитов возмещения под конкретные нужды бизнеса.'
+            'Описание деятельности и объектов, для которых запрашивается анализ.',
+            'Сравнение лимитов и франшизы, то есть части ущерба, которую страхователь несет по договору.',
+            'Уточнение принимаемых расходов на защиту и порядка их согласования.',
+            'Проверка требований коммерческих договоров без вывода об общей обязательности страхования.',
+            'Разграничение общей ответственности, ответственности за продукцию и профессиональной ответственности.'
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: 'Вопросы по условиям',
           items: [
-            'Не покрывает ущерб, причиненный умышленно или в результате доказанных незаконных действий.',
-            'Исключает несчастные случаи на производстве собственных сотрудников (требуются специфические полисы).',
-            'Не покрывает профессиональные ошибки (требуется страхование Профессиональной ответственности).',
-            'Исключает ущерб от загрязнения окружающей среды, за исключением специально оговоренных случаев.',
-            'Не покрывает административные штрафы и пени, наложенные государственными органами.'
+            'Как в предложении рассматриваются умышленные действия и неточные сведения?',
+            'Какие условия относятся к ущербу сотрудникам и какой отдельный анализ необходим?',
+            'Какие претензии, связанные с профессиональными услугами, принимаются или исключаются?',
+            'Как рассматриваются загрязнение и возможные дополнительные условия?',
+            'Какие лимиты и исключения относятся к расходам на защиту, штрафам и пеням?'
           ]
         }
       },
-      expertiseTitle: 'Кому и зачем нужен этот продукт?',
-      essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Любой компании, от розничных магазинов и ресторанов до строительных компаний и производителей, нужна эта страховка. Мы помогаем оценить реальную подверженность риску и договариваемся об оптимальных лимитах покрытия, чтобы защитить ваш бизнес от дорогостоящих судебных разбирательств.',
-      ctaTitle: 'Защитите свой бизнес от непредвиденного',
-      ctaCall: 'Запросить предложение',
+      expertiseTitle: 'Кому полезен этот разбор?',
+      essentialTitle: 'Как помогает брокер?',
+      whyUs: 'Помогаем описать деятельность и подготовить вопросы страховщику. Брокер объясняет доступные предложения; принятие риска и решение о возмещении относятся к страховщику согласно договору.',
+      ctaTitle: 'Обсудите гражданскую ответственность компании',
+      ctaCall: 'Запросить анализ',
       ctaEmail: 'Отправить email'
     },
     professional: {
       title: 'Профессиональная ответственность',
-      subtitle: 'Безопасность в осуществлении профессии и защита от ошибок или упущений.',
-      intro: 'Профессионалы, предоставляющие консультации или специализированные услуги, подвергаются риску судебного преследования за халатность, ошибки или упущения. Страхование профессиональной ответственности (PI) покрывает расходы на защиту и финансовую компенсацию в случае, если клиент несет убытки из-за ваших услуг.',
+      subtitle: 'Профессиональные ошибки и упущения: претензии и расходы на защиту для анализа.',
+      intro: 'Ошибка при оказании услуги может причинить убытки клиенту. Анализ начинается с фактически оказываемых услуг и требований ваших договоров. Наличие решения для конкретной профессии, деятельности и территории нужно подтвердить до подготовки предложения.',
       industries: {
         title: 'Целевые отрасли',
         items: [
@@ -594,99 +594,99 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Риски продукта',
+          title: 'Риски для обсуждения',
           items: [
-            'Неправильные советы или консультации, приводящие к крупным финансовым потерям для клиентов.',
-            'Ошибки в проектировании, расчетах или упущения в технической документации.',
-            'Несоблюдение договорных сроков выполнения работ по профессиональным причинам.',
-            'Потеря, повреждение или случайное разглашение конфиденциальных документов клиентов.',
-            'Обвинения в профессиональной халатности или несоблюдении отраслевых стандартов.'
+            'Неверные рекомендации, которые могут причинить финансовые убытки клиентам.',
+            'Ошибки в проектировании, расчетах или технической документации.',
+            'Претензии из-за нарушения согласованных сроков оказания услуг.',
+            'Утрата, повреждение или случайное раскрытие документов клиентов.',
+            'Обвинения в профессиональной небрежности или несоблюдении стандартов профессии.'
           ]
         },
         advantages: {
-          title: 'Преимущества',
+          title: 'Что стоит уточнить',
           items: [
-            'Покрывает расходы на юридическую защиту, которые могут превышать сумму самого возмещения.',
-            'Защищает профессиональную репутацию и обеспечивает непрерывность деятельности.',
-            'Необходимое условие для участия в тендерах и заключения контрактов с крупными клиентами.',
-            'Обеспечивает психологическое спокойствие и финансовую безопасность при осуществлении деятельности.',
-            'Индивидуальные страховые решения, адаптированные под специфику каждой профессии.'
+            'Сравнение предложений для профессиональных услуг, заявленных компанией.',
+            'Уточнение расходов на защиту и лимитов, указанных в предложении.',
+            'Проверка требований договора с клиентом без представления их как общей обязанности.',
+            'Выявление различий между реальной деятельностью и ее описанием в документах.',
+            'Разъяснение условий и вопросов, которые должен отдельно подтвердить страховщик.'
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: 'Вопросы по условиям',
           items: [
-            'Не покрывает мошеннические, умышленные или коррупционные действия.',
-            'Исключает телесные повреждения и материальный ущерб (покрывается Общей ответственностью).',
-            'Не покрывает гарантии цен, оценки стоимости или превышение бюджета проекта.',
-            'Исключает штрафы, пени и штрафные убытки, наложенные законом.',
-            'Не покрывает киберриски без специального расширения или отдельного полиса Cyber.'
+            'Как рассматриваются умышленные действия и сведения, указанные в заявлении?',
+            'Как разграничены финансовые претензии, телесные повреждения и материальный ущерб?',
+            'Какие условия относятся к гарантиям результата, оценкам и обязательствам перед клиентом?',
+            'Какие положения касаются штрафов и пеней и какая проверка специалиста необходима?',
+            'Какие киберриски принимаются или исключаются, без предположения об их включении по названию полиса?'
           ]
         }
       },
-      expertiseTitle: 'Кому и зачем нужен этот продукт?',
-      essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Архитекторам, инженерам, ИТ-консультантам, юристам, бухгалтерам и маркетинговым агентствам жизненно необходим этот полис. ING Broker понимает специфику каждой профессии и структурирует полисы, которые точно отвечают вашим реальным рискам.',
-      ctaTitle: 'Обеспечьте свое профессиональное будущее',
-      ctaCall: 'Запросить предложение',
+      expertiseTitle: 'Кому полезен этот разбор?',
+      essentialTitle: 'Как помогает брокер?',
+      whyUs: 'Помогаем подготовить описание услуг и сравнить условия доступных предложений. Брокер не устанавливает ответственность и не обещает выплату; страховщик рассматривает риск и претензию согласно договору.',
+      ctaTitle: 'Уточните риски профессиональных услуг',
+      ctaCall: 'Запросить анализ',
       ctaEmail: 'Отправить email'
     },
     do: {
       title: 'D&O (Ответственность директоров и руководителей)',
-      subtitle: 'Важная защита для управленческих решений и руководства компании.',
-      intro: 'Директора и администраторы (D&O) несут огромную ответственность и могут быть привлечены к личной ответственности за решения, принятые от имени компании. Страхование D&O защищает личное имущество руководителей от претензий со стороны акционеров, сотрудников, властей или кредиторов.',
+      subtitle: 'Ответственность директоров и руководителей: лица, решения и условия для анализа.',
+      intro: 'D&O относится к претензиям, связанным с управлением компанией, в пределах возможного договора. Первый шаг - проверка приемлемости компании, руководителей и заявленных юрисдикций. Это описание не подтверждает доступность продукта для любой компании.',
       industries: {
         title: 'Целевые отрасли',
         items: [
           { title: 'Корпоративный сектор', desc: 'Крупные компании со сложной структурой управления и советами директоров.', image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1200' },
           { title: 'Финансовые услуги', desc: 'Банки, инвестиционные фонды и небанковские финансовые учреждения.' },
           { title: 'Стартапы и технологии', desc: 'Быстрорастущие компании, привлекающие внешние инвестиции.' },
-          { title: 'НПО и ассоциации', desc: 'Некоммерческие организации, где администраторы несут юридическую ответственность.', image: '/ong.jpg' }
+          { title: 'НПО и ассоциации', desc: 'Некоммерческие организации с управленческими функциями, которые нужно описать для анализа.', image: '/ong.jpg' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Риски продукта',
+          title: 'Риски для обсуждения',
           items: [
-            'Обвинения в ненадлежащем управлении или халатности со стороны акционеров и инвесторов.',
-            'Официальные расследования регулирующих органов, влекущие за собой огромные расходы на защиту.',
-            'Трудовые споры и претензии со стороны сотрудников (дискриминация, незаконное увольнение).',
-            'Личная ответственность руководителей в случае банкротства или неплатежеспособности компании.',
-            'Ошибки или неточности в финансовой отчетности, вводящие в заблуждение стейкхолдеров.'
+            'Претензии, связанные с управленческими решениями или общением с инвесторами.',
+            'Расходы на защиту при расследованиях, затрагивающих руководство.',
+            'Претензии сотрудников, условия по которым требуют отдельной проверки.',
+            'Претензии к руководству, связанные с неплатежеспособностью компании.',
+            'Ошибки или упущения, на которые ссылаются в связи с финансовой отчетностью.'
           ]
         },
         advantages: {
-          title: 'Преимущества',
+          title: 'Что стоит уточнить',
           items: [
-            'Позволяет привлекать и удерживать высококвалифицированных руководителей, обеспечивая им защиту.',
-            'Надежно защищает личные активы и имущество директоров от судебных взысканий.',
-            'Покрывает колоссальные расходы на юридическую защиту, гонорары адвокатов и судебные издержки.',
-            'Обеспечивает уверенность и финансовую безопасность при принятии сложных стратегических решений.',
-            'Минимизирует репутационный ущерб для компании и ее топ-менеджмента в случае конфликтов.'
+            'Определение лиц и должностей, для которых запрашивается анализ.',
+            'Разграничение претензий к руководителям и собственных убытков компании.',
+            'Сравнение лимита, расходов на защиту и доли, которую несет страхователь.',
+            'Уточнение периодов и обстоятельств, которые необходимо раскрыть.',
+            'Проверка порядка уведомления и документов по возможной претензии.'
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: 'Вопросы по условиям',
           items: [
-            'Не покрывает доказанные случаи мошенничества, умышленных преступлений или личного обогащения.',
-            'Исключает претензии по телесным повреждениям и материальному ущербу (покрывается Общей ответственностью).',
-            'Исключает любые иски и обстоятельства, о которых было известно до начала действия полиса.',
-            'Не покрывает уголовные штрафы, административные пени и штрафные санкции, наложенные законом.',
-            'Исключает ответственность за экологический ущерб и загрязнение, за исключением редких оговорок.'
+            'Как рассматриваются мошенничество, умышленные действия и неправомерная личная выгода?',
+            'Какие претензии по телесным повреждениям и материальному ущербу принимаются или исключаются?',
+            'Как влияют споры и обстоятельства, известные до заключения договора?',
+            'Как рассматриваются штрафы, пени и расходы, связанные с расследованиями?',
+            'Какие положения относятся к загрязнению и деятельности в других юрисдикциях?'
           ]
         }
       },
-      expertiseTitle: 'Кому и зачем нужен этот продукт?',
-      essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Любой компании с советом директоров, внешними инвесторами или планами расширения необходимо D&O. ING Broker договаривается о сложных оговорках и адекватных лимитах, чтобы обеспечить спокойствие ваших лидеров.',
-      ctaTitle: 'Защитите лидеров вашей компании',
-      ctaCall: 'Запросить предложение',
+      expertiseTitle: 'Кому полезен этот разбор?',
+      essentialTitle: 'Как помогает брокер?',
+      whyUs: 'Помогаем описать структуру руководства и подготовить вопросы о лицах, периодах и лимитах. Брокер объясняет доступные документы; страховщик решает вопрос о принятии риска и рассматривает претензию согласно договору.',
+      ctaTitle: 'Подготовьте анализ ответственности руководства',
+      ctaCall: 'Запросить анализ',
       ctaEmail: 'Отправить email'
     },
     cyber: {
       title: 'Кибер-страхование',
-      subtitle: 'Защита от киберрисков и утечек данных.',
-      intro: 'В цифровом мире кибератаки - это уже не вопрос "если", а вопрос "когда". Кибер-страхование обеспечивает финансовую защиту и экстренную помощь в случае нарушения безопасности данных, атак программ-вымогателей или прерывания бизнеса по киберпричинам.',
+      subtitle: 'Киберриски: системы, данные и условия страхования для проверки.',
+      intro: 'Компьютерный инцидент может остановить работу или раскрыть данные компании. Анализ начинается с систем, резервных копий и зависимости от поставщиков. Материал не подтверждает наличие киберстрахования или услуг реагирования для вашей компании.',
       industries: {
         title: 'Целевые отрасли',
         items: [
@@ -698,47 +698,47 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Риски продукта',
+          title: 'Риски для обсуждения',
           items: [
-            'Атаки программ-вымогателей (Ransomware), блокирующие доступ к критически важным данным.',
-            'Утечки персональных данных, влекущие за собой огромные штрафы в рамках GDPR.',
-            'Человеческие ошибки или внутренняя халатность, компрометирующие безопасность систем.',
-            'Полное или частичное прерывание коммерческих операций по причинам сбоев в ИТ.',
-            'Непоправимая потеря доверия клиентов и ущерб имиджу бренда.'
+            'Атаки программ-вымогателей, которые могут блокировать доступ к данным компании.',
+            'Раскрытие персональных данных и расходы на анализ инцидента.',
+            'Ошибки людей или несанкционированный доступ, которые могут нарушить работу систем.',
+            'Остановка коммерческих операций из-за компьютерных инцидентов.',
+            'Потеря доверия клиентов после инцидента безопасности.'
           ]
         },
         advantages: {
-          title: 'Преимущества',
+          title: 'Что стоит уточнить',
           items: [
-            'Мгновенный доступ к группам быстрого реагирования (криминалисты, ИТ, юристы) 24/7.',
-            'Компенсация потери прибыли, вызванной недоступностью информационных систем.',
-            'Покрытие регуляторных штрафов и расходов на уведомление пострадавших лиц.',
-            'Специализированная поддержка в переговорах и управлении инцидентами вымогательства.',
-            'Услуги PR-консультантов для минимизации репутационного ущерба.'
+            'Подготовка перечня систем и сценариев остановки работы.',
+            'Разграничение собственных убытков и претензий других лиц.',
+            'Уточнение услуг реагирования, режима работы и согласований, если они предложены.',
+            'Сравнение лимитов, исключений и расходов, которые остаются за компанией.',
+            'Подготовка вопросов об уведомлении, документах и общении во время инцидента.'
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: 'Вопросы по условиям',
           items: [
-            'Обусловлено наличием базовых мер безопасности (бэкапы, многофакторная аутентификация).',
-            'Не покрывает расходы на модернизацию ИТ-систем после кибератаки.',
-            'Исключает физическое повреждение оборудования (требуется страхование имущества).',
-            'Не покрывает акты кибервойны или терроризма без специальных оговорок.',
-            'Исключает финансовые потери, вызванные перебоями в подаче электроэнергии в общей сети.'
+            'Какие меры безопасности и сведения о резервных копиях запрашиваются?',
+            'Как разграничены восстановление систем и последующие технические улучшения?',
+            'Какие условия относятся к физическому оборудованию и сбоям у поставщиков?',
+            'Как рассматриваются война, терроризм и другие исключенные в документах события?',
+            'Какие положения касаются перебоев электроснабжения, расходов на уведомление и штрафов, без предположения об их включении?'
           ]
         }
       },
-      expertiseTitle: 'Кому и зачем нужен этот продукт?',
-      essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Любой компании, которая хранит данные клиентов, обрабатывает онлайн-платежи или зависит от ИТ-систем, необходимо Кибер-страхование. ING Broker поможет вам оценить уязвимости и выбрать полис, который лучше всего соответствует вашему технологическому профилю.',
-      ctaTitle: 'Обезопасьте свой цифровой бизнес',
-      ctaCall: 'Запросить предложение',
+      expertiseTitle: 'Кому полезен этот разбор?',
+      essentialTitle: 'Как помогает брокер?',
+      whyUs: 'Помогаем подготовить сведения о риске без паролей и клиентских баз и сформулировать вопросы о возможных предложениях. Брокер не заменяет ИТ-команду; страховщик подтверждает приемлемость риска и условия договора.',
+      ctaTitle: 'Подготовьте описание киберрисков',
+      ctaCall: 'Запросить анализ',
       ctaEmail: 'Отправить email'
     },
     cargo: {
-      title: 'Грузоперевозки',
-      subtitle: 'Безопасность транзитных грузов от потери или повреждения.',
-      intro: 'Цепи поставок сложны и подвержены многочисленным рискам. Страхование грузов (Cargo) защищает стоимость товаров во время транспортировки (морской, воздушной, автомобильной или железнодорожной), от пункта отправления до конечного пункта назначения, независимо от того, кто осуществляет перевозку.',
+      title: 'Страхование грузов CARGO',
+      subtitle: 'Грузы в пути: стоимость, маршрут и этапы, принятые по договору.',
+      intro: 'Страхование CARGO относится к перевозимым грузам в пределах этапов и рисков, принятых в полисе. Анализ начинается с товара, стоимости, маршрута и интереса в грузе. Полис перевозчика сам по себе не подтверждает полную защиту груза владельца.',
       industries: {
         title: 'Целевые отрасли',
         items: [
@@ -750,47 +750,47 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Риски продукта',
+          title: 'Риски для обсуждения',
           items: [
-            'Дорожные, железнодорожные или морские аварии, приводящие к уничтожению груза.',
-            'Полная или частичная кража товаров во время транзита или временного хранения.',
-            'Повреждение груза из-за погодных условий или ненадлежащего обращения.',
-            'Логистические задержки, вызывающие порчу продуктов с коротким сроком годности.',
-            'Потеря или повреждение контейнеров во время морской транспортировки.'
+            'Автомобильные, железнодорожные или морские аварии, повреждающие груз.',
+            'Полная или частичная кража товара в пути или при временном хранении.',
+            'Повреждение товара из-за погоды или ненадлежащего обращения.',
+            'Задержки перевозки, которые приводят к порче скоропортящихся товаров.',
+            'Утрата или повреждение контейнеров при морской перевозке.'
           ]
         },
         advantages: {
-          title: 'Преимущества',
+          title: 'Что стоит уточнить',
           items: [
-            'Защищает финансовые инвестиции в запасы и сырье на всем пути следования.',
-            'Возможность заключения полисов типа "All Risks" для максимального покрытия.',
-            'Облегчает международные транзакции и соблюдение условий Incoterms.',
-            'Быстрое возмещение на основе инвойсовой стоимости без долгих споров о вине.',
-            'Гибкие полисы: на конкретную перевозку или годовой открытый абонемент.'
+            'Описание груза, стоимости и этапов перевозки для анализа.',
+            'Сравнение рисков и исключений без толкования All Risks как защиты без ограничений.',
+            'Уточнение лица, которое запрашивает страхование по согласованным условиям поставки.',
+            'Проверка базы оценки и документов по возможному ущербу.',
+            'Обсуждение формы договора для заявленных перевозок при наличии предложения.'
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: 'Вопросы по условиям',
           items: [
-            'Не покрывает ущерб, вызванный недостаточной или ненадлежащей упаковкой.',
-            'Исключает потери, вызванные естественными свойствами товара (например, испарение).',
-            'Не покрывает коммерческие задержки, за исключением специально оговоренных случаев.',
-            'Исключает военные действия, забастовки или терроризм без специальных расширений.',
-            'Требует строгой документации и точного декларирования характера груза.'
+            'Какие требования относятся к упаковке, погрузке и обработке груза?',
+            'Как рассматриваются собственные свойства груза и естественные потери веса или объема?',
+            'Какие условия относятся к задержкам и порче скоропортящихся товаров?',
+            'Как в предложении рассматриваются война, забастовки и терроризм?',
+            'Какие документы и подтверждения нужны при изменении стоимости, маршрута или перевозчика?'
           ]
         }
       },
-      expertiseTitle: 'Кому и зачем нужен этот продукт?',
-      essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Импортерам, экспортерам, производителям и дистрибьюторам необходимо страхование грузов. ING Broker структурирует комплексные программы страхования, адаптированные к Инкотермс и логистическим маршрутам, специфичным для вашего бизнеса.',
-      ctaTitle: 'Застрахуйте свою цепь поставок',
-      ctaCall: 'Запросить предложение',
+      expertiseTitle: 'Кому полезен этот разбор?',
+      essentialTitle: 'Как помогает брокер?',
+      whyUs: 'Помогаем описать перевозку и сравнить доступные предложения на одинаковых исходных данных. Брокер объясняет различия; страховщик решает вопрос о принятии риска и возмещении, без обещания срока выплаты со стороны брокера.',
+      ctaTitle: 'Обсудите риски перевозимого груза',
+      ctaCall: 'Запросить анализ',
       ctaEmail: 'Отправить email'
     },
     fleet: {
       title: 'Автопарк',
-      subtitle: 'Эффективное управление и индивидуальные решения для корпоративных автопарков.',
-      intro: 'Автопарк имеет важное значение для мобильности и операций вашей компании. Страхование автопарка предлагает упрощенное управление и полное покрытие (КАСКО и ОСАГО) для всех автомобилей компании по одному полису, оптимизируя затраты и администрирование.',
+      subtitle: 'Страхование автомобилей компании с отдельной проверкой использования и каждого договора.',
+      intro: 'Анализ автопарка начинается со списка машин, их использования и дат окончания полисов. RCA и CASCO имеют разные задачи и не должны представляться единой полной защитой. Форму договоров, условия и приемлемость проверяют для конкретных автомобилей.',
       industries: {
         title: 'Целевые отрасли',
         items: [
@@ -802,99 +802,99 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Риски продукта',
+          title: 'Риски для обсуждения',
           items: [
-            'Крупные дорожно-транспортные происшествия, приводящие к простою или списанию авто.',
-            'Угон транспортных средств или кража дорогостоящих комплектующих.',
-            'Ущерб, вызванный экстремальными природными явлениями (град, наводнение, буря).',
-            'Непредвиденные расходы на ремонт и обслуживание в результате аварий.',
-            'Гражданская ответственность перед третьими лицами за травмы или материальный ущерб.'
+            'Дорожные аварии, которые приводят к простою или повреждению машин.',
+            'Угон автомобилей или кража комплектующих.',
+            'Ущерб от погодных явлений, включая град, наводнение и бурю.',
+            'Непредвиденные расходы на ремонт после повреждения.',
+            'Претензии третьих лиц из-за травм или материального ущерба.'
           ]
         },
         advantages: {
-          title: 'Преимущества',
+          title: 'Что стоит уточнить',
           items: [
-            'Оптимизация затраты за счет переговоров о льготных групповых тарифах.',
-            'Централизованное администрирование: один полис и один срок оплаты для всего парка.',
-            'Операционная гибкость при быстром добавлении или исключении автомобилей.',
-            'Индивидуальные покрытия КАСКО и ОСАГО в зависимости от профиля использования.',
-            'Техническая поддержка и помощь на дорогах 24/7 для минимизации простоев.'
+            'Сравнение страховых премий для одинаковых машин и условий без обещанной скидки.',
+            'Организация учета полисов и сроков без предположения об одном договоре.',
+            'Уточнение порядка добавления, продажи машин и изменения их использования.',
+            'Разграничение условий RCA и рисков и франшиз по CASCO.',
+            'Проверка помощи на дороге, территории и режима работы только при их наличии в предложении.'
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: 'Вопросы по условиям',
           items: [
-            'Не покрывает ущерб, причиненный под воздействием алкоголя или запрещенных веществ.',
-            'Исключает естественный износ, заводские дефекты или плохое техническое обслуживание.',
-            'Не покрывает ущерб, причиненный пользователями транспортных средств умышленно.',
-            'Обусловлено наличием действующих техосмотров и водительских удостоверений.',
-            'Франшизы могут значительно вырасти в случае высокой истории убыточности.'
+            'Чем отличаются условия RCA и CASCO при управлении под воздействием алкоголя или других веществ?',
+            'Как в рассматриваемом договоре учитываются износ, дефекты и обслуживание машины?',
+            'Какие положения относятся к умышленным действиям и заявленным пользователям?',
+            'Какие документы о техосмотрах, водителях и использовании нужны?',
+            'Какая франшиза применяется и как учитываются сведения об убытках?'
           ]
         }
       },
-      expertiseTitle: 'Кому и зачем нужен этот продукт?',
-      essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Дистрибьюторские компании, курьерские службы, перевозчики или любой бизнес с более чем 5 автомобилями получают огромную выгоду от полиса автопарка. ING Broker анализирует историю убытков и договаривается о лучших тарифах и условиях на рынке.',
-      ctaTitle: 'Оптимизируйте страхование вашего автопарка',
-      ctaCall: 'Запросить предложение',
+      expertiseTitle: 'Кому полезен этот разбор?',
+      essentialTitle: 'Как помогает брокер?',
+      whyUs: 'Помогаем подготовить перечень машин и историю убытков для анализа доступных предложений. Брокер объясняет полисы; страховщик устанавливает условия и рассматривает возможный ущерб по каждому договору.',
+      ctaTitle: 'Подготовьте продление полисов автопарка',
+      ctaCall: 'Запросить анализ',
       ctaEmail: 'Отправить email'
     },
     credit: {
-      title: 'Страхование кредитов',
-      subtitle: 'Защита от неоплаты счетов и коммерческих рисков.',
-      intro: 'Неоплаченные счета могут серьезно дестабилизировать денежный поток вашей компании. Страхование коммерческих кредитов защищает вас от риска неплатежей со стороны B2B-клиентов, будь то из-за неплатежеспособности или длительных задержек платежей.',
+      title: 'Страхование коммерческого кредита',
+      subtitle: 'Риск неоплаты счетов B2B: покупатели, лимиты и условия для анализа.',
+      intro: 'Коммерческий кредит возникает при поставке товаров или услуг с последующей оплатой. Анализ риска неплатежа начинается со счетов, сроков и задолженности по покупателям. Доступность продукта нужно проверить; это не обещание получения оплаты по счетам.',
       industries: {
         title: 'Целевые отрасли',
         items: [
           { title: 'Оптовая торговля', desc: 'Дистрибьюторы, продающие большие объемы товара с отсрочкой платежа.', image: '/comert cu ridicata.jpg' },
           { title: 'Производственная промышленность', desc: 'Производители, зависящие от инкассации счетов для оборотного капитала.', image: '/procesarea-carnii.jpg' },
           { title: 'B2B услуги', desc: 'Консалтинговые, рекламные или ИТ-компании, работающие с крупными клиентами.' },
-          { title: 'Экспортеры', desc: 'Бизнесы, продающие на внешних рынках и нуждающиеся в защите от страновых рисков.', image: '/export.jpg' }
+          { title: 'Экспортеры', desc: 'Компании, экспортирующие с отсрочкой платежа и работающие на разных рынках.', image: '/export.jpg' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Риски продукта',
+          title: 'Риски для обсуждения',
           items: [
-            'Внезапная неплатежеспособность или банкротство стратегических клиентов.',
-            'Крупные финансовые блокировки, вызванные неуплатой счетов в срок.',
-            'Политические или экономические риски на внешних рынках, блокирующие платежи.',
-            'Высокие и неэффективные затраты на процедуры взыскания дебиторской задолженности.',
-            'Неспособность оплатить счета собственных поставщиков из-за нехватки ликвидности.'
+            'Неожиданная неплатежеспособность или банкротство важного покупателя.',
+            'Нехватка средств из-за неоплаченных в срок счетов.',
+            'События на внешних рынках, которые могут затруднить платежи.',
+            'Расходы на процедуры взыскания задолженности.',
+            'Трудности с оплатой собственных поставщиков из-за недостатка средств.'
           ]
         },
         advantages: {
-          title: 'Преимущества',
+          title: 'Что стоит уточнить',
           items: [
-            'Гарантирует стабильность денежного потока и прибыльности компании.',
-            'Облегчает получение банковского финансирования путем цессии страхового полиса.',
-            'Позволяет расширять продажи новым клиентам, предлагая отсрочку платежа.',
-            'Включает доступ к профессиональным услугам по сбору и мониторингу задолженности.',
-            'Предоставляет актуальный анализ кредитоспособности всего портфеля клиентов.'
+            'Подготовка перечня покупателей и задолженности для анализа.',
+            'Уточнение ситуаций неплатежа, принятых в возможном предложении.',
+            'Сравнение лимита по покупателю с задолженностью и планируемыми поставками.',
+            'Проверка услуг мониторинга или взыскания только при их наличии в документах.',
+            'Обсуждение требований кредитора без обещания финансирования или принятия полиса.'
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: 'Вопросы по условиям',
           items: [
-            'Не покрывает коммерческие споры относительно качества или доставки товаров.',
-            'Исключает продажи физическим лицам или структурам внутри одной группы.',
-            'Требует предварительного одобрения кредитных лимитов для каждого партнера.',
-            'Не покрывает полную стоимость счета (существует доля участия страхователя).',
-            'Предполагает строгую дисциплину в отчетности о продажах и платежных инцидентах.'
+            'Как рассматриваются споры о качестве, поставке или приемке товаров?',
+            'Какие категории покупателей и отношения между компаниями приемлемы?',
+            'Как согласовываются, меняются и контролируются лимиты по покупателю?',
+            'Какая часть убытка остается за компанией и какие расходы принимаются?',
+            'Какие сроки и документы предусмотрены для отчетности о продажах и задержках платежей?'
           ]
         }
       },
-      expertiseTitle: 'Кому и зачем нужен этот продукт?',
-      essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Производителям, дистрибьюторам и поставщикам B2B-услуг, которые продают с отсрочкой платежа, необходима эта страховка. ING Broker поможет вам структурировать полис, чтобы максимизировать утвержденные кредитные лимиты и минимизировать затраты.',
-      ctaTitle: 'Обезопасьте свои доходы',
-      ctaCall: 'Запросить предложение',
+      expertiseTitle: 'Кому полезен этот разбор?',
+      essentialTitle: 'Как помогает брокер?',
+      whyUs: 'Помогаем подготовить сведения о торговой задолженности и вопросы для возможного анализа. Брокер не гарантирует взыскание долгов; страховщик подтверждает доступность продукта, приемлемых покупателей и условия.',
+      ctaTitle: 'Проанализируйте риск неоплаты счетов',
+      ctaCall: 'Запросить анализ',
       ctaEmail: 'Отправить email'
     },
     construction: {
       title: 'Строительство и монтаж (CAR/EAR)',
-      subtitle: 'Полное покрытие рисков, специфичных для строительных проектов.',
-      intro: 'Строительные и монтажные проекты сложны и подвержены серьезным рискам на протяжении всего периода выполнения. Страхование CAR/EAR (Contractors All Risks / Erection All Risks) обеспечивает защиту "От всех рисков" для работ, оборудования и ответственности перед третьими лицами, от открытия строительной площадки до сдачи объекта.',
+      subtitle: 'Строительные и монтажные работы: проект, этапы и ответственность для анализа.',
+      intro: 'Для стройплощадки подготовьте описание работ, стоимость, адрес и календарный план. CAR/EAR проверяют по принятым рискам и этапам. Название All Risks не означает, что любой ущерб или проблема проекта будут возмещены.',
       industries: {
         title: 'Целевые отрасли',
         items: [
@@ -906,100 +906,100 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Риски продукта',
+          title: 'Риски для обсуждения',
           items: [
-            'Стихийные бедствия (землетрясение, наводнение, буря), способные разрушить стройплощадку.',
+            'Стихийные явления, которые могут повредить стройплощадку.',
             'Пожары, взрывы или случайные обрушения строящихся конструкций.',
-            'Ошибки при выполнении работ, халатность или использование дефектных материалов.',
-            'Кража строительных материалов, инструментов или техники со стройплощадки.',
-            'Несчастные случаи, затрагивающие целостность соседних объектов или людей.'
+            'Ошибки при работах, небрежность или использование дефектных материалов.',
+            'Кража строительных материалов, инструментов или техники.',
+            'Происшествия, которые затрагивают соседнее имущество или людей.'
           ]
         },
         advantages: {
-          title: 'Преимущества',
+          title: 'Что стоит уточнить',
           items: [
-            'Всеобъемлющее покрытие типа "All Risks", адаптированное под каждый проект.',
-            'Защищает совместные инвестиции заказчика, генподрядчика и субподрядчиков.',
-            'Стандартное требование для получения банковского финансирования и соблюдения контрактов.',
-            'Покрывает расходы на расчистку и вывоз мусора после страхового случая.',
-            'Возможность расширения покрытия на период технического обслуживания/гарантии.'
+            'Описание работ и этапов для сравнения доступных предложений.',
+            'Уточнение интересов заказчика, подрядчика и субподрядчиков.',
+            'Сравнение страховых требований договора проекта и документов кредитора.',
+            'Проверка расходов на расчистку, если они указаны в предложении.',
+            'Обсуждение условий испытаний, приемки и обслуживания без предположения об автоматическом продлении защиты.'
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: 'Вопросы по условиям',
           items: [
-            'Не покрывает прямые затраты на исправление ошибок проектирования (только вызванный ущерб).',
-            'Исключает естественный износ, коррозию или естественное окисление материалов.',
-            'Не покрывает договорные штрафы за задержки в завершении работ.',
-            'Требует строгого соблюдения планов по охране труда и технике безопасности.',
-            'Франшизы могут быть значительными для катастрофических рисков (например, землетрясение).'
+            'Как рассматриваются ошибки проектирования, выполнения работ и возникший вследствие них ущерб?',
+            'Какие положения относятся к износу, коррозии и постепенному ухудшению состояния?',
+            'Как рассматриваются задержки и штрафы по договору работ?',
+            'Какие условия безопасности и уведомления предусмотрены в предложении?',
+            'Какие лимиты и франшизы относятся к заявленным рискам, этапам и имуществу?'
           ]
         }
       },
-      expertiseTitle: 'Кому и зачем нужен этот продукт?',
-      essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Застройщикам, генеральным подрядчикам и субподрядчикам необходимо CAR/EAR. ING Broker обладает необходимым опытом для структурирования сложных полисов, соответствующих требованиям финансистов и контрактов FIDIC.',
-      ctaTitle: 'Обеспечьте успех вашего проекта',
-      ctaCall: 'Запросить предложение',
+      expertiseTitle: 'Кому полезен этот разбор?',
+      essentialTitle: 'Как помогает брокер?',
+      whyUs: 'Помогаем подготовить документы проекта и вопросы о работах, технике и ответственности. Брокер объясняет доступные предложения; страховщик принимает риск и рассматривает возможное возмещение по договору.',
+      ctaTitle: 'Подготовьте анализ страхования проекта',
+      ctaCall: 'Запросить анализ',
       ctaEmail: 'Отправить email'
     },
     benefits: {
-      title: 'Льготы для сотрудников и групповое медицинское страхование | Удержание ИТ-талантов в Молдове | ING Broker',
-      subtitle: 'Элитные пакеты дополнительных льгот. Медицинское и жизненное страхование для сотрудников, оптимизированное для корпораций и ИТ-компаний Молдовы.',
-      intro: 'На высококонкурентном рынке труда пакет дополнительных льгот определяет разницу между успехом и стагнацией. Групповое медицинское страхование сотрудников (Employee Benefits) - это не просто защита, а стратегический инструмент для найма, мотивации и удержания талантов, особенно в ИТ-секторе и корпорациях Республики Молдова.',
+      title: 'Страховые программы для сотрудников',
+      subtitle: 'Здоровье и жизнь: желаемые услуги, участники и условия для проверки.',
+      intro: 'Страхование можно рассмотреть как часть пакета для сотрудников. Начните с состава команды, бюджета и желаемых услуг. Наличие медицинской программы или страхования жизни и приемлемость участников подтверждаются отдельно; удержание персонала и быстрое лечение не гарантируются.',
       industries: {
         title: 'Целевые отрасли',
         items: [
           { title: 'Корпоративный сектор', desc: 'Крупные компании, желающие предложить конкурентоспособные пакеты льгот.', image: '/Group_Health_Insurance.png' },
           { title: 'МСП и стартапы', desc: 'Растущие предприятия, инвестирующие в удержание талантов.', image: '/employer.jpg' },
-          { title: 'Технологии / ИТ', desc: 'Компании, где дополнительные льготы являются стандартом при найме.', image: '/employer.jpg' },
+          { title: 'Технологии / ИТ', desc: 'Компании, которые оценивают дополнительные программы с учетом потребностей команды и бюджета.', image: '/employer.jpg' },
           { title: 'Услуги и консалтинг', desc: 'Фирмы, которые ценят здоровье и благополучие своих сотрудников.', image: '/conect-people.png' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Управляемые риски',
+          title: 'Риски для обсуждения',
           image: '/analiza-riscurilor.webp',
           items: [
             'Непредвиденные проблемы со здоровьем сотрудников.',
-            'Несчастные случаи на работе или во внерабочее время.',
-            'Высокие медицинские расходы в частной системе.',
-            'Снижение производительности из-за медицинских проблем.',
-            'Высокая текучесть кадров (Turnover).'
+            'Происшествия на работе или вне рабочего времени, требующие отдельного анализа.',
+            'Медицинские расходы сотрудников.',
+            'Отсутствие сотрудников из-за проблем со здоровьем.',
+            'Текучесть персонала как вопрос кадровой политики, а не обещанный страховой результат.'
           ]
         },
         advantages: {
-          title: 'Стратегические преимущества',
+          title: 'Что стоит уточнить',
           items: [
-            'Повышает лояльность и удовлетворенность сотрудников (Employee Engagement).',
-            'Налоговая вычетаемость страховых премий (в рамках закона).',
-            'Быстрый доступ к качественным медицинским услугам (топ частные клиники).',
-            'Настраиваемые пакеты в зависимости от иерархического уровня.',
-            'Серьезное конкурентное преимущество в процессе найма в ИТ.'
+            'Сравнение запрошенных услуг, сети поставщиков и порядка обращения.',
+            'Подготовка налоговых вопросов бухгалтеру без предположения о вычете страховых премий.',
+            'Уточнение лимитов и сумм, которые сотрудник оплачивает сам.',
+            'Сравнение категорий участников и правил включения, если программа это позволяет.',
+            'Подготовка вопросов о документах, информировании и продлении программы.'
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: 'Вопросы по условиям',
           items: [
-            'Ранее существовавшие заболевания могут быть исключены (в зависимости от размера группы).',
-            'Не покрывает эстетическое или экспериментальное лечение.',
-            'Требуется минимальное количество сотрудников для формирования группы.',
-            'Стоимость может ежегодно расти в зависимости от коэффициента убыточности.',
-            'Исключения для несчастных случаев в состоянии алкогольного опьянения.'
+            'Каково минимальное число участников и кто может быть включен в предложенную программу?',
+            'Какие услуги, лимиты и согласования относятся к консультациям и лечению?',
+            'Как конфиденциально рассматриваются ранее существовавшие заболевания через указанный канал?',
+            'Какие виды лечения или обстоятельства исключены в документах программы?',
+            'Какие правила и сведения применяются при включении, выходе и продлении?'
           ]
         }
       },
-      expertiseTitle: 'Кому и зачем нужен этот продукт?',
-      essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Любой компании, которая хочет инвестировать в свою команду, необходимы Employee Benefits. ING Broker ведет переговоры со всеми крупными страховщиками, чтобы предложить вам лучший пакет, адаптированный к вашему бюджету и потребностям вашей команды.',
-      ctaTitle: 'Инвестируйте в свою команду сейчас',
-      ctaCall: 'Запросить предложение',
+      expertiseTitle: 'Кому полезен этот разбор?',
+      essentialTitle: 'Как помогает брокер?',
+      whyUs: 'Помогаем сравнить документы доступной программы и подготовить объяснения для команды. Брокер не заменяет врача; страховщик подтверждает приемлемость участников и рассматривает расходы согласно договору.',
+      ctaTitle: 'Обсудите страховые потребности команды',
+      ctaCall: 'Запросить анализ',
       ctaEmail: 'Отправить email'
     },
     agriculture: {
-      title: 'Сельхоз риски',
-      subtitle: 'Специализированное страхование урожая, животных и сельскохозяйственной техники.',
-      intro: 'Сельское хозяйство сильно подвержено капризам погоды и биологическим рискам. Сельскохозяйственное страхование предоставляет фермерам и агробизнесу необходимую систему безопасности для защиты их инвестиций в урожай, скот и технику от крупных финансовых потерь.',
+      title: 'Сельскохозяйственные риски',
+      subtitle: 'Культуры, животные и техника: риски и периоды для отдельного анализа.',
+      intro: 'У культур, животных и сельхозтехники разные риски. Анализ начинается с участков, поголовья, имущества и заявленного сезона. Доступность продукта и принятие риска подтверждаются индивидуально, без обещания возврата вложений или субсидии.',
       industries: {
         title: 'Целевые отрасли',
         items: [
@@ -1011,49 +1011,49 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Риски продукта',
+          title: 'Риски для обсуждения',
           items: [
-            'Экстремальные погодные явления (град, мороз, наводнение), уничтожающие посевы.',
-            'Гибель животных из-за эпидемий, болезней или случайных происшествий.',
-            'Пожары растительности, на силосах или складах кормов и зерна.',
-            'Случайное повреждение жизненно важной сельхозтехники (тракторы, комбайны) в сезон.',
-            'Финансовые потери, вызванные качественным ухудшением урожая из-за погоды.'
+            'Экстремальная погода, которая может повредить посевы.',
+            'Гибель животных из-за болезней или происшествий, условия по которым нужно проверять отдельно.',
+            'Пожары растительности, зернохранилищ или складов кормов.',
+            'Повреждение сельхозтехники в рабочий сезон.',
+            'Финансовые потери из-за ухудшения качества урожая вследствие погоды.'
           ]
         },
         advantages: {
-          title: 'Преимущества',
+          title: 'Что стоит уточнить',
           items: [
-            'Гарантирует возврат капитала, вложенного в посев и уход за культурами.',
-            'Облегчает доступ к банковским кредитам, субсидиям и европейским фондам.',
-            'Возможность субсидирования страховых премий государством (до 70%).',
-            'Защищает финансовую стабильность фермы и позволяет возобновить аграрный цикл.',
-            'Техническая оценка и быстрая констатация ущерба, проводимая экспертами-агрономами.'
+            'Описание культур, участков, животных или техники для анализа риска.',
+            'Сравнение определений событий, лимитов и франшиз в предложениях.',
+            'Подготовка вопросов о государственной поддержке для проверки по действующим официальным правилам.',
+            'Уточнение рассматриваемой стоимости и способа оценки возможной потери.',
+            'Проверка порядка уведомления, осмотра ущерба и предоставления документов.'
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: 'Вопросы по условиям',
           items: [
-            'Не покрывает потери, вызванные несоблюдением правильных агротехнологий.',
-            'Засуха покрывается только по специальным оговоркам и обычно с высокими франшизами.',
-            'Не покрывает болезни животных, о которых не было заявлено или у которых нет прививок.',
-            'Обязательные периоды ожидания (каренция) с момента подписания полиса до вступления в силу.',
-            'Требует детальных инспекций рисков и постоянного мониторинга состояния посевов.'
+            'Какие условия относятся к агротехнологии и учету выполненных работ?',
+            'Как определяется засуха и какие культуры, участки и периоды могут быть приняты?',
+            'Какие болезни, события и ветеринарные документы относятся к заявленным животным?',
+            'Есть ли периоды ожидания и когда начинается покрытие?',
+            'Какие осмотры, записи и уведомления требуются в конкретном предложении?'
           ]
         }
       },
-      expertiseTitle: 'Кому и зачем нужен этот продукт?',
-      essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Фермерам, сельскохозяйственным кооперативам и инвесторам в агробизнес необходима эта защита. ING Broker знает сельскохозяйственную специфику Молдовы и помогает вам получить доступ к адаптированным полисам, включая поддержку субсидирования премий.',
-      ctaTitle: 'Защитите свой урожай и ферму',
-      ctaCall: 'Запросить предложение',
+      expertiseTitle: 'Кому полезен этот разбор?',
+      essentialTitle: 'Как помогает брокер?',
+      whyUs: 'Помогаем подготовить сведения о хозяйстве и разобраться в доступных предложениях. Страховщик подтверждает условия и возможное возмещение; право на государственную поддержку отдельно проверяют в компетентном органе.',
+      ctaTitle: 'Подготовьте анализ рисков хозяйства',
+      ctaCall: 'Запросить анализ',
       ctaEmail: 'Отправить email'
     }
   },
   en: {
     liability: {
       title: 'General Liability',
-      subtitle: 'Financial protection against damages caused to third parties during business operations.',
-      intro: 'Every business interacts with clients, suppliers, and the general public. General liability insurance protects you against financial claims resulting from bodily injury or property damage accidentally caused to third parties during the course of your commercial activity.',
+      subtitle: 'Third-party liability: activities, losses and limits to review.',
+      intro: 'A visitor may be injured on company premises, or business activities may damage someone else’s property. These situations are reviewed separately from insurance of the company’s own assets. This overview does not confirm that every loss or activity is insurable.',
       industries: {
         title: 'Target Industries',
         items: [
@@ -1065,48 +1065,48 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Product Risks',
+          title: 'Risks to review',
           image: '/analiza-riscurilor.webp',
           items: [
-            'Accidents on company premises (e.g., slips, falls)',
-            'Damages caused by defective products',
-            'Operational errors affecting third-party property',
-            'Costly and unforeseen legal claims',
-            'Reputational damage following an incident'
+            'Incidents involving visitors on company premises, such as slips or falls.',
+            'Claims relating to defective products supplied to customers.',
+            'Operational errors that may affect other people’s property or health.',
+            'Costs of assessing and defending claims for compensation.',
+            'Damage to the company’s reputation after a safety incident.'
           ]
         },
         advantages: {
-          title: 'Advantages',
+          title: 'What to clarify',
           items: [
-            'Protects company capital from ruinous lawsuits',
-            'Covers legal defense costs, regardless of fault',
-            'Increases the trust of clients and business partners',
-            'Often a mandatory requirement in commercial contracts',
-            'Flexibility in choosing compensation limits'
+            'Describing the activities and locations submitted for review.',
+            'Comparing limits and the deductible, the share of a loss borne under the contract.',
+            'Clarifying which defence costs may be accepted and how they are approved.',
+            'Checking commercial contract requirements without presenting insurance as universally mandatory.',
+            'Distinguishing general liability, product liability and professional liability.'
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: 'Questions about policy terms',
           items: [
-            'Does not cover intentional damages or illegal acts',
-            'Does not cover workplace accidents of own employees',
-            'Excludes professional errors (requires Professional Liability insurance)',
-            'Does not cover pollution damages (without special clauses)',
-            'Excludes fines and penalties'
+            'How does the proposal address intentional acts and inaccurate information?',
+            'What terms apply to employee injuries and what separate review is needed?',
+            'Which claims relating to professional services are accepted or excluded?',
+            'How are pollution and any additional clauses addressed?',
+            'What limits and exclusions apply to defence costs, fines or penalties?'
           ]
         }
       },
-      expertiseTitle: 'Who needs this product and why?',
-      essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'Any company, from retail stores and restaurants to construction companies and manufacturers, needs this insurance. We help you evaluate real risk exposure and negotiate optimal coverage limits to protect your business from costly litigation.',
-      ctaTitle: 'Protect your business from the unexpected',
-      ctaCall: 'Request a quote',
+      expertiseTitle: 'Who may find this review useful?',
+      essentialTitle: 'How can the broker help?',
+      whyUs: 'We help describe the activity and prepare questions for the insurer. The broker explains available proposals; risk acceptance and any compensation decision belong to the insurer under the contract.',
+      ctaTitle: 'Discuss your company’s third-party liability',
+      ctaCall: 'Request a review',
       ctaEmail: 'Send email'
     },
     professional: {
       title: 'Professional Liability',
-      subtitle: 'Safety in exercising your profession and protection against errors or omissions.',
-      intro: 'Professionals providing consulting or specialized services are exposed to the risk of being sued for negligence, errors, or omissions. Professional Liability (PI) insurance covers defense costs and financial compensation if a client suffers losses due to your services.',
+      subtitle: 'Professional errors and omissions: claims and defence costs to review.',
+      intro: 'An error in a service may cause a client financial loss. The review starts with the services actually provided and your contract requirements. Availability for the profession, activity and territory requested must be confirmed before a proposal is prepared.',
       industries: {
         title: 'Target Industries',
         items: [
@@ -1118,99 +1118,99 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Product Risks',
+          title: 'Risks to review',
           items: [
-            'Incorrect advice leading to financial losses',
-            'Design or calculation errors',
-            'Failure to meet contractual deadlines',
-            'Loss of client data or documents',
-            'Accusations of professional malpractice'
+            'Incorrect advice that may cause financial loss to clients.',
+            'Design or calculation errors and omissions in technical documents.',
+            'Claims over failure to meet agreed service deadlines.',
+            'Loss, damage or accidental disclosure of client documents.',
+            'Allegations of professional negligence or failure to meet professional standards.'
           ]
         },
         advantages: {
-          title: 'Advantages',
+          title: 'What to clarify',
           items: [
-            'Covers defense costs, which can be substantial',
-            'Protects reputation and business continuity',
-            'Essential for winning tenders and large contracts',
-            'Provides psychological peace of mind in exercising the profession',
-            'Customized solutions for each field of activity'
+            'Comparing proposals for the professional services declared by the company.',
+            'Clarifying defence costs and the limits stated in the proposal.',
+            'Checking the client contract requirements without presenting them as a general obligation.',
+            'Identifying differences between actual activities and their description in documents.',
+            'Explaining terms and points requiring individual confirmation by the insurer.'
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: 'Questions about policy terms',
           items: [
-            'Does not cover fraudulent or intentional acts',
-            'Excludes bodily injury and property damage (covered by General Liability)',
-            'Does not cover price guarantees or cost estimates',
-            'Excludes fines and penalties',
-            'Does not cover cyber risks (requires Cyber insurance)'
+            'How are intentional acts and statements in the application treated?',
+            'How are financial claims distinguished from bodily injury and property damage?',
+            'What terms apply to result guarantees, estimates and obligations assumed towards a client?',
+            'What provisions concern fines and penalties, and what specialist review is needed?',
+            'Which cyber risks are accepted or excluded, without assuming inclusion from the policy name?'
           ]
         }
       },
-      expertiseTitle: 'Who needs this product and why?',
-      essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'Architects, engineers, IT consultants, lawyers, accountants, and marketing agencies vitally need this policy. ING Broker understands the specifics of each profession and structures policies that exactly address your real exposures.',
-      ctaTitle: 'Secure your professional future',
-      ctaCall: 'Request a quote',
+      expertiseTitle: 'Who may find this review useful?',
+      essentialTitle: 'How can the broker help?',
+      whyUs: 'We help prepare the service description and compare terms in available proposals. The broker does not determine liability or promise compensation; the insurer reviews the risk and claim under the contract.',
+      ctaTitle: 'Clarify the risks of your professional services',
+      ctaCall: 'Request a review',
       ctaEmail: 'Send email'
     },
     do: {
       title: 'D&O (Directors & Officers)',
-      subtitle: 'Essential protection for managerial decisions and company leadership.',
-      intro: 'Directors and officers (D&O) bear huge responsibility and can be held personally liable for decisions made on behalf of the company. D&O insurance protects the personal assets of leaders against claims made by shareholders, employees, authorities, or creditors.',
+      subtitle: 'Directors’ and officers’ liability: people, decisions and terms to review.',
+      intro: 'D&O concerns claims relating to company management within the limits of a possible contract. The first step is checking eligibility for the entity, people and jurisdictions requested. This overview does not confirm product availability for every company.',
       industries: {
         title: 'Target Industries',
         items: [
           { title: 'Corporate Sector', desc: 'Large companies with complex management structures and boards of directors.', image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1200' },
           { title: 'Financial Services', desc: 'Banks, investment funds, and non-banking financial institutions.' },
           { title: 'Startups and Tech', desc: 'Fast-growing companies attracting external investment.' },
-          { title: 'NGOs and Associations', desc: 'Non-profit organizations where administrators bear legal liability.', image: '/ong.jpg' }
+          { title: 'NGOs and Associations', desc: 'Non-profit organisations whose management roles need to be described for the review.', image: '/ong.jpg' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Product Risks',
+          title: 'Risks to review',
           items: [
-            'Accusations of mismanagement from shareholders',
-            'Investigations by regulatory authorities',
-            'Claims from employees (EPL)',
-            'Company insolvency and creditor claims',
-            'Errors in financial reporting'
+            'Claims relating to management decisions or communication with investors.',
+            'Defence costs associated with investigations involving management.',
+            'Employee claims, whose terms require separate review.',
+            'Claims against management relating to company insolvency.',
+            'Alleged errors or omissions in financial reporting.'
           ]
         },
         advantages: {
-          title: 'Advantages',
+          title: 'What to clarify',
           items: [
-            'Attracts and retains top talent in leadership positions',
-            'Protects the personal assets of decision-makers',
-            'Covers extremely high defense costs in such litigation',
-            'Provides security in making strategic decisions',
-            'Protects the reputation of the company and its leaders'
+            'Identifying the people and roles submitted for review.',
+            'Distinguishing claims against managers from the company’s own losses.',
+            'Comparing the limit with defence costs and the share borne by the insured.',
+            'Clarifying the periods and circumstances that need to be disclosed.',
+            'Checking notification procedures and documents for a possible claim.'
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: 'Questions about policy terms',
           items: [
-            'Does not cover fraud, intentional acts, or obtaining undue benefits',
-            'Excludes bodily injury and property damage',
-            'Does not cover litigation prior to the policy inception',
-            'Excludes criminal fines and penalties',
-            'Does not cover pollution damages'
+            'How are fraud, intentional acts and improper personal benefits addressed?',
+            'Which bodily injury or property damage claims are accepted or excluded?',
+            'What is the effect of disputes and circumstances known before inception?',
+            'How are fines, penalties and investigation-related costs addressed?',
+            'What provisions concern pollution claims and activities in other jurisdictions?'
           ]
         }
       },
-      expertiseTitle: 'Who needs this product and why?',
-      essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'Any company with a board of directors, external investors, or expansion plans needs D&O. ING Broker negotiates complex clauses and adequate limits to ensure the peace of mind of your leaders.',
-      ctaTitle: 'Protect your company\'s leaders',
-      ctaCall: 'Request a quote',
+      expertiseTitle: 'Who may find this review useful?',
+      essentialTitle: 'How can the broker help?',
+      whyUs: 'We help describe the management structure and prepare questions about people, periods and limits. The broker explains available documents; the insurer decides risk acceptance and considers claims under the contract.',
+      ctaTitle: 'Prepare a review of management liability',
+      ctaCall: 'Request a review',
       ctaEmail: 'Send email'
     },
     cyber: {
       title: 'Cyber Insurance',
-      subtitle: 'Protection against cyber risks and data security breaches.',
-      intro: 'In a digitized world, cyber attacks are no longer a matter of "if", but "when". Cyber insurance provides financial protection and emergency assistance in the event of data breaches, ransomware attacks, or business interruption due to cyber causes.',
+      subtitle: 'Cyber risks: systems, data and insurance terms to check.',
+      intro: 'An IT incident may interrupt operations or expose company data. The review starts with systems, backups and dependencies on suppliers. This material does not confirm availability of cyber insurance or incident response services for your company.',
       industries: {
         title: 'Target Industries',
         items: [
@@ -1222,47 +1222,47 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Product Risks',
+          title: 'Risks to review',
           items: [
-            'Ransomware attacks and data access blocking',
-            'Personal data breaches (GDPR)',
-            'Human errors leading to system compromise',
-            'Interruption of IT operations',
-            'Severe damage to company reputation'
+            'Ransomware attacks that may block access to company data.',
+            'Exposure of personal data and costs of examining the incident.',
+            'Human errors or unauthorised access that may compromise systems.',
+            'Interruption of business operations due to IT incidents.',
+            'Loss of customer trust after a security incident.'
           ]
         },
         advantages: {
-          title: 'Advantages',
+          title: 'What to clarify',
           items: [
-            'Immediate access to an incident response expert team (24/7)',
-            'Covers financial losses caused by business stoppage',
-            'Protects against GDPR fines (where permitted by law)',
-            'Covers costs of notifying affected clients',
-            'Provides PR services for image crisis management'
+            'Preparing an inventory of systems and interruption scenarios.',
+            'Distinguishing the company’s own losses from claims by other parties.',
+            'Clarifying response services, operating hours and approvals, if proposed.',
+            'Comparing limits, exclusions and costs retained by the company.',
+            'Preparing questions about notification, documentation and communication during an incident.'
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: 'Questions about policy terms',
           items: [
-            'Requires minimum IT security standards (e.g., backup, antivirus)',
-            'Does not cover IT system upgrades after an attack',
-            'Excludes physical damage to equipment (requires property insurance)',
-            'Does not cover acts of cyber war (without special clauses)',
-            'Excludes losses caused by widespread power outages'
+            'What security measures and backup information are requested?',
+            'How are system restoration and subsequent technical improvements distinguished?',
+            'What terms apply to physical equipment and supplier interruptions?',
+            'How are war, terrorism and other events excluded in the documents addressed?',
+            'What provisions concern power interruptions, notification costs and fines, without assuming their inclusion?'
           ]
         }
       },
-      expertiseTitle: 'Who needs this product and why?',
-      essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'Any company that stores client data, processes online payments, or depends on IT systems needs Cyber insurance. ING Broker helps you evaluate vulnerabilities and choose the policy that best fits your technological profile.',
-      ctaTitle: 'Secure your digital business',
-      ctaCall: 'Request a quote',
+      expertiseTitle: 'Who may find this review useful?',
+      essentialTitle: 'How can the broker help?',
+      whyUs: 'We help prepare risk information without passwords or customer databases and frame questions about possible proposals. The broker does not replace the IT team; the insurer confirms eligibility and contractual terms.',
+      ctaTitle: 'Prepare your cyber risk information',
+      ctaCall: 'Request a review',
       ctaEmail: 'Send email'
     },
     cargo: {
-      title: 'Cargo and Transport',
-      subtitle: 'Safety for goods in transit against loss or damage.',
-      intro: 'Supply chains are complex and exposed to numerous risks. Cargo insurance protects the value of goods during transport (sea, air, road, or rail), from the point of departure to the final destination, regardless of who performs the transport.',
+      title: 'CARGO insurance for goods in transit',
+      subtitle: 'Goods in transit: value, route and stages accepted under the contract.',
+      intro: 'CARGO insurance concerns transported goods within the stages and risks accepted in the policy. The review starts with the goods, value, route and interest in the cargo. The carrier’s policy alone does not confirm full protection of the owner’s shipment.',
       industries: {
         title: 'Target Industries',
         items: [
@@ -1274,47 +1274,47 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Product Risks',
+          title: 'Risks to review',
           items: [
-            'Traffic accidents destroying the cargo',
-            'Theft of goods from trucks or transit warehouses',
-            'Deterioration due to weather conditions or poor handling',
-            'Delays leading to spoilage of perishable products',
-            'Loss of containers at sea'
+            'Road, rail or maritime accidents damaging the cargo.',
+            'Total or partial theft in transit or temporary storage.',
+            'Damage to goods due to weather or improper handling.',
+            'Transport delays that lead to deterioration of perishable goods.',
+            'Loss of or damage to containers during maritime transport.'
           ]
         },
         advantages: {
-          title: 'Advantages',
+          title: 'What to clarify',
           items: [
-            'Protects the financial investment in the goods',
-            '"All Risks" coverage available',
-            'Facilitates international trade and obtaining credit',
-            'Fast compensation, without waiting to establish carrier fault',
-            'Flexible policies: per shipment or annual subscription'
+            'Describing the goods, value and transport stages submitted for review.',
+            'Comparing risks and exclusions without interpreting All Risks as protection without limits.',
+            'Clarifying who requests insurance under the agreed delivery terms.',
+            'Checking the valuation basis and documents needed for a possible loss.',
+            'Discussing the contract format for declared shipments if a proposal is available.'
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: 'Questions about policy terms',
           items: [
-            'Does not cover inherent vice of the goods or improper packaging',
-            'Excludes delays (except for special clauses)',
-            'Does not cover normal weight or volume losses',
-            'Excludes acts of war or strikes (can be added as extensions)',
-            'Requires correct declaration of the value and nature of the goods'
+            'What requirements apply to packaging, loading and handling?',
+            'How are inherent characteristics and natural weight or volume losses treated?',
+            'What terms concern delays and deterioration of perishable goods?',
+            'How does the proposal address war, strikes and terrorism?',
+            'What documents and confirmations are needed if the value, route or carrier changes?'
           ]
         }
       },
-      expertiseTitle: 'Who needs this product and why?',
-      essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'Importers, exporters, manufacturers, and distributors need Cargo insurance. ING Broker structures complex insurance programs, adapted to incoterms and specific logistical routes of your business.',
-      ctaTitle: 'Insure your supply chain',
-      ctaCall: 'Request a quote',
+      expertiseTitle: 'Who may find this review useful?',
+      essentialTitle: 'How can the broker help?',
+      whyUs: 'We help describe the shipment and compare available proposals using the same information. The broker explains differences; the insurer decides acceptance and any compensation, without a payment deadline promised by the broker.',
+      ctaTitle: 'Discuss the risks to your transported goods',
+      ctaCall: 'Request a review',
       ctaEmail: 'Send email'
     },
     fleet: {
-      title: 'Fleet Auto',
-      subtitle: 'Efficient management and customized solutions for corporate auto fleets.',
-      intro: 'The auto fleet is essential for the mobility and operations of your company. Fleet Auto insurance offers simplified management and complete coverage (CASCO and MTPL) for all company vehicles under a single policy, optimizing costs and administration.',
+      title: 'Company fleet insurance',
+      subtitle: 'Company vehicle insurance reviewed separately by use and contract.',
+      intro: 'A fleet review starts with the vehicle list, use and expiry dates. RCA and CASCO serve different purposes and should not be presented as one complete protection package. Contract format, terms and eligibility must be checked for the specific vehicles.',
       industries: {
         title: 'Target Industries',
         items: [
@@ -1326,99 +1326,99 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Product Risks',
+          title: 'Risks to review',
           items: [
-            'Traffic accidents immobilizing vehicles',
-            'Theft of vehicles or components',
-            'Damages caused by weather phenomena (hail, floods)',
-            'Unforeseen repair costs',
-            'Legal liability towards third parties'
+            'Road accidents that immobilise or damage vehicles.',
+            'Theft of vehicles or components.',
+            'Damage from weather events, including hail, floods and storms.',
+            'Unexpected repair costs following damage.',
+            'Third-party claims relating to injury or property damage.'
           ]
         },
         advantages: {
-          title: 'Advantages',
+          title: 'What to clarify',
           items: [
-            'Optimized costs through fleet-level negotiation',
-            'Simplified administration: a single renewal date',
-            'Flexibility in adding or removing vehicles',
-            'Customized coverages based on vehicle type and usage',
-            'Efficient claims management through the broker'
+            'Comparing insurance premiums for the same vehicles and terms without a promised discount.',
+            'Organising policy and expiry records without assuming a single contract.',
+            'Clarifying procedures for vehicles added, sold or put to a different use.',
+            'Separating RCA terms from CASCO risks and deductibles.',
+            'Checking roadside assistance, territory and operating hours only if proposed.'
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: 'Questions about policy terms',
           items: [
-            'Does not cover damages produced under the influence of alcohol or drugs',
-            'Excludes normal wear and tear and technical breakdowns (without special clauses)',
-            'Does not cover intentional damages',
-            'Requires compliance with technical inspection rules',
-            'Applicable deductibles depending on claims history'
+            'How do RCA and CASCO terms differ for driving under the influence of alcohol or other substances?',
+            'How does the contract under review address wear, defects and vehicle maintenance?',
+            'What provisions concern intentional acts and declared users?',
+            'What documents about inspections, drivers and use are needed?',
+            'What deductible applies and how is claims information considered?'
           ]
         }
       },
-      expertiseTitle: 'Who needs this product and why?',
-      essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'Distribution companies, couriers, transporters, or any business with more than 5 vehicles benefit enormously from a fleet policy. ING Broker analyzes the claims history and negotiates the best rates and conditions on the market.',
-      ctaTitle: 'Optimize your fleet insurance',
-      ctaCall: 'Request a quote',
+      expertiseTitle: 'Who may find this review useful?',
+      essentialTitle: 'How can the broker help?',
+      whyUs: 'We help prepare the vehicle inventory and claims history to review available proposals. The broker explains policies; the insurer sets terms and considers possible losses under each contract.',
+      ctaTitle: 'Prepare your fleet insurance renewals',
+      ctaCall: 'Request a review',
       ctaEmail: 'Send email'
     },
     credit: {
-      title: 'Credit Insurance',
-      subtitle: 'Protection against non-payment of invoices and commercial risks.',
-      intro: 'Unpaid invoices can severely destabilize your company\'s cash flow. Commercial Credit Insurance protects you against the risk of non-payment from B2B clients, either due to insolvency or prolonged payment delays.',
+      title: 'Trade credit insurance',
+      subtitle: 'Non-payment risk for B2B invoices: buyers, limits and terms to review.',
+      intro: 'Trade credit arises when goods or services are supplied with payment due later. A non-payment review starts with invoices, payment terms and exposure by buyer. Product availability must be checked; this is not a promise that invoices will be collected.',
       industries: {
         title: 'Target Industries',
         items: [
           { title: 'Wholesale Trade', desc: 'Distributors selling large volumes of goods with deferred payment.', image: '/comert cu ridicata.jpg' },
           { title: 'Manufacturing Industry', desc: 'Manufacturers depending on invoice collection for working capital.', image: '/procesarea-carnii.jpg' },
           { title: 'B2B Services', desc: 'Consulting, advertising, or IT companies working with large clients.' },
-          { title: 'Exporters', desc: 'Businesses selling in foreign markets needing protection against country risks.', image: '/export.jpg' }
+          { title: 'Exporters', desc: 'Companies exporting on payment terms with exposure across different markets.', image: '/export.jpg' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Product Risks',
+          title: 'Risks to review',
           items: [
-            'Unexpected bankruptcy of a major client',
-            'Financial blockages caused by uncollected invoices',
-            'Country risks for export operations',
-            'High costs with debt collection',
-            'Affecting the ability to pay own suppliers'
+            'Unexpected insolvency or bankruptcy of an important buyer.',
+            'Cash shortages caused by invoices unpaid at the due date.',
+            'Events in foreign markets that may disrupt payments.',
+            'Costs of debt collection procedures.',
+            'Difficulty paying the company’s own suppliers due to insufficient cash.'
           ]
         },
         advantages: {
-          title: 'Advantages',
+          title: 'What to clarify',
           items: [
-            'Secures cash flow and profitability',
-            'Facilitates access to bank financing (the policy can be assigned)',
-            'Allows safe expansion into new markets',
-            'Includes professional debt collection services',
-            'Provides valuable information about clients\' creditworthiness'
+            'Preparing the buyer list and outstanding balances submitted for review.',
+            'Clarifying non-payment situations accepted in a possible proposal.',
+            'Comparing the buyer limit with outstanding balances and planned deliveries.',
+            'Checking monitoring or collection services only if provided in the documents.',
+            'Discussing lender requirements without promising finance or policy acceptance.'
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: 'Questions about policy terms',
           items: [
-            'Does not cover commercial disputes regarding the quality of goods',
-            'Excludes sales to individuals (B2C)',
-            'Requires approval of credit limits for each client',
-            'Does not cover 100% of the invoice value (there is co-insurance, e.g., 10%)',
-            'Involves a fixed cost and rigorous policy administration'
+            'How are disputes about quality, delivery or acceptance of goods treated?',
+            'Which buyer categories and relationships between companies are eligible?',
+            'How are buyer limits approved, changed and monitored?',
+            'What share of a loss remains with the company and which costs are accepted?',
+            'What reporting deadlines and documents apply to sales and payment delays?'
           ]
         }
       },
-      expertiseTitle: 'Who needs this product and why?',
-      essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'Manufacturers, distributors, and B2B service providers who sell on credit terms need this insurance. ING Broker helps you structure the policy to maximize approved credit limits and minimize costs.',
-      ctaTitle: 'Secure your receivables',
-      ctaCall: 'Request a quote',
+      expertiseTitle: 'Who may find this review useful?',
+      essentialTitle: 'How can the broker help?',
+      whyUs: 'We help prepare trade exposure information and questions for a possible review. The broker does not guarantee debt collection; the insurer confirms product availability, accepted buyers and terms.',
+      ctaTitle: 'Review your exposure to unpaid invoices',
+      ctaCall: 'Request a review',
       ctaEmail: 'Send email'
     },
     construction: {
       title: 'Construction and Erection (CAR/EAR)',
-      subtitle: 'Complete coverage for risks specific to construction projects.',
-      intro: 'Construction and erection projects are complex and exposed to major risks throughout the execution period. CAR/EAR (Contractors All Risks / Erection All Risks) insurance provides "All Risks" protection for works, equipment, and third-party liability, from site opening to handover.',
+      subtitle: 'Construction and erection works: project, stages and liabilities to review.',
+      intro: 'For a site review, prepare the works description, value, location and schedule. CAR/EAR proposals are checked against accepted risks and stages. The name All Risks does not mean that every loss or project problem will be compensated.',
       industries: {
         title: 'Target Industries',
         items: [
@@ -1430,104 +1430,104 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Product Risks',
+          title: 'Risks to review',
           items: [
-            'Natural disasters (earthquake, floods, storms)',
-            'Fire and explosion on site',
-            'Execution errors or material defects',
-            'Theft of construction materials',
-            'Accidents affecting neighboring properties'
+            'Natural events that may damage the construction site.',
+            'Fire, explosion or accidental collapse of structures under construction.',
+            'Execution errors, negligence or use of defective materials.',
+            'Theft of construction materials, tools or machinery.',
+            'Incidents affecting neighbouring property or people.'
           ]
         },
         advantages: {
-          title: 'Advantages',
+          title: 'What to clarify',
           items: [
-            '"All Risks" coverage in a single policy',
-            'Protects the investment of the beneficiary and the builder',
-            'Often a mandatory requirement in contracting agreements',
-            'Covers site clearance costs after a loss',
-            'Flexibility for projects of any size'
+            'Describing works and stages to compare available proposals.',
+            'Clarifying the interests of the client, contractor and subcontractors.',
+            'Comparing insurance requirements in the project contract and lender documents.',
+            'Checking debris removal costs if mentioned in the proposal.',
+            'Discussing testing, handover and maintenance terms without assuming automatic extensions.'
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: 'Questions about policy terms',
           items: [
-            'Does not cover the cost of rectifying design errors (only resulting damages)',
-            'Excludes normal wear and tear and gradual deterioration',
-            'Does not cover penalties for work delays',
-            'Requires strict compliance with safety rules on site',
-            'Applicable deductibles for different types of risks'
+            'How are design errors, execution errors and resulting damage treated?',
+            'What provisions concern wear, corrosion and gradual deterioration?',
+            'How are delays and penalties under the works contract addressed?',
+            'What safety and notification conditions are stated in the proposal?',
+            'What limits and deductibles apply to declared risks, stages and property?'
           ]
         }
       },
-      expertiseTitle: 'Who needs this product and why?',
-      essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'Real estate developers, general contractors, and subcontractors need CAR/EAR. ING Broker has the necessary expertise to structure complex policies that meet the requirements of financiers and FIDIC contracts.',
-      ctaTitle: 'Ensure the success of your project',
-      ctaCall: 'Request a quote',
+      expertiseTitle: 'Who may find this review useful?',
+      essentialTitle: 'How can the broker help?',
+      whyUs: 'We help prepare project information and questions about works, equipment and liabilities. The broker explains available proposals; the insurer accepts the risk and considers any compensation under the contract.',
+      ctaTitle: 'Prepare your project insurance review',
+      ctaCall: 'Request a review',
       ctaEmail: 'Send email'
     },
     benefits: {
-      title: 'Employee Benefits & Group Health Insurance | IT Talent Retention Moldova | ING Broker',
-      subtitle: 'Elite extra-salary benefit packages. Health and life insurance for employees, optimized for corporations and IT companies in Moldova.',
-      intro: 'In a highly competitive labor market, the extra-salary benefits package makes the difference between success and stagnation. Group health insurance for employees (Employee Benefits) is not just protection, but a strategic tool for recruiting, motivating, and retaining talent, especially for the IT sector and corporations in the Republic of Moldova.',
+      title: 'Insurance benefits for employees',
+      subtitle: 'Health and life: requested services, eligible people and terms to check.',
+      intro: 'Insurance can be considered as part of employee benefits. Start with the team, budget and requested services. Availability of health or life programmes and participant eligibility are confirmed separately; retention and rapid access to treatment are not guaranteed outcomes.',
       industries: {
         title: 'Target Industries',
         items: [
           { title: 'Corporate Sector', desc: 'Large companies wishing to offer competitive benefit packages.', image: '/Group_Health_Insurance.png' },
           { title: 'SMEs and Startups', desc: 'Growing businesses investing in talent retention.', image: '/employer.jpg' },
-          { title: 'Tech / IT Industry', desc: 'Companies where extra-salary benefits are standard in recruitment.', image: '/employer.jpg' },
+          { title: 'Tech / IT Industry', desc: 'Companies considering additional programmes according to team needs and budget.', image: '/employer.jpg' },
           { title: 'Services and Consulting', desc: 'Firms that value the health and well-being of their employees.', image: '/conect-people.png' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Managed Risks',
+          title: 'Risks to review',
           image: '/analiza-riscurilor.webp',
           items: [
-            'Unforeseen health problems of employees.',
-            'Accidents at work or outside working hours.',
-            'High medical costs in the private system.',
-            'Decreased productivity due to medical problems.',
-            'High staff turnover (Turnover).'
+            'Unexpected employee health problems.',
+            'Incidents at or outside work that require separate review.',
+            'Medical expenses incurred by employees.',
+            'Employee absence due to health problems.',
+            'Staff turnover as an HR issue, not a promised insurance outcome.'
           ]
         },
         advantages: {
-          title: 'Strategic Advantages',
+          title: 'What to clarify',
           items: [
-            'Increases employee loyalty and satisfaction (Employee Engagement).',
-            'Tax deductibility for insurance premiums (within legal limits).',
-            'Fast access to quality medical services (top private clinics).',
-            'Customizable packages depending on hierarchical level.',
-            'Major competitive advantage in IT recruitment.'
+            'Comparing requested services, provider networks and access procedures.',
+            'Preparing tax questions for the accountant without assuming premiums are deductible.',
+            'Clarifying limits and amounts payable by the employee.',
+            'Comparing participant categories and enrolment rules if the programme allows them.',
+            'Organising questions about documents, communication and programme renewal.'
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: 'Questions about policy terms',
           items: [
-            'Pre-existing conditions may be excluded (depending on group size).',
-            'Does not cover aesthetic or experimental treatments.',
-            'Requires a minimum number of employees to form a group.',
-            'Costs may increase annually depending on the loss ratio.',
-            'Excludes accidents occurring under the influence of alcohol.'
+            'What minimum number of participants is required and who is eligible for the proposed programme?',
+            'Which services, limits and authorisations apply to consultations and treatment?',
+            'How are pre-existing conditions addressed confidentially through the designated channel?',
+            'Which treatments or circumstances are excluded in the programme documents?',
+            'What rules and information apply to enrolment, leaving and renewal?'
           ]
         }
       },
-      expertiseTitle: 'Who needs this product and why?',
-      essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'Any company that wants to invest in its team needs Employee Benefits. ING Broker negotiates with all major insurers to offer you the best package, adapted to your budget and your team\'s needs.',
-      ctaTitle: 'Invest in your team now',
-      ctaCall: 'Request benefits quote',
+      expertiseTitle: 'Who may find this review useful?',
+      essentialTitle: 'How can the broker help?',
+      whyUs: 'We help compare available programme documents and prepare explanations for the team. The broker does not replace a doctor; the insurer confirms eligibility and considers expenses under the contract.',
+      ctaTitle: 'Discuss your team’s insurance needs',
+      ctaCall: 'Request a review',
       ctaEmail: 'Send email'
     },
     agriculture: {
       title: 'Agricultural Risks',
-      subtitle: 'Specialized insurance for crops, livestock, and agricultural equipment.',
-      intro: 'Agriculture is highly exposed to the vagaries of the weather and biological risks. Agricultural insurance provides farmers and agribusiness companies with the necessary safety net to protect their investments in crops, livestock, and machinery against major financial losses.',
+      subtitle: 'Crops, livestock and machinery: risks and periods for separate review.',
+      intro: 'Crops, livestock and farm machinery have different exposures. The review starts with plots, animals, assets and the declared season. Product availability and risk acceptance are confirmed individually, without promising recovery of the investment or a subsidy.',
       industries: {
         title: 'Target Industries',
         items: [
-          { title: 'Crop Farming', desc: 'Vegetable farms growing cereals, technical or fodder plants.' },
+          { title: 'Crop Farming', desc: 'Farms growing cereals, oilseeds or fodder crops.' },
           { title: 'Livestock Breeding', desc: 'Livestock farms exposed to disease or accident risks.', image: '/zootehnie.webp' },
           { title: 'Viticulture and Fruit Growing', desc: 'Wine producers and orchard owners.', image: '/horticultura.png' },
           { title: 'Agribusiness', desc: 'Agricultural product processing and distribution companies.' }
@@ -1535,41 +1535,41 @@ export const businessProductsTranslations = {
       },
       analysis: {
         risks: {
-          title: 'Product Risks',
+          title: 'Risks to review',
           items: [
-            'Extreme weather phenomena destroying the harvest',
-            'Epizootic diseases affecting livestock',
-            'Vegetation or silo fires',
-            'Accidental damage to expensive agricultural machinery',
-            'Price fluctuations caused by loss of harvest quality'
+            'Extreme weather that may damage crops.',
+            'Livestock deaths due to diseases or incidents whose terms need separate checking.',
+            'Vegetation fires or fires at grain and fodder stores.',
+            'Damage to agricultural machinery during the working season.',
+            'Financial losses from weather-related deterioration in crop quality.'
           ]
         },
         advantages: {
-          title: 'Advantages',
+          title: 'What to clarify',
           items: [
-            'Guarantees the recovery of the investment in establishing the crop',
-            'Facilitates obtaining agricultural loans and subsidies',
-            'Possibility of subsidizing insurance premiums by the state',
-            'Protects the continuity of the agricultural business from year to year',
-            'Fast damage assessment by agronomist experts'
+            'Describing crops, plots, animals or machinery for a risk review.',
+            'Comparing event definitions, limits and deductibles in proposals.',
+            'Preparing questions about public support to check against current official rules.',
+            'Clarifying the value under review and how a possible loss would be assessed.',
+            'Checking notification, loss assessment and documentation procedures.'
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: 'Questions about policy terms',
           items: [
-            'Does not cover production losses caused by wrong agricultural technologies',
-            'Drought is covered only under certain conditions and with high deductibles',
-            'Does not cover undeclared or unvaccinated animal diseases',
-            'Waiting periods (grace period) upon concluding the policy',
-            'Requires rigorous risk inspections'
+            'What terms concern farming methods and records of work?',
+            'How is drought defined and which crops, plots and periods may be accepted?',
+            'Which diseases, events and veterinary records are relevant to the declared animals?',
+            'Are there waiting periods and when does coverage begin?',
+            'What inspections, records and notifications are required in the specific proposal?'
           ]
         }
       },
-      expertiseTitle: 'Who needs this product and why?',
-      essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'Farmers, agricultural cooperatives, and agribusiness investors need this protection. ING Broker knows the agricultural specifics of Moldova and helps you access adapted policies, including support for premium subsidization.',
-      ctaTitle: 'Protect your harvest and farm',
-      ctaCall: 'Request a quote',
+      expertiseTitle: 'Who may find this review useful?',
+      essentialTitle: 'How can the broker help?',
+      whyUs: 'We help prepare farm information and explain available proposals. The insurer confirms terms and any compensation; eligibility for public support is checked separately with the competent authority.',
+      ctaTitle: 'Prepare a review of your farm’s risks',
+      ctaCall: 'Request a review',
       ctaEmail: 'Send email'
     }
   }

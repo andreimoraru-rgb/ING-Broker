@@ -45,7 +45,7 @@ export const RenewableEnergyPage: React.FC<RenewableEnergyPageProps> = ({ lang }
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <main className="bg-white min-h-screen">
       <SEO 
         title={seo.title} 
         description={seo.description} 
@@ -110,13 +110,13 @@ export const RenewableEnergyPage: React.FC<RenewableEnergyPageProps> = ({ lang }
               {t.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
-              <motion.button 
+              <motion.a href="tel:+37379030209"
                 whileHover={{ scale: 1.05, y: -5, backgroundColor: "#C4191F", boxShadow: "0 20px 40px -10px rgba(227,30,36,0.5)" }}
                 whileTap={{ scale: 0.95 }}
-                className="px-12 py-6 bg-primary text-white font-bold uppercase text-[10px] tracking-[0.3em] transition-all duration-300"
+                className="px-12 py-6 bg-primary text-white text-center font-bold uppercase text-[10px] tracking-[0.3em] transition-all duration-300"
               >
                 {t.ctaCall}
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>
@@ -300,15 +300,15 @@ export const RenewableEnergyPage: React.FC<RenewableEnergyPageProps> = ({ lang }
                 <div className="flex gap-10">
                   <div className="text-5xl font-light text-primary/20 font-serif italic">01</div>
                   <div>
-                    <h4 className="text-xl font-bold mb-4 tracking-tight">Expertiză Tehnică</h4>
+                    <h4 className="text-xl font-bold mb-4 tracking-tight">{lang === 'ro' ? 'Analiza informațiilor tehnice' : lang === 'ru' ? 'Анализ технических сведений' : 'Reviewing technical information'}</h4>
                     <p className="text-white/50 font-light leading-relaxed max-w-md">{t.whyUs}</p>
                   </div>
                 </div>
                 <div className="flex gap-10">
                   <div className="text-5xl font-light text-primary/20 font-serif italic">02</div>
                   <div>
-                    <h4 className="text-xl font-bold mb-4 tracking-tight">Acoperire Globală</h4>
-                    <p className="text-white/50 font-light leading-relaxed max-w-md">Acces la piețele internaționale de reasigurare pentru riscuri complexe.</p>
+                    <h4 className="text-xl font-bold mb-4 tracking-tight">{lang === 'ro' ? 'Riscuri și teritoriu' : lang === 'ru' ? 'Риски и территория' : 'Risks and territory'}</h4>
+                    <p className="text-white/50 font-light leading-relaxed max-w-md">{lang === 'ro' ? 'Pentru riscurile complexe, verifică teritoriul, limitele și eventualele condiții de reasigurare. Disponibilitatea și acceptarea nu sunt confirmate de această pagină.' : lang === 'ru' ? 'Для сложных рисков проверьте территорию, лимиты и возможные условия перестрахования. Страница не подтверждает доступность или принятие риска.' : 'For complex risks, check territory, limits and any reinsurance conditions. This page does not confirm availability or acceptance.'}</p>
                   </div>
                 </div>
               </div>
@@ -327,8 +327,8 @@ export const RenewableEnergyPage: React.FC<RenewableEnergyPageProps> = ({ lang }
                   />
                 </div>
                 <div className="absolute bottom-4 -left-12 bg-primary p-6 shadow-2xl hidden xl:block z-20">
-                  <p className="text-4xl font-bold tracking-tighter leading-none mb-2">100%</p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-80">Protecție</p>
+                  <p className="text-4xl font-bold tracking-tighter leading-none mb-2">{lang === 'ro' ? 'Riscuri' : lang === 'ru' ? 'Риски' : 'Risks'}</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-80">{lang === 'ro' ? 'De analizat' : lang === 'ru' ? 'Для анализа' : 'To assess'}</p>
                 </div>
               </div>
             </div>
@@ -363,6 +363,6 @@ export const RenewableEnergyPage: React.FC<RenewableEnergyPageProps> = ({ lang }
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };

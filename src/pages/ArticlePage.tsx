@@ -6,13 +6,14 @@ import { SchemaMarkup } from '../components/SchemaMarkup';
 import { breadcrumbSchema } from '../utils/schema';
 import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, User, Tag } from 'lucide-react';
-import { articles, consolidatedLifeSlugs, withdrawnArticleSlugs } from '../data/articles';
+import { articles, consolidatedLifeSlugs, withdrawnArticleSlugs } from '../data/articleMetadata';
+import { cachedArticle, preloadArticle } from '../data/articleLoader';
 import { EditorialArticle } from './EditorialArticle';
 import { localizedPath } from '../utils/localizedRoutes';
-import { articleRevisions } from '../data/recoveredArticles';
 import './article-reading.css';
 import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
 import { articlePhotoSource } from '../data/articlePhotoBranding';
+import { articleResponsiveImages } from '../data/articleResponsiveImages';
 
 interface ArticlePageProps {
   lang: Language;
@@ -24,7 +25,15 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   
   const currentArticles = articles[lang] || articles['ro'];
-  const article = currentArticles.find(a => a.slug === slug);
+  const [, setContentVersion] = useState(0);
+  const metadata = currentArticles.find(a => a.slug === slug);
+  const article = metadata ? cachedArticle(lang, metadata) : undefined;
+
+  useEffect(() => {
+    let active = true;
+    if (slug) preloadArticle(lang, slug).then(() => { if (active) setContentVersion(v => v + 1); });
+    return () => { active = false; };
+  }, [lang, slug]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,7 +46,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
   }, [slug]);
 
   if (!article) {
-    if (slug && consolidatedLifeSlugs.has(slug)) return <Navigate to={localizedPath('/news/asigurare-viata-moldova', lang)} replace />;
+    if (slug && consolidatedLifeSlugs.has(slug)) return <Navigate to="/news/asigurare-viata-moldova" replace />;
     if (slug && withdrawnArticleSlugs.has(slug)) return <div className="min-h-screen pt-32 px-6"><SEO title="ING Broker" description="" lang={lang} noIndex includeLanguageAlternates={false} /><p>{lang === 'ro' ? 'Acest articol a fost retras.' : lang === 'ru' ? 'Эта статья снята с публикации.' : 'This article has been withdrawn.'}</p><a href={localizedPath('/news', lang)}>{lang === 'ro' ? 'Vezi articolele disponibile' : lang === 'ru' ? 'Все статьи' : 'Browse articles'}</a></div>;
     return <Navigate to="/news" replace />;
   }
@@ -47,6 +56,8 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
   const articleOrigin = 'https://www.ingbroker.md';
   const articleUrl = `${articleOrigin}${localizedPath(`/news/${article.slug}`, lang)}`;
   const articleImage = new URL(article.heroImage || article.image, articleOrigin).href;
+  const photo = articlePhotoSource(article.heroImage || article.image);
+  const responsive = articleResponsiveImages[photo];
   // Existing source dates use Romanian/Russian month abbreviations.
   const sourceDate = article.date.replace('Апр', 'Apr').replace('Iun', 'Jun').replace('Mai', 'May');
   const parsedDate = new Date(sourceDate);
@@ -87,39 +98,39 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
   ]);
 
   return (
-    <div className="bg-white min-h-screen">
+    <main className="article-page bg-white min-h-screen">
       <SEO
         title={article.seo.title}
         description={article.seo.description}
         lang={lang}
         schema={schema}
         keywords={article.seo.keywords}
-        includeLanguageAlternates={!articleRevisions[article.slug] && ['ro', 'ru', 'en'].every(locale => articles[locale].some(a => a.slug === article.slug))}
+        includeLanguageAlternates={['ro', 'ru', 'en'].every(locale => articles[locale].some(a => a.slug === article.slug && a.reviewStatus === 'approved'))}
         image={articleImage}
         ogType="article"
       />
       <SchemaMarkup schemas={[articleBreadcrumb]} />
 
       {/* Back Button */}
-      <div className="absolute top-20 left-6 z-30 md:fixed md:top-32 md:z-50">
+      <div className="absolute top-20 left-6 z-30">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => navigate(localizedPath('/news', lang))}
-          className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
+          onClick={() => navigate('/news')}
+          className={`flex min-h-11 min-w-11 items-center gap-0 lg:gap-4 px-2 lg:px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
             isScrolled 
               ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50' 
               : 'bg-white/10 hover:bg-white/20 border-white/20 text-white'
           }`}
         >
           <div className={`p-1 group-hover:-translate-x-1 transition-transform ${
-            isScrolled ? 'text-primary' : 'text-primary'
+            isScrolled ? 'text-primary' : 'text-white'
           }`}>
             <ArrowLeft size={16} strokeWidth={3} />
           </div>
-          <span>
+          <span className="sr-only lg:not-sr-only">
             {lang === 'ro' ? 'Înapoi la Noutăți' : lang === 'ru' ? 'Назад к Новостям' : 'Back to News'}
           </span>
         </motion.button>
@@ -129,9 +140,12 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
       <section className="relative h-[60vh] min-h-[500px] flex items-end pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={articlePhotoSource(article.heroImage || article.image)}
+            src={photo}
+            srcSet={responsive?.srcSet}
+            sizes="100vw"
             alt={article.imageAlt || article.title}
             className="w-full h-full object-cover"
+            width={responsive?.width || 1536} height={responsive?.height || 1024} fetchPriority="high" decoding="async"
             referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-[#0a192f]/60 mix-blend-multiply" />
@@ -148,7 +162,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
             <div className="flex flex-wrap items-center justify-center gap-6 mb-8 text-white/80 text-sm font-light">
               <div className="flex items-center gap-2">
                 <Calendar size={16} className="text-primary" />
-                {article.updatedAt ? `Actualizat: ${new Date(`${article.updatedAt}T00:00:00Z`).toLocaleDateString('ro-MD', { timeZone: 'UTC' })}` : article.date}
+                {article.updatedAt ? `${lang === 'ro' ? 'Actualizat' : lang === 'ru' ? 'Обновлено' : 'Updated'}: ${new Date(`${article.updatedAt}T00:00:00Z`).toLocaleDateString(lang === 'ro' ? 'ro-MD' : lang === 'ru' ? 'ru-MD' : 'en-GB', { timeZone: 'UTC' })}` : article.date}
               </div>
               <div className="flex items-center gap-2">
                 <User size={16} className="text-primary" />
@@ -185,9 +199,9 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
               <a
                 className="uas-drone-cta inline-flex rounded-xl bg-[#2e7d34] px-6 py-3 text-base font-bold text-white no-underline transition-colors hover:bg-[#e31e24] hover:text-white focus-visible:bg-[#e31e24] focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e31e24]"
                 href={lang === 'ru' ? 'https://uas.md/ru/asigurare' : 'https://uas.md/asigurare'}
-                lang="ro"
+                lang={lang}
               >
-                Încheie polița pe UAS.md
+                {lang === 'ru' ? 'Оформить полис на UAS.md' : 'Încheie polița pe UAS.md'}
               </a>
             </section>
           )}
@@ -204,6 +218,6 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };

@@ -75,7 +75,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
       deptReinsurance: 'Перестрахование и фронтинг',
       deptFinancial: 'Финансовый отдел',
       claimsTitle: 'Корпоративная поддержка при убытках',
-      claimsDesc: 'Наша команда юридических и технических экспертов представляет ваши интересы перед страховщиками для быстрого урегулирования.',
+      claimsDesc: 'Объясняем порядок уведомления об убытке и необходимые документы. Страховщик рассматривает требование возмещения по условиям договора.',
       appTitle: 'Приложение eAsigurari',
       appDesc: 'Управляйте своими полисами, получайте уведомления об истечении срока и сообщайте об убытках прямо с мобильного телефона.',
       appBtn: 'Скачать сейчас'
@@ -101,7 +101,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
       deptReinsurance: 'Reinsurance & Fronting',
       deptFinancial: 'Financial Department',
       claimsTitle: 'Corporate Claims Assistance',
-      claimsDesc: 'Our team of legal and technical experts represents your interests before insurers for a swift resolution.',
+      claimsDesc: 'We explain how to notify a loss and which documents are needed. The insurer assesses the claim under the contract.',
       appTitle: 'eAsigurari App',
       appDesc: 'Manage your policies, receive expiration notifications and report claims directly from your mobile phone.',
       appBtn: 'Download Now'
@@ -120,17 +120,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
     "image": "https://www.ingbroker.md/Logo%20ING%20Broker.png",
     "@id": "https://www.ingbroker.md",
     "url": "https://www.ingbroker.md",
-    "telephone": "+37379526003",
+    "telephone": "+37369526003",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "str. Pan Halippa 9",
       "addressLocality": "Chișinău",
       "addressCountry": "MD"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 47.0111,
-      "longitude": 28.8258
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -155,7 +150,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
   ]);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="contact-page bg-white min-h-screen">
       <SEO
         title={`${c.title} | Insurance ING Broker SRL`}
         description={c.subtitle}
@@ -165,7 +160,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
       <SchemaMarkup schemas={[contactBreadcrumb]} />
 
       {/* Back Button */}
-      <div className="fixed top-32 left-6 z-50">
+      <div className="absolute top-20 left-6 z-30">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -225,13 +220,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
       </section>
 
       <div className="max-w-7xl mx-auto px-6 py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="contact-grid grid lg:grid-cols-2 gap-16">
           {/* Contact Info */}
           <div className="space-y-8">
             
             {/* Asigurări Personale */}
             <div className="bg-white border border-gray-100 p-8 rounded-xl hover:border-primary/30 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-xl font-bold text-secondary mb-6">{c.deptPersonal}</h3>
+              <h2 className="text-xl font-bold text-secondary mb-6">{c.deptPersonal}</h2>
               <div className="space-y-4">
                 <a href="tel:+37379526003" className="flex items-center gap-4 group">
                   <div className="w-10 h-10 bg-gray-50 flex items-center justify-center rounded-lg group-hover:bg-primary transition-colors duration-300">
@@ -250,7 +245,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
 
             {/* Asigurări Business */}
             <div className="bg-white border border-gray-100 p-8 rounded-xl hover:border-primary/30 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-xl font-bold text-secondary mb-6">{c.deptBusiness}</h3>
+              <h2 className="text-xl font-bold text-secondary mb-6">{c.deptBusiness}</h2>
               <div className="space-y-4">
                 <div className="flex flex-col gap-2">
                   <a href="tel:+37369526003" className="flex items-center gap-4 group">
@@ -299,7 +294,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
 
             {/* Reasigurări */}
             <div className="bg-white border border-gray-100 p-8 rounded-xl hover:border-primary/30 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-xl font-bold text-secondary mb-6">{c.deptReinsurance}</h3>
+              <h2 className="text-xl font-bold text-secondary mb-6">{c.deptReinsurance}</h2>
               <div className="space-y-4">
                 <div className="flex flex-col gap-2">
                   <a href="tel:+37369526003" className="flex items-center gap-4 group">
@@ -318,7 +313,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
 
             {/* Financiar */}
             <div className="bg-white border border-gray-100 p-8 rounded-xl hover:border-primary/30 hover:shadow-xl transition-all duration-300">
-              <h3 className="text-xl font-bold text-secondary mb-6">{c.deptFinancial}</h3>
+              <h2 className="text-xl font-bold text-secondary mb-6">{c.deptFinancial}</h2>
               <div className="space-y-4">
                 <a href="tel:+37379024333" className="flex items-center gap-4 group">
                   <div className="w-10 h-10 bg-gray-50 flex items-center justify-center rounded-lg group-hover:bg-primary transition-colors duration-300">
@@ -357,15 +352,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
 
             {/* Corporate Details */}
             <div className="bg-white border border-gray-100 p-8 rounded-xl">
-              <h3 className="text-xl font-bold text-secondary mb-6">
+              <h2 className="text-xl font-bold text-secondary mb-6">
                 {lang === 'ro' ? 'Rechizite și date corporate' : lang === 'ru' ? 'Реквизиты и корпоративные данные' : 'Corporate Details'}
-              </h3>
+              </h2>
               <div className="flex flex-col gap-2 text-sm text-gray-600">
                 <p><strong className="text-secondary">{lang === 'ro' ? 'Denumire completă:' : lang === 'ru' ? 'Полное наименование:' : 'Full Name:'}</strong> Insurance ING Broker SRL,</p>
                 <p><strong className="text-secondary">IDNO:</strong> 1017600019386,</p>
                 <p><strong className="text-secondary">{lang === 'ro' ? 'Adresa:' : lang === 'ru' ? 'Адрес:' : 'Address:'}</strong> {lang === 'ro' ? 'mun. Chișinău, str. Pan Halippa 9,' : lang === 'ru' ? 'мун. Кишинев, ул. Пан Халиппа 9,' : 'mun. Chisinau, 9 Pan Halippa str.,'}</p>
-                <p><strong className="text-secondary">CEO:</strong> {lang === 'ro' ? 'Ion Dascălu,' : lang === 'ru' ? 'Ион Даскэлу,' : 'Ion Dascalu,'}</p>
-                <p><strong className="text-secondary">{lang === 'ro' ? 'Licență:' : lang === 'ru' ? 'Лицензия:' : 'License:'}</strong> {lang === 'ro' ? 'CNPF 000874 din 06.10.2016,' : lang === 'ru' ? 'CNPF 000874 от 06.10.2016,' : 'CNPF 000874 from 06.10.2016,'}</p>
+                <p><strong className="text-secondary">CEO:</strong> Dascalu Ion</p>
                 <p><strong className="text-secondary">{lang === 'ro' ? 'Certificare:' : lang === 'ru' ? 'Сертификация:' : 'Certification:'}</strong> {lang === 'ro' ? 'ISO 9001:2015, certificat RO-11645' : lang === 'ru' ? 'ISO 9001:2015, сертификат RO-11645' : 'ISO 9001:2015, certificate RO-11645'}</p>
               </div>
             </div>

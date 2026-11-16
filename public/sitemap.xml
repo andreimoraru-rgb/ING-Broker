@@ -59,16 +59,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/about-us"/>
   </url>
   <url>
-    <loc>https://www.ingbroker.md/o-nas</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ingbroker.md/about-us</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.ingbroker.md/termeni-si-conditii</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -102,6 +92,16 @@
     <priority>0.9</priority>
     <lastmod>2026-06-24</lastmod>
   </url>
+  <url><loc>https://www.ingbroker.md/business/liability</loc></url>
+  <url><loc>https://www.ingbroker.md/business/professional</loc></url>
+  <url><loc>https://www.ingbroker.md/business/do</loc></url>
+  <url><loc>https://www.ingbroker.md/business/cyber</loc></url>
+  <url><loc>https://www.ingbroker.md/business/cargo</loc></url>
+  <url><loc>https://www.ingbroker.md/business/fleet</loc></url>
+  <url><loc>https://www.ingbroker.md/business/credit</loc></url>
+  <url><loc>https://www.ingbroker.md/business/construction</loc></url>
+  <url><loc>https://www.ingbroker.md/business/benefits</loc></url>
+  <url><loc>https://www.ingbroker.md/business/agriculture</loc></url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-energie-regenerabila-moldova</loc>
     <lastmod>2026-11-11</lastmod>
@@ -141,606 +141,2727 @@
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-viata-moldova</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-viata-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-viata-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-viata-moldova"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-agricola-seceta</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-agricola-seceta"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-agricola-seceta"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-agricola-seceta"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-cyber-companii</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cyber-companii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cyber-companii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cyber-companii"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-profesionala</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-profesionala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-profesionala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-profesionala"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-cargo-transport-marfa</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cargo-transport-marfa"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cargo-transport-marfa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cargo-transport-marfa"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-sanatate-privata</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sanatate-privata"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sanatate-privata"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sanatate-privata"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-animale-companie</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-animale-companie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-animale-companie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-animale-companie"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-echipamente-it</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-echipamente-it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-echipamente-it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-echipamente-it"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-evenimente-corporate</loc>
     <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-evenimente-corporate"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-evenimente-corporate"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-evenimente-corporate"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-constructii-montaj</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-constructii-montaj"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-constructii-montaj"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-constructii-montaj"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-flota-auto</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-flota-auto"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-flota-auto"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-flota-auto"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-accidente-angajati</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-accidente-angajati"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-accidente-angajati"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-accidente-angajati"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-drone-comerciale</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-drone-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-drone-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-drone-comerciale"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-pierdere-profit</loc>
     <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-pierdere-profit"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-pierdere-profit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-pierdere-profit"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-directori</loc>
     <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-directori"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-directori"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-directori"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-panouri-fotovoltaice</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-panouri-fotovoltaice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-panouri-fotovoltaice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-panouri-fotovoltaice"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-storno-calatorie</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-storno-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-storno-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-storno-calatorie"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-biciclete-trotinete</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-biciclete-trotinete"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-biciclete-trotinete"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-biciclete-trotinete"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-obiecte-arta</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-obiecte-arta"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-obiecte-arta"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-obiecte-arta"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-riscuri-cibernetice-imm</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-riscuri-cibernetice-imm"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-riscuri-cibernetice-imm"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-riscuri-cibernetice-imm"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-civila-generala</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-generala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-generala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-generala"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-rca-moldova</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-rca-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-rca-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-rca-moldova"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-casco-moldova</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-casco-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-casco-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-casco-moldova"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-carte-verde</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-carte-verde"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-carte-verde"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-carte-verde"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-locuinta-moldova</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-locuinta-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-locuinta-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-locuinta-moldova"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-medicala-calatorii</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-medicala-calatorii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-medicala-calatorii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-medicala-calatorii"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-malpraxis-medical</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-malpraxis-medical"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-malpraxis-medical"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-malpraxis-medical"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-civila-auto</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-auto"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-auto"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-auto"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-bunuri-tranzit</loc>
     <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-bunuri-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-bunuri-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-bunuri-tranzit"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-utilaje-industriale</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-utilaje-industriale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-utilaje-industriale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-utilaje-industriale"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-depozite-logistice</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-depozite-logistice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-depozite-logistice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-depozite-logistice"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-riscuri-politice</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-riscuri-politice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-riscuri-politice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-riscuri-politice"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-credit-comercial</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-credit-comercial"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-credit-comercial"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-credit-comercial"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-garantii-licitatie</loc>
     <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-garantii-licitatie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-garantii-licitatie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-garantii-licitatie"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-buna-executie</loc>
     <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-buna-executie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-buna-executie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-buna-executie"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-mentenanta-proiecte</loc>
     <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-mentenanta-proiecte"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-mentenanta-proiecte"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-mentenanta-proiecte"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-civila-legala</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-legala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-legala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-legala"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-protectie-juridica</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-protectie-juridica"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-protectie-juridica"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-protectie-juridica"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-asistenta-rutiera</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-asistenta-rutiera"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-asistenta-rutiera"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-asistenta-rutiera"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-bagaje-calatorie</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-bagaje-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-bagaje-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-bagaje-calatorie"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-anulare-eveniment</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-anulare-eveniment"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-anulare-eveniment"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-anulare-eveniment"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-civila-familie</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-familie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-familie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-familie"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-cladiri-birouri</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cladiri-birouri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cladiri-birouri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cladiri-birouri"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-centre-comerciale</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-centre-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-centre-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-centre-comerciale"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-hoteluri-pensiuni</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-hoteluri-pensiuni"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-hoteluri-pensiuni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-hoteluri-pensiuni"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-restaurante-cafenele</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-restaurante-cafenele"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-restaurante-cafenele"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-restaurante-cafenele"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-clinici-private</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-clinici-private"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-clinici-private"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-clinici-private"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-scoli-gradinite</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-scoli-gradinite"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-scoli-gradinite"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-scoli-gradinite"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-sali-fitness</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sali-fitness"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sali-fitness"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sali-fitness"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-depozite-cereale</loc>
     <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-depozite-cereale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-depozite-cereale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-depozite-cereale"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-livezi-viticultura</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-livezi-viticultura"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-livezi-viticultura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-livezi-viticultura"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-ferme-zootehnice</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-ferme-zootehnice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-ferme-zootehnice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-ferme-zootehnice"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-serre-solarii</loc>
     <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-serre-solarii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-serre-solarii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-serre-solarii"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-sisteme-irigatii</loc>
     <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sisteme-irigatii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sisteme-irigatii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sisteme-irigatii"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-parcuri-eoliene</loc>
     <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-parcuri-eoliene"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-parcuri-eoliene"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-parcuri-eoliene"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-biogaz-biomasa</loc>
     <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-biogaz-biomasa"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-biogaz-biomasa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-biogaz-biomasa"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-hidrocentrale-mici</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-hidrocentrale-mici"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-hidrocentrale-mici"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-hidrocentrale-mici"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-stocare-energie</loc>
     <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-stocare-energie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-stocare-energie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-stocare-energie"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-infrastructura-critica</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-infrastructura-critica"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-infrastructura-critica"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-infrastructura-critica"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-poduri-tuneluri</loc>
     <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-poduri-tuneluri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-poduri-tuneluri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-poduri-tuneluri"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-drumuri-autostrazi</loc>
     <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-drumuri-autostrazi"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-drumuri-autostrazi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-drumuri-autostrazi"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-retele-electrice</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-retele-electrice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-retele-electrice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-retele-electrice"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-conducte-gaz-apa</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-conducte-gaz-apa"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-conducte-gaz-apa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-conducte-gaz-apa"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-telecomunicatii</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-telecomunicatii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-telecomunicatii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-telecomunicatii"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-centre-date</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-centre-date"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-centre-date"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-centre-date"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-software-as-a-service</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-software-as-a-service"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-software-as-a-service"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-software-as-a-service"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-e-commerce</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-e-commerce"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-e-commerce"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-e-commerce"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-fintech-banking</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-fintech-banking"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-fintech-banking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-fintech-banking"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-cripto-active</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cripto-active"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cripto-active"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cripto-active"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-civila-it</loc>
     <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-it"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-eroare-omisiune</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-eroare-omisiune"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-eroare-omisiune"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-eroare-omisiune"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-infidelitate-angajati</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-infidelitate-angajati"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-infidelitate-angajati"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-infidelitate-angajati"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-bani-tranzit</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-bani-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-bani-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-bani-tranzit"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-seifuri-valori</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-seifuri-valori"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-seifuri-valori"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-seifuri-valori"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-expozitii-targuri</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-expozitii-targuri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-expozitii-targuri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-expozitii-targuri"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-concerte-festivaluri</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-concerte-festivaluri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-concerte-festivaluri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-concerte-festivaluri"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-competitii-sportive</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-competitii-sportive"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-competitii-sportive"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-competitii-sportive"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-civila-sportivi</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-sportivi"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-sportivi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-sportivi"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-yachturi-ambarcatiuni</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-yachturi-ambarcatiuni"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-yachturi-ambarcatiuni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-yachturi-ambarcatiuni"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-avioane-private</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-avioane-private"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-avioane-private"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-avioane-private"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-elicoptere-utilitare</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-elicoptere-utilitare"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-elicoptere-utilitare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-elicoptere-utilitare"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-civila-aeroportuara</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-aeroportuara"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-aeroportuara"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-aeroportuara"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-maritima-hull</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-maritima-hull"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-maritima-hull"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-maritima-hull"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-protectie-indemnizatie</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-protectie-indemnizatie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-protectie-indemnizatie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-protectie-indemnizatie"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-riscuri-catastrofale</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-riscuri-catastrofale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-riscuri-catastrofale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-riscuri-catastrofale"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-terorism-sabotaj</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-terorism-sabotaj"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-terorism-sabotaj"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-terorism-sabotaj"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-civila-poluare</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-poluare"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-poluare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-poluare"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-remediere-mediu</loc>
     <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-remediere-mediu"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-remediere-mediu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-remediere-mediu"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-civila-produs</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-produs"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-produs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-produs"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-rechemare-produs</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-rechemare-produs"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-rechemare-produs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-rechemare-produs"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-studii-clinice</loc>
     <lastmod>2026-11-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-studii-clinice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-studii-clinice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-studii-clinice"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-raspundere-civila-angajator</loc>
     <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-angajator"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-angajator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-angajator"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-sanatate-expatriati</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sanatate-expatriati"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sanatate-expatriati"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sanatate-expatriati"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-repatriere-deces</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-repatriere-deces"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-repatriere-deces"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-repatriere-deces"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-asistenta-medicala-vip</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-asistenta-medicala-vip"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-asistenta-medicala-vip"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-asistenta-medicala-vip"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-boli-grave</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-boli-grave"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-boli-grave"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-boli-grave"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-spitalizare-interventii</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-spitalizare-interventii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-spitalizare-interventii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-spitalizare-interventii"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-optica-medicala</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-optica-medicala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-optica-medicala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-optica-medicala"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-maternitate-nastere</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-maternitate-nastere"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-maternitate-nastere"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-maternitate-nastere"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-kinetoterapie-recuperare</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-kinetoterapie-recuperare"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-kinetoterapie-recuperare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-kinetoterapie-recuperare"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ingbroker.md/news/asigurare-check-up-anual</loc>
     <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-check-up-anual"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-check-up-anual"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-check-up-anual"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-viata-moldova</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-viata-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-viata-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-viata-moldova"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-agricola-seceta</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-agricola-seceta"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-agricola-seceta"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-agricola-seceta"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-cyber-companii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cyber-companii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cyber-companii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cyber-companii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-profesionala</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-profesionala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-profesionala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-profesionala"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-cargo-transport-marfa</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cargo-transport-marfa"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cargo-transport-marfa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cargo-transport-marfa"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-sanatate-privata</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sanatate-privata"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sanatate-privata"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sanatate-privata"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-animale-companie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-animale-companie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-animale-companie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-animale-companie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-echipamente-it</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-echipamente-it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-echipamente-it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-echipamente-it"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-evenimente-corporate</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-evenimente-corporate"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-evenimente-corporate"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-evenimente-corporate"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-constructii-montaj</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-constructii-montaj"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-constructii-montaj"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-constructii-montaj"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-flota-auto</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-flota-auto"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-flota-auto"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-flota-auto"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-accidente-angajati</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-accidente-angajati"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-accidente-angajati"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-accidente-angajati"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-drone-comerciale</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-drone-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-drone-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-drone-comerciale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-pierdere-profit</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-pierdere-profit"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-pierdere-profit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-pierdere-profit"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-directori</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-directori"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-directori"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-directori"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-panouri-fotovoltaice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-panouri-fotovoltaice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-panouri-fotovoltaice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-panouri-fotovoltaice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-storno-calatorie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-storno-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-storno-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-storno-calatorie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-biciclete-trotinete</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-biciclete-trotinete"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-biciclete-trotinete"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-biciclete-trotinete"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-obiecte-arta</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-obiecte-arta"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-obiecte-arta"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-obiecte-arta"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-riscuri-cibernetice-imm</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-riscuri-cibernetice-imm"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-riscuri-cibernetice-imm"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-riscuri-cibernetice-imm"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-generala</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-generala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-generala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-generala"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-rca-moldova</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-rca-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-rca-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-rca-moldova"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-casco-moldova</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-casco-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-casco-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-casco-moldova"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-carte-verde</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-carte-verde"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-carte-verde"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-carte-verde"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-locuinta-moldova</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-locuinta-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-locuinta-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-locuinta-moldova"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-medicala-calatorii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-medicala-calatorii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-medicala-calatorii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-medicala-calatorii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-malpraxis-medical</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-malpraxis-medical"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-malpraxis-medical"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-malpraxis-medical"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-auto</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-auto"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-auto"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-auto"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-bunuri-tranzit</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-bunuri-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-bunuri-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-bunuri-tranzit"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-utilaje-industriale</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-utilaje-industriale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-utilaje-industriale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-utilaje-industriale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-depozite-logistice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-depozite-logistice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-depozite-logistice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-depozite-logistice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-riscuri-politice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-riscuri-politice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-riscuri-politice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-riscuri-politice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-credit-comercial</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-credit-comercial"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-credit-comercial"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-credit-comercial"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-garantii-licitatie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-garantii-licitatie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-garantii-licitatie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-garantii-licitatie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-buna-executie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-buna-executie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-buna-executie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-buna-executie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-mentenanta-proiecte</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-mentenanta-proiecte"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-mentenanta-proiecte"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-mentenanta-proiecte"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-legala</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-legala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-legala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-legala"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-protectie-juridica</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-protectie-juridica"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-protectie-juridica"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-protectie-juridica"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-asistenta-rutiera</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-asistenta-rutiera"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-asistenta-rutiera"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-asistenta-rutiera"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-bagaje-calatorie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-bagaje-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-bagaje-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-bagaje-calatorie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-anulare-eveniment</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-anulare-eveniment"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-anulare-eveniment"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-anulare-eveniment"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-familie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-familie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-familie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-familie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-cladiri-birouri</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cladiri-birouri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cladiri-birouri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cladiri-birouri"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-centre-comerciale</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-centre-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-centre-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-centre-comerciale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-hoteluri-pensiuni</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-hoteluri-pensiuni"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-hoteluri-pensiuni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-hoteluri-pensiuni"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-restaurante-cafenele</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-restaurante-cafenele"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-restaurante-cafenele"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-restaurante-cafenele"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-clinici-private</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-clinici-private"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-clinici-private"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-clinici-private"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-scoli-gradinite</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-scoli-gradinite"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-scoli-gradinite"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-scoli-gradinite"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-sali-fitness</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sali-fitness"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sali-fitness"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sali-fitness"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-depozite-cereale</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-depozite-cereale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-depozite-cereale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-depozite-cereale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-livezi-viticultura</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-livezi-viticultura"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-livezi-viticultura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-livezi-viticultura"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-ferme-zootehnice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-ferme-zootehnice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-ferme-zootehnice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-ferme-zootehnice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-serre-solarii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-serre-solarii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-serre-solarii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-serre-solarii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-sisteme-irigatii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sisteme-irigatii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sisteme-irigatii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sisteme-irigatii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-parcuri-eoliene</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-parcuri-eoliene"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-parcuri-eoliene"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-parcuri-eoliene"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-biogaz-biomasa</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-biogaz-biomasa"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-biogaz-biomasa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-biogaz-biomasa"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-hidrocentrale-mici</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-hidrocentrale-mici"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-hidrocentrale-mici"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-hidrocentrale-mici"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-stocare-energie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-stocare-energie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-stocare-energie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-stocare-energie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-infrastructura-critica</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-infrastructura-critica"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-infrastructura-critica"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-infrastructura-critica"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-poduri-tuneluri</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-poduri-tuneluri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-poduri-tuneluri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-poduri-tuneluri"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-drumuri-autostrazi</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-drumuri-autostrazi"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-drumuri-autostrazi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-drumuri-autostrazi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-retele-electrice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-retele-electrice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-retele-electrice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-retele-electrice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-conducte-gaz-apa</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-conducte-gaz-apa"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-conducte-gaz-apa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-conducte-gaz-apa"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-telecomunicatii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-telecomunicatii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-telecomunicatii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-telecomunicatii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-centre-date</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-centre-date"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-centre-date"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-centre-date"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-software-as-a-service</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-software-as-a-service"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-software-as-a-service"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-software-as-a-service"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-e-commerce</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-e-commerce"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-e-commerce"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-e-commerce"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-fintech-banking</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-fintech-banking"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-fintech-banking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-fintech-banking"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-cripto-active</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cripto-active"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cripto-active"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cripto-active"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-it</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-it"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-eroare-omisiune</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-eroare-omisiune"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-eroare-omisiune"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-eroare-omisiune"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-infidelitate-angajati</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-infidelitate-angajati"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-infidelitate-angajati"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-infidelitate-angajati"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-bani-tranzit</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-bani-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-bani-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-bani-tranzit"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-seifuri-valori</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-seifuri-valori"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-seifuri-valori"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-seifuri-valori"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-expozitii-targuri</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-expozitii-targuri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-expozitii-targuri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-expozitii-targuri"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-concerte-festivaluri</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-concerte-festivaluri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-concerte-festivaluri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-concerte-festivaluri"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-competitii-sportive</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-competitii-sportive"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-competitii-sportive"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-competitii-sportive"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-sportivi</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-sportivi"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-sportivi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-sportivi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-yachturi-ambarcatiuni</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-yachturi-ambarcatiuni"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-yachturi-ambarcatiuni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-yachturi-ambarcatiuni"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-avioane-private</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-avioane-private"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-avioane-private"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-avioane-private"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-elicoptere-utilitare</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-elicoptere-utilitare"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-elicoptere-utilitare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-elicoptere-utilitare"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-aeroportuara</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-aeroportuara"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-aeroportuara"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-aeroportuara"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-maritima-hull</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-maritima-hull"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-maritima-hull"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-maritima-hull"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-protectie-indemnizatie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-protectie-indemnizatie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-protectie-indemnizatie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-protectie-indemnizatie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-riscuri-catastrofale</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-riscuri-catastrofale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-riscuri-catastrofale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-riscuri-catastrofale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-terorism-sabotaj</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-terorism-sabotaj"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-terorism-sabotaj"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-terorism-sabotaj"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-poluare</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-poluare"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-poluare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-poluare"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-remediere-mediu</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-remediere-mediu"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-remediere-mediu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-remediere-mediu"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-produs</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-produs"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-produs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-produs"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-rechemare-produs</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-rechemare-produs"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-rechemare-produs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-rechemare-produs"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-studii-clinice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-studii-clinice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-studii-clinice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-studii-clinice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-angajator</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-angajator"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-angajator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-angajator"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-sanatate-expatriati</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sanatate-expatriati"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sanatate-expatriati"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sanatate-expatriati"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-repatriere-deces</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-repatriere-deces"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-repatriere-deces"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-repatriere-deces"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-asistenta-medicala-vip</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-asistenta-medicala-vip"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-asistenta-medicala-vip"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-asistenta-medicala-vip"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-boli-grave</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-boli-grave"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-boli-grave"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-boli-grave"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-spitalizare-interventii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-spitalizare-interventii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-spitalizare-interventii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-spitalizare-interventii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-optica-medicala</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-optica-medicala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-optica-medicala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-optica-medicala"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-maternitate-nastere</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-maternitate-nastere"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-maternitate-nastere"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-maternitate-nastere"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-kinetoterapie-recuperare</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-kinetoterapie-recuperare"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-kinetoterapie-recuperare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-kinetoterapie-recuperare"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/ru/news/asigurare-check-up-anual</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-check-up-anual"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-check-up-anual"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-check-up-anual"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-viata-moldova</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-viata-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-viata-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-viata-moldova"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-agricola-seceta</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-agricola-seceta"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-agricola-seceta"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-agricola-seceta"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-cyber-companii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cyber-companii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cyber-companii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cyber-companii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-profesionala</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-profesionala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-profesionala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-profesionala"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-cargo-transport-marfa</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cargo-transport-marfa"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cargo-transport-marfa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cargo-transport-marfa"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-sanatate-privata</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sanatate-privata"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sanatate-privata"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sanatate-privata"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-animale-companie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-animale-companie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-animale-companie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-animale-companie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-echipamente-it</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-echipamente-it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-echipamente-it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-echipamente-it"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-evenimente-corporate</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-evenimente-corporate"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-evenimente-corporate"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-evenimente-corporate"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-constructii-montaj</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-constructii-montaj"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-constructii-montaj"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-constructii-montaj"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-flota-auto</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-flota-auto"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-flota-auto"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-flota-auto"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-accidente-angajati</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-accidente-angajati"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-accidente-angajati"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-accidente-angajati"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-drone-comerciale</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-drone-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-drone-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-drone-comerciale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-pierdere-profit</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-pierdere-profit"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-pierdere-profit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-pierdere-profit"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-directori</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-directori"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-directori"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-directori"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-panouri-fotovoltaice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-panouri-fotovoltaice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-panouri-fotovoltaice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-panouri-fotovoltaice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-storno-calatorie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-storno-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-storno-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-storno-calatorie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-biciclete-trotinete</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-biciclete-trotinete"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-biciclete-trotinete"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-biciclete-trotinete"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-obiecte-arta</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-obiecte-arta"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-obiecte-arta"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-obiecte-arta"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-riscuri-cibernetice-imm</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-riscuri-cibernetice-imm"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-riscuri-cibernetice-imm"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-riscuri-cibernetice-imm"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-civila-generala</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-generala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-generala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-generala"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-rca-moldova</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-rca-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-rca-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-rca-moldova"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-casco-moldova</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-casco-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-casco-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-casco-moldova"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-carte-verde</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-carte-verde"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-carte-verde"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-carte-verde"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-locuinta-moldova</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-locuinta-moldova"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-locuinta-moldova"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-locuinta-moldova"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-medicala-calatorii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-medicala-calatorii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-medicala-calatorii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-medicala-calatorii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-malpraxis-medical</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-malpraxis-medical"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-malpraxis-medical"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-malpraxis-medical"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-civila-auto</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-auto"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-auto"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-auto"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-bunuri-tranzit</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-bunuri-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-bunuri-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-bunuri-tranzit"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-utilaje-industriale</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-utilaje-industriale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-utilaje-industriale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-utilaje-industriale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-depozite-logistice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-depozite-logistice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-depozite-logistice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-depozite-logistice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-riscuri-politice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-riscuri-politice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-riscuri-politice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-riscuri-politice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-credit-comercial</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-credit-comercial"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-credit-comercial"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-credit-comercial"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-garantii-licitatie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-garantii-licitatie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-garantii-licitatie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-garantii-licitatie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-buna-executie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-buna-executie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-buna-executie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-buna-executie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-mentenanta-proiecte</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-mentenanta-proiecte"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-mentenanta-proiecte"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-mentenanta-proiecte"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-civila-legala</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-legala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-legala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-legala"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-protectie-juridica</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-protectie-juridica"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-protectie-juridica"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-protectie-juridica"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-asistenta-rutiera</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-asistenta-rutiera"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-asistenta-rutiera"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-asistenta-rutiera"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-bagaje-calatorie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-bagaje-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-bagaje-calatorie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-bagaje-calatorie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-anulare-eveniment</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-anulare-eveniment"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-anulare-eveniment"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-anulare-eveniment"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-civila-familie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-familie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-familie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-familie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-cladiri-birouri</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cladiri-birouri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cladiri-birouri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cladiri-birouri"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-centre-comerciale</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-centre-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-centre-comerciale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-centre-comerciale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-hoteluri-pensiuni</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-hoteluri-pensiuni"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-hoteluri-pensiuni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-hoteluri-pensiuni"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-restaurante-cafenele</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-restaurante-cafenele"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-restaurante-cafenele"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-restaurante-cafenele"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-clinici-private</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-clinici-private"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-clinici-private"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-clinici-private"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-scoli-gradinite</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-scoli-gradinite"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-scoli-gradinite"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-scoli-gradinite"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-sali-fitness</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sali-fitness"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sali-fitness"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sali-fitness"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-depozite-cereale</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-depozite-cereale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-depozite-cereale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-depozite-cereale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-livezi-viticultura</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-livezi-viticultura"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-livezi-viticultura"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-livezi-viticultura"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-ferme-zootehnice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-ferme-zootehnice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-ferme-zootehnice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-ferme-zootehnice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-serre-solarii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-serre-solarii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-serre-solarii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-serre-solarii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-sisteme-irigatii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sisteme-irigatii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sisteme-irigatii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sisteme-irigatii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-parcuri-eoliene</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-parcuri-eoliene"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-parcuri-eoliene"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-parcuri-eoliene"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-biogaz-biomasa</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-biogaz-biomasa"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-biogaz-biomasa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-biogaz-biomasa"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-hidrocentrale-mici</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-hidrocentrale-mici"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-hidrocentrale-mici"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-hidrocentrale-mici"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-stocare-energie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-stocare-energie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-stocare-energie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-stocare-energie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-infrastructura-critica</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-infrastructura-critica"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-infrastructura-critica"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-infrastructura-critica"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-poduri-tuneluri</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-poduri-tuneluri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-poduri-tuneluri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-poduri-tuneluri"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-drumuri-autostrazi</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-drumuri-autostrazi"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-drumuri-autostrazi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-drumuri-autostrazi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-retele-electrice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-retele-electrice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-retele-electrice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-retele-electrice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-conducte-gaz-apa</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-conducte-gaz-apa"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-conducte-gaz-apa"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-conducte-gaz-apa"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-telecomunicatii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-telecomunicatii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-telecomunicatii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-telecomunicatii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-centre-date</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-centre-date"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-centre-date"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-centre-date"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-software-as-a-service</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-software-as-a-service"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-software-as-a-service"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-software-as-a-service"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-e-commerce</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-e-commerce"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-e-commerce"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-e-commerce"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-fintech-banking</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-fintech-banking"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-fintech-banking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-fintech-banking"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-cripto-active</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-cripto-active"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-cripto-active"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-cripto-active"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-civila-it</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-it"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-it"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-eroare-omisiune</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-eroare-omisiune"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-eroare-omisiune"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-eroare-omisiune"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-infidelitate-angajati</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-infidelitate-angajati"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-infidelitate-angajati"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-infidelitate-angajati"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-bani-tranzit</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-bani-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-bani-tranzit"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-bani-tranzit"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-seifuri-valori</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-seifuri-valori"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-seifuri-valori"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-seifuri-valori"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-expozitii-targuri</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-expozitii-targuri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-expozitii-targuri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-expozitii-targuri"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-concerte-festivaluri</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-concerte-festivaluri"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-concerte-festivaluri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-concerte-festivaluri"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-competitii-sportive</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-competitii-sportive"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-competitii-sportive"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-competitii-sportive"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-civila-sportivi</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-sportivi"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-sportivi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-sportivi"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-yachturi-ambarcatiuni</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-yachturi-ambarcatiuni"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-yachturi-ambarcatiuni"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-yachturi-ambarcatiuni"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-avioane-private</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-avioane-private"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-avioane-private"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-avioane-private"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-elicoptere-utilitare</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-elicoptere-utilitare"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-elicoptere-utilitare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-elicoptere-utilitare"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-civila-aeroportuara</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-aeroportuara"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-aeroportuara"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-aeroportuara"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-maritima-hull</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-maritima-hull"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-maritima-hull"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-maritima-hull"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-protectie-indemnizatie</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-protectie-indemnizatie"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-protectie-indemnizatie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-protectie-indemnizatie"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-riscuri-catastrofale</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-riscuri-catastrofale"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-riscuri-catastrofale"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-riscuri-catastrofale"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-terorism-sabotaj</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-terorism-sabotaj"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-terorism-sabotaj"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-terorism-sabotaj"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-civila-poluare</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-poluare"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-poluare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-poluare"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-remediere-mediu</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-remediere-mediu"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-remediere-mediu"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-remediere-mediu"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-civila-produs</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-produs"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-produs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-produs"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-rechemare-produs</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-rechemare-produs"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-rechemare-produs"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-rechemare-produs"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-studii-clinice</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-studii-clinice"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-studii-clinice"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-studii-clinice"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-raspundere-civila-angajator</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-raspundere-civila-angajator"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-raspundere-civila-angajator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-raspundere-civila-angajator"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-sanatate-expatriati</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-sanatate-expatriati"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-sanatate-expatriati"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-sanatate-expatriati"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-repatriere-deces</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-repatriere-deces"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-repatriere-deces"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-repatriere-deces"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-asistenta-medicala-vip</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-asistenta-medicala-vip"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-asistenta-medicala-vip"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-asistenta-medicala-vip"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-boli-grave</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-boli-grave"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-boli-grave"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-boli-grave"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-spitalizare-interventii</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-spitalizare-interventii"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-spitalizare-interventii"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-spitalizare-interventii"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-optica-medicala</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-optica-medicala"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-optica-medicala"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-optica-medicala"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-maternitate-nastere</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-maternitate-nastere"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-maternitate-nastere"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-maternitate-nastere"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-kinetoterapie-recuperare</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-kinetoterapie-recuperare"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-kinetoterapie-recuperare"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-kinetoterapie-recuperare"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ingbroker.md/en/news/asigurare-check-up-anual</loc>
+    <lastmod>2026-11-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.ingbroker.md/news/asigurare-check-up-anual"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://www.ingbroker.md/ru/news/asigurare-check-up-anual"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ingbroker.md/en/news/asigurare-check-up-anual"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

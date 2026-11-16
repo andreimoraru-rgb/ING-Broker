@@ -41,6 +41,7 @@ import { OffersPage } from './pages/OffersPage';
 import { NewsInsightsPage } from './pages/NewsInsightsPage';
 import { ArticlePage } from './pages/ArticlePage';
 import { articleMedia } from './data/articleMedia';
+import { articles as articleLocaleIndex } from './data/articleMetadata';
 import { ConstructionShieldPage } from './pages/ConstructionShieldPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { CarEarPage } from './pages/CarEarPage';
@@ -188,8 +189,12 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
   const isEditorialArticle = lang === 'ro' && location.pathname.startsWith('/news/') && Object.hasOwn(articleMedia, location.pathname.slice(6));
   const isDarkHero = !isEditorialArticle && !['/termeni-si-conditii', '/politica-de-confidentialitate'].includes(location.pathname);
 
+  const articleSlug = location.pathname.startsWith('/news/') ? location.pathname.slice(6) : null;
+  const romanianOnlyCommercial = ['/business/transport-logistica', '/servicii/asigurari-constructii-car-ear', '/servicii/asigurari-corporative-moldova'].includes(location.pathname);
+  const languageAvailable = (l: Language) => (!romanianOnlyCommercial || l === 'ro') && (!articleSlug || articleLocaleIndex[l].some(article => article.slug === articleSlug));
+  const unavailableLanguage = lang === 'ro' ? 'Pagina nu este disponibilă în această limbă.' : lang === 'ru' ? 'Страница недоступна на этом языке.' : 'This page is not available in this language.';
   const changeLanguage = (l: Language) => {
-    if (l === lang) return;
+    if (l === lang || !languageAvailable(l)) return;
     window.location.assign(localizedPath(location.pathname, l) + location.search + location.hash);
   };
 
@@ -255,6 +260,9 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
               <button
                 key={l}
                 onClick={() => changeLanguage(l)}
+                disabled={!languageAvailable(l)}
+                title={!languageAvailable(l) ? unavailableLanguage : undefined}
+                aria-label={!languageAvailable(l) ? `${l.toUpperCase()}: ${unavailableLanguage}` : undefined}
                 className={`text-[10px] font-display font-bold uppercase tracking-widest transition-all duration-300 hover:text-primary ${lang === l ? 'text-primary' : scrolled || !isDarkHero ? 'text-secondary/60' : 'text-white/60'}`}
               >
                 {l}
@@ -272,7 +280,7 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
           </motion.button>
         </div>
 
-        <button className="md:hidden ml-auto" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden ml-auto" aria-label={lang === 'ro' ? 'Meniu' : lang === 'ru' ? 'Меню' : 'Menu'} aria-expanded={isOpen} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} className={scrolled || !isDarkHero ? 'text-secondary' : 'text-white'} /> : <Menu size={24} className={scrolled || !isDarkHero ? 'text-secondary' : 'text-white'} />}
         </button>
       </div>
@@ -290,6 +298,9 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
                 <button
                   key={l}
                   onClick={() => { changeLanguage(l); setIsOpen(false); }}
+                  disabled={!languageAvailable(l)}
+                  title={!languageAvailable(l) ? unavailableLanguage : undefined}
+                  aria-label={!languageAvailable(l) ? `${l.toUpperCase()}: ${unavailableLanguage}` : undefined}
                   className={`text-xs font-bold uppercase tracking-widest ${lang === l ? 'text-primary' : 'text-secondary'}`}
                 >
                   {l}
@@ -349,6 +360,7 @@ const CalculatorModal = ({ lang, onClose }: { lang: Language, onClose: () => voi
       >
         <button 
           onClick={onClose}
+          aria-label={lang === 'ro' ? 'Închide calculatorul' : lang === 'ru' ? 'Закрыть калькулятор' : 'Close calculator'}
           className="absolute top-8 right-8 text-gray-400 hover:text-primary transition-colors"
         >
           <X size={24} />
@@ -1099,10 +1111,10 @@ const Footer = ({ lang }: { lang: Language }) => {
           </div>
           
           <div className="flex flex-col items-start text-left">
-            <h5 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-10 relative inline-block group/header">
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-10 relative inline-block group/header">
               {t.sections.products}
               <span className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-primary transition-all duration-500 ease-out group-hover/header:w-full" />
-            </h5>
+            </h2>
             <ul className="space-y-4">
               {productTranslations[lang].map(p => (
                 <li key={p.id}>
@@ -1113,10 +1125,10 @@ const Footer = ({ lang }: { lang: Language }) => {
           </div>
           
           <div className="flex flex-col items-start text-left">
-            <h5 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-10 relative inline-block group/header">
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-10 relative inline-block group/header">
               {t.sections.company}
               <span className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-primary transition-all duration-500 ease-out group-hover/header:w-full" />
-            </h5>
+            </h2>
             <ul className="space-y-4">
               {translations[lang].nav.map((item, idx) => {
                 const getAboutLink = (l: Language) => {
@@ -1138,10 +1150,10 @@ const Footer = ({ lang }: { lang: Language }) => {
           </div>
           
           <div className="flex flex-col items-start text-left">
-            <h5 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-10 relative inline-block group/header">
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-10 relative inline-block group/header">
               {t.sections.legal}
               <span className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-primary transition-all duration-500 ease-out group-hover/header:w-full" />
-            </h5>
+            </h2>
             <ul className="space-y-4">
               {t.legal.map(item => {
                 const isTerms = item === 'Termeni și Condiții' || item === 'Условия использования' || item === 'Условия и положения' || item === 'Terms and Conditions';
@@ -1196,50 +1208,7 @@ export default function App({ initialPath }: { initialPath?: string } = {}) {
   // Schema LocalBusiness completă (din utils/schema.ts)
   const lbSchema = localBusinessSchema();
 
-  // Schema HowTo pentru homepage - "Cum obții o ofertă de asigurare B2B în 15 minute"
-  const homepageHowToSchema = howToSchema({
-    name: "Cum obții o ofertă de asigurare B2B în 15 minute",
-    description: "Procesul simplu prin care compania ta primește o ofertă comparativă de asigurare de la toți cei 6 asigurători autorizați CNPF din Moldova.",
-    totalTime: "PT15M",
-    steps: [
-      {
-        name: "Completezi formularul online",
-        text: "Completezi prenumele și telefonul în formularul de pe site. Durează 2 minute. Câmpuri minime, fără informații inutile."
-      },
-      {
-        name: "Consultantul nostru te contactează",
-        text: "Un specialist ING Broker te sună în maxim 15 minute pentru a înțelege necesitățile companiei tale. Nu lăsăm robotul să vorbească în locul nostru."
-      },
-      {
-        name: "Primești oferta comparativă",
-        text: "Comparăm ofertele de la toți cei 6 asigurători autorizați CNPF parteneri - Acord Grup, Asterra Grup, Moldasig VIG, Moldcargo, Donaris VIG și Grawe Carat - și îți trimitem varianta optimă cu explicații clare."
-      }
-    ]
-  });
-
-  // Schema FAQ pentru homepage
-  const homepageFaqSchema = faqSchema([
-    {
-      question: "Ce este un broker de asigurări în Moldova?",
-      answer: "Un broker de asigurări este un intermediar licențiat de CNPF care reprezintă interesele clientului, nu ale asigurătorului. ING Broker compară ofertele de la toți asigurătorii parteneri și îți recomandă cea mai bună soluție pentru compania ta."
-    },
-    {
-      question: "Cât costă serviciile unui broker de asigurări?",
-      answer: "Serviciile brokerului sunt gratuite pentru client. ING Broker este remunerat de asigurătorul ales, printr-un comision inclus în prima de asigurare - fără costuri suplimentare pentru tine."
-    },
-    {
-      question: "Ce asigurări corporative oferă ING Broker în Moldova?",
-      answer: "ING Broker oferă asigurări CAR/EAR pentru construcții, asigurare de răspundere profesională (PI), asigurare cyber, flote auto corporative și asigurare cargo CMR pentru transport internațional."
-    },
-    {
-      question: "Cât timp durează să obțin o ofertă de asigurare?",
-      answer: "Oferta comparativă se emite în maxim 15 minute de la trimiterea datelor. Pentru proiecte complexe (CAR/EAR mari, cyber corporate), analiza poate dura 24-48 ore."
-    },
-    {
-      question: "Ce asigurători sunt parteneri ai ING Broker?",
-      answer: "ING Broker colaborează cu toți asigurătorii autorizați de CNPF: Acord Grup SA, Asterra Grup SA, Moldasig VIG SA, Moldcargo SA, Donaris VIG SA și Grawe Carat SA."
-    }
-  ]);
+  // Do not publish FAQ/HowTo promises absent from the visible, verified content.
 
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 selection:bg-primary selection:text-white">
@@ -1249,7 +1218,7 @@ export default function App({ initialPath }: { initialPath?: string } = {}) {
           description={seo.description}
           lang={lang}
           schema={lbSchema}
-          schemas={[homepageHowToSchema, homepageFaqSchema]}
+          schemas={[]}
         />
         <ScrollToTop />
         <Navbar lang={lang} setLang={setLang} scrolled={scrolled} onOpenCalculator={() => setIsCalculatorOpen(true)} />
@@ -1361,6 +1330,7 @@ export default function App({ initialPath }: { initialPath?: string } = {}) {
         {/* Back to Top */}
         <motion.button
           initial={{ opacity: 0, scale: 0 }}
+          aria-label={lang === 'ro' ? 'Înapoi sus' : lang === 'ru' ? 'Наверх' : 'Back to top'}
           animate={{ opacity: scrolled ? 1 : 0, scale: scrolled ? 1 : 0 }}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="fixed bottom-8 right-8 w-14 h-14 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center shadow-2xl z-50 hover:bg-white/20 transition-all duration-500 group"
