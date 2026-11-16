@@ -98,7 +98,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
   ]);
 
   return (
-    <div className="article-page bg-white min-h-screen">
+    <main className="article-page bg-white min-h-screen">
       <SEO
         title={article.seo.title}
         description={article.seo.description}
@@ -126,7 +126,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
           }`}
         >
           <div className={`p-1 group-hover:-translate-x-1 transition-transform ${
-            isScrolled ? 'text-primary' : 'text-primary'
+            isScrolled ? 'text-primary' : 'text-white'
           }`}>
             <ArrowLeft size={16} strokeWidth={3} />
           </div>
@@ -199,9 +199,9 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
               <a
                 className="uas-drone-cta inline-flex rounded-xl bg-[#2e7d34] px-6 py-3 text-base font-bold text-white no-underline transition-colors hover:bg-[#e31e24] hover:text-white focus-visible:bg-[#e31e24] focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#e31e24]"
                 href={lang === 'ru' ? 'https://uas.md/ru/asigurare' : 'https://uas.md/asigurare'}
-                lang="ro"
+                lang={lang}
               >
-                Încheie polița pe UAS.md
+                {lang === 'ru' ? 'Оформить полис на UAS.md' : 'Încheie polița pe UAS.md'}
               </a>
             </section>
           )}
@@ -218,6 +218,6 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
