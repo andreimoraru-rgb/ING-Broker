@@ -8,6 +8,7 @@ const allCopy = JSON.stringify([piContent, piSeo, cyberContent, cyberSeo]);
 for (const claim of ['CNPF', '340%', '60%', '15 min', '24h', '48h', '133/2011', '3.000 - 15.000', '1.000 - 4.000', 'best offer guaranteed']) assert.ok(!allCopy.includes(claim), claim);
 const fakeAssets = { async fetch(request: Request) { return new Response(new URL(request.url).pathname); } };
 const get = (path: string) => onRequest({ request: new Request('https://www.ingbroker.md' + path), env: { ASSETS: fakeAssets } });
+for (const path of ['/ai-studio', '/admin/ai-tools', '/ru/ai-studio', '/en/admin/ai-tools']) assert.equal((await get(path)).status, 404, path);
 assert.equal((await get('/servicii/raspundere-profesionala')).status, 404, 'Unknown /servicii route must not be soft 404');
 assert.equal(await (await get('/servicii/asigurare-raspundere-profesionala')).text(), '/_pages/ro/servicii/asigurare-raspundere-profesionala');
 assert.equal(await (await get('/en/servicii/asigurare-cyber-moldova')).text(), '/_pages/en/servicii/asigurare-cyber-moldova');
