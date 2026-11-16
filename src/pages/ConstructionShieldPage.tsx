@@ -291,10 +291,10 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
               {c.heroDesc}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
-              <button className="px-10 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 group">
+              <button onClick={() => navigate('/contact')} className="px-10 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 group">
                 {c.cta} <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="px-10 py-4 bg-white/10 border border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-all backdrop-blur-md">
+              <button onClick={() => document.getElementById('detalii-program')?.scrollIntoView({behavior:'smooth'})} className="px-10 py-4 bg-white/10 border border-white/20 text-white font-bold rounded-lg hover:bg-white/20 transition-all backdrop-blur-md">
                 {c.details}
               </button>
             </div>
@@ -335,7 +335,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
       </section>
 
       {/* Products Grid */}
-      <section className="py-32 max-w-7xl mx-auto px-6">
+      <section id="detalii-program" className="py-32 max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-6">{c.productsTitle}</h2>
           <p className="text-lg text-slate-500 font-light">{c.productsSubtitle}</p>
@@ -426,7 +426,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
                     </li>
                   ))}
                 </ul>
-                <button className={`w-full py-4 rounded-xl font-bold transition-all ${plan.popular ? 'bg-primary text-white hover:bg-primary-dark shadow-lg shadow-primary/20' : 'bg-slate-100 text-slate-900 hover:bg-slate-200'}`}>
+                <button onClick={() => navigate('/contact')} className={`w-full py-4 rounded-xl font-bold transition-all ${plan.popular ? 'bg-primary text-white hover:bg-primary-dark shadow-lg shadow-primary/20' : 'bg-slate-100 text-slate-900 hover:bg-slate-200'}`}>
                   {c.cta}
                 </button>
               </div>
@@ -448,13 +448,13 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
             {lang === 'ro' ? 'Trimite descrierea proiectului și cerințele contractuale. Confirmăm ce poate fi analizat, documentele și eventualele costuri, fără promisiunea emiterii unei garanții.' : lang === 'ru' ? 'Отправьте описание проекта и договорные требования. Уточним возможности анализа, документы и возможные расходы, без обещания выдачи гарантии.' : 'Send the project description and contractual requirements. We will clarify the scope of assessment, documents and any costs, without promising bond issuance.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-12 py-5 bg-white text-primary font-bold rounded-xl hover:bg-slate-100 transition-all shadow-2xl">
+            <button onClick={() => navigate('/contact')} className="px-12 py-5 bg-white text-primary font-bold rounded-xl hover:bg-slate-100 transition-all shadow-2xl">
               {c.cta}
             </button>
-            <button className="px-12 py-5 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3">
+            <a href="tel:+37379030209" className="px-12 py-5 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3">
               <Phone size={20} />
               {lang === 'ro' ? 'Sună acum' : lang === 'ru' ? 'Позвонить' : 'Call now'}
-            </button>
+            </a>
           </div>
         </div>
       </section>

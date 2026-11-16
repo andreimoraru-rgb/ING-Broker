@@ -121,6 +121,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <motion.button 
+                onClick={() => navigate('/contact')}
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 className="px-12 py-5 bg-primary text-white font-display font-bold uppercase text-[10px] tracking-[0.3em] transition-all shadow-xl shadow-primary/20 hover:bg-primary-dark"

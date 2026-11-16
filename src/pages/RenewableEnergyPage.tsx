@@ -110,13 +110,13 @@ export const RenewableEnergyPage: React.FC<RenewableEnergyPageProps> = ({ lang }
               {t.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
-              <motion.button 
+              <motion.a href="tel:+37379030209"
                 whileHover={{ scale: 1.05, y: -5, backgroundColor: "#C4191F", boxShadow: "0 20px 40px -10px rgba(227,30,36,0.5)" }}
                 whileTap={{ scale: 0.95 }}
-                className="px-12 py-6 bg-primary text-white font-bold uppercase text-[10px] tracking-[0.3em] transition-all duration-300"
+                className="px-12 py-6 bg-primary text-white text-center font-bold uppercase text-[10px] tracking-[0.3em] transition-all duration-300"
               >
                 {t.ctaCall}
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>
