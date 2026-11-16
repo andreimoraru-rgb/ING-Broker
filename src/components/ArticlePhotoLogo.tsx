@@ -37,6 +37,6 @@ export function ArticlePhotoLogo({image,mode='photo'}:{image:string;mode?:'photo
  },[branding,image,mode]);
  if(!branding)return null;
  return <img ref={ref} data-article-logo="bottom-right" data-logo-color={color} aria-hidden="true" alt=""
-  src={`/images/brand/ing-re-${color}-original-20261109.png`} width="1140" height="330" draggable={false}
+  src={`/images/brand/ing-re-${color}-original-354-20261116.webp`} width="354" height="103" draggable={false}
   style={{position:'absolute',right:'clamp(12px,2.5%,24px)',bottom:'clamp(12px,2.5%,24px)',width:mode==='hero'?'clamp(72px,12vw,118px)':'clamp(64px,18%,118px)',maxWidth:'28%',height:'auto',aspectRatio:'auto',objectFit:'contain',borderRadius:0,background:'transparent',display:'block',pointerEvents:'none',zIndex:1}} />;
 }
