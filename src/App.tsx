@@ -190,8 +190,9 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
   const isDarkHero = !isEditorialArticle && !['/termeni-si-conditii', '/politica-de-confidentialitate'].includes(location.pathname);
 
   const articleSlug = location.pathname.startsWith('/news/') ? location.pathname.slice(6) : null;
-  const languageAvailable = (l: Language) => !articleSlug || articleLocaleIndex[l].some(article => article.slug === articleSlug);
-  const unavailableLanguage = lang === 'ro' ? 'Articolul nu este disponibil în această limbă.' : lang === 'ru' ? 'Статья недоступна на этом языке.' : 'This article is not available in this language.';
+  const romanianOnlyCommercial = ['/business/transport-logistica', '/servicii/asigurari-constructii-car-ear', '/servicii/asigurari-corporative-moldova'].includes(location.pathname);
+  const languageAvailable = (l: Language) => (!romanianOnlyCommercial || l === 'ro') && (!articleSlug || articleLocaleIndex[l].some(article => article.slug === articleSlug));
+  const unavailableLanguage = lang === 'ro' ? 'Pagina nu este disponibilă în această limbă.' : lang === 'ru' ? 'Страница недоступна на этом языке.' : 'This page is not available in this language.';
   const changeLanguage = (l: Language) => {
     if (l === lang || !languageAvailable(l)) return;
     window.location.assign(localizedPath(location.pathname, l) + location.search + location.hash);

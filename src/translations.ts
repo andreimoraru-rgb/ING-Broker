@@ -117,7 +117,7 @@ export const translations = {
         },
         {
           title: 'Cum se determină prețul unei asigurări RCA? Ghid pentru un preț RCA accesibil',
-          desc: 'Descoperă factorii care influențează costul poliței tale RCA și cum poți obține cel mai bun preț.',
+          desc: "Vezi ce date influențează calculul RCA și cum verifici prețul și condițiile unei propuneri.",
           link: '/news/cum-se-determin%C4%83-pre%C8%9Bul-unei-asigur%C4%83ri-rca-ghid-pentru-un-pre%C8%9B-rca-accesibil',
           image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800'
         }
@@ -132,10 +132,10 @@ export const translations = {
       faq: {
         title: 'Întrebări Frecvente',
         items: [
-          { q: 'Ce tipuri de asigurări corporate oferiți?', a: 'Oferim o gamă completă de soluții B2B, inclusiv asigurări de bunuri (Property), răspundere civilă generală și profesională (Liability, E&O), asigurări cibernetice (Cyber), asigurări pentru directori și administratori (D&O), asigurări auto flotă și Cargo.' },
-          { q: 'Cum mă ajută un broker de asigurări B2B?', a: 'Un broker B2B precum ING Broker acționează ca un consultant de risc. Noi identificăm și evaluăm riscurile specifice industriei tale, negociem cele mai bune condiții și prime cu asigurătorii și te reprezentăm în caz de daună, economisindu-ți timp și resurse.' },
-          { q: 'Oferiți soluții pentru riscuri complexe sau internaționale?', a: 'Da, prin departamentul nostru de Reasigurări & Fronting, structurăm programe pentru riscuri care depășesc capacitatea pieței locale, facilitând accesul la piețele internaționale (ex. Lloyd\'s) și oferind soluții de fronting pentru corporații multinaționale.' },
-          { q: 'Cât durează un audit de risc?', a: 'Durata unui audit de risc variază în funcție de complexitatea și dimensiunea companiei, dar de obicei durează între câteva zile și câteva săptămâni. Implică o analiză detaliată a operațiunilor, activelor și expunerilor financiare.' }
+          { q: 'Ce tipuri de asigurări corporate oferiți?', a: "Putem discuta riscurile bunurilor, răspunderii, transportului și angajaților companiei. Disponibilitatea unui produs, activitățile acceptate și condițiile se confirmă pentru fiecare caz, înainte de ofertare." },
+          { q: 'Cum mă ajută un broker de asigurări B2B?', a: "ING Broker te ajută să descrii riscurile și să compari ofertele disponibile, inclusiv prețul, limitele și excluderile. La daună, explicăm pașii și documentele necesare. Asigurătorul acceptă riscul și decide asupra cererii potrivit contractului." },
+          { q: 'Oferiți soluții pentru riscuri complexe sau internaționale?', a: "Pentru riscuri complexe sau internaționale, pregătim întrebările și informațiile necesare analizei. Posibilitatea unei structuri de reasigurare sau fronting, participanții și capacitatea se confirmă separat; pagina nu promite acces la o anumită piață." },
+          { q: 'Cât durează un audit de risc?', a: "Termenul se stabilește după clarificarea activității, documentelor disponibile și scopului analizei. Cere calendarul pentru dosarul tău; nu există pe această pagină un termen confirmat pentru toate companiile." }
         ]
       },
       lines: [
@@ -148,7 +148,7 @@ export const translations = {
           link: '/property-assets',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Incendiu, explozie, trăsnet', 'Calamități naturale (cutremur, inundații)', 'Furt și vandalism'] },
-            advantages: { title: 'Avantaje', items: ['Protecția bazei materiale a afacerii', 'Acoperire pentru pierderea profitului', 'Flexibilitate în alegerea limitelor'] },
+            advantages: { title: "Ce verificăm", items: ["Bunurile, valorile și locațiile acceptate", "Condițiile pierderii profitului, dacă este inclusă", "Limitele, franșizele și excluderile"] },
             disadvantages: { title: 'Limitări', items: ['Excluderi pentru uzură normală', 'Necesitatea sistemelor de securitate funcționale', 'Franșize obligatorii pentru anumite riscuri'] }
           }
         },
@@ -161,7 +161,7 @@ export const translations = {
           link: '/business/liability',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Vătămări corporale cauzate terților', 'Daune materiale aduse bunurilor terților', 'Poluare accidentală'] },
-            advantages: { title: 'Avantaje', items: ['Protecție împotriva cererilor de despăgubire masive', 'Acoperirea cheltuielilor de judecată', 'Menținerea reputației companiei'] },
+            advantages: { title: "Ce verificăm", items: ["Activitățile și răspunderile acceptate", "Cheltuielile de apărare, dacă sunt incluse", "Limitele și teritoriul poliței"] },
             disadvantages: { title: 'Limitări', items: ['Nu acoperă răspunderea contractuală pură', 'Excluderi pentru daune intenționate', 'Limite geografice de acoperire'] }
           }
         },
@@ -174,7 +174,7 @@ export const translations = {
           link: '/business/professional',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Erori și omisiuni profesionale', 'Neglijență în prestarea serviciilor', 'Încălcarea confidențialității datelor'] },
-            advantages: { title: 'Avantaje', items: ['Siguranță pentru experți și consultanți', 'Cerință obligatorie pentru anumite profesii', 'Acoperire pentru daune financiare pure'] },
+            advantages: { title: "Ce verificăm", items: ["Serviciile profesionale declarate", "Cerințele profesiei, de confirmat separat", "Pretențiile, perioadele și limitele acceptate"] },
             disadvantages: { title: 'Limitări', items: ['Nu acoperă activități în afara specializării', 'Excluderi pentru fapte penale', 'Principiul "claims-made" (cereri depuse în perioada poliței)'] }
           }
         },
@@ -187,7 +187,7 @@ export const translations = {
           link: '/business/do',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Decizii manageriale eronate', 'Culpa în supraveghere', 'Litigii inițiate de acționari sau angajați'] },
-            advantages: { title: 'Avantaje', items: ['Protecția patrimoniului personal al managerilor', 'Atragerea de talente în conducere', 'Acoperire pentru investigații oficiale'] },
+            advantages: { title: "Ce verificăm", items: ["Persoanele și funcțiile acceptate", "Cheltuielile de apărare, dacă sunt incluse", "Investigațiile și perioadele prevăzute"] },
             disadvantages: { title: 'Limitări', items: ['Excluderi pentru fraudă dovedită', 'Nu acoperă amenzile penale', 'Limitări pentru tranzacții de fuziuni și achiziții nedeclarate'] }
           }
         },
@@ -200,7 +200,7 @@ export const translations = {
           link: '/business/cyber',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Atacuri ransomware și hacking', 'Întreruperea activității din cauze IT', 'Scurgeri de date cu caracter personal'] },
-            advantages: { title: 'Avantaje', items: ['Acces la echipe de intervenție rapidă', 'Acoperire pentru costurile de notificare', 'Protecție împotriva extorcării cibernetice'] },
+            advantages: { title: "Ce verificăm", items: ["Serviciile de răspuns, dacă sunt incluse", "Costurile de notificare acceptate", "Condițiile și excluderile pentru extorcare"] },
             disadvantages: { title: 'Limitări', items: ['Necesită standarde minime de securitate IT', 'Nu acoperă pierderea valorii proprietății intelectuale', 'Excluderi pentru infrastructura publică'] }
           }
         },
@@ -213,7 +213,7 @@ export const translations = {
           link: '/business/cargo',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Avarierea mărfurilor în timpul transportului', 'Furtul sau dispariția încărcăturii', 'Accidente ale mijlocului de transport'] },
-            advantages: { title: 'Avantaje', items: ['Acoperire "All Risks" disponibilă', 'Protecție pe tot parcursul rutei internaționale', 'Decontare rapidă bazată pe valoarea facturii'] },
+            advantages: { title: "Ce verificăm", items: ["Riscurile acceptate, inclusiv excluderile", "Traseul și etapele de transport incluse", "Evaluarea mărfii și documentele pentru daună"] },
             disadvantages: { title: 'Limitări', items: ['Excluderi pentru ambalare necorespunzătoare', 'Limitări pentru mărfuri perisabile', 'Necesitatea respectării rutelor aprobate'] }
           }
         },
@@ -226,7 +226,7 @@ export const translations = {
           link: '/business/fleet',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Accidente rutiere multiple', 'Furtul vehiculelor din flotă', 'Răspundere civilă extinsă'] },
-            advantages: { title: 'Avantaje', items: ['Administrare simplificată a polițelor', 'Reduceri de volum (fleet discount)', 'Asistență rutieră prioritară'] },
+            advantages: { title: "Ce verificăm", items: ["Inventarul vehiculelor și perioadele polițelor", "Prețul calculat pentru dosarul concret", "Asistența rutieră, dacă este inclusă"] },
             disadvantages: { title: 'Limitări', items: ['Monitorizarea riguroasă a daunelor necesară', 'Franșize per eveniment', 'Restricții privind utilizatorii vehiculelor'] }
           }
         },
@@ -239,7 +239,7 @@ export const translations = {
           link: '/business/credit',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Insolvența clienților', 'Întârzierea prelungită la plată', 'Riscuri politice în export'] },
-            advantages: { title: 'Avantaje', items: ['Îmbunătățirea cash-flow-ului', 'Acces mai ușor la finanțare bancară', 'Monitorizarea bonității clienților inclusă'] },
+            advantages: { title: "Ce verificăm", items: ["Cumpărătorii și facturile acceptate", "Limitele și perioada de așteptare contractuală", "Serviciile de monitorizare, dacă sunt incluse"] },
             disadvantages: { title: 'Limitări', items: ['Nu acoperă disputele comerciale', 'Limite de credit per cumpărător', 'Procent de co-asigurare obligatoriu'] }
           }
         },
@@ -252,7 +252,7 @@ export const translations = {
           link: '/business/construction',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Avarii accidentale ale lucrărilor', 'Distrugerea utilajelor de șantier', 'Răspunderea față de terți în perimetrul șantierului'] },
-            advantages: { title: 'Avantaje', items: ['Protecție de la începerea lucrărilor până la recepție', 'Acoperire pentru perioada de mentenanță', 'Siguranță pentru investitori și bănci'] },
+            advantages: { title: "Ce verificăm", items: ["Etapele și lucrările acceptate", "Mentenanța, dacă este inclusă", "Cerințele investitorului și limitele propuse"] },
             disadvantages: { title: 'Limitări', items: ['Excluderi pentru erori de proiectare', 'Nu acoperă penalitățile contractuale', 'Necesitatea respectării normelor de protecție a muncii'] }
           }
         },
@@ -265,7 +265,7 @@ export const translations = {
           link: '/business/benefits',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Boli profesionale și accidente de muncă', 'Deces sau invaliditate a angajaților', 'Costuri medicale ridicate'] },
-            advantages: { title: 'Avantaje', items: ['Creșterea loialității echipei', 'Deductibilitate fiscală (în limitele legii)', 'Acces la clinici private de top'] },
+            advantages: { title: "Ce verificăm", items: ["Persoanele și serviciile acceptate", "Tratamentul fiscal, de verificat separat", "Clinicile și procedura prevăzute în program"] },
             disadvantages: { title: 'Limitări', items: ['Perioade de așteptare pentru anumite afecțiuni', 'Excluderi pentru boli cronice nedeclarate', 'Limite anuale de decontare'] }
           }
         },
@@ -278,7 +278,7 @@ export const translations = {
           link: '/renewable-energy',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Fenomene meteo extreme (grindină, furtună)', 'Defecțiuni tehnice și electrice', 'Pierderea profitului din lipsa producției'] },
-            advantages: { title: 'Avantaje', items: ['Protecția investițiilor masive', 'Bankability ridicat pentru proiecte', 'Expertiză tehnică în evaluarea riscurilor verzi'] },
+            advantages: { title: "Ce verificăm", items: ["Etapele și echipamentele proiectului", "Cerințele finanțatorului, fără promisiune de finanțare", "Riscurile, limitele și excluderile propuse"] },
             disadvantages: { title: 'Limitări', items: ['Costuri variabile în funcție de locație', 'Cerințe stricte de mentenanță preventivă', 'Excluderi pentru degradare naturală'] }
           }
         },
@@ -291,7 +291,7 @@ export const translations = {
           link: '/business/agriculture',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Secetă, îngheț, grindină', 'Boli ale animalelor și epidemii', 'Avarii ale utilajelor agricole'] },
-            advantages: { title: 'Avantaje', items: ['Subvenționarea primei de asigurare (unde e cazul)', 'Stabilitate financiară în ani agricoli dificili', 'Evaluare specializată a daunelor pe teren'] },
+            advantages: { title: "Ce verificăm", items: ["Condițiile unei eventuale subvenții, de verificat separat", "Culturile, animalele și riscurile acceptate", "Procedura de constatare și documentele cerute"] },
             disadvantages: { title: 'Limitări', items: ['Perioade de franșiză temporală', 'Excluderi pentru nerespectarea tehnologiei agricole', 'Limite de recoltă asigurată'] }
           }
         }
@@ -300,49 +300,49 @@ export const translations = {
     reinsurance: {
       title: 'Reasigurare & Fronting',
       titleItalic: 'pentru riscuri mari.',
-      subtitle: 'Ajutăm la organizarea reasigurării pentru riscuri mari sau complexe. Discutăm informațiile necesare, opțiunile disponibile și condițiile fiecărui program.',
-      cta1: 'Contactează departamentul',
-      cta2: 'Solicită capacitate',
+      subtitle: "Discutăm pregătirea unui dosar pentru riscuri mari sau complexe. Disponibilitatea programului, participanții și capacitatea de reasigurare se confirmă separat, după analiza riscului.",
+      cta1: "Discută despre dosarul de risc",
+      cta2: "Solicită o analiză a posibilităților",
       faq: {
         title: 'Întrebări Frecvente - Reasigurări',
         items: [
-          { q: 'Când are nevoie o companie de reasigurare facultativă?', a: 'Reasigurarea facultativă este necesară atunci când o companie se confruntă cu un risc individual foarte mare (ex. o fabrică de proporții, un proiect de infrastructură major) care depășește capacitatea de reținere a asigurătorilor locali sau când riscul este atipic și necesită expertiză internațională.' },
-          { q: 'Ce înseamnă Fronting în asigurări?', a: 'Fronting-ul este un mecanism prin care un asigurător local (Fronting Company) emite o poliță conform legislației locale pentru o corporație multinațională, dar transferă (cedează) 100% din risc către un reasigurător internațional sau către compania captivă a corporației. Este esențial pentru conformitatea legală.' },
-          { q: 'Cu ce piețe de reasigurare colaborați?', a: 'Avem acces la piețele internaționale de top, inclusiv Lloyd\'s of London și marii reasigurători din Europa Continentală, asigurându-ne că riscurile sunt plasate la entități cu rating financiar excelent (A- sau mai mare).' },
-          { q: 'Care este diferența dintre reasigurarea proporțională și neproporțională?', a: 'În reasigurarea proporțională (ex. Quota Share), reasigurătorul preia un procent fix din prime și daune. În cea neproporțională (ex. Excess of Loss), reasigurătorul intervine doar dacă dauna depășește o anumită sumă prestabilită (prioritate), protejând asigurătorul de evenimente catastrofale.' }
+          { q: 'Când are nevoie o companie de reasigurare facultativă?', a: "Reasigurarea facultativă poate fi analizată separat pentru un risc mare sau atipic. Asigurătorul și eventualii reasigurători verifică informațiile, capacitatea și condițiile propuse. Existența unui proiect mare nu confirmă singură acceptarea lui." },
+          { q: 'Ce înseamnă Fronting în asigurări?', a: "Într-o structură de fronting, polița locală este emisă de un asigurător, iar transferul unei părți din risc este stabilit prin acordurile de reasigurare. Brokerul nu devine asigurătorul emitent. Participanții, procentele și cerințele locale trebuie verificate pentru programul concret." },
+          { q: 'Cu ce piețe de reasigurare colaborați?', a: "Participarea unei anumite piețe sau a unui reasigurător se confirmă pentru fiecare dosar. Cere identificarea participanților, verificarea capacității disponibile și informațiile financiare relevante. Pagina nu confirmă acces direct la Lloyd's sau un rating minim garantat." },
+          { q: 'Care este diferența dintre reasigurarea proporțională și neproporțională?', a: "O structură proporțională împarte primele și daunele potrivit proporțiilor convenite. O structură neproporțională folosește praguri și limite stabilite în acord. Mecanismul exact, evenimentele și obligațiile participanților se verifică în documentele programului." }
         ]
       },
       lines: [
         { 
           id: 'facultative', 
           title: 'Reasigurare Facultativă', 
-          desc: 'Reasigurare analizată separat pentru un risc sau un proiect, de exemplu în energie, aviație ori construcții. Condițiile se stabilesc în funcție de informațiile despre risc și ofertele disponibile.',
+          desc: "Pentru un risc sau proiect individual, pregătește descrierea, valorile și istoricul relevant. Posibilitatea unei plasări facultative și condițiile ei se confirmă după analiza participanților; nu sunt promise prin această pagină.",
           image: '/reinsurance-1.webp', 
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Expuneri individuale care depășesc capacitatea pieței locale', 'Riscuri industriale complexe', 'Proiecte de infrastructură majore'] },
-            advantages: { title: 'Avantaje', items: ['Transfer de risc precis și personalizat', 'Acces la rating-uri financiare de top (A- și peste)', 'Protecție împotriva volatilității'] },
+            advantages: { title: "Ce analizăm", items: ["Analiza separată a riscului propus", "Verificarea participanților și a informațiilor financiare", "Compararea limitelor și condițiilor disponibile"] },
             disadvantages: { title: 'Limitări', items: ['Proces de subscriere detaliat și riguros', 'Costuri influențate de condițiile pieței globale'] }
           }
         },
         { 
           id: 'treaty', 
           title: 'Tratate de Reasigurare', 
-          desc: 'Programe de reasigurare pentru un portofoliu de polițe. Ajutăm la compararea variantelor și la înțelegerea modului în care sunt împărțite riscurile.',
+          desc: "Pentru un portofoliu de polițe, discută datele despre expuneri, daune și limitele urmărite. O structură de tratat, disponibilitatea ei și efectele financiare necesită analiză specifică, nu se deduc din denumire.",
           image: '/traty reinsurance-2.jpg', 
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Acumulări de riscuri catastrofale (Cutremur, Inundații)', 'Fluctuații majore ale ratei daunei', 'Protecția capitalului și a solvabilității'] },
-            advantages: { title: 'Avantaje', items: ['Stabilitate financiară pe termen lung', 'Creșterea capacității de subscriere', 'Management eficient al capitalului (Solvency II)'] },
+            advantages: { title: "Ce analizăm", items: ["Analiza acumulării expunerilor", "Compararea limitelor și a capacității propuse", "Verificarea implicațiilor asupra capitalului cu specialiștii relevanți"] },
             disadvantages: { title: 'Limitări', items: ['Structuri contractuale complexe', 'Necesită analize actuariale avansate'] }
           }
         },
         { 
           id: 'fronting', 
           title: 'Programe de Fronting', 
-          desc: 'Emitem polițe locale conforme cu legislația din Republica Moldova pentru programe globale de asigurare (Master Policies). Asigurăm conformitatea legală și fiscală, facilitând transferul riscului către reasigurătorii captivi sau piețele internaționale agreate de corporație.', 
+          desc: "Pentru un program internațional, verifică dacă un asigurător poate emite polița locală și în ce condiții poate participa la structura de reasigurare. Rolul ING Broker este de intermediere, când posibilitatea este confirmată. Aspectele juridice și fiscale necesită verificare separată.", 
           image: '/fronting.png', 
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Cerințe stricte de conformitate locală', 'Managementul programelor globale de asigurare', 'Risc de credit al reasigurătorului'] },
-            advantages: { title: 'Avantaje', items: ['Conformitate legală 100% garantată', 'Integrare perfectă în programul global', 'Eficiență administrativă și fiscală'] },
+            advantages: { title: "Ce analizăm", items: ["Verificarea cerințelor locale aplicabile", "Compararea poliței locale cu documentele programului", "Clarificarea costurilor și a rolurilor participanților"] },
             disadvantages: { title: 'Limitări', items: ['Costuri administrative de fronting (Fronting Fee)', 'Dependență de rating-ul asigurătorului local emitent'] }
           }
         }
@@ -368,7 +368,7 @@ export const translations = {
       },
       history: {
         title: 'Istoricul Nostru',
-        content: 'Fondată în 2006, Insurance ING Broker SRL a fost printre primii brokeri licențiați din Republica Moldova, fiind prima companie de profil care a obținut certificarea ISO. De la dezvoltarea aplicației eAsigurari până la pionieratul în digitalizarea sectorului, am evoluat constant ca o structură orientată spre guvernanță corporativă și servicii de elită.'
+        content: "Insurance ING Broker SRL este un broker de asigurări din Republica Moldova. Pentru informații despre istoricul, autorizarea sau certificările companiei, solicită documentele relevante și verifică perioada lor de valabilitate."
       },
       values: {
         title: 'Valorile Noastre',
@@ -377,32 +377,32 @@ export const translations = {
       differentiators: {
         title: 'Ce Ne Diferențiază',
         items: [
-          { title: 'Licență Oficială și Tradiție', desc: 'Suntem printre primii brokeri din Republica Moldova cu licență oficială, oferind stabilitate și siguranță juridică absolută.' },
-          { title: 'Pionierat în Educație', desc: 'Suntem pionierii care au început să dezvolte serviciile de asigurări la nivel de școală în piața locală, ridicând standardele întregii industrii.' },
-          { title: 'Garanția Calității ISO', desc: 'Primii și unicii în Moldova deținători de certificate ISO, o dovadă incontestabilă a rigorii și calității proceselor noastre interne.' },
-          { title: 'Conectivitate Internațională', desc: 'Deținem o rețea solidă de parteneri europeni și internaționali, facilitând accesul la capacități de reasigurare globale.' },
-          { title: '20 de Ani de Excelență', desc: 'Un background și o expertiză validată de două decenii de activitate neîntreruptă și succes în gestionarea riscurilor complexe.' }
+          { title: "Date clare despre companie", desc: "Poți solicita datele actuale ale companiei și clarificări despre rolul brokerului înainte de colaborare." },
+          { title: "Explicații accesibile", desc: "Explicăm termenii de asigurare și pașii practici, fără să presupunem că ai experiență în domeniu." },
+          { title: "Verificarea documentelor", desc: "Comparăm documentele și condițiile disponibile. O certificare sau o autorizare se confirmă din documentele actuale, nu dintr-o promisiune comercială." },
+          { title: "Analiza posibilităților", desc: "Pentru cerințe complexe, clarificăm participanții și opțiunile disponibile, fără să promitem acces la o anumită piață." },
+          { title: "Sprijin pentru decizie", desc: "Discutăm riscurile, costurile și limitările relevante înainte să alegi o variantă." }
         ]
       },
-      corporate: { title: 'Datele companiei', content: 'Denumire completă: Insurance ING Broker SRL,\nIDNO: 1017600019386,\nAdresa: mun. Chișinău, str. Pan Halippa 9,\nCEO: Ion Dascălu,\nLicență: CNPF 000874 din 06.10.2016,\nCertificare: ISO 9001:2015, certificat RO-11645' },
+      corporate: { title: 'Datele companiei', content: "Denumire: Insurance ING Broker SRL,\\nIDNO: 1017600019386,\\nAdresă: municipiul Chișinău, strada Pan Halippa 9, Republica Moldova,\\nCEO: Dascalu Ion" },
       cta: { title: 'Discută cu noi', subtitle: 'Spune-ne ce vrei să asiguri. Te ajutăm să înțelegi opțiunile și informațiile necesare pentru o ofertă.', btn: 'Cere o consultație' }
     },
     propertyAssets: {
       title: 'Asigurarea Bunurilor și Proprietăților',
-      subtitle: 'Asigurări pentru clădirile, echipamentele și stocurile companiei, în condițiile poliței alese.',
-      intro: 'Clădirile, utilajele și stocurile sunt importante pentru activitatea companiei. Te ajutăm să compari asigurările disponibile și să verifici ce bunuri și riscuri pot fi incluse.',
+      subtitle: "Analizăm asigurarea clădirilor, echipamentelor și stocurilor. Bunurile acceptate, riscurile și limitele depind de condițiile asigurătorului.",
+      intro: "Pregătește inventarul bunurilor, locațiile, valorile și activitatea companiei. ING Broker te ajută să compari opțiunile disponibile. Acceptarea riscului și soluționarea daunelor aparțin asigurătorului, potrivit contractului.",
       industries: {
-        title: 'Ce acoperim',
+        title: "Bunuri și expuneri de analizat",
         items: [
           { title: 'Bunuri Imobile', desc: 'Construcții comerciale, clădiri de birouri, fabrici, depozite și alte structuri fizice.', image: '/Construcții Comerciale.jpg' },
           { title: 'Bunuri Mobile', desc: 'Utilaje pentru business, echipamente industriale, tehnică de calcul și inventar.', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000' },
-          { title: 'Stocuri și Mărfuri', desc: 'Protecție pentru materiile prime, produsele finite și mărfurile aflate în depozit.', image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000' },
-          { title: 'Întreruperea Afacerii', desc: 'Acoperirea pierderilor financiare rezultate din oprirea temporară a activității.', image: '/business-intrertuption.jpg' }
+          { title: 'Stocuri și Mărfuri', desc: "Materii prime, produse finite și mărfuri depozitate: verifică inventarul, valorile și condițiile de păstrare.", image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000' },
+          { title: 'Întreruperea Afacerii', desc: "Verifică separat dacă oprirea activității și pierderile financiare asociate pot fi incluse, pentru ce evenimente și perioade.", image: '/business-intrertuption.jpg' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Riscuri Acoperite',
+          title: "Riscuri de verificat în ofertă",
           items: [
             'Incendiu, trăsnet, explozie',
             'Calamități naturale (cutremur, inundații, furtună)',
@@ -412,17 +412,17 @@ export const translations = {
           ]
         },
         advantages: {
-          title: 'Avantaje',
+          title: "Ce comparăm",
           items: [
-            'Protecție financiară împotriva pierderilor majore',
-            'Continuitatea afacerii asigurată',
-            'Polițe personalizate pe specificul industriei',
-            'Asistență rapidă în caz de daună',
-            'Liniște și siguranță pentru investitori'
+            "Sumele și limitele pentru bunurile acceptate",
+            "Condițiile privind întreruperea activității, dacă este inclusă",
+            "Activitățile și locațiile declarate",
+            "Procedura și documentele pentru notificarea unei daune",
+            "Franșizele, excluderile și obligațiile contractuale"
           ]
         },
         disadvantages: {
-          title: 'Excepții și Limitări',
+          title: "Limitări de verificat în contract",
           items: [
             'Uzura normală și deprecierea în timp',
             'Daune intenționate provocate de asigurat',
@@ -434,33 +434,33 @@ export const translations = {
       },
       expertiseTitle: 'Asigurări pentru bunurile companiei',
       essentialTitle: 'De ce să alegi ING Broker?',
-      whyUs: 'Comparăm ofertele disponibile și îți explicăm prețul, limitele de despăgubire și excluderile. Dacă apare o daună, te îndrumăm privind documentele și pașii necesari.',
-      ctaTitle: 'Cere o ofertă pentru bunurile companiei',
+      whyUs: "Comparăm ofertele disponibile și explicăm prețul, limitele, franșiza și excluderile. La daună, te îndrumăm privind documentele și pașii de urmat; asigurătorul analizează cererea și stabilește plata potrivit contractului.",
+      ctaTitle: "Discută despre bunurile companiei",
       ctaCall: 'Solicită ofertă',
       ctaEmail: 'Trimite email'
     },
     renewableEnergy: {
       title: 'Asigurarea Energiei Regenerabile',
-      subtitle: 'Asigurări pentru parcuri solare, turbine eoliene și alte proiecte de energie regenerabilă.',
-      intro: 'Industria energiei regenerabile se confruntă cu riscuri unice, de la fenomene meteo extreme la defecțiuni tehnice complexe. Insurance ING Broker SRL oferă programe de asigurare specializate care acoperă întregul ciclu de viață al unui proiect: construcție, operare și mentenanță.',
+      subtitle: "Pregătirea dosarului de risc pentru un proiect energetic. Disponibilitatea asigurării și condițiile se confirmă individual.",
+      intro: "Separă construcția, exploatarea și mentenanța proiectului. Pregătește echipamentele, locația, valorile și responsabilitățile contractuale. Verificăm posibilitățile de analiză, fără să promitem acoperirea întregului proiect sau acceptarea unui risc.",
       industries: {
-        title: 'Industrii și Tehnologii Acoperite',
+        title: "Tehnologii și riscuri de analizat",
         items: [
-          { title: 'Panouri Solare (Fotovoltaice)', desc: 'Protecție completă pentru parcuri solare împotriva grindinei, furtunii, incendiului, furtului și pierderii de venit din cauza întreruperii producției.' },
-          { title: 'Turbine Eoliene', desc: 'Acoperire pentru mori eoliene, incluzând defecțiuni mecanice, daune cauzate de trăsnet, avarii la pale și pierderi financiare operaționale.' },
-          { title: 'Stocarea Energiei (Baterii)', desc: 'Siguranță pentru sistemele de stocare a energiei electrice, gestionând riscurile de incendiu chimic, degradare prematură și erori de integrare.' },
-          { title: 'Hidrocentrale Electrice', desc: 'Protecție specializată pentru infrastructura hidro, acoperind riscurile de inundații extreme, avarii la turbine și impactul asupra mediului.', image: '/hidrocentrala.jpg' }
+          { title: 'Panouri Solare (Fotovoltaice)', desc: "Pentru panouri fotovoltaice, descrie amplasarea, montajul și echipamentele. Grindina, incendiul, furtul și pierderea venitului se verifică separat în condițiile propuse." },
+          { title: 'Turbine Eoliene', desc: "Pentru turbine eoliene, pregătește datele tehnice și mentenanța. Verifică separat avariile mecanice, trăsnetul, palele și consecințele opririi producției." },
+          { title: 'Stocarea Energiei (Baterii)', desc: "Pentru baterii, descrie tehnologia, instalarea și măsurile de siguranță. Incendiul, degradarea și erorile de integrare nu sunt automat acoperite; condițiile și excluderile trebuie verificate." },
+          { title: 'Hidrocentrale Electrice', desc: "Pentru infrastructura hidro, pregătește amplasarea, echipamentele și responsabilitățile proiectului. Inundațiile, avariile turbinelor și impactul asupra mediului necesită verificări distincte.", image: '/hidrocentrala.jpg' }
         ]
       },
       analysis: {
-        risks: { title: 'Riscuri Principale', items: ['Fenomene meteo extreme (grindină, uragan)', 'Defecțiuni mecanice și electrice', 'Furt, vandalism și atacuri cibernetice', 'Pierderi de profit (Business Interruption)'] },
-        advantages: { title: 'Avantaje', items: ['Stabilitate financiară pe termen lung', 'Bancabilitate ridicată pentru finanțări', 'Acces la experți în evaluarea riscurilor verzi'] },
-        disadvantages: { title: 'Ce trebuie să verifici', items: ['Costuri de primă în funcție de locație', 'Complexitatea procesului de despăgubire', 'Necesitatea mentenanței riguroase'] }
+        risks: { title: "Expuneri de analizat, nu acoperiri confirmate", items: ['Fenomene meteo extreme (grindină, uragan)', 'Defecțiuni mecanice și electrice', 'Furt, vandalism și atacuri cibernetice', 'Pierderi de profit (Business Interruption)'] },
+        advantages: { title: "Ce verificăm în propunere", items: ["Etapele, echipamentele și riscurile acceptate", "Cerințele finanțatorului, fără promisiunea obținerii finanțării", "Limitele, franșizele și procedura de notificare"] },
+        disadvantages: { title: "Condiții de clarificat", items: ['Costuri de primă în funcție de locație', 'Complexitatea procesului de despăgubire', 'Necesitatea mentenanței riguroase'] }
       },
-      whyUs: 'De ce este esențială această asigurare? Investițiile în energie regenerabilă sunt masive și expuse direct forțelor naturii. O singură furtună de grindină poate distruge un întreg parc fotovoltaic, iar o defecțiune la o turbină eoliană poate opri producția pentru luni de zile. Asigurarea nu este doar o cheltuială, ci fundamentul siguranței investiției tale.',
-      expertiseTitle: 'Înțelege riscurile proiectului tău',
-      essentialTitle: 'De ce este esențială această asigurare?',
-      ctaTitle: 'Protejați-vă investiția în viitor',
+      whyUs: "Un proiect energetic poate avea contracte și perioade diferite pentru construcție, operare și mentenanță. Compară documentele pentru fiecare etapă și verifică separat eventualele pierderi de venit. Analiza nu confirmă disponibilitatea unei polițe sau plata unei daune.",
+      expertiseTitle: "Înțelege riscurile proiectului",
+      essentialTitle: "Cum pregătești analiza",
+      ctaTitle: "Discută posibilitățile de analiză",
       ctaCall: 'Sună acum',
       ctaEmail: 'Trimite Email'
     },
@@ -474,8 +474,8 @@ export const translations = {
         description: 'Asigurări pentru bunuri, răspundere, transport și flote în Moldova. ING Broker te ajută să analizezi riscurile companiei și ofertele disponibile.'
       },
       reinsurance: {
-        title: 'Reasigurări și Fronting | Capacitate Internațională | ING Broker',
-        description: 'Consultanță pentru reasigurare și programe de fronting. Discută cu ING Broker despre riscul tău și informațiile necesare pentru analiză.'
+        title: "Reasigurare și fronting: analiza posibilităților | ING Broker",
+        description: "Pregătirea dosarului pentru riscuri complexe. Participanții, capacitatea și posibilitatea unei structuri de reasigurare sau fronting se confirmă separat."
       },
       about: {
         title: 'Despre Noi | Insurance ING Broker SRL | Expertiză și Încredere',
@@ -483,11 +483,11 @@ export const translations = {
       },
       propertyAssets: {
         title: 'Asigurarea Bunurilor și Proprietăților Corporate | ING Broker',
-        description: 'Protecție maximă pentru activele companiei: clădiri, utilaje, stocuri. Asigurare împotriva incendiilor și calamităților cu acoperire pentru întreruperea afacerii în Moldova.'
+        description: "Asigurarea bunurilor companiei în Moldova: inventar, riscuri, limite și întreruperea activității de verificat în oferta asigurătorului."
       },
       renewableEnergy: {
         title: 'Asigurări Energie Regenerabilă | Parcuri Solare și Eoliene | ING Broker',
-        description: 'Securizăm investițiile în energie verde. Asigurări specializate pentru parcuri fotovoltaice și turbine eoliene împotriva riscurilor meteo și defecțiunilor tehnice.'
+        description: "Dosarul de risc pentru proiecte energetice în Moldova: echipamente, etape și condiții de verificat. Disponibilitatea asigurării se confirmă separat."
       },
       terms: {
         title: 'Termeni și Condiții | Insurance ING Broker SRL',
@@ -495,7 +495,7 @@ export const translations = {
       },
       privacy: {
         title: 'Politica de Confidențialitate | Protecția Datelor | ING Broker',
-        description: 'Angajamentul nostru pentru securitatea datelor dumneavoastră. Informații despre colectarea și procesarea datelor cu caracter personal conform GDPR.'
+        description: "Informații despre datele colectate prin site, scopurile prelucrării și opțiunile de contact. Consultă politica și condițiile aplicabile."
       }
     }
   },
@@ -514,16 +514,16 @@ export const translations = {
       scroll: 'Прокрутите для изучения'
     },
     trustStripBenefits: [
-      "Элитный брокер в Молдове",
-      "Персонализированная консультация",
-      "Реальная поддержка 24/7",
-      "Международная экспертиза"
+      "Брокер по страхованию в Молдове",
+      "Индивидуальная консультация",
+      "Разъяснение действий при убытке",
+      "Понятное объяснение условий"
     ],
     intro: {
       title: 'Экспертиза в',
       titleItalic: 'Управлении Рисками.',
-      p1: 'В ING Broker персональный сегмент - это не просто список продуктов, а сложная архитектура безопасности, разработанная для защиты того, что действительно важно. Мы отобрали исключительно элитные решения, предоставляя вам доступ к защите международного уровня через призму фидуциарного, прозрачного и ориентированного на результат консультирования.',
-      p2: 'Независимо от сложности ваших потребностей - от городской мобильности до обеспечения безопасности семейных активов - наша брокерская структура гарантирует вам не только оптимальный полис, но и стратегическое партнерство в управлении любым непредвиденным событием.'
+      p1: "В ING Broker можно обсудить страхование автомобиля, жилья, поездок и несчастных случаев. Уточняем ваши потребности и объясняем доступные варианты.",
+      p2: "Перед выбором сравниваем цену, включенные риски и случаи, когда полис не предусматривает выплату. Также объясняем, как уведомить об убытке."
     },
     productLabels: {
       destined: 'Для кого',
@@ -534,7 +534,7 @@ export const translations = {
       subtitle: 'Краткий обзор ваших потребностей в защите для правильного выбора.',
       cards: [
         { title: 'Мобильность', desc: 'Выберите ОСАГО для обязательства, Зеленую карту для выездов за границу или КАСКО для защиты ваших инвестиций в автомобиль.' },
-        { title: 'Путешествия и здоровье', desc: 'Полная медицинская защита за рубежом или финансовая безопасность в случае непредвиденных несчастных случаев в повседневной жизни.' },
+        { title: 'Путешествия и здоровье', desc: "Проверьте медицинское страхование для поездки и страхование от несчастных случаев. Покрытие зависит от выбранного полиса." },
         { title: 'Имущество', desc: 'Обезопасьте свой самый важный актив: дом. Защита от бедствий и гражданская ответственность перед соседями.' }
       ]
     },
@@ -543,12 +543,12 @@ export const translations = {
       title: 'Авторитет в Брокерских Услугах,',
       titleItalic: 'Посвященный Вам.',
       items: [
-        { title: 'Авторитет в Управлении Рисками', desc: 'Десятилетия экспертизы в управлении сложными рисками на корпоративном уровне, теперь воплощенные в элитных решениях для персонального сегмента.' },
-        { title: 'Продвинутая Отраслевая Специализация', desc: 'Мы адаптируем архитектуру страхования к специфике каждого профиля риска, обеспечивая покрытие без серых зон или контрактных двусмысленностей.' },
-        { title: 'Фидуциарная Целостность', desc: 'Абсолютная прозрачность. Мы даем вам ясность, необходимую для точного понимания механизмов защиты и реальной стоимости вашего полиса.' },
-        { title: 'Стратегическая Поддержка при Убытках', desc: 'Вы не одиноки перед лицом риска. Наша команда экспертов берет на себя управление убытками, гарантируя справедливое и быстрое урегулирование.' }
+        { title: "Начинаем с ваших потребностей", desc: "Уточняем, что вы хотите застраховать, и объясняем возможные варианты." },
+        { title: "Сравниваем предложения", desc: "Помогаем сравнить цену, лимиты выплат и исключения, то есть ситуации без покрытия." },
+        { title: "Объясняем условия", desc: "До заключения договора обсуждаем платежи, покрытие и ваши обязанности." },
+        { title: "Разъясняем действия при убытке", desc: "Объясняем порядок и документы для заявления. Страховщик рассматривает его согласно договору." }
       ],
-      years: 'Лет Авторитета'
+      years: "Лет деятельности"
     },
     methodology: {
       title: 'Методология',
@@ -563,12 +563,12 @@ export const translations = {
         {
           number: '02',
           title: 'Архитектура Решения',
-          desc: 'Мы структурируем индивидуальную программу страхования, выбирая исключительно те условия, которые приносят реальную пользу, и исключая ненужные расходы.'
+          desc: "Объясняем доступные предложения и различия между ними, чтобы вы могли принять обоснованное решение."
         },
         {
           number: '03',
           title: 'Фидуциарное Управление',
-          desc: 'Мы - ваш представитель перед страховщиками. Мы управляем контрактами, отслеживаем риски и обеспечиваем успех любого требования о возмещении ущерба.'
+          desc: "Отвечаем на вопросы о полисе, продлении и действиях при убытке. Решение по выплате принимает страховщик согласно договору."
         }
       ]
     },
@@ -585,12 +585,12 @@ export const translations = {
     corporateGateway: {
       label: 'B2B и Корпоративные Клиенты',
       title: 'Комплексные Решения для Бизнеса',
-      desc: 'Вы владелец бизнеса? Помимо личного страхования, ING Broker является лидером в структурировании комплексных программ страхования и перестрахования для корпораций. Мы защищаем ваши активы, ответственность и непрерывность бизнеса по международным стандартам.',
+      desc: "Помогаем выбрать страхование имущества, деятельности и сотрудников компании. Начинаем с рисков бизнеса и проверяем доступные варианты.",
       btnBusiness: 'Узнать о Корпоративных Решениях',
       btnReinsurance: 'Перестрахование и Фронтинг'
     },
     footer: {
-      desc: 'Ваш стратегический партнер в страховании и перестраховании. Мы предлагаем премиальные решения, адаптированные к вашим деловым и личным потребностям.',
+      desc: "ING Broker помогает выбрать страхование для вас и бизнеса. Объясняем доступные предложения, условия полиса и действия при убытке.",
       sections: {
         products: 'Продукты',
         company: 'Компания',
@@ -613,7 +613,7 @@ export const translations = {
         },
         {
           title: 'Как определяется цена страховки ОСАГО? Руководство по доступной цене ОСАГО',
-          desc: 'Узнайте факторы, влияющие на стоимость вашего полиса ОСАГО и как получить лучшую цену.',
+          desc: "Узнайте, какие данные влияют на расчет RCA и как проверить цену и условия предложения.",
           link: '/news/cum-se-determin%C4%83-pre%C8%9Bul-unei-asigur%C4%83ri-rca-ghid-pentru-un-pre%C8%9B-rca-accesibil',
           image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800'
         }
@@ -622,81 +622,81 @@ export const translations = {
     business: {
       title: 'Корпоративные решения',
       titleItalic: 'для лидеров рынка.',
-      subtitle: 'Мы защищаем активы, ответственность и непрерывность вашего бизнеса. Наш подход основан на комплексном управлении рисками: Идентификация, Оценка, Передача и Удержание. Мы предлагаем сложные программы страхования для корпораций, адаптированные к каждой отрасли.',
+      subtitle: "Помогаем рассмотреть страхование имущества, деятельности и сотрудников компании. Анализируем риски бизнеса и сравниваем условия доступных предложений.",
       cta1: 'Запросить аудит рисков',
       cta2: 'Обсудить с экспертом',
       faq: {
         title: 'Часто задаваемые вопросы',
         items: [
-          { q: 'Какие виды корпоративного страхования вы предлагаете?', a: 'Мы предлагаем полный спектр B2B решений, включая страхование имущества (Property), общую и профессиональную ответственность (Liability, E&O), киберстрахование (Cyber), страхование директоров и руководителей (D&O), автопарки и страхование грузов (Cargo).' },
-          { q: 'Как мне поможет B2B страховой брокер?', a: 'B2B брокер, такой как ING Broker, выступает в роли консультанта по рискам. Мы выявляем и оцениваем специфические риски вашей отрасли, ведем переговоры о лучших условиях и премиях со страховщиками и представляем ваши интересы при наступлении страхового случая, экономя ваше время и ресурсы.' },
-          { q: 'Предлагаете ли вы решения для сложных или международных рисков?', a: 'Да, через наш отдел Перестрахования и Фронтинга мы структурируем программы для рисков, превышающих емкость местного рынка, облегчая доступ к международным рынкам (например, Lloyd\'s) и предлагая решения по фронтингу для транснациональных корпораций.' },
-          { q: 'Сколько времени занимает аудит рисков?', a: 'Продолжительность аудита рисков зависит от сложности и размера компании, но обычно занимает от нескольких дней до нескольких недель. Он включает в себя детальный анализ операций, активов и финансовых рисков.' }
+          { q: 'Какие виды корпоративного страхования вы предлагаете?', a: "Можно обсудить риски имущества, ответственности, перевозок и сотрудников компании. Доступность продукта, принимаемые виды деятельности и условия подтверждаются по каждому случаю до предложения." },
+          { q: 'Как мне поможет B2B страховой брокер?', a: "ING Broker помогает описать риски и сравнить доступные предложения, включая цену, лимиты и исключения. При убытке объясняем порядок и необходимые документы. Страховщик принимает риск и решает вопрос по заявлению согласно договору." },
+          { q: 'Предлагаете ли вы решения для сложных или международных рисков?', a: "Для сложных или международных рисков готовим вопросы и сведения для оценки. Возможность перестраховочной или фронтинговой структуры, участники и емкость подтверждаются отдельно. Страница не обещает доступ к определенному рынку." },
+          { q: 'Сколько времени занимает аудит рисков?', a: "Срок определяется после уточнения деятельности, доступных документов и цели оценки. Запросите график для своего досье. На странице нет подтвержденного срока для всех компаний." }
         ]
       },
       lines: [
         { 
           id: 'property', 
           title: 'Имущество и активы', 
-          desc: 'Мы защищаем физические активы вашей компании от пожаров, стихийных бедствий и случайных повреждений. Наши решения охватывают здания, оборудование и запасы, включая жизненно важную защиту от перерывов в производстве. Предназначено для производства, розничной торговли и логистики. ING Broker обеспечивает безопасность ваших инвестиций на рынке Молдовы с международным опытом.', 
+          desc: "Страхование зданий, оборудования и запасов: проверяем включенные риски и возможность покрытия последствий остановки деятельности согласно договору.", 
           image: '/Construcții Comerciale.jpg', 
           category: 'АКТИВЫ', 
           link: '/property-assets',
           analysis: {
             risks: { title: 'Целевые риски', items: ['Пожар, взрыв, удар молнии', 'Стихийные бедствия (землетрясение, наводнение)', 'Кража и вандализм'] },
-            advantages: { title: 'Преимущества', items: ['Защита материальной базы бизнеса', 'Покрытие потери прибыли', 'Гибкость в выборе лимитов'] },
+            advantages: { title: "Что проверяем", items: ["Принятые имущество, стоимости и адреса", "Условия потери прибыли, если включена", "Лимиты, франшизы и исключения"] },
             disadvantages: { title: 'Ограничения', items: ['Исключения для естественного износа', 'Необходимость исправных систем безопасности', 'Обязательные франшизы для определенных рисков'] }
           }
         },
         { 
           id: 'liability', 
           title: 'Общая ответственность', 
-          desc: 'Обезопасьте свой бизнес от финансовых претензий в результате материального ущерба или телесных повреждений, причиненных третьим лицам. Мы предлагаем комплексные полисы гражданской ответственности, необходимые для строительства, HoReCa и сферы услуг. Обладая глубоким пониманием местных рисков, ING Broker договаривается об оптимальных лимитах для защиты вашей репутации и капитала.', 
+          desc: "Для случаев, когда деятельность компании причиняет ущерб третьим лицам. Проверяем, какие виды ответственности, суммы и расходы могут быть включены в полис.", 
           image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2560', 
           category: 'ОТВЕТСТВЕННОСТЬ', 
           link: '/business/liability',
           analysis: {
             risks: { title: 'Целевые риски', items: ['Телесные повреждения третьим лицам', 'Материальный ущерб имуществу третьих лиц', 'Случайное загрязнение'] },
-            advantages: { title: 'Преимущества', items: ['Защита от крупных исков о возмещении ущерба', 'Покрытие судебных издержек', 'Сохранение репутации компании'] },
+            advantages: { title: "Что проверяем", items: ["Принятые виды деятельности и ответственности", "Расходы на защиту, если включены", "Лимиты и территория полиса"] },
             disadvantages: { title: 'Ограничения', items: ['Не покрывает чистую контрактную ответственность', 'Исключения для умышленного ущерба', 'Географические ограничения покрытия'] }
           }
         },
         { 
           id: 'professional', 
           title: 'Профессиональная ответственность', 
-          desc: 'Абсолютная финансовая защита от ошибок, упущений или халатности при оказании консалтинговых и проектных услуг. Незаменима для ИТ, инженерии, архитектуры и юридических услуг. ING Broker структурирует индивидуальные программы страхования, гарантируя безопасность профессионалов и непрерывность бизнеса на рынке Молдовы.', 
+          desc: "Для претензий, связанных с профессиональными ошибками или упущениями. Проверяем принимаемые виды деятельности, лимиты и исключения для вашей профессии.", 
           image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=1200', 
           category: 'ОТВЕТСТВЕННОСТЬ', 
           link: '/business/professional',
           analysis: {
             risks: { title: 'Целевые риски', items: ['Профессиональные ошибки и упущения', 'Небрежность при оказании услуг', 'Нарушение конфиденциальности данных'] },
-            advantages: { title: 'Преимущества', items: ['Безопасность для экспертов и консультантов', 'Обязательное требование для определенных профессий', 'Покрытие чистых финансовых убытков'] },
+            advantages: { title: "Что проверяем", items: ["Заявленные профессиональные услуги", "Требования профессии для отдельной проверки", "Принятые претензии, периоды и лимиты"] },
             disadvantages: { title: 'Ограничения', items: ['Не покрывает деятельность вне специализации', 'Исключения для уголовных преступлений', 'Принцип "claims-made" (претензии, предъявленные в период действия полиса)'] }
           }
         },
         { 
           id: 'renewable', 
           title: 'Энергия', 
-          desc: 'Мы обеспечиваем безопасность инвестиций в солнечные, ветровые и биогазовые парки от случайных поломок, экстремальных погодных явлений и потери прибыли. ING Broker поддерживает зеленый переход Молдовы с помощью специализированных страховых решений, гарантируя защиту высокотехнологичного оборудования на протяжении всего срока службы проекта.',
+          desc: "Готовим оценку рисков солнечных, ветровых и биогазовых проектов. Проверяем оборудование, этапы и документы. Доступность, принимаемые риски и условия подтверждаются отдельно со страховщиком.",
           image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1200', 
           category: 'ЭНЕРГЕТИКА', 
           link: '/renewable-energy',
           analysis: {
             risks: { title: 'Основные риски', items: ['Экстремальные погодные явления (град, шторм)', 'Механические и электрические неисправности', 'Кража, вандализм и кибератаки', 'Перерыв в производстве'] },
-            advantages: { title: 'Стратегические преимущества', items: ['Долгосрочная финансовая стабильность', 'Высокая банковская привлекательность', 'Доступ к экспертам по оценке рисков'] },
+            advantages: { title: "Что проверяем", items: ["Этапы и оборудование проекта", "Требования кредитора без обещания финансирования", "Предлагаемые риски, лимиты и исключения"] },
             disadvantages: { title: 'Проблемы и соображения', items: ['Стоимость премии зависит от локации', 'Сложность процесса урегулирования', 'Необходимость строгого тех. обслуживания'] }
           }
         },
         { 
           id: 'agriculture', 
           title: 'Сельскохозяйственные риски', 
-          desc: 'Жизненно важная защита сельскохозяйственных культур, животных и техники от капризов природы, болезней и пожаров. Предназначено для местных фермеров и агробизнеса. Обладая глубоким опытом в сельскохозяйственном секторе Молдовы, ING Broker структурирует полисы, гарантирующие непрерывность вашего бизнеса, включая доступ к государственным субсидиям.', 
+          desc: "Обсуждаем риски культур, животных и сельскохозяйственной техники. Проверяем принимаемые риски и условия для конкретной деятельности. Субсидия не предоставляется автоматически.", 
           image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=1200', 
           category: 'СЕЛЬСКОЕ ХОЗЯЙСТВО', 
           link: '/business/agriculture',
           analysis: {
             risks: { title: 'Целевые риски', items: ['Засуха, заморозки, град', 'Болезни животных и эпидемии', 'Поломки сельскохозяйственной техники'] },
-            advantages: { title: 'Преимущества', items: ['Субсидирование страховой премии', 'Финансовая стабильность в неурожайные годы', 'Специализированная оценка ущерба'] },
+            advantages: { title: "Что проверяем", items: ["Условия возможной субсидии для отдельной проверки", "Принятые культуры, животные и риски", "Порядок осмотра и требуемые документы"] },
             disadvantages: { title: 'Ограничения', items: ['Периоды временной франшизы', 'Исключения при нарушении агротехнологий', 'Лимиты застрахованного урожая'] }
           }
         }
@@ -707,10 +707,10 @@ export const translations = {
         title: 'Авторитет в области брокериджа и управления рисками в Молдове', 
         subtitle: 'Insurance ING Broker SRL - Ваш стратегический архитектор в управлении рисками и глобальном перестраховании.' 
       },
-      intro: 'Insurance ING Broker SRL представляет собой эталон в управлении рисками и архитектуре перестрахования в Республике Молдова. Мы - элитная брокерская структура, специализирующаяся на стратегическом консалтинге, комплексных решениях по передаче рисков и долгосрочных фидуциарных партнерствах для корпораций и институтов.',
+      intro: "Работаем с частными лицами и компаниями Молдовы. Объясняем варианты страхования, сравниваем доступные предложения и помогаем понять условия до принятия решения.",
       mission: { 
         title: 'Наша Миссия', 
-        content: 'Миссия ING Broker - оставить след (шаг) в истории страхования в Молдове и Восточной Европе. Мы стремимся обеспечить финансовую устойчивость наших клиентов путем превращения сложности корпоративных рисков в четкие стратегические решения.' 
+        content: "Стремимся к тому, чтобы каждый клиент понимал выбранное страхование: платежи, покрытые риски, исключения и действия при убытке." 
       },
       vision: { 
         title: 'Наше Видение', 
@@ -720,32 +720,32 @@ export const translations = {
         title: 'Почему мы?',
         subtitle: 'Наши конкурентные преимущества, которые делают нас вашим надежным партнером.',
         items: [
-          { title: 'Официальная лицензия и традиции', desc: 'Мы входим в число первых брокеров в Республике Молдова с официальной лицензией, обеспечивая абсолютную стабильность и юридическую безопасность.' },
-          { title: 'Пионерство в образовании', desc: 'Мы - пионеры, начавшие развивать страховые услуги на уровне школы на местном рынке, повышая стандарты всей отрасли.' },
-          { title: 'Гарантия качества ISO', desc: 'Первые и единственные в Молдове обладатели сертификатов ISO, неоспоримое доказательство строгости и качества наших внутренних процессов.' },
-          { title: 'Международная связь', desc: 'У нас есть солидная сеть европейских и международных партнеров, облегчающая доступ к глобальным перестраховочным мощностям.' },
-          { title: '20 лет совершенства', desc: 'Бэкграунд и экспертиза, подтвержденные двумя десятилетиями непрерывной деятельности и успеха в управлении сложными рисками.' }
+          { title: "Понятные данные компании", desc: "До сотрудничества можно запросить актуальные данные компании и уточнить роль брокера." },
+          { title: "Доступные объяснения", desc: "Объясняем страховые термины и практические шаги без предположения, что у вас есть опыт в страховании." },
+          { title: "Проверка документов", desc: "Сравниваем доступные документы и условия. Сертификация или разрешение подтверждаются актуальными документами, а не рекламным обещанием." },
+          { title: "Оценка возможностей", desc: "Для сложных запросов уточняем участников и доступные варианты без обещаний доступа к определенному рынку." },
+          { title: "Помощь в принятии решения", desc: "До выбора обсуждаем соответствующие риски, расходы и ограничения." }
         ]
       },
-      corporate: { title: 'Реквизиты и Корпоративные Данные', content: 'Полное наименование: Insurance ING Broker SRL,\nIDNO: 1017600019386,\nАдрес: мун. Кишинев, ул. Пан Халиппа 9,\nCEO: Ион Даскэлу,\nЛицензия: CNPF 000874 от 06.10.2016,\nСертификация: ISO 9001:2015, сертификат RO-11645' },
-      cta: { title: 'Стратегическое Партнерство', subtitle: 'Готовы ли вы повысить стандарт защиты вашей компании? Наша команда экспертов готова предложить вам полный аудит рисков.', btn: 'Запросить Стратегический Консалтинг' }
+      corporate: { title: 'Реквизиты и Корпоративные Данные', content: "Наименование: Insurance ING Broker SRL,\\nIDNO: 1017600019386,\\nАдрес: municipiul Chișinău, strada Pan Halippa 9, Republica Moldova,\\nCEO: Dascalu Ion" },
+      cta: { title: 'Стратегическое Партнерство', subtitle: "Расскажите, что вы хотите застраховать. Обсудим варианты и сведения, необходимые для оценки.", btn: 'Запросить Стратегический Консалтинг' }
     },
     propertyAssets: {
       title: 'Страхование Имущества и Активов',
-      subtitle: 'Полная защита активов вашей компании, обеспечивающая непрерывность бизнеса в любой ситуации.',
-      intro: 'Будь то офисные здания, коммерческие помещения, фабрики или необходимое оборудование, активы вашей компании являются основой повседневных операций. Insurance ING Broker SRL предлагает индивидуальные решения для защиты как недвижимого, так и движимого имущества от непредвиденных рисков.',
+      subtitle: "Анализируем страхование зданий, оборудования и запасов. Принятые объекты, риски и лимиты зависят от условий страховщика.",
+      intro: "Подготовьте перечень имущества, адреса, стоимости и описание деятельности компании. ING Broker помогает сравнить доступные варианты. Страховщик принимает риск и рассматривает убытки согласно договору.",
       industries: {
-        title: 'Что мы покрываем',
+        title: "Имущество и риски для оценки",
         items: [
           { title: 'Недвижимое имущество', desc: 'Коммерческие здания, офисные здания, фабрики, склады и другие физические структуры.', image: '/Construcții Comerciale.jpg' },
           { title: 'Движимое имущество', desc: 'Бизнес-оборудование, промышленное оборудование, вычислительная техника и инвентарь.', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000' },
-          { title: 'Запасы и товары', desc: 'Защита сырья, готовой продукции и товаров на складе.', image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000' },
-          { title: 'Перерыв в производстве', desc: 'Покрытие финансовых потерь в результате временной остановки деятельности.', image: '/business-intrertuption.jpg' }
+          { title: 'Запасы и товары', desc: "Сырье, готовая продукция и товары на складе: проверьте перечень, стоимости и условия хранения.", image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000' },
+          { title: 'Перерыв в производстве', desc: "Отдельно проверьте, можно ли включить остановку деятельности и связанные финансовые потери, для каких событий и периодов.", image: '/business-intrertuption.jpg' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Покрываемые риски',
+          title: "Риски для проверки в предложении",
           items: [
             'Пожар, удар молнии, взрыв',
             'Стихийные бедствия (землетрясение, наводнение, буря)',
@@ -755,17 +755,17 @@ export const translations = {
           ]
         },
         advantages: {
-          title: 'Преимущества',
+          title: "Что сравниваем",
           items: [
-            'Финансовая защита от крупных убытков',
-            'Обеспечение непрерывности бизнеса',
-            'Полисы, адаптированные к специфике отрасли',
-            'Быстрая помощь в случае ущерба',
-            'Спокойствие и безопасность для инвесторов'
+            "Суммы и лимиты по принятому имуществу",
+            "Условия перерыва в деятельности, если он включен",
+            "Заявленные виды деятельности и адреса",
+            "Порядок и документы для уведомления об убытке",
+            "Франшизы, исключения и договорные обязанности"
           ]
         },
         disadvantages: {
-          title: 'Исключения и ограничения',
+          title: "Ограничения для проверки в договоре",
           items: [
             'Нормальный износ и обесценивание с течением времени',
             'Умышленный ущерб, причиненный страхователем',
@@ -775,84 +775,84 @@ export const translations = {
           ]
         }
       },
-      expertiseTitle: 'Мы защищаем основу вашего бизнеса',
+      expertiseTitle: "Страхование имущества компании",
       essentialTitle: 'Почему стоит выбрать ING Broker?',
-      whyUs: 'Мы помогаем вам найти подходящего страховщика, договариваемся для вас о лучшем соотношении цены и качества и предлагаем специализированные юридические консультации при наступлении страхового случая.',
-      ctaTitle: 'Защитите свои активы сегодня',
+      whyUs: "Сравниваем доступные предложения и объясняем цену, лимиты, франшизу и исключения. При убытке разъясняем документы и дальнейшие действия. Страховщик рассматривает заявление и определяет выплату согласно договору.",
+      ctaTitle: "Обсудите имущество компании",
       ctaCall: 'Запросить предложение',
       ctaEmail: 'Отправить email'
     },
     renewableEnergy: {
       title: 'Страхование возобновляемой энергии',
-      subtitle: 'Защита устойчивого будущего с помощью элитных страховых решений.',
-      intro: 'Индустрия возобновляемой энергетики сталкивается с уникальными рисками: от экстремальных погодных явлений до сложных технических сбоев. Insurance ING Broker SRL предлагает специализированные программы страхования, охватывающие весь жизненный цикл проекта: строительство, эксплуатацию и техническое обслуживание.',
+      subtitle: "Подготовка досье риска энергетического проекта. Доступность страхования и условия подтверждаются отдельно.",
+      intro: "Разделите строительство, эксплуатацию и обслуживание проекта. Подготовьте сведения об оборудовании, месте, стоимости и договорных обязанностях. Проверяем возможности оценки без обещаний покрытия всего проекта или принятия риска.",
       industries: {
-        title: 'Охватываемые отрасли и технологии',
+        title: "Технологии и риски для оценки",
         items: [
-          { title: 'Солнечные панели (Фотоэлектрические)', desc: 'Полная защита солнечных парков от града, шторма, пожара, кражи и потери дохода из-за прерывания производства.' },
-          { title: 'Ветряные турбины', desc: 'Покрытие для ветряных мельниц, включая механические поломки, повреждения от молнии, повреждения лопастей и операционные финансовые потери.' },
-          { title: 'Хранение энергии (Батареи)', desc: 'Безопасность систем хранения электроэнергии, управление рисками химического пожара, преждевременной деградации и ошибок интеграции.' },
-          { title: 'Гидроэлектростанции', desc: 'Специализированная защита гидроинфраструктуры, охватывающая риски экстремальных наводнений, повреждения турбин и воздействие на окружающую среду.', image: '/hidrocentrala.jpg' }
+          { title: 'Солнечные панели (Фотоэлектрические)', desc: "Для фотоэлектрических панелей опишите размещение, монтаж и оборудование. Град, пожар, кража и потеря дохода проверяются отдельно в предлагаемых условиях." },
+          { title: 'Ветряные турбины', desc: "Для ветровых турбин подготовьте технические данные и сведения об обслуживании. Отдельно проверьте механические повреждения, молнию, лопасти и последствия остановки производства." },
+          { title: 'Хранение энергии (Батареи)', desc: "Для батарей опишите технологию, установку и меры безопасности. Пожар, деградация и ошибки интеграции не покрываются автоматически; проверьте условия и исключения." },
+          { title: 'Гидроэлектростанции', desc: "Для гидроинфраструктуры подготовьте сведения о месте, оборудовании и обязанностях участников проекта. Наводнение, повреждение турбин и воздействие на среду требуют отдельных проверок.", image: '/hidrocentrala.jpg' }
         ]
       },
       analysis: {
-        risks: { title: 'Основные риски', items: ['Экстремальные погодные явления (град, ураган)', 'Механические и электрические неисправности', 'Кража, вандализм и кибератаки', 'Потеря прибыли (Business Interruption)'] },
-        advantages: { title: 'Стратегические преимущества', items: ['Долгосрочная финансовая стабильность', 'Высокая банковская привлекательность для финансирования', 'Доступ к экспертам по оценке зеленых рисков'] },
-        disadvantages: { title: 'Проблемы и соображения', items: ['Стоимость премии в зависимости от местоположения', 'Сложность процесса возмещения', 'Необходимость строгого технического обслуживания'] }
+        risks: { title: "Риски для оценки, не подтвержденное покрытие", items: ['Экстремальные погодные явления (град, ураган)', 'Механические и электрические неисправности', 'Кража, вандализм и кибератаки', 'Потеря прибыли (Business Interruption)'] },
+        advantages: { title: "Что проверяем в предложении", items: ["Принятые этапы, оборудование и риски", "Требования кредитора без обещания финансирования", "Лимиты, франшизы и порядок уведомления"] },
+        disadvantages: { title: "Условия для уточнения", items: ['Стоимость премии в зависимости от местоположения', 'Сложность процесса возмещения', 'Необходимость строгого технического обслуживания'] }
       },
-      whyUs: 'Почему это страхование необходимо? Инвестиции в возобновляемую энергию огромны и напрямую подвержены силам природы. Один шторм с градом может уничтожить весь фотоэлектрический парк, а поломка ветряной турбины может остановить производство на месяцы. Страхование - это не просто расходы, а фундамент безопасности ваших инвестиций.',
-      expertiseTitle: 'Экспертиза в управлении зелеными рисками',
-      essentialTitle: 'Почему это страхование необходимо?',
-      ctaTitle: 'Защитите свои инвестиции в будущее',
+      whyUs: "У энергетического проекта могут быть разные договоры и периоды строительства, эксплуатации и обслуживания. Сопоставьте документы по каждому этапу и отдельно проверьте возможную потерю дохода. Оценка не подтверждает доступность полиса или выплату по убытку.",
+      expertiseTitle: "Разберитесь в рисках проекта",
+      essentialTitle: "Как подготовить оценку",
+      ctaTitle: "Обсудите возможности оценки",
       ctaCall: 'Позвонить сейчас',
       ctaEmail: 'Отправить Email'
     },
     reinsurance: {
       title: 'Перестрахование и Фронтинг',
       titleItalic: 'потенциал и экспертиза.',
-      subtitle: 'Прямой доступ к международным рынкам перестрахования и емкость для размещения сложных рисков. Мы структурируем факультативные и облигаторные программы перестрахования, предлагая решения по фронтингу для транснациональных корпораций и крупных инфраструктурных проектов.',
-      cta1: 'Связаться с отделом',
-      cta2: 'Запросить емкость',
+      subtitle: "Обсуждаем подготовку досье для крупных или сложных рисков. Доступность программы, участники и перестраховочная емкость подтверждаются отдельно после оценки риска.",
+      cta1: "Обсудить досье риска",
+      cta2: "Запросить оценку возможностей",
       faq: {
         title: 'Часто задаваемые вопросы - Перестрахование',
         items: [
-          { q: 'Когда компании необходимо факультативное перестрахование?', a: 'Факультативное перестрахование необходимо, когда компания сталкивается с очень крупным индивидуальным риском (например, крупный завод, крупный инфраструктурный проект), который превышает емкость удержания местных страховщиков, или когда риск нетипичен и требует международной экспертизы.' },
-          { q: 'Что такое Фронтинг в страховании?', a: 'Фронтинг - это механизм, при котором местный страховщик (Fronting Company) выпускает полис в соответствии с местным законодательством для транснациональной корпорации, но передает (цедирует) 100% риска международному перестраховщику или кэптивной компании корпорации. Это необходимо для соблюдения законодательства.' },
-          { q: 'С какими рынками перестрахования вы сотрудничаете?', a: 'Мы имеем доступ к ведущим международным рынкам, включая Lloyd\'s of London и крупным перестраховщикам континентальной Европы, гарантируя, что риски размещаются в организациях с отличным финансовым рейтингом (A- или выше).' },
-          { q: 'В чем разница между пропорциональным и непропорциональным перестрахованием?', a: 'В пропорциональном перестраховании (например, Quota Share) перестраховщик берет на себя фиксированный процент премий и убытков. В непропорциональном (например, Excess of Loss) перестраховщик вмешивается только в том случае, если убыток превышает определенную заранее установленную сумму (приоритет), защищая страховщика от катастрофических событий.' }
+          { q: 'Когда компании необходимо факультативное перестрахование?', a: "Факультативное перестрахование может рассматриваться отдельно для крупного или нетипичного риска. Страховщик и возможные перестраховщики проверяют сведения, емкость и предлагаемые условия. Размер проекта сам по себе не подтверждает его принятие." },
+          { q: 'Что такое Фронтинг в страховании?', a: "При фронтинге местный полис выпускает страховщик, а передача части риска определяется перестраховочными соглашениями. Брокер не становится страховщиком, выпускающим полис. Участники, доли и местные требования проверяются для конкретной программы." },
+          { q: 'С какими рынками перестрахования вы сотрудничаете?', a: "Участие определенного рынка или перестраховщика подтверждается по каждому досье. Уточните участников, доступную емкость и соответствующие финансовые сведения. Страница не подтверждает прямой доступ к Lloyd's или гарантированный минимальный рейтинг." },
+          { q: 'В чем разница между пропорциональным и непропорциональным перестрахованием?', a: "При пропорциональной структуре премии и убытки распределяются в согласованных долях. При непропорциональной структуре применяются предусмотренные соглашением пороги и лимиты. Точный механизм, события и обязанности участников проверяются в документах программы." }
         ]
       },
       lines: [
         { 
           id: 'facultative', 
           title: 'Факультативное перестрахование', 
-          desc: 'Индивидуальные размещения для нетипичных рисков, крупных рисков или высокотехнологичных отраслей (Энергетика, Авиация, Строительство). Мы ведем прямые переговоры с международными рынками (Lloyd\'s, Континентальная Европа) для обеспечения оптимальных условий и расширенной емкости.', 
+          desc: "Для отдельного риска или проекта подготовьте описание, стоимости и соответствующую историю. Возможность факультативного размещения и его условия подтверждаются после оценки участниками, а не этой страницей.", 
           image: '/reinsurance-1.webp', 
           analysis: {
             risks: { title: 'Целевые риски', items: ['Индивидуальные риски, превышающие емкость местного рынка', 'Сложные промышленные риски', 'Крупные инфраструктурные проекты'] },
-            advantages: { title: 'Преимущества', items: ['Точная и индивидуальная передача риска', 'Доступ к высшим финансовым рейтингам (A- и выше)', 'Защита от волатильности'] },
+            advantages: { title: "Что проверяем", items: ["Отдельная оценка предложенного риска", "Проверка участников и финансовых сведений", "Сравнение доступных лимитов и условий"] },
             disadvantages: { title: 'Ограничения', items: ['Детальный и строгий процесс андеррайтинга', 'Затраты зависят от конъюнктуры мирового рынка'] }
           }
         },
         { 
           id: 'treaty', 
           title: 'Облигаторное перестрахование', 
-          desc: 'Структурированные решения для защиты страховых портфелей. Мы предлагаем консалтинг в разработке пропорциональных и непропорциональных программ (Квота, Эксцедент суммы, Эксцедент убытка), оптимизируя капитал и защищая баланс от катастрофических событий.', 
+          desc: "Для страхового портфеля обсудите сведения об экспозициях, убытках и требуемых лимитах. Структура договора, ее доступность и финансовые последствия требуют отдельной оценки и не следуют из названия.", 
           image: '/traty reinsurance-2.jpg', 
           analysis: {
             risks: { title: 'Целевые риски', items: ['Кумуляция катастрофических рисков (Землетрясение, Наводнение)', 'Значительные колебания коэффициента убыточности', 'Защита капитала и платежеспособности'] },
-            advantages: { title: 'Преимущества', items: ['Долгосрочная финансовая стабильность', 'Увеличение емкости андеррайтинга', 'Эффективное управление капиталом (Solvency II)'] },
+            advantages: { title: "Что проверяем", items: ["Оценка накопления рисков", "Сравнение предлагаемых лимитов и емкости", "Проверка влияния на капитал профильными специалистами"] },
             disadvantages: { title: 'Ограничения', items: ['Сложные договорные структуры', 'Требует глубокого актуарного анализа'] }
           }
         },
         { 
           id: 'fronting', 
           title: 'Программы Фронтинга', 
-          desc: 'Мы выпускаем локальные полисы, соответствующие законодательству Республики Молдова, для глобальных страховых программ (Master Policies). Мы обеспечиваем юридическое и налоговое соответствие, облегчая передачу риска кэптивным перестраховщикам или международным рынкам, одобренным корпорацией.', 
+          desc: "Для международной программы уточните, может ли страховщик выпустить местный полис и на каких условиях участвовать в перестраховочной структуре. ING Broker выступает посредником, когда такая возможность подтверждена. Юридические и налоговые вопросы требуют отдельной проверки.", 
           image: '/fronting.png', 
           analysis: {
             risks: { title: 'Целевые риски', items: ['Строгие требования к местному соответствию', 'Управление глобальными страховыми программами', 'Кредитный риск перестраховщика'] },
-            advantages: { title: 'Преимущества', items: ['100% гарантия юридического соответствия', 'Бесшовная интеграция в глобальную программу', 'Административная и налоговая эффективность'] },
+            advantages: { title: "Что проверяем", items: ["Проверка применимых местных требований", "Сопоставление местного полиса с документами программы", "Уточнение расходов и ролей участников"] },
             disadvantages: { title: 'Ограничения', items: ['Административные расходы на фронтинг (Fronting Fee)', 'Зависимость от рейтинга местного страховщика-эмитента'] }
           }
         }
@@ -860,28 +860,28 @@ export const translations = {
     },
     seo: {
       home: {
-        title: 'ING Broker Молдова | Элитный консалтинг в страховании и перестраховании',
-        description: 'Лидер в управлении рисками в Молдове. Мы предлагаем премиальные страховые решения: ОСАГО, КАСКО, страхование имущества, здоровья и сложное перестрахование для корпораций и частных лиц.'
+        title: "ING Broker Молдова | Страхование для частных лиц и компаний",
+        description: "ING Broker помогает выбрать страхование автомобиля, жилья, поездок и бизнеса в Молдове. Сравните доступные предложения и условия полиса."
       },
       business: {
         title: 'Корпоративное страхование и управление рисками | ING Broker Молдова',
-        description: 'Продвинутые B2B решения для бизнеса. Комплексные программы страхования: Имущество, Ответственность, Киберриски, D&O, Грузы и Автопарки. Профессиональный аудит рисков.'
+        description: "Страхование имущества, ответственности, перевозок и автопарков в Молдове. Помогаем оценить риски компании и доступные предложения."
       },
       reinsurance: {
-        title: 'Перестрахование и Фронтинг | Международная емкость | ING Broker',
-        description: 'Стратегический доступ к мировым рынкам перестрахования (Lloyd\'s). Мы структурируем факультативные и облигаторные программы, предлагая решения по фронтингу для крупных проектов.'
+        title: "Перестрахование и фронтинг: оценка возможностей | ING Broker",
+        description: "Подготовка досье сложного риска. Участники, емкость и возможность перестраховочной или фронтинговой структуры подтверждаются отдельно."
       },
       about: {
         title: 'О нас | Insurance ING Broker SRL | Экспертиза и Доверие',
-        description: 'Элитный страховой брокер в Республике Молдова, лицензированный и сертифицированный по ISO. Более 18 лет опыта в стратегическом консалтинге и управлении сложными рисками.'
+        description: "Узнайте, как работает Insurance ING Broker SRL, страховой брокер в Молдове. Объясняем полисы и практические шаги частным лицам и компаниям."
       },
       propertyAssets: {
         title: 'Страхование корпоративного имущества и активов | ING Broker',
-        description: 'Максимальная защита активов компании: здания, оборудование, запасы. Страхование от пожаров и стихийных бедствий с покрытием перерыва в производстве в Молдове.'
+        description: "Страхование имущества компании в Молдове: перечень, риски, лимиты и условия перерыва в деятельности для проверки в предложении страховщика."
       },
       renewableEnergy: {
         title: 'Страхование возобновляемой энергии | Солнечные и ветропарки | ING Broker',
-        description: 'Мы защищаем инвестиции в "зеленую" энергию. Специализированное страхование для фотоэлектрических парков и ветряных турбин от погодных рисков и технических сбоев.'
+        description: "Досье риска энергетического проекта в Молдове: оборудование, этапы и условия для проверки. Доступность страхования подтверждается отдельно."
       },
       terms: {
         title: 'Условия и положения | Insurance ING Broker SRL',
@@ -889,11 +889,12 @@ export const translations = {
       },
       privacy: {
         title: 'Политика конфиденциальности | Защита данных | ING Broker',
-        description: 'Наше обязательство по безопасности ваших данных. Информация о сборе и обработке персональных данных в соответствии с GDPR.'
+        description: "Сведения о данных, собираемых через сайт, целях обработки и способах связи. Ознакомьтесь с политикой и применимыми условиями."
       }
     }
   },
   en: {
+    ...businessProductsTranslations.en,
     nav: ['Personal', 'Corporate Solutions', 'Reinsurance', 'About Us', 'Contact'],
     clientAccount: 'Calculate Online',
     logoAlt: 'ING Broker Logo',
@@ -907,16 +908,16 @@ export const translations = {
       scroll: 'Scroll to explore'
     },
     trustStripBenefits: [
-      "Elite broker in Moldova",
-      "Personalized consultation",
-      "Real 24/7 support",
-      "International expertise"
+      "Insurance broker in Moldova",
+      "Personalized advice",
+      "Guidance if a loss occurs",
+      "Clear explanations of conditions"
     ],
     intro: {
       title: 'Expertise in',
       titleItalic: 'Risk Management.',
-      p1: 'At ING Broker, the Personal segment is not just a list of products, but a complex safety architecture designed to protect what truly matters. We have exclusively selected elite solutions, offering you access to international-level protection through fiduciary, transparent, and result-oriented consultancy.',
-      p2: 'Regardless of the complexity of your needs - from urban mobility to securing family assets - our brokerage structure guarantees not just the optimal policy, but a strategic partnership in managing any unforeseen event.'
+      p1: "At ING Broker, you can discuss insurance for your car, home, travel and accidents. We clarify your needs and explain available options.",
+      p2: "Before you choose, we compare prices, covered risks and situations where the policy does not provide payment. We also explain how to notify a loss."
     },
     productLabels: {
       destined: 'For whom',
@@ -927,7 +928,7 @@ export const translations = {
       subtitle: 'A quick look at your protection needs to make the right choice.',
       cards: [
         { title: 'Mobility', desc: 'Choose MTPL for obligation, Green Card for international trips, or CASCO to protect your auto investment.' },
-        { title: 'Travel & Health', desc: 'Full medical protection abroad or financial safety in case of unforeseen accidents in daily life.' },
+        { title: 'Travel & Health', desc: "Check travel medical insurance and accident insurance. Cover depends on the selected policy." },
         { title: 'Assets', desc: 'Secure your most important asset: your home. Protection against disasters and civil liability towards neighbors.' }
       ]
     },
@@ -936,12 +937,12 @@ export const translations = {
       title: 'Authority in Brokerage,',
       titleItalic: 'Dedicated to You.',
       items: [
-        { title: 'Authority in Risk Management', desc: 'Decades of expertise in managing complex risks at the corporate level, now translated into elite solutions for the personal segment.' },
-        { title: 'Advanced Sectoral Specialization', desc: 'We adapt the insurance architecture to the specifics of each risk profile, ensuring coverage without gray areas or contractual ambiguities.' },
-        { title: 'Fiduciary Integrity', desc: 'Absolute transparency. We give you the clarity needed to understand exactly the protection mechanisms and the real value of your policy.' },
-        { title: 'Strategic Support in Case of Claim', desc: 'You are not alone in the face of risk. Our team of experts takes over the claim management, guaranteeing a fair and rapid settlement.' }
+        { title: "We start with your needs", desc: "We ask what you want to insure and explain the options you can consider." },
+        { title: "We compare proposals", desc: "We help compare prices, payment limits and exclusions, meaning situations the policy does not cover." },
+        { title: "We explain conditions", desc: "Before you take out insurance, we discuss payments, cover and your duties." },
+        { title: "We provide claims guidance", desc: "We explain the steps and documents for a claim. The insurer assesses it under the contract." }
       ],
-      years: 'Years of Authority'
+      years: "Years of activity"
     },
     methodology: {
       title: 'The Methodology',
@@ -956,12 +957,12 @@ export const translations = {
         {
           number: '02',
           title: 'Solution Architecture',
-          desc: 'We structure a personalized insurance program, exclusively selecting the clauses that bring real value and eliminating unnecessary costs.'
+          desc: "We explain available proposals and their differences so you can make an informed choice."
         },
         {
           number: '03',
           title: 'Fiduciary Management',
-          desc: 'We are your representative before insurers. We manage contracts, monitor risks, and ensure the success of any claim for compensation.'
+          desc: "We answer questions about the policy, renewal and steps after a loss. The insurer decides payment under the contract."
         }
       ]
     },
@@ -978,12 +979,12 @@ export const translations = {
     corporateGateway: {
       label: 'B2B & Corporate',
       title: 'Complex Solutions for Business',
-      desc: 'Are you a business owner? Beyond personal insurance, ING Broker is a leader in structuring complex insurance and reinsurance programs for corporations. We protect your assets, liability, and business continuity to international standards.',
+      desc: "We help you consider insurance for company property, activities and employees. We start with business risks and check available options.",
       btnBusiness: 'Discover Corporate Solutions',
       btnReinsurance: 'Reinsurance & Fronting'
     },
     footer: {
-      desc: 'Your strategic partner in insurance and reinsurance. We offer premium solutions tailored to your business and personal needs.',
+      desc: "ING Broker helps you consider insurance for yourself and your business. We explain available proposals, policy conditions and the steps after a loss.",
       sections: {
         products: 'Products',
         company: 'Company',
@@ -1006,7 +1007,7 @@ export const translations = {
         },
         {
           title: 'How is the price of RCA insurance determined? Guide for an affordable RCA price',
-          desc: 'Discover the factors that influence the cost of your RCA policy and how you can get the best price.',
+          desc: "See which details affect an RCA calculation and how to check the price and conditions of a proposal.",
           link: '/news/cum-se-determin%C4%83-pre%C8%9Bul-unei-asigur%C4%83ri-rca-ghid-pentru-un-pre%C8%9B-rca-accesibil',
           image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800'
         }
@@ -1015,172 +1016,172 @@ export const translations = {
     business: {
       title: 'Corporate Solutions',
       titleItalic: 'for market leaders.',
-      subtitle: 'We protect your assets, liability, and business continuity. Our approach is based on integrated risk management: Identification, Evaluation, Transfer, and Retention. We offer complex insurance programs for corporations, tailored to each industry.',
+      subtitle: "We help you consider insurance for company property, activities and employees. We assess business risks and compare the conditions of available proposals.",
       cta1: 'Request risk audit',
       cta2: 'Discuss with an expert',
       faq: {
         title: 'Frequently Asked Questions',
         items: [
-          { q: 'What types of corporate insurance do you offer?', a: 'We offer a full range of B2B solutions, including property insurance, general and professional liability (E&O), cyber insurance, Directors & Officers (D&O) insurance, commercial fleet, and Cargo insurance.' },
-          { q: 'How does a B2B insurance broker help me?', a: 'A B2B broker like ING Broker acts as a risk consultant. We identify and evaluate industry-specific risks, negotiate the best terms and premiums with insurers, and represent you in the event of a claim, saving you time and resources.' },
-          { q: 'Do you offer solutions for complex or international risks?', a: 'Yes, through our Reinsurance & Fronting department, we structure programs for risks that exceed local market capacity, facilitating access to international markets (e.g., Lloyd\'s) and offering fronting solutions for multinational corporations.' },
-          { q: 'How long does a risk audit take?', a: 'The duration of a risk audit varies depending on the complexity and size of the company, but typically takes anywhere from a few days to a few weeks. It involves a detailed analysis of operations, assets, and financial exposures.' }
+          { q: 'What types of corporate insurance do you offer?', a: "We can discuss risks involving company property, liability, transport and employees. Product availability, accepted activities and conditions are confirmed for each case before a proposal." },
+          { q: 'How does a B2B insurance broker help me?', a: "ING Broker helps describe risks and compare available proposals, including prices, limits and exclusions. If a loss occurs, we explain the steps and documents. The insurer accepts the risk and decides the claim under the contract." },
+          { q: 'Do you offer solutions for complex or international risks?', a: "For complex or international risks, we prepare questions and information for assessment. A reinsurance or fronting structure, participants and capacity require separate confirmation; this page does not promise access to a particular market." },
+          { q: 'How long does a risk audit take?', a: "Timing is agreed after clarifying activities, available documents and assessment scope. Request a schedule for your file; this page does not provide a confirmed timeline for every company." }
         ]
       },
       lines: [
         { 
           id: 'property', 
           title: 'Property and assets', 
-          desc: 'We protect your company\'s physical assets against fires, natural disasters, and accidental damage. Our solutions cover buildings, equipment, and stock, including vital business interruption protection. Designed for manufacturing, retail, and logistics, ING Broker secures your investments in the Moldovan market with international expertise.', 
+          desc: "Insurance for buildings, equipment and stock. We check included risks and whether losses from interrupted operations may be covered under the contract.", 
           image: '/Construcții Comerciale.jpg', 
           category: 'ASSETS', 
           link: '/property-assets',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Fire, explosion, lightning', 'Natural disasters (earthquake, flood)', 'Theft and vandalism'] },
-            advantages: { title: 'Advantages', items: ['Protection of the business\'s material base', 'Coverage for loss of profit', 'Flexibility in choosing limits'] },
+            advantages: { title: "What we check", items: ["Accepted property, values and locations", "Loss-of-profit conditions, if included", "Limits, deductibles and exclusions"] },
             disadvantages: { title: 'Limitations', items: ['Exclusions for normal wear and tear', 'Need for functional security systems', 'Mandatory deductibles for certain risks'] }
           }
         },
         { 
           id: 'liability', 
           title: 'General liability', 
-          desc: 'Secure your business against financial claims resulting from material damage or bodily injury caused to third parties. We offer comprehensive civil liability policies essential for construction, HoReCa, and services. With a deep understanding of local risks, ING Broker negotiates optimal limits to protect your reputation and capital.', 
+          desc: "For situations where company activities cause harm to others. We help check which liabilities, sums and expenses may be included in a policy.", 
           image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2560', 
           category: 'LIABILITY', 
           link: '/business/liability',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Bodily injury caused to third parties', 'Material damage to third-party property', 'Accidental pollution'] },
-            advantages: { title: 'Advantages', items: ['Protection against massive compensation claims', 'Coverage of legal expenses', 'Maintaining company reputation'] },
+            advantages: { title: "What we check", items: ["Accepted activities and liabilities", "Defence costs, if included", "Policy limits and territory"] },
             disadvantages: { title: 'Limitations', items: ['Does not cover pure contractual liability', 'Exclusions for intentional damage', 'Geographical coverage limits'] }
           }
         },
         { 
           id: 'professional', 
           title: 'Professional liability', 
-          desc: 'Absolute financial protection for errors, omissions, or negligence in providing consulting and design services. Indispensable for IT, engineering, architecture, and legal services. ING Broker structures customized insurance programs, guaranteeing the safety of professionals and business continuity in the Moldovan market.', 
+          desc: "For claims relating to professional errors or omissions. We check accepted activities, limits and exclusions for your profession.", 
           image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1200', 
           category: 'LIABILITY', 
           link: '/business/professional',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Professional errors and omissions', 'Negligence in providing services', 'Breach of data confidentiality'] },
-            advantages: { title: 'Advantages', items: ['Safety for experts and consultants', 'Mandatory requirement for certain professions', 'Coverage for pure financial losses'] },
+            advantages: { title: "What we check", items: ["Declared professional services", "Professional requirements to confirm separately", "Accepted claims, periods and limits"] },
             disadvantages: { title: 'Limitations', items: ['Does not cover activities outside specialization', 'Exclusions for criminal acts', '"Claims-made" principle (claims filed during the policy period)'] }
           }
         },
         { 
           id: 'do', 
           title: 'D&O', 
-          desc: 'A protective shield for the personal assets of managers and administrators facing allegations of mismanagement. Covers defense costs and litigation initiated by shareholders or authorities. Vital for corporations and financial institutions, ING Broker brings top expertise to secure the strategic decisions of your leaders.', 
+          desc: "Liability insurance questions for directors and officers. We assess which claims and defence costs may be included under the contract.", 
           image: '/d&o.jpg', 
           category: 'EXECUTIVE', 
           link: '/business/do',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Erroneous managerial decisions', 'Fault in supervision', 'Litigation initiated by shareholders or employees'] },
-            advantages: { title: 'Advantages', items: ['Protection of managers\' personal assets', 'Attracting talent to leadership', 'Coverage for official investigations'] },
+            advantages: { title: "What we check", items: ["Accepted people and roles", "Defence costs, if included", "Specified investigations and periods"] },
             disadvantages: { title: 'Limitations', items: ['Exclusions for proven fraud', 'Does not cover criminal fines', 'Limitations for undeclared M&A transactions'] }
           }
         },
         { 
           id: 'cyber', 
           title: 'Cyber insurance', 
-          desc: 'Rapid response and financial coverage against ransomware attacks, data breaches, and IT interruptions. Designed for e-commerce, healthcare, and tech companies. ING Broker aligns your business with global cybersecurity standards, minimizing financial and reputational impact in Moldova\'s digital environment.', 
+          desc: "We assess cyber-risk information, security requirements and which costs a proposed policy may cover. Availability and accepted risks require separate confirmation.", 
           image: '/cyber-insurance-3.jpg', 
           category: 'TECH', 
           link: '/business/cyber',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Ransomware and hacking attacks', 'Business interruption due to IT causes', 'Personal data breaches'] },
-            advantages: { title: 'Advantages', items: ['Access to rapid response teams', 'Coverage for notification costs', 'Protection against cyber extortion'] },
+            advantages: { title: "What we check", items: ["Response services, if included", "Accepted notification costs", "Extortion conditions and exclusions"] },
             disadvantages: { title: 'Limitations', items: ['Requires minimum IT security standards', 'Does not cover loss of intellectual property value', 'Exclusions for public infrastructure'] }
           }
         },
         { 
           id: 'cargo', 
           title: 'Cargo and transport', 
-          desc: 'We guarantee the safety of goods during road, sea, air, or rail transport, covering risks of damage, theft, or accidents. "All Risks" solutions essential for logistics, import-export, and production. With ING Broker, your supply chain benefits from international protection and rapid claims settlement.', 
+          desc: "For goods in transit, we check the route, goods, packaging and risks that may be included under the insurer's conditions.", 
           image: '/logistica.jpg', 
           category: 'LOGISTICS', 
           link: '/business/cargo',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Damage to goods during transport', 'Theft or disappearance of cargo', 'Accidents of the means of transport'] },
-            advantages: { title: 'Advantages', items: ['"All Risks" coverage available', 'Protection throughout the international route', 'Rapid settlement based on invoice value'] },
+            advantages: { title: "What we check", items: ["Accepted risks, including exclusions", "Included route and transport stages", "Goods valuation and claim documents"] },
             disadvantages: { title: 'Limitations', items: ['Exclusions for improper packaging', 'Limitations for perishable goods', 'Need to follow approved routes'] }
           }
         },
         { 
           id: 'fleet', 
           title: 'Fleet auto', 
-          desc: 'Effective risk management for corporate auto fleets with optimized CASCO and MTPL coverage. We protect distribution, courier, and passenger transport fleets against accidents and theft. ING Broker negotiates preferential rates and offers centralized management so your business never stops.', 
+          desc: "We help organize insurance for company vehicles. We compare available RCA and CASCO options and check each vehicle's conditions, without promised discounts or claim times.", 
           image: '/camionete.jpg', 
           category: 'MOBILITY', 
           link: '/business/fleet',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Multiple road accidents', 'Theft of fleet vehicles', 'Extended civil liability'] },
-            advantages: { title: 'Advantages', items: ['Simplified policy administration', 'Volume discounts (fleet discount)', 'Priority roadside assistance'] },
+            advantages: { title: "What we check", items: ["Vehicle inventory and policy periods", "The price calculated for the specific file", "Roadside assistance, if included"] },
             disadvantages: { title: 'Limitations', items: ['Rigorous claims monitoring required', 'Deductibles per event', 'Restrictions regarding vehicle users'] }
           }
         },
         { 
           id: 'credit', 
           title: 'Credit insurance', 
-          desc: 'Protect your cash flow against non-payment of invoices and B2B client insolvency. A strategic solution for wholesale trade, manufacturing, and exporters. ING Broker secures your revenues and facilitates safe commercial expansion, demonstrating rigorous financial risk control.', 
+          desc: "We assess the risk of unpaid customer invoices and check which buyers, sums and situations may be accepted in a policy. Coverage and availability require confirmation.", 
           image: '/credit insurance.jpg', 
           category: 'FINANCE', 
           link: '/business/credit',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Client insolvency', 'Prolonged payment delay', 'Political risks in export'] },
-            advantages: { title: 'Advantages', items: ['Cash-flow improvement', 'Easier access to bank financing', 'Client creditworthiness monitoring included'] },
+            advantages: { title: "What we check", items: ["Accepted buyers and invoices", "Limits and contractual waiting periods", "Monitoring services, if included"] },
             disadvantages: { title: 'Limitations', items: ['Does not cover commercial disputes', 'Credit limits per buyer', 'Mandatory co-insurance percentage'] }
           }
         },
         { 
           id: 'construction', 
           title: 'Construction', 
-          desc: '"All Risks" coverage for infrastructure, residential, and industrial projects. We protect construction sites against natural disasters, fires, and execution errors. ING Broker offers contractors and developers in Moldova comprehensive policies aligned with lender requirements and international FIDIC standards.', 
+          desc: "For construction and installation works, we check the project, site risks and contractual requirements before requesting suitable proposals. No automatic FIDIC compliance is promised.", 
           image: '/Constructii-montaj.jpeg', 
           category: 'ENGINEERING', 
           link: '/business/construction',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Accidental damage to works', 'Destruction of construction equipment', 'Liability towards third parties on site'] },
-            advantages: { title: 'Advantages', items: ['Protection from start of works to handover', 'Coverage for the maintenance period', 'Safety for investors and banks'] },
+            advantages: { title: "What we check", items: ["Accepted stages and works", "Maintenance, if included", "Investor requirements and proposed limits"] },
             disadvantages: { title: 'Limitations', items: ['Exclusions for design errors', 'Does not cover contractual penalties', 'Need to comply with labor protection rules'] }
           }
         },
         { 
           id: 'benefits', 
           title: 'Employee Benefits & Group Health Insurance | IT Talent Retention Moldova | ING Broker', 
-          desc: 'Employee Benefits & Group Health Insurance | IT Talent Retention Moldova | ING Broker. Premium programs designed to increase team retention and loyalty. Indispensable in the IT sector, corporations, and SMEs. ING Broker negotiates customized packages that turn employee care into a major competitive advantage in the labor market.', 
+          desc: "For company employees, we discuss team needs and check available options, included services and contractual limits. Tax treatment requires separate verification.", 
           image: '/health.png', 
           category: 'HUMAN RESOURCES', 
           link: '/business/benefits',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Occupational diseases and work accidents', 'Death or disability of employees', 'High medical costs'] },
-            advantages: { title: 'Advantages', items: ['Increased team loyalty', 'Tax deductibility (within legal limits)', 'Access to top private clinics'] },
+            advantages: { title: "What we check", items: ["Accepted people and services", "Tax treatment to verify separately", "Clinics and procedures specified in the programme"] },
             disadvantages: { title: 'Limitations', items: ['Waiting periods for certain conditions', 'Exclusions for undeclared chronic diseases', 'Annual settlement limits'] }
           }
         },
         { 
           id: 'renewable', 
           title: 'Energy', 
-          desc: 'We secure investments in solar, wind, and biogas parks against accidental breakdowns, extreme weather events, and loss of profit. ING Broker supports Moldova\'s green transition through specialized insurance solutions, guaranteeing the protection of high-tech equipment throughout the project\'s lifespan.', 
+          desc: "We prepare risk information for solar, wind and biogas projects. We check equipment, project stages and documents. Availability, accepted risks and conditions require individual insurer confirmation.", 
           image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=1200', 
           category: 'ENERGY', 
           link: '/renewable-energy',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Extreme weather events (hail, storm)', 'Technical and electrical faults', 'Loss of profit due to lack of production'] },
-            advantages: { title: 'Advantages', items: ['Protection of massive investments', 'High bankability for projects', 'Technical expertise in assessing green risks'] },
+            advantages: { title: "What we check", items: ["Project stages and equipment", "Lender requirements without a financing promise", "Proposed risks, limits and exclusions"] },
             disadvantages: { title: 'Limitations', items: ['Variable costs depending on location', 'Strict preventive maintenance requirements', 'Exclusions for natural degradation'] }
           }
         },
         { 
           id: 'agriculture', 
           title: 'Agricultural risks', 
-          desc: 'Vital protection for crops, livestock, and agricultural machinery against the vagaries of nature, diseases, and fires. Designed for local farmers and agribusinesses. With deep expertise in the Moldovan agricultural sector, ING Broker structures policies that guarantee your business continuity, including access to state subsidies.', 
+          desc: "We discuss risks involving crops, livestock and agricultural machinery. Accepted risks and conditions are checked for the activity. A subsidy is not automatic.", 
           image: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=1200', 
           category: 'AGRICULTURE', 
           link: '/business/agriculture',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Drought, frost, hail', 'Animal diseases and epidemics', 'Damage to agricultural machinery'] },
-            advantages: { title: 'Advantages', items: ['Premium subsidy (where applicable)', 'Financial stability in difficult agricultural years', 'Specialized damage assessment in the field'] },
+            advantages: { title: "What we check", items: ["Any subsidy conditions to verify separately", "Accepted crops, livestock and risks", "Inspection procedures and required documents"] },
             disadvantages: { title: 'Limitations', items: ['Temporal deductible periods', 'Exclusions for non-compliance with agricultural technology', 'Insured harvest limits'] }
           }
         }
@@ -1189,49 +1190,49 @@ export const translations = {
     reinsurance: {
       title: 'Reinsurance & Fronting',
       titleItalic: 'capacity and expertise.',
-      subtitle: 'Direct access to international reinsurance markets and placement capacity for complex risks. We structure facultative and treaty reinsurance programs, offering fronting solutions for multinational corporations and major infrastructure projects.',
-      cta1: 'Contact department',
-      cta2: 'Request capacity',
+      subtitle: "Discuss preparation of a file for large or complex risks. Programme availability, participants and reinsurance capacity require separate confirmation after risk assessment.",
+      cta1: "Discuss the risk file",
+      cta2: "Request an assessment of options",
       faq: {
         title: 'Frequently Asked Questions - Reinsurance',
         items: [
-          { q: 'When does a company need facultative reinsurance?', a: 'Facultative reinsurance is necessary when a company faces a very large individual risk (e.g., a massive factory, a major infrastructure project) that exceeds the retention capacity of local insurers, or when the risk is atypical and requires international expertise.' },
-          { q: 'What does Fronting mean in insurance?', a: 'Fronting is a mechanism where a local insurer (Fronting Company) issues a policy according to local legislation for a multinational corporation, but transfers (cedes) 100% of the risk to an international reinsurer or the corporation\'s captive company. It is essential for legal compliance.' },
-          { q: 'Which reinsurance markets do you work with?', a: 'We have access to top international markets, including Lloyd\'s of London and major reinsurers in Continental Europe, ensuring that risks are placed with entities holding an excellent financial rating (A- or higher).' },
-          { q: 'What is the difference between proportional and non-proportional reinsurance?', a: 'In proportional reinsurance (e.g., Quota Share), the reinsurer takes a fixed percentage of premiums and losses. In non-proportional (e.g., Excess of Loss), the reinsurer intervenes only if the loss exceeds a certain pre-established amount (priority), protecting the insurer from catastrophic events.' }
+          { q: 'When does a company need facultative reinsurance?', a: "Facultative reinsurance may be considered separately for a large or unusual risk. The insurer and potential reinsurers assess the information, capacity and proposed conditions. A large project is not automatically accepted." },
+          { q: 'What does Fronting mean in insurance?', a: "In a fronting arrangement, a local insurer issues the policy and reinsurance agreements determine the transfer of a share of the risk. The broker is not the issuing insurer. Participants, shares and local requirements must be checked for the specific programme." },
+          { q: 'Which reinsurance markets do you work with?', a: "Participation by a particular market or reinsurer is confirmed for each file. Ask which participants are involved, what capacity is available and what financial information is relevant. This page does not confirm direct Lloyd's access or a guaranteed minimum rating." },
+          { q: 'What is the difference between proportional and non-proportional reinsurance?', a: "A proportional structure shares premiums and losses in agreed proportions. A non-proportional structure uses thresholds and limits set out in the agreement. The precise mechanism, events and participants' obligations must be checked in the programme documents." }
         ]
       },
       lines: [
         { 
           id: 'facultative', 
           title: 'Facultative Reinsurance', 
-          desc: 'Individual placements for atypical risks, major exposures, or highly complex industries (Energy, Aviation, Construction). We negotiate directly with international markets (Lloyd\'s, Continental Europe) to secure optimal terms and extended capacity.', 
+          desc: "For an individual risk or project, prepare its description, values and relevant history. Participants must assess whether facultative placement is possible and on what terms; this page does not promise placement.", 
           image: '/reinsurance-1.webp', 
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Individual exposures exceeding local market capacity', 'Complex industrial risks', 'Major infrastructure projects'] },
-            advantages: { title: 'Advantages', items: ['Precise and customized risk transfer', 'Access to top financial ratings (A- and above)', 'Protection against volatility'] },
+            advantages: { title: "What we assess", items: ["Individual assessment of the proposed risk", "Verification of participants and financial information", "Comparison of available limits and conditions"] },
             disadvantages: { title: 'Limitations', items: ['Detailed and rigorous underwriting process', 'Costs influenced by global market conditions'] }
           }
         },
         { 
           id: 'treaty', 
           title: 'Treaty Reinsurance', 
-          desc: 'Structured solutions for the protection of insurance portfolios. We offer consulting in the design of proportional and non-proportional programs (Quota Share, Surplus, Excess of Loss), optimizing capital and protecting the balance sheet against catastrophic events.', 
+          desc: "For an insurance portfolio, discuss exposures, losses and the intended limits. A treaty structure, its availability and financial effects require specific assessment and cannot be inferred from its name.", 
           image: '/traty reinsurance-2.jpg', 
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Accumulations of catastrophic risks (Earthquake, Flood)', 'Major fluctuations in the loss ratio', 'Capital and solvency protection'] },
-            advantages: { title: 'Advantages', items: ['Long-term financial stability', 'Increased underwriting capacity', 'Efficient capital management (Solvency II)'] },
+            advantages: { title: "What we assess", items: ["Assessment of accumulated exposures", "Comparison of proposed limits and capacity", "Review of capital implications with appropriate specialists"] },
             disadvantages: { title: 'Limitations', items: ['Complex contractual structures', 'Requires advanced actuarial analysis'] }
           }
         },
         { 
           id: 'fronting', 
           title: 'Fronting Programs', 
-          desc: 'We issue local policies compliant with the legislation of the Republic of Moldova for global insurance programs (Master Policies). We ensure legal and tax compliance, facilitating risk transfer to captive reinsurers or international markets approved by the corporation.', 
+          desc: "For an international programme, check whether an insurer can issue the local policy and participate in the proposed reinsurance structure. ING Broker acts as intermediary where that possibility is confirmed. Legal and tax matters require separate review.", 
           image: '/fronting.png', 
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Strict local compliance requirements', 'Management of global insurance programs', 'Reinsurer credit risk'] },
-            advantages: { title: 'Advantages', items: ['100% guaranteed legal compliance', 'Seamless integration into the global program', 'Administrative and tax efficiency'] },
+            advantages: { title: "What we assess", items: ["Checking applicable local requirements", "Comparing the local policy with programme documents", "Clarifying costs and participants' roles"] },
             disadvantages: { title: 'Limitations', items: ['Administrative fronting costs (Fronting Fee)', 'Dependence on the rating of the issuing local insurer'] }
           }
         }
@@ -1239,41 +1240,41 @@ export const translations = {
     },
     about: {
       hero: { title: 'About Us', subtitle: 'Insurance ING Broker SRL - Your strategic architect in risk management and global reinsurance.' },
-      intro: 'Insurance ING Broker SRL represents the benchmark in risk management and reinsurance architecture in the Republic of Moldova. We are an elite brokerage structure, specializing in strategic consulting, complex risk transfer solutions, and long-term fiduciary partnerships for corporations and institutions.',
-      whoWeAre: { title: 'Who We Are', content: 'We are risk engineers and fiduciary consultants redefining the broker\'s role in the financial ecosystem. For us, brokerage is not a transaction, but a rigorous process of auditing, understanding financial exposures, and structuring the most advanced protection solutions available on local and international markets.' },
-      mission: { title: 'Our Mission', content: 'Our mission is to ensure the financial resilience of our clients by transforming the complexity of corporate risks into clear strategic decisions. We protect our partners\' financial balance sheets through risk transfer solutions that exceed conventional market standards.' },
+      intro: "We work with individuals and companies in Moldova. We explain insurance options, compare available proposals and help you understand conditions before deciding.",
+      whoWeAre: { title: 'Who We Are', content: "We are an insurance brokerage team. We start with your questions: what you want to insure, which risks concern you and your budget. We then discuss available proposals and their differences." },
+      mission: { title: 'Our Mission', content: "We want each client to understand the insurance they choose: payments, covered risks, exclusions and the steps to take after a loss." },
       vision: { title: 'Our Vision', content: 'Our vision is to set the new standard of excellence in regional corporate brokerage, integrating global best practices and advanced analytical technologies. We aim to be the pioneers who import and develop niche insurance products, strengthening the financial security of the Republic of Moldova.' },
-      history: { title: 'Our History', content: 'Founded in 2006, Insurance ING Broker SRL was among the first licensed brokers in the Republic of Moldova, being the first company of its kind to obtain ISO certification. From developing the eAsigurari application to pioneering the digitalization of the sector, we have constantly evolved as a structure focused on corporate governance and elite services.' },
+      history: { title: 'Our History', content: "Insurance ING Broker SRL is an insurance broker in Moldova. For information about the company's history, authorization or certifications, request the relevant documents and check their validity." },
       values: { title: 'Our Values', items: ['Advanced Risk Architecture', 'Operational Excellence', 'Absolute Fiduciary Integrity', 'Radical Transparency', 'Strategic Synergy', 'Unwavering Ethics', 'Disruptive Risk Innovation'] },
       differentiators: {
         title: 'What Sets Us Apart',
         items: [
-          { title: 'Official License and Tradition', desc: 'We are among the first brokers in the Republic of Moldova with an official license, providing absolute stability and legal security.' },
-          { title: 'Pioneering in Education', desc: 'We are the pioneers who started developing insurance services at a school level in the local market, raising the standards of the entire industry.' },
-          { title: 'ISO Quality Guarantee', desc: 'The first and only in Moldova to hold ISO certificates, indisputable proof of the rigor and quality of our internal processes.' },
-          { title: 'International Connectivity', desc: 'We possess a solid network of European and international partners, facilitating access to global reinsurance capacities.' },
-          { title: '20 Years of Excellence', desc: 'A background and expertise validated by two decades of uninterrupted activity and success in managing complex risks.' }
+          { title: "Clear company information", desc: "Before working together, you can request current company details and clarify the broker's role." },
+          { title: "Accessible explanations", desc: "We explain insurance terms and practical steps without assuming prior insurance knowledge." },
+          { title: "Document review", desc: "We compare available documents and conditions. Certification or authorization must be confirmed by current documents, not a marketing promise." },
+          { title: "Assessment of options", desc: "For complex requirements, we clarify participants and available options without promising access to a particular market." },
+          { title: "Support for your decision", desc: "We discuss relevant risks, costs and limitations before you choose an option." }
         ]
       },
-      corporate: { title: 'Corporate Data & Governance', content: 'Full Name: Insurance ING Broker SRL,\nIDNO: 1017600019386,\nCNPF License: 000874\nCertification: ISO 9001:2015 (RO-11645)\nHeadquarters: 9 Pan Halippa St, Chisinau' },
-      cta: { title: 'Strategic Partnership', subtitle: 'Are you ready to elevate your company\'s protection standard? Our team of experts is ready to offer you a complete risk audit.', btn: 'Request Strategic Consulting' }
+      corporate: { title: 'Corporate Data & Governance', content: "Company: Insurance ING Broker SRL,\\nIDNO: 1017600019386,\\nAddress: municipiul Chișinău, strada Pan Halippa 9, Republica Moldova,\\nCEO: Dascalu Ion" },
+      cta: { title: 'Strategic Partnership', subtitle: "Tell us what you want to insure. We can discuss options and the information needed for an assessment.", btn: 'Request Strategic Consulting' }
     },
     propertyAssets: {
       title: 'Property and Assets Insurance',
-      subtitle: 'Complete protection for your company\'s assets, ensuring business continuity in any situation.',
-      intro: 'Whether it\'s office buildings, commercial spaces, factories, or essential equipment, your company\'s assets are the foundation of daily operations. Insurance ING Broker SRL offers customized solutions to protect both real estate and movable property against unforeseen risks.',
+      subtitle: "Assess insurance for buildings, equipment and stock. Accepted property, risks and limits depend on the insurer's conditions.",
+      intro: "Prepare an inventory, locations, values and a description of company activities. ING Broker helps compare available options. The insurer accepts risks and handles claims under the contract.",
       industries: {
-        title: 'What we cover',
+        title: "Property and exposures to assess",
         items: [
           { title: 'Real Estate', desc: 'Commercial buildings, office buildings, factories, warehouses, and other physical structures.', image: '/Construcții Comerciale.jpg' },
           { title: 'Movable Property', desc: 'Business machinery, industrial equipment, computing technology, and inventory.', image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000' },
-          { title: 'Stocks and Goods', desc: 'Protection for raw materials, finished products, and goods in storage.', image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000' },
-          { title: 'Business Interruption', desc: 'Coverage for financial losses resulting from the temporary suspension of activity.', image: '/business-intrertuption.jpg' }
+          { title: 'Stocks and Goods', desc: "Raw materials, finished products and stored goods: check the inventory, values and storage conditions.", image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000' },
+          { title: 'Business Interruption', desc: "Check separately whether business interruption and related financial losses can be included, for which events and periods.", image: '/business-intrertuption.jpg' }
         ]
       },
       analysis: {
         risks: {
-          title: 'Covered Risks',
+          title: "Risks to check in the proposal",
           items: [
             'Fire, lightning, explosion',
             'Natural disasters (earthquake, flood, storm)',
@@ -1283,17 +1284,17 @@ export const translations = {
           ]
         },
         advantages: {
-          title: 'Advantages',
+          title: "What we compare",
           items: [
-            'Financial protection against major losses',
-            'Guaranteed business continuity',
-            'Customized policies based on industry specifics',
-            'Fast assistance in case of a claim',
-            'Peace of mind and security for investors'
+            "Sums and limits for accepted property",
+            "Business interruption conditions, if included",
+            "Declared activities and locations",
+            "The procedure and documents for notifying a claim",
+            "Deductibles, exclusions and contractual duties"
           ]
         },
         disadvantages: {
-          title: 'Exceptions and Limitations',
+          title: "Limitations to check in the contract",
           items: [
             'Normal wear and tear and depreciation over time',
             'Intentional damage caused by the insured',
@@ -1303,62 +1304,62 @@ export const translations = {
           ]
         }
       },
-      expertiseTitle: 'We Protect the Foundation of Your Business',
+      expertiseTitle: "Insurance for company property",
       essentialTitle: 'Why choose ING Broker?',
-      whyUs: 'We help you find the right insurer, negotiate the best price-quality ratio for you, and offer specialized legal advice when an insured event occurs.',
-      ctaTitle: 'Secure your assets today',
+      whyUs: "We compare available proposals and explain prices, limits, deductibles and exclusions. If a loss occurs, we explain the documents and next steps; the insurer assesses the claim and determines payment under the contract.",
+      ctaTitle: "Discuss company property",
       ctaCall: 'Request a quote',
       ctaEmail: 'Send an email'
     },
     renewableEnergy: {
       title: 'Renewable Energy Insurance',
-      subtitle: 'Protecting the sustainable future through elite insurance solutions.',
-      intro: 'The renewable energy industry faces unique risks, from extreme weather events to complex technical failures. Insurance ING Broker SRL offers specialized insurance programs covering the entire project lifecycle: construction, operation, and maintenance.',
+      subtitle: "Preparing the risk file for an energy project. Insurance availability and conditions require individual confirmation.",
+      intro: "Separate construction, operation and maintenance. Prepare equipment details, location, values and contractual responsibilities. We check assessment possibilities without promising whole-project coverage or risk acceptance.",
       industries: {
-        title: 'Covered Industries and Technologies',
+        title: "Technologies and risks to assess",
         items: [
-          { title: 'Solar Panels (Photovoltaic)', desc: 'Full protection for solar parks against hail, storms, fire, theft, and loss of income due to production interruption.' },
-          { title: 'Wind Turbines', desc: 'Coverage for wind mills, including mechanical breakdown, lightning damage, blade failures, and operational financial losses.' },
-          { title: 'Energy Storage (Batteries)', desc: 'Safety for electrical energy storage systems, managing risks of chemical fire, premature degradation, and integration errors.' },
-          { title: 'Hydroelectric Power Plants', desc: 'Specialized protection for hydro infrastructure, covering risks of extreme floods, turbine damage, and environmental impact.', image: '/hidrocentrala.jpg' }
+          { title: 'Solar Panels (Photovoltaic)', desc: "For photovoltaic panels, describe the location, installation and equipment. Hail, fire, theft and lost income must be checked separately in the proposed conditions." },
+          { title: 'Wind Turbines', desc: "For wind turbines, prepare technical and maintenance records. Check mechanical damage, lightning, blades and the consequences of a production stoppage separately." },
+          { title: 'Energy Storage (Batteries)', desc: "For batteries, describe the technology, installation and safety measures. Fire, degradation and integration errors are not automatically covered; check conditions and exclusions." },
+          { title: 'Hydroelectric Power Plants', desc: "For hydro infrastructure, prepare the location, equipment and project responsibilities. Flooding, turbine damage and environmental impact require separate checks.", image: '/hidrocentrala.jpg' }
         ]
       },
       analysis: {
-        risks: { title: 'Main Risks', items: ['Extreme weather events (hail, hurricane)', 'Mechanical and electrical failures', 'Theft, vandalism, and cyber attacks', 'Loss of profit (Business Interruption)'] },
-        advantages: { title: 'Strategic Advantages', items: ['Long-term financial stability', 'High bankability for financing', 'Access to green risk assessment experts'] },
-        disadvantages: { title: 'Challenges and Considerations', items: ['Premium costs based on location', 'Complexity of the claims process', 'Necessity of rigorous maintenance'] }
+        risks: { title: "Exposures to assess, not confirmed cover", items: ['Extreme weather events (hail, hurricane)', 'Mechanical and electrical failures', 'Theft, vandalism, and cyber attacks', 'Loss of profit (Business Interruption)'] },
+        advantages: { title: "What we check in a proposal", items: ["Accepted stages, equipment and risks", "Lender requirements, without a promise of financing", "Limits, deductibles and notification procedures"] },
+        disadvantages: { title: "Conditions to clarify", items: ['Premium costs based on location', 'Complexity of the claims process', 'Necessity of rigorous maintenance'] }
       },
-      whyUs: 'Why is this insurance essential? Investments in renewable energy are massive and directly exposed to the forces of nature. A single hailstorm can destroy an entire photovoltaic park, and a wind turbine failure can stop production for months. Insurance is not just an expense, but the foundation of your investment security.',
-      expertiseTitle: 'Expertise in Green Risk Management',
-      essentialTitle: 'Why is this insurance essential?',
-      ctaTitle: 'Protect your investment in the future',
+      whyUs: "An energy project may have different contracts and periods for construction, operation and maintenance. Compare documents for each stage and check any loss-of-income provision separately. An assessment does not confirm policy availability or claim payment.",
+      expertiseTitle: "Understand project risks",
+      essentialTitle: "How to prepare an assessment",
+      ctaTitle: "Discuss assessment possibilities",
       ctaCall: 'Call now',
       ctaEmail: 'Send Email'
     },
     seo: {
       home: {
-        title: 'ING Broker Moldova | Elite Insurance & Reinsurance Consulting',
-        description: 'Leader in risk management in Moldova. We offer premium insurance solutions: MTPL, CASCO, property, health, and complex reinsurance for corporations and individuals.'
+        title: "ING Broker Moldova | Insurance for individuals and companies",
+        description: "ING Broker helps you consider insurance for cars, homes, travel and business in Moldova. Compare available proposals and understand policy conditions."
       },
       business: {
         title: 'Corporate Insurance & Risk Management | ING Broker Moldova',
-        description: 'Advanced B2B solutions for business. Complex insurance programs: Property, Liability, Cyber, D&O, Cargo, and Fleets. Professional risk audit for business continuity.'
+        description: "Property, liability, transport and fleet insurance in Moldova. We help assess company risks and available proposals."
       },
       reinsurance: {
-        title: 'Reinsurance & Fronting | International Capacity | ING Broker',
-        description: 'Strategic access to global reinsurance markets (Lloyd\'s). We structure facultative and treaty programs, offering fronting solutions for major infrastructure projects.'
+        title: "Reinsurance and fronting: assessing options | ING Broker",
+        description: "Preparing a complex-risk file. Participants, capacity and the possibility of a reinsurance or fronting structure require separate confirmation."
       },
       about: {
         title: 'About Us | Insurance ING Broker SRL | Expertise & Trust',
-        description: 'Elite insurance broker in the Republic of Moldova, licensed and ISO certified. Over 18 years of experience in strategic consulting and complex risk management.'
+        description: "Learn how Insurance ING Broker SRL, an insurance broker in Moldova, works. Policy explanations and practical guidance for individuals and companies."
       },
       propertyAssets: {
         title: 'Corporate Property & Assets Insurance | ING Broker',
-        description: 'Maximum protection for company assets: buildings, machinery, stocks. Insurance against fire and natural disasters with business interruption coverage in Moldova.'
+        description: "Company property insurance in Moldova: inventory, risks, limits and business interruption conditions to check in the insurer's proposal."
       },
       renewableEnergy: {
         title: 'Renewable Energy Insurance | Solar & Wind Parks | ING Broker',
-        description: 'We secure investments in green energy. Specialized insurance for photovoltaic parks and wind turbines against weather risks and technical failures.'
+        description: "Energy-project risk files in Moldova: equipment, stages and conditions to check. Insurance availability requires separate confirmation."
       },
       terms: {
         title: 'Terms & Conditions | Insurance ING Broker SRL',
@@ -1366,7 +1367,7 @@ export const translations = {
       },
       privacy: {
         title: 'Privacy Policy | Data Protection | ING Broker',
-        description: 'Our commitment to your data security. Information about the collection and processing of personal data in accordance with GDPR.'
+        description: "Information about data collected through the site, processing purposes and contact options. Read the policy and applicable conditions."
       }
     }
   }
@@ -1377,95 +1378,95 @@ export const productTranslations = {
     {
       id: 'rca',
       title: 'RCA',
-      seoTitle: 'Asigurare RCA Online Moldova | Calculator și Emitere Rapidă | ING Broker',
-      seoDescription: 'Încheie asigurarea RCA online în Moldova prin ING Broker. Află prețul instant cu calculatorul nostru, bucură-te de emitere rapidă și suport dedicat în caz de daună.',
+      seoTitle: "RCA online Moldova: calculator și condiții | ING Broker",
+      seoDescription: "Calculează RCA și verifică datele, perioada, prețul și condițiile înainte de plată. Confirmă emiterea și valabilitatea documentului final.",
       subtitle: 'RESPONSABILITATE CIVILĂ AUTO',
-      description: 'Te ajutăm să calculezi prețul RCA și să verifici datele necesare pentru poliță. Îți explicăm condițiile și pașii de urmat în caz de accident.',
+      description: "Te ajutăm să calculezi RCA și să verifici datele pentru poliță. Emiterea și începutul valabilității se confirmă în documentul final, nu prin simpla trimitere a cererii.",
       forWho: 'Toți proprietarii de vehicule înmatriculate în Moldova.',
       covers: 'Daunele cauzate terțelor persoane în urma accidentelor rutiere.',
-      advantages: ['Emitere instantanee online', 'Consultant dedicat în caz de daună', 'Prețuri reglementate, proces premium'],
+      advantages: ["Verificarea datelor înainte de plată", "Explicarea prețului și a perioadei", "Îndrumare privind notificarea daunei"],
       cta: 'Calculează RCA',
       link: 'https://easigurari.com/ro/rca',
       image: '/rca-red-car.jpg',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Răspunderea civilă față de terți', 'Sancțiuni contravenționale pentru lipsa poliței', 'Cheltuieli de judecată în procese civile'] },
-        advantages: { title: 'Avantaje', items: ['Conformitate legală 100%', 'Protecție financiară împotriva daunelor cauzate altora', 'Acces la sistemul Bonus-Malus'] },
-        disadvantages: { title: 'Limitări', items: ['Nu acoperă daunele propriei mașini', 'Limite de despăgubire stabilite prin lege', 'Excluderi pentru conducere sub influența alcoolului'] }
+        advantages: { title: 'Avantaje', items: ["Verificarea documentului și a valabilității", "Compararea limitelor aplicabile", "Verificarea datelor folosite la calcul"] },
+        disadvantages: { title: 'Limitări', items: ['Nu acoperă daunele propriei mașini', 'Limite de despăgubire stabilite prin lege', "Efectele situațiilor de conducere sub influența alcoolului, de verificat în regulile aplicabile"] }
       }
     },
     {
       id: 'carte-verde',
       title: 'Carte Verde',
       seoTitle: 'Asigurare Carte Verde Online | Călătorii Sigure în Străinătate | ING Broker',
-      seoDescription: 'Cumpără asigurarea Carte Verde pentru călătorii auto internaționale. Acoperire extinsă, prețuri competitive și suport 24/7 oriunde te-ai afla. Alege ING Broker.',
+      seoDescription: "Carte Verde pentru deplasări auto: verifică țările și perioada de valabilitate, datele vehiculului și documentele înainte de plată.",
       subtitle: 'SIGURANȚĂ PESTE HOTARE',
-      description: 'Pleci cu mașina peste hotare? Verifică perioada și țările pentru care ai nevoie de Carte Verde înainte să alegi polița.',
+      description: "Pleci cu mașina peste hotare? Verifică traseul, țările și perioada pentru care ai nevoie de Carte Verde înainte să alegi polița.",
       forWho: 'Șoferii care călătoresc cu mașina în afara țării.',
-      covers: 'Răspunderea civilă auto în statele membre ale sistemului Carte Verde.',
-      advantages: ['Valabilitate internațională extinsă', 'Suport 24/7 în străinătate', 'Livrare rapidă sau ridicare imediată'],
+      covers: "Răspunderea civilă auto, în teritoriul și condițiile indicate în documentele aplicabile.",
+      advantages: ["Verificarea țărilor de pe traseu", "Clarificarea perioadei poliței", "Îndrumare privind documentele și notificarea"],
       cta: 'Calculează Carte Verde',
       link: 'https://easigurari.com/ro/green-card',
       image: '/carte_verde.jpg',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Accidente rutiere în afara Republicii Moldova', 'Răspundere civilă conform legislației țării de vizită', 'Costuri de repatriere a vehiculului (în funcție de clauze)'] },
-        advantages: { title: 'Avantaje', items: ['Recunoaștere internațională în peste 40 de țări', 'Protecție împotriva legilor străine complexe', 'Asistență multilingvă în caz de incident'] },
-        disadvantages: { title: 'Limitări', items: ['Valabilă doar în țările specificate în poliță', 'Nu înlocuiește asigurarea CASCO', 'Obligatorie la trecerea frontierei'] }
+        advantages: { title: 'Avantaje', items: ["Verificarea valabilității pentru țările vizitate", "Clarificarea informațiilor de contact la daună", "Păstrarea documentelor pentru deplasare"] },
+        disadvantages: { title: 'Limitări', items: ['Valabilă doar în țările specificate în poliță', 'Nu înlocuiește asigurarea CASCO', "Cerințele traseului și ale frontierelor, de verificat înainte de plecare"] }
       }
     },
     {
       id: 'medicala',
       title: 'Asigurare Medicală',
       seoTitle: 'Asigurare Medicală de Călătorie | Protecție în Străinătate | ING Broker',
-      seoDescription: 'Asigurare medicală pentru călătorii peste hotare. Acoperire pentru urgențe, spitalizare și repatriere. Călătorește fără griji cu ING Broker.',
+      seoDescription: "Asigurarea medicală de călătorie: verifică serviciile, teritoriul, limitele, franșiza și procedura de asistență în condițiile poliței.",
       subtitle: 'PROTECȚIE ÎN CĂLĂTORII',
-      description: 'Pleci în vacanță sau într-o deplasare de serviciu? Te ajutăm să alegi asigurarea medicală de călătorie și să verifici serviciile incluse, limitele și excluderile.',
+      description: "Pentru vacanță sau deplasare de serviciu, compară serviciile medicale propuse, limitele și excluderile. Plata cheltuielilor și asistența depind de condițiile asigurătorului.",
       forWho: 'Turiști, studenți și profesioniști care călătoresc extern.',
-      covers: 'Urgențe medicale, spitalizare, tratamente și repatriere.',
-      advantages: ['Acoperire globală completă', 'Fără franșiză la urgențe', 'Asistență telefonică în limba română'],
+      covers: "Servicii și cheltuieli medicale acceptate în condițiile poliței, în limitele și teritoriul stabilite.",
+      advantages: ["Verificarea teritoriului și a perioadei", "Explicarea franșizei și a limitelor", "Clarificarea canalului și limbii de asistență"],
       cta: 'Calculează asigurarea',
       link: 'https://easigurari.com/ro/health-insurance',
       image: '/asigurare-medicala-travel.jpg',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Urgențe medicale și accidente în străinătate', 'Cheltuieli de spitalizare și intervenții chirurgicale', 'Repatriere medicală sau în caz de deces'] },
-        advantages: { title: 'Avantaje', items: ['Acoperire pentru COVID-19 inclusă', 'Asistență 24/7 prin companii de asistență globală', 'Decontare directă cu clinicile partenere'] },
-        disadvantages: { title: 'Limitări', items: ['Nu acoperă afecțiunile preexistente', 'Excluderi pentru sporturi extreme (fără clauză specială)', 'Limite de vârstă pentru anumite planuri'] }
+        advantages: { title: 'Avantaje', items: ["Condițiile pentru COVID-19, dacă riscul este inclus", "Programul și contactele serviciului de asistență", "Plata directă sau rambursarea, dacă sunt prevăzute"] },
+        disadvantages: { title: 'Limitări', items: ["Condițiile și excluderile pentru afecțiuni preexistente", 'Excluderi pentru sporturi extreme (fără clauză specială)', 'Limite de vârstă pentru anumite planuri'] }
       }
     },
     {
       id: 'casco',
       title: 'CASCO',
-      seoTitle: 'Asigurare CASCO Moldova | Oferte și condiții | ING Broker',
-      seoDescription: 'Compară ofertele CASCO în Moldova. Verifică riscurile incluse, excluderile și franșiza înainte să alegi polița. Cere o ofertă de la ING Broker.',
+      seoTitle: "CASCO Moldova: oferte și condiții | ING Broker",
+      seoDescription: "Compară CASCO: riscurile acceptate, reparațiile, excluderile și franșiza. Acoperirea se confirmă prin condițiile asigurătorului și poliță.",
       subtitle: 'Asigurare pentru mașina ta',
-      description: 'Vrei să asiguri propria mașină? Comparăm ofertele CASCO și îți explicăm ce daune sunt acoperite, ce nu este inclus și ce parte din daună poate rămâne în sarcina ta.',
-      forWho: 'Proprietarii de mașini noi sau rulate care vor protecție maximă.',
-      covers: 'Daune proprii, furt, vandalism, incendiu, calamități naturale.',
-      advantages: ['Reparații în service-uri autorizate', 'Asistență rutieră inclusă', 'Flexibilitate în alegerea riscurilor'],
+      description: "Pentru propria mașină, comparăm ofertele CASCO și explicăm riscurile incluse, excluderile și partea din daună suportată de tine potrivit contractului.",
+      forWho: "Proprietari de mașini noi sau rulate care vor să compare opțiunile disponibile.",
+      covers: "Riscurile pentru mașina proprie acceptate în poliță, în condițiile și limitele contractului.",
+      advantages: ["Verificarea condițiilor de reparație", "Clarificarea asistenței, dacă este inclusă", "Compararea riscurilor și franșizei"],
       cta: 'Vezi detalii CASCO',
       link: 'https://easigurari.com/ro/article/asigurarea-casco',
       image: '/asigurare-casco.jpg',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Avarii accidentale (coliziuni, răsturnări)', 'Furt total sau parțial al vehiculului', 'Vandalism și fenomene naturale (grindină, inundații)'] },
-        advantages: { title: 'Avantaje', items: ['Protecție indiferent de vinovăție', 'Reparații la reprezentanțe oficiale', 'Acoperire pentru echipamente suplimentare'] },
-        disadvantages: { title: 'Limitări', items: ['Aplicarea franșizei conform contractului', 'Excluderi pentru uzură sau defecte mecanice', 'Pierderea acoperirii în caz de neglijență gravă'] }
+        advantages: { title: 'Avantaje', items: ["Situațiile de accident acceptate în contract", "Service-urile și procedura de reparație agreate", "Echipamentele suplimentare, dacă sunt incluse"] },
+        disadvantages: { title: 'Limitări', items: ['Aplicarea franșizei conform contractului', 'Excluderi pentru uzură sau defecte mecanice', "Condițiile și excluderile legate de neglijența gravă"] }
       }
     },
     {
       id: 'locuinta',
       title: 'Asigurarea Locuinței',
       seoTitle: 'Asigurare Locuință și Bunuri | Protejează-ți Casa | ING Broker',
-      seoDescription: 'Asigurare completă pentru apartamente și case în Moldova. Protejează-ți locuința și bunurile împotriva incendiilor, inundațiilor și furtului cu ING Broker.',
+      seoDescription: "Asigurarea locuinței în Moldova: compară bunurile acceptate, riscurile, răspunderea față de vecini și limitele prevăzute în contract.",
       subtitle: 'Căminul tău, în siguranță',
-      description: 'Locuința este mai mult decât o clădire, este spațiul tău de siguranță. Oferim soluții complete pentru protejarea structurii, a bunurilor și a răspunderii față de vecini.',
+      description: "Verifică separat structura locuinței, bunurile și răspunderea față de vecini. Includerea lor, limitele și plata daunelor depind de contractul ales.",
       forWho: 'Proprietari de apartamente și case la sol.',
-      covers: 'Incendiu, inundații, cutremur, furt, răspundere civilă.',
-      advantages: ['Evaluare corectă a bunurilor', 'Protecție pentru vecini inclusă', 'Despăgubire rapidă în caz de daună'],
+      covers: "Bunurile și riscurile acceptate în poliță, cu verificarea separată a răspunderii civile.",
+      advantages: ["Verificarea valorilor declarate", "Clarificarea răspunderii față de vecini", "Explicarea procedurii de notificare"],
       cta: 'Vezi detalii Locuință',
       link: 'https://easigurari.com/ro/article/asigurare-locuinta-si-bunuri-imobile-si-mobile-r-moldova',
       image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Incendiu, explozie, trăsnet', 'Calamități naturale (cutremur, inundații)', 'Furtul bunurilor din locuință și vandalism'] },
-        advantages: { title: 'Avantaje', items: ['Acoperire pentru răspunderea civilă față de vecini', 'Protecție pentru finisaje și bunuri de preț', 'Asistență tehnică de urgență la domiciliu'] },
+        advantages: { title: 'Avantaje', items: ["Răspunderea față de vecini, dacă este inclusă", 'Protecție pentru finisaje și bunuri de preț', "Asistența tehnică la domiciliu, dacă este prevăzută"] },
         disadvantages: { title: 'Limitări', items: ['Excluderi pentru clădiri cu risc seismic ridicat', 'Nu acoperă banii cash sau bijuteriile neevaluate', 'Limitări pentru bunuri aflate în spații deschise'] }
       }
     },
@@ -1473,18 +1474,18 @@ export const productTranslations = {
       id: 'accidente',
       title: 'Accidente',
       seoTitle: 'Asigurare de Accidente Persoane | Siguranță Financiară | ING Broker',
-      seoDescription: 'Asigurare de accidente pentru tine și familia ta. Sprijin financiar în caz de invaliditate, spitalizare sau deces din accident. Alege siguranța cu ING Broker.',
+      seoDescription: "Asigurarea de accidente: persoane, evenimente, sume și limite de verificat în poliță. Plata se stabilește potrivit condițiilor asigurătorului.",
       subtitle: 'Siguranța personală',
-      description: 'Asigurarea de accidente poate oferi sprijin financiar în situațiile prevăzute de contract. Te ajutăm să verifici evenimentele acoperite, sumele și excluderile.',
+      description: "Asigurarea de accidente poate oferi sprijin financiar pentru evenimentele acceptate în contract. Verifică persoanele, activitățile, sumele și excluderile înainte de alegere.",
       forWho: 'Persoane active, sportivi și familii prudente.',
-      covers: 'Invaliditate, fracturi, arsuri sau deces din accident.',
-      advantages: ['Sume asigurate flexibile', 'Acoperire 24/7 oriunde în lume', 'Plată rapidă a indemnizației'],
+      covers: "Consecințele accidentelor acceptate în contract, în limitele și condițiile stabilite.",
+      advantages: ["Compararea sumelor asigurate", "Verificarea teritoriului și a activităților", "Clarificarea documentelor pentru cerere"],
       cta: 'Vezi detalii Accidente',
       link: 'https://easigurari.com/ro/article/asigurarea-de-accidente-angajatilor-r-moldova',
       image: '/Accidente2.png',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Accidente casnice sau la locul de muncă', 'Accidente în timpul activităților sportive', 'Invaliditate permanentă sau temporară'] },
-        advantages: { title: 'Avantaje', items: ['Suport financiar imediat pentru tratament', 'Acoperire globală, indiferent de locație', 'Protecție pentru întreaga familie pe o singură poliță'] },
+        advantages: { title: 'Avantaje', items: ["Plățile și evenimentele prevăzute în contract", "Teritoriul și perioadele acceptate", "Persoanele care pot fi incluse în poliță"] },
         disadvantages: { title: 'Limitări', items: ['Excluderi pentru boli profesionale', 'Nu acoperă accidentele sub influența substanțelor', 'Limite de vârstă la subscriere'] }
       }
     }
@@ -1493,95 +1494,95 @@ export const productTranslations = {
     {
       id: 'rca',
       title: 'ОСАГО',
-      seoTitle: 'Страхование ОСАГО онлайн в Молдове | Калькулятор и быстрое оформление | ING Broker',
-      seoDescription: 'Оформите страховку ОСАГО онлайн в Молдове через ING Broker. Узнайте цену мгновенно с помощью нашего калькулятора, наслаждайтесь быстрым оформлением и поддержкой при ДТП.',
+      seoTitle: "RCA онлайн в Молдове: расчет и условия | ING Broker",
+      seoDescription: "Рассчитайте RCA и до оплаты проверьте данные, период, цену и условия. Подтвердите выпуск и срок действия итогового документа.",
       subtitle: 'АВТОГРАЖДАНСКАЯ ОТВЕТСТВЕННОСТЬ',
-      description: 'Обязательное страхование, обеспечивающее необходимое спокойствие за рулем в Республике Молдова. Мы гарантируем вашу юридическую защиту и самый быстрый процесс оформления на рынке.',
+      description: "Помогаем рассчитать RCA и проверить данные для полиса. Выпуск и начало действия подтверждаются итоговым документом, а не одной отправкой заявки.",
       forWho: 'Все владельцы транспортных средств, зарегистрированных в Молдове.',
       covers: 'Ущерб, причиненный третьим лицам в результате дорожно-транспортных происшествий.',
-      advantages: ['Мгновенное онлайн-оформление', 'Выделенный консультант при страховом случае', 'Регулируемые цены, премиальный процесс'],
+      advantages: ["Проверка данных до оплаты", "Объяснение цены и периода", "Разъяснение уведомления об убытке"],
       cta: 'Рассчитать ОСАГО',
       link: 'https://easigurari.com/ru/rca',
       image: '/rca-red-car.jpg',
       analysis: {
         risks: { title: 'Целевые риски', items: ['Гражданская ответственность перед третьими лицами', 'Административные санкции за отсутствие полиса', 'Судебные издержки по гражданским делам'] },
-        advantages: { title: 'Преимущества', items: ['100% соответствие закону', 'Финансовая защита от ущерба, причиненного другим', 'Доступ к системе Бонус-Малус'] },
-        disadvantages: { title: 'Ограничения', items: ['Не покрывает ущерб собственному автомобилю', 'Лимиты возмещения установлены законом', 'Исключения при вождении в нетрезвом виде'] }
+        advantages: { title: 'Преимущества', items: ["Проверка документа и срока действия", "Сравнение применимых лимитов", "Проверка данных для расчета"] },
+        disadvantages: { title: 'Ограничения', items: ['Не покрывает ущерб собственному автомобилю', 'Лимиты возмещения установлены законом', "Последствия управления под воздействием алкоголя для проверки в применимых правилах"] }
       }
     },
     {
       id: 'carte-verde',
       title: 'Зеленая карта',
       seoTitle: 'Страхование Зеленая Карта онлайн | Безопасные поездки за границу | ING Broker',
-      seoDescription: 'Купите страховку Зеленая Карта для международных автомобильных поездок. Расширенное покрытие, конкурентные цены и круглосуточная поддержка. Выбирайте ING Broker.',
+      seoDescription: "Зеленая карта для поездок на автомобиле: до оплаты проверьте страны, период действия, данные автомобиля и документы.",
       subtitle: 'БЕЗОПАСНОСТЬ ЗА ГРАНИЦЕЙ',
-      description: 'Ваш надежный партнер для международных автомобильных поездок. Независимо от пункта назначения, Зеленая карта от ING Broker гарантирует вам необходимую защиту за пределами страны.',
+      description: "Едете на автомобиле за границу? До выбора Зеленой карты проверьте маршрут, страны и необходимый период.",
       forWho: 'Водители, путешествующие на автомобиле за границу.',
-      covers: 'Гражданская ответственность владельцев автотранспорта в странах-членах системы Зеленая карта.',
-      advantages: ['Расширенное международное действие', 'Поддержка 24/7 за рубежом', 'Быстрая доставка или немедленное получение'],
+      covers: "Автогражданская ответственность на территории и условиях, указанных в применимых документах.",
+      advantages: ["Проверка стран по маршруту", "Уточнение периода полиса", "Разъяснение документов и уведомления"],
       cta: 'Рассчитать Зеленую карту',
       link: 'https://easigurari.com/ru/green-card',
       image: '/carte_verde.jpg',
       analysis: {
         risks: { title: 'Целевые риски', items: ['ДТП за пределами Республики Молдова', 'Гражданская ответственность согласно законам страны пребывания', 'Расходы на репатриацию автомобиля (в зависимости от условий)'] },
-        advantages: { title: 'Преимущества', items: ['Международное признание в более чем 40 странах', 'Защита от сложных иностранных законов', 'Многоязычная поддержка при инцидентах'] },
-        disadvantages: { title: 'Ограничения', items: ['Действует только в странах, указанных в полисе', 'Не заменяет страховку КАСКО', 'Обязательна при пересечении границы'] }
+        advantages: { title: 'Преимущества', items: ["Проверка действия в посещаемых странах", "Уточнение контактов при убытке", "Хранение документов для поездки"] },
+        disadvantages: { title: 'Ограничения', items: ['Действует только в странах, указанных в полисе', 'Не заменяет страховку КАСКО', "Требования маршрута и границ для проверки до поездки"] }
       }
     },
     {
       id: 'medicala',
       title: 'Медицинская страховка',
       seoTitle: 'Медицинская страховка для путешествий | Защита за границей | ING Broker',
-      seoDescription: 'Медицинское страхование для поездок за границу. Покрытие неотложной помощи, госпитализации и репатриации. Путешествуйте без забот с ING Broker.',
+      seoDescription: "Медицинское страхование для поездок: проверьте услуги, территорию, лимиты, франшизу и порядок обращения за помощью в условиях полиса.",
       subtitle: 'ЗАЩИТА В ПУТЕШЕСТВИЯХ',
-      description: 'Ваши отпуска и командировки заслуживают бескомпромиссной защиты. Мы покрываем непредвиденные медицинские расходы, чтобы вы могли сосредоточиться на впечатлениях, а не на заботах.',
+      description: "Для отпуска или командировки сравните предлагаемые медицинские услуги, лимиты и исключения. Оплата расходов и помощь зависят от условий страховщика.",
       forWho: 'Туристы, студенты и специалисты, выезжающие за рубеж.',
-      covers: 'Неотложная медицинская помощь, госпитализация, лечение и репатриация.',
-      advantages: ['Полное глобальное покрытие', 'Без франшизы при экстренных случаях', 'Телефонная поддержка на русском языке'],
+      covers: "Медицинские услуги и расходы, принятые по условиям полиса, в установленных лимитах и на указанной территории.",
+      advantages: ["Проверка территории и периода", "Объяснение франшизы и лимитов", "Уточнение канала и языка помощи"],
       cta: 'Рассчитать страховку',
       link: 'https://easigurari.com/ru/health-insurance',
       image: '/asigurare-medicala-travel.jpg',
       analysis: {
         risks: { title: 'Целевые риски', items: ['Медицинские экстренные случаи и несчастные случаи за рубежом', 'Расходы на госпитализацию и хирургические операции', 'Медицинская репатриация или в случае смерти'] },
-        advantages: { title: 'Преимущества', items: ['Покрытие COVID-19 включено', 'Поддержка 24/7 через глобальные ассистанс-компании', 'Прямые расчеты с клиниками-партнерами'] },
-        disadvantages: { title: 'Ограничения', items: ['Не покрывает существующие заболевания', 'Исключения для экстремальных видов спорта (без спец. условия)', 'Возрастные ограничения для определенных планов'] }
+        advantages: { title: 'Преимущества', items: ["Условия по COVID-19, если риск включен", "График и контакты службы помощи", "Прямая оплата или возмещение, если предусмотрены"] },
+        disadvantages: { title: 'Ограничения', items: ["Условия и исключения для ранее существовавших заболеваний", 'Исключения для экстремальных видов спорта (без спец. условия)', 'Возрастные ограничения для определенных планов'] }
       }
     },
     {
       id: 'casco',
       title: 'КАСКО',
-      seoTitle: 'Страхование КАСКО Молдова | Полная автозащита | ING Broker',
-      seoDescription: 'Защитите свой автомобиль с помощью премиального страхования КАСКО от ING Broker. Полное покрытие от ДТП, угона, вандализма и стихийных бедствий. Запросите предложение!',
+      seoTitle: "КАСКО в Молдове: предложения и условия | ING Broker",
+      seoDescription: "Сравните КАСКО: принимаемые риски, ремонт, исключения и франшизу. Покрытие подтверждается условиями страховщика и полисом.",
       subtitle: 'Полная автозащита',
-      description: 'Ваш автомобиль - это инвестиция, которая заслуживает защиты от любого риска: аварии, кражи, вандализма или природных явлений. КАСКО от ING Broker - ваш премиальный щит.',
-      forWho: 'Владельцы новых или подержанных автомобилей, желающие максимальной защиты.',
-      covers: 'Собственный ущерб, кража, вандализм, пожар, стихийные бедствия.',
-      advantages: ['Ремонт в авторизованных сервисах', 'Включенная помощь на дорогах', 'Гибкость в выборе рисков'],
+      description: "Для вашего автомобиля сравниваем предложения КАСКО и объясняем включенные риски, исключения и часть убытка, которую вы несете по договору.",
+      forWho: "Владельцы новых или подержанных автомобилей, которые хотят сравнить доступные варианты.",
+      covers: "Риски для собственного автомобиля, принятые в полисе, на условиях и в лимитах договора.",
+      advantages: ["Проверка условий ремонта", "Уточнение помощи, если она включена", "Сравнение рисков и франшизы"],
       cta: 'Детали КАСКО',
       link: 'https://easigurari.com/ru/article/asigurarea-casco',
       image: '/asigurare-casco.jpg',
       analysis: {
         risks: { title: 'Целевые риски', items: ['Случайные повреждения (столкновения, опрокидывания)', 'Полная или частичная кража автомобиля', 'Вандализм и природные явления (град, наводнения)'] },
-        advantages: { title: 'Преимущества', items: ['Защита независимо от вины', 'Ремонт в официальных представительствах', 'Покрытие дополнительного оборудования'] },
-        disadvantages: { title: 'Ограничения', items: ['Применение франшизы согласно договору', 'Исключения для износа или механических дефектов', 'Потеря покрытия при грубой неосторожности'] }
+        advantages: { title: 'Преимущества', items: ["Ситуации ДТП, принятые в договоре", "Согласованные сервисы и порядок ремонта", "Дополнительное оборудование, если включено"] },
+        disadvantages: { title: 'Ограничения', items: ['Применение франшизы согласно договору', 'Исключения для износа или механических дефектов', "Условия и исключения, связанные с грубой неосторожностью"] }
       }
     },
     {
       id: 'locuinta',
       title: 'Страхование жилья',
       seoTitle: 'Страхование жилья и имущества | Защитите свой дом | ING Broker',
-      seoDescription: 'Комплексное страхование квартир и домов в Молдове. Защитите свое жилье и имущество от пожаров, затоплений и краж с ING Broker.',
+      seoDescription: "Страхование жилья в Молдове: сравните принимаемое имущество, риски, ответственность перед соседями и договорные лимиты.",
       subtitle: 'Ваш дом в безопасности',
-      description: 'Дом - это больше, чем здание, это ваше пространство безопасности. Мы предлагаем комплексные решения для защиты конструкции, имущества и ответственности перед соседями.',
+      description: "Отдельно проверьте конструкцию жилья, имущество и ответственность перед соседями. Их включение, лимиты и выплата по убыткам зависят от выбранного договора.",
       forWho: 'Владельцы квартир и частных домов.',
-      covers: 'Пожар, наводнение, землетрясение, кража, гражданская ответственность.',
-      advantages: ['Справедливая оценка имущества', 'Защита соседей включена', 'Быстрая выплата при ущербе'],
+      covers: "Имущество и риски, принятые в полисе, с отдельной проверкой гражданской ответственности.",
+      advantages: ["Проверка заявленных стоимостей", "Уточнение ответственности перед соседями", "Объяснение порядка уведомления"],
       cta: 'Детали страхования жилья',
       link: 'https://easigurari.com/ru/article/asigurare-locuinta-si-bunuri-imobile-si-mobile-r-moldova',
       image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000',
       analysis: {
         risks: { title: 'Целевые риски', items: ['Пожар, взрыв, удар молнии', 'Стихийные бедствия (землетрясение, наводнение)', 'Кража имущества из дома и вандализм'] },
-        advantages: { title: 'Преимущества', items: ['Покрытие гражданской ответственности перед соседями', 'Защита отделки и ценного имущества', 'Экстренная техническая помощь на дому'] },
+        advantages: { title: 'Преимущества', items: ["Ответственность перед соседями, если включена", 'Защита отделки и ценного имущества', "Техническая помощь на дому, если предусмотрена"] },
         disadvantages: { title: 'Ограничения', items: ['Исключения для зданий с высоким сейсмическим риском', 'Не покрывает наличные деньги или неоцененные украшения', 'Ограничения для имущества в открытых пространствах'] }
       }
     },
@@ -1589,18 +1590,18 @@ export const productTranslations = {
       id: 'accidente',
       title: 'Несчастные случаи',
       seoTitle: 'Страхование от несчастных случаев | Финансовая безопасность | ING Broker',
-      seoDescription: 'Страхование от несчастных случаев для вас и вашей семьи. Финансовая поддержка в случае инвалидности, госпитализации или смерти в результате ДТП. Выбирайте безопасность.',
+      seoDescription: "Страхование от несчастных случаев: лица, события, суммы и лимиты для проверки в полисе. Выплата определяется по условиям страховщика.",
       subtitle: 'Личная безопасность',
-      description: 'Непредсказуемое - часть жизни, но финансовое влияние можно контролировать. Страхование от несчастных случаев обеспечивает необходимую поддержку вам и вашей семье в критические моменты.',
+      description: "Страхование от несчастных случаев может предусматривать финансовую помощь по принятым в договоре событиям. До выбора проверьте лиц, занятия, суммы и исключения.",
       forWho: 'Активные люди, спортсмены и предусмотрительные семьи.',
-      covers: 'Инвалидность, переломы, ожоги или смерть в результате несчастного случая.',
-      advantages: ['Гибкие страховые суммы', 'Покрытие 24/7 в любой точке мира', 'Быстрая выплата возмещения'],
+      covers: "Последствия несчастных случаев, принятые в договоре, в установленных лимитах и на предусмотренных условиях.",
+      advantages: ["Сравнение страховых сумм", "Проверка территории и занятий", "Уточнение документов для заявления"],
       cta: 'Детали страхования',
       link: 'https://easigurari.com/ru/article/asigurarea-de-accidente-angajatilor-r-moldova',
       image: '/Accidente2.png',
       analysis: {
         risks: { title: 'Целевые риски', items: ['Бытовые несчастные случаи или на рабочем месте', 'Несчастные случаи во время занятий спортом', 'Постоянная или временная инвалидность'] },
-        advantages: { title: 'Преимущества', items: ['Немедленная финансовая поддержка при лечении', 'Глобальное покрытие, независимо от местоположения', 'Защита всей семьи по одному полису'] },
+        advantages: { title: 'Преимущества', items: ["Выплаты и события, предусмотренные договором", "Принятые территория и периоды", "Лица, которых можно включить в полис"] },
         disadvantages: { title: 'Ограничения', items: ['Исключения для профессиональных заболеваний', 'Не покрывает несчастные случаи под влиянием веществ', 'Возрастные ограничения при оформлении'] }
       }
     }
@@ -1609,95 +1610,95 @@ export const productTranslations = {
     {
       id: 'rca',
       title: 'RCA',
-      seoTitle: 'Online RCA Insurance Moldova | Calculator & Fast Issuance | ING Broker',
-      seoDescription: 'Buy your RCA insurance online in Moldova through ING Broker. Get an instant price with our calculator, enjoy fast issuance and dedicated claims support.',
+      seoTitle: "Online RCA in Moldova: calculator and conditions | ING Broker",
+      seoDescription: "Calculate RCA and check details, period, price and conditions before payment. Confirm issuance and validity of the final document.",
       subtitle: 'MOTOR THIRD PARTY LIABILITY',
-      description: 'Mandatory insurance that gives you the necessary peace of mind behind the wheel in the Republic of Moldova. We ensure you are legally protected and that the issuance process is the fastest on the market.',
+      description: "We help calculate RCA and check policy details. Issuance and the start of validity are confirmed by the final document, not merely by submitting a request.",
       forWho: 'All owners of vehicles registered in Moldova.',
       covers: 'Damage caused to third parties as a result of road accidents.',
-      advantages: ['Instant online issuance', 'Dedicated claims consultant', 'Regulated prices, premium process'],
+      advantages: ["Checking details before payment", "Explanation of price and period", "Guidance on notifying a loss"],
       cta: 'Calculate RCA',
       link: 'https://easigurari.com/ro/rca',
       image: '/rca-red-car.jpg',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Third party liability', 'Administrative sanctions for lack of policy', 'Legal costs in civil lawsuits'] },
-        advantages: { title: 'Advantages', items: ['100% legal compliance', 'Financial protection against damage caused to others', 'Access to the Bonus-Malus system'] },
-        disadvantages: { title: 'Limitations', items: ['Does not cover own car damage', 'Compensation limits set by law', 'Exclusions for driving under influence'] }
+        advantages: { title: 'Advantages', items: ["Checking the document and validity", "Comparing applicable limits", "Checking calculation details"] },
+        disadvantages: { title: 'Limitations', items: ['Does not cover own car damage', 'Compensation limits set by law', "The consequences of driving under the influence, to check in applicable rules"] }
       }
     },
     {
       id: 'carte-verde',
       title: 'Green Card',
       seoTitle: 'Online Green Card Insurance | Safe Travel Abroad | ING Broker',
-      seoDescription: 'Buy Green Card insurance for international road trips. Extended coverage, competitive prices, and 24/7 support wherever you are. Choose ING Broker.',
+      seoDescription: "Green Card for road travel: check countries, validity period, vehicle details and documents before payment.",
       subtitle: 'SAFETY ABROAD',
-      description: 'Your reliable partner for international car trips. Regardless of the destination, the Green Card from ING Broker guarantees you the necessary protection outside the borders.',
+      description: "Driving abroad? Check the route, countries and required period before choosing a Green Card policy.",
       forWho: 'Drivers traveling by car outside the country.',
-      covers: 'Motor third party liability in the member states of the Green Card system.',
-      advantages: ['Extended international validity', '24/7 support abroad', 'Fast delivery or immediate pickup'],
+      covers: "Motor third-party liability within the territory and conditions stated in the applicable documents.",
+      advantages: ["Checking countries on the route", "Clarifying the policy period", "Guidance on documents and notification"],
       cta: 'Calculate Green Card',
       link: 'https://easigurari.com/ro/green-card',
       image: '/carte_verde.jpg',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Road accidents outside the Republic of Moldova', 'Civil liability according to the laws of the visited country', 'Vehicle repatriation costs (depending on clauses)'] },
-        advantages: { title: 'Advantages', items: ['International recognition in over 40 countries', 'Protection against complex foreign laws', 'Multilingual assistance in case of incident'] },
-        disadvantages: { title: 'Limitations', items: ['Valid only in countries specified in the policy', 'Does not replace CASCO insurance', 'Mandatory when crossing the border'] }
+        advantages: { title: 'Advantages', items: ["Checking validity in visited countries", "Clarifying claims contact information", "Keeping travel documents"] },
+        disadvantages: { title: 'Limitations', items: ['Valid only in countries specified in the policy', 'Does not replace CASCO insurance', "Route and border requirements to check before departure"] }
       }
     },
     {
       id: 'medicala',
       title: 'Medical Insurance',
       seoTitle: 'Travel Health Insurance | Protection Abroad | ING Broker',
-      seoDescription: 'Health insurance for traveling abroad. Coverage for emergencies, hospitalization, and repatriation. Travel worry-free with ING Broker.',
+      seoDescription: "Travel medical insurance: check services, territory, limits, deductibles and assistance procedures in the policy conditions.",
       subtitle: 'TRAVEL PROTECTION',
-      description: 'Your vacations and business trips deserve uncompromising protection. We cover unforeseen medical expenses so you can focus on experiences, not worries.',
+      description: "For holidays or business travel, compare proposed medical services, limits and exclusions. Payment of expenses and assistance depend on the insurer's conditions.",
       forWho: 'Tourists, students, and professionals traveling externally.',
-      covers: 'Medical emergencies, hospitalization, treatments, and repatriation.',
-      advantages: ['Complete global coverage', 'No deductible for emergencies', 'Telephone assistance in English'],
+      covers: "Medical services and expenses accepted under the policy, within its limits and territory.",
+      advantages: ["Checking territory and period", "Explaining deductibles and limits", "Clarifying assistance channels and language"],
       cta: 'Calculate insurance',
       link: 'https://easigurari.com/ro/health-insurance',
       image: '/asigurare-medicala-travel.jpg',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Medical emergencies and accidents abroad', 'Hospitalization costs and surgical interventions', 'Medical repatriation or in case of death'] },
-        advantages: { title: 'Advantages', items: ['COVID-19 coverage included', '24/7 support through global assistance companies', 'Direct settlement with partner clinics'] },
-        disadvantages: { title: 'Limitations', items: ['Does not cover pre-existing conditions', 'Exclusions for extreme sports (without special clause)', 'Age limits for certain plans'] }
+        advantages: { title: 'Advantages', items: ["COVID-19 conditions, if the risk is included", "Assistance service hours and contacts", "Direct payment or reimbursement, if provided"] },
+        disadvantages: { title: 'Limitations', items: ["Conditions and exclusions for pre-existing conditions", 'Exclusions for extreme sports (without special clause)', 'Age limits for certain plans'] }
       }
     },
     {
       id: 'casco',
       title: 'CASCO',
-      seoTitle: 'CASCO Insurance Moldova | Total Auto Protection | ING Broker',
-      seoDescription: 'Protect your car with premium CASCO insurance from ING Broker. Full coverage for accidents, theft, vandalism, and natural disasters. Request a custom quote!',
+      seoTitle: "CASCO in Moldova: proposals and conditions | ING Broker",
+      seoDescription: "Compare CASCO: accepted risks, repairs, exclusions and deductibles. Cover is confirmed by the insurer's conditions and policy.",
       subtitle: 'Total car protection',
-      description: 'Your vehicle is an investment that deserves to be protected against any risk: accident, theft, vandalism, or natural phenomena. CASCO from ING Broker is your premium shield.',
-      forWho: 'Owners of new or used cars who want maximum protection.',
-      covers: 'Own damage, theft, vandalism, fire, natural disasters.',
-      advantages: ['Repairs in authorized service centers', 'Roadside assistance included', 'Flexibility in choosing risks'],
+      description: "For your own car, we compare CASCO proposals and explain included risks, exclusions and the share of a loss you bear under the contract.",
+      forWho: "Owners of new or used cars who want to compare available options.",
+      covers: "Risks to your own car accepted in the policy, subject to contractual conditions and limits.",
+      advantages: ["Checking repair conditions", "Clarifying assistance, if included", "Comparing risks and deductibles"],
       cta: 'See CASCO details',
       link: 'https://easigurari.com/ro/article/asigurarea-casco',
       image: '/asigurare-casco.jpg',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Accidental damage (collisions, rollovers)', 'Total or partial theft of the vehicle', 'Vandalism and natural phenomena (hail, floods)'] },
-        advantages: { title: 'Advantages', items: ['Protection regardless of fault', 'Repairs at official dealerships', 'Coverage for additional equipment'] },
-        disadvantages: { title: 'Limitations', items: ['Application of deductible according to contract', 'Exclusions for wear or mechanical defects', 'Loss of coverage in case of gross negligence'] }
+        advantages: { title: 'Advantages', items: ["Accident situations accepted in the contract", "Agreed repair providers and procedures", "Additional equipment, if included"] },
+        disadvantages: { title: 'Limitations', items: ['Application of deductible according to contract', 'Exclusions for wear or mechanical defects', "Conditions and exclusions relating to gross negligence"] }
       }
     },
     {
       id: 'locuinta',
       title: 'Home Insurance',
       seoTitle: 'Home & Property Insurance | Protect Your House | ING Broker',
-      seoDescription: 'Comprehensive insurance for apartments and houses in Moldova. Protect your home and belongings against fire, floods, and theft with ING Broker.',
+      seoDescription: "Home insurance in Moldova: compare accepted property, risks, liability towards neighbours and contractual limits.",
       subtitle: 'Your home, safe',
-      description: 'Home is more than a building, it is your space of safety. We offer complete solutions for protecting the structure, belongings, and liability towards neighbors.',
+      description: "Check the home structure, contents and liability towards neighbours separately. Their inclusion, limits and claim payments depend on the selected contract.",
       forWho: 'Owners of apartments and houses.',
-      covers: 'Fire, floods, earthquake, theft, civil liability.',
-      advantages: ['Fair asset valuation', 'Neighbor protection included', 'Fast compensation in case of damage'],
+      covers: "Property and risks accepted in the policy, with a separate check of civil liability.",
+      advantages: ["Checking declared values", "Clarifying liability towards neighbours", "Explaining notification procedures"],
       cta: 'See Home details',
       link: 'https://easigurari.com/ro/article/asigurare-locuinta-si-bunuri-imobile-si-mobile-r-moldova',
       image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Fire, explosion, lightning', 'Natural disasters (earthquake, floods)', 'Theft of goods from home and vandalism'] },
-        advantages: { title: 'Advantages', items: ['Civil liability coverage towards neighbors', 'Protection for finishes and valuable goods', 'Emergency technical assistance at home'] },
+        advantages: { title: 'Advantages', items: ["Liability towards neighbours, if included", 'Protection for finishes and valuable goods', "Home technical assistance, if provided"] },
         disadvantages: { title: 'Limitations', items: ['Exclusions for buildings with high seismic risk', 'Does not cover cash or unvalued jewelry', 'Limitations for goods in open spaces'] }
       }
     },
@@ -1705,18 +1706,18 @@ export const productTranslations = {
       id: 'accidente',
       title: 'Accidents',
       seoTitle: 'Personal Accident Insurance | Financial Security | ING Broker',
-      seoDescription: 'Accident insurance for you and your family. Financial support in case of disability, hospitalization, or death from an accident. Choose safety with ING Broker.',
+      seoDescription: "Accident insurance: people, events, sums and limits to check in the policy. Payment is determined under the insurer's conditions.",
       subtitle: 'Personal safety',
-      description: 'The unpredictable is part of life, but the financial impact can be controlled. Accident insurance provides the necessary support for you and your family in critical moments.',
+      description: "Accident insurance may provide financial support for events accepted in the contract. Check people, activities, sums and exclusions before choosing.",
       forWho: 'Active people, athletes, and prudent families.',
-      covers: 'Disability, fractures, burns, or death from accident.',
-      advantages: ['Flexible insured sums', '24/7 coverage anywhere in the world', 'Fast indemnity payment'],
+      covers: "Accident consequences accepted in the contract, subject to its limits and conditions.",
+      advantages: ["Comparing insured sums", "Checking territory and activities", "Clarifying claim documents"],
       cta: 'See Accident details',
       link: 'https://easigurari.com/ro/article/asigurarea-de-accidente-angajatilor-r-moldova',
       image: '/Accidente2.png',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Home or workplace accidents', 'Accidents during sports activities', 'Permanent or temporary disability'] },
-        advantages: { title: 'Advantages', items: ['Immediate financial support for treatment', 'Global coverage, regardless of location', 'Protection for the whole family on one policy'] },
+        advantages: { title: 'Advantages', items: ["Payments and events provided in the contract", "Accepted territories and periods", "People who may be included in the policy"] },
         disadvantages: { title: 'Limitations', items: ['Exclusions for occupational diseases', 'Does not cover accidents under influence of substances', 'Age limits at subscription'] }
       }
     }
@@ -1725,24 +1726,24 @@ export const productTranslations = {
 
 export const faqTranslations = {
   ro: [
-    { q: 'Cum pot încheia o asigurare RCA online?', a: 'Procesul este simplu: accesați link-ul de calcul, introduceți datele vehiculului și ale proprietarului, alegeți perioada și achitați online. Polița va fi emisă instantaneu.' },
+    { q: 'Cum pot încheia o asigurare RCA online?', a: "Accesează calculatorul și verifică datele, perioada, prețul și condițiile înainte de plată. Confirmă că polița a fost emisă și verifică data începutului valabilității în documentul final. Nu presupune emiterea instantanee." },
     { q: 'Ce documente sunt necesare pentru Cartea Verde?', a: 'Aveți nevoie de certificatul de înmatriculare al vehiculului și actul de identitate al persoanei care încheie asigurarea.' },
-    { q: 'Asigurarea medicală acoperă și riscul de COVID-19?', a: 'Da, majoritatea polițelor noastre medicale de călătorie includ acoperire pentru tratamentul COVID-19 în străinătate.' },
-    { q: 'Care este diferența între RCA și CASCO?', a: 'RCA este obligatorie și despăgubește terții accidentați de dumneavoastră. CASCO este facultativă și despăgubește daunele propriei mașini, indiferent de vină.' },
+    { q: 'Asigurarea medicală acoperă și riscul de COVID-19?', a: "Nu presupune includerea COVID-19. Verifică explicit riscul, serviciile, limitele, excluderile și procedura de asistență în condițiile variantei propuse." },
+    { q: 'Care este diferența între RCA și CASCO?', a: "RCA privește răspunderea față de terți, iar CASCO privește riscurile pentru mașina proprie acceptate contractual. Nu presupune că orice daună proprie este inclusă indiferent de împrejurări. Verifică documentele aplicabile fiecărei polițe." },
     { q: 'Pot asigura o locuință închiriată?', a: 'Da, atât proprietarul cât și chiriașul pot încheia asigurări pentru bunuri sau răspundere civilă față de terți.' }
   ],
   ru: [
-    { q: 'Как я могу оформить страховку ОСАГО онлайн?', a: 'Процесс прост: перейдите по ссылке для расчета, введите данные автомобиля и владельца, выберите период и оплатите онлайн. Полис будет выдан мгновенно.' },
+    { q: 'Как я могу оформить страховку ОСАГО онлайн?', a: "Откройте расчет и до оплаты проверьте данные, период, цену и условия. Убедитесь, что полис выпущен, и проверьте начало действия в итоговом документе. Не рассчитывайте на мгновенный выпуск." },
     { q: 'Какие документы необходимы для Зеленой карты?', a: 'Вам понадобится свидетельство о регистрации транспортного средства и документ, удостоверяющий личность лица, оформляющего страховку.' },
-    { q: 'Покрывает ли медицинская страховка риск COVID-19?', a: 'Да, большинство наших медицинских полисов для путешествий включают покрытие лечения COVID-19 за рубежом.' },
-    { q: 'В чем разница между ОСАГО и КАСКО?', a: 'ОСАГО является обязательным и возмещает ущерб третьим лицам, пострадавшим по вашей вине. КАСКО является добровольным и возмещает ущерб вашему собственному автомобилю, независимо от вины.' },
+    { q: 'Покрывает ли медицинская страховка риск COVID-19?', a: "Не предполагайте включение COVID-19. Отдельно проверьте риск, услуги, лимиты, исключения и порядок помощи в условиях предложенного варианта." },
+    { q: 'В чем разница между ОСАГО и КАСКО?', a: "RCA касается ответственности перед третьими лицами, а КАСКО - рисков для собственного автомобиля, принятых по договору. Не любой ущерб автомобилю включен независимо от обстоятельств. Проверьте документы каждого полиса." },
     { q: 'Могу ли я застраховать арендованное жилье?', a: 'Да, как владелец, так и арендатор могут оформить страховку имущества или гражданской ответственности перед третьими лицами.' }
   ],
   en: [
-    { q: 'How can I take out RCA insurance online?', a: 'The process is simple: access the calculation link, enter the vehicle and owner details, choose the period, and pay online. The policy will be issued instantly.' },
+    { q: 'How can I take out RCA insurance online?', a: "Open the calculator and check details, period, price and conditions before payment. Confirm that the policy has been issued and check its start date in the final document. Do not assume instant issuance." },
     { q: 'What documents are needed for the Green Card?', a: 'You need the vehicle registration certificate and the identity document of the person taking out the insurance.' },
-    { q: 'Does medical insurance also cover the risk of COVID-19?', a: 'Yes, most of our travel medical policies include coverage for COVID-19 treatment abroad.' },
-    { q: 'What is the difference between RCA and CASCO?', a: 'RCA is mandatory and compensates third parties injured by you. CASCO is optional and compensates damage to your own car, regardless of fault.' },
+    { q: 'Does medical insurance also cover the risk of COVID-19?', a: "Do not assume COVID-19 is included. Explicitly check the risk, services, limits, exclusions and assistance procedure in the proposed option." },
+    { q: 'What is the difference between RCA and CASCO?', a: "RCA concerns liability to third parties, while CASCO concerns contractually accepted risks to your own car. Do not assume every loss to your own vehicle is included regardless of circumstances. Check each policy's applicable documents." },
     { q: 'Can I insure a rented home?', a: 'Yes, both the owner and the tenant can take out insurance for goods or civil liability towards third parties.' }
   ]
 };
