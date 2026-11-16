@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
 import assert from 'node:assert/strict';
 import { articles } from '../src/data/articleMetadata';
-import { renderedRoutes } from '../src/data/staticRoutes';
+import { renderedRoutesFor } from '../src/data/staticRoutes';
 import { localizedPath } from '../src/utils/localizedRoutes';
 import type { Language } from '../src/translations';
 
@@ -14,7 +14,7 @@ for (const lang of ['ro', 'ru', 'en'] as Language[]) {
   for (const article of articles[lang].filter(a => a.reviewStatus === 'approved')) {
     pages.push({ path: localizedPath(`/news/${article.slug}`, lang), output: `dist/_editorial/${lang === 'ro' ? '' : lang + '/'}${article.slug}.html`, image: article.heroImage || article.image });
   }
-  for (const path of renderedRoutes) {
+  for (const path of renderedRoutesFor(lang)) {
     pages.push({ path: localizedPath(path, lang), output: `dist/_pages/${lang}${path}.html` });
     if (path === '/news') for (let page = 2; page <= Math.ceil(articles[lang].length / 9); page++) {
       pages.push({ path: localizedPath(path, lang) + `?page=${page}`, output: `dist/_pages/${lang}/news/page-${page}.html` });
