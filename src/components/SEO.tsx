@@ -12,12 +12,13 @@ interface SEOProps {
       includeLanguageAlternates?: boolean;
       noIndex?: boolean;
       ogType?: 'website' | 'article';
+      canonicalQuery?: string;
 }
 
-export const SEO = ({ title, description, lang, schema, keywords, image = "https://www.ingbroker.md/Logo%20ING%20Broker.png", includeLanguageAlternates = true, noIndex = false, ogType = 'website' }: SEOProps) => {
+export const SEO = ({ title, description, lang, schema, keywords, image = "https://www.ingbroker.md/Logo%20ING%20Broker.png", includeLanguageAlternates = true, noIndex = false, ogType = 'website', canonicalQuery = '' }: SEOProps) => {
       const siteUrl = "https://www.ingbroker.md";
       const location = useLocation();
-      const currentUrl = `${siteUrl}${localizedPath(location.pathname, lang)}`;
+      const currentUrl = `${siteUrl}${localizedPath(location.pathname, lang)}${canonicalQuery}`;
       const defaultKeywords = "asigurari moldova, broker asigurari, rca online, casco, asigurare medicala, asigurare business, ing broker, asigurare auto, asigurare imobile, asigurare companii";
 
       // Compute hreflang URLs for each language version of the current page.
@@ -48,7 +49,7 @@ export const SEO = ({ title, description, lang, schema, keywords, image = "https
                     <meta name="author" content="Insurance ING Broker SRL" />
                     <meta name="creator" content="Insurance ING Broker SRL" />
                     <meta name="publisher" content="Insurance ING Broker SRL" />
-                    <meta name="robots" content={noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+                    <meta name="robots" content={noIndex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
               
                     <meta property="og:title" content={title} />
                     <meta property="og:description" content={description} />
@@ -65,7 +66,7 @@ export const SEO = ({ title, description, lang, schema, keywords, image = "https
                     <meta name="twitter:image" content={image} />
               
                     <link rel="canonical" href={currentUrl} />
-                    {includeLanguageAlternates && [
+                    {includeLanguageAlternates && !canonicalQuery && [
                       <link key="ro" rel="alternate" hrefLang="ro" href={hreflangRo} />,
                       <link key="ru" rel="alternate" hrefLang="ru" href={hreflangRu} />,
                       <link key="en" rel="alternate" hrefLang="en" href={hreflangEn} />,

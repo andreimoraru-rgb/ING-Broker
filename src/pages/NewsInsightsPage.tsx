@@ -3,8 +3,8 @@ import { translations, Language } from '../translations';
 import { SEO } from '../components/SEO';
 import { motion } from 'motion/react';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-import { articles } from '../data/articles';
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import { articles } from '../data/articleMetadata';
 import { localizedPath } from '../utils/localizedRoutes';
 import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
 import { articlePhotoSource } from '../data/articlePhotoBranding';
@@ -17,8 +17,9 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
   const navigate = useNavigate();
   const currentArticles = articles[lang] || articles['ro'];
   const [isScrolled, setIsScrolled] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
-  const [currentPage, setCurrentPage] = useState(1);
+  const [params, setParams] = useSearchParams();
+  const selectedCategory = params.get('category') || 'All';
+  const query = params.get('q') || '';
   const articlesPerPage = 9;
 
   useEffect(() => {
@@ -31,28 +32,38 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Get unique categories from articles
-  const categories = ['All', ...Array.from(new Set(currentArticles.flatMap(article => article.tags)))].filter(cat => 
-    !['Asigurări', 'Moldova', 'Страхование', 'Молдова', 'Insurance'].includes(cat)
-  );
-
-  const filteredArticles = selectedCategory === 'All' 
-    ? currentArticles 
-    : currentArticles.filter(article => article.tags.includes(selectedCategory));
-
-  const totalPages = Math.ceil(filteredArticles.length / articlesPerPage);
+  const categoryNames = {
+    ro: ['Toate', 'Transport', 'Construcții și bunuri', 'Răspunderi și cyber', 'Agricultură și energie', 'Sănătate și viață', 'Alte riscuri'],
+    ru: ['Все', 'Транспорт', 'Строительство и имущество', 'Ответственность и киберриски', 'Сельское хозяйство и энергия', 'Здоровье и жизнь', 'Другие риски'],
+    en: ['All', 'Transport', 'Construction and property', 'Liability and cyber', 'Agriculture and energy', 'Health and life', 'Other risks'],
+  };
+  const categories = ['All', 'transport', 'property', 'liability', 'agro-energy', 'health-life', 'other'];
+  const categoryFor = (slug: string) => /cargo|cmr|transport|flot|auto|rca|casco|carte-verde|avio|maritim|nave|iaht|port|drone/.test(slug) ? 'transport'
+    : /raspund|profes|omisiune|cyber|directori/.test(slug) ? 'liability'
+    : /agric|seceta|culturi|irig|zooteh|vit|livad|energie|eolien|bess|biogaz|solar|fotovolta/.test(slug) ? 'agro-energy'
+    : /viata|sanatate|medical|spital|boal|matern|optic|kineto|check-up|angajati|accident/.test(slug) ? 'health-life'
+    : /construct|montaj|bunuri|imobil|propriet|clad|depoz|echipament|utilaj|incend|drum|pod|tunel/.test(slug) ? 'property' : 'other';
+  const normalize = (text: string) => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase();
+  const searchTerms = normalize(query).split(/\s+/).filter(Boolean).map(term => term.length > 5 ? term.slice(0, -2) : term);
+  const filteredArticles = currentArticles.filter(article =>
+    (selectedCategory === 'All' || categoryFor(article.slug) === selectedCategory)
+    && searchTerms.every(term => normalize(`${article.title} ${article.excerpt} ${article.tags.join(' ')} ${article.seo.keywords}`).includes(term)));
+  const totalPages = Math.max(1, Math.ceil(filteredArticles.length / articlesPerPage));
+  const currentPage = Math.min(totalPages, Math.max(1, Number.parseInt(params.get('page') || '1', 10) || 1));
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
   const paginatedArticles = filteredArticles.slice(indexOfFirstArticle, indexOfLastArticle);
 
   const handleCategoryChange = (category: string) => {
-    setSelectedCategory(category);
-    setCurrentPage(1);
+    const next = new URLSearchParams(params);
+    category === 'All' ? next.delete('category') : next.set('category', category);
+    next.delete('page');
+    setParams(next);
   };
-
-  const handlePageChange = (pageNumber: number) => {
-    setCurrentPage(pageNumber);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const pageHref = (page: number) => {
+    const next = new URLSearchParams(params);
+    page === 1 ? next.delete('page') : next.set('page', String(page));
+    return `${localizedPath('/news', lang)}${next.size ? '?' + next.toString() : ''}#article-results`;
   };
 
   const seo = {
@@ -80,10 +91,12 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
         lang={lang} 
         schema={schema}
         keywords={seo.keywords}
+        canonicalQuery={currentPage > 1 && !query && selectedCategory === 'All' ? `?page=${currentPage}` : ''}
+        noIndex={Boolean(query || selectedCategory !== 'All')}
       />
 
       {/* Back Button */}
-      <div className="fixed top-32 left-6 z-50">
+      <div className="absolute top-20 left-6 z-30">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -134,28 +147,32 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
       </section>
 
       {/* Categories Filter */}
-      <section className="py-12 bg-white border-b border-gray-100 sticky top-0 z-40 shadow-sm">
+      <section className="py-6 bg-white border-b border-gray-100 shadow-sm" aria-label={lang === 'ro' ? 'Caută articole' : lang === 'ru' ? 'Поиск статей' : 'Find articles'}>
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-wrap gap-4 justify-center">
-            {categories.map((cat) => (
+          <label htmlFor="article-search" className="block text-sm font-bold mb-2">{lang === 'ro' ? 'Caută un produs sau o întrebare' : lang === 'ru' ? 'Найдите продукт или вопрос' : 'Search for a product or question'}</label>
+          <input id="article-search" type="search" value={query} onChange={e => { const next = new URLSearchParams(params); e.target.value ? next.set('q', e.target.value) : next.delete('q'); next.delete('page'); setParams(next, { replace: true }); }} className="w-full border border-gray-200 px-4 py-3 mb-4 bg-white text-secondary focus:outline-2 focus:outline-primary" />
+          <div className="flex gap-2 overflow-x-auto pb-2 md:flex-wrap md:justify-center">
+            {categories.map((cat, index) => (
               <button
                 key={cat}
                 onClick={() => handleCategoryChange(cat)}
-                className={`px-6 py-2 text-[10px] font-bold uppercase tracking-widest transition-all ${
+                aria-pressed={selectedCategory === cat}
+                className={`shrink-0 px-4 py-3 text-[10px] font-bold uppercase tracking-widest transition-all ${
                   selectedCategory === cat 
                     ? 'bg-primary text-white shadow-lg shadow-primary/20' 
                     : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
                 }`}
               >
-                {cat === 'All' ? (lang === 'ro' ? 'Toate' : lang === 'ru' ? 'Все' : 'All') : cat}
+                {categoryNames[lang][index]}
               </button>
             ))}
           </div>
         </div>
       </section>
       
-      <section className="py-24 px-6">
+      <section id="article-results" className="py-12 md:py-24 px-6" aria-live="polite">
         <div className="max-w-7xl mx-auto">
+          <p className="text-sm text-gray-600 mb-6">{filteredArticles.length} {lang === 'ro' ? 'articole' : lang === 'ru' ? 'статей' : 'articles'}</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {paginatedArticles.map((article, i) => (
               <motion.a
@@ -192,7 +209,7 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
                       </span>
                     ))}
                   </div>
-                  <h3 className="text-2xl font-bold text-secondary tracking-tighter group-hover:text-primary transition-colors duration-300 mb-4 leading-tight line-clamp-2">{article.title}</h3>
+                  <h2 className="text-2xl font-bold text-secondary tracking-tighter group-hover:text-primary transition-colors duration-300 mb-4 leading-tight line-clamp-2">{article.title}</h2>
                   <p className="text-gray-600 font-light leading-relaxed mb-8 flex-grow text-sm line-clamp-3">{article.excerpt}</p>
                   <div className="mt-auto pt-6 border-t border-gray-100 flex justify-between items-center">
                      <span className="inline-flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.3em] text-secondary group-hover:text-primary transition-colors">
@@ -208,37 +225,41 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
           {/* Pagination */}
           {totalPages > 1 && (
             <div className="mt-20 flex flex-wrap justify-center items-center gap-4">
-              <button
-                onClick={() => handlePageChange(currentPage - 1)}
-                disabled={currentPage === 1}
-                className="p-4 border border-gray-200 text-secondary disabled:opacity-30 hover:bg-gray-50 transition-all"
+              <a
+                href={pageHref(Math.max(1, currentPage - 1))}
+                aria-disabled={currentPage === 1}
+                aria-label={lang === 'ro' ? 'Pagina anterioară' : lang === 'ru' ? 'Предыдущая страница' : 'Previous page'}
+                className={`p-4 border border-gray-200 text-secondary hover:bg-gray-50 transition-all ${currentPage === 1 ? 'pointer-events-none opacity-30' : ''}`}
               >
                 <ArrowLeft size={20} />
-              </button>
+              </a>
               
               <div className="flex flex-wrap justify-center gap-2 max-w-full">
                 {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                  <button
+                  <a
                     key={page}
-                    onClick={() => handlePageChange(page)}
-                    className={`w-12 h-12 text-[10px] font-bold transition-all ${
+                    href={pageHref(page)}
+                    aria-current={currentPage === page ? 'page' : undefined}
+                    aria-label={`${lang === 'ro' ? 'Pagina' : lang === 'ru' ? 'Страница' : 'Page'} ${page}`}
+                    className={`w-12 h-12 inline-flex items-center justify-center text-[10px] font-bold transition-all ${
                       currentPage === page 
                         ? 'bg-primary text-white shadow-lg shadow-primary/20' 
                         : 'bg-white border border-gray-100 text-secondary hover:bg-gray-50'
                     }`}
                   >
                     {page}
-                  </button>
+                  </a>
                 ))}
               </div>
 
-              <button
-                onClick={() => handlePageChange(currentPage + 1)}
-                disabled={currentPage === totalPages}
-                className="p-4 border border-gray-200 text-secondary disabled:opacity-30 hover:bg-gray-50 transition-all"
+              <a
+                href={pageHref(Math.min(totalPages, currentPage + 1))}
+                aria-disabled={currentPage === totalPages}
+                aria-label={lang === 'ro' ? 'Pagina următoare' : lang === 'ru' ? 'Следующая страница' : 'Next page'}
+                className={`p-4 border border-gray-200 text-secondary hover:bg-gray-50 transition-all ${currentPage === totalPages ? 'pointer-events-none opacity-30' : ''}`}
               >
                 <ArrowRight size={20} />
-              </button>
+              </a>
             </div>
           )}
         </div>
