@@ -41,6 +41,7 @@ import { OffersPage } from './pages/OffersPage';
 import { NewsInsightsPage } from './pages/NewsInsightsPage';
 import { ArticlePage } from './pages/ArticlePage';
 import { articleMedia } from './data/articleMedia';
+import { articles as articleLocaleIndex } from './data/articleMetadata';
 import { ConstructionShieldPage } from './pages/ConstructionShieldPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { CarEarPage } from './pages/CarEarPage';
@@ -188,8 +189,11 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
   const isEditorialArticle = lang === 'ro' && location.pathname.startsWith('/news/') && Object.hasOwn(articleMedia, location.pathname.slice(6));
   const isDarkHero = !isEditorialArticle && !['/termeni-si-conditii', '/politica-de-confidentialitate'].includes(location.pathname);
 
+  const articleSlug = location.pathname.startsWith('/news/') ? location.pathname.slice(6) : null;
+  const languageAvailable = (l: Language) => !articleSlug || articleLocaleIndex[l].some(article => article.slug === articleSlug);
+  const unavailableLanguage = lang === 'ro' ? 'Articolul nu este disponibil în această limbă.' : lang === 'ru' ? 'Статья недоступна на этом языке.' : 'This article is not available in this language.';
   const changeLanguage = (l: Language) => {
-    if (l === lang) return;
+    if (l === lang || !languageAvailable(l)) return;
     window.location.assign(localizedPath(location.pathname, l) + location.search + location.hash);
   };
 
@@ -255,6 +259,9 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
               <button
                 key={l}
                 onClick={() => changeLanguage(l)}
+                disabled={!languageAvailable(l)}
+                title={!languageAvailable(l) ? unavailableLanguage : undefined}
+                aria-label={!languageAvailable(l) ? `${l.toUpperCase()}: ${unavailableLanguage}` : undefined}
                 className={`text-[10px] font-display font-bold uppercase tracking-widest transition-all duration-300 hover:text-primary ${lang === l ? 'text-primary' : scrolled || !isDarkHero ? 'text-secondary/60' : 'text-white/60'}`}
               >
                 {l}
@@ -290,6 +297,9 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
                 <button
                   key={l}
                   onClick={() => { changeLanguage(l); setIsOpen(false); }}
+                  disabled={!languageAvailable(l)}
+                  title={!languageAvailable(l) ? unavailableLanguage : undefined}
+                  aria-label={!languageAvailable(l) ? `${l.toUpperCase()}: ${unavailableLanguage}` : undefined}
                   className={`text-xs font-bold uppercase tracking-widest ${lang === l ? 'text-primary' : 'text-secondary'}`}
                 >
                   {l}
