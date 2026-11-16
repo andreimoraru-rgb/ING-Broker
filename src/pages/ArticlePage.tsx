@@ -119,7 +119,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={() => navigate('/news')}
-          className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
+          className={`flex min-h-11 min-w-11 items-center gap-0 lg:gap-4 px-2 lg:px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
             isScrolled 
               ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50' 
               : 'bg-white/10 hover:bg-white/20 border-white/20 text-white'
@@ -130,7 +130,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
           }`}>
             <ArrowLeft size={16} strokeWidth={3} />
           </div>
-          <span>
+          <span className="sr-only lg:not-sr-only">
             {lang === 'ro' ? 'Înapoi la Noutăți' : lang === 'ru' ? 'Назад к Новостям' : 'Back to News'}
           </span>
         </motion.button>
