@@ -303,15 +303,15 @@ export const PropertyAssetsPage: React.FC<PropertyAssetsPageProps> = ({ lang }) 
                 <div className="flex gap-10">
                   <div className="text-5xl font-light text-primary/20 font-serif italic">01</div>
                   <div>
-                    <h4 className="text-xl font-bold mb-4 tracking-tight">{lang === 'ro' ? 'Expertiză Tehnică' : lang === 'ru' ? 'Техническая экспертиза' : 'Technical Expertise'}</h4>
+                    <h4 className="text-xl font-bold mb-4 tracking-tight">{lang === 'ro' ? 'Analiza informațiilor tehnice' : lang === 'ru' ? 'Анализ технических сведений' : 'Reviewing technical information'}</h4>
                     <p className="text-white/50 font-light leading-relaxed max-w-md">{t.whyUs}</p>
                   </div>
                 </div>
                 <div className="flex gap-10">
                   <div className="text-5xl font-light text-primary/20 font-serif italic">02</div>
                   <div>
-                    <h4 className="text-xl font-bold mb-4 tracking-tight">{lang === 'ro' ? 'Acoperire Globală' : lang === 'ru' ? 'Глобальный охват' : 'Global Coverage'}</h4>
-                    <p className="text-white/50 font-light leading-relaxed max-w-md">{lang === 'ro' ? 'Acces la piețele internaționale de reasigurare pentru riscuri complexe.' : lang === 'ru' ? 'Доступ к международным рынкам перестрахования для сложных рисков.' : 'Access to international reinsurance markets for complex risks.'}</p>
+                    <h4 className="text-xl font-bold mb-4 tracking-tight">{lang === 'ro' ? 'Riscuri și teritoriu' : lang === 'ru' ? 'Риски и территория' : 'Risks and territory'}</h4>
+                    <p className="text-white/50 font-light leading-relaxed max-w-md">{lang === 'ro' ? 'Pentru riscurile complexe, verifică teritoriul, limitele și eventualele condiții de reasigurare. Disponibilitatea și acceptarea nu sunt confirmate de această pagină.' : lang === 'ru' ? 'Для сложных рисков проверьте территорию, лимиты и возможные условия перестрахования. Страница не подтверждает доступность или принятие риска.' : 'For complex risks, check territory, limits and any reinsurance conditions. This page does not confirm availability or acceptance.'}</p>
                   </div>
                 </div>
               </div>
@@ -330,8 +330,8 @@ export const PropertyAssetsPage: React.FC<PropertyAssetsPageProps> = ({ lang }) 
                   />
                 </div>
                 <div className="absolute bottom-4 -left-12 bg-primary p-6 shadow-2xl hidden xl:block z-20">
-                  <p className="text-4xl font-bold tracking-tighter leading-none mb-2">100%</p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-80">{lang === 'ro' ? 'Protecție' : lang === 'ru' ? 'Защита' : 'Protection'}</p>
+                  <p className="text-4xl font-bold tracking-tighter leading-none mb-2">{lang === 'ro' ? 'Riscuri' : lang === 'ru' ? 'Риски' : 'Risks'}</p>
+                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-80">{lang === 'ro' ? 'De analizat' : lang === 'ru' ? 'Для анализа' : 'To assess'}</p>
                 </div>
               </div>
             </div>

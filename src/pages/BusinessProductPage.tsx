@@ -16,7 +16,8 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
   const [isScrolled, setIsScrolled] = useState(false);
   
   // Find the product in the business lines to get the hero image
-  const productLine = translations[lang].business.lines.find(p => p.id === productId);
+  const productLine = translations[lang].business.lines.find(p => p.id === productId)
+    || translations.ro.business.lines.find(p => p.id === productId);
   
   // Get the detailed translations for this product
   // @ts-ignore - we know the keys exist in businessProductsTranslations
@@ -36,6 +37,8 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
     return () => window.removeEventListener('scroll', handleScroll);
   }, [productId]);
 
+  if (productId === 'property') return <Navigate to="/property-assets" replace />;
+  if (productId === 'renewable') return <Navigate to="/renewable-energy" replace />;
   if (!t || !productLine) {
     return <Navigate to="/#business" replace />;
   }
@@ -45,7 +48,7 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
     "@type": "Service",
     "name": seo.title || t.title,
     "description": seo.description || t.subtitle,
-    "image": productLine.image,
+    "image": new URL(productLine.image, 'https://www.ingbroker.md').href,
     "provider": {
       "@type": "Organization",
       "name": "Insurance ING Broker SRL"
@@ -125,7 +128,7 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
   ];
 
   return (
-    <div className="bg-white min-h-screen">
+    <main className="bg-white min-h-screen">
       <SEO 
         title={seo.title || t.title} 
         description={seo.description || t.subtitle} 
@@ -142,18 +145,18 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           onClick={() => navigate('/business')}
-          className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
+          className={`flex min-h-11 min-w-11 items-center gap-0 lg:gap-4 px-2 lg:px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
             isScrolled 
               ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50' 
               : 'bg-white/10 hover:bg-white/20 border-white/20 text-white'
           }`}
         >
           <div className={`p-1 group-hover:-translate-x-1 transition-transform ${
-            isScrolled ? 'text-primary' : 'text-primary'
+            isScrolled ? 'text-primary' : 'text-white'
           }`}>
             <ArrowLeft size={16} strokeWidth={3} />
           </div>
-          <span>
+          <span className="sr-only lg:not-sr-only">
             {lang === 'ro' ? 'Înapoi la Business' : lang === 'ru' ? 'Назад к Бизнесу' : 'Back to Business'}
           </span>
         </motion.button>
@@ -167,7 +170,7 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
             alt={t.title} 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
-            loading="lazy"
+            loading="eager" fetchPriority="high" decoding="async"
           />
           <div className={`absolute inset-0 bg-secondary/${productId === 'liability' ? '20' : '50'} mix-blend-multiply`} />
           <div className={`absolute inset-0 bg-gradient-to-r from-secondary ${productId === 'liability' ? 'via-secondary/5' : 'via-secondary/20'} to-transparent opacity-70`} />
@@ -193,6 +196,7 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
               <motion.button 
+                onClick={() => navigate('/contact')}
                 whileHover={{ scale: 1.05, y: -5, backgroundColor: "#C4191F", boxShadow: "0 20px 40px -10px rgba(227,30,36,0.5)" }}
                 whileTap={{ scale: 0.95 }}
                 className="px-12 py-6 bg-primary text-white font-bold uppercase text-[10px] tracking-[0.3em] transition-all duration-300"
@@ -381,8 +385,8 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
                 <div className="flex gap-10">
                   <div className="text-5xl font-light text-primary/20 font-serif italic">02</div>
                   <div>
-                    <h4 className="text-xl font-bold mb-4 tracking-tight">{lang === 'ro' ? 'Acoperire Globală' : lang === 'ru' ? 'Глобальный охват' : 'Global Coverage'}</h4>
-                    <p className="text-white/50 font-light leading-relaxed max-w-md">{lang === 'ro' ? 'Acces la piețele internaționale de reasigurare pentru riscuri complexe.' : lang === 'ru' ? 'Доступ к международным рынкам перестрахования для сложных рисков.' : 'Access to international reinsurance markets for complex risks.'}</p>
+                    <h4 className="text-xl font-bold mb-4 tracking-tight">{lang === 'ro' ? 'Posibilități de analiză' : lang === 'ru' ? 'Возможности оценки' : 'Assessment options'}</h4>
+                    <p className="text-white/50 font-light leading-relaxed max-w-md">{lang === 'ro' ? 'Pentru riscuri complexe, disponibilitatea unei soluții și implicarea piețelor internaționale se verifică separat. Această pagină nu confirmă acceptarea riscului.' : lang === 'ru' ? 'Для сложных рисков доступность решения и участие международных рынков проверяются отдельно. Страница не подтверждает принятие риска.' : 'For complex risks, solution availability and international market participation need separate confirmation. This page does not confirm risk acceptance.'}</p>
                   </div>
                 </div>
               </div>
@@ -437,6 +441,6 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };

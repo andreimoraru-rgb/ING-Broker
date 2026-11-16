@@ -247,7 +247,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
       <section className="py-24 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-secondary tracking-tighter mb-16">
-            {lang === 'ro' ? 'Partenerii Noștri' : lang === 'ru' ? 'Наши Партнеры' : 'Our Partners'}
+            {lang === 'ro' ? 'Organizații și resurse publice' : lang === 'ru' ? 'Организации и открытые ресурсы' : 'Organisations and public resources'}
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
             {[
@@ -291,7 +291,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
       <section className="py-24 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-secondary tracking-tighter mb-12">
-            {lang === 'ro' ? 'Contactează-ne pentru o ofertă' : lang === 'ru' ? 'Свяжитесь с нами для предложения' : 'Contact us for a quote'}
+            {lang === 'ro' ? 'Discută cerințele programului de reasigurare' : lang === 'ru' ? 'Обсудить требования программы перестрахования' : 'Discuss reinsurance programme requirements'}
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8">
             <motion.a 

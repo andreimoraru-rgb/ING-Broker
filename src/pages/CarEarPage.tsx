@@ -247,6 +247,7 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
         title="Asigurare CAR/EAR pentru construcții în Moldova | ING Broker"
         description="Analiza asigurării CAR/EAR pentru construcții și montaj în Moldova. Vezi documentele, riscurile, limitele și excluderile de verificat înainte de ofertare."
         lang={lang}
+        includeLanguageAlternates={false}
       />
 
       {/* Buton înapoi */}
