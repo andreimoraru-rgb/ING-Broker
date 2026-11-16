@@ -1,6 +1,6 @@
 import { articles, consolidatedLifeSlugs, withdrawnArticleSlugs } from '../src/data/articleMetadata';
 import { splitLocale, localizedPath } from '../src/utils/localizedRoutes';
-import { renderedRoutes, serviceRoutes } from '../src/data/staticRoutes';
+import { renderedRoutesFor, additionalRoRenderedRoutes, serviceRoutes, businessRouteAliases } from '../src/data/staticRoutes';
 
 interface Env {
   ASSETS: {
@@ -56,10 +56,11 @@ export async function onRequest(context: PagesContext): Promise<Response> {
     url.pathname = aboutAliases[url.pathname.replace(/\/$/, '')];
   }
   const normalizedRoute = routePath.replace(/\/$/, '');
+  if (businessRouteAliases[normalizedRoute]) url.pathname = localizedPath(businessRouteAliases[normalizedRoute], lang);
   let canonicalSlug = '';
   try { if (normalizedRoute.startsWith('/news/')) canonicalSlug = decodeURIComponent(normalizedRoute.slice(6)); } catch { /* handled below */ }
   if (consolidatedLifeSlugs.has(canonicalSlug)) url.pathname = localizedPath('/news/asigurare-viata-moldova', lang);
-  else if (url.pathname.endsWith('/') && url.pathname !== '/' && (renderedRoutes.includes(normalizedRoute) || serviceRoutes.includes(normalizedRoute) || articles[lang].some(a => a.slug === canonicalSlug))) url.pathname = url.pathname.slice(0, -1);
+  else if (url.pathname.endsWith('/') && url.pathname !== '/' && (renderedRoutesFor(lang).includes(normalizedRoute) || serviceRoutes.includes(normalizedRoute) || articles[lang].some(a => a.slug === canonicalSlug))) url.pathname = url.pathname.slice(0, -1);
   if (url.toString() !== originalUrl) return Response.redirect(url.toString(), 301);
 
   // Internal build artifacts are served only at their canonical article URLs.
@@ -96,9 +97,12 @@ export async function onRequest(context: PagesContext): Promise<Response> {
   if (routePath.startsWith('/servicii/') && !serviceRoutes.includes(routePath.replace(/\/$/, ''))) {
     return new Response('Not found', { status: 404, headers: { 'X-Robots-Tag': 'noindex' } });
   }
+  if (routePath.startsWith('/business/') && !additionalRoRenderedRoutes.includes(routePath.replace(/\/$/, ''))) {
+    return new Response('Not found', { status: 404, headers: { 'X-Robots-Tag': 'noindex' } });
+  }
 
   const normalizedPath = routePath.length > 1 ? routePath.replace(/\/$/, '') : routePath;
-  if (renderedRoutes.includes(normalizedPath)) {
+  if (renderedRoutesFor(lang).includes(normalizedPath)) {
     if (url.pathname.endsWith('/')) {
       url.pathname = url.pathname.slice(0, -1);
       return Response.redirect(url.toString(), 301);
