@@ -45,7 +45,7 @@ export const RenewableEnergyPage: React.FC<RenewableEnergyPageProps> = ({ lang }
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <main className="bg-white min-h-screen">
       <SEO 
         title={seo.title} 
         description={seo.description} 
@@ -363,6 +363,6 @@ export const RenewableEnergyPage: React.FC<RenewableEnergyPageProps> = ({ lang }
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };

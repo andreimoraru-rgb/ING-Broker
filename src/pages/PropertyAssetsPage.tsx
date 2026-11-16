@@ -45,7 +45,7 @@ export const PropertyAssetsPage: React.FC<PropertyAssetsPageProps> = ({ lang }) 
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <main className="bg-white min-h-screen">
       <SEO 
         title={seo.title} 
         description={seo.description} 
@@ -367,6 +367,6 @@ export const PropertyAssetsPage: React.FC<PropertyAssetsPageProps> = ({ lang }) 
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };

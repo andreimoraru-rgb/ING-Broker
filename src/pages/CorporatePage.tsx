@@ -288,7 +288,7 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
   ];
 
   return (
-    <div className="bg-white min-h-screen font-sans text-gray-900">
+    <main className="bg-white min-h-screen font-sans text-gray-900">
       <SEO
         title="Asigurări corporative în Moldova | Analiza riscurilor B2B | ING Broker"
         description="Analiza asigurărilor corporative în Moldova: flotă, bunuri, răspundere și programe pentru angajați. Vezi ce informații și condiții trebuie verificate."
@@ -630,6 +630,6 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 };

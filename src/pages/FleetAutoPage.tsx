@@ -218,7 +218,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <main className="bg-white min-h-screen">
       <SEO
         title="Asigurare Flotă Auto Companii Moldova 2026 - RCA, CASCO, CMR, Carte Verde | ING Broker"
         description="Asigurare flotă auto pentru companii din Moldova: RCA, Carte Verde, CASCO, CMR și Cargo. Vezi informațiile, limitele și condițiile de verificat înainte de ofertare."
@@ -741,6 +741,6 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };

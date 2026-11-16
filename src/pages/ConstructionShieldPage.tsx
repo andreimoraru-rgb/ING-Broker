@@ -232,7 +232,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
   );
 
   return (
-    <div className="bg-slate-50 min-h-screen font-sans text-slate-900">
+    <main className="bg-slate-50 min-h-screen font-sans text-slate-900">
       <SEO
         title={c.title}
         description={c.heroDesc}
@@ -478,6 +478,6 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 };

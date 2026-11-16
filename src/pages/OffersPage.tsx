@@ -210,7 +210,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
   const c = content[lang];
 
   return (
-    <div className="bg-white min-h-screen">
+    <main className="bg-white min-h-screen">
       <SEO 
         title={`${c.title} | Insurance ING Broker SRL`} 
         description={c.subtitle} 
@@ -351,6 +351,6 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           })}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
