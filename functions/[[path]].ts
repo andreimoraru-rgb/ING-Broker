@@ -20,9 +20,7 @@ const exactSpaRoutes = new Set([
   '/construction-shield',
   '/oferte',
   '/news',
-  '/admin/ai-tools',
   '/contact',
-  '/ai-studio',
   '/despre-noi',
   '/o-nas',
   '/about-us',
@@ -66,6 +64,8 @@ export async function onRequest(context: PagesContext): Promise<Response> {
 
   // Internal build artifacts are served only at their canonical article URLs.
   if (/^\/_(?:editorial|pages)\//.test(url.pathname)) return new Response('Not found', { status: 404 });
+  // Keep the production security closure explicit even if ASSETS uses SPA fallback.
+  if (['/ai-studio', '/admin/ai-tools'].includes(routePath.replace(/\/$/, ''))) return new Response('Not found', { status: 404, headers: { 'X-Robots-Tag': 'noindex' } });
   let articleSlug: string;
   try { articleSlug = decodeURIComponent(routePath.replace(/\/$/, '').slice('/news/'.length)); }
   catch { return new Response('Not found', { status: 404 }); }
