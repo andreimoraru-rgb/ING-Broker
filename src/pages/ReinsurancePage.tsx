@@ -276,7 +276,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
                 <img 
                   src={partner.img} 
                   alt={partner.name} 
-                  className={`max-w-full h-full object-contain mix-blend-multiply ${partner.scale || ''}`}
+                  className={`max-w-full h-full object-contain mix-blend-multiply ${partner.scale || ''} max-sm:scale-100`}
                   referrerPolicy="no-referrer"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
