@@ -102,6 +102,8 @@ export async function onRequest(context: PagesContext): Promise<Response> {
   }
 
   const normalizedPath = routePath.length > 1 ? routePath.replace(/\/$/, '') : routePath;
+  // Pagina principală are HTML inițial în limba adresei; adresele /, /ru/ și /en/ rămân neschimbate.
+  if (normalizedPath === '/') return context.env.ASSETS.fetch(assetRequest(context.request, `/_pages/${lang}/home`));
   if (renderedRoutesFor(lang).includes(normalizedPath)) {
     if (url.pathname.endsWith('/')) {
       url.pathname = url.pathname.slice(0, -1);

@@ -14,6 +14,8 @@ for (const lang of ['ro', 'ru', 'en'] as Language[]) {
   for (const article of articles[lang].filter(a => a.reviewStatus === 'approved')) {
     pages.push({ path: localizedPath(`/news/${article.slug}`, lang), output: `dist/_editorial/${lang === 'ro' ? '' : lang + '/'}${article.slug}.html`, image: article.heroImage || article.image });
   }
+  // Pagina principală, în limba fiecărei adrese (/, /ru/, /en/), fără a schimba adresele.
+  pages.push({ path: localizedPath('/', lang), output: `dist/_pages/${lang}/home.html` });
   for (const path of renderedRoutesFor(lang)) {
     pages.push({ path: localizedPath(path, lang), output: `dist/_pages/${lang}${path}.html` });
     if (path === '/news') for (let page = 2; page <= Math.ceil(articles[lang].length / 9); page++) {

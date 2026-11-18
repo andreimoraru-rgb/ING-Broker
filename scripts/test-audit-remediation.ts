@@ -14,6 +14,18 @@ assert.equal(await (await get('/servicii/asigurare-raspundere-profesionala')).te
 assert.equal(await (await get('/en/servicii/asigurare-cyber-moldova')).text(), '/_pages/en/servicii/asigurare-cyber-moldova');
 assert.equal(await (await get('/news?page=2')).text(), '/_pages/ro/news/page-2');
 assert.equal((await get('/_pages/ro/news')).status, 404);
+// Pagina principală: HTML inițial în limba adresei, fără redirecționare și fără superlative.
+for (const [path, lang, title] of [['/', 'ro', 'Asigurări pentru persoane și companii'], ['/ru/', 'ru', 'Страхование для частных лиц и компаний'], ['/en/', 'en', 'Insurance for individuals and companies']] as const) {
+  const response = await get(path);
+  assert.equal(response.status, 200, path);
+  assert.equal(await response.text(), `/_pages/${lang}/home`, path);
+  if (existsSync(`dist/_pages/${lang}/home.html`)) {
+    const html = readFileSync(`dist/_pages/${lang}/home.html`, 'utf8');
+    assert.ok(html.includes(`<html lang="${lang}">`), path + ' lang');
+    assert.ok(html.includes(title), path + ' title');
+    for (const claim of ['Elită', 'Elite', 'Лидер', 'premium', 'премиальн']) assert.ok(!html.includes(claim), path + ' ' + claim);
+  }
+}
 assert.equal((await get('/news/no-such-article')).status, 404);
 assert.equal((await get('/news/asigurare-sanatate-mentala')).status, 410);
 const host = await onRequest({ request: new Request('https://ingbroker.md/news?x=1'), env: { ASSETS: fakeAssets } });
