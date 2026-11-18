@@ -45,7 +45,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
   };
 
   return (
-    <div className="bg-white text-secondary font-sans min-h-screen">
+    <main className="bg-white text-secondary font-sans min-h-screen">
       <SEO 
         title={seo.title} 
         description={seo.description} 
@@ -367,7 +367,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

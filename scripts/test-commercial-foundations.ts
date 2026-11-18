@@ -14,7 +14,7 @@ for(const lang of ['ro','ru','en'] as const){
  }
  assert.equal((await get((lang==='ro'?'':'/'+lang)+'/business/not-a-product')).status,404);
 }
-assert.equal(additionalRoRenderedRoutes.length,18);
+assert.equal(additionalRoRenderedRoutes.length,19);
 for(const path of additionalRoRenderedRoutes){
  const html=readFileSync('dist/_pages/ro'+path+'.html','utf8');
  assert.equal((html.match(/<h1\b/g)||[]).length,1,path);
