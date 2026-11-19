@@ -23,9 +23,9 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
         {
           id: 'saloane-auto',
           title: 'Saloane Auto',
-          desc: 'Analiza stocului de vehicule, a răspunderii civile și a activităților dealerului. Bunurile, riscurile și condițiile acceptate se confirmă în ofertă.',
+          desc: 'Discuție despre colaborarea cu salonul auto: solicitări CASCO pentru clienți, responsabilități și condiții stabilite în scris.',
           image: '/salon-auto.jpg',
-          link: '/saloane-auto.html'
+          link: '/saloane-auto'
         },
         {
           id: 'companii-it',
@@ -53,7 +53,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
           title: 'Flotă Auto Corporativă',
           desc: 'Analiza flotei de minimum 5vehicule: RCA, Carte Verde, CASCO, CMR și CARGO, după activitate. Termenul, ofertele disponibile și condițiile se confirmă separat.',
           image: '/camionete.jpg',
-          link: '/business/transport-logistica'
+          link: '/oferte/flote-auto'
         },
         {
           id: 'drone-liability',

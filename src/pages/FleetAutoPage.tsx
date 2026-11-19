@@ -203,7 +203,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://www.ingbroker.md" },
           { "@type": "ListItem", "position": 2, "name": "Oferte", "item": "https://www.ingbroker.md/oferte" },
-          { "@type": "ListItem", "position": 3, "name": "Asigurare Flotă Auto", "item": "https://www.ingbroker.md/business/transport-logistica" }
+          { "@type": "ListItem", "position": 3, "name": "Asigurare Flotă Auto", "item": "https://www.ingbroker.md/oferte/flote-auto" }
         ]
       },
       {

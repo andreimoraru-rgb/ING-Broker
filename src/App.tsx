@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-import { BrowserRouter, MemoryRouter, Routes, Route, Link, useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, MemoryRouter, Routes, Route, Link, Navigate, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Shield, 
@@ -190,7 +190,7 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
   const isDarkHero = !isEditorialArticle && !['/termeni-si-conditii', '/politica-de-confidentialitate'].includes(location.pathname);
 
   const articleSlug = location.pathname.startsWith('/news/') ? location.pathname.slice(6) : null;
-  const romanianOnlyCommercial = ['/business/transport-logistica', '/servicii/asigurari-constructii-car-ear', '/servicii/asigurari-corporative-moldova'].includes(location.pathname);
+  const romanianOnlyCommercial = ['/oferte/flote-auto', '/business/transport-logistica', '/servicii/asigurari-constructii-car-ear', '/servicii/asigurari-corporative-moldova'].includes(location.pathname);
   const languageAvailable = (l: Language) => (!romanianOnlyCommercial || l === 'ro') && (!articleSlug || articleLocaleIndex[l].some(article => article.slug === articleSlug));
   const unavailableLanguage = lang === 'ro' ? 'Pagina nu este disponibilă în această limbă.' : lang === 'ru' ? 'Страница недоступна на этом языке.' : 'This page is not available in this language.';
   const changeLanguage = (l: Language) => {
@@ -1319,7 +1319,7 @@ export default function App({ initialPath }: { initialPath?: string } = {}) {
           <Route path="/property-assets" element={<PropertyAssetsPage lang={lang} />} />
           <Route path="/oferte/flote-auto" element={<FleetAutoPage lang={lang} />} />
           <Route path="/oferte/transportatori-auto" element={<FleetAutoPage lang={lang} />} />
-          <Route path="/business/transport-logistica" element={<FleetAutoPage lang={lang} />} />
+          <Route path="/business/transport-logistica" element={lang === 'ro' ? <Navigate to="/oferte/flote-auto" replace /> : <FleetAutoPage lang={lang} />} />
           <Route path="/servicii/asigurari-constructii-car-ear" element={<CarEarPage lang={lang} />} />
           <Route path="/servicii/asigurari-corporative-moldova" element={<CorporatePage lang={lang} />} />
           <Route path="/servicii/asigurare-raspundere-profesionala" element={<ProfessionalIndemnityPage lang={lang} />} />

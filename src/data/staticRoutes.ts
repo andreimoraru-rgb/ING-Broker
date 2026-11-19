@@ -14,7 +14,7 @@ export const renderedRoutes = [
 // These existing commercial pages have been reviewed in Romanian. Do not
 // declare their hardcoded or partial locale variants equivalent by prerendering.
 export const additionalRoRenderedRoutes = [
-  '/business/transport-logistica', '/reinsurance', '/construction-shield',
+  '/oferte/flote-auto', '/reinsurance', '/construction-shield',
   '/renewable-energy', '/property-assets', '/oferte',
   '/servicii/asigurari-constructii-car-ear', '/servicii/asigurari-corporative-moldova',
   '/business/liability', '/business/professional',
@@ -27,6 +27,13 @@ export const businessRouteAliases: Record<string, string> = {
   '/business/property': '/property-assets',
   '/business/renewable': '/renewable-energy',
 };
+
+// Romanian-only consolidation. Do not create redirects to unreviewed locales.
+export const romanianRouteRedirects: Record<string, string> = {
+  '/business/transport-logistica': '/oferte/flote-auto',
+};
+
+export const canonicalCommercialRoutes = ['/oferte/flote-auto', '/saloane-auto'];
 
 export function renderedRoutesFor(lang: string) {
   return lang === 'ro' ? [...renderedRoutes, ...additionalRoRenderedRoutes] : renderedRoutes;

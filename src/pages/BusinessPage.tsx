@@ -143,7 +143,7 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
                 {hero.primary}
               </motion.button>
               <motion.button 
-                onClick={() => navigate(lang === 'ro' ? '/business/transport-logistica' : '/reinsurance')}
+                onClick={() => navigate(lang === 'ro' ? '/oferte/flote-auto' : '/reinsurance')}
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 className="px-12 py-5 bg-white/5 border border-white/20 text-white font-display font-bold uppercase text-[10px] tracking-[0.3em] transition-all hover:bg-white/10 hover:border-white/40 text-center"
@@ -248,7 +248,7 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
                       </div>
                     ))}
                   </div>
-                  <button onClick={() => navigate('/business/transport-logistica')} className="mt-10 px-8 py-4 border border-white/30 hover:border-primary hover:text-primary transition-colors uppercase tracking-widest text-xs font-bold">Vezi soluțiile pentru transport</button>
+                  <button onClick={() => navigate('/oferte/flote-auto')} className="mt-10 px-8 py-4 border border-white/30 hover:border-primary hover:text-primary transition-colors uppercase tracking-widest text-xs font-bold">Vezi soluțiile pentru transport</button>
                 </div>
                 <div id="audit-risc" className="text-secondary">
                   <B2BLeadForm title="Solicită analiza programului de asigurare" source="business_page" />
