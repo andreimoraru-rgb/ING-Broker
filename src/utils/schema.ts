@@ -42,6 +42,18 @@ export function localBusinessSchema() {
 }
 
 /** FAQ schema - primește array de întrebări/răspunsuri */
+/** Autorul articolului: Person dacă numele are funcție după virgulă („Nume, Funcție Firmă”), altfel Organization. */
+export function authorSchema(author: string, origin: string) {
+  const [name, ...role] = author.split(', ');
+  if (!role.length) return { '@type': 'Organization', name: author, url: origin };
+  return {
+    '@type': 'Person',
+    name,
+    jobTitle: role.join(', ').replace(/\s*Insurance ING Broker SRL$/, ''),
+    worksFor: { '@type': 'Organization', name: 'Insurance ING Broker SRL', url: origin },
+  };
+}
+
 export function faqSchema(faqs: Array<{ question: string; answer: string }>) {
   return {
     "@context": "https://schema.org",

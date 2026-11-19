@@ -3,7 +3,7 @@ import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { Language } from '../translations';
 import { SEO } from '../components/SEO';
 import { SchemaMarkup } from '../components/SchemaMarkup';
-import { breadcrumbSchema, faqSchema } from '../utils/schema';
+import { authorSchema, breadcrumbSchema, faqSchema } from '../utils/schema';
 import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, User, Tag } from 'lucide-react';
 import { articles, consolidatedLifeSlugs, withdrawnArticleSlugs } from '../data/articleMetadata';
@@ -70,11 +70,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
     "url": articleUrl,
     "mainEntityOfPage": articleUrl,
     "image": articleImage,
-    "author": {
-      "@type": "Organization",
-      "name": article.author || "Insurance ING Broker SRL",
-      "url": articleOrigin
-    },
+    "author": authorSchema(article.author || "Insurance ING Broker SRL", articleOrigin),
     "publisher": {
       "@type": "Organization",
       "name": "Insurance ING Broker SRL",

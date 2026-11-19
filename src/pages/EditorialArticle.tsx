@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import type { Article } from '../data/articles';
 import { SEO } from '../components/SEO';
 import { SchemaMarkup } from '../components/SchemaMarkup';
-import { breadcrumbSchema, faqSchema } from '../utils/schema';
+import { authorSchema, breadcrumbSchema, faqSchema } from '../utils/schema';
 import './editorial-article.css';
 import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
 import { articlePhotoSource } from '../data/articlePhotoBranding';
@@ -41,7 +41,7 @@ export const EditorialArticle = ({ article }: { article: Article }) => {
     '@context': 'https://schema.org', '@type': 'Article', headline: article.title,
     description: article.excerpt, mainEntityOfPage: url, url, inLanguage: 'ro-MD',
     image: { '@type': 'ImageObject', url: image, caption: article.imageCaption || undefined },
-    author: { '@type': 'Organization', name: article.author, url: origin },
+    author: authorSchema(article.author, origin),
     publisher: { '@type': 'Organization', name: 'Insurance ING Broker SRL', logo: { '@type': 'ImageObject', url: `${origin}/Logo%20ING%20Broker.png` } },
     datePublished: new Date(article.date).toISOString().slice(0, 10), dateModified: article.updatedAt,
   };

@@ -1625,14 +1625,14 @@ const revisedArticles: Record<string, Article[]> = {
       content: renderArticleRevision(revision),
       updatedAt: revision.sourcesCheckedAt ? revision.updatedAt : '2026-10-25',
       preserveLegacyLayout: revision.preserveLegacyLayout,
-      author: 'Echipa editorială ING Broker',
+      author: revision.author || 'Echipa editorială ING Broker',
       image: articleMedia[article.slug].image,
       heroImage: articleMedia[article.slug].heroImage,
       imageAlt: articleMedia[article.slug].imageAlt,
       imageCaption: articleMedia[article.slug].imageCaption,
       reviewStatus: 'approved' as const,
       tags: [articleMedia[article.slug].topic, 'Moldova'],
-      seo: { title: `${revision.title} | ING Broker`, description: revision.description, keywords: articleMedia[article.slug].keywords }
+      seo: { title: revision.seoTitle || `${revision.title} | ING Broker`, description: revision.description, keywords: articleMedia[article.slug].keywords }
     };
   })
 };
