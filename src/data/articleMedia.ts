@@ -105,3 +105,6 @@ for(const [slug,asset] of Object.entries(operationsMedia20261111)){
 }
 
 for(const [slug,asset] of Object.entries(catalogMedia20261112)){articleMedia[slug]={image:asset.image,heroImage:undefined,imageAlt:asset.alt[0],imageCaption:'',topic:asset.topic,keywords:asset.keywords};}
+
+// 20.11.2026, briefing V2.0: imagine de distribuire 1200x630 sub 150 KB, decupată din aceeași scenă aprobată.
+articleMedia['asigurare-constructii-montaj']={...articleMedia['asigurare-constructii-montaj'],image:'/images/articles/moldova/ing-broker-car-constructii-santier-2026.webp',imageAlt:'Asigurare CAR construcții Moldova 2026: echipă cu căști de protecție verifică montajul unei instalații pe șantier'};
