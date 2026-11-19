@@ -43,7 +43,7 @@ export const B2BLeadForm: React.FC<{ title: string; source?: string }> = ({ titl
       `Cerere audit asigurări corporative\nCompanie: ${form.company}\nContact: ${form.name}\nTelefon: ${form.phone}\nEmail: ${form.email}\nNr. angajați: ${form.employees}\nDetalii: ${form.message}`
     );
     window.open(`https://wa.me/37369526003?text=${whatsappText}`, '_blank');
-    trackEvent('audit_submit', {
+    trackEvent('whatsapp_message_prepared', {
       source,
       page_path: window.location.pathname,
       lead_type: 'b2b',
@@ -180,7 +180,7 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
       icon: <Car size={28} className="text-red-600" />,
       tag: 'Flotă auto',
       title: 'RCA, CASCO, Carte Verde',
-      desc: 'Program pentru flote de minimum 5 vehicule. Analizăm tipurile de vehicule, utilizarea și expirarea polițelor. În funcție de evaluarea asigurătorului și de condițiile comparate, pot exista economii de până la 25%, fără un rezultat garantat.'
+      desc: 'Program pentru flote de minimum 5 vehicule. Analizăm vehiculele, utilizarea, rutele și expirarea polițelor. Comparăm ofertele disponibile pe aceleași limite, franșize și perioade. Prețul și condițiile se confirmă individual.'
     },
     {
       icon: <Building2 size={28} className="text-red-600" />,

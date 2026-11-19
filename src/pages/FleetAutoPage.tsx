@@ -70,7 +70,7 @@ const targets = [
 ];
 
 const advantages = [
-  { num: '01', title: 'Tarif negociat cu asigurătorii', desc: 'Pentru flote de minimum 5 vehicule, pot exista economii de până la 25%, în funcție de evaluarea riscului și de ofertele comparate. Nu este o reducere garantată; compară aceleași limite și condiții.' },
+  { num: '01', title: 'Oferte comparate pe aceleași condiții', desc: 'Pentru flote de minimum 5 vehicule, comparăm ofertele disponibile pentru aceleași vehicule, riscuri, limite, franșize și perioade de asigurare. Costul și eventualele economii se confirmă în oferta individuală.' },
   { num: '02', title: 'Contract unic de brokeraj', desc: 'Mandatul de brokeraj poate centraliza administrarea polițelor convenite. Contractele de asigurare, riscurile și condițiile fiecărei categorii de vehicule rămân distincte.' },
   { num: '03', title: 'Calendar de reînnoire', desc: 'Centralizăm datele de expirare. O eventuală aliniere a perioadelor se discută cu asigurătorii și nu modifică automat polițele existente. Verifică valabilitatea înaintea fiecărei deplasări.' },
   { num: '04', title: 'Contact pentru flota dvs.', desc: 'Stabilim persoana de contact și canalele de comunicare pentru programul convenit: telefon, email sau WhatsApp.' },
@@ -93,7 +93,7 @@ const faqs = [
   },
   {
     q: 'Cât costă asigurarea de flotă auto în Moldova în 2026?',
-    a: 'Prima de asigurare, adică suma plătită pentru poliță, depinde de produs, vehicule, utilizare, rute, istoricul daunelor și condițiile acceptate. Pentru minimum 5 vehicule pot exista economii de până la 25%, fără un rezultat garantat. O comparație utilă păstrează aceleași limite, franșize și perioade; nu folosi un tarif istoric drept ofertă actuală.',
+    a: 'Prima de asigurare, adică suma plătită pentru poliță, depinde de produs, vehicule, utilizare, rute, istoricul daunelor și condițiile acceptate. Programul de flotă pornește de la minimum 5 vehicule. Eventualele economii se evaluează prin compararea ofertelor pe aceleași limite, franșize și perioade; nu folosi un tarif istoric drept ofertă actuală.',
   },
   {
     q: 'Cum verificați asigurătorul și oferta propusă?',
