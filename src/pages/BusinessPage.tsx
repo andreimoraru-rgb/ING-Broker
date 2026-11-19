@@ -70,7 +70,7 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <main className="bg-gray-50 min-h-screen">
       <SEO 
         title={seo.title} 
         description={seo.description} 
@@ -356,6 +356,6 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
       </section>
 
 
-    </div>
+    </main>
   );
 };

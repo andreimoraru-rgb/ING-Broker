@@ -165,7 +165,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
   ]);
 
   return (
-    <div className="contact-page bg-white min-h-screen">
+    <main className="contact-page bg-white min-h-screen">
       <SEO
         title={`${c.title} | Insurance ING Broker SRL`}
         description={c.subtitle}
@@ -534,7 +534,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -70,7 +70,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
   };
 
   return (
-    <div className="product-review bg-slate-50 min-h-screen font-sans text-slate-900">
+    <main className="product-review bg-slate-50 min-h-screen font-sans text-slate-900">
       <SEO
         title={seo.title}
         description={seo.description}
@@ -384,6 +384,6 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 };

@@ -78,7 +78,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
   };
 
   return (
-    <div className="product-review bg-slate-50 min-h-screen font-sans text-slate-900">
+    <main className="product-review bg-slate-50 min-h-screen font-sans text-slate-900">
       <SEO
         title={seo.title}
         description={seo.description}
@@ -432,6 +432,6 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 };

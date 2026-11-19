@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {additionalRoRenderedRoutes,businessRouteAliases,renderedRoutesFor} from '../src/data/staticRoutes';
+import {additionalRoRenderedRoutes,businessRouteAliases,renderedRoutesFor,renderedRoutes} from '../src/data/staticRoutes';
 import {translations} from '../src/translations';
 import {businessProductsTranslations} from '../src/translations/businessProducts';
 import {onRequest} from '../functions/[[path]]';
@@ -15,6 +15,10 @@ for(const lang of ['ro','ru','en'] as const){
  assert.equal((await get((lang==='ro'?'':'/'+lang)+'/business/not-a-product')).status,404);
 }
 assert.equal(additionalRoRenderedRoutes.length,21);
+for(const lang of ['ro','ru','en'])for(const path of renderedRoutes){
+ const html=readFileSync(`dist/_pages/${lang}${path}.html`,'utf8');
+ assert.equal((html.match(/<main\b/g)||[]).length,1,lang+path+' one main landmark');
+}
 for(const path of additionalRoRenderedRoutes){
  const html=readFileSync('dist/_pages/ro'+path+'.html','utf8');
  assert.equal((html.match(/<h1\b/g)||[]).length,1,path);

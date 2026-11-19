@@ -85,7 +85,7 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
   };
 
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <main className="bg-gray-50 min-h-screen">
       <SEO 
         title={seo.title} 
         description={seo.description} 
@@ -269,6 +269,6 @@ export const NewsInsightsPage: React.FC<NewsInsightsPageProps> = ({ lang }) => {
           )}
         </div>
       </section>
-    </div>
+    </main>
   );
 };
