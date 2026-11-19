@@ -14,6 +14,8 @@ import './article-reading.css';
 import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
 import { articlePhotoSource } from '../data/articlePhotoBranding';
 import { articleResponsiveImages } from '../data/articleResponsiveImages';
+import { RelatedResources } from '../components/RelatedResources';
+import { articleResourceTopics } from '../data/relatedResources';
 
 interface ArticlePageProps {
   lang: Language;
@@ -204,6 +206,10 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
                 {lang === 'ru' ? 'Оформить полис на UAS.md' : 'Încheie polița pe UAS.md'}
               </a>
             </section>
+          )}
+
+          {articleResourceTopics[article.slug] && (
+            <RelatedResources lang={lang} topic={articleResourceTopics[article.slug]} />
           )}
 
           <div className="mt-16 pt-8 border-t border-gray-100">

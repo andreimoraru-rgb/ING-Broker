@@ -14,7 +14,7 @@ for(const lang of ['ro','ru','en'] as const){
  }
  assert.equal((await get((lang==='ro'?'':'/'+lang)+'/business/not-a-product')).status,404);
 }
-assert.equal(additionalRoRenderedRoutes.length,19);
+assert.equal(additionalRoRenderedRoutes.length,21);
 for(const path of additionalRoRenderedRoutes){
  const html=readFileSync('dist/_pages/ro'+path+'.html','utf8');
  assert.equal((html.match(/<h1\b/g)||[]).length,1,path);
@@ -35,4 +35,5 @@ for(const path of ['/oferte/flote-auto','/servicii/asigurari-constructii-car-ear
  assert.ok(!renderedRoutesFor('ru').includes(path));assert.ok(!renderedRoutesFor('en').includes(path));
 }
 const sitemap=readFileSync('dist/sitemap.xml','utf8');for(const path of Object.keys(businessRouteAliases))assert.ok(!sitemap.includes('https://www.ingbroker.md'+path+'</loc>'));
-console.log(JSON.stringify({additionalRomanianSSG:18,connectedProductDictionaries:30,equivalentAliasRedirects:6,unknownBusiness404:3,invisibleFaqSchema:'removed',hardcodedPagesNotMisrepresentedAsTranslated:3,sitemapAliasHygiene:'PASS'}));
+for(const lang of ['ru','en'])for(const path of renderedRoutesFor(lang))assert.ok(sitemap.includes(`https://www.ingbroker.md/${lang}${path}</loc>`),lang+path+' reviewed locale in sitemap');
+console.log(JSON.stringify({additionalRomanianSSG:additionalRoRenderedRoutes.length,connectedProductDictionaries:30,equivalentAliasRedirects:6,unknownBusiness404:3,invisibleFaqSchema:'removed',hardcodedPagesNotMisrepresentedAsTranslated:3,sitemapAliasHygiene:'PASS'}));

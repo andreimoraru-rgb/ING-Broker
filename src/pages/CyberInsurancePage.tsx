@@ -86,7 +86,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => navigate('/')}
+          onClick={() => navigate(localizedPath('/', lang))}
           className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
             isScrolled
               ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50'
@@ -132,7 +132,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
               <button
-                onClick={() => navigate('/contact')}
+                onClick={() => navigate(localizedPath('/contact', lang))}
                 className="px-10 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 group"
               >
                 {c.cta} <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -226,7 +226,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
               <div className="flex items-center gap-3 mb-8">
                 <div className="h-px w-12 bg-primary" />
                 <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">
-                  {lang === 'ro' ? 'Gratuit' : lang === 'ru' ? 'Бесплатно' : 'Free'}
+                  {lang === 'ro' ? 'Pregătirea analizei' : lang === 'ru' ? 'Подготовка анализа' : 'Preparing the assessment'}
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-8 leading-tight">
@@ -236,7 +236,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
                 {c.assessDesc}
               </p>
               <button
-                onClick={() => navigate('/contact')}
+                onClick={() => navigate(localizedPath('/contact', lang))}
                 className="px-10 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-all shadow-xl shadow-primary/20 flex items-center gap-3 group"
               >
                 {c.cta} <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -285,7 +285,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
                 <div className="text-xs text-slate-400 mb-6">{plan.note}</div>
                 <div className="h-px bg-slate-100 mb-6" />
                 <button
-                  onClick={() => navigate('/contact')}
+                  onClick={() => navigate(localizedPath('/contact', lang))}
                   className={`w-full py-4 rounded-xl font-bold transition-all ${plan.popular ? 'bg-primary text-white hover:bg-primary-dark shadow-lg shadow-primary/20' : 'bg-slate-100 text-slate-900 hover:bg-slate-200'}`}
                 >
                   {c.cta}
@@ -349,7 +349,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
           <p className="text-xl text-white/80 font-light mb-12">{c.ctaDesc}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={() => navigate('/contact')}
+              onClick={() => navigate(localizedPath('/contact', lang))}
               className="px-12 py-5 bg-white text-primary font-bold rounded-xl hover:bg-slate-100 transition-all shadow-2xl"
             >
               {c.ctaBtn}

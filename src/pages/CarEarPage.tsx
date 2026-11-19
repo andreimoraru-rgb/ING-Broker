@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { Language } from '../translations';
+import { RelatedResources } from '../components/RelatedResources';
 
 interface CarEarPageProps {
   lang: Language;
@@ -276,7 +277,7 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=90"
-            alt="Șantier construcții Moldova"
+            alt="Echipă cu căști și veste de protecție pe un șantier"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gray-900/72" />
@@ -660,6 +661,8 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
           </div>
         </div>
       </section>
+
+      <RelatedResources lang={lang} topic="construction" />
 
       {/* Formular */}
       <section id="formular" className="py-24 bg-gray-50">

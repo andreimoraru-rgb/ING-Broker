@@ -22,6 +22,7 @@ import { SEO } from '../components/SEO';
 import { Language } from '../translations';
 import { piContent, piSeo } from '../data/piPageContent';
 import { localizedPath } from '../utils/localizedRoutes';
+import { RelatedResources } from '../components/RelatedResources';
 
 interface ProfessionalIndemnityPageProps {
   lang: Language;
@@ -93,7 +94,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => navigate('/')}
+          onClick={() => navigate(localizedPath('/', lang))}
           className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
             isScrolled
               ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50'
@@ -112,7 +113,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=90"
-            alt="Professional services"
+            alt={lang === 'ro' ? 'Documente și calculatoare pe masa unei echipe la birou' : lang === 'ru' ? 'Документы и ноутбуки на рабочем столе команды' : 'Documents and laptops on a team desk'}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/72 backdrop-blur-[2px]" />
@@ -139,7 +140,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
               <button
-                onClick={() => navigate('/contact')}
+                onClick={() => navigate(localizedPath('/contact', lang))}
                 className="px-10 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 group"
               >
                 {c.cta} <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -218,7 +219,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=85"
-                alt="Professional services office"
+                alt={lang === 'ro' ? 'Persoane discutând în jurul unei mese' : lang === 'ru' ? 'Люди обсуждают вопросы за общим столом' : 'People talking around a table'}
                 className="rounded-3xl shadow-2xl"
               />
               <div className="absolute -bottom-10 -left-10 bg-primary p-8 rounded-2xl text-white shadow-xl hidden md:block">
@@ -318,7 +319,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
                 <div className="text-xs text-slate-400 mb-8">{plan.limit}</div>
                 <div className="h-px bg-slate-100 mb-8" />
                 <button
-                  onClick={() => navigate('/contact')}
+                  onClick={() => navigate(localizedPath('/contact', lang))}
                   className={`w-full py-4 rounded-xl font-bold transition-all ${plan.popular ? 'bg-primary text-white hover:bg-primary-dark shadow-lg shadow-primary/20' : 'bg-slate-100 text-slate-900 hover:bg-slate-200'}`}
                 >
                   {c.cta}
@@ -382,6 +383,8 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
         </div>
       </section>
 
+      <RelatedResources lang={lang} topic="professional" />
+
       {/* CTA Section */}
       <section className="py-32 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -394,7 +397,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
           <p className="text-xl text-white/80 font-light mb-12">{c.ctaDesc}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={() => navigate('/contact')}
+              onClick={() => navigate(localizedPath('/contact', lang))}
               className="px-12 py-5 bg-white text-primary font-bold rounded-xl hover:bg-slate-100 transition-all shadow-2xl"
             >
               {c.ctaBtn}

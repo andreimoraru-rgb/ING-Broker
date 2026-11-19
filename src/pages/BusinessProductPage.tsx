@@ -3,6 +3,7 @@ import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { translations, Language } from '../translations';
 import { SEO } from '../components/SEO';
 import { businessProductSeo } from '../data/businessProductSeo';
+import { RelatedResources } from '../components/RelatedResources';
 import { motion } from 'motion/react';
 import { ShieldCheck, ArrowRight, ArrowLeft } from 'lucide-react';
 
@@ -277,7 +278,7 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={item.image || industryImages[i % industryImages.length]} 
-                    alt={item.title} 
+                    alt={item.imageAlt || item.title}
                     className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110"
                     referrerPolicy="no-referrer"
                     loading="lazy"
@@ -413,6 +414,10 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
           </div>
         </div>
       </section>
+
+      {(productId === 'cargo' || productId === 'professional' || productId === 'construction' || productId === 'liability') && (
+        <RelatedResources lang={lang} topic={productId} />
+      )}
 
       {/* Final CTA */}
       <section className="py-32 bg-gray-50">
