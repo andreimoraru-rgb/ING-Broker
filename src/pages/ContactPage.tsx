@@ -116,7 +116,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
     const text = encodeURIComponent(
       `Solicitare de pe ingbroker.md\nNume: ${form.name}\nCompanie: ${form.company}\nTelefon: ${form.phone}\nEmail: ${form.email}\nServiciu: ${form.service}\nDetalii: ${form.message}`
     );
-    trackEvent('quote_request_submit', {
+    trackEvent('whatsapp_message_prepared', {
       source: 'contact_page',
       page_path: window.location.pathname,
       lead_type: form.service.includes('Corporate') || form.service.includes('Корпоратив') ? 'b2b' : 'general',
