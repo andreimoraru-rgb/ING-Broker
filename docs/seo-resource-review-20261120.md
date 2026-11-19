@@ -10,6 +10,8 @@ The existing Romanian Terms and Privacy pages receive their own initial HTML thr
 
 The five shared route components also use a main landmark in all existing languages. Classes, images and wording are preserved.
 
+The professional-liability and Cyber heroes reserve space below the fixed navigation so their back buttons remain clickable. This was confirmed by browser hit testing after the navigation intercepted the old button positions.
+
 Contact and home navigation preserve the selected language on the reviewed pages. The prepared Contact message uses labels in that language. Analytics names, event properties, bootstrap, destinations and history remain unchanged. The unsupported free-assessment badge on Cyber is replaced with a neutral preparation label.
 
 Index eligibility, a successful sitemap submission, search impressions and confirmed indexing are different observations. Google URL Inspection can return an older crawl snapshot. Image Search performance identifies landing pages, not every individual indexed image. This release makes no indexing or ranking guarantee.
