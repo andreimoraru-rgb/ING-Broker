@@ -1040,6 +1040,9 @@ const Footer = ({ lang }: { lang: Language }) => {
             <p className="text-gray-500 text-sm font-light leading-relaxed max-w-xs mb-10">
               {t.desc}
             </p>
+            <p className="text-gray-500 text-xs font-light leading-relaxed max-w-xs -mt-6 mb-10">
+              {t.status}
+            </p>
             <div className="flex flex-wrap gap-4 justify-start">
               <motion.a 
                 href="https://t.me/INGBroker" 
