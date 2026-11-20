@@ -85,7 +85,7 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => navigate(localizedPath('/', lang))}
+          onClick={() => navigate('/')}
           className={`flex items-center gap-4 px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
             isScrolled
               ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50'

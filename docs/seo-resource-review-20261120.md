@@ -22,3 +22,5 @@ References checked on 20 November 2026:
 - https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
 
 Rollback: revert this scoped change through the existing GitHub/Cloudflare Pages workflow, retaining subsequent unrelated work. No domain, DNS, mail or billing change is required.
+
+Final navigation verification on 21 November 2026: useNavigate destinations are relative to the existing router basename. Passing an already-localized path produces duplicate prefixes such as /en/en/contact. Native href values, metadata and full-page language switching still use localizedPath. Browser regression checks compare exact pathnames, not suffix glob matches.
