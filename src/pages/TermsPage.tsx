@@ -25,7 +25,7 @@ const TermsPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-20 selection:bg-blue-100">
+    <main className="min-h-screen bg-white pt-24 pb-20 selection:bg-blue-100">
       <SEO 
         lang={lang}
         title={`${t.title} ${t.titleItalic} | ING Broker`}
@@ -124,7 +124,7 @@ const TermsPage: React.FC = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -10,7 +10,7 @@ export const businessProductsTranslations = {
           { title: 'Retail și Comerț', desc: 'Magazine, showroom-uri și centre comerciale cu flux mare de clienți.', image: '/e-commerce-2.png' },
           { title: 'Horeca', desc: 'Restaurante, hoteluri și cafenele expuse riscurilor de vătămare a clienților.', image: '/horeca.jpg' },
           { title: 'Construcții', desc: 'Companii de construcții care pot afecta proprietățile învecinate.', image: '/constructie-inginerie-2.jpg' },
-          { title: 'Producție', desc: 'Fabrici și unități de producție care livrează bunuri către consumatori.', image: '/retail-comet-2.jpeg' }
+          { title: 'Producție', desc: 'Fabrici și unități de producție care livrează bunuri către consumatori.', image: '/images/articles/moldova/utilaje-industriale-audit-scene-20261111.webp', imageAlt: 'Tehnician la un utilaj de prelucrare într-un atelier industrial' }
         ]
       },
       analysis: {
@@ -221,7 +221,7 @@ export const businessProductsTranslations = {
           { title: 'Logistică și Transport', desc: 'Companii de transport rutier, aerian, maritim și feroviar.', image: '/logistica.jpg' },
           { title: 'Import / Export', desc: 'Companii comerciale care derulează tranzacții internaționale de mărfuri.' },
           { title: 'Producție și Industrie', desc: 'Fabrici care își transportă produsele finite către distribuitori.', image: '/productie cargo.png' },
-          { title: 'Distribuție și Retail', desc: 'Companii care gestionează fluxuri constante de aprovizionare.', image: '/air cargo.jpg' }
+          { title: 'Distribuție și Retail', desc: 'Companii care gestionează fluxuri constante de aprovizionare.', image: '/images/articles/moldova/depozit-logistic-audit-scene-20261111.webp', imageAlt: 'Rafturi cu mărfuri pe paleți și stivuitor într-un depozit logistic' }
         ]
       },
       analysis: {
@@ -536,7 +536,7 @@ export const businessProductsTranslations = {
           { title: 'Розничная торговля', desc: 'Магазины, шоурумы и торговые центры с большим потоком клиентов.', image: '/e-commerce-2.png' },
           { title: 'Horeca', desc: 'Рестораны, отели и кафе, подверженные рискам травмирования клиентов.', image: '/horeca.jpg' },
           { title: 'Строительство', desc: 'Строительные компании, которые могут нанести ущерб соседним объектам.', image: '/constructie-inginerie-2.jpg' },
-          { title: 'Производство', desc: 'Заводы и производственные подразделения, поставляющие товары потребителям.', image: '/retail-comet-2.jpeg' }
+          { title: 'Производство', desc: 'Заводы и производственные подразделения, поставляющие товары потребителям.', image: '/images/articles/moldova/utilaje-industriale-audit-scene-20261111.webp', imageAlt: 'Техник у обрабатывающего станка в промышленном цехе' }
         ]
       },
       analysis: {
@@ -745,7 +745,7 @@ export const businessProductsTranslations = {
           { title: 'Логистика и транспорт', desc: 'Компании, занимающиеся автомобильными, авиационными, морскими и ж/д перевозками.', image: '/logistica.jpg' },
           { title: 'Импорт / Экспорт', desc: 'Торговые компании, осуществляющие международные сделки с товарами.' },
           { title: 'Производство и промышленность', desc: 'Заводы, транспортирующие готовую продукцию дистрибьюторам.', image: '/productie cargo.png' },
-          { title: 'Дистрибуция и ритейл', desc: 'Компании, управляющие постоянными потоками поставок.', image: '/air cargo.jpg' }
+          { title: 'Дистрибуция и ритейл', desc: 'Компании, управляющие постоянными потоками поставок.', image: '/images/articles/moldova/depozit-logistic-audit-scene-20261111.webp', imageAlt: 'Стеллажи с товарами на поддонах и погрузчик на логистическом складе' }
         ]
       },
       analysis: {
@@ -1060,7 +1060,7 @@ export const businessProductsTranslations = {
           { title: 'Retail and Trade', desc: 'Stores, showrooms, and shopping centers with high customer flow.', image: '/e-commerce-2.png' },
           { title: 'Horeca', desc: 'Restaurants, hotels, and cafes exposed to customer injury risks.', image: '/horeca.jpg' },
           { title: 'Construction', desc: 'Construction companies that can affect neighboring properties.', image: '/constructie-inginerie-2.jpg' },
-          { title: 'Production', desc: 'Factories and production units delivering goods to consumers.', image: '/retail-comet-2.jpeg' }
+          { title: 'Production', desc: 'Factories and production units delivering goods to consumers.', image: '/images/articles/moldova/utilaje-industriale-audit-scene-20261111.webp', imageAlt: 'Technician operating a machining tool in an industrial workshop' }
         ]
       },
       analysis: {
@@ -1269,7 +1269,7 @@ export const businessProductsTranslations = {
           { title: 'Logistics and Transport', desc: 'Road, air, sea, and rail transport companies.', image: '/logistica.jpg' },
           { title: 'Import / Export', desc: 'Trading companies conducting international commodity transactions.' },
           { title: 'Production and Industry', desc: 'Factories transporting finished products to distributors.', image: '/productie cargo.png' },
-          { title: 'Distribution and Retail', desc: 'Companies managing constant supply flows.', image: '/air cargo.jpg' }
+          { title: 'Distribution and Retail', desc: 'Companies managing constant supply flows.', image: '/images/articles/moldova/depozit-logistic-audit-scene-20261111.webp', imageAlt: 'Shelves with palletised goods and a forklift in a logistics warehouse' }
         ]
       },
       analysis: {

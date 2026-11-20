@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { articles } from '../src/data/articles';
 import { prepareArticleData } from './prepare-article-data';
-import { serviceRoutes, businessRouteAliases, romanianRouteRedirects, canonicalCommercialRoutes } from '../src/data/staticRoutes';
+import { serviceRoutes, businessRouteAliases, romanianRouteRedirects, canonicalCommercialRoutes, renderedRoutes } from '../src/data/staticRoutes';
 import { translations } from '../src/translations';
 import { localizedPath } from '../src/utils/localizedRoutes';
 const resolved = prepareArticleData();
@@ -22,7 +22,8 @@ const generated = Object.entries(resolved).flatMap(([lang, list]) => list.filter
   const alternates = equivalents.length === 3 ? equivalents.map(locale => `\n    <xhtml:link rel="alternate" hreflang="${locale}" href="${escapeXml(new URL(localizedPath(`/news/${article.slug}`, locale as 'ro' | 'ru' | 'en'), 'https://www.ingbroker.md').href)}"/>`).join('') : '';
   return `<url>\n    <loc>${loc}</loc>${lastmod}${alternates}\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`;
 }));
-const extraRoutes = [...serviceRoutes, ...canonicalCommercialRoutes, ...translations.ro.business.lines.map(p => businessRouteAliases[`/business/${p.id}`] || `/business/${p.id}`)];
+const reviewedLocaleRoutes = (['ru', 'en'] as const).flatMap(lang => renderedRoutes.map(path => localizedPath(path, lang)));
+const extraRoutes = [...serviceRoutes, ...canonicalCommercialRoutes, ...translations.ro.business.lines.map(p => businessRouteAliases[`/business/${p.id}`] || `/business/${p.id}`), ...reviewedLocaleRoutes];
 for (const path of extraRoutes) {
   const loc = `https://www.ingbroker.md${path}`;
   if (!retained.some(entry => entry.includes(`<loc>${loc}</loc>`))) retained.push(`<url><loc>${loc}</loc></url>`);

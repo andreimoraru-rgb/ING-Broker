@@ -20,7 +20,7 @@ export const additionalRoRenderedRoutes = [
   '/business/liability', '/business/professional',
   '/business/do', '/business/cyber', '/business/cargo', '/business/fleet',
   '/business/credit', '/business/construction', '/business/benefits',
-  '/business/agriculture', '/despre-noi',
+  '/business/agriculture', '/despre-noi', '/termeni-si-conditii', '/politica-de-confidentialitate',
 ];
 
 export const businessRouteAliases: Record<string, string> = {

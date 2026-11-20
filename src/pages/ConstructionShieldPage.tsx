@@ -25,6 +25,7 @@ import { SEO } from '../components/SEO';
 import { SchemaMarkup } from '../components/SchemaMarkup';
 import { serviceSchema, breadcrumbSchema, faqSchema } from '../utils/schema';
 import { Language } from '../translations';
+import { RelatedResources } from '../components/RelatedResources';
 
 interface ConstructionShieldPageProps {
   lang: Language;
@@ -265,7 +266,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=90" 
-            alt="Construction site" 
+            alt={lang === 'ro' ? 'Echipă cu căști și veste de protecție pe un șantier' : lang === 'ru' ? 'Команда в защитных касках и жилетах на строительной площадке' : 'A team wearing safety helmets and vests on a construction site'}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/70 backdrop-blur-[2px]" />
@@ -384,7 +385,7 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
             <div className="relative">
               <img 
                 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85" 
-                alt="Construction coverage" 
+                alt={lang === 'ro' ? 'Muncitori cu echipament de protecție execută lucrări pe șantier' : lang === 'ru' ? 'Рабочие в защитном снаряжении выполняют работы на стройплощадке' : 'Workers wearing protective equipment carry out work on a construction site'}
                 className="rounded-3xl shadow-2xl"
               />
               <div className="absolute -bottom-10 -left-10 bg-primary p-8 rounded-2xl text-white shadow-xl hidden md:block">
@@ -434,6 +435,8 @@ export const ConstructionShieldPage: React.FC<ConstructionShieldPageProps> = ({ 
           </div>
         </div>
       </section>
+
+      <RelatedResources lang={lang} topic="construction" />
 
       {/* CTA Section */}
       <section className="py-32 bg-primary relative overflow-hidden">

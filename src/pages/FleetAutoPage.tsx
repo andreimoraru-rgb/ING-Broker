@@ -257,7 +257,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
         <div className="absolute inset-0 z-0">
           <img
             src="/camionete.jpg"
-            alt="Flotă auto corporativă asigurată - Insurance ING Broker Moldova"
+            alt="Autoutilitare și camioane parcate lângă o hală"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
@@ -578,7 +578,7 @@ export const FleetAutoPage: React.FC<FleetAutoPageProps> = ({ lang }) => {
                   <img
                     src="/flota_1.jpg"
                     className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
-                    alt="Flotă auto asigurată Moldova"
+                    alt="Autoutilitare albe parcate lângă rampele unui depozit"
                     referrerPolicy="no-referrer"
                     loading="lazy"
                   />
