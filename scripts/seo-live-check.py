@@ -114,6 +114,13 @@ def jsonld_types(raw_blocks):
     return sorted(set(types)), errors
 
 
+def context(text, word):
+    i = text.lower().find(word.lower())
+    if i < 0:
+        return f"{word} (doar în cod, nu în textul vizibil)"
+    return f"{word} („...{text[max(0, i - 40):i + len(word) + 20]}...”)"
+
+
 def fetch(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "ro,ru;q=0.8"})
     try:
@@ -179,7 +186,8 @@ def analyse(url):
         "cnpf_count": body.count("CNPF"),
         "bnm_present": any(s.lower() in low for s in STATUS_BNM),
         "supravegheat_present": "supravegheat" in low or "надзор" in low,
-        "forbidden_found": [w for w in FORBIDDEN if w.lower() in low],
+        # cu context, ca să se vadă dacă e o promisiune sau o negație („nu sunt garantate”)
+        "forbidden_found": [context(text, w) for w in FORBIDDEN if w.lower() in low],
     })
     return res
 
