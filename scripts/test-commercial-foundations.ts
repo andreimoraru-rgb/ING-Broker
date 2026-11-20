@@ -30,7 +30,7 @@ assert.doesNotMatch(construction,/"@type":"FAQPage"/,'Do not publish schema for 
 assert.ok(construction.includes('id="detalii-program"'),'Existing details CTA target');
 assert.ok(construction.includes('href="tel:+37379030209"'),'Verified public CEO telephone');
 assert.ok(readFileSync('dist/_pages/ro/renewable-energy.html','utf8').includes('href="tel:+37379030209"'),'Call now uses telephone link');
-for(const path of ['/business/transport-logistica','/servicii/asigurari-constructii-car-ear','/servicii/asigurari-corporative-moldova']){
+for(const path of ['/oferte/flote-auto','/servicii/asigurari-constructii-car-ear','/servicii/asigurari-corporative-moldova']){
  assert.equal((readFileSync('dist/_pages/ro'+path+'.html','utf8').match(/rel="alternate"/g)||[]).length,0,path+' must not assert unreviewed language equivalence');
  assert.ok(!renderedRoutesFor('ru').includes(path));assert.ok(!renderedRoutesFor('en').includes(path));
 }

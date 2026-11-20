@@ -1,6 +1,6 @@
 import { articles, consolidatedLifeSlugs, withdrawnArticleSlugs } from '../src/data/articleMetadata';
 import { splitLocale, localizedPath } from '../src/utils/localizedRoutes';
-import { renderedRoutesFor, additionalRoRenderedRoutes, serviceRoutes, businessRouteAliases } from '../src/data/staticRoutes';
+import { renderedRoutesFor, additionalRoRenderedRoutes, serviceRoutes, businessRouteAliases, romanianRouteRedirects } from '../src/data/staticRoutes';
 
 interface Env {
   ASSETS: {
@@ -56,6 +56,7 @@ export async function onRequest(context: PagesContext): Promise<Response> {
     url.pathname = aboutAliases[url.pathname.replace(/\/$/, '')];
   }
   const normalizedRoute = routePath.replace(/\/$/, '');
+  if (lang === 'ro' && romanianRouteRedirects[normalizedRoute]) url.pathname = romanianRouteRedirects[normalizedRoute];
   if (businessRouteAliases[normalizedRoute]) url.pathname = localizedPath(businessRouteAliases[normalizedRoute], lang);
   let canonicalSlug = '';
   try { if (normalizedRoute.startsWith('/news/')) canonicalSlug = decodeURIComponent(normalizedRoute.slice(6)); } catch { /* handled below */ }
@@ -97,7 +98,9 @@ export async function onRequest(context: PagesContext): Promise<Response> {
   if (routePath.startsWith('/servicii/') && !serviceRoutes.includes(routePath.replace(/\/$/, ''))) {
     return new Response('Not found', { status: 404, headers: { 'X-Robots-Tag': 'noindex' } });
   }
-  if (routePath.startsWith('/business/') && !additionalRoRenderedRoutes.includes(routePath.replace(/\/$/, ''))) {
+  const businessPath = routePath.replace(/\/$/, '');
+  const preservedLegacyLocaleRoute = lang !== 'ro' && Boolean(romanianRouteRedirects[businessPath]);
+  if (routePath.startsWith('/business/') && !additionalRoRenderedRoutes.includes(businessPath) && !preservedLegacyLocaleRoute) {
     return new Response('Not found', { status: 404, headers: { 'X-Robots-Tag': 'noindex' } });
   }
 
