@@ -17,6 +17,10 @@ import { editorialOperations20261111 } from './editorialOperations20261111';
 
 export interface ArticleRevision {
   title: string;
+  /** Titlu SEO separat, când H1 e prea lung pentru „titlu | ING Broker”. */
+  seoTitle?: string;
+  /** Autor nominal; implicit „Echipa editorială ING Broker”. */
+  author?: string;
   updatedAt?: string;
   sourcesCheckedAt?: string;
   preserveLegacyLayout?: boolean;

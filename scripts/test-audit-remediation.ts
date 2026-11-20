@@ -45,6 +45,9 @@ for (const lang of ['ro', 'ru', 'en']) {
     assert.equal((html.match(/<h1\b/g) || []).length, 1, path);
     assert.equal((html.match(/rel="canonical"/g) || []).length, 1, path);
     assert.ok(!html.includes('office@ingbroker.md'));
+    // FAQ vizibil în română => schema FAQPage cu exact aceleași întrebări.
+    const faqCount = (html.match(/<h2[^>]*>[^<]*frecvente[^<]*<\/h2>([\s\S]*?)(?=<h2)/i)?.[1].match(/<h3\b/g) || []).length;
+    if (lang === 'ro' && faqCount) assert.equal((html.match(/"@type":"Question"/g) || []).length, faqCount, path + ' FAQPage');
   }
 }
 const entry = readFileSync('dist/index.html', 'utf8').match(/<script[^>]*type="module"[^>]*src="([^"]+)"/)?.[1];

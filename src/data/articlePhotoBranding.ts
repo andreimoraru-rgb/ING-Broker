@@ -19,6 +19,8 @@ for(const asset of Object.values(operationsMedia20261111)){
 for(const name of Object.values(auditMedia20261111)){
  articlePhotoBranding[`/images/articles/moldova/${name}-audit-corner-20261111.webp`]={source:`/images/articles/moldova/${name}-audit-scene-20261111.webp`,defaultColor:'black'};
 }
+// Imaginea 1200x630 a articolului CAR: pagina afișează aceeași scenă curată, cu logo-ul suprapus.
+articlePhotoBranding['/images/articles/moldova/ing-broker-car-constructii-santier-2026.webp']=articlePhotoBranding['/images/articles/moldova/constructii-montaj-audit-corner-20261111.webp'];
 for(const asset of Object.values(energyMedia20261110)){
  articlePhotoBranding[`/images/articles/moldova/${asset.name}-corner-20261110.webp`]={source:`/images/articles/moldova/${asset.name}-scene-20261110.webp`,defaultColor:'white'};
 }
