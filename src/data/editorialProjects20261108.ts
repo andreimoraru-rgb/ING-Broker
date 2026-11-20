@@ -3,57 +3,90 @@ const bnm:[string,string]=['BNM: ce verifici la contractul de asigurare','https:
 // Individual revisions; publication and live QA are tracked in the canonical ledger.
 export const editorialProjects20261108:Record<string,ArticleRevision>={
  'asigurare-constructii-montaj':{
-  title:'Asigurarea lucrărilor de construcții și montaj în Moldova',
-  description:'Cum pregătești analiza asigurării unui șantier: lucrări, materiale, utilaje, terți, probe și recepție. Întrebări pentru antreprenori și investitori.',
-  updatedAt:'2026-11-08',sourcesCheckedAt:'8 noiembrie 2026',preserveLegacyLayout:true,
+  title:'Asigurare CAR pentru un proiect de construcție în Moldova: ce trebuie să știe antreprenorul înainte de a semna contractul',
+  seoTitle:'Asigurare CAR construcții Moldova | ING Broker Moldova',
+  author:'Andrei Moraru, CFO Insurance ING Broker SRL',
+  description:'Asigurarea CAR pentru construcții în Moldova este facultativă. Ce acoperă, ce exclude și ce se verifică înainte de semnare. Ofertă pe ingbroker.md.',
+  updatedAt:'2026-11-20',sourcesCheckedAt:'19 noiembrie 2026',preserveLegacyLayout:true,
   related:['asigurare-buna-executie','Garanția de bună execuție: o cerință distinctă'],
-  sources:[bnm,['MOLDASIG: asigurarea facultativă a lucrărilor de construcție și montaj','https://moldasig.md/optional-insurance-for-construction-and-installation-works']],
-  body:`<p>Asigurarea lucrărilor de construcții și montaj se analizează după proiectul concret, etapele sale și riscurile acceptate în contract. Nu este o garanție că orice problemă de pe șantier va fi despăgubită. Pentru un antreprenor sau investitor din Moldova, dosarul începe cu descrierea lucrării, valoarea, amplasamentul și calendarul real de execuție.</p>
-<p>Acest material explică ce informații să pregătești și cum să compari propunerile. Protecția lucrărilor, a utilajelor și răspunderea față de alte persoane pot avea condiții diferite. Contractul de execuție, autorizațiile aplicabile și obligațiile legale se verifică separat, cu specialiștii proiectului. Articolul nu înlocuiește analiza tehnică sau juridică a unui șantier.</p>
-<h2>Descrie lucrarea și stadiul în care se află</h2>
-<p>Precizează dacă este o construcție nouă, o renovare, o extindere sau montarea unei instalații. Arată ce s-a executat deja și ce urmează. O clădire începută de alt antreprenor ori un spațiu care funcționează în paralel cu renovarea necesită o descriere diferită de un teren liber pe care lucrările încă nu au început.</p>
-<p>Include operațiunile speciale: excavare, lucrări la înălțime, montaj de echipamente sau intervenții lângă instalații existente. Datele se extrag din documentele proiectului, fără a inventa verificări sau avize. Asigurătorul trebuie să poată identifica obiectul pentru care se solicită analiza, nu doar denumirea generală „construcții”.</p>
-<h2>Cine participă și ce responsabilități sunt convenite</h2>
-<p>Identifică investitorul, antreprenorul, subcontractorii și furnizorii implicați. Notează cine cumpără materialele, cine le păstrează și cine montează echipamentul. Cere clarificarea persoanelor și intereselor incluse în propunere. Participarea la aceeași lucrare nu confirmă automat că fiecare firmă și toate bunurile sale sunt asigurate.</p>
-<p>Extrage cerințele de asigurare din contractul de execuție și din documentația beneficiarului. Separă cerințele comerciale de obligațiile prevăzute de lege. Dacă sunt solicitate anumite limite, texte sau documente, prezintă-le înainte de compararea prețurilor. O poliță cu nume potrivit, dar cu obiect diferit, poate să nu răspundă cerinței proiectului.</p>
-<h2>Lucrările, materialele și construcțiile temporare</h2>
-<p>Pagina publică MOLDASIG consultată enumeră lucrări, materiale, echipamente și construcții temporare ca obiecte care pot intra în analiză. Pentru proiectul tău, construiește o listă proprie: ce se execută, ce se aduce pe șantier și ce instalații auxiliare sunt folosite. Confirmarea se caută în propunerea individuală, nu în această enumerare.</p>
-<p>Arată dacă materialele sunt depozitate la amplasament, în alt spațiu sau se află încă în transport. Notează proprietarul lor și momentul predării. Nu considera că o factură sau includerea în deviz confirmă protecția în toate aceste etape. Cere delimitarea transportului, depozitării și folosirii efective în lucrare.</p>
-<h2>Cum pregătești valoarea proiectului</h2>
-<p>Folosește contractul, devizul și documentele justificative pentru a descrie valoarea lucrărilor. Identifică separat bunurile furnizate de beneficiar și echipamentele închiriate. Cere explicația bazei de evaluare acceptate, inclusiv a cheltuielilor care trebuie declarate. Un total estimativ pentru discuția inițială nu trebuie prezentat drept sumă finală confirmată.</p>
-<p>Dacă proiectul se extinde, arată ce se schimbă față de versiunea inițială. Păstrează evidența modificărilor de cantitate, soluție tehnică și calendar. Nu presupune că o valoare declarată la început descrie automat investiția după lucrări suplimentare. Solicită verificarea documentelor de asigurare atunci când datele proiectului se modifică.</p>
-<h2>Amplasamentul și vecinătățile contează</h2>
-<p>Descrie accesul, relieful și construcțiile apropiate. Notează spațiile locuite sau utilizate de alte firme, instalațiile existente și zonele publice din apropiere. Informațiile trebuie să provină din situația observată și documentația disponibilă. Un articol online nu poate confirma starea terenului, rețelelor subterane sau rezistența unei clădiri învecinate.</p>
-<p>Pentru lucrări care afectează elemente existente, cere delimitarea obiectelor și operațiunilor analizate. Identifică cine verifică tehnic situația înainte de începere și cum se păstrează constatările. Nu transforma fotografiile orientative într-o expertiză și nu prezenta polița ca înlocuitor pentru proiectare, supraveghere sau măsuri de siguranță.</p>
-<h2>Utilajele de șantier nu sunt același lucru cu lucrarea</h2>
-<p>Întocmește inventarul tehnicii folosite, cu proprietarul, identificatorii și locul de utilizare. Un excavator închiriat, un echipament al subcontractorului și instalația care urmează să fie montată au roluri diferite. Cere clarificarea obiectelor acceptate și a etapelor în care poate fi analizată protecția lor.</p>
-<p>Discută distinct transportul utilajului, operarea, păstrarea și eventualele avarii interne. Faptul că tehnica este necesară lucrării nu confirmă că toate defecțiunile ei intră în asigurarea șantierului. Păstrează documentele de închiriere și întreținere, fără să deduci condițiile produsului din denumirea unui echipament.</p>
-<h2>Calendarul include montajul, probele și predarea</h2>
-<p>Pregătește un calendar care arată livrarea materialelor, lucrările principale, montajul și testarea instalațiilor. Menționează recepțiile pe etape și zonele date în folosință înainte de încheierea întregului proiect. Cere explicarea momentelor de început și de sfârșit ale protecției pentru fiecare situație discutată.</p>
-<p>O întârziere a lucrării nu prelungește automat perioada înscrisă în poliță. Dacă apar modificări, solicită verificarea lor înainte de expirare. Perioada de remediere a defectelor trebuie citită separat de execuție și probe. Nu presupune că formularea „garanție” din contractul de construcții confirmă aceleași condiții în asigurare.</p>
-<h2>Răspunderea față de terți se verifică distinct</h2>
-<p>Identifică persoanele și bunurile din afara lucrării care ar putea fi afectate de operațiuni. Arată cum sunt separate căile de acces și zonele în care continuă alte activități. Aceste întrebări ajută descrierea riscului, fără să stabilească dinainte răspunderea unei firme sau acceptarea unei pretenții.</p>
-<p>Cere explicația secțiunii de răspundere, a persoanelor incluse și a limitelor sale. Nu extinde automat protecția la accidentele angajaților, răspunderea profesională a proiectantului ori penalitățile beneficiarului. Fiecare poate necesita o analiză distinctă. Păstrează într-un tabel ceea ce este confirmat și ceea ce rămâne în afara propunerii.</p>
-<h2>Asigurarea lucrărilor și garanția de bună execuție</h2>
-<p>Asigurarea daunelor asupra lucrării nu trebuie confundată cu instrumentul cerut pentru garantarea obligațiilor contractuale. Începe prin a identifica problema: repararea unor pagube sau îndeplinirea unei cerințe de garanție a beneficiarului. Compararea doar după preț a unor documente cu obiect diferit poate duce la o alegere nepotrivită.</p>
-<p>Pentru garanție, verifică forma, emitentul acceptat și textul solicitat. Pentru asigurarea șantierului, verifică obiectele, evenimentele, perioada și excluderile. Nu declara că un document îl înlocuiește pe celălalt fără confirmarea beneficiarului și analiza condițiilor. Această delimitare este importantă și când ambele cerințe apar în același contract.</p>
-<h2>Compară riscurile solicitate, nu eticheta produsului</h2>
-<p>Cere o listă clară a evenimentelor acceptate și a excluderilor, adică a situațiilor fără acoperire. Pentru operațiuni speciale, solicită răspuns scris la întrebările proiectului. Denumirile comerciale și formulările generale despre „toate riscurile” nu înseamnă protecție fără limitări, documente sau condiții.</p>
-<p>Franșiza este partea din daună suportată de asigurat potrivit contractului. Compară aplicarea ei și limitele pentru cheltuieli distincte, inclusiv cele de intervenție ori curățare, dacă sunt propuse. Prima de asigurare este suma plătită pentru asigurare. Ea se compară util numai pe aceeași descriere a proiectului și aceleași condiții.</p>
-<h2>Când clădirea rămâne deschisă în timpul lucrărilor</h2>
-<p>Pentru renovarea unui magazin sau birou care continuă să funcționeze, descrie separarea dintre șantier și activitatea curentă. Notează cum circulă clienții și angajații, unde sunt păstrate bunurile existente și cine coordonează intervențiile. Identifică perioadele în care o instalație este oprită ori accesul este modificat. Aceste detalii nu trebuie ascunse în formularea generală „lucrări interioare”.</p>
-<p>Cere confirmarea obiectelor existente și a activităților pentru care este analizată propunerea. Paguba asupra lucrării noi și afectarea mobilierului deja folosit sunt întrebări distincte. Organizarea sigură a spațiului rămâne o sarcină a participanților competenți, nu un serviciu înlocuit de poliță.</p>
-<h2>Dosarul de pregătire pentru un șantier din Moldova</h2>
-<ul><li>Contractul de execuție și cerințele beneficiarului privind asigurarea.</li><li>Descrierea tehnică și stadiul actual al lucrărilor.</li><li>Devizul, valorile și bunurile furnizate de alte părți.</li><li>Calendarul, probele și recepțiile pe etape.</li><li>Amplasamentul, vecinătățile și elementele existente.</li><li>Antreprenorii, subcontractorii și rolurile lor.</li><li>Inventarul utilajelor și situația echipamentelor închiriate.</li><li>Problemele cunoscute, incidentele și modificările proiectului.</li></ul>
-<p>Trimite informațiile necesare prin canalul convenit. Nu publica planuri sensibile sau date personale din documentație într-un formular deschis. Lista este o recomandare de organizare, nu o cerință legală universală. Documentele necesare analizei se confirmă pentru proiectul și produsul concret.</p>
-<h2>După un incident și înainte de reînnoire</h2>
-<p>Aplică măsurile de siguranță și procedura de notificare din contractul existent. Păstrează faptele, constatările și evidența intervențiilor. Nu reporni o instalație nesigură pentru a demonstra funcționarea și nu modifica dovezile unei avarii. Evaluarea tehnică și cea de asigurare au roluri diferite și trebuie documentate corect.</p>
-<p>Înainte de o prelungire, actualizează stadiul, valorile și perioada rămasă. Arată ce părți sunt deja recepționate și ce lucrări continuă. Brokerul poate ajuta la organizarea comparației; acceptarea riscului și soluționarea daunelor aparțin asigurătorului, potrivit documentelor aplicabile. Nu este promisă acceptarea fiecărui proiect.</p>
-<h2>Întrebări frecvente despre construcții și montaj</h2>
-<h3>Asigurarea șantierului include automat utilajele închiriate?</h3><p>Nu presupune includerea. Prezintă inventarul, proprietarul și operațiunile, apoi cere confirmarea obiectelor și perioadelor acceptate.</p>
-<h3>O întârziere prelungește și polița?</h3><p>Nu automat. Compară noul calendar cu valabilitatea documentelor și solicită verificarea modificării înainte de expirare.</p>
-<h3>Garanția de bună execuție înlocuiește asigurarea lucrării?</h3><p>Nu le trata ca echivalente. Cerința de garanție și protecția pentru pagube asupra lucrării au obiecte și condiții distincte.</p>
-<h3>Se poate folosi un tarif de la alt șantier?</h3><p>Un preț anterior este doar un reper de discuție. Evaluarea proiectului actual depinde de lucrările, valorile, perioada și condițiile acceptate.</p>`
+  sources:[['Codul urbanismului și construcțiilor nr. 434/2023 (copie PDF IGSU), art. 225 și art. 390','https://igsu.gov.md/sites/default/files/media/documents/cadrul_normativ/434_28.12.2023.pdf'],['Legea nr. 92/2022 privind activitatea de asigurare sau reasigurare, art. 5 (BNM)','https://bnm.md/files/Lege%20asigur%C4%83ri%2092_2022%20(RO).pdf'],['BNM: Situația financiară a sectorului asigurări pentru anul 2025','https://bnm.md/ro/content/situatia-financiara-sectorului-asigurari-pentru-anul-2025'],['Biroul Național de Statistică: Activitatea asigurătorilor în anul 2025','https://statistica.gov.md/ro/activitatea-asiguratorilor-in-anul-2025-9551_62376.html'],['MOLDASIG: asigurarea facultativă a lucrărilor de construcție și montaj','https://moldasig.md/optional-insurance-for-construction-and-installation-works'],['Acord Grup: asigurarea lucrărilor de construcții și montaj','https://acordgrup.md/ro/servicii/proprietate/asigurarea-lucrarilor-de-constructii-si-montaj'],['Donaris VIG: răspundere civilă construcții și montaj','https://donaris.md/ro/service/raspundere-civila-constructii-si-montaj'],['Swiss Re: Contractors\' All Risks insurance','https://www.swissre.com/dam/jcr:4d66a13a-ea34-48e9-a54c-3550677d188d/pub_contractors_all_risks_insurance_en.pdf']],
+  body:`<p>Asigurarea CAR (Contractors' All Risks) acoperă daunele materiale produse lucrărilor de construcții-montaj și, prin secțiunea a doua, răspunderea față de terți pe durata șantierului. În Republica Moldova este facultativă: Codul urbanismului și construcțiilor nr. 434/2023 nu o impune, dar contractul cu beneficiarul sau cu banca finanțatoare o poate cere.</p>
+
+<h2>De ce contractul de execuție cere, de obicei, o poliță CAR</h2>
+<p>Contractul cere polița pentru că, până la recepție, lucrarea neterminată este expusă unor pagube pe care antreprenorul nu le poate controla. O inundație, un incendiu sau furtul materialelor pot distruge luni de muncă înainte ca beneficiarul să preia obiectul.</p>
+<p>Codul nr. 434/2023 nu obligă participanții la construcție să încheie această asigurare. Legea nr. 92/2022 privind activitatea de asigurare sau reasigurare prevede, la art. 5 alin. (2), că raporturile din asigurarea obligatorie se stabilesc prin lege, iar Codul nu conține o astfel de obligație. Cerința vine din contract: investitorii, băncile care finanțează proiectul și achizitorii publici o introduc frecvent în caietul de sarcini.</p>
+<p>Asigurarea CAR face parte din segmentul facultativ al unei piețe dominate de asigurarea auto obligatorie. Conform Băncii Naționale a Moldovei, în 2025 societățile de asigurare au subscris prime brute de 3 351,2 milioane MDL, cu 3,1% mai mult decât în 2024. Potrivit Biroului Național de Statistică, 1 603,6 milioane MDL din acest total, aproape jumătate, au revenit asigurării RCA.</p>
+<p>Riscul nu dispare după predare. Art. 225 din Codul nr. 434/2023 stabilește un termen de garanție de 5 ani de la recepția la terminarea lucrărilor. În acest termen, executantul înlătură pe cont propriu defectele rezultate din nerespectarea contractului, a proiectului sau a normativelor tehnice, pe care investitorul nu le putea identifica la recepție. O parte din acest risc poate fi inclusă în poliță, prin extensia pentru perioada de garanție, dacă asigurătorul o acceptă.</p>
+
+<h2>Riscurile care rămân la antreprenor fără poliță</h2>
+<p>Fără poliță, paguba produsă înainte de recepție rămâne, de regulă, în sarcina antreprenorului, potrivit contractului, chiar dacă recuperarea ulterioară de la terțul vinovat rămâne posibilă. Riscurile frecvente pe un șantier sunt:</p>
+<ol>
+<li>Calamitățile naturale: furtuna, grindina, inundația, ridicarea apelor freatice și alunecarea de teren, frecvente pe terenurile în pantă.</li>
+<li>Incendiul și explozia, inclusiv cele pornite de la lucrările de sudură sau de la instalațiile provizorii.</li>
+<li>Furtul și vandalismul asupra materialelor depozitate pe amplasament, mai ales cablurile, armătura și echipamentele montate, dar nerecepționate.</li>
+<li>Erorile de execuție și de montaj ale echipelor proprii sau ale subcontractorilor.</li>
+<li>Pagubele cauzate terților: fisurarea unei clădiri vecine din cauza excavării sau a vibrațiilor, obiecte căzute pe un autoturism sau rănirea unui trecător.</li>
+<li>Costurile de curățare a șantierului și de îndepărtare a molozului după o daună, care se adaugă reparației propriu-zise.</li>
+</ol>
+
+<h2>Ce acoperă polița CAR și ce exclude de regulă</h2>
+<p>Polița CAR are două secțiuni: daunele materiale la lucrare (secțiunea I) și răspunderea civilă față de terți (secțiunea II). Tabelul de mai jos arată acoperirea obișnuită pe piață; condițiile exacte se confirmă în oferta fiecărui asigurător.</p>
+<table>
+<thead><tr><th>Risc</th><th>Ce acoperă, de regulă</th><th>Excluderi tipice</th></tr></thead>
+<tbody>
+<tr><td>Daune la lucrare și materiale</td><td>Refacerea lucrărilor și a materialelor încorporate, distruse accidental</td><td>Uzura, coroziunea, costul înlocuirii părții proiectate sau executate greșit</td></tr>
+<tr><td>Calamități naturale</td><td>Furtună, inundație, cutremur, alunecare de teren</td><td>Pagubele din lipsa măsurilor de protecție cerute de proiect; franșiză separată, mai mare</td></tr>
+<tr><td>Incendiu și explozie</td><td>Daunele la lucrare, inclusiv cele produse de lucrările cu foc deschis</td><td>Încălcarea condițiilor de siguranță convenite în poliță</td></tr>
+<tr><td>Furt și vandalism</td><td>Materialele și echipamentele aflate pe amplasament</td><td>Lipsurile constatate doar la inventar, fără urme de efracție</td></tr>
+<tr><td>Erori de montaj</td><td>Daunele accidentale produse în timpul montajului</td><td>Partea defectă însăși și pagubele pentru care răspunde furnizorul sau producătorul, prin lege sau prin contract</td></tr>
+<tr><td>Răspundere față de terți</td><td>Vătămarea persoanelor și distrugerea bunurilor care nu sunt implicate în lucrări, produse în legătură cu executarea acestora</td><td>Accidentele propriilor angajați, vehiculele înmatriculate (acoperite prin RCA), vibrațiile și slăbirea fundațiilor vecine, dacă nu sunt incluse prin extensie</td></tr>
+<tr><td>Utilaje și echipament de șantier</td><td>Doar dacă sunt declarate distinct în poliță</td><td>Defecțiunile mecanice și electrice interne ale utilajului</td></tr>
+<tr><td>Perioada de garanție</td><td>Varianta de bază: pagubele produse de antreprenor în timpul remedierilor. Varianta extinsă: și pagubele cu o cauză din perioada de execuție</td><td>Costul remedierii defectului însuși; defectele fără legătură cu lucrările asigurate</td></tr>
+</tbody>
+</table>
+<p>Penalitățile de întârziere și amenzile contractuale sunt, de regulă, excluse. Pierderea de profit a beneficiarului din întârzierea punerii în funcțiune se acoperă numai printr-o asigurare separată, dacă un asigurător o oferă.</p>
+<p>Asigurătorii din Moldova oferă de regulă un singur produs pentru lucrări de construcții și montaj; în terminologia internațională, montajul de echipamente cu probe și teste poartă denumirea EAR (Erection All Risks). Diferențele dintre cele două sunt prezentate pe pagina <a href="/servicii/asigurari-constructii-car-ear">CAR EAR Moldova</a>.</p>
+
+<h2>Exemplu de calcul orientativ (estimat)</h2>
+<p>Prima CAR se calculează ca o rată aplicată la valoarea totală a contractului și acoperă întreaga durată a lucrărilor și, de obicei, perioada de garanție, conform ghidului Swiss Re despre asigurarea CAR. Asigurătorii din Moldova nu publică această rată, așa că exemplul de mai jos folosește cifre ipotetice, doar pentru a arăta metoda.</p>
+<table>
+<thead><tr><th>Element</th><th>Valoare (estimat, ipotetic)</th></tr></thead>
+<tbody>
+<tr><td>Valoarea contractului de construcție</td><td>2 000 000 MDL</td></tr>
+<tr><td>Durata lucrărilor plus perioada de garanție inclusă</td><td>12 luni plus 12 luni</td></tr>
+<tr><td>Rata ipotetică</td><td>0,3% din valoarea contractului</td></tr>
+<tr><td>Prima estimată</td><td>6 000 MDL</td></tr>
+<tr><td>Franșiza de bază</td><td>10 000 MDL pe eveniment</td></tr>
+<tr><td>Franșiza pentru calamități naturale</td><td>de 5-10 ori franșiza de bază, adică 50 000-100 000 MDL</td></tr>
+</tbody>
+</table>
+<p>Raportul dintre franșiza pentru calamități și cea de bază urmează practica descrisă de Swiss Re pentru proiectele mari; pentru un contract de 2 000 000 MDL raportul poate fi diferit. Același ghid recomandă franșize separate și pentru utilaje și pentru răspunderea civilă. Rata reală depinde de tipul construcției, amplasament, durată, experiența antreprenorului și istoricul de daune. Prima și franșizele se confirmă numai prin oferta scrisă a asigurătorului.</p>
+
+<h2>Ce se verifică înainte de semnarea poliței</h2>
+<p>Înainte de semnare se compară polița cu cerințele contractului de execuție, punct cu punct. Verificările utile înainte de semnare sunt:</p>
+<ol>
+<li>Suma asigurată: valoarea integrală a contractului, inclusiv materialele furnizate de beneficiar, actualizată la fiecare act adițional.</li>
+<li>Persoanele asigurate: investitorul, antreprenorul general și subcontractorii trebuie numiți în poliță, dacă așa cere contractul.</li>
+<li>Perioada: data de început, probele, recepțiile pe etape și perioada de garanție inclusă. O întârziere a lucrărilor nu prelungește automat polița.</li>
+<li>Franșizele pe fiecare risc, mai ales pentru calamități, furt și răspundere civilă.</li>
+<li>Limita de răspundere față de terți și sublimitele pentru clădirile învecinate, vibrații și rețelele subterane.</li>
+<li>Excluderile legate de proiectare și de materialele defecte, care se citesc în condițiile generale, nu doar în ofertă.</li>
+<li>Obligațiile din timpul contractului: anunțarea modificărilor de proiect, termenul de notificare a daunei și cine încasează despăgubirea, dacă banca o cere.</li>
+</ol>
+<p>Polița CAR nu înlocuiește garanția de bună execuție cerută de beneficiar; cele două au obiecte diferite, explicate în articolul despre <a href="/news/asigurare-buna-executie">garanția de bună execuție</a>. Utilajele proprii ale antreprenorului pot fi asigurate și separat, ca în ghidul despre <a href="/news/asigurare-utilaje-industriale">asigurarea utilajelor industriale</a>. Răspunderea proiectantului pentru erorile de proiectare, exclusă de regulă din CAR, face obiectul unei polițe distincte, prezentate în ghidul despre <a href="/news/asigurare-raspundere-profesionala">răspunderea profesională</a>.</p>
+
+<h2>Întrebări frecvente despre asigurarea CAR în Moldova</h2>
+<h3>Este obligatorie asigurarea CAR în Republica Moldova?</h3><p>Nu. Codul urbanismului și construcțiilor nr. 434/2023 nu prevede o asigurare obligatorie pentru participanții la construcție, iar Legea nr. 92/2022 stabilește la art. 5 alin. (2) că asigurările obligatorii sunt reglementate prin lege. Contractul cu beneficiarul sau cu banca o poate impune.</p>
+<h3>Cât costă asigurarea CAR pentru un șantier de 2 milioane lei?</h3><p>Costul se stabilește printr-o rată aplicată la valoarea contractului, confirmată de asigurător după analiza proiectului. Asigurătorii din Moldova nu publică această rată. Exemplul estimat din articol arată metoda de calcul pe cifre ipotetice.</p>
+<h3>Care este diferența dintre CAR și EAR?</h3><p>CAR se folosește pentru lucrări de construcții, iar EAR pentru montajul de echipamente și instalații, unde perioada de probe și teste are un rol mai mare. Ambele combină daunele materiale cu răspunderea față de terți. Asigurătorii din Moldova oferă de regulă un singur produs pentru construcții și montaj, iar alegerea variantei depinde de ponderea echipamentelor în valoarea contractului.</p>
+<h3>Acoperă polița CAR termenul de garanție de 5 ani?</h3><p>Nu automat. Termenul de 5 ani este prevăzut de art. 225 din Codul nr. 434/2023, iar polița acoperă doar perioada de garanție convenită expres, de obicei mai scurtă, și doar pentru pagubele legate de lucrările asigurate. Costul remedierii defectului propriu-zis rămâne la executant.</p>
+<h3>Intră utilajele de șantier în polița CAR?</h3><p>Numai dacă sunt declarate distinct, cu proprietarul și valoarea fiecăruia. Defecțiunile mecanice și electrice interne ale utilajelor sunt, de regulă, excluse, iar pentru ele se folosește o asigurare separată a utilajelor. Utilajele închiriate se declară cu acordul proprietarului, iar franșiza pentru utilaje este, de obicei, distinctă de cea a lucrării.</p>
+<h3>Cine trebuie să încheie polița: antreprenorul sau investitorul?</h3><p>Oricare dintre ei, după cum prevede contractul de execuție. Important este ca toate părțile cu interes în lucrare să fie numite ca asigurați în poliță: investitorul, antreprenorul general și subcontractorii. Dacă proiectul este finanțat prin credit, banca cere de regulă să fie numită beneficiar al despăgubirii.</p>
+
+<h2>Ofertă personalizată prin ING Broker</h2>
+<p>ING Broker pregătește dosarul de risc al șantierului și cere oferte de la mai mulți asigurători din Moldova. Acceptarea riscului, prima și condițiile se stabilesc de asigurător.</p>
+<p><a href="/contact">Solicită o ofertă personalizată → ingbroker.md/contact</a></p>
+<p>Insurance ING Broker SRL, str. Pan Halippa 9, MD-2009, mun. Chișinău. Telefon: +373 69 526 003. E-mail: andrei.moraru@ingbroker.md. Activitate supravegheată de Banca Națională a Moldovei.</p>`
  },
  'asigurare-credit-comercial':{
   title:'Creditul comercial: asigurarea riscului de neplată',

@@ -14,6 +14,12 @@ const allowed = new Set(['ingbroker.md', 'easigurari.com', 'bnm.md', 'cnpf.md', 
 // Exact Moldova public-source destinations reviewed 15.11.2026 in the
 // informational article batch. No wildcard permission or product-eligibility claim.
 for (const host of ['cnam.md','donaris.md','rdp.moldelectrica.md','igsu.gov.md','gov.md','ipm.gov.md','amdm.gov.md']) allowed.add(host);
+// 20.11.2026: Biroul Național de Statistică (sursă oficială din Moldova) și Acord Grup
+// (asigurător local, în lista de parteneri din briefingul V2.0 al lui Andrei Moraru).
+for (const host of ['statistica.gov.md','acordgrup.md']) allowed.add(host);
+// 20.11.2026: Swiss Re, ghid tehnic CAR (reasigurător, nu asigurător sau broker concurent pe piața din Moldova).
+// Aprobat explicit de Andrei Moraru pentru articolul CAR; nu acoperă alte afirmații de pe site.
+allowed.add('swissre.com');
 for(const denied of ['marsh.com','allianztiriac.ro','energie.gov.md.evil.example','other-broker.md'])assert.equal(allowed.has(denied),false);
 const links: {lang:string;slug:string;url:string;host:string}[] = [];
 const violations: typeof links = [];

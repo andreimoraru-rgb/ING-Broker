@@ -659,6 +659,10 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
               </div>
             ))}
           </div>
+          <p className="mt-10 text-gray-600 leading-relaxed">
+            Ghidul complet, cu tabelul acoperirilor, un exemplu de calcul estimat și temeiul legal din Republica Moldova:{' '}
+            <a href="/news/asigurare-constructii-montaj" className="font-bold text-red-700 underline underline-offset-4 hover:text-red-800">asigurare șantier Moldova</a>.
+          </p>
         </div>
       </section>
 

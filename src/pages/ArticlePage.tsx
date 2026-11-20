@@ -3,12 +3,12 @@ import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import { Language } from '../translations';
 import { SEO } from '../components/SEO';
 import { SchemaMarkup } from '../components/SchemaMarkup';
-import { breadcrumbSchema } from '../utils/schema';
+import { authorSchema, breadcrumbSchema, faqSchema } from '../utils/schema';
 import { motion } from 'motion/react';
 import { ArrowLeft, Calendar, User, Tag } from 'lucide-react';
 import { articles, consolidatedLifeSlugs, withdrawnArticleSlugs } from '../data/articleMetadata';
 import { cachedArticle, preloadArticle } from '../data/articleLoader';
-import { EditorialArticle } from './EditorialArticle';
+import { EditorialArticle, articleFaqs } from './EditorialArticle';
 import { localizedPath } from '../utils/localizedRoutes';
 import './article-reading.css';
 import { ArticlePhotoLogo } from '../components/ArticlePhotoLogo';
@@ -72,11 +72,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
     "url": articleUrl,
     "mainEntityOfPage": articleUrl,
     "image": articleImage,
-    "author": {
-      "@type": "Organization",
-      "name": article.author || "Insurance ING Broker SRL",
-      "url": articleOrigin
-    },
+    "author": authorSchema(article.author || "Insurance ING Broker SRL", articleOrigin),
     "publisher": {
       "@type": "Organization",
       "name": "Insurance ING Broker SRL",
@@ -90,6 +86,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
     "inLanguage": lang === 'ro' ? 'ro-MD' : lang === 'ru' ? 'ru-MD' : 'en'
   };
 
+  const faqs = articleFaqs(article.content);
   const articleBreadcrumb = breadcrumbSchema([
     { name: lang === 'ro' ? 'Acasă' : lang === 'ru' ? 'Главная' : 'Home', url: articleOrigin },
     {
@@ -111,7 +108,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
         image={articleImage}
         ogType="article"
       />
-      <SchemaMarkup schemas={[articleBreadcrumb]} />
+      <SchemaMarkup schemas={[articleBreadcrumb, ...(faqs.length ? [faqSchema(faqs)] : [])]} />
 
       {/* Back Button */}
       <div className="absolute top-20 left-6 z-30">
