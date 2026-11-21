@@ -20,13 +20,13 @@ for(const r of rows){
 }
 // Detect missing or accidentally doubled paths in source and initial HTML.
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(f=>f.isDirectory()?walk(dir+'/'+f.name):[dir+'/'+f.name]);}
-let references=0;
+let references=0;const used=new Set();
 for(const f of [...walk('src'),...(fs.existsSync('dist/_pages')?walk('dist/_pages'):[])].filter(f=>/\.(tsx?|html|css)$/.test(f))){
  const text=fs.readFileSync(f,'utf8');
  for(const match of text.matchAll(/\/images\/optimized-20261121-v1\/[^\s'"<>}]+/g)){
-  assert.ok(fs.existsSync('public'+match[0]),f+': '+match[0]);references++;
+  assert.ok(fs.existsSync('public'+match[0]),f+': '+match[0]);references++;used.add(match[0]);
  }
  if(f.startsWith('src/')){const oldCheck=rows.reduce((s,r)=>s.replaceAll(r.destination,''),text);for(const r of rows)assert.ok(!oldCheck.includes(r.source)&&!oldCheck.includes(r.source.replaceAll(' ','%20')),f+': old image '+r.source);}
 }
-assert.ok(references>50);
+for(const r of rows)assert.ok(used.has(r.destination),'Missing active image reference: '+r.destination);
 console.log(JSON.stringify({images:rows.length,logos:rows.filter(r=>r.isLogo).length,before,after,savedPercent:+((1-after/before)*100).toFixed(2),references,passed:true}));
