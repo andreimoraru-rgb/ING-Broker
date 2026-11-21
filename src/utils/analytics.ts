@@ -18,7 +18,9 @@ interface PostHogQueue extends Array<unknown[]> {
 
 export const trackEvent = (event: string, params: AnalyticsParams = {}) => {
   if (window.__ING_ANALYTICS_ENABLED__ !== true || window.__ING_ANALYTICS_QA__ === true) return;
-  window.gtag?.('event', event, { ...params, transport_type: 'beacon' });
+  // UI origin is not the acquisition source. Keep campaign fields untouched.
+  const { source: formOrigin, ...eventParams } = params;
+  window.gtag?.('event', event, { ...eventParams, ...(formOrigin ? { form_origin: formOrigin } : {}), transport_type: 'beacon' });
   window.posthog?.capture(event, params);
 };
 
