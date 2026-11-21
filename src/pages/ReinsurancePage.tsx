@@ -90,7 +90,7 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
       <section className="relative h-screen min-h-[700px] flex items-start pt-64 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/reinsurance 4.png" 
+            src="/images/optimized-20261121-v1/reinsurance-4.webp"
             alt="Reinsurance" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -255,11 +255,11 @@ export const ReinsurancePage: React.FC<ReinsurancePageProps> = ({ lang }) => {
               { name: 'GALLAGHER', url: 'https://www.ajg.com/', img: '/gallagherre_horizontallarge-3d.png', scale: 'scale-[1.15]' },
               { name: 'RENOMIA', url: 'https://www.renomia.com/', img: '/renomia_black.webp', scale: 'scale-[1.05]' },
               { name: 'CEBA', url: '#', img: '/CEBA.jpg', scale: 'scale-[1.4]' },
-              { name: 'EPIC', url: 'https://epicbrokers.com/', img: '/EPIC.png', scale: 'scale-[1.8]' },
+              { name: 'EPIC', url: 'https://epicbrokers.com/', img: '/images/optimized-20261121-v1/epic.webp', scale: 'scale-[1.8]' },
               { name: 'HUB INTERNATIONAL', url: 'https://www.hubinternational.com/', img: '/HUB-Horizontal-Full-Color-Logo-Test.webp', scale: 'scale-100' },
               { name: 'LIBERTY MUTUAL', url: 'https://www.libertymutual.com/', img: '/Liberty_Mutual-Logo.wine.png', scale: 'scale-[2.8]' },
               { name: 'B&B', url: 'https://www.bbinsurance.com/', img: '/BB-Horizontal-Logo1-414x276.webp', scale: 'scale-[1.8]' },
-              { name: 'HYLANT', url: 'https://www.hylant.com/', img: '/HYLANT.png', scale: 'scale-[1.8]' }
+              { name: 'HYLANT', url: 'https://www.hylant.com/', img: '/images/optimized-20261121-v1/hylant.webp', scale: 'scale-[1.8]' }
             ].map((partner, index) => (
               <motion.a
                 key={index}

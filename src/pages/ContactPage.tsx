@@ -201,7 +201,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
       <section className="relative h-[60vh] min-h-[500px] flex items-start pt-48 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/contact us 2.png" 
+            src="/images/optimized-20261121-v1/contact-us-2.webp"
             alt={c.title} 
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"

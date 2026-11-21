@@ -77,7 +77,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
             <section className="relative h-screen min-h-[700px] flex items-start pt-64 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/about us-2.png" 
+            src="/images/optimized-20261121-v1/about-us-2.webp"
             alt={content.hero.title} 
             className="w-full h-full object-cover object-center"
             referrerPolicy="no-referrer"
