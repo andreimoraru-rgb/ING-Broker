@@ -1,4 +1,5 @@
 import {editorialCatalog20261112} from './editorialCatalog20261112';
+import { applySeoContentReview20261121 } from './seoContentReview20261121';
 /** Original editorial revisions. See docs/content-recovery-2026-10-15.md for mandatory approval gates. */
 import { editorialBatch20261107 } from './editorialBatch20261107';
 import { editorialDepth20261107 } from './editorialDepth20261107';
@@ -19,6 +20,8 @@ export interface ArticleRevision {
   title: string;
   /** Titlu SEO separat, când H1 e prea lung pentru „titlu | ING Broker”. */
   seoTitle?: string;
+  /** Metadata only; keep the owner-approved visible hero introduction. */
+  seoDescription?: string;
   /** Autor nominal; implicit „Echipa editorială ING Broker”. */
   author?: string;
   updatedAt?: string;
@@ -223,6 +226,7 @@ Object.assign(articleRevisions, editorialTech20261109);
 Object.assign(articleRevisions, editorialEnergy20261110);
 Object.assign(articleRevisions, editorialOperations20261111);
 Object.assign(articleRevisions, editorialCatalog20261112);
+applySeoContentReview20261121(articleRevisions);
 
 export function renderArticleRevision(revision: ArticleRevision): string {
   const sources = revision.sources.map(([label, url]) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a></li>`).join('');
