@@ -3,56 +3,93 @@ const bnm:[string,string]=['BNM: verificarea condițiilor contractului de asigur
 
 // Product-specific revisions; publication and live QA are tracked in the canonical ledger.
 export const editorialLiability20261108:Record<string,ArticleRevision>={
- 'asigurare-raspundere-profesionala':{
-  title:'Asigurarea de răspundere profesională',
-  description:'Ce verifici la răspunderea profesională: servicii declarate, erori, pretenții, limite și documente. Explicații pentru specialiști și companii din Moldova.',
-  updatedAt:'2026-11-08',sourcesCheckedAt:'8 noiembrie 2026',preserveLegacyLayout:true,
-  related:['asigurare-raspundere-civila-generala','Răspunderea civilă generală a companiei'],
-  sources:[bnm,['MOLDCARGO: prezentarea asigurării de răspundere profesională','https://moldcargo.md/asigurari/raspundere-profesionala']],
-  body:`<p>Asigurarea de răspundere profesională privește pretențiile pentru prejudicii legate de serviciile profesionale declarate și de erorile acceptate în contract. Pentru un specialist sau o companie din Republica Moldova, întrebarea principală este dacă activitatea efectiv prestată corespunde celei înscrise în poliță. Denumirea profesiei, singură, nu descrie întotdeauna toate serviciile oferite.</p>
-<p>Materialul ajută consultanții, proiectanții și alte firme de servicii să pregătească întrebările pentru o analiză individuală. Nu stabilește că orice profesie, eroare sau contract este eligibil. Obligațiile legale ale unei anumite profesii și condițiile asigurării se verifică separat. Disponibilitatea unei soluții pentru situația concretă trebuie confirmată înainte de ofertare.</p>
-<h2>Descrie serviciul pentru care îți asumi răspunderea</h2>
-<p>Pornește de la ceea ce livrezi clientului: un proiect, o analiză, o verificare, o recomandare ori un serviciu continuu. Arată cine semnează rezultatul, cine îl verifică și unde este folosit. O firmă care pregătește documente nu are automat același risc ca una care ia și decizii în numele clientului.</p>
-<p>Include activitățile secundare relevante, subcontractarea și serviciile noi. Folosește descrieri clare, nu doar codul de activitate sau o listă de calificări. Cere confirmarea activității acceptate în propunere. Dacă o operațiune nu a fost analizată, păstrează acest punct deschis, fără să consideri că denumirea generală a poliței o include.</p>
-<h2>Greșeala profesională nu este orice nemulțumire comercială</h2>
-<p>Pagina locală MOLDCARGO consultată prezintă răspunderea profesională în legătură cu erori și neglijență. În analiza propriei firme, separă presupusa eroare de simpla dispută privind prețul sau rezultatul comercial. O reclamație trebuie înțeleasă după fapte, serviciul prestat și prejudiciul invocat, nu doar după tonul mesajului primit.</p>
-<p>Pregătește o explicație a controalelor folosite: verificarea de către alt specialist, aprobarea clientului și evidența versiunilor. Acestea ajută descrierea activității, fără să dovedească automat lipsa răspunderii. Încadrarea juridică a situației și acceptarea unei daune nu se decid prin acest articol sau printr-o conversație comercială preliminară.</p>
-<h2>Separă persoana, firma și colaboratorii</h2>
-<p>Identifică cine încheie contractul de servicii și cine execută efectiv lucrarea. Poate fi vorba despre specialist, societate, angajați ori colaboratori. Cere clarificarea persoanelor asigurate și a serviciilor pentru care răspunderea lor poate fi analizată. Faptul că cineva lucrează la același proiect nu confirmă includerea sa.</p>
-<p>Pentru subcontractare, descrie operațiunile încredințate și modul de control al rezultatului. Verifică separat documentele colaboratorului și obligațiile asumate față de client. O poliță a unui partener nu dovedește că propria companie este protejată pentru toate pretențiile care pot apărea în legătură cu proiectul comun.</p>
-<h2>Contractul cu clientul trebuie citit alături de propunere</h2>
-<p>Extrage cerințele de asigurare din contractul de servicii: activitate, limită solicitată, perioadă și teritoriu. Arată dacă sunt cerute documente înainte de începerea lucrării sau la fiecare reînnoire. O cerință a clientului este un punct de negociere contractuală; nu o prezenta automat ca obligație legală pentru toate firmele din Moldova.</p>
-<p>Clauzele privind garanțiile de rezultat, penalitățile, despăgubirile și răspunderea față de alte părți necesită atenție distinctă. Cere verificarea lor înainte de semnare. O sumă pe care firma acceptă contractual să o plătească nu devine, doar din acest motiv, o cheltuială acceptată în asigurarea de răspundere profesională.</p>
-<h2>Cronologia contează: serviciu, eroare, pretenție și notificare</h2>
-<p>Construiește o linie a timpului cu data lucrării, predarea, apariția problemei și mesajele primite. Întreabă ce mecanism contractual determină perioada relevantă pentru analiza unei pretenții. Condițiile pot utiliza definiții și repere diferite; acestea trebuie explicate în oferta concretă, fără a prelua automat regulile unui alt produs.</p>
-<p>Dacă documentele menționează o dată retroactivă sau o perioadă de notificare, cere un exemplu aplicat calendarului firmei. La schimbarea asigurătorului, compară vechea și noua perioadă. Achiziția unei polițe noi nu confirmă protecția unei erori, reclamații sau circumstanțe deja cunoscute. Prezintă situațiile existente exact și printr-un canal confidențial.</p>
-<h2>Ce prejudicii și cheltuieli se analizează</h2>
-<p>Separă deteriorarea unui bun, vătămarea unei persoane și pierderea financiară invocată de client. Solicită explicația categoriilor acceptate și a legăturii cerute cu serviciul profesional. Termenul „prejudiciu” poate acoperi discuții foarte diferite; o enumerare într-o prezentare publică nu înlocuiește definițiile și excluderile documentelor propuse.</p>
-<p>Întreabă distinct despre cheltuielile de apărare, expertize și soluționare. Clarifică cine aprobă implicarea unui avocat, în ce condiții și în ce limită. Nu presupune că orice factură juridică va fi rambursată. Verifică dacă aceste cheltuieli reduc limita disponibilă pentru despăgubire sau au un tratament contractual separat.</p>
-<h2>Limita și franșiza trebuie comparate pe aceeași bază</h2>
-<p>Limita este plafonul aplicabil potrivit contractului, nu promisiunea unei plăți integrale. Cere explicația limitei pentru o pretenție și a limitei totale pentru perioada asigurată, dacă documentele fac această diferență. Arată dacă mai mulți clienți depind de același proiect sau de aceeași metodă de lucru.</p>
-<p>Franșiza este partea din daună suportată de asigurat în condițiile contractului. Cere un calcul ipotetic, cu ipotezele precizate, pentru situația care te preocupă. Comparația are sens numai când activitatea, persoanele, perioadele și cheltuielile acceptate sunt aceleași. Prețul mai mic nu dovedește singur o protecție echivalentă.</p>
-<h2>Lucrările pentru clienți din alte țări</h2>
-<p>O companie din Moldova poate avea clienți externi, dar teritoriul activității și jurisdicțiile acceptate trebuie clarificate în propunere. Arată unde este prestat serviciul, unde este folosit rezultatul și ce instanță este prevăzută în contract. Nu aplica automat condițiile unei polițe străine serviciilor prestate din Moldova.</p>
-<p>Pentru servicii la distanță, descrie fluxul real al aprobărilor și al livrării. Dacă intră în discuție programe, date sau incidente informatice, cere delimitarea față de riscurile cyber. Răspunderea profesională, protecția echipamentului și securitatea datelor au obiecte diferite; același proiect poate necesita mai multe analize, fără includere automată.</p>
-<h2>Verifică o propunere printr-o situație de lucru</h2>
-<p>Poți construi un exemplu ipotetic apropiat de serviciile firmei: după predarea unui document, clientul susține că o informație greșită i-a produs o pierdere. Notează serviciul convenit, versiunea transmisă, aprobările și data primei sesizări. Cere explicația modului în care definițiile poliței s-ar raporta la aceste fapte, fără a solicita o promisiune de despăgubire.</p>
-<p>Compară apoi o variantă în care clientul reclamă doar întârzierea livrării și alta în care rezultatul a fost modificat ulterior de altă persoană. Diferențele ajută să observi întrebările omise. Păstrează răspunsurile scrise și identifică exact condiția pe care se bazează fiecare explicație. Exemplul rămâne un instrument de înțelegere, nu un dosar real evaluat.</p>
-<h2>Arhiva profesională ajută și după predarea lucrării</h2>
-<p>Stabilește intern unde sunt păstrate comenzile, contractele, livrabilele și confirmările de primire. Pentru fiecare proiect, trebuie să poți identifica varianta efectiv predată, nu doar ultima copie salvată pe un calculator. Accesul se limitează la persoanele care au nevoie de documente, potrivit regulilor aplicabile activității.</p>
-<p>Un sistem ordonat permite prezentarea cronologiei fără reconstruirea ei din memorie. Nu introduce o durată universală de păstrare pe baza acestui articol: obligațiile profesiei, protecția datelor și contractele trebuie verificate separat. Organizarea arhivei este o măsură operațională utilă, nu o condiție de asigurare inventată și nici dovada că orice pretenție va fi acceptată.</p>
-<h2>Un dosar util, fără documente sensibile trimise inutil</h2>
-<ul><li>Descrierea serviciilor și ponderea lor în activitate.</li><li>Persoana sau firma care semnează contractele cu clienții.</li><li>Tipurile de clienți, proiecte și țările relevante.</li><li>Procedura de verificare și aprobare a livrabilelor.</li><li>Subcontractorii implicați și operațiunile lor.</li><li>Cerințele contractuale de asigurare și perioadele solicitate.</li><li>Istoricul pretențiilor și circumstanțele cunoscute.</li><li>Întrebările despre limite, franșiză și cheltuieli de apărare.</li></ul>
-<p>La început pot fi suficiente descrieri agregate și modele de contract anonimizate. Nu încărca dosare de clienți, date medicale, secrete comerciale sau parole într-un formular public. Lista finală a informațiilor necesare și canalul de transmitere se stabilesc pentru analiza concretă. Păstrează versiunile documentelor și confirmările primite.</p>
-<h2>Cum gestionezi o reclamație deja primită</h2>
-<p>Înregistrează data și conținutul mesajului, identifică serviciul la care se referă și păstrează documentele inițiale. Evită modificarea retroactivă a livrabilelor fără evidența schimbării. Consultă instrucțiunile de notificare din polița existentă și sprijinul juridic necesar. Nu transfera asupra brokerului rolul asigurătorului de a decide acceptarea și soluționarea daunei.</p>
-<p>La reînnoire, discută activitățile noi și schimbările de portofoliu. O firmă care trece de la proiecte mici la servicii complexe trebuie descrisă după situația actuală. Refolosirea automată a fișei vechi poate lăsa neclarități importante. Compară condițiile înainte de expirare și păstrează distinct ceea ce este confirmat de ceea ce a fost doar solicitat.</p>
-<h2>Întrebări frecvente despre răspunderea profesională</h2>
-<h3>Răspunderea profesională este același lucru cu D&O?</h3><p>Nu. Serviciul prestat clientului și exercitarea unei funcții de conducere sunt analize diferite. Identifică activitatea și persoana vizate de pretenție.</p>
-<h3>Este obligatorie pentru orice firmă de servicii?</h3><p>Nu deduce o obligație generală din numele produsului. Verifică separat legea aplicabilă profesiei și cerințele contractului cu clientul.</p>
-<h3>O poliță nouă rezolvă o reclamație veche?</h3><p>Nu presupune acest lucru. Prezintă cronologia și circumstanțele cunoscute, apoi cere o analiză a condițiilor și perioadelor aplicabile.</p>
-<h3>Cât costă asigurarea de răspundere profesională?</h3><p>Solicită o evaluare după serviciile declarate, portofoliu, perioade și limite. Un tarif al altei profesii sau al altui asigurător nu confirmă costul propriei situații.</p>`
- },
+  'asigurare-raspundere-profesionala': {
+    title: 'Asigurarea de răspundere profesională în Moldova: ce acoperă polița PI și când este obligatorie',
+    seoTitle: 'Răspundere profesională PI Moldova | ING Broker Moldova',
+    author: 'Andrei Moraru, CFO Insurance ING Broker SRL',
+    description: 'Asigurarea de răspundere profesională (PI, E&O) în Moldova: profesii cu obligație legală, claims-made, data retroactivă, excluderi și acte pentru ofertă.',
+    updatedAt: '2026-11-21', sourcesCheckedAt: '21 noiembrie 2026', preserveLegacyLayout: true,
+    related: ['asigurare-raspundere-civila-generala', 'Răspunderea civilă generală a companiei'],
+    sources: [
+      ['Legea nr. 69/2016 cu privire la organizarea activității notarilor, art. 11 și art. 56 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=125333&lang=ro'],
+      ['Legea nr. 271/2017 privind auditul situațiilor financiare, art. 26 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=136835&lang=ro'],
+      ['Legea nr. 1260/2002 cu privire la avocatură, art. 61 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=126609&lang=ro'],
+      ['Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare, art. 4, art. 5 și art. 18 (BNM)', 'https://bnm.md/files/Lege%20asigur%C4%83ri%2092_2022%20(RO).pdf'],
+      ['BNM: situația financiară a sectorului asigurărilor pentru anul 2025', 'https://bnm.md/ro/content/situatia-financiara-sectorului-asigurari-pentru-anul-2025'],
+      ['BNM: ce verifici în contractul de asigurare', 'https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam'],
+    ],
+    body: `<p>Asigurarea de răspundere profesională (PI, Professional Indemnity, sau E&amp;O) acoperă pretențiile clienților pentru prejudicii financiare cauzate de erori, omisiuni sau neglijență în serviciile profesionale declarate. În Republica Moldova nu există o obligație generală, iar acolo unde există, obligația rezultă din legea specială a profesiei, de exemplu pentru notari.</p>
+
+<h2>Ce acoperă asigurarea de răspundere profesională</h2>
+<p>Polița preia, în limitele contractului, sumele pe care asiguratul le datorează unui client sau unui terț pentru o greșeală profesională: un calcul eronat, un termen ratat, o recomandare greșită, un proiect cu erori, o configurare de software care produce pierderi. Spre deosebire de răspunderea civilă generală, care privește în principal vătămările corporale și pagubele materiale produse terților, PI se concentrează pe pierderea financiară pură, adică paguba care nu provine dintr-un bun distrus sau dintr-o persoană vătămată.</p>
+<p>Profesiile pentru care se discută cel mai des sunt consultanții în management și fiscalitate, contabilii și auditorii, firmele IT și dezvoltatorii de software, arhitecții și proiectanții, evaluatorii, agențiile de marketing și juriștii. Denumirea profesiei nu descrie singură riscul. Asigurătorul analizează serviciile efectiv prestate, contractele semnate, clienții și țările în care este folosit rezultatul.</p>
+
+<h2>Când asigurarea PI este obligatorie prin lege</h2>
+<p>Potrivit art. 5 alin. (2) din Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare, în asigurarea obligatorie raporturile, drepturile și obligațiile părților se stabilesc prin lege. Pentru răspunderea profesională nu există o lege generală, iar obligația apare, acolo unde există, în legea fiecărei profesii.</p>
+<ul><li>Notarii: art. 56 alin. (1) din Legea nr. 69/2016 cu privire la organizarea activității notarilor obligă notarul să încheie contract de asigurare obligatorie de răspundere profesională, iar art. 11 lit. d) trece această obligație printre îndatoririle notarului. Suma minimă asigurată se stabilește de Consiliul Camerei Notariale (art. 56 alin. (2)).</li><li>Auditorii: art. 26 din Legea nr. 271/2017 privind auditul situațiilor financiare obligă entitatea de audit să asigure riscul de audit pentru prejudiciul cauzat printr-o opinie de audit necorespunzătoare. Riscul de audit se asigură, în condițiile art. 26, prin contract de asigurare a răspunderii civile profesionale și/sau prin constituirea de provizioane.</li><li>Avocații: art. 61 alin. (1) din Legea nr. 1260/2002 cu privire la avocatură prevede că avocatul este în drept să încheie contract de asigurare de răspundere civilă. Legea permite asigurarea, dar nu o impune.</li></ul>
+<p>Pentru alte profesii, obligația se verifică în legea specială și în actele organului profesional, nu se presupune. Pentru consultanți, firme IT, agenții sau proiectanți, polița este cerută cel mai des prin contract: clientul corporativ, finanțatorul unui proiect sau autoritatea contractantă într-o achiziție publică stabilește o limită minimă, o perioadă și uneori jurisdicția acceptată.</p>
+
+<h2>Piața asigurărilor din Moldova și autoritatea de supraveghere</h2>
+<p>Potrivit Băncii Naționale a Moldovei, în 2025 cele 9 societăți de asigurare care activau în Republica Moldova au subscris prime brute de 3 351,2 milioane MDL, cu 3,1% mai mult decât în anul precedent. Raportul public al BNM nu prezintă distinct răspunderea profesională, deci ponderea acestei clase nu poate fi calculată din el. Potrivit art. 4 din Legea nr. 92/2022, autoritatea de supraveghere a pieței asigurărilor este Banca Națională a Moldovei, care ține și registrul asigurătorilor și al intermediarilor licențiați (art. 18).</p>
+
+<h2>Baza claims-made, data retroactivă și perioada extinsă de raportare</h2>
+<p>Polițele PI se emit de regulă pe bază claims-made: acoperirea se declanșează de pretenția formulată și notificată în perioada de asigurare, nu de momentul în care s-a produs eroarea. Polițele pe bază de eveniment (occurrence) leagă acoperirea de data faptei. Diferența devine vizibilă la reînnoire, la schimbarea asigurătorului și la încetarea activității.</p>
+<table>
+<thead><tr><th>Element</th><th>Ce înseamnă</th><th>Ce se verifică în poliță</th></tr></thead>
+<tbody>
+<tr><td>Bază claims-made</td><td>Contează data pretenției și a notificării ei</td><td>Definiția pretenției, termenul de notificare, tratamentul circumstanțelor anunțate</td></tr>
+<tr><td>Bază occurrence</td><td>Contează data faptei care a produs prejudiciul</td><td>Cum se stabilește data faptei și termenul de prescripție în care poate fi formulată pretenția</td></tr>
+<tr><td>Data retroactivă</td><td>Data de la care erorile anterioare sunt acceptate</td><td>Dacă se păstrează la reînnoire și la schimbarea asigurătorului</td></tr>
+<tr><td>Perioada extinsă de raportare</td><td>Interval după expirare în care se pot notifica pretenții noi pentru fapte săvârșite înainte de expirare și după data retroactivă; de regulă nu adaugă o limită nouă</td><td>Durata, prima suplimentară, situațiile în care se activează (nereînnoire, încetarea activității)</td></tr>
+<tr><td>Circumstanțe cunoscute</td><td>Fapte știute de asigurat înainte de începutul poliței</td><td>Declarația din chestionar; de regulă sunt excluse</td></tr>
+</tbody>
+</table>
+<p>Exemplu ipotetic: o eroare de calcul făcută într-un raport din 2024 este reclamată de client în 2026. Pe bază claims-made se aplică, de regulă, polița în vigoare în 2026, în condițiile ei și cu condiția ca pretenția să fie notificată în perioada acestei polițe, ca data retroactivă să fie cel târziu data lucrării din 2024 și ca firma să nu fi cunoscut problema la încheierea poliței. Dacă la schimbarea asigurătorului data retroactivă a fost mutată în 2026, lucrarea din 2024 rămâne fără acoperire.</p>
+
+<h2>Limite, cheltuieli de apărare și teritoriu</h2>
+<p>Limita pe pretenție este plafonul pentru o singură pretenție sau pentru o serie de pretenții legate, după clauza de agregare din poliță. Limita agregată este totalul disponibil pentru întreaga perioadă de asigurare. După o daună mare, limita agregată se reduce pentru restul perioadei, dacă polița nu prevede reîntregirea. Nivelul limitelor se stabilește după cerințele clienților și după expunerea reală, nu doar după valoarea unui singur contract.</p>
+<p>Cheltuielile de apărare (avocați, expertize, taxe de judecată) apar și atunci când pretenția este neîntemeiată. Se verifică dacă sunt incluse în limită, caz în care o reduc, sau acordate peste ea, dacă franșiza se aplică și lor, cine alege avocatul și dacă o tranzacție cu clientul cere acordul prealabil al asigurătorului.</p>
+<p>Teritoriul arată unde este prestat serviciul, iar jurisdicția arată instanțele ale căror hotărâri sunt acceptate. O formulă frecventă este acoperirea mondială cu excepția SUA și Canadei. Pretențiile aduse în instanțele acestor state sau judecate după legea lor sunt acceptate, de regulă, doar cu acord separat al asigurătorului. Clauza de jurisdicție din contractul clientului se compară cu cea din poliță înainte de semnare.</p>
+
+<h2>Ce acoperă de regulă o poliță PI și ce se exclude</h2>
+<p>Tabelul descrie practica obișnuită de pe piață, nu condițiile unui produs anume. Riscurile incluse și excluderile se confirmă în propunerea concretă.</p>
+<table>
+<thead><tr><th>Situație</th><th>Ce acoperă de regulă</th><th>Ce se verifică / excluderi tipice</th></tr></thead>
+<tbody>
+<tr><td>Eroare sau omisiune într-un raport, calcul sau proiect</td><td>Prejudiciul financiar pretins de client și cheltuielile de apărare</td><td>Serviciul să fie declarat în poliță; obligațiile asumate contractual peste răspunderea legală</td></tr>
+<tr><td>Termen ratat la o depunere sau declarație</td><td>Pierderea cauzată clientului prin întârziere</td><td>Tratamentul amenzilor și penalităților transferate de client asupra asiguratului</td></tr>
+<tr><td>Software sau configurare care produce pierderi clientului</td><td>Pretenția pentru pierderea financiară</td><td>Delimitarea față de incidentele cyber; garanțiile de performanță și de nivel al serviciului</td></tr>
+<tr><td>Proiect de arhitectură sau inginerie cu erori</td><td>Costurile de remediere pretinse de beneficiar</td><td>Vătămarea corporală și paguba materială, tratate adesea în altă poliță; refacerea propriei lucrări și disputele privind onorariul, excluse frecvent</td></tr>
+<tr><td>Pierderea documentelor clientului</td><td>Uneori, costul refacerii lor</td><td>Dacă extensia există și în ce limită</td></tr>
+<tr><td>Faptă intenționată sau fraudă a asiguratului</td><td>Nu este acoperită</td><td>Dacă polița protejează asociații nevinovați când fapta aparține unui angajat</td></tr>
+</tbody>
+</table>
+<p>Excluderile întâlnite frecvent sunt actele intenționate, garanțiile de rezultat și penalitățile contractuale peste răspunderea legală, amenzile și sancțiunile aplicate asiguratului, circumstanțele cunoscute la încheiere, vătămarea corporală și paguba materială, cu excepția cazului în care polița le include expres, cum se întâmplă la profesiile medicale și la unele polițe pentru proiectanți, pretențiile între firme ale aceluiași grup și insolvența asiguratului.</p>
+
+<h2>PI și asigurarea cyber</h2>
+<p>PI pornește de la serviciul profesional și de la pretenția clientului. Asigurarea cyber privește incidentele informatice: atacuri, scurgeri de date, întreruperea sistemelor, costurile proprii de restaurare și de notificare, precum și răspunderea față de terți pentru date compromise. O firmă IT poate avea nevoie de ambele polițe, cu delimitarea scrisă a zonei comune. Riscurile informatice sunt prezentate pe pagina despre <a href="/servicii/asigurare-cyber-moldova">asigurarea cyber pentru companii</a>.</p>
+
+<h2>Documentele pentru ofertă și procedura la daună</h2>
+<ul><li>Chestionarul asigurătorului, completat și semnat.</li><li>Extrasul din Registrul de stat al persoanelor juridice.</li><li>Descrierea serviciilor și cifra de afaceri pe activități și pe țări.</li><li>Un model de contract cu clienții și cerința de asigurare primită.</li><li>Calificările specialiștilor și modul de lucru cu subcontractorii.</li><li>Istoricul pretențiilor și polița anterioară, cu data retroactivă.</li></ul>
+<p>La primirea unei pretenții sau la aflarea unei circumstanțe care o poate produce, asigurătorul se anunță în scris, în termenul din poliță. Polițele PI prevăd, de regulă, că recunoașterea răspunderii sau o tranzacție cu clientul cer acordul prealabil al asigurătorului, iar nerespectarea condiției poate afecta plata. Se păstrează contractul, livrabilele, corespondența și cronologia lucrării.</p>
+
+<h2>Rolul brokerului și al asigurătorului</h2>
+<p>Brokerul analizează activitatea clientului, pregătește dosarul, cere oferte de la mai mulți asigurători și compară condițiile pe aceeași bază: servicii, persoane asigurate, data retroactivă, limite și excluderi. La daună, brokerul asistă la notificare și la comunicarea cu asigurătorul. Asigurătorul acceptă riscul, stabilește prima și condițiile și decide plata. Serviciul este descris pe pagina <a href="/servicii/asigurare-raspundere-profesionala">asigurare de răspundere profesională</a>.</p>
+<p>Pentru proiectanți și diriginți de șantier, polița PI se discută împreună cu asigurarea lucrării, prezentată în ghidul despre <a href="/news/asigurare-constructii-montaj">asigurarea construcțiilor și montajului</a>. Pentru casele de expediție, răspunderea pentru serviciile de organizare a transportului se delimitează de răspunderea transportatorului, explicată în articolul despre <a href="/news/asigurari-transport-logistica-cmr-cargo-moldova">asigurarea CMR și cargo</a>.</p>
+
+<h2>Întrebări frecvente despre asigurarea de răspundere profesională în Moldova</h2>
+<h3>Este obligatorie asigurarea de răspundere profesională în Moldova?</h3><p>Nu există o obligație generală. Legea nr. 69/2016 o impune notarilor (art. 56 alin. (1)), iar Legea nr. 271/2017 obligă entitățile de audit să asigure riscul de audit prin asigurare și/sau provizioane (art. 26). Pentru avocați, Legea nr. 1260/2002 o permite fără să o impună. Pentru alte profesii, obligația poate rezulta din legea specială sau, mai des, din contract.</p>
+<h3>Care este diferența dintre baza claims-made și baza occurrence?</h3><p>Pe bază claims-made, polița se aplică pretențiilor formulate și notificate în perioada de asigurare, cu condiția ca fapta să fie ulterioară datei retroactive. Pe bază occurrence, contează data faptei care a produs prejudiciul, chiar dacă pretenția apare după expirarea poliței, în limitele termenului de prescripție și ale condițiilor poliței. Asigurarea PI se emite, de regulă, pe bază claims-made.</p>
+<h3>Ce este data retroactivă într-o poliță PI?</h3><p>Data retroactivă este momentul de la care erorile anterioare începutului poliței sunt acceptate, dacă pretenția apare în perioada de asigurare. Păstrarea ei la reînnoire și la schimbarea asigurătorului protejează lucrările din anii trecuți. Mutarea datei retroactive lasă fără acoperire serviciile prestate înainte de noua dată.</p>
+<h3>Acoperă asigurarea PI amenzile și penalitățile din contract?</h3><p>Amenzile și sancțiunile aplicate asiguratului, garanțiile de rezultat și penalitățile asumate contractual peste răspunderea legală sunt excluderi frecvente. O amendă plătită de client din cauza unei erori a asiguratului poate fi pretinsă ca prejudiciu al clientului, iar tratamentul ei depinde de condițiile poliței și de lege.</p>
+<h3>Asigurarea PI și asigurarea cyber sunt același produs?</h3><p>Nu. PI acoperă pretențiile clienților pentru erori în serviciul profesional. Asigurarea cyber privește incidentele informatice, cum sunt atacurile, scurgerile de date și întreruperea sistemelor, inclusiv costurile proprii ale firmei. O firmă IT poate avea nevoie de ambele, cu delimitarea scrisă a zonei în care se suprapun.</p>
+<h3>Ce documente se cer pentru o ofertă de asigurare PI?</h3><p>De regulă, chestionarul asigurătorului, extrasul din registrul persoanelor juridice, descrierea serviciilor, cifra de afaceri pe activități și țări, un model de contract cu clienții, cerința de asigurare primită, istoricul pretențiilor și polița anterioară cu data retroactivă. Asigurătorul poate cere și calificările specialiștilor.</p>
+
+<h2>Ofertă personalizată prin ING Broker</h2>
+<p>ING Broker pregătește dosarul firmei de servicii și cere oferte de la mai mulți asigurători din Moldova. Acceptarea riscului, prima și condițiile se stabilesc de asigurător.</p>
+<p><a href="/contact">Solicită o ofertă personalizată → ingbroker.md/contact</a></p>
+<p>Insurance ING Broker SRL, str. Pan Halippa 9, MD-2009, mun. Chișinău. Telefon: +373 79 526 003, +373 69 526 003. E-mail: andrei.moraru@ingbroker.md. Activitate supravegheată de Banca Națională a Moldovei.</p>`
+  },
  'asigurare-raspundere-civila-generala':{
   title:'Asigurarea de răspundere civilă generală',
   description:'Răspunderea civilă față de terți în Moldova: activități, spații, bunuri ale clienților, limite și notificarea unei pretenții. Ce verifici înainte de ofertare.',
