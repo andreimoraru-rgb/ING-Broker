@@ -1,0 +1,33 @@
+# URL-uri verificate de .github/workflows/seo-live-check.yml (Agent Site).
+# O linie = un URL. "redirect <URL>" verifică doar primul răspuns (fără www -> www).
+
+# easigurari.com
+https://www.easigurari.com/ro
+https://www.easigurari.com/ru
+https://www.easigurari.com/ro/rca
+https://www.easigurari.com/ru/rca
+https://www.easigurari.com/ro/green-card
+https://www.easigurari.com/ru/green-card
+https://www.easigurari.com/ro/health-insurance
+https://www.easigurari.com/ro/article/tot-despre-asigurarea-rca-moldova-2026-ghid-complet-cu-preturi-si-calculator
+https://www.easigurari.com/ro/article/se-poate-transfera-rca-ul-moldova-tot-ce-trebuie-sa-stii-2026
+https://www.easigurari.com/ro/article/constatare-amiabila-accident-rutier-moldova-2026
+https://www.easigurari.com/ro/casco
+https://www.easigurari.com/ro/asigurari
+https://www.easigurari.com/robots.txt
+https://www.easigurari.com/llms.txt
+https://www.easigurari.com/sitemap.xml
+
+# ingbroker.md
+https://www.ingbroker.md/
+https://www.ingbroker.md/ru/
+https://www.ingbroker.md/despre-noi
+https://www.ingbroker.md/servicii/asigurari-corporative-moldova
+https://www.ingbroker.md/servicii/asigurari-constructii-car-ear
+https://www.ingbroker.md/robots.txt
+https://www.ingbroker.md/llms.txt
+https://www.ingbroker.md/sitemap.xml
+
+# redirect fără www
+redirect https://easigurari.com/ro
+redirect https://ingbroker.md/
