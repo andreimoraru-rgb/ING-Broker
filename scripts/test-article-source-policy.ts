@@ -22,6 +22,8 @@ for (const host of ['statistica.gov.md','acordgrup.md']) allowed.add(host);
 allowed.add('swissre.com');
 // 21.11.2026: textul autentic CMR (UNECE), starea tratatelor (ONU) și traducerea oficială (ANTA, autoritate din Moldova), pentru articolul CMR.
 for (const host of ['unece.org','treaties.un.org','anta.gov.md']) allowed.add(host);
+// 21.11.2026: GENERAL Asigurări (asigurător local), sursă publicată prin PR 46, lot aprobat de proprietar.
+allowed.add('general.md');
 for(const denied of ['marsh.com','allianztiriac.ro','energie.gov.md.evil.example','other-broker.md'])assert.equal(allowed.has(denied),false);
 const links: {lang:string;slug:string;url:string;host:string}[] = [];
 const violations: typeof links = [];
