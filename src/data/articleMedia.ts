@@ -110,3 +110,11 @@ for(const [slug,asset] of Object.entries(catalogMedia20261112)){articleMedia[slu
 articleMedia['asigurare-constructii-montaj']={...articleMedia['asigurare-constructii-montaj'],image:'/images/articles/moldova/ing-broker-car-constructii-santier-2026.webp',imageAlt:'Asigurare CAR construcții Moldova 2026: echipă cu căști de protecție verifică montajul unei instalații pe șantier'};
 // 21.11.2026, briefing V2.0: imaginea de distribuire 1200x630 a articolului CMR, decupată din scena aprobată.
 articleMedia['asigurari-transport-logistica-cmr-cargo-moldova']={...articleMedia['asigurari-transport-logistica-cmr-cargo-moldova'],image:'/images/articles/moldova/ing-broker-cmr-transport-international-2026.webp',imageAlt:'Asigurare CMR Moldova 2026: transportator verifică documentele lângă un camion cu semiremorcă prelată'};
+
+// Owner review candidate, 21.11.2026. Existing article IDs and layout retained.
+for (const [slug, name, alt] of [
+  ['asigurare-flote-auto-corporate-moldova', 'flota-corporate', 'Responsabil de flotă verificând un autoturism lângă două mașini și două furgonete la baza companiei'],
+  ['asigurare-pierdere-profit', 'continuitate-productie', 'Tehnician și responsabil operațional verifică un plan lângă o linie de îmbuteliere oprită'],
+] as const) {
+  articleMedia[slug] = { ...articleMedia[slug], image: `/images/articles/moldova/${name}-corner-20261121.webp`, heroImage: undefined, imageAlt: alt };
+}

@@ -835,7 +835,7 @@ const WhyUsSection = ({ lang }: { lang: Language }) => {
             >
               <div className="overflow-hidden aspect-[4/5] lg:aspect-square">
                 <img 
-                  src="/team4.png" 
+                  src="/images/optimized-20261121-v1/team4.webp"
                   className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 group-hover:brightness-110"
                   alt="Team"
                   referrerPolicy="no-referrer"
@@ -864,7 +864,7 @@ const CorporateGatewaySection = ({ lang }: { lang: Language }) => {
     <section className="py-24 bg-secondary text-white relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="/building 2.png" 
+          src="/images/optimized-20261121-v1/building-2.webp"
           className="w-full h-auto object-cover opacity-40"
           alt="Corporate Background"
         />
@@ -1318,6 +1318,7 @@ export default function App({ initialPath }: { initialPath?: string } = {}) {
           <Route path="/renewable-energy" element={<RenewableEnergyPage lang={lang} />} />
           <Route path="/property-assets" element={<PropertyAssetsPage lang={lang} />} />
           <Route path="/oferte/flote-auto" element={<FleetAutoPage lang={lang} />} />
+          <Route path="/oferte/pi-insurance-it" element={lang === 'ro' ? <Navigate to="/servicii/asigurare-raspundere-profesionala" replace /> : <NotFoundPage lang={lang} />} />
           <Route path="/oferte/transportatori-auto" element={<FleetAutoPage lang={lang} />} />
           <Route path="/business/transport-logistica" element={lang === 'ro' ? <Navigate to="/oferte/flote-auto" replace /> : <FleetAutoPage lang={lang} />} />
           <Route path="/servicii/asigurari-constructii-car-ear" element={<CarEarPage lang={lang} />} />

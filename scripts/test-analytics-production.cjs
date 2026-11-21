@@ -27,6 +27,16 @@ function context(url, qa = false) {
   return {allowed,scripts,events,sandbox};
 }
 let cases = 0;
+{
+  const r=context('https://www.ingbroker.md/contact?utm_source=google_business_profile&utm_medium=organic');
+  r.sandbox.exports.trackEvent('whatsapp_message_prepared',{source:'contact_page',form_id:'contact'});
+  const hit=r.events.find(x=>x[0]==='ga4'&&x[2]==='whatsapp_message_prepared')[3];
+  assert.equal(hit.form_origin,'contact_page');
+  assert.equal(hit.source,undefined);
+  assert.equal(hit.form_id,'contact');
+  assert.equal(r.events.some(x=>x[0]==='ga4'&&x[2]==='generate_lead'),false);
+  cases++;
+}
 for(const url of ['http://localhost:3000','http://127.0.0.1:4181','https://preview.ing-broker.pages.dev','https://www.ingbroker.md.evil.example','https://ingbroker.md.evil.example','http://www.ingbroker.md','https://www.ingbroker.md:444','https://www.ingbroker.md/news/test?ing_qa=1']) {
   const r=context(url);assert.equal(r.allowed,false,url);assert.equal(r.scripts.length,0,url);assert.equal(r.events.length,0,url);cases++;
 }

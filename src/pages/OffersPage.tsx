@@ -221,7 +221,7 @@ export const OffersPage: React.FC<OffersPageProps> = ({ lang }) => {
       <section className="relative pt-64 pb-32 overflow-hidden mb-16 min-h-[600px] flex items-start">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/solutii-1.png" 
+            src="/images/optimized-20261121-v1/solutii-1.webp"
             alt="Corporate Solutions" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

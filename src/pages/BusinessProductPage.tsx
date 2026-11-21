@@ -84,7 +84,7 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
       "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=1000"
     ],
     cargo: [
-      "/LOGISTICA.png",
+      "/images/optimized-20261121-v1/logistica.webp",
       "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&q=80&w=1000",
       "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=1000",
       "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1000"
@@ -104,11 +104,11 @@ export const BusinessProductPage: React.FC<BusinessProductPageProps> = ({ lang }
     construction: [
       "/Constructii-montaj.jpeg",
       "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1000",
-      "/infrastructura.jpeg",
+      "/images/optimized-20261121-v1/infrastructura.webp",
       "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=1000"
     ],
     benefits: [
-      "/accident.png",
+      "/images/optimized-20261121-v1/accident.webp",
       "/employer.jpg",
       "/employer.jpg",
       "/employer.jpg"

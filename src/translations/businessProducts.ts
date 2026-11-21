@@ -7,7 +7,7 @@ export const businessProductsTranslations = {
       industries: {
         title: 'Industrii Vizate',
         items: [
-          { title: 'Retail și Comerț', desc: 'Magazine, showroom-uri și centre comerciale cu flux mare de clienți.', image: '/e-commerce-2.png' },
+          { title: 'Retail și Comerț', desc: 'Magazine, showroom-uri și centre comerciale cu flux mare de clienți.', image: '/images/optimized-20261121-v1/e-commerce-2.webp' },
           { title: 'Horeca', desc: 'Restaurante, hoteluri și cafenele expuse riscurilor de vătămare a clienților.', image: '/horeca.jpg' },
           { title: 'Construcții', desc: 'Companii de construcții care pot afecta proprietățile învecinate.', image: '/constructie-inginerie-2.jpg' },
           { title: 'Producție', desc: 'Fabrici și unități de producție care livrează bunuri către consumatori.', image: '/images/articles/moldova/utilaje-industriale-audit-scene-20261111.webp', imageAlt: 'Tehnician la un utilaj de prelucrare într-un atelier industrial' }
@@ -113,7 +113,7 @@ export const businessProductsTranslations = {
         title: 'Industrii Vizate',
         items: [
           { title: 'Sectorul Corporativ', desc: 'Companii mari cu structuri complexe de management și consilii de administrație.', image: '/d&o corporate.jpg' },
-          { title: 'Servicii Financiare', desc: 'Bănci, fonduri de investiții și instituții financiare nebancare.', image: '/d&o financiar.png' },
+          { title: 'Servicii Financiare', desc: 'Bănci, fonduri de investiții și instituții financiare nebancare.', image: '/images/optimized-20261121-v1/d-o-financiar.webp' },
           { title: 'Startups și Tech', desc: 'Companii în creștere rapidă care atrag investiții externe.', image: '/Startups și Tech-2.jpg' },
           { title: 'ONG-uri și Asociații', desc: 'Organizații non-profit cu funcții de conducere care trebuie descrise în analiză.', image: '/ong.jpg' }
         ]
@@ -142,7 +142,7 @@ export const businessProductsTranslations = {
         },
         disadvantages: {
           title: 'Întrebări despre condiții',
-          image: '/excluderi.png',
+          image: '/images/optimized-20261121-v1/excluderi.webp',
           items: [
             'Cum sunt tratate frauda, faptele intenționate și avantajele personale necuvenite?',
             'Ce pretenții pentru vătămări corporale sau daune materiale sunt acceptate ori excluse?',
@@ -167,7 +167,7 @@ export const businessProductsTranslations = {
         title: 'Industrii Vizate',
         items: [
           { title: 'E-commerce', desc: 'Magazine online care procesează volume mari de date și plăți.', image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1200' },
-          { title: 'Sănătate și Clinici', desc: 'Instituții medicale care gestionează date sensibile ale pacienților.', image: '/clinical-cyber-3.png' },
+          { title: 'Sănătate și Clinici', desc: 'Instituții medicale care gestionează date sensibile ale pacienților.', image: '/images/optimized-20261121-v1/clinical-cyber-3.webp' },
           { title: 'Instituții Financiare', desc: 'Entități care gestionează active și tranzacții financiare critice.', image: '/finaciar.jpeg' },
           { title: 'Companii de Tehnologie', desc: 'Furnizori de software și servicii digitale dependenți de infrastructura IT.', image: '/it-company.jpg' }
         ]
@@ -220,7 +220,7 @@ export const businessProductsTranslations = {
         items: [
           { title: 'Logistică și Transport', desc: 'Companii de transport rutier, aerian, maritim și feroviar.', image: '/logistica.jpg' },
           { title: 'Import / Export', desc: 'Companii comerciale care derulează tranzacții internaționale de mărfuri.' },
-          { title: 'Producție și Industrie', desc: 'Fabrici care își transportă produsele finite către distribuitori.', image: '/productie cargo.png' },
+          { title: 'Producție și Industrie', desc: 'Fabrici care își transportă produsele finite către distribuitori.', image: '/images/optimized-20261121-v1/productie-cargo.webp' },
           { title: 'Distribuție și Retail', desc: 'Companii care gestionează fluxuri constante de aprovizionare.', image: '/images/articles/moldova/depozit-logistic-audit-scene-20261111.webp', imageAlt: 'Rafturi cu mărfuri pe paleți și stivuitor într-un depozit logistic' }
         ]
       },
@@ -376,7 +376,7 @@ export const businessProductsTranslations = {
         items: [
           { title: 'Dezvoltări Rezidențiale', desc: 'Proiecte de blocuri de locuințe și ansambluri rezidențiale.', image: '/Constructii-montaj.jpeg' },
           { title: 'Construcții Comerciale', desc: 'Centre comerciale, clădiri de birouri și spații logistice.', image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200' },
-          { title: 'Infrastructură', desc: 'Proiecte de drumuri, poduri, rețele de apă și canalizare.', image: '/infrastructura.jpeg' },
+          { title: 'Infrastructură', desc: 'Proiecte de drumuri, poduri, rețele de apă și canalizare.', image: '/images/optimized-20261121-v1/infrastructura.webp' },
           { title: 'Instalații Industriale', desc: 'Montaj de echipamente și linii de producție în fabrici.', image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=1200' }
         ]
       },
@@ -428,7 +428,7 @@ export const businessProductsTranslations = {
         items: [
           { title: 'Asigurări Medicale de Grup', desc: 'Servicii medicale, rețele de prestatori și proceduri de acces de verificat în program.', image: '/Group_Health_Insurance.png' },
           { title: 'Viață și Invaliditate', desc: 'Persoane, evenimente și sume de analizat pentru un eventual program de viață sau invaliditate.', image: '/employer.png' },
-          { title: 'Informarea angajaților', desc: 'Explicarea serviciilor, limitelor și documentelor înainte de înscriere.', image: '/wellness_insurance.png' },
+          { title: 'Informarea angajaților', desc: 'Explicarea serviciilor, limitelor și documentelor înainte de înscriere.', image: '/images/optimized-20261121-v1/wellness-insurance.webp' },
           { title: 'Echipe IT', desc: 'Companii care analizează beneficiile în funcție de nevoile echipei și buget.', image: '/conect-people.png' }
         ]
       },
@@ -533,7 +533,7 @@ export const businessProductsTranslations = {
       industries: {
         title: 'Целевые отрасли',
         items: [
-          { title: 'Розничная торговля', desc: 'Магазины, шоурумы и торговые центры с большим потоком клиентов.', image: '/e-commerce-2.png' },
+          { title: 'Розничная торговля', desc: 'Магазины, шоурумы и торговые центры с большим потоком клиентов.', image: '/images/optimized-20261121-v1/e-commerce-2.webp' },
           { title: 'Horeca', desc: 'Рестораны, отели и кафе, подверженные рискам травмирования клиентов.', image: '/horeca.jpg' },
           { title: 'Строительство', desc: 'Строительные компании, которые могут нанести ущерб соседним объектам.', image: '/constructie-inginerie-2.jpg' },
           { title: 'Производство', desc: 'Заводы и производственные подразделения, поставляющие товары потребителям.', image: '/images/articles/moldova/utilaje-industriale-audit-scene-20261111.webp', imageAlt: 'Техник у обрабатывающего станка в промышленном цехе' }
@@ -691,7 +691,7 @@ export const businessProductsTranslations = {
         title: 'Целевые отрасли',
         items: [
           { title: 'Электронная коммерция', desc: 'Интернет-магазины, обрабатывающие большие объемы данных и платежей.', image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1200' },
-          { title: 'Здравоохранение и клиники', desc: 'Медицинские учреждения, управляющие конфиденциальными данными пациентов.', image: '/clinical-cyber-3.png' },
+          { title: 'Здравоохранение и клиники', desc: 'Медицинские учреждения, управляющие конфиденциальными данными пациентов.', image: '/images/optimized-20261121-v1/clinical-cyber-3.webp' },
           { title: 'Финансовые институты', desc: 'Организации, управляющие критически важными активами и транзакциями.', image: '/finaciar.jpeg' },
           { title: 'Технологические компании', desc: 'Поставщики ПО и цифровых услуг, зависящие от ИТ-инфраструктуры.', image: '/it-company.jpg' }
         ]
@@ -744,7 +744,7 @@ export const businessProductsTranslations = {
         items: [
           { title: 'Логистика и транспорт', desc: 'Компании, занимающиеся автомобильными, авиационными, морскими и ж/д перевозками.', image: '/logistica.jpg' },
           { title: 'Импорт / Экспорт', desc: 'Торговые компании, осуществляющие международные сделки с товарами.' },
-          { title: 'Производство и промышленность', desc: 'Заводы, транспортирующие готовую продукцию дистрибьюторам.', image: '/productie cargo.png' },
+          { title: 'Производство и промышленность', desc: 'Заводы, транспортирующие готовую продукцию дистрибьюторам.', image: '/images/optimized-20261121-v1/productie-cargo.webp' },
           { title: 'Дистрибуция и ритейл', desc: 'Компании, управляющие постоянными потоками поставок.', image: '/images/articles/moldova/depozit-logistic-audit-scene-20261111.webp', imageAlt: 'Стеллажи с товарами на поддонах и погрузчик на логистическом складе' }
         ]
       },
@@ -900,7 +900,7 @@ export const businessProductsTranslations = {
         items: [
           { title: 'Жилое строительство', desc: 'Проекты многоквартирных домов и жилых комплексов.', image: '/Constructii-montaj.jpeg' },
           { title: 'Коммерческое строительство', desc: 'Торговые центры, офисные здания и логистические пространства.', image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200' },
-          { title: 'Инфраструктура', desc: 'Проекты дорог, мостов, сетей водоснабжения и канализации.', image: '/infrastructura.jpeg' },
+          { title: 'Инфраструктура', desc: 'Проекты дорог, мостов, сетей водоснабжения и канализации.', image: '/images/optimized-20261121-v1/infrastructura.webp' },
           { title: 'Промышленные установки', desc: 'Монтаж оборудования и производственных линий на заводах.', image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=1200' }
         ]
       },
@@ -1057,7 +1057,7 @@ export const businessProductsTranslations = {
       industries: {
         title: 'Target Industries',
         items: [
-          { title: 'Retail and Trade', desc: 'Stores, showrooms, and shopping centers with high customer flow.', image: '/e-commerce-2.png' },
+          { title: 'Retail and Trade', desc: 'Stores, showrooms, and shopping centers with high customer flow.', image: '/images/optimized-20261121-v1/e-commerce-2.webp' },
           { title: 'Horeca', desc: 'Restaurants, hotels, and cafes exposed to customer injury risks.', image: '/horeca.jpg' },
           { title: 'Construction', desc: 'Construction companies that can affect neighboring properties.', image: '/constructie-inginerie-2.jpg' },
           { title: 'Production', desc: 'Factories and production units delivering goods to consumers.', image: '/images/articles/moldova/utilaje-industriale-audit-scene-20261111.webp', imageAlt: 'Technician operating a machining tool in an industrial workshop' }
@@ -1215,7 +1215,7 @@ export const businessProductsTranslations = {
         title: 'Target Industries',
         items: [
           { title: 'E-commerce', desc: 'Online stores processing large volumes of data and payments.', image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1200' },
-          { title: 'Healthcare and Clinics', desc: 'Medical institutions managing sensitive patient data.', image: '/clinical-cyber-3.png' },
+          { title: 'Healthcare and Clinics', desc: 'Medical institutions managing sensitive patient data.', image: '/images/optimized-20261121-v1/clinical-cyber-3.webp' },
           { title: 'Financial Institutions', desc: 'Entities managing critical financial assets and transactions.', image: '/finaciar.jpeg' },
           { title: 'Technology Companies', desc: 'Software and digital service providers dependent on IT infrastructure.', image: '/it-company.jpg' }
         ]
@@ -1268,7 +1268,7 @@ export const businessProductsTranslations = {
         items: [
           { title: 'Logistics and Transport', desc: 'Road, air, sea, and rail transport companies.', image: '/logistica.jpg' },
           { title: 'Import / Export', desc: 'Trading companies conducting international commodity transactions.' },
-          { title: 'Production and Industry', desc: 'Factories transporting finished products to distributors.', image: '/productie cargo.png' },
+          { title: 'Production and Industry', desc: 'Factories transporting finished products to distributors.', image: '/images/optimized-20261121-v1/productie-cargo.webp' },
           { title: 'Distribution and Retail', desc: 'Companies managing constant supply flows.', image: '/images/articles/moldova/depozit-logistic-audit-scene-20261111.webp', imageAlt: 'Shelves with palletised goods and a forklift in a logistics warehouse' }
         ]
       },
@@ -1424,7 +1424,7 @@ export const businessProductsTranslations = {
         items: [
           { title: 'Residential Developments', desc: 'Housing block projects and residential complexes.', image: '/Constructii-montaj.jpeg' },
           { title: 'Commercial Construction', desc: 'Shopping centers, office buildings, and logistical spaces.', image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200' },
-          { title: 'Infrastructure', desc: 'Road, bridge, water, and sewage network projects.', image: '/infrastructura.jpeg' },
+          { title: 'Infrastructure', desc: 'Road, bridge, water, and sewage network projects.', image: '/images/optimized-20261121-v1/infrastructura.webp' },
           { title: 'Industrial Installations', desc: 'Equipment assembly and production lines in factories.', image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=1200' }
         ]
       },

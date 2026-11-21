@@ -105,7 +105,7 @@ export const BusinessPage: React.FC<BusinessPageProps> = ({ lang }) => {
       <section className="relative h-screen min-h-[700px] flex items-start pt-64 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/building 2.png" 
+            src="/images/optimized-20261121-v1/building-2.webp"
             alt="Corporate Gateway" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

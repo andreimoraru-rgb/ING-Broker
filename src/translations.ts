@@ -317,7 +317,7 @@ export const translations = {
           id: 'facultative', 
           title: 'Reasigurare Facultativă', 
           desc: "Pentru un risc sau proiect individual, pregătește descrierea, valorile și istoricul relevant. Posibilitatea unei plasări facultative și condițiile ei se confirmă după analiza participanților; nu sunt promise prin această pagină.",
-          image: '/reinsurance-1.webp', 
+          image: '/images/optimized-20261121-v1/reinsurance-1.webp',
           analysis: {
             risks: { title: 'Riscuri Vizate', items: ['Expuneri individuale care depășesc capacitatea pieței locale', 'Riscuri industriale complexe', 'Proiecte de infrastructură majore'] },
             advantages: { title: "Ce analizăm", items: ["Analiza separată a riscului propus", "Verificarea participanților și a informațiilor financiare", "Compararea limitelor și condițiilor disponibile"] },
@@ -827,7 +827,7 @@ export const translations = {
           id: 'facultative', 
           title: 'Факультативное перестрахование', 
           desc: "Для отдельного риска или проекта подготовьте описание, стоимости и соответствующую историю. Возможность факультативного размещения и его условия подтверждаются после оценки участниками, а не этой страницей.", 
-          image: '/reinsurance-1.webp', 
+          image: '/images/optimized-20261121-v1/reinsurance-1.webp',
           analysis: {
             risks: { title: 'Целевые риски', items: ['Индивидуальные риски, превышающие емкость местного рынка', 'Сложные промышленные риски', 'Крупные инфраструктурные проекты'] },
             advantages: { title: "Что проверяем", items: ["Отдельная оценка предложенного риска", "Проверка участников и финансовых сведений", "Сравнение доступных лимитов и условий"] },
@@ -1207,7 +1207,7 @@ export const translations = {
           id: 'facultative', 
           title: 'Facultative Reinsurance', 
           desc: "For an individual risk or project, prepare its description, values and relevant history. Participants must assess whether facultative placement is possible and on what terms; this page does not promise placement.", 
-          image: '/reinsurance-1.webp', 
+          image: '/images/optimized-20261121-v1/reinsurance-1.webp',
           analysis: {
             risks: { title: 'Targeted Risks', items: ['Individual exposures exceeding local market capacity', 'Complex industrial risks', 'Major infrastructure projects'] },
             advantages: { title: "What we assess", items: ["Individual assessment of the proposed risk", "Verification of participants and financial information", "Comparison of available limits and conditions"] },
@@ -1387,7 +1387,7 @@ export const productTranslations = {
       advantages: ["Verificarea datelor înainte de plată", "Explicarea prețului și a perioadei", "Îndrumare privind notificarea daunei"],
       cta: 'Calculează RCA',
       link: 'https://easigurari.com/ro/rca',
-      image: '/rca-red-car.jpg',
+      image: '/images/optimized-20261121-v1/rca-red-car.webp',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Răspunderea civilă față de terți', 'Sancțiuni contravenționale pentru lipsa poliței', 'Cheltuieli de judecată în procese civile'] },
         advantages: { title: 'Avantaje', items: ["Verificarea documentului și a valabilității", "Compararea limitelor aplicabile", "Verificarea datelor folosite la calcul"] },
@@ -1406,7 +1406,7 @@ export const productTranslations = {
       advantages: ["Verificarea țărilor de pe traseu", "Clarificarea perioadei poliței", "Îndrumare privind documentele și notificarea"],
       cta: 'Calculează Carte Verde',
       link: 'https://easigurari.com/ro/green-card',
-      image: '/carte_verde.jpg',
+      image: '/images/optimized-20261121-v1/carte-verde.webp',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Accidente rutiere în afara Republicii Moldova', 'Răspundere civilă conform legislației țării de vizită', 'Costuri de repatriere a vehiculului (în funcție de clauze)'] },
         advantages: { title: 'Avantaje', items: ["Verificarea valabilității pentru țările vizitate", "Clarificarea informațiilor de contact la daună", "Păstrarea documentelor pentru deplasare"] },
@@ -1425,7 +1425,7 @@ export const productTranslations = {
       advantages: ["Verificarea teritoriului și a perioadei", "Explicarea franșizei și a limitelor", "Clarificarea canalului și limbii de asistență"],
       cta: 'Calculează asigurarea',
       link: 'https://easigurari.com/ro/health-insurance',
-      image: '/asigurare-medicala-travel.jpg',
+      image: '/images/optimized-20261121-v1/asigurare-medicala-travel.webp',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Urgențe medicale și accidente în străinătate', 'Cheltuieli de spitalizare și intervenții chirurgicale', 'Repatriere medicală sau în caz de deces'] },
         advantages: { title: 'Avantaje', items: ["Condițiile pentru COVID-19, dacă riscul este inclus", "Programul și contactele serviciului de asistență", "Plata directă sau rambursarea, dacă sunt prevăzute"] },
@@ -1444,7 +1444,7 @@ export const productTranslations = {
       advantages: ["Verificarea condițiilor de reparație", "Clarificarea asistenței, dacă este inclusă", "Compararea riscurilor și franșizei"],
       cta: 'Vezi detalii CASCO',
       link: 'https://easigurari.com/ro/article/asigurarea-casco',
-      image: '/asigurare-casco.jpg',
+      image: '/images/optimized-20261121-v1/asigurare-casco.webp',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Avarii accidentale (coliziuni, răsturnări)', 'Furt total sau parțial al vehiculului', 'Vandalism și fenomene naturale (grindină, inundații)'] },
         advantages: { title: 'Avantaje', items: ["Situațiile de accident acceptate în contract", "Service-urile și procedura de reparație agreate", "Echipamentele suplimentare, dacă sunt incluse"] },
@@ -1482,7 +1482,7 @@ export const productTranslations = {
       advantages: ["Compararea sumelor asigurate", "Verificarea teritoriului și a activităților", "Clarificarea documentelor pentru cerere"],
       cta: 'Vezi detalii Accidente',
       link: 'https://easigurari.com/ro/article/asigurarea-de-accidente-angajatilor-r-moldova',
-      image: '/Accidente2.png',
+      image: '/images/optimized-20261121-v1/accidente2.webp',
       analysis: {
         risks: { title: 'Riscuri Vizate', items: ['Accidente casnice sau la locul de muncă', 'Accidente în timpul activităților sportive', 'Invaliditate permanentă sau temporară'] },
         advantages: { title: 'Avantaje', items: ["Plățile și evenimentele prevăzute în contract", "Teritoriul și perioadele acceptate", "Persoanele care pot fi incluse în poliță"] },
@@ -1503,7 +1503,7 @@ export const productTranslations = {
       advantages: ["Проверка данных до оплаты", "Объяснение цены и периода", "Разъяснение уведомления об убытке"],
       cta: 'Рассчитать ОСАГО',
       link: 'https://easigurari.com/ru/rca',
-      image: '/rca-red-car.jpg',
+      image: '/images/optimized-20261121-v1/rca-red-car.webp',
       analysis: {
         risks: { title: 'Целевые риски', items: ['Гражданская ответственность перед третьими лицами', 'Административные санкции за отсутствие полиса', 'Судебные издержки по гражданским делам'] },
         advantages: { title: 'Преимущества', items: ["Проверка документа и срока действия", "Сравнение применимых лимитов", "Проверка данных для расчета"] },
@@ -1522,7 +1522,7 @@ export const productTranslations = {
       advantages: ["Проверка стран по маршруту", "Уточнение периода полиса", "Разъяснение документов и уведомления"],
       cta: 'Рассчитать Зеленую карту',
       link: 'https://easigurari.com/ru/green-card',
-      image: '/carte_verde.jpg',
+      image: '/images/optimized-20261121-v1/carte-verde.webp',
       analysis: {
         risks: { title: 'Целевые риски', items: ['ДТП за пределами Республики Молдова', 'Гражданская ответственность согласно законам страны пребывания', 'Расходы на репатриацию автомобиля (в зависимости от условий)'] },
         advantages: { title: 'Преимущества', items: ["Проверка действия в посещаемых странах", "Уточнение контактов при убытке", "Хранение документов для поездки"] },
@@ -1541,7 +1541,7 @@ export const productTranslations = {
       advantages: ["Проверка территории и периода", "Объяснение франшизы и лимитов", "Уточнение канала и языка помощи"],
       cta: 'Рассчитать страховку',
       link: 'https://easigurari.com/ru/health-insurance',
-      image: '/asigurare-medicala-travel.jpg',
+      image: '/images/optimized-20261121-v1/asigurare-medicala-travel.webp',
       analysis: {
         risks: { title: 'Целевые риски', items: ['Медицинские экстренные случаи и несчастные случаи за рубежом', 'Расходы на госпитализацию и хирургические операции', 'Медицинская репатриация или в случае смерти'] },
         advantages: { title: 'Преимущества', items: ["Условия по COVID-19, если риск включен", "График и контакты службы помощи", "Прямая оплата или возмещение, если предусмотрены"] },
@@ -1560,7 +1560,7 @@ export const productTranslations = {
       advantages: ["Проверка условий ремонта", "Уточнение помощи, если она включена", "Сравнение рисков и франшизы"],
       cta: 'Детали КАСКО',
       link: 'https://easigurari.com/ru/article/asigurarea-casco',
-      image: '/asigurare-casco.jpg',
+      image: '/images/optimized-20261121-v1/asigurare-casco.webp',
       analysis: {
         risks: { title: 'Целевые риски', items: ['Случайные повреждения (столкновения, опрокидывания)', 'Полная или частичная кража автомобиля', 'Вандализм и природные явления (град, наводнения)'] },
         advantages: { title: 'Преимущества', items: ["Ситуации ДТП, принятые в договоре", "Согласованные сервисы и порядок ремонта", "Дополнительное оборудование, если включено"] },
@@ -1598,7 +1598,7 @@ export const productTranslations = {
       advantages: ["Сравнение страховых сумм", "Проверка территории и занятий", "Уточнение документов для заявления"],
       cta: 'Детали страхования',
       link: 'https://easigurari.com/ru/article/asigurarea-de-accidente-angajatilor-r-moldova',
-      image: '/Accidente2.png',
+      image: '/images/optimized-20261121-v1/accidente2.webp',
       analysis: {
         risks: { title: 'Целевые риски', items: ['Бытовые несчастные случаи или на рабочем месте', 'Несчастные случаи во время занятий спортом', 'Постоянная или временная инвалидность'] },
         advantages: { title: 'Преимущества', items: ["Выплаты и события, предусмотренные договором", "Принятые территория и периоды", "Лица, которых можно включить в полис"] },
@@ -1619,7 +1619,7 @@ export const productTranslations = {
       advantages: ["Checking details before payment", "Explanation of price and period", "Guidance on notifying a loss"],
       cta: 'Calculate RCA',
       link: 'https://easigurari.com/ro/rca',
-      image: '/rca-red-car.jpg',
+      image: '/images/optimized-20261121-v1/rca-red-car.webp',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Third party liability', 'Administrative sanctions for lack of policy', 'Legal costs in civil lawsuits'] },
         advantages: { title: 'Advantages', items: ["Checking the document and validity", "Comparing applicable limits", "Checking calculation details"] },
@@ -1638,7 +1638,7 @@ export const productTranslations = {
       advantages: ["Checking countries on the route", "Clarifying the policy period", "Guidance on documents and notification"],
       cta: 'Calculate Green Card',
       link: 'https://easigurari.com/ro/green-card',
-      image: '/carte_verde.jpg',
+      image: '/images/optimized-20261121-v1/carte-verde.webp',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Road accidents outside the Republic of Moldova', 'Civil liability according to the laws of the visited country', 'Vehicle repatriation costs (depending on clauses)'] },
         advantages: { title: 'Advantages', items: ["Checking validity in visited countries", "Clarifying claims contact information", "Keeping travel documents"] },
@@ -1657,7 +1657,7 @@ export const productTranslations = {
       advantages: ["Checking territory and period", "Explaining deductibles and limits", "Clarifying assistance channels and language"],
       cta: 'Calculate insurance',
       link: 'https://easigurari.com/ro/health-insurance',
-      image: '/asigurare-medicala-travel.jpg',
+      image: '/images/optimized-20261121-v1/asigurare-medicala-travel.webp',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Medical emergencies and accidents abroad', 'Hospitalization costs and surgical interventions', 'Medical repatriation or in case of death'] },
         advantages: { title: 'Advantages', items: ["COVID-19 conditions, if the risk is included", "Assistance service hours and contacts", "Direct payment or reimbursement, if provided"] },
@@ -1676,7 +1676,7 @@ export const productTranslations = {
       advantages: ["Checking repair conditions", "Clarifying assistance, if included", "Comparing risks and deductibles"],
       cta: 'See CASCO details',
       link: 'https://easigurari.com/ro/article/asigurarea-casco',
-      image: '/asigurare-casco.jpg',
+      image: '/images/optimized-20261121-v1/asigurare-casco.webp',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Accidental damage (collisions, rollovers)', 'Total or partial theft of the vehicle', 'Vandalism and natural phenomena (hail, floods)'] },
         advantages: { title: 'Advantages', items: ["Accident situations accepted in the contract", "Agreed repair providers and procedures", "Additional equipment, if included"] },
@@ -1714,7 +1714,7 @@ export const productTranslations = {
       advantages: ["Comparing insured sums", "Checking territory and activities", "Clarifying claim documents"],
       cta: 'See Accident details',
       link: 'https://easigurari.com/ro/article/asigurarea-de-accidente-angajatilor-r-moldova',
-      image: '/Accidente2.png',
+      image: '/images/optimized-20261121-v1/accidente2.webp',
       analysis: {
         risks: { title: 'Targeted Risks', items: ['Home or workplace accidents', 'Accidents during sports activities', 'Permanent or temporary disability'] },
         advantages: { title: 'Advantages', items: ["Payments and events provided in the contract", "Accepted territories and periods", "People who may be included in the policy"] },

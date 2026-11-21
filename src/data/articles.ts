@@ -1670,7 +1670,7 @@ export const articles: Record<string, Article[]> = Object.fromEntries(
     seo: {
       ...article.seo,
       title: cleanGuideLabel(article.seo.title),
-      description: lang==='ro' && catalogDescriptions20261109[article.slug] ? catalogDescriptions20261109[article.slug] : cleanGuideLabel(article.seo.description),
+      description: lang === 'ro' && articleRevisions[article.slug]?.seoDescription ? articleRevisions[article.slug].seoDescription! : lang==='ro' && catalogDescriptions20261109[article.slug] ? catalogDescriptions20261109[article.slug] : cleanGuideLabel(article.seo.description),
     },
   }))]),
 );
