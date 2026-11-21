@@ -158,7 +158,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className={`flex flex-wrap items-center justify-center gap-6 mb-8 text-white/80 text-sm font-light${lang === 'ro' && article.slug === 'asigurari-transport-logistica-cmr-cargo-moldova' ? ' max-md:absolute max-md:inset-x-0 max-md:top-[calc(100%+12px)] max-md:mb-0 max-md:gap-1.5 max-md:text-xs max-md:leading-4' : ''}`}>
+            <div className={`flex flex-wrap items-center justify-center gap-6 mb-8 text-white/80 text-sm font-light${lang === 'ro' && article.slug === 'asigurari-transport-logistica-cmr-cargo-moldova' ? ' max-md:absolute max-md:left-20 max-md:right-3 max-md:bottom-[calc(100%+12px)] max-md:mb-0 max-md:gap-1.5 max-md:text-xs max-md:leading-4' : ''}`}>
               <div className="flex items-center gap-2">
                 <Calendar size={16} className="text-primary" />
                 {article.updatedAt ? `${lang === 'ro' ? 'Actualizat' : lang === 'ru' ? 'Обновлено' : 'Updated'}: ${new Date(`${article.updatedAt}T00:00:00Z`).toLocaleDateString(lang === 'ro' ? 'ro-MD' : lang === 'ru' ? 'ru-MD' : 'en-GB', { timeZone: 'UTC' })}` : article.date}
