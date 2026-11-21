@@ -1,5 +1,7 @@
 # Cloudflare Pages _redirects - permanent redirects for legacy URLs.
 # SPA routing and real 404 responses are handled by functions/[[path]].ts.
+/oferte/pi-insurance-it /servicii/asigurare-raspundere-profesionala 301
+/oferte/pi-insurance-it/ /servicii/asigurare-raspundere-profesionala 301
 /oferte/transportatori-auto /oferte/flote-auto 301
 /oferte/transportatori-auto/ /oferte/flote-auto 301
 /product-page/asigurare-rca /personal/rca/ 301
