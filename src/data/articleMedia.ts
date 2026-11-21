@@ -108,3 +108,5 @@ for(const [slug,asset] of Object.entries(catalogMedia20261112)){articleMedia[slu
 
 // 20.11.2026, briefing V2.0: imagine de distribuire 1200x630 sub 150 KB, decupată din aceeași scenă aprobată.
 articleMedia['asigurare-constructii-montaj']={...articleMedia['asigurare-constructii-montaj'],image:'/images/articles/moldova/ing-broker-car-constructii-santier-2026.webp',imageAlt:'Asigurare CAR construcții Moldova 2026: echipă cu căști de protecție verifică montajul unei instalații pe șantier'};
+// 21.11.2026, briefing V2.0: imaginea de distribuire 1200x630 a articolului CMR, decupată din scena aprobată.
+articleMedia['asigurari-transport-logistica-cmr-cargo-moldova']={...articleMedia['asigurari-transport-logistica-cmr-cargo-moldova'],image:'/images/articles/moldova/ing-broker-cmr-transport-international-2026.webp',imageAlt:'Asigurare CMR Moldova 2026: transportator verifică documentele lângă un camion cu semiremorcă prelată'};

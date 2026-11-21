@@ -52,3 +52,6 @@ for(const [name,hero] of [
  articlePhotoBranding[`/images/articles/moldova/${name}.webp`]=item;
  if(hero)articlePhotoBranding[`/images/articles/moldova/${hero}.webp`]=item;
 }
+
+// Imaginea 1200x630 a articolului CMR: pagina afișează aceeași scenă curată, cu logo-ul suprapus.
+articlePhotoBranding['/images/articles/moldova/ing-broker-cmr-transport-international-2026.webp']=articlePhotoBranding['/images/articles/moldova/transportator-cmr-20261107.webp'];
