@@ -95,6 +95,7 @@ export const translations = {
     },
     footer: {
       desc: 'ING Broker te ajută să alegi asigurări pentru tine și afacerea ta. Îți explicăm ofertele, condițiile poliței și pașii în caz de daună.',
+      status: 'Insurance ING Broker SRL (IDNO 1017600019386) este broker de asigurare și/sau reasigurare licențiat, supravegheat de Banca Națională a Moldovei.',
       sections: {
         products: 'Produse',
         company: 'Companie',
@@ -591,6 +592,7 @@ export const translations = {
     },
     footer: {
       desc: "ING Broker помогает выбрать страхование для вас и бизнеса. Объясняем доступные предложения, условия полиса и действия при убытке.",
+      status: 'Insurance ING Broker SRL (IDNO 1017600019386) является лицензированным брокером по страхованию и/или перестрахованию под надзором Национального банка Молдовы.',
       sections: {
         products: 'Продукты',
         company: 'Компания',
@@ -985,6 +987,7 @@ export const translations = {
     },
     footer: {
       desc: "ING Broker helps you consider insurance for yourself and your business. We explain available proposals, policy conditions and the steps after a loss.",
+      status: 'Insurance ING Broker SRL (IDNO 1017600019386) is a licensed insurance and/or reinsurance broker supervised by the National Bank of Moldova.',
       sections: {
         products: 'Products',
         company: 'Company',
