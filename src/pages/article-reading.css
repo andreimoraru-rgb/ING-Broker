@@ -10,6 +10,13 @@
 .article-reading .grid { align-items: start; }
 .article-reading .grid img { aspect-ratio: 3 / 2; object-fit: cover; margin-block: 0; }
 .article-reading table { display: block; overflow-x: auto; max-width: 100%; }
+/* Tabele: coloane egale și cuvinte întregi (fără ruperea „echipame nt”), conținut aliniat sus. */
+.article-reading th, .article-reading td { overflow-wrap: normal; hyphens: auto; vertical-align: top; }
+@media (min-width: 761px) {
+  /* Text aliniat la ambele margini pe desktop; despărțirea în silabe evită spațiile mari. */
+  .article-reading p, .article-reading li { text-align: justify; hyphens: auto; }
+  .article-reading table { display: table; width: 100%; table-layout: fixed; }
+}
 @media (max-width: 760px) {
   .article-reading { font-size: 17px; }
   .article-reading h2 { font-size: 26px; margin-top: 32px; margin-bottom: 16px; }

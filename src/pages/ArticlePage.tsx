@@ -136,7 +136,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-end pb-24 overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-end pt-36 md:pt-44 pb-16 md:pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src={photo}
@@ -168,7 +168,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
                 {article.author}
               </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tighter leading-tight mb-8">
+            <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-tight text-balance mb-0">
               {article.title}
             </h1>
           </motion.div>
