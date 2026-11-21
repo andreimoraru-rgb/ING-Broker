@@ -30,6 +30,7 @@ export const businessRouteAliases: Record<string, string> = {
 
 // Romanian-only consolidation. Do not create redirects to unreviewed locales.
 export const romanianRouteRedirects: Record<string, string> = {
+  '/oferte/pi-insurance-it': '/servicii/asigurare-raspundere-profesionala',
   '/business/transport-logistica': '/oferte/flote-auto',
 };
 

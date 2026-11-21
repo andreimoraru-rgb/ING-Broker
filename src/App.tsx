@@ -1318,6 +1318,7 @@ export default function App({ initialPath }: { initialPath?: string } = {}) {
           <Route path="/renewable-energy" element={<RenewableEnergyPage lang={lang} />} />
           <Route path="/property-assets" element={<PropertyAssetsPage lang={lang} />} />
           <Route path="/oferte/flote-auto" element={<FleetAutoPage lang={lang} />} />
+          <Route path="/oferte/pi-insurance-it" element={lang === 'ro' ? <Navigate to="/servicii/asigurare-raspundere-profesionala" replace /> : <NotFoundPage lang={lang} />} />
           <Route path="/oferte/transportatori-auto" element={<FleetAutoPage lang={lang} />} />
           <Route path="/business/transport-logistica" element={lang === 'ro' ? <Navigate to="/oferte/flote-auto" replace /> : <FleetAutoPage lang={lang} />} />
           <Route path="/servicii/asigurari-constructii-car-ear" element={<CarEarPage lang={lang} />} />

@@ -36,6 +36,10 @@ for(const [name,defaultColor] of [['casco-inspectie','white'],['rca-calcul','bla
 
 for(const asset of Object.values(catalogMedia20261112)){articlePhotoBranding[asset.image]={source:asset.source,defaultColor:asset.defaultColor};}
 
+for (const name of ['flota-corporate', 'continuitate-productie']) {
+ articlePhotoBranding[`/images/articles/moldova/${name}-corner-20261121.webp`] = { source: `/images/articles/moldova/${name}-scene-20261121.webp`, defaultColor: 'black' };
+}
+
 // Recovered clean versions keep the existing scene. The logo belongs to the
 // displayed photo box so object-cover cannot cut it off on narrow screens.
 for(const [name,hero] of [
