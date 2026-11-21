@@ -70,7 +70,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
   };
 
   return (
-    <div className="product-review bg-slate-50 min-h-screen font-sans text-slate-900">
+    <main className="product-review bg-slate-50 min-h-screen font-sans text-slate-900">
       <SEO
         title={seo.title}
         description={seo.description}
@@ -80,7 +80,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
       />
 
       {/* Back button */}
-      <div className="absolute top-20 left-6 z-30">
+      <div className="absolute top-32 left-6 z-30">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -101,7 +101,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
       </div>
 
       {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-20">
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-52 pb-12">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&q=90"
@@ -226,7 +226,7 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
               <div className="flex items-center gap-3 mb-8">
                 <div className="h-px w-12 bg-primary" />
                 <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">
-                  {lang === 'ro' ? 'Gratuit' : lang === 'ru' ? 'Бесплатно' : 'Free'}
+                  {lang === 'ro' ? 'Pregătirea analizei' : lang === 'ru' ? 'Подготовка анализа' : 'Preparing the assessment'}
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 tracking-tight mb-8 leading-tight">
@@ -384,6 +384,6 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 };

@@ -22,6 +22,7 @@ import { SEO } from '../components/SEO';
 import { Language } from '../translations';
 import { piContent, piSeo } from '../data/piPageContent';
 import { localizedPath } from '../utils/localizedRoutes';
+import { RelatedResources } from '../components/RelatedResources';
 
 interface ProfessionalIndemnityPageProps {
   lang: Language;
@@ -77,7 +78,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
   };
 
   return (
-    <div className="product-review bg-slate-50 min-h-screen font-sans text-slate-900">
+    <main className="product-review bg-slate-50 min-h-screen font-sans text-slate-900">
       <SEO
         title={seo.title}
         description={seo.description}
@@ -87,7 +88,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
       />
 
       {/* Back button */}
-      <div className="absolute top-20 left-6 z-30">
+      <div className="absolute top-32 left-6 z-30">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -108,11 +109,11 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
       </div>
 
       {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-20">
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden pt-52 pb-12">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=90"
-            alt="Professional services"
+            alt={lang === 'ro' ? 'Documente și calculatoare pe masa unei echipe la birou' : lang === 'ru' ? 'Документы и ноутбуки на рабочем столе команды' : 'Documents and laptops on a team desk'}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/72 backdrop-blur-[2px]" />
@@ -218,7 +219,7 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&q=85"
-                alt="Professional services office"
+                alt={lang === 'ro' ? 'Persoane discutând în jurul unei mese' : lang === 'ru' ? 'Люди обсуждают вопросы за общим столом' : 'People talking around a table'}
                 className="rounded-3xl shadow-2xl"
               />
               <div className="absolute -bottom-10 -left-10 bg-primary p-8 rounded-2xl text-white shadow-xl hidden md:block">
@@ -382,6 +383,8 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
         </div>
       </section>
 
+      <RelatedResources lang={lang} topic="professional" />
+
       {/* CTA Section */}
       <section className="py-32 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -429,6 +432,6 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
           </div>
         </div>
       </footer>
-    </div>
+    </main>
   );
 };

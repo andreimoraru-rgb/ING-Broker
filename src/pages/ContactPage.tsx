@@ -113,8 +113,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const requestTitle = lang === 'ro' ? 'Solicitare de pe ingbroker.md' : lang === 'ru' ? 'Запрос с ingbroker.md' : 'Enquiry from ingbroker.md';
     const text = encodeURIComponent(
-      `Solicitare de pe ingbroker.md\nNume: ${form.name}\nCompanie: ${form.company}\nTelefon: ${form.phone}\nEmail: ${form.email}\nServiciu: ${form.service}\nDetalii: ${form.message}`
+      `${requestTitle}\n${c.name}: ${form.name}\n${c.company}: ${form.company}\n${c.phone}: ${form.phone}\n${c.email}: ${form.email}\n${c.service}: ${form.service}\n${c.message}: ${form.message}`
     );
     trackEvent('whatsapp_message_prepared', {
       source: 'contact_page',
@@ -164,7 +165,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
   ]);
 
   return (
-    <div className="contact-page bg-white min-h-screen">
+    <main className="contact-page bg-white min-h-screen">
       <SEO
         title={`${c.title} | Insurance ING Broker SRL`}
         description={c.subtitle}
@@ -533,7 +534,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang }) => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
