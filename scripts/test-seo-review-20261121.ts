@@ -7,11 +7,13 @@ import { articlePhotoBranding } from '../src/data/articlePhotoBranding';
 import { onRequest } from '../functions/[[path]]';
 
 const slugs = Object.keys(seoContentReview20261121);
-assert.equal(slugs.length, 5);
+// 21.11.2026: CAR, PI și flote au revenit la versiunile P1 V2.0 (decizia lui Andrei Moraru); rămân RCG și pierderea de profit.
+assert.equal(slugs.length, 2);
+for (const restored of ['asigurare-constructii-montaj', 'asigurare-raspundere-profesionala', 'asigurare-flote-auto-corporate-moldova']) assert.ok(!slugs.includes(restored), restored + ' restored to V2.0');
 assert.ok(!slugs.includes('asigurari-transport-logistica-cmr-cargo-moldova'), 'Owner retains newer CMR from PR44');
 assert.ok(articles.ro.find(a => a.slug === 'asigurari-transport-logistica-cmr-cargo-moldova')!.content.includes('8,33'), 'Newer CMR body preserved');
 const catalog = articles.ro;
-assert.equal(catalog.find(a => a.slug === 'asigurare-constructii-montaj')!.title, 'Asigurare construcții și montaj CAR/EAR');
+assert.ok(!/intact/i.test(catalog.find(a => a.slug === 'asigurare-constructii-montaj')!.content), 'CAR V2.0 fără INTACT');
 const fakeAssets = { fetch: async (request: Request) => new Response(new URL(request.url).pathname) };
 for (const host of ['https://www.ingbroker.md', 'http://ingbroker.md']) {
   for (const suffix of ['', '/']) {
