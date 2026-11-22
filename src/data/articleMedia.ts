@@ -122,3 +122,6 @@ for (const [slug, name, alt] of [
 // Imaginile 1200x630 ale articolelor P1 despre răspunderea civilă generală și pierderea de profit.
 articleMedia['asigurare-raspundere-civila-generala']={...articleMedia['asigurare-raspundere-civila-generala'],image:'/images/articles/moldova/ing-broker-raspundere-civila-generala-2026.webp',imageAlt:'Asigurare răspundere civilă generală Moldova 2026: responsabila unui magazin și un tehnician verifică pragul de la intrare'};
 articleMedia['asigurare-pierdere-profit']={...articleMedia['asigurare-pierdere-profit'],image:'/images/articles/moldova/ing-broker-pierdere-profit-intrerupere-2026.webp',imageAlt:'Asigurare pierdere de profit Moldova 2026: tehnician și responsabilă operațională verifică un plan lângă o linie de îmbuteliere'};
+
+// Imaginea 1200x630 a articolului P1 despre asigurarea cargo.
+articleMedia['asigurare-cargo-transport-marfa']={...articleMedia['asigurare-cargo-transport-marfa'],image:'/images/articles/moldova/ing-broker-cargo-marfa-transport-2026.webp',imageAlt:'Asigurare cargo Moldova 2026: lucrător verifică ambalarea și fixarea mărfii pe paleți lângă un camion'};
