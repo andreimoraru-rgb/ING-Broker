@@ -23,7 +23,7 @@ allowed.add('swissre.com');
 // 21.11.2026: textul autentic CMR (UNECE), starea tratatelor (ONU) și traducerea oficială (ANTA, autoritate din Moldova), pentru articolul CMR.
 for (const host of ['unece.org','treaties.un.org','anta.gov.md']) allowed.add(host);
 // 23.11.2026: Camera Internațională de Comerț, autorul regulilor Incoterms, pentru articolul cargo. Nu este asigurător sau broker.
-for (const host of ['academy.iccwbo.org','library.iccwbo.org']) allowed.add(host);
+allowed.add('academy.iccwbo.org');
 for(const denied of ['marsh.com','allianztiriac.ro','energie.gov.md.evil.example','other-broker.md'])assert.equal(allowed.has(denied),false);
 const links: {lang:string;slug:string;url:string;host:string}[] = [];
 const violations: typeof links = [];
