@@ -5,54 +5,96 @@ const property: [string, string] = ['MOLDASIG: prezentarea asigurării bunurilor
 
 export const editorialLogistics20261108: Record<string, ArticleRevision> = {
   'asigurare-cargo-transport-marfa': {
-    title: 'Asigurarea CARGO pentru mărfuri în Moldova',
-    description: 'Ce verifici la asigurarea CARGO: marfă, valoare, rută, ambalare, transbordare și documente. Diferența față de CMR, explicată pentru companii.',
-    updatedAt: '2026-11-08', sourcesCheckedAt: '8 noiembrie 2026', preserveLegacyLayout: true,
-    related: ['asigurari-transport-logistica-cmr-cargo-moldova', 'Asigurări pentru transport și logistică în Moldova'],
-    sources: [bnm, ['Moldcargo: prezentarea locală a produsului CARGO', 'https://moldcargo.md/asigurari/cargo'], ['Moldcargo: prezentarea răspunderii transportatorului CMR', 'https://moldcargo.md/asigurari/cmr']],
-    body: `<p>Asigurarea CARGO privește mărfurile transportate, potrivit riscurilor și etapelor acceptate în poliță. Pentru o firmă din Republica Moldova, analiza începe cu trei lucruri: cine are interes asupra mărfii, ce se transportă și pe unde circulă bunurile. O poliță a transportatorului nu dovedește singură protecția integrală a încărcăturii proprietarului.</p>
-<p>Acest articol este pentru importatori, exportatori, producători și distribuitori care pregătesc o expediție sau un program de transporturi. Nu prezintă un tarif universal și nu confirmă că orice marfă, țară sau operațiune va fi acceptată. Folosește întrebările de mai jos pentru a descrie transportul real și pentru a compara propuneri pe aceleași informații.</p>
-<h2>Începe cu rolul companiei, nu cu numărul camionului</h2>
-<p>Notează dacă firma este vânzător, cumpărător, proprietar al mărfii, transportator sau organizator al transportului. Aceeași companie poate avea roluri diferite de la o comandă la alta. Dacă un client îți cere o poliță, solicită formularea exactă a cerinței și identifică operațiunea la care se referă. Nu trimite doar mesajul „avem nevoie de CARGO”.</p>
-<p>Separă documentele de vânzare de contractul de transport. Arată cine suportă riscul în fiecare etapă și ce trebuie verificat contractual, fără să deduci răspunsul numai din cine achită factura de transport. Dacă există neclarități privind momentul transferului riscului, cere și verificare juridică. Brokerul nu trebuie să inventeze o interpretare a contractului comercial.</p>
-<h2>CARGO și CMR răspund unor întrebări diferite</h2>
-<p>În prezentările locale consultate, CARGO se referă la mărfurile transportate, iar CMR la răspunderea transportatorului rutier. De aceea, întrebarea „transportatorul are CMR, mai discut CARGO?” nu are un răspuns bazat doar pe existența unui certificat. Trebuie comparate interesul protejat, riscurile, limitele, ruta și condițiile documentelor efectiv propuse.</p>
-<p>Solicită o explicație pentru diferențele dintre valoarea încărcăturii și limitele răspunderii analizate. Nu presupune că suma înscrisă pe o factură va fi restituită automat în orice incident. Pentru operațiuni în care firma transportă propriile bunuri, descrie situația distinct. Un titlu generic de produs nu rezolvă particularitățile transportului pe cont propriu.</p>
-<h2>Descrie marfa suficient de clar pentru evaluare</h2>
-<p>O formulare precum „marfă generală” poate ascunde diferențe importante. Pregătește denumirea bunurilor, materialul, starea, tipul ambalajului, numărul de colete, greutatea și valoarea. Pentru echipamente, arată dacă sunt noi, folosite sau demontate. Pentru alimente, explică cerințele de păstrare. Aceste date sunt recomandări pentru pregătirea dosarului, nu o listă contractuală universală.</p>
-<p>Menționează separat fragilitatea, sensibilitatea la umezeală, temperatura sau posibilitatea contaminării. Nu modifica descrierea pentru a obține o clasificare aparent mai avantajoasă. O ofertă întocmită pentru alte caracteristici ale încărcăturii nu este o comparație utilă. Cere confirmarea categoriei acceptate și păstrează aceeași descriere în documentele discutate.</p>
-<h2>Valoarea declarată trebuie să poată fi explicată</h2>
-<p>Pregătește factura ori documentul care justifică valoarea și întreabă ce bază de evaluare acceptă asigurătorul. Verifică dacă în sumă se includ sau nu cheltuieli conexe, potrivit propunerii. Nu adăuga automat procente, transport, taxe sau profit estimat. Componentele valorii trebuie arătate separat, pentru ca fiecare ofertant să analizeze aceeași cerere.</p>
-<p>Dacă se livrează mai multe loturi, precizează valoarea maximă într-o expediție și felul în care sunt împărțite bunurile. Totalul anual al vânzărilor nu este același lucru cu valoarea maximă aflată într-un vehicul sau într-un punct de tranzit. Pentru valută, cere explicația monedei contractului și a modului de calcul aplicabil.</p>
-<h2>Desenează traseul complet al expediției</h2>
-<p>Scrie locul de plecare, destinația și punctele intermediare cunoscute. Include segmentele în care marfa schimbă vehiculul sau mijlocul de transport. O rută din Moldova către un client extern poate include depozitare temporară, transport feroviar ori un segment maritim. Nu descrie doar țara destinatarului dacă operațiunea reală are mai multe etape.</p>
-<p>Arată cine organizează încărcarea și descărcarea, cine păstrează bunurile între segmente și unde se încheie transportul discutat. Întreabă expres dacă aceste operațiuni sunt incluse, în ce condiții și cu ce limitări. Nu transforma explicația comercială „de la depozit la depozit” într-o promisiune pentru orice perioadă de stocare sau abatere de traseu.</p>
-<h2>Ambalarea și fixarea nu sunt detalii decorative</h2>
-<p>Descrie cum sunt protejate bunurile: cutii, paleți, lăzi, containere, materiale de separare sau sisteme de fixare. Pentru o piesă fragilă, o fotografie clară a ambalajului poate ajuta discuția tehnică, dacă transmiterea este convenită. Evită fotografii cu documente personale ori informații comerciale care nu sunt necesare analizei.</p>
-<p>Întreabă ce documente trebuie păstrate despre pregătirea încărcăturii și ce cerințe ale propunerii trebuie respectate. Asigurarea nu înlocuiește organizarea transportului. Nu considera că un contract va compensa automat o problemă de ambalare, fixare sau temperatură. Cere explicarea excluderilor și a obligațiilor pentru cazul concret, înaintea acceptării ofertei.</p>
-<h2>O singură expediție sau transporturi repetate</h2>
-<p>Pentru o expediție ocazională, pregătește detaliile acelui lot și calendarul său. Pentru livrări repetate, construiește o situație agregată: categorii de marfă, țări, frecvență, valori maxime și mijloace de transport. Nu descrie programul anual folosind doar transportul cel mai simplu dacă există și expedieri cu cerințe speciale.</p>
-<p>Întreabă ce formă contractuală poate fi analizată și cum se declară fiecare transport, dacă această formă este disponibilă. Cere clarificarea momentului de acceptare, a modificărilor și a operațiunilor care necesită acord separat. O prezentare publică despre transporturi recurente nu confirmă automat eligibilitatea programului propriei firme sau a tuturor destinațiilor sale.</p>
-<h2>Fișa de pregătire a expediției</h2>
-<p>Poți folosi lista următoare în discuția internă dintre logistică, vânzări și contabilitate. Ea nu trebuie completată cu informații inventate. Pentru fiecare câmp necunoscut notează cine îl poate confirma. Trimite documentele prin canalul convenit cu brokerul, nu prin comentarii publice, capturi din rețele sociale sau linkuri deschise oricui.</p>
-<ul><li>Rolul companiei și persoana responsabilă de expediție.</li><li>Descrierea mărfii, ambalajul, cantitatea și valoarea justificată.</li><li>Originea, destinația și segmentele intermediare cunoscute.</li><li>Mijloacele de transport și operatorii implicați, dacă sunt stabiliți.</li><li>Încărcarea, descărcarea, transbordarea și păstrarea temporară.</li><li>Data estimată a plecării și durata orientativă a transportului.</li><li>Condițiile speciale ale bunurilor și istoricul incidentelor relevante.</li><li>Întrebările la care se solicită confirmare scrisă.</li></ul>
-<h2>Cum compari ofertele și prețul CARGO</h2>
-<p>Prima de asigurare este suma plătită pentru asigurare. Prețul nu se analizează separat de marfă, valoare, rută și condiții. Pune propunerile într-un tabel și verifică dacă aceleași etape și aceleași bunuri au fost acceptate. O variantă care nu include o operațiune importantă nu este echivalentă doar pentru că are un total mai mic.</p>
-<p>Compară riscurile, excluderile, franșiza, limita și procedura de notificare. Franșiza este partea din daună suportată de asigurat potrivit contractului. Cere exemple de calcul folosind o situație ipotetică identificată clar ca exemplu. Nu prezenta un calcul orientativ ca despăgubire promisă și nu transfera condițiile unui asigurător asupra întregii piețe din Moldova.</p>
-<h2>Ce pregătești dacă apare un incident</h2>
-<p>Prioritizează siguranța persoanelor și măsurile legale de limitare a pagubei, apoi urmează instrucțiunile și termenele documentelor aplicabile. Păstrează dovezile transportului, fotografiile relevante, corespondența și constatările disponibile. Nu prelua un termen numeric de pe alt produs și nu presupune că simplul apel către broker înlocuiește notificarea cerută de asigurător.</p>
-<p>Separă faptele observate de presupunerile despre cauză sau vinovăție. Notează când a fost descoperită problema, unde se aflau bunurile și cine a fost informat. Nu promite clientului final o sumă de despăgubire înainte de analiza asigurătorului. Brokerul poate sprijini clarificarea documentelor, dar nu este partea care decide și plătește despăgubirea.</p>
-<h2>Schimbarea traseului sau a transportatorului după ofertare</h2>
-<p>Dacă se schimbă un segment de drum, operatorul sau punctul de transbordare, nu lucra numai cu versiunea inițială a cererii. Notează diferența, data la care a devenit cunoscută și transporturile afectate. Cere verificarea necesității unei confirmări suplimentare. Faptul că factura finală are aceeași valoare nu înseamnă că descrierea inițială a operațiunii a rămas completă.</p>
-<p>Stabilește cine comunică schimbările între vânzări, logistică și broker. O conversație purtată separat de alt coleg poate lăsa dosarul cu informații contradictorii. Păstrează cererea, propunerea și confirmările într-un loc accesibil persoanelor autorizate. Nu transmite parole sau acces la sistemul de gestiune a mărfurilor pentru a demonstra o schimbare de rută.</p>
-<h2>Ce verifici la reînnoirea unui program CARGO</h2>
-<p>Compară transporturile efectuate cu descrierea folosită la analiza anterioară. Au apărut alte produse, destinații, furnizori ori valori maxime? Arată diferențele înainte de reînnoire, inclusiv incidentele relevante și măsurile de prevenire adoptate. Nu trimite automat aceeași fișă dacă firma a trecut de la bunuri ambalate individual la încărcături fragile ori cu temperatură controlată.</p>
-<p>Revizuiește și oamenii responsabili: cine declară expedițiile, păstrează documentele și transmite o notificare atunci când apare o problemă. O procedură clară reduce neînțelegerile interne. Ea nu garantează plata unei daune, dar ajută firma să poată prezenta informații coerente și verificabile atunci când asigurătorul analizează un dosar.</p>
-<h2>Întrebări frecvente despre asigurarea CARGO</h2>
-<h3>CMR înlocuiește asigurarea mărfii?</h3><p>Nu deduce acest lucru din existența poliței transportatorului. CMR și CARGO au obiecte diferite; verifică interesul protejat, limitele și condițiile fiecărui document.</p>
-<h3>Depozitarea temporară este inclusă automat?</h3><p>Nu o considera inclusă fără confirmare. Descrie punctul, durata și legătura cu transportul, apoi verifică textul propunerii acceptate.</p>
-<h3>Pot primi preț numai din valoarea facturii?</h3><p>Valoarea este doar o parte a dosarului. Marfa, traseul, ambalarea, etapele și riscurile solicitate trebuie descrise pentru o comparație utilă.</p>
-<h3>Pot cumpăra după ce s-a produs deteriorarea?</h3><p>Nu trata o poliță nouă drept soluție pentru un incident deja cunoscut. Prezintă cronologia corectă și cere analiză separată, fără presupuneri privind acceptarea.</p>`
+    title: 'Asigurarea cargo în Moldova: ce acoperă și prin ce diferă de CMR',
+    seoTitle: 'Asigurare cargo marfă Moldova | ING Broker Moldova',
+    author: 'Andrei Moraru, CFO Insurance ING Broker SRL',
+    description: 'Asigurarea cargo în Moldova, explicată simplu: ce acoperă polița de marfă, prin ce diferă de CMR, ce nu se plătește și ce acte sunt necesare.',
+    updatedAt: '2026-11-23', sourcesCheckedAt: '23 noiembrie 2026', preserveLegacyLayout: true,
+    related: ['asigurari-transport-logistica-cmr-cargo-moldova', 'Asigurare CMR în Moldova: cât răspunde transportatorul pentru marfă și ce acoperă polița'],
+    sources: [
+      ['Codul civil al Republicii Moldova nr. 1107/2002, art. 1851, 1856, 1863, 1868, 1870 și 1871 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150561&lang=ro'],
+      ['Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare, art. 4 și anexa, clasa 7 (BNM)', 'https://bnm.md/files/Lege%20asigur%C4%83ri%2092_2022%20(RO).pdf'],
+      ['Convenția CMR, textul în limba română (ediția oficială „Tratate internaționale”, 1998), copie ANTA', 'https://anta.gov.md/sites/default/files/document/attachments/CONVEN%C5%A2IA%20C.M.R.%20din%2019.05.56.pdf'],
+      ['ONU: starea Protocolului din 1978 la Convenția CMR, inclusiv Republica Moldova', 'https://treaties.un.org/Pages/ViewDetailsIII.aspx?src=TREATY&mtdsg_no=XI-B-11-a&chapter=11&Temp=mtdsg3&clang=_en'],
+      ['Camera Internațională de Comerț: CIF și CIP în Incoterms 2020', 'https://academy.iccwbo.org/incoterms/article/incoterms-2020-cip-or-cif/'],
+      ['Biroul Național de Statistică: Transportul de pasageri și mărfuri în anul 2025', 'https://statistica.gov.md/ro/transportul-de-pasageri-si-marfuri-in-anul-2025-9527_62331.html'],
+      ['BNM: cursurile oficiale de schimb la 20.11.2026', 'https://www.bnm.md/ro/official_exchange_rates?date=20.11.2026'],
+    ],
+    body: `<p>Asigurarea cargo plătește, în limitele și condițiile poliței, pierderea sau avarierea mărfii în timpul transportului. Protejează asiguratul sau beneficiarul cu interes legitim în marfă. Asigurarea CMR protejează altceva: răspunderea transportatorului, care este limitată și de multe ori nu acoperă toată valoarea mărfii.</p>
+
+<h2>Ce acoperă asigurarea cargo</h2>
+<p>Polița se poate aplica mărfii transportate cu camionul, trenul, nava sau avionul, pe traseul declarat. Polița poate include furtul, incendiul, accidentul rutier, răsturnarea vehiculului și avarierea la încărcare sau descărcare. Fiecare risc se confirmă în oferta primită, fiindcă polițele nu sunt identice.</p>
+<p>Despăgubirea privește, de regulă, valoarea asigurată a mărfii pierdute sau deteriorate. Unele polițe plătesc și costuri legate de o daună acoperită, cum sunt salvarea, sortarea sau reambalarea mărfii.</p>
+<p>Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare încadrează produsul în clasa 7 din anexă, „Asigurările de bunuri în tranzit”. Art. 1868 alin. (2) din Codul civil cere ca asiguratul să aibă un interes legitim cu privire la bunul asigurat. De aceea, în cererea de ofertă firma arată dacă este vânzător, cumpărător, proprietar sau expeditor.</p>
+
+<h2>Prin ce diferă asigurarea cargo de CMR</h2>
+<p>Polița CMR a transportatorului nu ține locul unei asigurări a mărfii, fiindcă cele două au scopuri diferite.</p>
+<table>
+<thead><tr><th>Întrebare</th><th>Asigurarea cargo</th><th>Asigurarea CMR</th></tr></thead>
+<tbody>
+<tr><td>Pe cine protejează?</td><td>Asiguratul sau beneficiarul cu interes în marfă</td><td>Transportatorul rutier</td></tr>
+<tr><td>Ce plătește?</td><td>Dauna la marfă, în condițiile poliței</td><td>Suma datorată de transportator, în limitele poliței CMR</td></tr>
+<tr><td>Până la ce sumă?</td><td>Până la suma asigurată</td><td>Limita transportatorului: de regulă, circa 205 MDL/kg brut lipsă sau avariat</td></tr>
+<tr><td>Când nu plătește?</td><td>Când se aplică o excludere din poliță</td><td>Când transportatorul nu răspunde sau când se aplică o excludere din polița CMR</td></tr>
+</tbody>
+</table>
+<p>Cei circa 205 MDL pe kilogram provin din limita de 8,33 DST din Protocolul CMR din 1978, la cursul BNM din 20.11.2026 (1 DST = 24,6116 MDL). DST este o unitate internațională de calcul, iar cursul ei se schimbă.</p>
+<p>Exemplu ipotetic: o expediție de echipamente electronice, cu greutatea brută de 2 000 kg și valoarea de 6 000 000 MDL, este furată. Chiar dacă transportatorul răspunde, suma pentru valoarea mărfii se oprește, de regulă, la circa 410 000 MDL. Restul pierderii rămâne la cel care suportă riscul mărfii, dacă nu are o poliță cargo. Excepțiile de la această limită sunt explicate în ghidul despre <a href="/news/asigurari-transport-logistica-cmr-cargo-moldova">asigurarea CMR</a>.</p>
+
+<h2>Ce nivel de acoperire se alege</h2>
+<p>Ofertele de cargo se împart, în practică, în două tipuri. Denumirile lor diferă de la un asigurător la altul, de aceea contează lista riscurilor scrisă în ofertă.</p>
+<table>
+<thead><tr><th>Tip</th><th>Ce înseamnă</th><th>Când se discută</th></tr></thead>
+<tbody>
+<tr><td>Acoperire largă</td><td>Toate riscurile de pierdere sau avarie, cu excepția celor excluse în poliță</td><td>Echipamente, electronice, produse de valoare</td></tr>
+<tr><td>Acoperire limitată</td><td>Doar riscurile scrise în poliță, de exemplu incendiu, explozie, coliziune sau răsturnare</td><td>Mărfuri ieftine sau rezistente, când firma acceptă riscul rămas</td></tr>
+</tbody>
+</table>
+<p>La acoperirea limitată, furtul și avaria la manipulare rămân, de regulă, neacoperite. Pentru o marfă care se fură ușor, acest detaliu contează mai mult decât diferența de preț dintre oferte.</p>
+
+<h2>Cine asigură marfa: vânzătorul sau cumpărătorul</h2>
+<p>Răspunsul stă în contractul de vânzare. Contractele internaționale folosesc, de obicei, condițiile de livrare Incoterms 2020. Potrivit <a href="https://academy.iccwbo.org/incoterms/article/incoterms-2020-cip-or-cif/">Camerei Internaționale de Comerț</a>, la condițiile CIF și CIP vânzătorul încheie asigurarea, implicit largă la CIP și limitată la CIF. În ambele cazuri, riscul trece la cumpărător înainte ca marfa să ajungă la destinație, deci cumpărătorul verifică dacă polița îi este suficientă. La celelalte condiții de livrare, fiecare firmă verifică din ce moment suportă riscul și dacă are nevoie de poliță proprie.</p>
+<p>Dacă marfa se vinde pe drum, polița nu rămâne automat valabilă pentru noul proprietar pe termen nelimitat. Potrivit art. 1871 din Codul civil, asigurarea încetează, ca regulă, cel târziu la o lună de la transmiterea proprietății, cu excepția polițelor încheiate și pentru un viitor cumpărător sau a acordului contrar dintre asigurător, contractant și noul proprietar. De aceea, transmiterea poliței se stabilește înainte de vânzare.</p>
+
+<h2>Transportul de mărfuri în cifre</h2>
+<p>Potrivit <a href="https://statistica.gov.md/ro/transportul-de-pasageri-si-marfuri-in-anul-2025-9527_62331.html">Biroului Național de Statistică</a>, în 2025 întreprinderile de transport din Moldova, fără stânga Nistrului și mun. Bender, au transportat 20,2 milioane tone de mărfuri (date provizorii), la nivelul anului 2024. Transportul rutier a reprezentat 17,6 milioane tone, circa 87% din volum. Cea mai mare parte a mărfii circulă deci cu camionul, unde furtul, accidentele și avaria la încărcare sunt riscurile discutate la ofertare. Banca Națională a Moldovei supraveghează piața asigurărilor, potrivit art. 4 din Legea nr. 92/2022.</p>
+
+<h2>Ce nu se plătește, de regulă</h2>
+<ul><li>Daunele din ambalare sau fixare slabă.</li><li>Defectele proprii ale mărfii și stricarea ei naturală.</li><li>Pierderile normale de greutate sau de volum și uzura.</li><li>Întârzierea livrării și pierderea unui client din această cauză.</li><li>Faptele intenționate ale asiguratului.</li><li>Insolvența transportatorului, în anumite condiții.</li><li>Războiul și grevele, dacă nu sunt adăugate prin clauze separate.</li></ul>
+<p>Marfa cu temperatură controlată, bunurile de mare valoare, animalele vii și produsele periculoase cer, de obicei, condiții separate. Polița poate cere și pază, parcare păzită sau sigilare. Aceste cerințe se transmit transportatorului, fiindcă el le aplică pe drum.</p>
+
+<h2>Ce sumă se asigură</h2>
+<p>Suma asigurată pornește, de regulă, de la valoarea din factură, la care părțile pot adăuga transportul și alte costuri convenite. Franșiza este partea din daună suportată de asigurat.</p>
+<p>Dacă suma asigurată este mai mică decât valoarea mărfii, plata se limitează la suma asigurată. Plata poate scădea și proporțional, dar numai dacă polița conține această clauză, menționată suplimentar în text (art. 1870 din Codul civil). Exemplu ipotetic: marfă cu valoarea de 1 000 000 MDL la data daunei, asigurată pentru 800 000 MDL, daună de 200 000 MDL. Fără clauză, calculul pornește de la 200 000 MDL. Cu clauză proporțională, pornește de la 160 000 MDL, înainte de franșiză.</p>
+
+<h2>Când începe și când se termină acoperirea</h2>
+<p>Acoperirea se descrie adesea „de la depozit la depozit”, dar momentele exacte rezultă din poliță. Se verifică încărcarea, descărcarea, mutarea mărfii pe alt vehicul, depozitarea temporară, staționarea în vamă și schimbarea traseului. Acoperirea poate înceta înainte ca marfa să ajungă în depozitul final, dacă polița prevede un termen maxim.</p>
+<p>Depozitarea lungă între două etape se analizează, de obicei, împreună cu <a href="/news/asigurare-depozite-logistice">asigurarea depozitelor logistice</a>. Dacă firma transportă marfa cu vehicule proprii, <a href="/news/asigurare-flote-auto-corporate-moldova">asigurarea flotei</a> nu rezolvă singură protecția mărfii.</p>
+
+<h2>O singură expediție sau transporturi regulate</h2>
+<p>Pentru un transport ocazional se încheie o poliță pe expediție. Firmele cu livrări regulate pot folosi o poliță deschisă, în care stabilesc de la început mărfurile, rutele, limita pe vehicul și modul de declarare a fiecărui transport. Prima depinde de tipul mărfii, valoare, ambalaj, rută, mijlocul de transport, măsurile de pază, franșiză și istoricul daunelor.</p>
+
+<h2>Documentele pentru ofertă</h2>
+<ul><li>Chestionarul asigurătorului, completat și semnat.</li><li>Descrierea mărfii, ambalajul, greutatea și valoarea.</li><li>Factura sau contractul de vânzare, cu condiția de livrare.</li><li>Ruta completă, cu locurile de transbordare și depozitare.</li><li>Mijlocul de transport și transportatorul, dacă sunt cunoscuți.</li><li>Pentru transporturi regulate: volumul anual și valoarea maximă pe vehicul.</li><li>Istoricul daunelor din ultimii ani.</li></ul>
+
+<h2>Ce face firma când marfa ajunge avariată</h2>
+<ol><li>Limitează paguba și păstrează marfa și ambalajul.</li><li>Face fotografii ale mărfii, ale ambalajului și ale vehiculului.</li><li>Scrie observațiile în documentul de transport, la primire. La transportul rutier internațional, avariile nevăzute se semnalează transportatorului în scris, în șapte zile de la primire, fără duminici și sărbători (art. 30 din Convenția CMR).</li><li>Anunță asigurătorul de îndată (art. 1851 din Codul civil) și respectă termenul din poliță.</li><li>Nu semnează o renunțare la pretenții față de transportator înainte de a verifica polița. O astfel de renunțare poate duce la pierderea despăgubirii (art. 1856 alin. (2) din Codul civil).</li></ol>
+<p>Cheltuielile rezonabile pentru limitarea pagubei se rambursează în condițiile art. 1863 din Codul civil.</p>
+<h3>Rolul brokerului și al asigurătorului</h3>
+<p>Brokerul analizează transporturile firmei, pregătește dosarul, solicită oferte de la asigurători licențiați, în funcție de risc, și compară condițiile pe aceeași bază. La daună, brokerul asistă la notificare și la pregătirea dosarului. Asigurătorul acceptă riscul, stabilește prima și condițiile și decide plata.</p>
+
+<h2>Întrebări frecvente despre asigurarea cargo</h2>
+<h3>Este obligatorie asigurarea cargo în Moldova?</h3><p>Ca regulă, asigurarea mărfii este facultativă. Obligația apare de obicei din contract, de exemplu la livrările în condițiile CIF și CIP sau din cerințele unui finanțator. Pentru o marfă ori o activitate anume se verifică și legea specială aplicabilă înainte de începerea transportului.</p>
+<h3>Asigurarea CMR a transportatorului înlocuiește asigurarea cargo?</h3><p>Nu. Asigurarea CMR acoperă răspunderea transportatorului, limitată de regulă la circa 205 MDL pe kilogram brut, și nu plătește când transportatorul nu răspunde sau când se aplică o excludere. Asigurarea cargo protejează asiguratul sau beneficiarul cu interes în marfă, până la suma asigurată. La mărfuri ușoare și scumpe, diferența poate fi mare.</p>
+<h3>Ce diferență există între acoperirea largă și cea limitată?</h3><p>Acoperirea largă include toate riscurile de pierdere sau avarie, cu excepția celor excluse în poliță. Acoperirea limitată include doar riscurile scrise în poliță, de exemplu incendiul sau răsturnarea vehiculului. La acoperirea limitată, furtul și avaria la manipulare rămân, de regulă, neacoperite, de aceea lista riscurilor se citește înainte de semnare.</p>
+<h3>Cine încheie polița, vânzătorul sau cumpărătorul?</h3><p>Depinde de contract. La condițiile de livrare CIF și CIP, vânzătorul are obligația de a asigura marfa. La celelalte condiții, fiecare parte verifică din ce moment suportă riscul și decide dacă își face poliță proprie. Dacă marfa se vinde pe drum, transmiterea poliței se stabilește înainte de vânzare.</p>
+<h3>Ce sumă se asigură pentru o expediție?</h3><p>De regulă, suma pornește de la valoarea din factură, la care părțile pot adăuga transportul și alte costuri convenite. O sumă prea mică limitează plata la suma asigurată. Reducerea proporțională se aplică doar dacă polița conține această clauză, menționată suplimentar (art. 1870 din Codul civil).</p>
+<h3>Ce se face când marfa ajunge avariată?</h3><p>Destinatarul scrie observațiile în documentul de transport la primire, păstrează marfa și ambalajul, face fotografii și anunță asigurătorul de îndată. La transportul rutier internațional, avariile nevăzute se semnalează transportatorului în scris, în șapte zile de la primire. Firma nu renunță la pretenții față de transportator fără să verifice polița.</p>
+
+<h2>Ofertă personalizată prin ING Broker</h2>
+<p>ING Broker pregătește dosarul companiei și solicită oferte de la asigurători licențiați, în funcție de risc. Acceptarea riscului, prima și condițiile se stabilesc de asigurător. Materialul are caracter general și nu înlocuiește analiza contractului sau consultanța juridică pentru un caz concret. Produsul este prezentat pe pagina <a href="/business/cargo">asigurare cargo pentru companii</a>.</p>
+<p><a href="/contact">Solicită o ofertă personalizată → ingbroker.md/contact</a></p>
+<p>Broker de Asigurare-Reasigurare „INSURANCE ING BROKER” SRL, str. Pan Halippa 9, MD-2009, mun. Chișinău. Telefon: +373 79 526 003, +373 69 526 003. E-mail: andrei.moraru@ingbroker.md. Activitate supravegheată de Banca Națională a Moldovei.</p>`
   },
   'asigurare-depozite-logistice': {
     title: 'Asigurarea depozitelor logistice în Moldova',
