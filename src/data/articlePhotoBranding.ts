@@ -59,3 +59,7 @@ for(const [name,hero] of [
 
 // Imaginea 1200x630 a articolului CMR: pagina afișează aceeași scenă curată, cu logo-ul suprapus.
 articlePhotoBranding['/images/articles/moldova/ing-broker-cmr-transport-international-2026.webp']=articlePhotoBranding['/images/articles/moldova/transportator-cmr-20261107.webp'];
+
+// Imaginile 1200x630 ale articolelor RCG și pierdere de profit: pagina afișează scena curată, cu logo-ul suprapus.
+articlePhotoBranding['/images/articles/moldova/ing-broker-raspundere-civila-generala-2026.webp']=articlePhotoBranding['/images/articles/moldova/raspundere-generala-audit-corner-20261111.webp'];
+articlePhotoBranding['/images/articles/moldova/ing-broker-pierdere-profit-intrerupere-2026.webp']=articlePhotoBranding['/images/articles/moldova/continuitate-productie-corner-20261121.webp'];

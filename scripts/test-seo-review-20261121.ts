@@ -7,9 +7,9 @@ import { articlePhotoBranding } from '../src/data/articlePhotoBranding';
 import { onRequest } from '../functions/[[path]]';
 
 const slugs = Object.keys(seoContentReview20261121);
-// 21.11.2026: CAR, PI și flote au revenit la versiunile P1 V2.0 (decizia lui Andrei Moraru); rămân RCG și pierderea de profit.
-assert.equal(slugs.length, 2);
-for (const restored of ['asigurare-constructii-montaj', 'asigurare-raspundere-profesionala', 'asigurare-flote-auto-corporate-moldova']) assert.ok(!slugs.includes(restored), restored + ' restored to V2.0');
+// 22.11.2026: toate cele cinci articole au versiuni P1 V2.0 în fișierele de bază (decizia lui Andrei Moraru).
+assert.equal(slugs.length, 0);
+for (const restored of ['asigurare-constructii-montaj', 'asigurare-raspundere-profesionala', 'asigurare-flote-auto-corporate-moldova', 'asigurare-raspundere-civila-generala', 'asigurare-pierdere-profit']) assert.ok(!slugs.includes(restored), restored + ' restored to V2.0');
 assert.ok(!slugs.includes('asigurari-transport-logistica-cmr-cargo-moldova'), 'Owner retains newer CMR from PR44');
 assert.ok(articles.ro.find(a => a.slug === 'asigurari-transport-logistica-cmr-cargo-moldova')!.content.includes('8,33'), 'Newer CMR body preserved');
 const catalog = articles.ro;
