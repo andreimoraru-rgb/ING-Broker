@@ -5,8 +5,8 @@ import { SEO } from '../components/SEO';
 import { piLanding as c, piLandingSeo as seo } from '../data/piLandingContent';
 import './pi-landing.css';
 
-const scene = '/images/articles/moldova/raspundere-profesionala-audit-scene-20261111.webp';
-const sceneSet = `/images/articles/responsive/raspundere-profesionala-audit-scene-20261111-640.webp 640w, /images/articles/responsive/raspundere-profesionala-audit-scene-20261111-960.webp 960w, ${scene} 1774w`;
+const scene = '/images/articles/moldova/pi-landing-cod-2026.webp';
+const sceneSet = `/images/articles/responsive/pi-landing-cod-2026-640.webp 640w, /images/articles/responsive/pi-landing-cod-2026-960.webp 960w, ${scene} 1774w`;
 const pageUrl = 'https://www.ingbroker.md/servicii/asigurare-raspundere-profesionala';
 
 const schema = {
@@ -14,7 +14,7 @@ const schema = {
   '@graph': [
     {
       '@type': 'Service',
-      name: 'Asigurare de răspundere profesională în Moldova',
+      name: 'Asigurare erori și omisiuni pentru companii IT',
       serviceType: 'Professional Indemnity Insurance',
       areaServed: { '@type': 'Country', name: 'Moldova' },
       url: pageUrl,
