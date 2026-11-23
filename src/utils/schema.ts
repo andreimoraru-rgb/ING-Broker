@@ -166,3 +166,58 @@ export function articleSchema(opts: {
     "inLanguage": "ro-MD"
   };
 }
+
+/**
+ * Graf JSON-LD pentru paginile /servicii/: Service + FAQPage + BreadcrumbList.
+ * Furnizorul trimite la același @id ca InsuranceAgency de pe pagina principală.
+ */
+export function servicePageGraph(opts: {
+  name: string;
+  description: string;
+  serviceType: string;
+  url: string;
+  breadcrumbName: string;
+  homeUrl?: string;
+  homeName?: string;
+  faqs: Array<{ q: string; a: string }>;
+}) {
+  const homeUrl = opts.homeUrl || "https://www.ingbroker.md/";
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": `${opts.url}#service`,
+        "name": opts.name,
+        "description": opts.description,
+        "serviceType": opts.serviceType,
+        "url": opts.url,
+        "provider": {
+          "@type": "InsuranceAgency",
+          "@id": "https://www.ingbroker.md/#organization",
+          "name": "Insurance ING Broker SRL",
+          "url": "https://www.ingbroker.md",
+          "telephone": "+37369526003"
+        },
+        "areaServed": { "@type": "Country", "name": "Moldova" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${opts.url}#faq`,
+        "mainEntity": opts.faqs.map((f) => ({
+          "@type": "Question",
+          "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${opts.url}#breadcrumb`,
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": opts.homeName || "ING Broker", "item": homeUrl },
+          { "@type": "ListItem", "position": 2, "name": opts.breadcrumbName, "item": opts.url }
+        ]
+      }
+    ]
+  };
+}

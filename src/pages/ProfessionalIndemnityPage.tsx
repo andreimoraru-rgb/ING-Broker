@@ -19,6 +19,7 @@ import {
   ArrowLeft
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { servicePageGraph } from '../utils/schema';
 import { Language } from '../translations';
 import { piContent, piSeo } from '../data/piPageContent';
 import { localizedPath } from '../utils/localizedRoutes';
@@ -62,20 +63,17 @@ export const ProfessionalIndemnityPage: React.FC<ProfessionalIndemnityPageProps>
     file: <FileText size={24} className="text-primary" />
   };
 
-  const piSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": lang === 'ro' ? "Asigurare Răspundere Profesională Moldova" : lang === 'ru' ? "Страхование Профессиональной Ответственности Молдова" : "Professional Indemnity Insurance Moldova",
-    "provider": {
-      "@type": "InsuranceAgency",
-      "name": "Insurance ING Broker SRL",
-      "url": "https://www.ingbroker.md",
-      "telephone": "+37369526003"
-    },
-    "areaServed": { "@type": "Country", "name": "Moldova" },
-    "serviceType": "Professional Indemnity Insurance",
-    "url": `https://www.ingbroker.md${localizedPath('/servicii/asigurare-raspundere-profesionala', lang)}`
-  };
+  const piSchemaUrl = `https://www.ingbroker.md${localizedPath('/servicii/asigurare-raspundere-profesionala', lang)}`;
+  const piSchemaName = lang === 'ro' ? "Asigurare Răspundere Profesională Moldova" : lang === 'ru' ? "Страхование Профессиональной Ответственности Молдова" : "Professional Indemnity Insurance Moldova";
+  const piSchema = servicePageGraph({
+    name: piSchemaName,
+    description: seo.description,
+    serviceType: 'Professional Indemnity Insurance',
+    url: piSchemaUrl,
+    breadcrumbName: piSchemaName,
+    homeUrl: `https://www.ingbroker.md${localizedPath('/', lang)}`,
+    faqs: c.faqs
+  });
 
   return (
     <main className="product-review bg-slate-50 min-h-screen font-sans text-slate-900">

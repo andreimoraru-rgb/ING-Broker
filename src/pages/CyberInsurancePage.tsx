@@ -19,6 +19,7 @@ import {
   Wifi
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { servicePageGraph } from '../utils/schema';
 import { Language } from '../translations';
 import { cyberContent, cyberSeo } from '../data/cyberPageContent';
 import { localizedPath } from '../utils/localizedRoutes';
@@ -54,20 +55,17 @@ export const CyberInsurancePage: React.FC<CyberInsurancePageProps> = ({ lang }) 
     database: <Database size={32} className="text-primary" />
   };
 
-  const cyberSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": lang === 'ro' ? "Asigurare Cyber Moldova" : lang === 'ru' ? "Киберстрахование Молдова" : "Cyber Insurance Moldova",
-    "provider": {
-      "@type": "InsuranceAgency",
-      "name": "Insurance ING Broker SRL",
-      "url": "https://www.ingbroker.md",
-      "telephone": "+37369526003"
-    },
-    "areaServed": { "@type": "Country", "name": "Moldova" },
-    "serviceType": "Cyber Insurance",
-    "url": `https://www.ingbroker.md${localizedPath('/servicii/asigurare-cyber-moldova', lang)}`
-  };
+  const cyberSchemaUrl = `https://www.ingbroker.md${localizedPath('/servicii/asigurare-cyber-moldova', lang)}`;
+  const cyberSchemaName = lang === 'ro' ? "Asigurare Cyber Moldova" : lang === 'ru' ? "Киберстрахование Молдова" : "Cyber Insurance Moldova";
+  const cyberSchema = servicePageGraph({
+    name: cyberSchemaName,
+    description: seo.description,
+    serviceType: 'Cyber Insurance',
+    url: cyberSchemaUrl,
+    breadcrumbName: cyberSchemaName,
+    homeUrl: `https://www.ingbroker.md${localizedPath('/', lang)}`,
+    faqs: c.faqs
+  });
 
   return (
     <main className="product-review bg-slate-50 min-h-screen font-sans text-slate-900">
