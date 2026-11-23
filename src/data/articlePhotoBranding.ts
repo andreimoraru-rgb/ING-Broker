@@ -66,3 +66,7 @@ articlePhotoBranding['/images/articles/moldova/ing-broker-pierdere-profit-intrer
 
 // Imaginea 1200x630 a articolului cargo: pagina afișează scena curată, cu logo-ul suprapus.
 articlePhotoBranding['/images/articles/moldova/ing-broker-cargo-marfa-transport-2026.webp']=articlePhotoBranding['/images/articles/moldova/cargo-marfa-audit-corner-20261111.webp'];
+
+// Imaginile 1200x630 ale articolelor medical și D&O: pagina afișează scena curată, cu logo-ul suprapus.
+articlePhotoBranding['/images/articles/moldova/ing-broker-asigurare-medicala-angajati-2026.webp']=articlePhotoBranding['/images/articles/moldova/sanatate-privata-corner-health-20261112.webp'];
+articlePhotoBranding['/images/articles/moldova/ing-broker-asigurare-do-administratori-2026.webp']=articlePhotoBranding['/images/articles/moldova/asigurare-raspundere-directori-do-moldova.webp'];

@@ -15,7 +15,7 @@ export const editorialLiability20261108:Record<string,ArticleRevision>={
       ['Legea nr. 271/2017 privind auditul situațiilor financiare, art. 26 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=136835&lang=ro'],
       ['Legea nr. 1260/2002 cu privire la avocatură, art. 61 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=126609&lang=ro'],
       ['Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare, art. 4, art. 5 și art. 18 (BNM)', 'https://bnm.md/files/Lege%20asigur%C4%83ri%2092_2022%20(RO).pdf'],
-      ['Codul civil al Republicii Moldova nr. 1107/2002, art. 1851, 1875 și 1878 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150561&lang=ro'],
+      ['Codul civil al Republicii Moldova nr. 1107/2002, art. 1851, 1875 și 1878 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150498&lang=ro'],
       ['BNM: situația financiară a sectorului asigurărilor pentru anul 2025', 'https://bnm.md/ro/content/situatia-financiara-sectorului-asigurari-pentru-anul-2025'],
       ['BNM: ce verifici în contractul de asigurare', 'https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam'],
     ],
@@ -100,7 +100,7 @@ export const editorialLiability20261108:Record<string,ArticleRevision>={
     updatedAt: '2026-11-22', sourcesCheckedAt: '22 noiembrie 2026', preserveLegacyLayout: true,
     related: ['asigurare-raspundere-profesionala', 'Asigurarea de răspundere profesională în Moldova'],
     sources: [
-      ['Codul civil al Republicii Moldova nr. 1107/2002, art. 391, 1822, 1851, 1874, 1875, 1878, 1880, 1998, 2005 și 2016 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150561&lang=ro'],
+      ['Codul civil al Republicii Moldova nr. 1107/2002, art. 391, 1822, 1851, 1874, 1875, 1878, 1880, 1998, 2005 și 2016 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150498&lang=ro'],
       ['Legea nr. 116/2012 privind securitatea industrială a obiectelor industriale periculoase, art. 16 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=120652&lang=ro'],
       ['Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare, art. 4 și anexa, clasa 13 (BNM)', 'https://bnm.md/files/Lege%20asigur%C4%83ri%2092_2022%20(RO).pdf'],
       ['Legea nr. 106/2022 privind asigurarea obligatorie de răspundere civilă auto pentru pagube produse de vehicule (BNM)', 'https://www.bnm.md/files/Lege_RCA_106_2022%20(ro).pdf'],

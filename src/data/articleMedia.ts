@@ -125,3 +125,7 @@ articleMedia['asigurare-pierdere-profit']={...articleMedia['asigurare-pierdere-p
 
 // Imaginea 1200x630 a articolului P1 despre asigurarea cargo.
 articleMedia['asigurare-cargo-transport-marfa']={...articleMedia['asigurare-cargo-transport-marfa'],image:'/images/articles/moldova/ing-broker-cargo-marfa-transport-2026.webp',imageAlt:'Asigurare cargo Moldova 2026: lucrător verifică ambalarea și fixarea mărfii pe paleți lângă un camion'};
+
+// Imaginile 1200x630 ale articolelor P1 despre asigurarea medicală pentru angajați și D&O.
+articleMedia['asigurare-sanatate-privata']={...articleMedia['asigurare-sanatate-privata'],image:'/images/articles/moldova/ing-broker-asigurare-medicala-angajati-2026.webp',imageAlt:'Asigurare medicală pentru angajați Moldova 2026: o angajată discută documentele cu personalul medical la recepția unei clinici'};
+articleMedia['asigurare-raspundere-directori']={...articleMedia['asigurare-raspundere-directori'],image:'/images/articles/moldova/ing-broker-asigurare-do-administratori-2026.webp',imageAlt:'Asigurare D&O Moldova 2026: doi membri ai conducerii analizează un document la masa de ședințe'};

@@ -12,7 +12,7 @@ export const editorialLogistics20261108: Record<string, ArticleRevision> = {
     updatedAt: '2026-11-23', sourcesCheckedAt: '23 noiembrie 2026', preserveLegacyLayout: true,
     related: ['asigurari-transport-logistica-cmr-cargo-moldova', 'Asigurare CMR în Moldova: cât răspunde transportatorul pentru marfă și ce acoperă polița'],
     sources: [
-      ['Codul civil al Republicii Moldova nr. 1107/2002, art. 1851, 1856, 1863, 1868, 1870 și 1871 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150561&lang=ro'],
+      ['Codul civil al Republicii Moldova nr. 1107/2002, art. 1851, 1856, 1863, 1868, 1870 și 1871 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150498&lang=ro'],
       ['Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare, art. 4 și anexa, clasa 7 (BNM)', 'https://bnm.md/files/Lege%20asigur%C4%83ri%2092_2022%20(RO).pdf'],
       ['Convenția CMR, textul în limba română (ediția oficială „Tratate internaționale”, 1998), copie ANTA', 'https://anta.gov.md/sites/default/files/document/attachments/CONVEN%C5%A2IA%20C.M.R.%20din%2019.05.56.pdf'],
       ['ONU: starea Protocolului din 1978 la Convenția CMR, inclusiv Republica Moldova', 'https://treaties.un.org/Pages/ViewDetailsIII.aspx?src=TREATY&mtdsg_no=XI-B-11-a&chapter=11&Temp=mtdsg3&clang=_en'],
