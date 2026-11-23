@@ -39,20 +39,89 @@ const life = ['GRAWE Moldova: prezentarea categoriilor de asigurări de viață'
 
 export const articleRevisions: Record<string, ArticleRevision> = {
   'asigurare-raspundere-directori': {
-    title: 'Asigurarea D&O: ce verifică directorii și administratorii',
-    description: 'Ghid D&O pentru companii din Moldova: persoane asigurate, notificarea pretențiilor, costuri de apărare și documente pentru analiza riscului.',
-    related: ['asigurare-raspundere-civila-angajator', 'Răspunderea angajatorului: o analiză separată'],
-    sources: [bnm],
-    body: `<p>Asigurarea D&O privește răspunderea persoanelor care conduc o companie, în limitele contractului. Nu trebuie confundată cu asigurarea bunurilor firmei sau cu răspunderea profesională pentru serviciile prestate clienților. Pentru o companie din Moldova, prima întrebare este dacă există o soluție eligibilă pentru entitatea, conducătorii și jurisdicțiile sale.</p>
-<h2>Ce trebuie clarificat înainte de a compara prețuri</h2>
-<p>O ofertă intitulată „D&O” nu spune singură cine este protejat. Cere identificarea funcțiilor asigurate, a societăților din grup și a situațiilor în care compania însăși este inclusă. Pentru compania din Republica Moldova, aceste elemente se verifică în oferta și condițiile asigurătorului care analizează riscul.</p>
-<ul><li>Ce persoane și mandate sunt incluse, inclusiv foști directori sau funcții în filiale?</li><li>Ce dată și ce notificare declanșează analiza unei pretenții?</li><li>Costurile de apărare consumă limita totală? Cine aprobă avocatul și cheltuielile?</li><li>Cum sunt tratate faptele cunoscute, investigațiile și schimbarea controlului societății?</li><li>Ce teritorii și instanțe sunt acceptate?</li></ul>
-<h2>Dosarul util pentru o primă discuție</h2>
-<p>Pregătește structura grupului, domeniul de activitate, țările în care lucrează compania, situațiile financiare și descrierea funcțiilor de conducere. Existența unor litigii sau circumstanțe cunoscute trebuie discutată printr-un canal confidențial; nu transmite documente juridice sensibile într-un formular public.</p>
-<h2>Întrebări frecvente despre D&O</h2>
-<h3>O poliță nouă rezolvă un litigiu deja cunoscut?</h3><p>Nu presupune acest lucru. Solicită o analiză scrisă a cronologiei și a condițiilor aplicabile; simpla cumpărare a poliței nu confirmă acceptarea unui caz existent.</p>
-<h3>D&O înlocuiește consultanța juridică?</h3><p>Nu. Evaluarea obligațiilor directorului și strategia unui litigiu țin de consilierea juridică. Polița trebuie analizată separat pentru costurile și pretențiile prevăzute contractual.</p>
-<h3>Ce cer concret brokerului?</h3><p>O verificare a eligibilității și o comparație pe aceleași funcții, teritorii, limite și perioade, cu punctele neconfirmate marcate explicit. Nu doar un preț și numele produsului.</p>`
+    title: 'Asigurarea D&O în Moldova: când răspund personal administratorii și ce acoperă polița',
+    seoTitle: 'Asigurare D&O administratori Moldova | ING Broker Moldova',
+    author: 'Andrei Moraru, CFO Insurance ING Broker SRL',
+    description: 'Asigurarea D&O în Moldova, explicată simplu: când răspund personal administratorii, ce acoperă polița, ce nu se plătește și ce acte sunt necesare.',
+    updatedAt: '2026-11-23', sourcesCheckedAt: '23 noiembrie 2026', preserveLegacyLayout: true,
+    related: ['asigurare-raspundere-profesionala', 'Asigurarea de răspundere profesională în Moldova'],
+    sources: [
+      ['Legea nr. 135/2007 privind societățile cu răspundere limitată, art. 76, versiunea 2026 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro'],
+      ['Legea nr. 1134/1997 privind societățile pe acțiuni, art. 73, versiunea 2026 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=154797&lang=ro'],
+      ['Legea insolvabilității nr. 149/2012, art. 248, versiunea 2026 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=156843&lang=ro'],
+      ['Codul civil al Republicii Moldova nr. 1107/2002, art. 1851, 1874, 1875 și 1878, versiunea 2026 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150498&lang=ro'],
+      ['Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare, art. 4 și anexa, clasele 13 și 17 (BNM)', 'https://bnm.md/files/Lege%20asigur%C4%83ri%2092_2022%20(RO).pdf'],
+      ['BNM: situația financiară a sectorului asigurărilor pentru anul 2025', 'https://bnm.md/ro/content/situatia-financiara-sectorului-asigurari-pentru-anul-2025'],
+    ],
+    body: `<p>Asigurarea D&amp;O protejează administratorii, directorii și membrii consiliului când cineva le cere personal despăgubiri pentru o decizie de conducere. În limitele și condițiile poliței, asigurătorul poate plăti apărarea juridică și suma datorată. În Republica Moldova, polița este, ca regulă, facultativă.</p>
+
+<h2>Ce acoperă asigurarea D&amp;O</h2>
+<p>D&amp;O vine de la „Directors and Officers”, adică directori și persoane cu funcții de conducere. Polița intră în discuție când o societate, un asociat, un creditor sau o autoritate formulează o pretenție legată de modul în care persoana a condus firma. Exemple tipice sunt o plată contestată, un contract păgubos sau raportări financiare incorecte.</p>
+<p>De regulă, polița poate include:</p>
+<ul><li>Onorariile avocaților și cheltuielile de judecată.</li><li>Suma stabilită prin hotărâre sau prin tranzacție acceptată de asigurător.</li><li>Costurile de apărare într-o investigație a unei autorități, dacă polița o prevede.</li><li>Foștii directori, pentru deciziile din perioada mandatului, dacă sunt incluși.</li></ul>
+<p>Lista persoanelor asigurate și a situațiilor acoperite se citește în ofertă. Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare nu prevede o clasă separată pentru D&amp;O. Cel mai apropiat reper este clasa 13, „Asigurările de răspundere civilă generală”, iar apărarea juridică poate ține de clasa 17. Încadrarea exactă se confirmă la asigurător.</p>
+
+<h2>Când răspunde personal un administrator</h2>
+<p>Societatea are patrimoniu propriu, dar legea poate îndrepta o pretenție și spre persoana care a condus-o. Trei legi sunt importante pentru conducerea unei firme:</p>
+<table>
+<thead><tr><th>Lege</th><th>Pe cine privește</th><th>Ce prevede, pe scurt</th></tr></thead>
+<tbody>
+<tr><td>Legea nr. 135/2007, art. 76</td><td>Administratorul unui SRL</td><td>Răspundere materială deplină pentru prejudiciile cauzate societății, inclusiv prin plăți ilegale către asociați. Mai mulți administratori răspund solidar, dacă instanța nu stabilește altfel.</td></tr>
+<tr><td>Legea nr. 1134/1997, art. 73</td><td>Persoanele cu funcții de răspundere dintr-o societate pe acțiuni</td><td>Răspund pentru prejudiciul cauzat societății și, între altele, pentru ascunderea sau denaturarea premeditată a informațiilor financiare.</td></tr>
+<tr><td>Legea nr. 149/2012, art. 248</td><td>Membrii organelor de conducere ale unui debitor insolvabil și alte persoane care i-au cauzat insolvabilitatea</td><td>La cerere, instanța poate dispune să suporte o parte din datorii, dacă au cauzat insolvabilitatea prin faptele enumerate în lege.</td></tr>
+</tbody>
+</table>
+<p>O pretenție nu dovedește vinovăția. Chiar și o reclamație neîntemeiată poate însemna însă luni de apărare și costuri pe care persoana le suportă, dacă societatea nu le preia. Aici apare utilitatea practică a poliței.</p>
+
+<h2>Cine are nevoie de D&amp;O</h2>
+<table>
+<thead><tr><th>Situația firmei</th><th>De unde poate veni pretenția</th></tr></thead>
+<tbody>
+<tr><td>Are mai mulți asociați sau acționari</td><td>Un asociat contestă o decizie a conducerii</td></tr>
+<tr><td>Are investitori sau este filiala unui grup</td><td>Investitorul ori grupul cere socoteală pentru rezultate sau raportări</td></tr>
+<tr><td>Are director angajat, fără părți sociale</td><td>Societatea sau noii proprietari îi cer despăgubiri</td></tr>
+<tr><td>Are credite mari sau dificultăți financiare</td><td>Creditorii ori administratorul insolvabilității</td></tr>
+<tr><td>Activează într-un domeniu reglementat</td><td>O autoritate deschide o verificare a conducerii</td></tr>
+</tbody>
+</table>
+<p>Riscul nu ține doar de mărimea firmei. Exemplu ipotetic: într-un SRL cu doi asociați, administratorul aprobă o plată mare către un furnizor, iar lucrarea nu se mai execută. După o schimbare de asociați, noua conducere îi cere să acopere paguba. Administratorul are nevoie de avocat și de documentele deciziei, chiar dacă în final câștigă procesul. O poliță D&amp;O poate prelua, în condițiile ei, costurile de apărare și suma stabilită, dacă nu exclude pretențiile venite de la societate sau de la asociați.</p>
+<p>Polița nu înlocuiește buna organizare. Hotărârile asociaților, procesele-verbale și evidența deciziilor importante ajută la apărare și arată asigurătorului cum este condusă firma.</p>
+<p>Unii finanțatori, investitori sau parteneri străini pot cere polița prin contract. Înainte de semnarea unei finanțări se verifică dacă documentele conțin o astfel de cerință.</p>
+
+<h2>Prin ce diferă D&amp;O de alte asigurări</h2>
+<p>Polița obișnuită de <a href="/news/asigurare-raspundere-civila-generala">răspundere civilă generală</a> privește, de regulă, vătămările și pagubele materiale produse altor persoane prin activitatea firmei. <a href="/news/asigurare-raspundere-profesionala">Răspunderea profesională</a> privește erorile din serviciile prestate clienților. D&amp;O privește deciziile de conducere și persoanele care le iau. O firmă poate avea nevoie de mai multe polițe, cu delimitare scrisă între ele. Incidentele informatice se analizează la <a href="/servicii/asigurare-cyber-moldova">asigurarea cyber</a>.</p>
+
+<h2>Ce nu se plătește, de regulă</h2>
+<ul><li>Daunele cauzate cu intenție, frauda și câștigul personal ilegal, de obicei după o hotărâre definitivă.</li><li>Amenzile și sancțiunile penale.</li><li>Faptele și reclamațiile pe care solicitantul le cunoștea sau trebuia să le cunoască la încheierea poliței.</li><li>Pretențiile legate de insolvabilitate, dacă polița le exclude sau le limitează.</li><li>Vătămările corporale și pagubele materiale, care țin de alte asigurări.</li><li>Datoriile personale fără legătură cu funcția.</li><li>Unele pretenții între persoanele asigurate sau din partea firmei, dacă polița le exclude.</li></ul>
+<p>Art. 1874 din Codul civil prevede că asiguratul nu are drept la despăgubire în măsura în care a acționat cu intenția de a cauza acea daună. Unele fapte din art. 248 al Legii insolvabilității pot îndeplini această condiție, caz în care polița poate să nu plătească suma finală. Se verifică separat dacă poate plăti apărarea până la hotărâre.</p>
+
+<h2>De ce contează data reclamației</h2>
+<p>Polițele D&amp;O se leagă, de regulă, de momentul în care reclamația este formulată și anunțată asigurătorului, nu de data deciziei contestate. O decizie din 2024 poate fi contestată în 2026. Atunci se analizează polița în vigoare în 2026, dacă 2024 intră în perioada acceptată, și, dacă reclamația intră în termenul adițional, polița expirată anterior. Din acest motiv se verifică trei lucruri:</p>
+<ul><li>De la ce dată sunt acceptate deciziile anterioare.</li><li>Dacă această dată se păstrează la schimbarea asigurătorului.</li><li>Ce se întâmplă după expirarea poliței sau după plecarea directorului și cum se anunță o situație care poate duce la o reclamație.</li></ul>
+<p>Pentru polițele legate de înaintarea pretenției, art. 1878 alin. (2) din Codul civil include pretențiile înaintate într-un termen adițional cel puțin egal cu termenul de prescripție aplicabil răspunderii, dacă se bazează pe un fapt survenit înainte de expirarea perioadei de asigurare. O durată mai scurtă în poliță se analizează față de această normă înainte de semnare.</p>
+
+<h2>Suma asigurată, prima și actele pentru ofertă</h2>
+<p>Suma asigurată se alege după mărimea firmei, datorii, numărul de asociați și riscurile reale. Se verifică dacă suma este comună pentru toate persoanele și reclamațiile din perioada poliței și dacă avocații și cheltuielile de judecată o reduc sau se plătesc peste ea. Prima depinde de domeniu, situația financiară, structura asociaților, istoricul litigiilor și suma aleasă.</p>
+<ul><li>Chestionarul asigurătorului, completat și semnat.</li><li>Structura asociaților și a grupului.</li><li>Lista funcțiilor de conducere care vor fi asigurate.</li><li>Situațiile financiare pe ultimii ani.</li><li>Litigiile, investigațiile, reclamațiile și dificultățile financiare cunoscute.</li><li>Cerința de asigurare din contracte, dacă există.</li></ul>
+<p>Documentele juridice sensibile se transmit prin canalul stabilit cu brokerul. Potrivit <a href="https://bnm.md/ro/content/situatia-financiara-sectorului-asigurari-pentru-anul-2025">raportului Băncii Naționale a Moldovei pentru 2025</a>, asigurările auto depășesc 71,6% din primele generale, iar raportul nu prezintă date separate pentru D&amp;O. Disponibilitatea produsului și condițiile lui se confirmă pentru fiecare firmă. Banca Națională a Moldovei supraveghează piața (art. 4 din Legea nr. 92/2022).</p>
+
+<h2>Ce face administratorul când primește o reclamație</h2>
+<ol><li>Păstrează scrisoarea, citația sau notificarea și data primirii.</li><li>Anunță asigurătorul de îndată (art. 1851 din Codul civil) și respectă termenul din poliță.</li><li>Strânge documentele despre decizia contestată și respectă termenele din citație sau notificare.</li><li>Stabilește cu asigurătorul avocatul și cheltuielile de apărare, dacă polița cere acest lucru.</li><li>Discută întâi cu asigurătorul orice recunoaștere sau tranzacție. Clauza care îl exonerează pe asigurător doar pentru recunoaștere este nulă (art. 1875 alin. (1) din Codul civil), dar un acord la care asigurătorul nu a consimțit nu îl obligă pe acesta (alin. (2)).</li></ol>
+<h3>Rolul brokerului și al asigurătorului</h3>
+<p>Brokerul analizează structura firmei, pregătește dosarul, solicită oferte de la asigurători licențiați, în funcție de risc, și compară condițiile pe aceeași bază. La daună, brokerul asistă la notificare și la comunicarea cu asigurătorul. Asigurătorul acceptă riscul, stabilește prima și condițiile și decide plata.</p>
+
+<h2>Întrebări frecvente despre asigurarea D&amp;O</h2>
+<h3>Este obligatorie asigurarea D&amp;O în Moldova?</h3><p>Ca regulă, nu. Firma decide dacă încheie polița pentru persoanele care o conduc. Cerința poate apărea dintr-un contract de finanțare, de la investitori sau de la grupul din care face parte societatea. Pentru o activitate reglementată se verifică și legea specială aplicabilă acelei activități.</p>
+<h3>Poate răspunde personal administratorul unui SRL?</h3><p>Da, în condițiile legii. Art. 76 din Legea nr. 135/2007 prevede răspunderea materială deplină a administratorului pentru prejudiciile cauzate societății. În insolvabilitate, art. 248 din Legea nr. 149/2012 permite instanței, la cerere, să pună o parte din datorii în sarcina membrilor conducerii care au cauzat insolvabilitatea prin faptele enumerate în lege.</p>
+<h3>Prin ce diferă D&amp;O de răspunderea civilă generală?</h3><p>Polița obișnuită de răspundere civilă generală privește, de regulă, vătămările și pagubele materiale produse altor persoane prin activitatea firmei. D&amp;O privește pretențiile legate de deciziile de conducere și persoanele care le-au luat, inclusiv pierderile financiare. O firmă poate avea nevoie de ambele polițe, cu limite și condiții separate.</p>
+<h3>Acoperă polița o decizie luată înainte de semnare?</h3><p>Poate acoperi, în condițiile poliței. Contractul poate exclude împrejurările pe care solicitantul le cunoștea sau trebuia să le cunoască la încheiere. Dacă polița are o dată de la care acceptă deciziile anterioare, se verifică și această limită, mai ales la schimbarea asigurătorului.</p>
+<h3>Sunt protejați și foștii directori?</h3><p>Pot fi protejați pentru deciziile din perioada mandatului, dacă polița îi include, iar reclamația apare în perioada de asigurare sau în termenul adițional. Înainte de plecarea unui director, de vânzarea firmei sau de încetarea activității se verifică ce se întâmplă cu acoperirea și cât timp mai pot fi anunțate reclamații.</p>
+<h3>Ce se face la primirea unei reclamații?</h3><p>Persoana păstrează documentul și data primirii, anunță asigurătorul de îndată și strânge actele despre decizia contestată. Avocatul, cheltuielile, orice recunoaștere sau tranzacție se discută întâi cu asigurătorul. Un acord cu terțul la care asigurătorul nu a consimțit nu îl obligă, potrivit art. 1875 alin. (2) din Codul civil.</p>
+
+<h2>Ofertă D&amp;O prin ING Broker</h2>
+<p>ING Broker pregătește dosarul companiei și solicită oferte de la asigurători licențiați, în funcție de risc. Acceptarea riscului, prima și condițiile se stabilesc de asigurător. Materialul are caracter general și nu înlocuiește analiza contractului sau consultanța juridică pentru un caz concret. Produsul este prezentat pe pagina <a href="/business/do">asigurare D&amp;O pentru companii</a>.</p>
+<p><a href="/contact">Solicită o ofertă D&amp;O → ingbroker.md/contact</a></p>
+<p>Broker de Asigurare-Reasigurare „INSURANCE ING BROKER” SRL, str. Pan Halippa 9, MD-2009, mun. Chișinău. Telefon: +373 79 526 003, +373 69 526 003. E-mail: andrei.moraru@ingbroker.md. Activitate supravegheată de Banca Națională a Moldovei.</p>`
   },
   'asigurare-pierdere-profit': {
     title: 'Întreruperea activității: cum analizezi pierderea profitului',

@@ -93,7 +93,7 @@ export const editorialBatch20261107: Record<string, ArticleRevision> = {
     related: ['asigurare-utilaje-industriale', 'Asigurarea utilajelor și echipamentelor industriale'],
     sources: [
       ['Legea nr. 92/2022 privind activitatea de asigurare sau de reasigurare, art. 4 și anexa, clasa 16 (BNM)', 'https://bnm.md/files/Lege%20asigur%C4%83ri%2092_2022%20(RO).pdf'],
-      ['Codul civil al Republicii Moldova nr. 1107/2002, art. 1851, 1862, 1863, 1870 și 1887 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150561&lang=ro'],
+      ['Codul civil al Republicii Moldova nr. 1107/2002, art. 1851, 1862, 1863, 1870 și 1887 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150498&lang=ro'],
       ['IGSU: indicii statistici despre incendii, ianuarie-decembrie 2025', 'https://igsu.gov.md/sites/default/files/media/documents/2026-01/5.%20Incendii%20-%20Ianuarie%20-%20Decembrie.pdf'],
       ['BNM: situația financiară a sectorului asigurărilor pentru anul 2025', 'https://bnm.md/ro/content/situatia-financiara-sectorului-asigurari-pentru-anul-2025'],
       ['BNM: ce verifici în contractul de asigurare', 'https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam'],
