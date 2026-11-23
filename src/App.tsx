@@ -47,6 +47,7 @@ import { NotFoundPage } from './pages/NotFoundPage';
 import { CarEarPage } from './pages/CarEarPage';
 import { CorporatePage } from './pages/CorporatePage';
 import { ProfessionalIndemnityPage } from './pages/ProfessionalIndemnityPage';
+import { ProfessionalIndemnityLanding } from './pages/ProfessionalIndemnityLanding';
 import { CyberInsurancePage } from './pages/CyberInsurancePage';
 import AboutPage from './components/AboutPage';
 import TermsPage from './pages/TermsPage';
@@ -187,7 +188,8 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
   const location = useLocation();
 
   const isEditorialArticle = lang === 'ro' && location.pathname.startsWith('/news/') && Object.hasOwn(articleMedia, location.pathname.slice(6));
-  const isDarkHero = !isEditorialArticle && !['/termeni-si-conditii', '/politica-de-confidentialitate'].includes(location.pathname);
+  const isPiLanding = lang === 'ro' && location.pathname === '/servicii/asigurare-raspundere-profesionala';
+  const isDarkHero = !isEditorialArticle && !isPiLanding && !['/termeni-si-conditii', '/politica-de-confidentialitate'].includes(location.pathname);
 
   const articleSlug = location.pathname.startsWith('/news/') ? location.pathname.slice(6) : null;
   const romanianOnlyCommercial = ['/oferte/flote-auto', '/business/transport-logistica', '/servicii/asigurari-constructii-car-ear', '/servicii/asigurari-corporative-moldova'].includes(location.pathname);
@@ -1323,7 +1325,7 @@ export default function App({ initialPath }: { initialPath?: string } = {}) {
           <Route path="/business/transport-logistica" element={lang === 'ro' ? <Navigate to="/oferte/flote-auto" replace /> : <FleetAutoPage lang={lang} />} />
           <Route path="/servicii/asigurari-constructii-car-ear" element={<CarEarPage lang={lang} />} />
           <Route path="/servicii/asigurari-corporative-moldova" element={<CorporatePage lang={lang} />} />
-          <Route path="/servicii/asigurare-raspundere-profesionala" element={<ProfessionalIndemnityPage lang={lang} />} />
+          <Route path="/servicii/asigurare-raspundere-profesionala" element={lang === 'ro' ? <ProfessionalIndemnityLanding /> : <ProfessionalIndemnityPage lang={lang} />} />
           <Route path="/servicii/asigurare-cyber-moldova" element={<CyberInsurancePage lang={lang} />} />
           <Route path="*" element={<NotFoundPage lang={lang} />} />
         </Routes>
