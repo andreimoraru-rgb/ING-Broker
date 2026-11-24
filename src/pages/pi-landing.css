@@ -76,7 +76,10 @@
 .pi-cover-options svg { color: var(--pi-muted); }
 .pi-cover-list strong { font-family: var(--font-sans); font-size: 1.0625rem; font-weight: 600; }
 .pi-cover-list p { margin-top: 3px; color: #454b4d; font-size: 1rem; line-height: 1.5; }
-.pi-table-title { margin: 64px 0 18px; }
+.pi-midcta { display: flex; align-items: center; justify-content: space-between; gap: 24px 48px; margin-top: 64px; padding-block: 28px; border-block: 1px solid var(--pi-ink); }
+.pi-midcta-title { font-family: var(--font-sans); font-size: 1.375rem; font-weight: 500; line-height: 1.25; letter-spacing: -.015em; }
+.pi-midcta p + p { margin-top: 6px; color: #454b4d; font-size: 1rem; }
+.pi-midcta .pi-btn { flex: none; }
 
 .pi-deep { background: var(--pi-deep); color: #fff; }
 .pi-deep .pi-eyebrow { color: var(--pi-deep-text); }
@@ -144,6 +147,7 @@
   .pi-legal li:nth-child(odd), .pi-steps li:nth-child(odd) { padding-left: 0; border-left: 0; }
   .pi-legal li, .pi-steps li { padding-bottom: 20px; border-bottom: 1px solid var(--pi-line); }
   .pi-contacts { grid-template-columns: 1fr; }
+  .pi-midcta { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 640px) {
   .pi-landing { font-size: 1rem; }

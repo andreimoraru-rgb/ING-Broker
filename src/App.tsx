@@ -46,7 +46,6 @@ import { ConstructionShieldPage } from './pages/ConstructionShieldPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { CarEarPage } from './pages/CarEarPage';
 import { CorporatePage } from './pages/CorporatePage';
-import { ProfessionalIndemnityPage } from './pages/ProfessionalIndemnityPage';
 import { ProfessionalIndemnityLanding } from './pages/ProfessionalIndemnityLanding';
 import { CyberInsurancePage } from './pages/CyberInsurancePage';
 import AboutPage from './components/AboutPage';
@@ -1325,7 +1324,7 @@ export default function App({ initialPath }: { initialPath?: string } = {}) {
           <Route path="/business/transport-logistica" element={lang === 'ro' ? <Navigate to="/oferte/flote-auto" replace /> : <FleetAutoPage lang={lang} />} />
           <Route path="/servicii/asigurari-constructii-car-ear" element={<CarEarPage lang={lang} />} />
           <Route path="/servicii/asigurari-corporative-moldova" element={<CorporatePage lang={lang} />} />
-          <Route path="/servicii/asigurare-raspundere-profesionala" element={lang === 'ro' ? <ProfessionalIndemnityLanding /> : <ProfessionalIndemnityPage lang={lang} />} />
+          <Route path="/servicii/asigurare-raspundere-profesionala" element={<ProfessionalIndemnityLanding lang={lang} />} />
           <Route path="/servicii/asigurare-cyber-moldova" element={<CyberInsurancePage lang={lang} />} />
           <Route path="*" element={<NotFoundPage lang={lang} />} />
         </Routes>
