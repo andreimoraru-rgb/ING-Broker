@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Navigate, useNavigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import { Language } from '../translations';
 import { SEO } from '../components/SEO';
 import { SchemaMarkup } from '../components/SchemaMarkup';
@@ -23,7 +23,6 @@ interface ArticlePageProps {
 
 export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
   const { slug } = useParams<{ slug: string }>();
-  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   
   const currentArticles = articles[lang] || articles['ro'];
@@ -88,7 +87,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
 
   const faqs = articleFaqs(article.content);
   const articleBreadcrumb = breadcrumbSchema([
-    { name: lang === 'ro' ? 'Acasă' : lang === 'ru' ? 'Главная' : 'Home', url: articleOrigin },
+    { name: lang === 'ro' ? 'Acasă' : lang === 'ru' ? 'Главная' : 'Home', url: `${articleOrigin}${localizedPath('/', lang)}` },
     {
       name: lang === 'ro' ? 'Noutăți & Insights' : lang === 'ru' ? 'Новости & Аналитика' : 'News & Insights',
       url: `${articleOrigin}${localizedPath('/news', lang)}`
@@ -112,12 +111,12 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
 
       {/* Back Button */}
       <div className="absolute top-20 left-6 z-30">
-        <motion.button
+        <motion.a
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => navigate('/news')}
+          href={localizedPath('/news', lang)}
           className={`flex min-h-11 min-w-11 items-center gap-0 lg:gap-4 px-2 lg:px-6 py-3 backdrop-blur-md border rounded-none text-[10px] font-bold uppercase tracking-[0.2em] transition-all shadow-lg hover:shadow-xl group ${
             isScrolled 
               ? 'bg-white border-gray-200 text-secondary hover:bg-gray-50' 
@@ -132,7 +131,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
           <span className="sr-only lg:not-sr-only">
             {lang === 'ro' ? 'Înapoi la Noutăți' : lang === 'ru' ? 'Назад к Новостям' : 'Back to News'}
           </span>
-        </motion.button>
+        </motion.a>
       </div>
 
       {/* Hero Section */}

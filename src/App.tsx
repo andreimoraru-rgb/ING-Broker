@@ -193,10 +193,9 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
   const romanianOnlyCommercial = ['/oferte/flote-auto', '/business/transport-logistica', '/servicii/asigurari-constructii-car-ear', '/servicii/asigurari-corporative-moldova'].includes(location.pathname);
   const languageAvailable = (l: Language) => (!romanianOnlyCommercial || l === 'ro') && (!articleSlug || articleLocaleIndex[l].some(article => article.slug === articleSlug));
   const unavailableLanguage = lang === 'ro' ? 'Pagina nu este disponibilă în această limbă.' : lang === 'ru' ? 'Страница недоступна на этом языке.' : 'This page is not available in this language.';
-  const changeLanguage = (l: Language) => {
-    if (l === lang || !languageAvailable(l)) return;
-    window.location.assign(localizedPath(location.pathname, l) + location.search + location.hash);
-  };
+  const languageHref = (l: Language) => languageAvailable(l)
+    ? localizedPath(location.pathname, l) + location.search + location.hash
+    : undefined;
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-500 ${scrolled || !isDarkHero ? 'bg-white shadow-sm py-3 border-b border-gray-100' : 'bg-transparent py-6'}`}>
@@ -257,16 +256,21 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
         <div className="hidden md:flex items-center gap-8">
           <div className="flex items-center gap-4 border-r pr-8 border-gray-100/20">
             {(['ro', 'ru', 'en'] as Language[]).map((l) => (
-              <button
+              <a
                 key={l}
-                onClick={() => changeLanguage(l)}
-                disabled={!languageAvailable(l)}
+                href={languageHref(l)}
+                hrefLang={l}
+                data-locale-switch={l}
+                onClick={event => { if (l === lang || !languageAvailable(l)) event.preventDefault(); }}
+                aria-current={l === lang ? 'page' : undefined}
+                aria-disabled={!languageAvailable(l) || undefined}
+                tabIndex={!languageAvailable(l) ? -1 : undefined}
                 title={!languageAvailable(l) ? unavailableLanguage : undefined}
                 aria-label={!languageAvailable(l) ? `${l.toUpperCase()}: ${unavailableLanguage}` : undefined}
                 className={`text-[10px] font-display font-bold uppercase tracking-widest transition-all duration-300 hover:text-primary ${lang === l ? 'text-primary' : scrolled || !isDarkHero ? 'text-secondary/60' : 'text-white/60'}`}
               >
                 {l}
-              </button>
+              </a>
             ))}
           </div>
 
@@ -295,16 +299,21 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
           >
             <div className="flex gap-4 mb-4 border-b border-gray-100 pb-4">
               {(['ro', 'ru', 'en'] as Language[]).map((l) => (
-                <button
+                <a
                   key={l}
-                  onClick={() => { changeLanguage(l); setIsOpen(false); }}
-                  disabled={!languageAvailable(l)}
+                  href={languageHref(l)}
+                  hrefLang={l}
+                  data-locale-switch={l}
+                  onClick={event => { if (l === lang || !languageAvailable(l)) event.preventDefault(); setIsOpen(false); }}
+                  aria-current={l === lang ? 'page' : undefined}
+                  aria-disabled={!languageAvailable(l) || undefined}
+                  tabIndex={!languageAvailable(l) ? -1 : undefined}
                   title={!languageAvailable(l) ? unavailableLanguage : undefined}
                   aria-label={!languageAvailable(l) ? `${l.toUpperCase()}: ${unavailableLanguage}` : undefined}
                   className={`text-xs font-bold uppercase tracking-widest ${lang === l ? 'text-primary' : 'text-secondary'}`}
                 >
                   {l}
-                </button>
+                </a>
               ))}
             </div>
             {t.nav.map((item, idx) => {
