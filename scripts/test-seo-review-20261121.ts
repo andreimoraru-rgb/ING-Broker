@@ -50,6 +50,11 @@ for (const slug of slugs) {
     assert.ok(!html.toLowerCase().includes('moldcargo'));
   }
 }
+// 24.11.2026: întrebările frecvente din RU și EN intră și ele în schema FAQPage.
+for (const lang of ['ru', 'en']) {
+  const built = `dist/_editorial/${lang}/asigurare-sanatate-privata.html`;
+  if (existsSync(built)) assert.ok(readFileSync(built, 'utf8').includes('"FAQPage"'), lang + ' FAQPage');
+}
 const mediaSlugs = ['asigurare-flote-auto-corporate-moldova', 'asigurare-pierdere-profit'];
 const scenes = new Set();
 for (const slug of mediaSlugs) {

@@ -20,9 +20,9 @@ export function prepareArticle(content: string) {
   return { html, headings };
 }
 
-// Întrebările vizibile din secțiunea „Întrebări frecvente" (<h3> + <p>), pentru schema FAQPage.
+// Întrebările vizibile din secțiunea de întrebări frecvente (RO, RU, EN; <h3> + <p>), pentru schema FAQPage.
 export function articleFaqs(content: string) {
-  const section = content.match(/<h2>[^<]*frecvente[^<]*<\/h2>([\s\S]*?)(?=<h2>|$)/i)?.[1] || '';
+  const section = content.match(/<h2>[^<]*(?:frecvente|Частые вопросы|Frequently asked questions)[^<]*<\/h2>([\s\S]*?)(?=<h2>|$)/i)?.[1] || '';
   const text = (s: string) => s.replace(/<[^>]+>/g, '').trim();
   return [...section.matchAll(/<h3>([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)<\/p>/g)].map(([, q, a]) => ({ question: text(q), answer: text(a) }));
 }
