@@ -55,6 +55,10 @@ for (const lang of ['ru', 'en']) {
   const built = `dist/_editorial/${lang}/asigurare-sanatate-privata.html`;
   if (existsSync(built)) assert.ok(readFileSync(built, 'utf8').includes('"FAQPage"'), lang + ' FAQPage');
 }
+// Entitățile HTML nu rămân codificate în textul schemei (D&O, nu D&amp;O).
+for (const built of ['dist/_editorial/asigurare-raspundere-directori.html', 'dist/_editorial/en/asigurare-raspundere-directori.html']) {
+  if (existsSync(built)) assert.doesNotMatch(readFileSync(built, 'utf8'), /"Question","name":"[^"]*&amp;/, built + ' FAQ entities');
+}
 const mediaSlugs = ['asigurare-flote-auto-corporate-moldova', 'asigurare-pierdere-profit'];
 const scenes = new Set();
 for (const slug of mediaSlugs) {

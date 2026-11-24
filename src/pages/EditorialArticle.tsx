@@ -23,7 +23,8 @@ export function prepareArticle(content: string) {
 // Întrebările vizibile din secțiunea de întrebări frecvente (RO, RU, EN; <h3> + <p>), pentru schema FAQPage.
 export function articleFaqs(content: string) {
   const section = content.match(/<h2>[^<]*(?:frecvente|Частые вопросы|Frequently asked questions)[^<]*<\/h2>([\s\S]*?)(?=<h2>|$)/i)?.[1] || '';
-  const text = (s: string) => s.replace(/<[^>]+>/g, '').trim();
+  // shortcut: decodează doar &amp; (singura entitate din conținut), de extins dacă apar altele.
+  const text = (s: string) => s.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').trim();
   return [...section.matchAll(/<h3>([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)<\/p>/g)].map(([, q, a]) => ({ question: text(q), answer: text(a) }));
 }
 
