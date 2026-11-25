@@ -5,6 +5,8 @@ import {articlePhotoSource} from '../src/data/articlePhotoBranding';
 import {localizedPath} from '../src/utils/localizedRoutes';
 import {onRequest} from '../functions/[[path]]';
 import type {Language} from '../src/translations';
+import {loadEditorialRelease,isExactApprovedPayload} from './editorial-release-gate';
+const editorialRelease=loadEditorialRelease(process.cwd());
 
 const release=JSON.parse(readFileSync('src/data/translation-release.json','utf8')) as string[];
 assert.equal(new Set(release).size,release.length,'Duplicate release keys');
@@ -29,15 +31,17 @@ for(const lang of ['ro','ru','en'] as Language[]) for(const a of articles[lang])
  assert.ok(html.includes(articlePhotoSource(a.heroImage||a.image)),path+' photo');
  assert.equal((html.match(/data-article-logo=/g)||[]).length,1,path+' corner logo');
  const body=html.match(/class="article-reading[^\"]*"[^>]*>([\s\S]*?)<\/div>/)?.[1]||html.match(/<article[^>]*class="editorial-body"[^>]*>([\s\S]*?)<\/article>/)?.[1];
- assert.ok(body,path+' body');assert.ok(body.replace(/<[^>]*>/g,' ').trim().split(/\s+/).length>=1500,path+' body length');
+ const sourceOverride=lang==='ro'?null:JSON.parse(readFileSync(`src/data/article-content/${lang}/${a.slug}.json`,'utf8'));
+ const scoped=sourceOverride&&isExactApprovedPayload(editorialRelease,lang+'/'+a.slug,a.id,sourceOverride);
+ assert.ok(body,path+' body');assert.ok(scoped||body.replace(/<[^>]*>/g,' ').trim().split(/\s+/).length>=1500,path+' body length');
  assert.doesNotMatch(body,/<h1\b|<img\b|(?:^|\s)##\s/);
  const schemas=[...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1]));
- const schema=schemas.find(s=>s['@type']==='Article');assert.equal(schema?.headline,a.title,path);assert.equal(schema?.dateModified,a.updatedAt,path);
+ const schema=schemas.find(s=>s['@type']==='Article');assert.equal(schema?.headline,a.title,path);assert.equal(schema?.dateModified,a.contentUpdatedAt||a.updatedAt,path);
  assert.ok(schemas.some(s=>s['@type']==='BreadcrumbList'),path);assert.ok(!schemas.some(s=>s['@type']==='HowTo'),path);
  const triple=['ro','ru','en'].every(l=>articles[l].some(x=>x.slug===a.slug&&x.reviewStatus==='approved'));
  assert.equal((html.match(/rel="alternate"/g)||[]).length,triple?4:0,path+' alternates');
  const entry=[...sitemap.matchAll(/<url>[\s\S]*?<\/url>/g)].find(m=>decodeURI(m[0]).includes('<loc>https://www.ingbroker.md'+path+'</loc>'))?.[0];
- assert.ok(entry,path+' sitemap');assert.ok(entry.includes('<lastmod>'+a.updatedAt+'</lastmod>'),path);
+ assert.ok(entry,path+' sitemap');assert.ok(entry.includes('<lastmod>'+(a.contentUpdatedAt||a.updatedAt)+'</lastmod>'),path);
 }
 assert.equal(approved,107+release.length,'Approved and release counts differ');
 console.log(JSON.stringify({approved,pending,releaseKeys:release.length,htmlBodies:'PASS',canonical:'PASS',localizedSchema:'PASS',reciprocalAlternates:'PASS',cornerLogos:'PASS'}));

@@ -81,7 +81,7 @@ export const ArticlePage: React.FC<ArticlePageProps> = ({ lang }) => {
       }
     },
     "datePublished": publicationDate,
-    "dateModified": article.updatedAt || publicationDate,
+    "dateModified": article.contentUpdatedAt || article.updatedAt || publicationDate,
     "inLanguage": lang === 'ro' ? 'ro-MD' : lang === 'ru' ? 'ru-MD' : 'en'
   };
 
