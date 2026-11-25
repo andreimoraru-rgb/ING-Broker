@@ -12,6 +12,7 @@ export interface Article {
   reviewStatus?: 'pending' | 'approved';
   date: string;
   updatedAt?: string;
+  contentUpdatedAt?: string;
   preserveLegacyLayout?: boolean;
   author: string;
   tags: string[];

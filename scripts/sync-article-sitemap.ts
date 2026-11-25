@@ -17,7 +17,8 @@ const slugs = articles.ro.map(article => article.slug);
 assert.equal(new Set(slugs).size, slugs.length, 'Duplicate article slugs');
 const generated = Object.entries(resolved).flatMap(([lang, list]) => list.filter(a => a.reviewStatus === 'approved').map(article => {
   const loc = escapeXml(new URL(localizedPath(`/news/${article.slug}`, lang as 'ro' | 'ru' | 'en'), 'https://www.ingbroker.md').href);
-  const lastmod = article.updatedAt ? `\n    <lastmod>${article.updatedAt}</lastmod>` : '';
+  const modified = article.contentUpdatedAt || article.updatedAt;
+  const lastmod = modified ? `\n    <lastmod>${modified}</lastmod>` : '';
   const equivalents = ['ro', 'ru', 'en'].filter(locale => resolved[locale].some(a => a.slug === article.slug && a.reviewStatus === 'approved'));
   const alternates = equivalents.length === 3 ? equivalents.map(locale => `\n    <xhtml:link rel="alternate" hreflang="${locale}" href="${escapeXml(new URL(localizedPath(`/news/${article.slug}`, locale as 'ro' | 'ru' | 'en'), 'https://www.ingbroker.md').href)}"/>`).join('') : '';
   return `<url>\n    <loc>${loc}</loc>${lastmod}${alternates}\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>`;

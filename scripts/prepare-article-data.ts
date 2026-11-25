@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync, existsSync, readFileSync, lstatSync, readdirSync, unlinkSync } from 'node:fs';
 import { resolve, relative, sep, isAbsolute } from 'node:path';
 import { articles, consolidatedLifeSlugs, withdrawnArticleSlugs, type Article } from '../src/data/articles';
+import { loadEditorialRelease, isExactApprovedPayload } from './editorial-release-gate';
 
 interface GenerationOptions {
   root?: string;
@@ -38,6 +39,7 @@ function validateDirectory(root: string, directory: string) {
 export function prepareArticleData(options: GenerationOptions = {}) {
   const root = resolve(options.root ?? process.cwd());
   const catalog = options.catalog ?? articles;
+  const editorialRelease = loadEditorialRelease(root);
   const release: unknown = JSON.parse(readFileSync(resolve(root, 'src/data/translation-release.json'), 'utf8'));
   if (!Array.isArray(release) || !release.every(key => typeof key === 'string')) {
     throw new Error('Translation release must be an array of locale/slug strings');
@@ -63,7 +65,8 @@ export function prepareArticleData(options: GenerationOptions = {}) {
         const headings = (String(override.content || '').match(/<h2\b/gi) || []).length;
         // The word threshold is the owner's editorial acceptance criterion,
         // not a claim about Google's ranking algorithm. Hold incomplete drafts.
-        if (override.reviewStatus !== 'approved' || words < 1500 || headings < (original.content.match(/<h2\b/gi) || []).length || /[\u2013\u2014]/.test(JSON.stringify(override))) {
+        const exactApprovedRelease = isExactApprovedPayload(editorialRelease, `${lang}/${article.slug}`, article.id, override);
+        if (override.reviewStatus !== 'approved' || (!exactApprovedRelease && (words < 1500 || headings < (original.content.match(/<h2\b/gi) || []).length)) || /[\u2013\u2014]/.test(JSON.stringify(override))) {
           heldTranslations.push(`${lang}/${article.slug}`);
           override = null;
         }

@@ -1,0 +1,262 @@
+{
+  "release": "editorial-2027-approved-20261126",
+  "approvedAt": "2026-11-26",
+  "scope": "Exact approved payloads only; retain default word and heading criteria for all other versions.",
+  "entries": [
+    {
+      "id": "10",
+      "key": "ru/asigurare-viata-moldova",
+      "payloadSha256": "6ed70276538345223b9a9966a132a14220443b347f2973de9fee39f603ed113a"
+    },
+    {
+      "id": "11",
+      "key": "ru/asigurare-agricola-seceta",
+      "payloadSha256": "d095ca286d6e793254575b2bb039637d193f33a78f9f17e2a570902b89bb3888"
+    },
+    {
+      "id": "14",
+      "key": "ru/asigurare-cargo-transport-marfa",
+      "payloadSha256": "25627621a9a5e8e4b7155575c74b3bc11cf9dce4593459fdf8a54ecee862b176"
+    },
+    {
+      "id": "16",
+      "key": "ru/asigurare-animale-companie",
+      "payloadSha256": "6cb57188d7f3201628224f982a81139f2e38e7a01b13c3c8328cde621bdf208b"
+    },
+    {
+      "id": "17",
+      "key": "ru/asigurare-echipamente-it",
+      "payloadSha256": "8a89e7e34322d193c85ecbb00df594b6d3e0e1ccd767f5ab3d5191b96dd0e59f"
+    },
+    {
+      "id": "20",
+      "key": "ru/asigurare-flota-auto",
+      "payloadSha256": "dfe7ee74f2194e6075ade319caf5cccd0ea2f5ac5fe91d1136a158be442c8176"
+    },
+    {
+      "id": "23",
+      "key": "ru/asigurare-pierdere-profit",
+      "payloadSha256": "dce09eb30ca1b4c0d372f1d6680699a240d8ac58905469646cd2eaf77cc0dcb9"
+    },
+    {
+      "id": "24",
+      "key": "ru/asigurare-raspundere-directori",
+      "payloadSha256": "b7a5a13e50b47669f57edace77da31e110d0ec7c3345174d930b1785eccca737"
+    },
+    {
+      "id": "29",
+      "key": "ru/asigurare-riscuri-cibernetice-imm",
+      "payloadSha256": "d094c29bd8050dcc023952f357eaa45c8a56c6f115cbe31ee431d75503fcc2e1"
+    },
+    {
+      "id": "30",
+      "key": "ru/asigurare-raspundere-civila-generala",
+      "payloadSha256": "6fd58dbcd67b9710424a3c139075c5fb7c836efd8ef2a35141ae6de831a56eb0"
+    },
+    {
+      "id": "32",
+      "key": "ru/asigurare-casco-moldova",
+      "payloadSha256": "397eb59c8273112d0e94945f7fd1660088eb6fca1bccd87c2f97c65db15bae22"
+    },
+    {
+      "id": "34",
+      "key": "ru/asigurare-locuinta-moldova",
+      "payloadSha256": "715623edde0b24cdbe84d4a66b385799fd03eefe8f4abd775ffcc4f4ba29c663"
+    },
+    {
+      "id": "36",
+      "key": "ru/asigurare-malpraxis-medical",
+      "payloadSha256": "08bb802ef357a36aa8d610d8a8bbb01b21daca4893279baa64c6c5098a20ec27"
+    },
+    {
+      "id": "39",
+      "key": "ru/asigurare-utilaje-industriale",
+      "payloadSha256": "e2e7d399f0b8b8844a1b221c149e20bbca6a2d7480dfd32a1af5363a1020a352"
+    },
+    {
+      "id": "41",
+      "key": "ru/asigurare-riscuri-politice",
+      "payloadSha256": "10ec3ca235bc4df1f0d6f806914117c348e930a5206af0fb5789f25fc793fc56"
+    },
+    {
+      "id": "42",
+      "key": "ru/asigurare-credit-comercial",
+      "payloadSha256": "587f97a4591a9f4431e8d37facd99f33e17db233bd6546b560f9dae4192b469e"
+    },
+    {
+      "id": "46",
+      "key": "ru/asigurare-raspundere-civila-legala",
+      "payloadSha256": "48daf5ed20b57f871544c994c72cec05795caddcca42a8028b4d5139d822e2e9"
+    },
+    {
+      "id": "47",
+      "key": "ru/asigurare-protectie-juridica",
+      "payloadSha256": "5c47d1bc9766ec2f1750f0b68254a8d59aad636c37ae660c699d28bafa71a674"
+    },
+    {
+      "id": "49",
+      "key": "ru/asigurare-bagaje-calatorie",
+      "payloadSha256": "de65ec5b876037118e087986720298cb79671aa4f4ee8dd3094f8554ba5b268b"
+    },
+    {
+      "id": "59",
+      "key": "ru/asigurare-sali-fitness",
+      "payloadSha256": "a5f74dbf152e2defb08087c898e6f8df69a4d70bd77e557da9874eed5f2552fd"
+    },
+    {
+      "id": "62",
+      "key": "ru/asigurare-ferme-zootehnice",
+      "payloadSha256": "0322b8a226add9fb2ffefdd4edaa47639f42b99976e6318a4a4d6dcbec8c547f"
+    },
+    {
+      "id": "64",
+      "key": "ru/asigurare-sisteme-irigatii",
+      "payloadSha256": "a41d23549e7d991808e34dca450f194ff95b7149d15e03be3fcef2f3efe35744"
+    },
+    {
+      "id": "69",
+      "key": "ru/asigurare-infrastructura-critica",
+      "payloadSha256": "7d151ea34ace7a1ee2d1be95c48c1f54dfa1e765447ecbfa702cfe25a131bc57"
+    },
+    {
+      "id": "73",
+      "key": "ru/asigurare-conducte-gaz-apa",
+      "payloadSha256": "9c95fdaaa58b81eff3a74a8c92c8055ac25fbbc777d056b85ccaa0b3a56d3787"
+    },
+    {
+      "id": "75",
+      "key": "ru/asigurare-centre-date",
+      "payloadSha256": "507194cb373d0c558dc865069834175f9e19853dbb8c0664fe172125f73d9243"
+    },
+    {
+      "id": "77",
+      "key": "ru/asigurare-e-commerce",
+      "payloadSha256": "27982c8fbb91efa19ee3a0c7d3bfb96bec4b62760efcae2871840c528d5fe29e"
+    },
+    {
+      "id": "88",
+      "key": "ru/asigurare-raspundere-civila-sportivi",
+      "payloadSha256": "fbd2d7dc66003cebb23b00581a302fc8d9295acfecc9e32476256a181b9bbb9f"
+    },
+    {
+      "id": "92",
+      "key": "ru/asigurare-raspundere-civila-aeroportuara",
+      "payloadSha256": "4a2986d07e7f00d4c0aad2023c1b463316d1e0a454c2ecc6cbe7ec49140113fe"
+    },
+    {
+      "id": "96",
+      "key": "ru/asigurare-terorism-sabotaj",
+      "payloadSha256": "f4db9bdab7d3858cd144fe7cc7ac38d4203637d9e96b31f66034e9775ce4286b"
+    },
+    {
+      "id": "99",
+      "key": "ru/asigurare-raspundere-civila-produs",
+      "payloadSha256": "dd1427904ef6eda8e4bdc035e5a75f82ebab60ad3a2311acaadf00b9ece2d4e4"
+    },
+    {
+      "id": "102",
+      "key": "ru/asigurare-raspundere-civila-angajator",
+      "payloadSha256": "a3bcfe68ace20431444f19bee722e4ea39f09901e636eb70d36191bae866ce17"
+    },
+    {
+      "id": "10",
+      "key": "en/asigurare-viata-moldova",
+      "payloadSha256": "b9493a0746786c800e299cb9560aeb18e2897b71e90fe60edddc8931fd0e2c08"
+    },
+    {
+      "id": "14",
+      "key": "en/asigurare-cargo-transport-marfa",
+      "payloadSha256": "d4c051b04b961a324f2b2cc9f4671ff58aa46e7dda407eb6f957ac0bae54c07d"
+    },
+    {
+      "id": "25",
+      "key": "en/asigurare-panouri-fotovoltaice",
+      "payloadSha256": "15c15a2bc7a3ad06f04eddc5a8f0b3885df0c81843cdd3b29a4215a7bde956bb"
+    },
+    {
+      "id": "26",
+      "key": "en/asigurare-storno-calatorie",
+      "payloadSha256": "3a3cdffa0f1eb921091a2829bc0f524286dc95f91fd5633373277048b2d34a90"
+    },
+    {
+      "id": "29",
+      "key": "en/asigurare-riscuri-cibernetice-imm",
+      "payloadSha256": "4db84eda17250946558245caae6349a34b3b7b012882c1bdb817b60a8ad092c2"
+    },
+    {
+      "id": "32",
+      "key": "en/asigurare-casco-moldova",
+      "payloadSha256": "967dd046c2bab53d7133d64f2fa7a121bb96f9b3f8a26bc9c18d02a1a0082053"
+    },
+    {
+      "id": "34",
+      "key": "en/asigurare-locuinta-moldova",
+      "payloadSha256": "33a47857fdbf1dab5f47ecfb6edde759acdacda7010eaa905f958dbd63e0aed1"
+    },
+    {
+      "id": "36",
+      "key": "en/asigurare-malpraxis-medical",
+      "payloadSha256": "b96a229f91e564e42d79e90815036d83c85ee4dcbc4e56f0c0c8692d68d1a71e"
+    },
+    {
+      "id": "64",
+      "key": "en/asigurare-sisteme-irigatii",
+      "payloadSha256": "ecadb581bf6091f7ed7fb1bea11869675a14efeb5d3c8e416cd2c46cbf10fd45"
+    },
+    {
+      "id": "63",
+      "key": "en/asigurare-serre-solarii",
+      "payloadSha256": "3a6a5063d6243fd35923ed1634d4bf50f408192b1905c51d56c28f80bd1e6cdc"
+    },
+    {
+      "id": "68",
+      "key": "en/asigurare-stocare-energie",
+      "payloadSha256": "34a5eada7f61346df68a68fea27b68293b6af09a55db925188af336fd4e78672"
+    },
+    {
+      "id": "70",
+      "key": "en/asigurare-poduri-tuneluri",
+      "payloadSha256": "33b1a2050312de9928a2219debde15062e554668378fc7898d8472f4d844ece0"
+    },
+    {
+      "id": "71",
+      "key": "en/asigurare-drumuri-autostrazi",
+      "payloadSha256": "61bd67a985cda9000b4c830c7464049a5c11439db13a60b39659af002ef232d5"
+    },
+    {
+      "id": "72",
+      "key": "en/asigurare-retele-electrice",
+      "payloadSha256": "69472e4337e75899f867f6797d8a4548e303b673a5d3f64284a87061dac074c2"
+    },
+    {
+      "id": "76",
+      "key": "en/asigurare-software-as-a-service",
+      "payloadSha256": "27b70a2ca4e7d1ec1866e6626a7fc493bcdc74620ddd25a06d482140788a8b39"
+    },
+    {
+      "id": "77",
+      "key": "en/asigurare-e-commerce",
+      "payloadSha256": "25a67f46fd1c4bfb19ea2c0344db5e7c3f2a06935b79ef97347a01df9bf8e4e9"
+    },
+    {
+      "id": "80",
+      "key": "en/asigurare-raspundere-civila-it",
+      "payloadSha256": "9c1e35b5e77954ba3b9e538db66413b25f6e8aa88f63b86737a512c6faf1d017"
+    },
+    {
+      "id": "87",
+      "key": "en/asigurare-competitii-sportive",
+      "payloadSha256": "5f7a86a7ad7fecdb85fa8b7e1b96e491b09b4fec5a2d2cde8c6823abb2a9b25d"
+    },
+    {
+      "id": "98",
+      "key": "en/asigurare-remediere-mediu",
+      "payloadSha256": "566d8a58b4ec3694cd4df5626d1a01e05b4112c724fe26fe26f198fba14a8d29"
+    },
+    {
+      "id": "102",
+      "key": "en/asigurare-raspundere-civila-angajator",
+      "payloadSha256": "73c06a215761452f8cea421855e0c6225712899e7df5aea68285fba1286c9537"
+    }
+  ]
+}
