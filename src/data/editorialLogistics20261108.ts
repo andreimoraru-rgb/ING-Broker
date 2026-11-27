@@ -6,10 +6,10 @@ const property: [string, string] = ['MOLDASIG: prezentarea asigurării bunurilor
 export const editorialLogistics20261108: Record<string, ArticleRevision> = {
   'asigurare-cargo-transport-marfa': {
     title: 'Asigurarea cargo în Moldova: ce acoperă și prin ce diferă de CMR',
-    seoTitle: 'Asigurare cargo marfă Moldova | ING Broker Moldova',
+    seoTitle: 'Asigurare CARGO Moldova: acoperire și cost | ING Broker',
     author: 'Andrei Moraru, CFO Insurance ING Broker SRL',
-    description: 'Asigurarea cargo în Moldova, explicată simplu: ce acoperă polița de marfă, prin ce diferă de CMR, ce nu se plătește și ce acte sunt necesare.',
-    updatedAt: '2026-11-23', sourcesCheckedAt: '23 noiembrie 2026', preserveLegacyLayout: true,
+    description: 'Asigurarea CARGO în Moldova: ce poate acoperi polița de marfă, diferența față de CMR, excluderile, costul și documentele pentru ofertă.',
+    updatedAt: '2026-11-27', sourcesCheckedAt: '23 noiembrie 2026', preserveLegacyLayout: true,
     related: ['asigurari-transport-logistica-cmr-cargo-moldova', 'Asigurare CMR în Moldova: cât răspunde transportatorul pentru marfă și ce acoperă polița'],
     sources: [
       ['Codul civil al Republicii Moldova nr. 1107/2002, art. 1851, 1856, 1863, 1868, 1870 și 1871 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=150498&lang=ro'],
@@ -20,7 +20,7 @@ export const editorialLogistics20261108: Record<string, ArticleRevision> = {
       ['Biroul Național de Statistică: Transportul de pasageri și mărfuri în anul 2025', 'https://statistica.gov.md/ro/transportul-de-pasageri-si-marfuri-in-anul-2025-9527_62331.html'],
       ['BNM: cursurile oficiale de schimb la 20.11.2026', 'https://www.bnm.md/ro/official_exchange_rates?date=20.11.2026'],
     ],
-    body: `<p>Asigurarea cargo plătește, în limitele și condițiile poliței, pierderea sau avarierea mărfii în timpul transportului. Protejează asiguratul sau beneficiarul cu interes legitim în marfă. Asigurarea CMR protejează altceva: răspunderea transportatorului, care este limitată și de multe ori nu acoperă toată valoarea mărfii.</p>
+    body: `<p>Asigurarea CARGO poate acoperi pierderea sau avarierea mărfii în timpul transportului, în condițiile poliței. Se analizează pentru importatori, exportatori și alte firme care suportă riscul asupra mărfii. Asigurarea CMR privește răspunderea transportatorului; nu confirmă, singură, protecția întregii valori a încărcăturii.</p>
 
 <h2>Ce acoperă asigurarea cargo</h2>
 <p>Polița se poate aplica mărfii transportate cu camionul, trenul, nava sau avionul, pe traseul declarat. Polița poate include furtul, incendiul, accidentul rutier, răsturnarea vehiculului și avarierea la încărcare sau descărcare. Fiecare risc se confirmă în oferta primită, fiindcă polițele nu sunt identice.</p>
@@ -33,8 +33,8 @@ export const editorialLogistics20261108: Record<string, ArticleRevision> = {
 <thead><tr><th>Întrebare</th><th>Asigurarea cargo</th><th>Asigurarea CMR</th></tr></thead>
 <tbody>
 <tr><td>Pe cine protejează?</td><td>Asiguratul sau beneficiarul cu interes în marfă</td><td>Transportatorul rutier</td></tr>
-<tr><td>Ce plătește?</td><td>Dauna la marfă, în condițiile poliței</td><td>Suma datorată de transportator, în limitele poliței CMR</td></tr>
-<tr><td>Până la ce sumă?</td><td>Până la suma asigurată</td><td>Limita transportatorului: de regulă, circa 205 MDL/kg brut lipsă sau avariat</td></tr>
+<tr><td>Ce poate despăgubi asigurătorul?</td><td>Dauna la marfă, pentru riscurile acoperite și cu excluderile poliței</td><td>Suma datorată de transportator, în limitele și condițiile poliței CMR</td></tr>
+<tr><td>Cum se stabilește limita?</td><td>După suma asigurată, eventualele limite speciale și franșiză (partea din daună suportată de asigurat)</td><td>După răspunderea transportatorului și limita din poliță; nu echivalează automat cu valoarea mărfii</td></tr>
 <tr><td>Când nu plătește?</td><td>Când se aplică o excludere din poliță</td><td>Când transportatorul nu răspunde sau când se aplică o excludere din polița CMR</td></tr>
 </tbody>
 </table>
@@ -85,7 +85,10 @@ export const editorialLogistics20261108: Record<string, ArticleRevision> = {
 
 <h2>Întrebări frecvente despre asigurarea cargo</h2>
 <h3>Este obligatorie asigurarea cargo în Moldova?</h3><p>Ca regulă, asigurarea mărfii este facultativă. Obligația apare de obicei din contract, de exemplu la livrările în condițiile CIF și CIP sau din cerințele unui finanțator. Pentru o marfă ori o activitate anume se verifică și legea specială aplicabilă înainte de începerea transportului.</p>
-<h3>Asigurarea CMR a transportatorului înlocuiește asigurarea cargo?</h3><p>Nu. Asigurarea CMR acoperă răspunderea transportatorului, limitată de regulă la circa 205 MDL pe kilogram brut, și nu plătește când transportatorul nu răspunde sau când se aplică o excludere. Asigurarea cargo protejează asiguratul sau beneficiarul cu interes în marfă, până la suma asigurată. La mărfuri ușoare și scumpe, diferența poate fi mare.</p>
+<h3>Asigurarea CMR a transportatorului înlocuiește asigurarea cargo?</h3><p>Nu. CMR privește răspunderea transportatorului, iar CARGO privește marfa asigurată. Pentru CARGO se verifică separat riscurile acoperite, suma asigurată, excluderile și franșiza. Existența poliței CMR nu confirmă că întreaga valoare a mărfii este protejată. Diferența contează mai ales la mărfuri ușoare și scumpe.</p>
+<h3>Cât costă asigurarea CARGO în Moldova?</h3><p>Orientativ, prima de asigurare, adică suma plătită pentru poliță, poate varia între 0,25% și 1,5% din valoarea mărfii indicată în factură. Tariful depinde de tipul transportului, categoria mărfii, durata transportului, distanță și rută, precum și de acoperirile solicitate.</p>
+<p>Exemplu orientativ: pentru o marfă în valoare de 10 000 EUR, acest interval ar însemna o primă estimată de 25-150 EUR.</p>
+<p>Intervalul nu reprezintă o ofertă fermă și nu se aplică automat oricărui transport. Prima finală se confirmă în oferta asigurătorului, împreună cu acoperirile, excluderile și franșiza aplicabilă.</p>
 <h3>Ce diferență există între acoperirea largă și cea limitată?</h3><p>Acoperirea largă include toate riscurile de pierdere sau avarie, cu excepția celor excluse în poliță. Acoperirea limitată include doar riscurile scrise în poliță, de exemplu incendiul sau răsturnarea vehiculului. La acoperirea limitată, furtul și avaria la manipulare rămân, de regulă, neacoperite, de aceea lista riscurilor se citește înainte de semnare.</p>
 <h3>Cine încheie polița, vânzătorul sau cumpărătorul?</h3><p>Depinde de contract. La condițiile de livrare CIF și CIP, vânzătorul are obligația de a asigura marfa. La celelalte condiții, fiecare parte verifică din ce moment suportă riscul și decide dacă își face poliță proprie. Dacă marfa se vinde pe drum, transmiterea poliței se stabilește înainte de vânzare.</p>
 <h3>Ce sumă se asigură pentru o expediție?</h3><p>De regulă, suma pornește de la valoarea din factură, la care părțile pot adăuga transportul și alte costuri convenite. O sumă prea mică limitează plata la suma asigurată. Reducerea proporțională se aplică doar dacă polița conține această clauză, menționată suplimentar (art. 1870 din Codul civil).</p>
@@ -93,8 +96,8 @@ export const editorialLogistics20261108: Record<string, ArticleRevision> = {
 
 <h2>Ofertă personalizată prin ING Broker</h2>
 <p>ING Broker pregătește dosarul companiei și solicită oferte de la asigurători licențiați, în funcție de risc. Acceptarea riscului, prima și condițiile se stabilesc de asigurător. Materialul are caracter general și nu înlocuiește analiza contractului sau consultanța juridică pentru un caz concret. Produsul este prezentat pe pagina <a href="/business/cargo">asigurare cargo pentru companii</a>.</p>
-<p><a href="/contact">Solicită o ofertă personalizată → ingbroker.md/contact</a></p>
-<p>Broker de Asigurare-Reasigurare „INSURANCE ING BROKER” SRL, str. Pan Halippa 9, MD-2009, mun. Chișinău. Telefon: +373 79 526 003, +373 69 526 003. E-mail: andrei.moraru@ingbroker.md. Activitate supravegheată de Banca Națională a Moldovei.</p>`
+<p><a href="/contact">Discută cu un broker despre asigurarea CARGO</a></p>
+<p>Insurance ING Broker SRL. IDNO: 1017600019386. Adresă: municipiul Chișinău, strada Pan Halippa 9, Republica Moldova. Contact: Moraru Andrei, CFO, <a href="tel:+37369526003">+37369526003</a>.</p>`
   },
   'asigurare-depozite-logistice': {
     title: 'Asigurarea depozitelor logistice în Moldova',

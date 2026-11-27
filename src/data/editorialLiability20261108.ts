@@ -5,10 +5,10 @@ const bnm:[string,string]=['BNM: verificarea condițiilor contractului de asigur
 export const editorialLiability20261108:Record<string,ArticleRevision>={
   'asigurare-raspundere-profesionala': {
     title: 'Asigurarea de răspundere profesională în Moldova: ce acoperă polița PI și când este obligatorie',
-    seoTitle: 'Răspundere profesională PI Moldova | ING Broker Moldova',
+    seoTitle: 'Răspundere profesională PI/E&O Moldova | ING Broker',
     author: 'Andrei Moraru, CFO Insurance ING Broker SRL',
-    description: 'Asigurarea de răspundere profesională (PI, E&O) în Moldova: profesii cu obligație legală, claims-made, data retroactivă, excluderi și acte pentru ofertă.',
-    updatedAt: '2026-11-22', sourcesCheckedAt: '22 noiembrie 2026', preserveLegacyLayout: true,
+    description: 'Asigurarea de răspundere profesională în Moldova: ce poate acoperi PI/E&O, excluderile, data retroactivă, costul și documentele pentru ofertă.',
+    updatedAt: '2026-11-27', sourcesCheckedAt: '22 noiembrie 2026', preserveLegacyLayout: true,
     related: ['asigurare-raspundere-civila-generala', 'Răspunderea civilă generală a companiei'],
     sources: [
       ['Legea nr. 69/2016 cu privire la organizarea activității notarilor, art. 11 și art. 56 (legis.md)', 'https://www.legis.md/cautare/getResults?doc_id=125333&lang=ro'],
@@ -19,7 +19,7 @@ export const editorialLiability20261108:Record<string,ArticleRevision>={
       ['BNM: situația financiară a sectorului asigurărilor pentru anul 2025', 'https://bnm.md/ro/content/situatia-financiara-sectorului-asigurari-pentru-anul-2025'],
       ['BNM: ce verifici în contractul de asigurare', 'https://bnm.md/ro/content/care-sunt-elementele-unui-contract-de-asigurare-si-la-ce-sa-fim-atenti-cand-il-semnam'],
     ],
-    body: `<p>Asigurarea de răspundere profesională (PI, Professional Indemnity, sau E&amp;O) acoperă pretențiile clienților pentru prejudicii financiare cauzate de erori, omisiuni sau neglijență în serviciile profesionale declarate. În Republica Moldova nu există o obligație generală, iar acolo unde există, obligația rezultă din legea specială a profesiei, de exemplu pentru notari.</p>
+    body: `<p>Asigurarea de răspundere profesională poate acoperi pretențiile clienților pentru prejudicii cauzate de greșeli în serviciile declarate, în limitele și condițiile poliței. În ofertele de asigurare poți întâlni denumirile PI (Professional Indemnity, răspundere profesională) și E&amp;O (Errors and Omissions, erori și omisiuni). Pentru o ofertă contează activitatea efectivă, contractele cu clienții și riscurile acceptate de asigurător.</p>
 
 <h2>Ce acoperă asigurarea de răspundere profesională</h2>
 <p>Polița preia, în limitele contractului, sumele pe care asiguratul le datorează unui client sau unui terț pentru o greșeală profesională: un calcul eronat, un termen ratat, o recomandare greșită, un proiect cu erori, o configurare de software care produce pierderi. Spre deosebire de răspunderea civilă generală, care privește în principal vătămările corporale și pagubele materiale produse terților, PI se concentrează pe pierderea financiară pură, adică paguba care nu provine dintr-un bun distrus sau dintr-o persoană vătămată.</p>
@@ -86,11 +86,12 @@ export const editorialLiability20261108:Record<string,ArticleRevision>={
 <h3>Acoperă asigurarea PI amenzile și penalitățile din contract?</h3><p>Amenzile și sancțiunile aplicate asiguratului, garanțiile de rezultat și penalitățile asumate contractual peste răspunderea legală sunt excluderi frecvente. O amendă plătită de client din cauza unei erori a asiguratului poate fi pretinsă ca prejudiciu al clientului, iar tratamentul ei depinde de condițiile poliței și de lege.</p>
 <h3>Asigurarea PI și asigurarea cyber sunt același produs?</h3><p>Nu. PI acoperă pretențiile clienților pentru erori în serviciul profesional. Asigurarea cyber privește incidentele informatice, cum sunt atacurile, scurgerile de date și întreruperea sistemelor, inclusiv costurile proprii ale firmei. O firmă IT poate avea nevoie de ambele, cu delimitarea scrisă a zonei în care se suprapun.</p>
 <h3>Ce documente se cer pentru o ofertă de asigurare PI?</h3><p>De regulă, chestionarul asigurătorului, extrasul din registrul persoanelor juridice, descrierea serviciilor, cifra de afaceri pe activități și țări, un model de contract cu clienții, cerința de asigurare primită, istoricul pretențiilor și polița anterioară cu data retroactivă. Asigurătorul poate cere și calificările specialiștilor.</p>
+<h3>Cât costă asigurarea de răspundere profesională?</h3><p>Costul depinde de serviciile prestate, cifra de afaceri, contractele cu clienții, țările vizate, limita solicitată și istoricul pretențiilor. Prima de asigurare este suma plătită pentru poliță. Compară și franșiza, adică partea din daună suportată de asigurat, data retroactivă și tratamentul cheltuielilor de apărare. Prețul concret se stabilește după analiza asigurătorului.</p>
 
 <h2>Ofertă personalizată prin ING Broker</h2>
 <p>ING Broker pregătește dosarul firmei de servicii și cere oferte de la mai mulți asigurători din Moldova. Acceptarea riscului, prima și condițiile se stabilesc de asigurător.</p>
-<p><a href="/contact">Solicită o ofertă personalizată → ingbroker.md/contact</a></p>
-<p>Insurance ING Broker SRL, str. Pan Halippa 9, MD-2009, mun. Chișinău. Telefon: +373 79 526 003, +373 69 526 003. E-mail: andrei.moraru@ingbroker.md. Activitate supravegheată de Banca Națională a Moldovei.</p>`
+<p><a href="/contact">Discută cu un broker despre răspunderea profesională</a></p>
+<p>Insurance ING Broker SRL. IDNO: 1017600019386. Adresă: municipiul Chișinău, strada Pan Halippa 9, Republica Moldova. Contact: Moraru Andrei, CFO, <a href="tel:+37369526003">+37369526003</a>.</p>`
   },
  'asigurare-raspundere-civila-generala': {
     title: 'Asigurarea de răspundere civilă generală în Moldova: ce acoperă polița și când este obligatorie',
