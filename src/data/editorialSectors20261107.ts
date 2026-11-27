@@ -54,10 +54,10 @@ export const editorialSectors20261107: Record<string, ArticleRevision> = {
   },
   'asigurari-transport-logistica-cmr-cargo-moldova': {
     title: 'Asigurare CMR în Moldova: cât răspunde transportatorul pentru marfă și ce acoperă polița',
-    seoTitle: 'Asigurare CMR Moldova | ING Broker Moldova',
+    seoTitle: 'Asigurare CMR Moldova: limite, cost și acte | ING Broker',
     author: 'Andrei Moraru, CFO Insurance ING Broker SRL',
-    description: 'Asigurarea CMR acoperă răspunderea transportatorului pentru marfă în transportul rutier internațional. Limite, termene, excluderi și pregătirea ofertei.',
-    updatedAt: '2026-11-21', sourcesCheckedAt: '21 noiembrie 2026', preserveLegacyLayout: true,
+    description: 'Asigurarea CMR în Moldova: răspunderea transportatorului, limitele, excluderile, diferența față de CARGO și informațiile pentru calcularea costului.',
+    updatedAt: '2026-11-27', sourcesCheckedAt: '21 noiembrie 2026', preserveLegacyLayout: true,
     related: ['asigurare-cargo-transport-marfa', 'Asigurarea cargo: interesul proprietarului mărfii'],
     sources: [
       ['Convenția CMR, Geneva, 19.05.1956, textul autentic din 1956, fără Protocolul din 1978 (UNECE)', 'https://unece.org/fileadmin/DAM/trans/conventn/cmr_e.pdf'],
@@ -70,7 +70,7 @@ export const editorialSectors20261107: Record<string, ArticleRevision> = {
       bnm,
       ['MOLDASIG: răspunderea transportatorilor și expeditorilor CMR', 'https://moldasig.md/liability-insurance-for-auto-carriers-and-forwarders-%28CMR%29'],
     ],
-    body: `<p>Asigurarea CMR acoperă răspunderea transportatorului pentru marfa preluată într-un transport rutier internațional, în limitele Convenției CMR. În Republica Moldova nu este obligatorie prin lege, dar expeditorii și casele de expediție o cer, de regulă, înainte de a încredința marfa.</p>
+    body: `<p>Asigurarea CMR poate acoperi sumele pe care transportatorul le datorează pentru pierderea sau avarierea mărfii, în limitele răspunderii sale și ale poliței. Se analizează pentru transportatorii care preiau marfa altor firme în transport rutier internațional. Dacă vrei să asiguri marfa propriei companii, verifică separat asigurarea CARGO.</p>
 
 <h2>Convenția CMR și aplicarea ei în Republica Moldova</h2>
 <p>Convenția referitoare la contractul de transport internațional de mărfuri pe șosele (Convenția CMR) a fost semnată la Geneva la 19 mai 1956. Republica Moldova a aderat prin Hotărârea Parlamentului nr. 1318-XII din 2 martie 1993. Convenția se aplică oricărui contract de transport rutier de mărfuri cu plată, atunci când locul preluării și locul prevăzut pentru livrare se află în state diferite, dintre care cel puțin unul este parte la Convenție (art. 1 alin. (1)).</p>
@@ -100,7 +100,7 @@ export const editorialSectors20261107: Record<string, ArticleRevision> = {
 <tr><td>Diferența peste limita pe kilogram</td><td>circa 1 899 700 MDL</td></tr>
 </tbody>
 </table>
-<p>Diferența de circa 1 899 700 MDL rămâne la proprietarul mărfii dacă acesta nu are o asigurare cargo proprie. Peste limită se restituie taxa de transport, taxele vamale și alte cheltuieli ale transportului (art. 23 alin. (4)). O valoare declarată sau un interes special înscris în scrisoarea de trăsură poate ridica limita (art. 24 și art. 26). La o daună reală, cursul DST este cel de la data hotărârii sau cel convenit de părți, nu cel din exemplu.</p>
+<p>Diferența de circa 1 899 700 MDL din exemplu nu este acoperită automat de polița CMR. O poliță CARGO se analizează separat, cu riscurile, excluderile și franșiza ei. Peste limită se restituie taxa de transport, taxele vamale și alte cheltuieli ale transportului (art. 23 alin. (4)). O valoare declarată sau un interes special înscris în scrisoarea de trăsură poate ridica limita (art. 24 și art. 26). La o daună reală, cursul DST este cel de la data hotărârii sau cel convenit de părți, nu cel din exemplu.</p>
 
 <h2>Ce acoperă polița CMR și ce se verifică înainte de semnare</h2>
 <p>Polița CMR preia, în limitele contractului de asigurare, sumele pe care transportatorul le datorează potrivit Convenției. Riscurile incluse diferă de la un asigurător la altul, iar tabelul de mai jos descrie practica obișnuită de pe piață, nu condițiile unui produs anume.</p>
@@ -132,13 +132,14 @@ export const editorialSectors20261107: Record<string, ArticleRevision> = {
 <h3>Este obligatorie asigurarea CMR în Republica Moldova?</h3><p>Nu a fost identificată o lege care să o impună. Codul transporturilor rutiere nr. 150/2014 prevede la art. 49 lit. e) doar asigurarea persoanelor și a bagajelor transportate, iar Legea nr. 92/2022 cere ca asigurările obligatorii să fie reglementate prin lege. Polița CMR este cerută, de regulă, prin contractul cu expeditorul.</p>
 <h3>Cât plătește transportatorul pentru marfa pierdută potrivit Convenției CMR?</h3><p>Cel mult 8,33 DST pe kilogram de greutate brută lipsă (art. 23 alin. (3)), în relațiile dintre statele părți la Protocolul din 1978. La cursul BNM din 20.11.2026, limita pentru 20 000 kg este de circa 4 100 300 MDL. Limita nu se aplică dacă paguba a fost produsă prin dol sau printr-o culpă echivalentă dolului (art. 29).</p>
 <h3>Acoperă asigurarea CMR și transporturile din interiorul Moldovei?</h3><p>Convenția CMR se aplică numai transporturilor internaționale, cu preluarea și livrarea în state diferite. Pentru cursele interne, răspunderea transportatorului se stabilește după legislația națională și contract. Unele polițe pot fi extinse la transportul intern, iar extinderea se confirmă în scris de asigurător.</p>
-<h3>Care este diferența dintre asigurarea CMR și asigurarea cargo?</h3><p>Asigurarea CMR acoperă răspunderea transportatorului, în limitele Convenției. Asigurarea cargo plătește suma asigurată pentru riscurile și cu excluderile poliței, independent de răspunderea transportatorului. Pentru marfa proprie transportată cu vehiculele firmei nu există contract de transport cu plată, deci Convenția nu se aplică, iar marfa se protejează prin asigurarea cargo.</p>
+<h3>Care este diferența dintre asigurarea CMR și asigurarea cargo?</h3><p>CMR privește răspunderea transportatorului față de cel care i-a încredințat marfa. CARGO privește pierderea sau avarierea mărfii asigurate, în condițiile poliței. Suma asigurată este un plafon, nu o plată automată. Pentru marfa proprie transportată cu vehiculele firmei se verifică o ofertă CARGO care acceptă acest mod de transport.</p>
+<h3>Cât costă asigurarea CMR în Moldova?</h3><p>Asigurătorul analizează vehiculele, mărfurile, rutele, subcontractorii, istoricul daunelor și limita solicitată. Prima de asigurare este suma plătită pentru poliță. Compară ofertele pentru aceeași activitate, aceleași limite și aceeași franșiză, adică partea din daună suportată de asigurat. Verifică separat condițiile pentru furt și mărfuri cu temperatură controlată. Prețul concret se confirmă în ofertă.</p>
 <h3>În ce termen se fac rezervele pentru marfa avariată?</h3><p>Avariile vizibile se consemnează la livrare, iar cele nevizibile în scris, în 7 zile, fără duminici și sărbători legale. Fără rezervă se prezumă, până la proba contrară, că marfa a fost primită în starea din scrisoarea de trăsură. Pentru întârziere, lipsa rezervei scrise în 21 de zile exclude despăgubirea (art. 30).</p>
 <h3>Ce documente se cer pentru o ofertă CMR?</h3><p>De regulă, extrasul din registrul persoanelor juridice, lista vehiculelor și a remorcilor cu documentele lor, contractele pentru vehiculele închiriate, tipurile de mărfuri, rutele și istoricul daunelor. Asigurătorul poate cere și exemple de scrisori de trăsură CMR sau facturi pentru marfa transportată.</p>
 
 <h2>Ofertă personalizată prin ING Broker</h2>
 <p>ING Broker pregătește dosarul transportatorului și cere oferte de la mai mulți asigurători din Moldova. Acceptarea riscului, prima și condițiile se stabilesc de asigurător.</p>
-<p><a href="/contact">Solicită o ofertă personalizată → ingbroker.md/contact</a></p>
-<p>Insurance ING Broker SRL, str. Pan Halippa 9, MD-2009, mun. Chișinău. Telefon: +373 69 526 003. E-mail: andrei.moraru@ingbroker.md. Activitate supravegheată de Banca Națională a Moldovei.</p>`
+<p><a href="/contact">Discută cu un broker despre o ofertă CMR</a></p>
+<p>Insurance ING Broker SRL. IDNO: 1017600019386. Adresă: municipiul Chișinău, strada Pan Halippa 9, Republica Moldova. Contact: Moraru Andrei, CFO, <a href="tel:+37369526003">+37369526003</a>.</p>`
   }
 };
