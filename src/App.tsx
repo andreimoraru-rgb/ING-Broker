@@ -253,7 +253,7 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
         </div>
 
         {/* Right: Language + CTA */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           <div className="flex items-center gap-4 border-r pr-8 border-gray-100/20">
             {(['ro', 'ru', 'en'] as Language[]).map((l) => (
               <a
@@ -284,7 +284,7 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
           </motion.button>
         </div>
 
-        <button className="md:hidden ml-auto" aria-label={lang === 'ro' ? 'Meniu' : lang === 'ru' ? 'Меню' : 'Menu'} aria-expanded={isOpen} onClick={() => setIsOpen(!isOpen)}>
+        <button className="lg:hidden ml-auto" aria-label={lang === 'ro' ? 'Meniu' : lang === 'ru' ? 'Меню' : 'Menu'} aria-expanded={isOpen} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={24} className={scrolled || !isDarkHero ? 'text-secondary' : 'text-white'} /> : <Menu size={24} className={scrolled || !isDarkHero ? 'text-secondary' : 'text-white'} />}
         </button>
       </div>
@@ -295,7 +295,7 @@ const Navbar = ({ lang, setLang, scrolled, onOpenCalculator }: { lang: Language,
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full bg-white shadow-2xl p-8 flex flex-col gap-6 md:hidden"
+            className="absolute top-full left-0 w-full bg-white shadow-2xl p-8 flex flex-col gap-6 lg:hidden"
           >
             <div className="flex gap-4 mb-4 border-b border-gray-100 pb-4">
               {(['ro', 'ru', 'en'] as Language[]).map((l) => (
