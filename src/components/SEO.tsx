@@ -7,6 +7,7 @@ interface SEOProps {
       description: string;
       lang: 'ro' | 'ru' | 'en';
       schema?: object;
+      /** Ignorat: meta keywords nu mai este emis (Google și motoarele AI nu îl folosesc). */
       keywords?: string;
       image?: string;
       includeLanguageAlternates?: boolean;
@@ -15,11 +16,10 @@ interface SEOProps {
       canonicalQuery?: string;
 }
 
-export const SEO = ({ title, description, lang, schema, keywords, image = "https://www.ingbroker.md/Logo%20ING%20Broker.png", includeLanguageAlternates = true, noIndex = false, ogType = 'website', canonicalQuery = '' }: SEOProps) => {
+export const SEO = ({ title, description, lang, schema, image = "https://www.ingbroker.md/Logo%20ING%20Broker.png", includeLanguageAlternates = true, noIndex = false, ogType = 'website', canonicalQuery = '' }: SEOProps) => {
       const siteUrl = "https://www.ingbroker.md";
       const location = useLocation();
       const currentUrl = `${siteUrl}${localizedPath(location.pathname, lang)}${canonicalQuery}`;
-      const defaultKeywords = "asigurari moldova, broker asigurari, rca online, casco, asigurare medicala, asigurare business, ing broker, asigurare auto, asigurare imobile, asigurare companii";
 
       // Compute hreflang URLs for each language version of the current page.
       // Strip /ru/ or /en/ prefix to get base path, then reconstruct per language.
@@ -45,7 +45,6 @@ export const SEO = ({ title, description, lang, schema, keywords, image = "https
                     <html lang={lang} />
                     <title>{title}</title>
                     <meta name="description" content={description} />
-                    <meta name="keywords" content={keywords || defaultKeywords} />
                     <meta name="author" content="Insurance ING Broker SRL" />
                     <meta name="creator" content="Insurance ING Broker SRL" />
                     <meta name="publisher" content="Insurance ING Broker SRL" />

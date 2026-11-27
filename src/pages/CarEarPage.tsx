@@ -17,6 +17,7 @@ import {
   Users
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { servicePageGraph } from '../utils/schema';
 import { Language } from '../translations';
 import { RelatedResources } from '../components/RelatedResources';
 
@@ -249,6 +250,14 @@ export const CarEarPage: React.FC<CarEarPageProps> = ({ lang }) => {
         description="Analiza asigurării CAR/EAR pentru construcții și montaj în Moldova. Vezi documentele, riscurile, limitele și excluderile de verificat înainte de ofertare."
         lang={lang}
         includeLanguageAlternates={false}
+        schema={servicePageGraph({
+          name: 'Asigurare CAR/EAR pentru construcții în Moldova',
+          description: 'Analiza asigurării CAR/EAR pentru construcții și montaj în Moldova: documente, riscuri, limite și excluderi de verificat înainte de ofertare.',
+          serviceType: 'Construction All Risks / Erection All Risks Insurance',
+          url: 'https://www.ingbroker.md/servicii/asigurari-constructii-car-ear',
+          breadcrumbName: 'Asigurare CAR/EAR',
+          faqs
+        })}
       />
 
       {/* Buton înapoi */}

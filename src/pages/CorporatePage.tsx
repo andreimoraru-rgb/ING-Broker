@@ -19,6 +19,7 @@ import {
   FileCheck
 } from 'lucide-react';
 import { SEO } from '../components/SEO';
+import { servicePageGraph } from '../utils/schema';
 import { Language } from '../translations';
 import { trackEvent } from '../utils/analytics';
 
@@ -294,6 +295,14 @@ export const CorporatePage: React.FC<CorporatePageProps> = ({ lang }) => {
         description="Analiza asigurărilor corporative în Moldova: flotă, bunuri, răspundere și programe pentru angajați. Vezi ce informații și condiții trebuie verificate."
         lang={lang}
         includeLanguageAlternates={false}
+        schema={servicePageGraph({
+          name: 'Asigurări corporative în Moldova',
+          description: 'Analiza asigurărilor corporative în Moldova: flotă, bunuri, răspundere și programe pentru angajați.',
+          serviceType: 'Corporate Insurance Brokerage',
+          url: 'https://www.ingbroker.md/servicii/asigurari-corporative-moldova',
+          breadcrumbName: 'Asigurări corporative',
+          faqs
+        })}
       />
 
       {/* Buton înapoi */}
