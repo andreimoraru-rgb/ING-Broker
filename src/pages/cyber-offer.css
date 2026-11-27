@@ -1,0 +1,54 @@
+.cyber-page{--cyber-ink:#0f172a;--cyber-muted:#526071;--cyber-line:#cbd5e1;--cyber-red:var(--color-primary,#e31e24)}
+.cyber-page .cyber-action{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:52px;padding:14px 24px;border:1px solid transparent;border-radius:6px;font-size:14px;font-weight:600;line-height:1.4;text-decoration:none;cursor:pointer;transition:background-color .18s,color .18s,border-color .18s}
+.cyber-page .cyber-action--primary{background:var(--cyber-red);color:#fff;border-color:var(--cyber-red)}
+.cyber-page .cyber-action--primary:hover{background:var(--color-primary-dark,#c4191f);border-color:var(--color-primary-dark,#c4191f)}
+.cyber-page .cyber-action--secondary{background:#fff;color:var(--cyber-ink);border-color:var(--cyber-line)}
+.cyber-page .cyber-action--secondary:hover{background:#f1f5f9;border-color:#64748b}
+.cyber-page .cyber-action--on-dark{background:transparent;border-color:#ffffff8c;color:#fff}
+.cyber-page .cyber-action--on-dark:hover{background:#ffffff14;border-color:#fff}
+.cyber-page .cyber-action--block{width:100%}
+.cyber-page .cyber-action__label{position:relative}
+.cyber-page .cyber-action__label:after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .18s}
+.cyber-page .cyber-action:hover .cyber-action__label:after,.cyber-page .cyber-action:focus-visible .cyber-action__label:after{transform:scaleX(1)}
+.cyber-page .cyber-action:focus-visible,.cyber-page .cyber-faq button:focus-visible{outline:3px solid var(--cyber-red);outline-offset:4px}
+.cyber-page .cyber-action--on-dark:focus-visible{outline-color:#fff}
+.cyber-page .cyber-action:disabled{background:#e2e8f0;border-color:#cbd5e1;color:#334155;cursor:default}
+.cyber-page .cyber-action:disabled .cyber-action__label:after{transform:scaleX(0)}
+.cyber-page .cyber-heading-rule{height:2px;width:52px;background:var(--cyber-red);margin:22px 0}
+.cyber-page .cyber-quote{padding:80px 24px;background:#f4f5f6;scroll-margin-top:115px}
+.cyber-page .cyber-quote__layout{max-width:1152px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.cyber-page .cyber-quote__intro{min-width:0}
+.cyber-page .cyber-quote__intro h2{font-size:clamp(32px,3.4vw,48px);line-height:1.12;letter-spacing:-.035em;font-weight:600;color:var(--cyber-ink);margin:0;text-wrap:balance}
+.cyber-page .cyber-quote__intro p{max-width:510px;color:var(--cyber-muted);font-size:16px;line-height:1.75;margin:0}
+.cyber-page .cyber-quote__phone{margin-top:28px}
+.cyber-page .cyber-quote__form{min-width:0;background:#fff;border:1px solid #dce1e7;border-radius:8px;padding:30px}
+.cyber-page .cyber-quote__fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.cyber-page .cyber-quote__field{min-width:0;display:flex;flex-direction:column}
+.cyber-page .cyber-quote__field label{font-size:13px;font-weight:600;line-height:1.5;color:#334155;margin-bottom:8px}
+.cyber-page .cyber-quote__optional{font-weight:400;color:var(--cyber-muted)}
+.cyber-page .cyber-quote__field input,.cyber-page .cyber-quote__field textarea{width:100%;min-width:0;background:#fff;color:var(--cyber-ink);border:1px solid #b8c2ce;border-radius:4px;padding:12px;font-size:16px;line-height:1.5;caret-color:var(--cyber-red)}
+.cyber-page .cyber-quote__field textarea{min-height:108px;resize:vertical;max-height:320px}
+.cyber-page .cyber-quote__field input::placeholder,.cyber-page .cyber-quote__field textarea::placeholder{color:#667085;opacity:1}
+.cyber-page .cyber-quote__field input:focus-visible,.cyber-page .cyber-quote__field textarea:focus-visible{outline:2px solid var(--cyber-red);outline-offset:2px}
+.cyber-page .cyber-quote__field [aria-invalid=true]{border-color:#b42318}
+.cyber-page .cyber-quote__error{display:block;min-height:26px;padding:4px 0;font-size:12px;line-height:1.5;color:#b42318}
+.cyber-page .cyber-quote__submit{width:100%}
+.cyber-page .cyber-quote__help,.cyber-page .cyber-quote__privacy{font-size:12px;line-height:1.65;color:var(--cyber-muted);margin:12px 0 0}
+.cyber-page .cyber-quote__privacy a{text-decoration:underline;text-underline-offset:3px}
+.cyber-page .cyber-quote__status{font-size:13px;line-height:1.6;color:#334155}
+.cyber-page .cyber-quote__status:not(:empty){margin-top:16px;padding-top:14px;border-top:1px solid #dce1e7}
+.cyber-page .cyber-quote__status p{margin:0 0 8px}
+.cyber-page .cyber-quote__status a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:#b5161b;text-decoration:underline;text-underline-offset:4px;font-weight:600}
+.cyber-page .cyber-faq{padding:80px 24px}
+.cyber-page .cyber-faq__inner{max-width:896px;margin:auto}
+.cyber-page .cyber-faq h2{margin-bottom:28px}
+.cyber-page .cyber-faq__item{border-bottom:1px solid #cbd5e1}
+.cyber-page .cyber-faq__question{display:flex;width:100%;align-items:center;justify-content:space-between;gap:20px;min-height:56px;padding:14px 0;background:transparent;text-align:left;cursor:pointer}
+.cyber-page .cyber-faq__question span{font-size:16px;line-height:1.5;font-weight:600;color:var(--cyber-ink)}
+.cyber-page .cyber-faq__icon{display:flex;align-items:center;justify-content:center;width:26px;height:26px;flex-shrink:0;border:1px solid #94a3b8;border-radius:50%;color:#475569;transition:transform .18s}
+.cyber-page .cyber-faq__question[aria-expanded=true] .cyber-faq__icon{transform:rotate(180deg);background:var(--cyber-red);border-color:var(--cyber-red);color:#fff}
+.cyber-page .cyber-faq__answer{padding:0 40px 16px 0;font-size:14px;line-height:1.75;color:var(--cyber-muted)}
+.cyber-page .cyber-contact-strip a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:900px){.cyber-page .cyber-quote__layout{gap:36px}.cyber-page .cyber-quote__fields{grid-template-columns:1fr;gap:0}}
+@media(max-width:640px){.cyber-page .cyber-quote{padding:48px 24px}.cyber-page .cyber-quote__layout{grid-template-columns:1fr;gap:30px}.cyber-page .cyber-quote__form{padding:24px 20px}.cyber-page .cyber-quote__intro h2{font-size:34px}.cyber-page .cyber-quote__phone{width:100%;margin-top:22px}.cyber-page .cyber-action{gap:10px;padding:14px 20px}.cyber-page .cyber-faq{padding:48px 24px}.cyber-page .cyber-faq__question{gap:12px}.cyber-page .cyber-faq__answer{padding-right:0}}
+@media(prefers-reduced-motion:reduce){.cyber-page .cyber-action,.cyber-page .cyber-action__label:after,.cyber-page .cyber-faq__icon{transition:none}}
