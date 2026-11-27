@@ -1,0 +1,35 @@
+name: SEO live check (Agent Site)
+
+# Citește paginile live ale easigurari.com și ingbroker.md și scrie un raport.
+# Nu modifică nimic: fără commit, fără push, fără secrete. Doar citire.
+
+on:
+  schedule:
+    # luni, miercuri, vineri 07:30 UTC, înainte de rularea Agentului Site (10:17 Chișinău)
+    - cron: "30 7 * * 1,3,5"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - ".github/workflows/seo-live-check.yml"
+      - "scripts/seo-live-check.py"
+      - "scripts/seo-live-check-urls.txt"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verificare live
+        run: python3 scripts/seo-live-check.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seo-live-report
+          path: seo-live-report.json
+          retention-days: 30
