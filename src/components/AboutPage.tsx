@@ -330,8 +330,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ lang: propLang }) => {
                 <div className="text-secondary font-medium">Certified Excellence</div>
               </a>
               <a href="/licenta_ing.pdf" target="_blank" rel="noopener noreferrer" className="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:border-primary hover:shadow-md transition-all cursor-pointer">
-                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">CNPF License</div>
-                <div className="text-secondary font-medium">Official Authority</div>
+                <div className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">{lang === 'ru' ? 'Лицензия брокера' : lang === 'en' ? 'Broker licence' : 'Licența de broker'}</div>
+                <div className="text-secondary font-medium">{lang === 'ru' ? 'Надзор: Национальный банк Молдовы' : lang === 'en' ? 'Supervised by the National Bank of Moldova' : 'Supravegheat de Banca Națională a Moldovei'}</div>
               </a>
             </div>
           </div>
